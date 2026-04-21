@@ -1,0 +1,181 @@
+{
+  "industry": "banking_vn",
+  "source_note": "Curated from primary Vietnamese regulatory sources: SBV circulars, Government decrees, Credit Institutions Law 2024, and AML Law 2022. NOT derived from FAOS ontology blueprints (E1 anti-circularity).",
+  "requirements": [
+    {
+      "id": "BV-01",
+      "regulation": "AML/CFT",
+      "source": "Nghị định 116/2013/NĐ-CP, Article 20",
+      "requirement": "File Cash Transaction Report (CTR) for cash transactions equal to or exceeding VND 400,000,000 in aggregate per day",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-02",
+      "regulation": "AML/CFT",
+      "source": "Luật Phòng chống rửa tiền 2022, Article 25",
+      "requirement": "File Suspicious Transaction Report (STR) within 48 hours when transactions suggest money laundering, terrorist financing, or other financial crimes",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-03",
+      "regulation": "AML/CFT",
+      "source": "Nghị định 116/2013/NĐ-CP, Article 12",
+      "requirement": "Detect and report structuring — breaking transactions into amounts below VND 400M to avoid CTR threshold",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-04",
+      "regulation": "KYC/CDD",
+      "source": "Nghị định 116/2013/NĐ-CP, Article 8",
+      "requirement": "Verify customer identity using CCCD (citizen identity card), passport, or business registration before account opening",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-05",
+      "regulation": "KYC/CDD",
+      "source": "Nghị định 116/2013/NĐ-CP, Article 10",
+      "requirement": "Identify and verify beneficial owners holding 25% or more equity in corporate customers",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-06",
+      "regulation": "KYC/EDD",
+      "source": "Luật PCRT 2022, Article 18",
+      "requirement": "Apply Enhanced Due Diligence for politically exposed persons (PEPs), high-risk customers, and customers from FATF grey/black list countries",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-07",
+      "regulation": "Sanctions",
+      "source": "SBV Directive 01/2017/CT-NHNN",
+      "requirement": "Screen all customers and transactions against UN consolidated list, OFAC SDN list, and SBV domestic watch list",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-08",
+      "regulation": "Prudential/CAR",
+      "source": "Thông tư 22/2019/TT-NHNN, Article 9",
+      "requirement": "Maintain minimum Capital Adequacy Ratio (CAR) of 8% calculated as (Tier 1 + Tier 2 Capital) / Risk-Weighted Assets",
+      "category": "metric"
+    },
+    {
+      "id": "BV-09",
+      "regulation": "Prudential/LCR",
+      "source": "Thông tư 22/2019/TT-NHNN, Article 14",
+      "requirement": "Maintain minimum Liquidity Coverage Ratio (LCR) of 100% — high-quality liquid assets / 30-day net cash outflows",
+      "category": "metric"
+    },
+    {
+      "id": "BV-10",
+      "regulation": "Prudential/Exposure",
+      "source": "Thông tư 22/2019/TT-NHNN, Article 11",
+      "requirement": "Limit single customer credit exposure to maximum 15% of bank's equity capital",
+      "category": "metric"
+    },
+    {
+      "id": "BV-11",
+      "regulation": "Prudential/Related Party",
+      "source": "Thông tư 22/2019/TT-NHNN, Article 11",
+      "requirement": "Limit related party credit exposure to maximum 5% of bank's equity capital",
+      "category": "metric"
+    },
+    {
+      "id": "BV-12",
+      "regulation": "Prudential/MLT Lending",
+      "source": "Thông tư 22/2019/TT-NHNN, Article 12",
+      "requirement": "Limit use of short-term capital sources for medium and long-term lending to maximum 30%",
+      "category": "metric"
+    },
+    {
+      "id": "BV-13",
+      "regulation": "NPL Classification",
+      "source": "Thông tư 11/2021/TT-NHNN, Article 10",
+      "requirement": "Classify loans into 5 groups based on days past due: Group 1 (≤10d), Group 2 (11-90d), Group 3 (91-180d), Group 4 (181-360d), Group 5 (>360d)",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-14",
+      "regulation": "NPL Provisioning",
+      "source": "Thông tư 11/2021/TT-NHNN, Article 12",
+      "requirement": "Apply specific provisioning rates: Group 1 (0%), Group 2 (5%), Group 3 (20%), Group 4 (50%), Group 5 (100%)",
+      "category": "metric"
+    },
+    {
+      "id": "BV-15",
+      "regulation": "Lending",
+      "source": "Thông tư 39/2016/TT-NHNN, Article 7",
+      "requirement": "Conduct credit assessment including borrower capacity, purpose verification, and repayment source analysis before loan approval",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-16",
+      "regulation": "Lending",
+      "source": "Thông tư 39/2016/TT-NHNN, Article 15",
+      "requirement": "Verify and document loan purpose and ensure disbursement matches stated purpose",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-17",
+      "regulation": "Internal Controls",
+      "source": "Thông tư 13/2018/TT-NHNN, Article 4",
+      "requirement": "Implement three lines of defense: operational management, risk/compliance, and internal audit",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-18",
+      "regulation": "eKYC",
+      "source": "Thông tư 16/2020/TT-NHNN, Article 8",
+      "requirement": "Verify customer identity for electronic banking using CCCD chip reading (NFC), biometric facial matching, and liveness detection",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-19",
+      "regulation": "Foreign Ownership",
+      "source": "Nghị định 01/2014/NĐ-CP, Article 7",
+      "requirement": "Enforce foreign ownership limits: individual investor 5%, institutional investor 15%, strategic investor 20%, total foreign ownership 30%",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-20",
+      "regulation": "SBV Reporting",
+      "source": "Luật TCTD 2024, Article 127",
+      "requirement": "Submit daily liquidity reports, monthly balance sheets, quarterly CAR calculations, and annual audited financials to SBV within prescribed deadlines",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-21",
+      "regulation": "CIC Reporting",
+      "source": "SBV CIC Regulations",
+      "requirement": "Report all new credit facilities, modifications, payment status changes, and closures to CIC by 10th of following month",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-22",
+      "regulation": "Data Protection",
+      "source": "Nghị định 13/2023/NĐ-CP (PDPD), Article 9",
+      "requirement": "Protect customer personal data with encryption, access controls, and consent management; limit data sharing to authorized purposes",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-23",
+      "regulation": "Information Security",
+      "source": "Thông tư 18/2018/TT-NHNN, Article 5",
+      "requirement": "Maintain information security management system compliant with ISO 27001 standards and SBV requirements",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-24",
+      "regulation": "AML Record Keeping",
+      "source": "Nghị định 116/2013/NĐ-CP, Article 22",
+      "requirement": "Retain all customer identification records, transaction records, and STR documentation for minimum 5 years after account closure or transaction completion",
+      "category": "regulatory"
+    },
+    {
+      "id": "BV-25",
+      "regulation": "Credit Institutions Law",
+      "source": "Luật TCTD 2024, Article 135",
+      "requirement": "Maintain corporate governance with independent board committees (Risk, Audit, Compensation) and separation between management and oversight functions",
+      "category": "regulatory"
+    }
+  ]
+}

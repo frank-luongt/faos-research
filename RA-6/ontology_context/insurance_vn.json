@@ -1,0 +1,248 @@
+{
+  "industry": "insurance_vn",
+  "role_layer": {
+    "chief_compliance_officer": {
+      "title": "Giám đốc Tuân thủ (Chief Compliance Officer)",
+      "persona": "Regulatory Navigator & Insurance Law Guardian for Vietnamese Insurance",
+      "communication_style": "Precise, regulation-aware, documentation-focused, MoF/ISA compliance-oriented",
+      "kpis": {
+        "mof_isa_inspection_findings": "Zero critical findings from ISA inspections",
+        "product_registration_compliance": "100% products registered per NĐ 46/2023",
+        "aml_str_timeliness": "STR filed within 48 hours per Luật PCRT 2022",
+        "bancassurance_compliance": "100% bancassurance sales with needs analysis form",
+        "solvency_reporting": "Quarterly solvency report filed on time"
+      },
+      "vocabulary": ["Luật KDBH 2022", "NĐ 46/2023", "TT 132/2023", "TT 67/2023", "BHBB", "Biên khả năng thanh toán", "DPNV", "Dự phòng nghiệp vụ", "PCRT", "STR", "KYC", "CDD", "Cục QLGS Bảo hiểm", "Cooling-off 21 ngày", "Bảng minh họa"],
+      "decision_patterns": {
+        "product_registration": {
+          "factors": ["actuarial_certification", "terms_compliance", "illustration_accuracy", "consumer_disclosure"],
+          "outputs": ["mof_filing_dossier", "product_launch_approval", "distribution_readiness"],
+          "escalation_to": "CEO"
+        },
+        "bancassurance_conduct": {
+          "factors": ["needs_analysis_completion", "audio_video_recording", "no_forced_bundling", "cooling_off_communication"],
+          "outputs": ["compliance_clearance", "remediation_action", "training_requirement"],
+          "escalation_to": "CEO"
+        }
+      },
+      "domain_knowledge": {
+        "regulatory_framework": ["Luật_08_2022", "NĐ_46_2023", "NĐ_67_2023", "TT_67_2023", "TT_132_2023", "TT_70_2023", "TT_98_2020"],
+        "compulsory_insurance": ["Motor_TNDS_NĐ67", "Fire_Explosion_TT70", "Professional_Liability"],
+        "consumer_protection": ["cooling_off_21_days", "mandatory_benefit_illustration", "bancassurance_needs_analysis"],
+        "aml_requirements": ["Luật_PCRT_2022", "NĐ_19_2023", "KYC_CDD", "STR_filing", "PEP_screening"]
+      }
+    },
+    "chief_actuary": {
+      "title": "Chuyên gia Định phí trưởng (Chief Actuary)",
+      "persona": "Quantitative Risk Expert & Reserve Specialist for Vietnamese Insurance",
+      "communication_style": "Data-driven, precise, technically rigorous, actuarial-science grounded",
+      "kpis": {
+        "solvency_margin": "Biên khả năng thanh toán ≥ 100% per TT 132/2023",
+        "reserve_adequacy": "DPNV within actuarial range",
+        "pricing_accuracy": "A/E ratios within ±10% tolerance",
+        "product_actuarial_sign_off": "100% products with actuarial certification before MoF filing"
+      },
+      "vocabulary": ["DPNV", "Dự phòng nghiệp vụ", "Dự phòng toán học", "Dự phòng phí chưa được hưởng", "Dự phòng bồi thường", "Dự phòng dao động lớn", "Biên khả năng thanh toán", "Vốn điều lệ", "IBNR", "Phí thuần", "Chain Ladder", "Bornhuetter-Ferguson", "Tỷ lệ bồi thường", "TT 132/2023"],
+      "decision_patterns": {
+        "reserve_estimation": {
+          "factors": ["loss_triangle_development", "claim_frequency_trend", "severity_trend", "catastrophe_exposure"],
+          "outputs": ["dpnv_recommendation", "solvency_impact", "reinsurance_recovery"],
+          "escalation_to": "CFO"
+        },
+        "pricing_adequacy": {
+          "factors": ["loss_experience", "expense_loading", "investment_income", "profit_margin", "competitive_positioning"],
+          "outputs": ["premium_rate_schedule", "actuarial_certification", "mof_filing_support"]
+        }
+      },
+      "domain_knowledge": {
+        "provision_types": {
+          "du_phong_toan_hoc": "Mathematical reserve for life — net premium or prospective method",
+          "du_phong_phi_chua_duoc_huong": "Unearned premium reserve — pro-rata temporis for non-life",
+          "du_phong_boi_thuong": "Outstanding claims reserve — case-by-case + IBNR",
+          "du_phong_dao_dong_lon": "Catastrophe/equalization reserve — as prescribed by MoF"
+        },
+        "solvency": {
+          "minimum_ratio": "≥ 100%",
+          "corrective_action": "< 100% triggers MoF intervention",
+          "enhanced_supervision": "< 80%",
+          "charter_capital_life": "VND 750 billion",
+          "charter_capital_non_life": "VND 400 billion"
+        }
+      }
+    },
+    "chief_claims_officer": {
+      "title": "Giám đốc Bồi thường (Chief Claims Officer)",
+      "persona": "Customer Advocate & Claims Cost Manager for Vietnamese Insurance",
+      "communication_style": "Empathetic, efficient, fair, documentation-focused",
+      "kpis": {
+        "claims_cycle_time": "15 business days standard, 30 days complex",
+        "claims_satisfaction": "Customer satisfaction score > 80%",
+        "fraud_detection_rate": "Fraud identified and prevented",
+        "subrogation_recovery": "Thế quyền recovery rate > 30%"
+      },
+      "vocabulary": ["Giám định", "Bồi thường", "Dự phòng bồi thường", "Thế quyền", "Gian lận", "SIU", "FNOL", "Giám định viên", "Biên bản giám định", "Mức miễn thường", "Từ chối bồi thường", "Thời hiệu khiếu nại"]
+    },
+    "distribution_officer": {
+      "title": "Giám đốc Kênh Phân phối (Chief Distribution Officer)",
+      "persona": "Channel Strategist & Growth Driver for Vietnamese Insurance",
+      "communication_style": "Sales-oriented, relationship-focused, KPI-driven",
+      "kpis": {
+        "new_business_premium": "Phí khai thác mới growth YoY",
+        "agent_productivity": "Premium per active agent",
+        "bancassurance_persistency": "13th-month persistency > 70%",
+        "digital_channel_share": "Online premium share growth"
+      },
+      "vocabulary": ["Đại lý bảo hiểm", "Bancassurance", "Môi giới", "Hoa hồng", "Persistency", "Tỷ lệ duy trì", "APE", "Kênh số", "Nhu cầu khách hàng", "Cooling-off"]
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "solvency_margin": {
+        "definition": "Biên khả năng thanh toán: ratio of available capital to required minimum. Must be ≥ 100%. Below 100% triggers MoF corrective action; below 80% triggers enhanced supervision.",
+        "minimum": "100%",
+        "corrective_threshold": "< 100%",
+        "enhanced_supervision": "< 80%",
+        "regulatory_reference": "TT 132/2023/TT-BTC"
+      },
+      "charter_capital": {
+        "definition": "Vốn điều lệ tối thiểu: minimum registered capital. Life: VND 750 billion (~USD 30M). Non-life: VND 400 billion (~USD 16M). Health standalone: VND 400 billion. Reinsurer: VND 500 billion. Broker: VND 8 billion.",
+        "life": "VND 750 billion",
+        "non_life": "VND 400 billion",
+        "reinsurer": "VND 500 billion",
+        "broker": "VND 8 billion",
+        "regulatory_reference": "NĐ 46/2023/NĐ-CP"
+      },
+      "combined_ratio": {
+        "definition": "Tỷ lệ kết hợp = Tỷ lệ bồi thường (loss ratio) + Tỷ lệ chi phí (expense ratio). Loss ratio = incurred losses / earned premium. Expense ratio = operating expenses / written premium. Target < 100% for underwriting profitability.",
+        "formula": "Loss Ratio + Expense Ratio",
+        "healthy_range": "< 100%",
+        "world_class": "< 90%"
+      },
+      "persistency_rate": {
+        "definition": "Tỷ lệ duy trì hợp đồng: percentage of policies remaining in force. Measured at 13th month and 25th month. Vietnam average ~60-70% at 13th month — lower than mature markets due to bancassurance mis-selling issues.",
+        "13th_month_average": "60-70%",
+        "target": "> 80%",
+        "concern_threshold": "< 60%"
+      },
+      "cooling_off_period": {
+        "definition": "Thời gian xem xét hợp đồng: 21 calendar days from policy delivery for all life insurance policies. Policyholder may cancel with full premium refund minus medical exam costs. Mandatory disclosure required at point of sale.",
+        "duration": "21 calendar days",
+        "applies_to": "All life insurance policies",
+        "regulatory_reference": "Luật 08/2022/QH15"
+      },
+      "technical_provisions": {
+        "definition": "Dự phòng nghiệp vụ (DPNV): reserves insurers must maintain. Includes: dự phòng toán học (mathematical/life), dự phòng phí chưa được hưởng (unearned premium), dự phòng bồi thường (outstanding claims + IBNR), dự phòng dao động lớn (catastrophe). Calculated per TT 132/2023.",
+        "types": ["mathematical_reserve", "unearned_premium_reserve", "outstanding_claims_reserve", "catastrophe_reserve"],
+        "regulatory_reference": "TT 132/2023/TT-BTC"
+      },
+      "compulsory_motor_tnds": {
+        "definition": "BH TNDS bắt buộc chủ xe cơ giới: compulsory motor third-party liability. Covers VND 150M per person per incident bodily injury and VND 100M property damage. Premium fixed by government decree. All registered vehicles must carry.",
+        "bodily_injury_limit": "VND 150,000,000 per person per incident",
+        "property_damage_limit": "VND 100,000,000 per incident",
+        "regulatory_reference": "NĐ 67/2023/NĐ-CP"
+      },
+      "compulsory_fire_explosion": {
+        "definition": "BH cháy nổ bắt buộc: compulsory fire and explosion insurance for facilities on government high-risk list (Danh mục cơ sở nguy hiểm). Premium rate fixed by MoF. Covers fire, explosion, lightning damage.",
+        "regulatory_reference": "NĐ 67/2023, TT 70/2023"
+      }
+    },
+    "regulations": {
+      "luat_kdbh_2022": {
+        "name": "Luật Kinh doanh Bảo hiểm 2022 (Law 08/2022/QH15)",
+        "description": "Primary insurance law — 147 articles, 9 chapters, effective 2023-01-01",
+        "key_provisions": {
+          "risk_based_supervision": "Transition from rule-based to risk-based oversight",
+          "microinsurance": "Chapter VII — first formal legal framework",
+          "digital_insurance": "Articles 97-98 — e-contracts legally valid",
+          "consumer_protection": "21-day cooling-off, mandatory disclosure",
+          "governance": "Enhanced corporate governance requirements"
+        }
+      },
+      "nd46_2023": {
+        "name": "NĐ 46/2023/NĐ-CP — Implementing Decree",
+        "key_areas": ["licensing", "capital_requirements", "solvency", "investment_limits", "distribution_rules", "product_approval", "microinsurance_arts_86_95"]
+      },
+      "nd67_2023": {
+        "name": "NĐ 67/2023/NĐ-CP — Compulsory Insurance",
+        "types": ["motor_TNDS", "fire_explosion", "professional_liability_brokers_notaries_construction"]
+      },
+      "tt132_2023": {
+        "name": "TT 132/2023/TT-BTC — Financial Regime",
+        "key_areas": ["financial_reporting", "valuation", "solvency_calculation", "DPNV_methodology", "investment_rules"]
+      },
+      "tt67_2023": {
+        "name": "TT 67/2023/TT-BTC — Insurance Business Guidance",
+        "key_areas": ["product_filing_procedures", "actuarial_requirements", "reporting_templates"]
+      },
+      "luat_pcrt_2022": {
+        "name": "Luật PCRT 2022 (Law 14/2022/QH15) — Anti-Money Laundering",
+        "requirements": ["KYC_CDD", "Enhanced_Due_Diligence_PEP", "STR_filing_48h", "record_keeping_5_years", "sanctions_screening"]
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "bancassurance_to_underwriting": {
+        "trigger": "Bancassurance referral with completed needs analysis form",
+        "from": "Bank Insurance Specialist",
+        "to": "Underwriter",
+        "required_context": ["needs_analysis_form", "CCCD_verification", "product_illustration_signed", "audio_video_recording", "no_forced_bundling_confirmation"],
+        "sla": {"application_processing": "48 hours"},
+        "regulatory_reference": "Luật 08/2022, TT 67/2023"
+      },
+      "underwriting_to_reinsurance": {
+        "trigger": "Risk exceeds retention capacity",
+        "from": "Senior Underwriter",
+        "to": "Reinsurance Manager",
+        "required_context": ["risk_details", "retention_limit", "cession_requirement"],
+        "sla": {"placement": "5 business days"}
+      },
+      "fnol_to_claims_adjustment": {
+        "trigger": "Loss notification received",
+        "from": "Customer Service",
+        "to": "Claims Adjuster / Giám định viên",
+        "required_context": ["loss_details", "policy_verification", "initial_reserve", "fraud_screening"],
+        "sla": {"assignment": "24 hours standard, 4 hours catastrophe"}
+      },
+      "claims_to_reinsurance_recovery": {
+        "trigger": "Claim exceeds retention threshold",
+        "from": "Claims Manager",
+        "to": "Reinsurance Recovery",
+        "required_context": ["claim_details", "reserve_amount", "treaty_terms"],
+        "sla": {"notification": "48 hours of large loss"}
+      },
+      "product_to_mof_registration": {
+        "trigger": "New product ready for market",
+        "from": "Compliance Officer",
+        "to": "MoF/ISA (external)",
+        "required_context": ["actuarial_certification", "policy_terms", "premium_schedule", "benefit_illustration", "consumer_disclosure"],
+        "sla": {"mof_review": "30-60 days"}
+      }
+    },
+    "escalation_matrix": {
+      "claims_settlement": {
+        "L1_adjuster": "< VND 200M",
+        "L2_supervisor": "VND 200M - 1B",
+        "L3_manager": "VND 1B - 5B",
+        "L4_director": "VND 5B - 20B",
+        "L5_c_suite": "> VND 20B"
+      },
+      "underwriting_authority": {
+        "L1_underwriter": "Standard risk, within appetite",
+        "L2_senior_uw": "Complex risk, substandard",
+        "L3_manager": "Large risk, unusual exposure",
+        "L4_cuo": "Exceeds appetite, requires exception"
+      }
+    }
+  },
+  "rag_chunks": [
+    "Vietnam insurance is regulated by Cục Quản lý, Giám sát Bảo hiểm (ISA) under Bộ Tài chính (MoF). Primary law: Luật KDBH 2022 (Law 08/2022/QH15), 147 articles, effective 2023-01-01. Key implementing: NĐ 46/2023 (general), NĐ 67/2023 (compulsory insurance), TT 67/2023 (guidance), TT 132/2023 (financial regime). Transitioning to risk-based supervision.",
+    "Solvency requirements per TT 132/2023: Biên khả năng thanh toán (solvency margin) ≥ 100%. Charter capital: life VND 750B, non-life VND 400B, reinsurer VND 500B, broker VND 8B. DPNV includes: dự phòng toán học (mathematical), phí chưa được hưởng (unearned premium), bồi thường (claims), dao động lớn (catastrophe). Below 100% → corrective action; below 80% → enhanced supervision.",
+    "Compulsory insurance (BHBB) per NĐ 67/2023: (1) Motor TNDS — all vehicles, VND 150M/person bodily injury, VND 100M property per incident; (2) Fire/explosion — high-risk facilities per TT 70/2023; (3) Professional liability — brokers, notaries, construction consultants. Government-fixed premiums for compulsory lines.",
+    "Bancassurance generates 70%+ of life new business. Post-2022 mis-selling crisis, regulations require: mandatory needs analysis form, no forced bundling with loans, 21-day cooling-off for all life policies, audio/video recording of sales, separation from banking counter. Major deals: Vietcombank-FWD, VietinBank-Manulife, VPBank-AIA, BIDV-MetLife, MB-Ageas.",
+    "Vietnam life insurance products: Bảo hiểm hỗn hợp (endowment — most popular), Bảo hiểm liên kết đầu tư (unit-linked — under scrutiny), Bảo hiểm giáo dục (education endowment — very popular), Bảo hiểm hưu trí (retirement — tax deductible up to VND 3M/month), Bảo hiểm tử kỳ (term life). 13th-month persistency averages 60-70%.",
+    "Non-life key lines: Motor (~25-30% of premium), Health (fastest growing 15-20%), Property/fire, Marine/cargo, Engineering/construction, Agricultural (government-subsidized 60-90% under QĐ 13/2022). Combined ratio = loss ratio + expense ratio; target < 100%. Top carriers: Bảo Việt, PVI, Bảo Minh.",
+    "Insurance AML per Luật PCRT 2022 and NĐ 19/2023: KYC/CDD for all policyholders, EDD for PEPs and large single premiums, STR to Cục PCRT within 48 hours, 5-year record retention. Life insurance higher AML risk due to cash surrender values. Data protection per NĐ 13/2023 requires consent, DPIA, data residency.",
+    "Claims process: FNOL → Coverage verification → Giám định (survey/adjustment) → Reserve setting → Settlement → Subrogation (thế quyền). SLA: 15 days standard, 30 days complex. Claims authority: adjuster <VND 200M, supervisor 200M-1B, manager 1B-5B, director 5B-20B, C-suite >20B. Fraud detection via SIU (Đơn vị Điều tra Gian lận)."
+  ]
+}

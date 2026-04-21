@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite both the repository and the relevant paper(s)."
+title: "FAOS Research: Code, Data, and Ontologies for Ontology-Powered Enterprise Agent Verification"
+authors:
+  - family-names: Luong
+    given-names: Thanh Tuan
+    affiliation: Golden Gate University
+    orcid: "https://orcid.org/0009-0000-1199-837X"
+  - family-names: Sanyal
+    given-names: Abhijit
+    affiliation: "Novartis Healthcare Pvt. Ltd."
+version: "0.1.0"
+date-released: "2026-04-21"
+url: "https://github.com/frank-luongt/faos-research"
+license: MIT
+keywords:
+  - enterprise AI
+  - agent verification
+  - ontology
+  - LLM evaluation
+  - regulatory compliance
+  - trust certification
+  - neurosymbolic AI
+preferred-citation:
+  type: software
+  title: "FAOS Research: Code, Data, and Ontologies for Ontology-Powered Enterprise Agent Verification"
+  authors:
+    - family-names: Luong
+      given-names: Thanh Tuan
+    - family-names: Sanyal
+      given-names: Abhijit
+  year: 2026
+  url: "https://github.com/frank-luongt/faos-research"
+references:
+  - type: article
+    title: "Neurosymbolic Grounding for Enterprise AI Agents: A Controlled Study of Ontology-Driven vs RAG-Augmented vs Baseline Conditions"
+    authors:
+      - family-names: Luong
+        given-names: Thanh Tuan
+      - family-names: Sanyal
+        given-names: Abhijit
+    year: 2026
+    notes: "RA-3 paper; arXiv ID pending"
+  - type: article
+    title: "Toward Verifiable Enterprise AI Agents: Ontology-Powered Simulation and Formal Trust Certification"
+    authors:
+      - family-names: Luong
+        given-names: Thanh Tuan
+      - family-names: Sanyal
+        given-names: Abhijit
+    year: 2026
+    notes: "RA-6 paper; submitted to MDPI AI Journal"

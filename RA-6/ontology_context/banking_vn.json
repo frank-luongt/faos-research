@@ -1,0 +1,213 @@
+{
+  "industry": "banking_vn",
+  "role_layer": {
+    "compliance_officer": {
+      "title": "Giám đốc Tuân thủ (Chief Compliance Officer)",
+      "persona": "Vietnamese Banking Regulatory Navigator & AML/CFT Gatekeeper",
+      "communication_style": "Precise, regulatory-aware, documentation-focused, SBV compliance-oriented",
+      "kpis": {
+        "sbv_inspection_findings": "Zero critical findings from SBV inspections",
+        "str_filing_timeliness": "STR filed within 48 hours of confirmation",
+        "training_completion": "> 95% staff AML/CFT training completion",
+        "regulatory_mapping": "100% of SBV circulars mapped to internal policies",
+        "incident_response_time": "< 24 hours for critical compliance incidents"
+      },
+      "vocabulary": ["Thông tư", "Nghị định", "Luật TCTD", "PCRT", "STR", "CTR", "CDD", "EDD", "PEP", "Kiểm soát nội bộ", "Ba tuyến phòng thủ", "AMLD", "Sanctions screening", "CCCD", "Sổ đỏ"],
+      "decision_patterns": {
+        "aml_cft_screening": {
+          "factors": ["transaction_amount_vs_VND400M_threshold", "customer_profile", "destination_country", "transaction_frequency", "documentation_quality", "PEP_status"],
+          "outputs": ["risk_assessment", "str_recommendation", "account_action", "enhanced_monitoring_level"],
+          "escalation_to": "CEO"
+        },
+        "regulatory_change_management": {
+          "factors": ["new_circular_scope", "implementation_deadline", "gap_analysis_results", "resource_requirements"],
+          "outputs": ["implementation_plan", "training_schedule", "policy_updates"]
+        }
+      },
+      "domain_knowledge": {
+        "red_flags": ["structuring_to_avoid_VND400M", "rapid_cross_border_movement", "shell_company_indicators", "inconsistent_source_of_funds", "high_risk_jurisdiction", "PEP_related"],
+        "regulations": ["Luật_PCRT_2022", "NĐ116_2013", "TT13_2018", "TT22_2019", "TT39_2016", "TT16_2020"]
+      }
+    },
+    "chief_risk_officer": {
+      "title": "Giám đốc Quản lý Rủi ro (Chief Risk Officer)",
+      "persona": "Enterprise Risk Guardian & Basel III Architect for Vietnamese Banking",
+      "communication_style": "Analytical, data-driven, risk-calibrated, Basel III-aware",
+      "kpis": {
+        "npl_ratio": "< 3% per TT11",
+        "provision_coverage": "> 100% of NPL",
+        "var_compliance": "VaR within approved limits",
+        "model_accuracy": "Internal rating Gini > 0.40"
+      },
+      "vocabulary": ["Rủi ro tín dụng", "VaR", "PD", "LGD", "EAD", "ICAAP", "Stress Test", "Basel III", "Thông tư 11", "Khẩu vị rủi ro", "RWA", "Nợ xấu"],
+      "decision_patterns": {
+        "npl_classification": {
+          "factors": ["days_past_due", "restructuring_history", "collateral_value", "borrower_financial_condition"],
+          "outputs": ["classification_group_1_to_5", "provision_amount", "recovery_plan"],
+          "escalation_to": "Board Risk Committee"
+        },
+        "credit_risk_assessment": {
+          "factors": ["PD", "LGD", "EAD", "collateral_coverage", "industry_risk", "concentration_risk"],
+          "outputs": ["risk_rating", "credit_limit", "pricing_premium", "monitoring_frequency"]
+        }
+      },
+      "domain_knowledge": {
+        "npl_groups": {
+          "group_1": "≤10 days, 0%",
+          "group_2": "11-90 days, 5%",
+          "group_3": "91-180 days, 20%",
+          "group_4": "181-360 days, 50%",
+          "group_5": ">360 days, 100%"
+        },
+        "regulations": ["TT11_2021", "TT22_2019", "Basel_III"]
+      }
+    },
+    "chief_financial_officer": {
+      "title": "Giám đốc Tài chính (Chief Financial Officer)",
+      "vocabulary": ["ALCO", "CAR", "LCR", "NSFR", "NIM", "ROE", "ROA", "CIR", "Vốn cấp 1", "Trích lập dự phòng", "IFRS 9", "Thông tư 22"],
+      "kpis": {
+        "car": "CAR ≥ 8% per TT22",
+        "lcr": "LCR ≥ 100%",
+        "nim": "NIM 3-5%",
+        "cir": "CIR < 50%",
+        "roe": "ROE > 15%"
+      }
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "npl_ratio": {
+        "definition": "Ratio of non-performing loans (Groups 3-5 per TT11) to total outstanding loans",
+        "healthy_range": "< 3%",
+        "world_class": "< 1.5%",
+        "regulatory_reference": "SBV Circular 11/2021"
+      },
+      "car": {
+        "definition": "Capital Adequacy Ratio: (Tier 1 + Tier 2) / RWA; minimum 8%",
+        "healthy_range": "≥ 10%",
+        "minimum": "8%",
+        "formula": "(Tier 1 Capital + Tier 2 Capital) / Risk-Weighted Assets",
+        "regulatory_reference": "SBV Circular 22/2019"
+      },
+      "lcr": {
+        "definition": "Liquidity Coverage Ratio: HQLA / 30-day net outflows; minimum 100%",
+        "minimum": "100%",
+        "healthy_range": "> 120%",
+        "regulatory_reference": "SBV Circular 22/2019"
+      },
+      "nim": {
+        "definition": "Net Interest Margin: net interest income / average earning assets",
+        "healthy_range": "3-5%",
+        "related": ["Cost of Funds", "Lending Rate"]
+      },
+      "cir": {
+        "definition": "Cost-to-Income Ratio: operating expenses / operating income",
+        "healthy_range": "< 50%",
+        "world_class": "< 40%"
+      },
+      "str_threshold": {
+        "definition": "Cash threshold VND 400M; Electronic threshold VND 500M",
+        "cash_threshold": "VND 400,000,000",
+        "electronic_threshold": "VND 500,000,000",
+        "regulatory_reference": "Nghị định 116/2013"
+      },
+      "single_customer_exposure": {
+        "definition": "Maximum lending to single customer: 15% of equity",
+        "limit": "15% of equity",
+        "related_party_limit": "5% of equity",
+        "regulatory_reference": "SBV Circular 22/2019"
+      },
+      "cic_score": {
+        "definition": "CIC credit score 300-900; factors: payment history 35%, utilization 30%, length 15%, mix 10%, new 10%",
+        "score_range": "300-900"
+      }
+    },
+    "regulations": {
+      "tt11_npl": {
+        "name": "Thông tư 11/2021 — NPL Classification",
+        "groups": {
+          "1": "Current, ≤10d, 0%",
+          "2": "Special Mention, 11-90d, 5%",
+          "3": "Substandard, 91-180d, 20%",
+          "4": "Doubtful, 181-360d, 50%",
+          "5": "Loss, >360d, 100%"
+        }
+      },
+      "tt22_prudential": {
+        "name": "Thông tư 22/2019 — Prudential Ratios",
+        "car": "≥ 8%",
+        "single_exposure": "≤ 15% equity",
+        "related_party": "≤ 5% equity",
+        "short_term_mlt": "≤ 30%",
+        "lcr": "≥ 100%"
+      },
+      "nd116_aml": {
+        "name": "Nghị định 116/2013 — AML/CFT",
+        "ctr_threshold": "VND 400M cash",
+        "str_filing": "48 hours",
+        "kyc": ["CIP", "CDD", "EDD", "Beneficial Ownership"],
+        "record_retention": "5 years"
+      },
+      "tt39_lending": {
+        "name": "Thông tư 39/2016 — Lending",
+        "requirements": ["credit_assessment", "purpose_verification", "collateral_documentation", "post_disbursement_monitoring"]
+      },
+      "tt16_ebanking": {
+        "name": "Thông tư 16/2020 — eKYC",
+        "methods": ["CCCD_chip_NFC", "facial_biometric", "liveness", "OTP"],
+        "tiers": ["Tier 1 basic", "Tier 2 standard", "Tier 3 full"]
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "ekyc_to_account": {
+        "trigger": "eKYC verification successful",
+        "from": "Digital Onboarding",
+        "to": "Account Operations",
+        "required_context": ["CCCD", "facial_match", "liveness", "AML_screen"],
+        "sla": {"account_creation": "5 minutes"}
+      },
+      "loan_to_credit": {
+        "trigger": "Loan application submitted",
+        "from": "Relationship Manager",
+        "to": "Credit Officer",
+        "required_context": ["CCCD", "income_docs", "CIC_report", "collateral"],
+        "sla": {"retail": "3-5 days", "corporate": "10-20 days"}
+      },
+      "aml_alert_to_compliance": {
+        "trigger": "Transaction ≥ VND 400M or suspicious pattern",
+        "from": "AML Analyst",
+        "to": "Compliance Officer",
+        "sla": {"alert_review": "24 hours", "str_filing": "48 hours"}
+      },
+      "npl_to_recovery": {
+        "trigger": "Loan classified Group 3+",
+        "from": "Risk Management",
+        "to": "Recovery & Legal",
+        "sla": {"classification": "5 days", "recovery_plan": "15 days"}
+      }
+    },
+    "escalation_matrix": {
+      "credit": {
+        "L1_officer": "< VND 500M",
+        "L2_manager": "500M-2B",
+        "L3_branch": "2B-10B",
+        "L4_division": "10B-50B",
+        "L5_csuite": "50B-200B",
+        "L6_committee": "> 200B",
+        "L7_board": "> 15% equity"
+      }
+    }
+  },
+  "rag_chunks": [
+    "NPL classification in Vietnam per TT11/2021: Group 1 (current, ≤10d, 0%), Group 2 (special mention, 11-90d, 5%), Group 3 (substandard, 91-180d, 20%), Group 4 (doubtful, 181-360d, 50%), Group 5 (loss, >360d, 100%). NPL ratio target <3%.",
+    "SBV Circular 22/2019 prudential ratios: CAR ≥8%, single customer ≤15% equity, related party ≤5% equity, short-term for MLT ≤30%, LCR ≥100%.",
+    "Vietnamese AML/CFT per NĐ116/2013 and PCRT Law 2022: cash CTR threshold VND 400M, electronic VND 500M. STR within 48 hours. CDD required; EDD for PEPs and high-risk. Sanctions: UN, OFAC, SBV domestic list.",
+    "Credit process per TT39/2016: RM application → CIC check → credit analysis (DTI, LTV) → collateral valuation → approval (officer <500M, manager 500M-2B, branch 2B-10B, division 10B-50B, C-suite 50B-200B, committee >200B VND) → legal → disbursement.",
+    "eKYC per TT16/2020: CCCD chip NFC reading, facial recognition >95%, liveness detection, OTP. Three tiers: basic, standard (video), full (advanced/branch). VietQR, Napas 24/7.",
+    "Compliance officer (Giám đốc Tuân thủ) manages: SBV inspections, AML/CFT program, three lines of defense (TT13/2018), regulatory change tracking. Key circulars: TT13, TT22, TT39, TT16, NĐ116.",
+    "CIC (Vietnam Credit Information Center) scores 300-900: payment history 35%, utilization 30%, length 15%, mix 10%, new credit 10%. Must query before lending. Group 5 disqualifies new credit.",
+    "Banking handoffs: eKYC→Account (5min). Loan→CIC→Credit→Legal→Disbursement. AML Alert→Investigation (24h)→STR (48h to AMLD). NPL→Classification (5d)→Recovery (15d)."
+  ]
+}

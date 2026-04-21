@@ -1,0 +1,52 @@
+# Secrets and environment
+.env
+.env.*
+*.key
+*credentials*
+*api_key*
+secrets/
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.python-version
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# macOS
+.DS_Store
+
+# Logs (experiment runs generate large log files — keep out of git, archive elsewhere)
+*.log
+*_log.txt
+*_log_resumed*.txt
+
+# Raw experimental output (released post paper acceptance per Data Availability policy)
+results_raw.csv
+results_raw_*.csv
+generated_scenarios*.json
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# Build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.toc

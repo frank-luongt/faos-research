@@ -1,0 +1,168 @@
+{
+  "industry": "healthcare",
+  "role_layer": {
+    "chief_medical_officer": {
+      "title": "Chief Medical Officer",
+      "persona": "Clinical Quality & Safety Leader",
+      "communication_style": "Evidence-based, compassionate, strategic",
+      "kpis": {
+        "quality_metrics": "Core measures performance",
+        "patient_safety": "PSI, HAI rates",
+        "patient_experience": "HCAHPS scores",
+        "clinical_outcomes": "Mortality, readmission",
+        "physician_engagement": "Medical staff satisfaction"
+      },
+      "vocabulary": ["Evidence-Based", "Quality Improvement", "Patient Safety", "Clinical Outcomes", "Medical Necessity"],
+      "decision_patterns": {
+        "clinical_policy": {
+          "factors": ["clinical_evidence", "regulatory_requirements", "resource_availability", "patient_impact"]
+        },
+        "quality_improvement": {
+          "framework": "PDSA cycles",
+          "considerations": ["outcome_data", "best_practices", "feasibility"]
+        }
+      },
+      "domain_knowledge": {
+        "clinical": ["quality_measures", "patient_safety", "evidence_based_medicine"],
+        "regulatory": ["CMS_CoP", "Joint_Commission", "state_regulations"]
+      }
+    },
+    "chief_nursing_officer": {
+      "title": "Chief Nursing Officer",
+      "persona": "Nursing Excellence & Workforce Leader",
+      "communication_style": "Caring, operational, staff-focused",
+      "kpis": {
+        "nursing_quality": "NDNQI measures",
+        "staffing": "NHPPD, agency utilization",
+        "retention": "RN turnover rate",
+        "patient_satisfaction": "Nursing HCAHPS",
+        "safety": "Falls, pressure injuries"
+      },
+      "vocabulary": ["NHPPD", "Skill Mix", "Nurse Sensitive Indicators", "Evidence-Based Practice", "Magnet", "NDNQI"],
+      "domain_knowledge": {
+        "operations": ["staffing_models", "acuity_systems", "scheduling"],
+        "quality": ["NDNQI", "nursing_sensitive_indicators", "fall_prevention"],
+        "workforce": ["recruitment", "retention", "professional_development"]
+      }
+    },
+    "chief_compliance_officer": {
+      "title": "Chief Compliance Officer",
+      "vocabulary": ["HIPAA", "Stark", "Anti-Kickback", "False Claims", "OIG Guidance"],
+      "kpis": {
+        "compliance_incidents": "Zero material violations",
+        "training_completion": ">95%"
+      }
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "case_mix_index": {
+        "definition": "Weighted average of DRG (Diagnosis Related Group) weights; measures patient acuity and complexity",
+        "impact": "Directly affects DRG-based reimbursement rates",
+        "related": ["DRG", "Reimbursement", "Patient Acuity"]
+      },
+      "hcahps": {
+        "definition": "Hospital Consumer Assessment of Healthcare Providers and Systems; standardized patient satisfaction survey",
+        "impact": "Publicly reported; impacts reimbursement via Value-Based Purchasing (VBP) program",
+        "related": ["VBP", "Patient Experience", "Hospital Compare"]
+      },
+      "medical_necessity": {
+        "definition": "Clinical justification that a service is required for diagnosis or treatment",
+        "impact": "Core requirement for claim reimbursement; failure to demonstrate is top denial reason",
+        "related": ["Prior Authorization", "Utilization Review"]
+      },
+      "readmission_rate": {
+        "definition": "30-day all-cause readmission rate",
+        "healthy_range": "< 15%",
+        "penalty_program": "CMS Hospital Readmissions Reduction Program (HRRP)"
+      },
+      "hai_rate": {
+        "definition": "Hospital-Acquired Infection rate",
+        "healthy_range": "< 1.5%",
+        "penalty_program": "CMS HAC Reduction Program"
+      },
+      "operating_margin": {
+        "definition": "Revenue minus expenses divided by revenue",
+        "healthy_range": "2-5%"
+      },
+      "bed_occupancy": {
+        "definition": "Percentage of available beds occupied",
+        "world_class": "> 85%"
+      },
+      "ed_throughput": {
+        "definition": "Door-to-disposition time in Emergency Department",
+        "world_class": "< 3 hours"
+      },
+      "nhppd": {
+        "definition": "Nursing Hours Per Patient Day; primary staffing metric",
+        "related": ["Skill Mix", "Acuity", "Staffing Model"]
+      }
+    },
+    "regulations": {
+      "hipaa": {
+        "privacy_rule": {
+          "patient_rights": "Access to records within 30 days (one 30-day extension)",
+          "minimum_necessary": "Limit disclosures to what is needed; does NOT apply to patient access requests",
+          "fee": "Reasonable, cost-based fee only",
+          "format": "Must provide in requested format if readily producible"
+        },
+        "breach_notification": "Notify affected individuals, HHS, and media (if >500 affected) within 60 days"
+      },
+      "emtala": {
+        "name": "Emergency Medical Treatment and Labor Act",
+        "requirements": [
+          "Medical Screening Examination (MSE) for ALL emergency presentations",
+          "Cannot require proof of insurance before MSE",
+          "Must stabilize before transfer",
+          "On-call physician coverage required"
+        ],
+        "penalties": "Civil Monetary Penalties (CMPs), Medicare exclusion"
+      },
+      "cms_conditions_of_participation": ["patient_rights", "quality_assessment", "medical_staff", "nursing_services", "infection_control", "discharge_planning"]
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "admission_gate": {
+        "transition": "Access → Inpatient Care",
+        "owner": "admitting_physician",
+        "sla": "2 hours from ED disposition decision",
+        "criteria": ["medical_necessity_documented", "insurance_authorization_obtained", "bed_assignment_confirmed"]
+      },
+      "discharge_readiness_gate": {
+        "transition": "Inpatient Care → Discharge",
+        "owner": "case_management_agent",
+        "sla": "4 hours from clinical readiness",
+        "criteria": ["discharge_criteria_met", "medications_reconciled", "patient_education_complete", "follow_up_scheduled", "post_acute_arranged"],
+        "escalation": "nurse_director → CNO"
+      },
+      "denial_management_gate": {
+        "transition": "Denial → Appeal Submission",
+        "owner": "denial_management_agent",
+        "criteria": ["denial_reason_analyzed", "appeal_strategy_determined", "supporting_documentation_gathered", "appeal_deadline_verified"],
+        "sla": "Appeal submitted within 50% of deadline",
+        "escalation": "revenue_cycle_director → CFO"
+      }
+    },
+    "escalation_matrix": {
+      "clinical": {
+        "patient_safety_event": "L3_management",
+        "sentinel_event": "L4_executive"
+      },
+      "revenue_cycle": {
+        "significant_denial": "L3_management"
+      }
+    }
+  },
+  "rag_chunks": [
+    "Case Mix Index (CMI) is the weighted average of DRG weights assigned to a hospital's patients. It measures patient acuity and complexity. Higher CMI means more complex patients and directly impacts DRG-based reimbursement rates from Medicare.",
+    "HCAHPS (Hospital Consumer Assessment of Healthcare Providers and Systems) is a standardized patient satisfaction survey. Results are publicly reported on Hospital Compare. HCAHPS scores impact hospital reimbursement through the Value-Based Purchasing (VBP) program — higher scores earn bonuses, lower scores result in penalties.",
+    "Medical necessity is the clinical justification that a service is required for diagnosis or treatment. It is a core requirement for claim reimbursement. Failure to demonstrate medical necessity is one of the most common reasons for claim denial from insurance payers.",
+    "Hospital quality metrics: 30-day readmission rate healthy threshold is <15% (CMS HRRP penalty). HAI rate healthy is <1.5% (CMS HAC penalty). Operating margin healthy range is 2-5%. Bed occupancy world-class target >85%. ED throughput world-class <3 hours door-to-disposition.",
+    "HIPAA Privacy Rule: patients have right of access to medical records within 30 days (one extension). Cost-based fee only. Must provide in requested format. Minimum necessary standard does NOT apply to patient access requests. EMTALA requires MSE for all ED presentations regardless of insurance.",
+    "EMTALA: Emergency Medical Treatment and Labor Act. Requires Medical Screening Examination for ALL emergency presentations regardless of insurance status. Must stabilize before transfer. Cannot require proof of insurance before MSE. Violations carry CMPs and Medicare exclusion risk.",
+    "CMO role: Clinical Quality & Safety Leader. Decision factors: clinical_evidence, regulatory_requirements, resource_availability, patient_impact. Framework: PDSA cycles. KPIs: quality_metrics, patient_safety (PSI, HAI), patient_experience (HCAHPS), clinical_outcomes (mortality, readmission). Vocabulary: Evidence-Based, Quality Improvement.",
+    "CNO role: Nursing Excellence & Workforce Leader. KPIs: nursing_quality (NDNQI), staffing (NHPPD, agency utilization), retention (RN turnover), patient_satisfaction (Nursing HCAHPS), safety (falls, pressure injuries). Vocabulary: NHPPD, Skill Mix, Nurse Sensitive Indicators, Magnet.",
+    "Healthcare discharge handoff: Discharge Readiness Gate owned by case management (SLA: 4h from clinical readiness). If payer denies post-acute authorization → Denial Management Gate (appeal within 50% of deadline). If medical necessity denial → peer-to-peer with payer medical director. If clinical deterioration → discharge delayed, escalate nurse_director → CNO."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "industry": "insurance_vn",
+  "source_note": "Curated from primary Vietnamese regulatory sources: Luật KDBH 2022, NĐ 46/2023, NĐ 67/2023, TT 132/2023, TT 67/2023, TT 70/2023, Luật PCRT 2022, NĐ 13/2023. NOT derived from FAOS ontology blueprints (E1 anti-circularity).",
+  "requirements": [
+    {
+      "id": "IV-01",
+      "regulation": "Solvency",
+      "source": "TT 132/2023/TT-BTC, Articles 4-8",
+      "requirement": "Maintain solvency margin ratio (Biên khả năng thanh toán) at or above 100% at all times; below 100% triggers MoF corrective action, below 80% triggers enhanced supervision",
+      "category": "metric"
+    },
+    {
+      "id": "IV-02",
+      "regulation": "Capital Adequacy",
+      "source": "NĐ 46/2023/NĐ-CP, Article 10",
+      "requirement": "Maintain minimum charter capital (Vốn điều lệ): VND 750 billion for life insurance, VND 400 billion for non-life insurance, VND 500 billion for reinsurance, VND 8 billion for brokers",
+      "category": "metric"
+    },
+    {
+      "id": "IV-03",
+      "regulation": "Technical Provisions",
+      "source": "TT 132/2023/TT-BTC, Articles 10-18",
+      "requirement": "Calculate and maintain technical provisions (DPNV) per prescribed methodology: mathematical reserve (life), unearned premium reserve (non-life), outstanding claims reserve (case + IBNR), catastrophe/equalization reserve",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-04",
+      "regulation": "Investment Limits",
+      "source": "NĐ 46/2023/NĐ-CP, Articles 60-65",
+      "requirement": "Invest insurance funds according to MoF-prescribed asset allocation limits including minimum government bond holdings and maximum equity and real estate exposure",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-05",
+      "regulation": "Product Registration",
+      "source": "NĐ 46/2023/NĐ-CP, Articles 30-35",
+      "requirement": "Register all insurance products with MoF/ISA before market launch, including actuarial certification, policy terms, premium schedules, and benefit illustrations",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-06",
+      "regulation": "Consumer Protection / Cooling-off",
+      "source": "Luật 08/2022/QH15, Article 26",
+      "requirement": "Provide a 21-calendar-day cooling-off period (thời gian xem xét hợp đồng) for all life insurance policies from date of policy delivery, with full premium refund minus medical exam costs",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-07",
+      "regulation": "Consumer Protection / Disclosure",
+      "source": "Luật 08/2022/QH15, Article 22; TT 67/2023, Articles 8-12",
+      "requirement": "Provide mandatory benefit illustration (bảng minh họa quyền lợi) to customers before sale of any life insurance product, in plain language with clear explanation of risks",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-08",
+      "regulation": "Bancassurance Conduct",
+      "source": "Luật 08/2022/QH15, Article 89; MoF/SBV joint directives",
+      "requirement": "Complete mandatory written needs analysis form for all bancassurance sales documenting the customer's actual insurance needs",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-09",
+      "regulation": "Bancassurance Conduct",
+      "source": "Luật 08/2022/QH15, Article 89; SBV banking regulations",
+      "requirement": "Prohibit forced bundling of insurance with banking products — customers must confirm voluntary purchase separate from loan or deposit transactions",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-10",
+      "regulation": "Bancassurance Conduct",
+      "source": "MoF/SBV joint directive 2023",
+      "requirement": "Encourage or require audio/video recording of bancassurance sales conversations and separate insurance sales from banking counter services",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-11",
+      "regulation": "Compulsory Motor Insurance",
+      "source": "NĐ 67/2023/NĐ-CP, Chapter II; TT 14/2024/TT-BTC",
+      "requirement": "Issue compulsory motor third-party liability insurance (BH TNDS) for all registered vehicles with government-fixed premiums covering VND 150M per person bodily injury and VND 100M property damage per incident",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-12",
+      "regulation": "Compulsory Fire Insurance",
+      "source": "NĐ 67/2023/NĐ-CP, Chapter III; TT 70/2023/TT-BTC",
+      "requirement": "Issue compulsory fire and explosion insurance for all facilities on the government-designated high-risk list (Danh mục cơ sở nguy hiểm) with MoF-prescribed premium rates",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-13",
+      "regulation": "Compulsory Professional Liability",
+      "source": "NĐ 67/2023/NĐ-CP, Chapter IV",
+      "requirement": "Require compulsory professional liability insurance for insurance brokers, notaries, and construction consultants as mandated by decree",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-14",
+      "regulation": "Agent Licensing",
+      "source": "TT 98/2020/TT-BTC; NĐ 46/2023, Articles 70-80",
+      "requirement": "Ensure all insurance agents complete required training (minimum 48 hours for life, 24 hours for non-life) and pass MoF-approved examination before selling",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-15",
+      "regulation": "AML/CFT",
+      "source": "Luật PCRT 2022 (Law 14/2022/QH15), Article 25; NĐ 19/2023",
+      "requirement": "File Suspicious Transaction Reports (STR) with Cục Phòng chống Rửa tiền within 48 hours when transactions suggest money laundering or terrorist financing",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-16",
+      "regulation": "AML/KYC",
+      "source": "Luật PCRT 2022, Articles 12-18; NĐ 19/2023",
+      "requirement": "Conduct Customer Due Diligence (KYC/CDD) for all policyholders; apply Enhanced Due Diligence (EDD) for PEPs, high-risk customers, and large single-premium policies",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-17",
+      "regulation": "AML/Record Keeping",
+      "source": "Luật PCRT 2022, Article 30",
+      "requirement": "Retain all customer identification records, transaction records, and STR documentation for minimum 5 years after contract termination",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-18",
+      "regulation": "Data Protection",
+      "source": "NĐ 13/2023/NĐ-CP (PDPD), Articles 9-15",
+      "requirement": "Obtain explicit consent for processing health and financial personal data, conduct Data Protection Impact Assessments (DPIA) for large-scale processing, and comply with data residency requirements",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-19",
+      "regulation": "Claims Handling",
+      "source": "Luật 08/2022/QH15, Articles 42-50",
+      "requirement": "Settle insurance claims within the timeframe specified in the policy contract; provide written reasons for any claim denial within prescribed period",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-20",
+      "regulation": "Combined Ratio",
+      "source": "Insurance industry standard; ISA monitoring",
+      "requirement": "Monitor combined ratio (loss ratio + expense ratio) as key underwriting profitability metric; target below 100% for non-life lines",
+      "category": "metric"
+    },
+    {
+      "id": "IV-21",
+      "regulation": "Persistency",
+      "source": "MoF guidance; Luật 08/2022 consumer protection provisions",
+      "requirement": "Monitor and report 13th-month and 25th-month persistency rates for life insurance; investigate and remediate when persistency drops below industry benchmarks indicating potential mis-selling",
+      "category": "metric"
+    },
+    {
+      "id": "IV-22",
+      "regulation": "Reinsurance",
+      "source": "NĐ 46/2023/NĐ-CP, Articles 50-55",
+      "requirement": "Place reinsurance with reinsurers meeting MoF credit quality standards; maintain adequate retention levels; report reinsurance arrangements to ISA",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-23",
+      "regulation": "Regulatory Reporting",
+      "source": "TT 132/2023/TT-BTC; TT 67/2023",
+      "requirement": "Submit quarterly solvency reports, annual audited financial statements, actuarial reports, product reports, and agent statistics to MoF/ISA within prescribed deadlines",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-24",
+      "regulation": "Microinsurance",
+      "source": "Luật 08/2022/QH15, Chapter VII; NĐ 46/2023, Articles 86-95",
+      "requirement": "Comply with microinsurance product requirements including maximum premium and sum insured thresholds, simplified underwriting, and approved distribution channels (cooperatives, social organizations, post offices)",
+      "category": "regulatory"
+    },
+    {
+      "id": "IV-25",
+      "regulation": "Corporate Governance",
+      "source": "Luật 08/2022/QH15, Chapter VIII; NĐ 46/2023",
+      "requirement": "Maintain corporate governance structure with HĐQT (Board of Directors), independent audit committee, separation of management and oversight, and fit-and-proper requirements for executives",
+      "category": "regulatory"
+    }
+  ]
+}

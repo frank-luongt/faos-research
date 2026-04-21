@@ -1,0 +1,132 @@
+{
+  "H1_RC": {
+    "label": "H1_RC",
+    "n": 125,
+    "k": 4,
+    "chi2": 17.018,
+    "p_value": 0.000701,
+    "significant": true,
+    "kendall_w": 0.0454,
+    "condition_means": {
+      "G1_baseline": 0.3653,
+      "G2_persona": 0.2907,
+      "G3_rag": 0.4533,
+      "G4_ontology": 0.4027
+    },
+    "posthoc": {
+      "G4_vs_G1_baseline": {
+        "w_stat": 787.0,
+        "p_raw": 0.180993,
+        "p_corrected": 0.542979,
+        "significant": false
+      },
+      "G4_vs_G2_persona": {
+        "w_stat": 477.0,
+        "p_raw": 0.003078,
+        "p_corrected": 0.009234,
+        "significant": true
+      },
+      "G4_vs_G3_rag": {
+        "w_stat": 521.0,
+        "p_raw": 0.257628,
+        "p_corrected": 0.772884,
+        "significant": false
+      }
+    }
+  },
+  "H2_FDR_design": {
+    "label": "H2_FDR_design",
+    "n": 25,
+    "k": 4,
+    "chi2": 7.156,
+    "p_value": 0.067102,
+    "significant": false,
+    "kendall_w": 0.0954,
+    "condition_means": {
+      "G1_baseline": 0.4667,
+      "G2_persona": 0.4533,
+      "G3_rag": 0.6533,
+      "G4_ontology": 0.5333
+    }
+  },
+  "H3_ISS": {
+    "label": "H3_ISS",
+    "n": 150,
+    "k": 4,
+    "chi2": 70.08,
+    "p_value": 0.0,
+    "significant": true,
+    "kendall_w": 0.1557,
+    "condition_means": {
+      "G1_baseline": 4.3,
+      "G2_persona": 4.4244,
+      "G3_rag": 4.5422,
+      "G4_ontology": 4.68
+    },
+    "posthoc": {
+      "G4_vs_G1_baseline": {
+        "w_stat": 814.5,
+        "p_raw": 0.0,
+        "p_corrected": 0.0,
+        "significant": true
+      },
+      "G4_vs_G2_persona": {
+        "w_stat": 1613.5,
+        "p_raw": 0.0,
+        "p_corrected": 1e-06,
+        "significant": true
+      },
+      "G4_vs_G3_rag": {
+        "w_stat": 1780.5,
+        "p_raw": 0.004318,
+        "p_corrected": 0.012953,
+        "significant": true
+      }
+    }
+  },
+  "H4_AC": {
+    "label": "H4_AC",
+    "n": 6,
+    "k": 4,
+    "chi2": 1.658,
+    "p_value": 0.646335,
+    "significant": false,
+    "kendall_w": 0.0921,
+    "condition_means": {
+      "G1_baseline": 0.9778,
+      "G2_persona": 0.9556,
+      "G3_rag": 0.9444,
+      "G4_ontology": 0.9444
+    }
+  },
+  "condition_summary": {
+    "G1_baseline": {
+      "RC": 0.36533333333333334,
+      "FDR-design": 0.4666666666666667,
+      "FDR-exec": 0.38666666666666666,
+      "ISS (norm)": 0.86,
+      "AC": 0.9777777777777777
+    },
+    "G2_persona": {
+      "RC": 0.2906666666666667,
+      "FDR-design": 0.4533333333333333,
+      "FDR-exec": 0.52,
+      "ISS (norm)": 0.8848888888888888,
+      "AC": 0.9555555555555556
+    },
+    "G3_rag": {
+      "RC": 0.4533333333333333,
+      "FDR-design": 0.6533333333333333,
+      "FDR-exec": 0.52,
+      "ISS (norm)": 0.9084444444444445,
+      "AC": 0.9444444444444444
+    },
+    "G4_ontology": {
+      "RC": 0.4026666666666667,
+      "FDR-design": 0.5333333333333333,
+      "FDR-exec": 0.5066666666666667,
+      "ISS (norm)": 0.9359999999999999,
+      "AC": 0.9444444444444444
+    }
+  }
+}

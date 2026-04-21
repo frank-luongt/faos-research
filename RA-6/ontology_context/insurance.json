@@ -1,0 +1,183 @@
+{
+  "industry": "insurance",
+  "role_layer": {
+    "chief_actuary": {
+      "title": "Chief Actuary / Appointed Actuary",
+      "persona": "Quantitative Risk Expert",
+      "communication_style": "Data-driven, precise, technically rigorous",
+      "kpis": {
+        "reserve_adequacy": "Within actuarial range",
+        "pricing_accuracy": "A/E ratios within tolerance",
+        "model_validation": "All models validated",
+        "regulatory_compliance": "Clean actuarial opinions"
+      },
+      "vocabulary": ["Loss Triangle", "IBNR", "RBNS", "Development Factor", "Loss Ratio", "Mortality Table", "Morbidity"],
+      "decision_patterns": {
+        "reserve_estimation": {
+          "methods": ["chain_ladder", "Bornhuetter_Ferguson", "frequency_severity"],
+          "confidence_levels": ["best_estimate", "reasonably_likely", "adverse"]
+        }
+      },
+      "domain_knowledge": {
+        "life": {"methods": ["CRVM", "CARVM", "PBR_VM20"], "studies": ["mortality", "persistency", "morbidity"]},
+        "non_life": {"methods": ["chain_ladder", "BF", "Cape_Cod"], "studies": ["loss_development", "frequency", "severity"]},
+        "health": {"methods": ["IBNR_lag", "completion_factor"], "studies": ["trend", "utilization", "unit_cost"]}
+      }
+    },
+    "chief_risk_officer": {
+      "title": "Chief Risk Officer",
+      "persona": "Enterprise Risk Guardian",
+      "communication_style": "Analytical, risk-focused, strategic",
+      "kpis": {
+        "risk_based_capital_ratio": "> Regulatory minimum + buffer",
+        "economic_capital_utilization": "Within risk appetite",
+        "risk_adjusted_return": "RAROC targets",
+        "risk_incidents": "Zero material incidents"
+      },
+      "vocabulary": ["Risk Appetite", "Risk Tolerance", "Economic Capital", "Tail Risk", "Concentration Risk", "Emerging Risk"],
+      "decision_patterns": {
+        "risk_acceptance": {
+          "authority_levels": {
+            "within_appetite": "autonomous",
+            "at_appetite_boundary": "consult_CEO",
+            "exceeds_appetite": "board_approval"
+          },
+          "considerations": ["probability", "severity", "correlation", "concentration"]
+        }
+      },
+      "domain_knowledge": {
+        "frameworks": ["ORSA", "ERM", "COSO"],
+        "capital_models": ["RBC", "economic_capital", "stress_testing"],
+        "risk_categories": ["underwriting", "reserve", "credit", "market", "operational"]
+      }
+    },
+    "chief_claims_officer": {
+      "title": "Chief Claims Officer",
+      "vocabulary": ["FNOL", "Reserve", "Subrogation", "Litigation", "Severity", "Frequency", "SIU"],
+      "kpis": {
+        "claims_cycle_time": "Days to resolution",
+        "claims_satisfaction": "Customer satisfaction scores",
+        "fraud_detection_rate": "Fraud identified and avoided"
+      }
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "combined_ratio": {
+        "definition": "Loss ratio plus expense ratio; the primary measure of underwriting profitability",
+        "formula": "Combined Ratio = Loss Ratio + Expense Ratio",
+        "healthy_range": "< 100%",
+        "world_class": "< 95%",
+        "interpretation": "Below 100% = underwriting profit; above 100% = underwriting loss"
+      },
+      "loss_ratio": {
+        "definition": "Incurred losses divided by earned premiums",
+        "healthy_range": "60-75% (P&C)",
+        "related": ["Combined Ratio", "Expense Ratio"]
+      },
+      "persistency_rate": {
+        "definition": "Percentage of policies remaining in force year-over-year",
+        "healthy_range": "85-90%",
+        "related": ["Lapse Rate", "Surrender Rate"]
+      },
+      "lapse_rate": {
+        "definition": "Percentage of policies terminated by policyholder; inverse of persistency",
+        "related": ["Persistency Rate"]
+      },
+      "placement_rate": {
+        "definition": "Applications issued divided by applications submitted times 100%",
+        "healthy_range": "70-80%"
+      },
+      "ibnr": {
+        "definition": "Incurred But Not Reported reserves; actuarial estimate of claims that have occurred but not yet been reported",
+        "methods": ["chain ladder", "Bornhuetter-Ferguson"],
+        "related": ["RBNS", "Reserve Adequacy"]
+      },
+      "rbc_ratio": {
+        "definition": "Risk-Based Capital ratio; regulatory minimum capital requirement per NAIC",
+        "healthy_range": "> 150% (with buffer)",
+        "regulatory_minimum": "Varies by company action level"
+      },
+      "underwriting_cycle_time": {
+        "definition": "Days from application to underwriting decision",
+        "healthy_range": "10-15 days",
+        "world_class": "< 7 days"
+      }
+    },
+    "regulations": {
+      "naic_suitability": {
+        "name": "NAIC Annuity Suitability Model Regulation",
+        "standard": "Best interest standard",
+        "suitability_factors": ["age", "risk_tolerance", "liquidity_needs", "financial_situation"],
+        "products_covered": "Annuities (fixed, indexed, variable)"
+      },
+      "orsa": {
+        "name": "Own Risk and Solvency Assessment",
+        "regulator": "NAIC",
+        "purpose": "Enterprise risk assessment; supplements formulaic RBC with forward-looking analysis",
+        "related": ["ERM", "COSO"]
+      },
+      "rbc": {
+        "name": "Risk-Based Capital",
+        "regulator": "NAIC",
+        "purpose": "Formulaic minimum capital calculation",
+        "action_levels": ["Company Action", "Regulatory Action", "Authorized Control", "Mandatory Control"]
+      },
+      "variable_products": {
+        "sec_registration": "Required for variable annuities/life",
+        "finra_oversight": "Broker-dealer sales practice rules",
+        "prospectus": "Required delivery to purchaser"
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "fnol_to_adjuster": {
+        "from": "Customer Service (FNOL)",
+        "to": "Claims Adjuster",
+        "context": ["loss_details", "policy_information", "initial_reserve", "priority_indicators"],
+        "sla": {"assignment": "4 hours", "first_contact": "24 hours"}
+      },
+      "adjuster_to_siu": {
+        "trigger": "Fraud indicators identified",
+        "from": "Claims Adjuster",
+        "to": "SIU (Special Investigations Unit)",
+        "context": ["claim_details", "red_flag_indicators", "investigation_request"],
+        "sla": {"acknowledgment": "24 hours"}
+      },
+      "claims_to_reinsurance": {
+        "trigger": "Reserve exceeds reinsurance notification threshold",
+        "from": "Claims",
+        "to": "Reinsurance",
+        "sla": {"notification": "Within treaty timeframe (30-60 days)"}
+      },
+      "claims_to_actuarial": {
+        "trigger": "Reserve development or large loss",
+        "from": "Claims",
+        "to": "Chief Actuary",
+        "context": ["reserve_changes", "loss_characteristics", "development_patterns"]
+      }
+    },
+    "escalation_matrix": {
+      "claims": {
+        "large_loss_threshold": "L3_management",
+        "litigation": "L3_management",
+        "bad_faith_allegation": "L4_executive"
+      },
+      "actuarial": {
+        "reserve_deficiency": "L4_executive",
+        "catastrophe_loss": "L4_executive"
+      }
+    }
+  },
+  "rag_chunks": [
+    "Combined ratio equals loss ratio plus expense ratio. Below 100% indicates underwriting profit; above 100% is an underwriting loss. Healthy target is <100%, world-class is <95%. Loss ratio is incurred losses divided by earned premiums (healthy 60-75% for P&C). Expense ratio is underwriting expenses divided by written premiums.",
+    "Persistency rate measures policies remaining in force year-over-year (healthy 85-90%). Lapse rate is policies terminated by policyholder (inverse of persistency). Placement rate is applications issued divided by submitted (healthy 70-80%). These are key life insurance operational metrics.",
+    "IBNR (Incurred But Not Reported) reserves are actuarial estimates of claims that have occurred but not yet been reported. Estimation methods include chain ladder, Bornhuetter-Ferguson, and frequency-severity. Reserve adequacy compares actual reserves to required reserves per Risk-Based Capital (RBC) regulations.",
+    "RBC ratio should be >150% (regulatory minimum plus buffer). ORSA (Own Risk and Solvency Assessment) is a NAIC requirement for forward-looking enterprise risk assessment, supplementing the formulaic RBC calculation. Together they form a two-pillar solvency framework. Related frameworks: ERM, COSO.",
+    "NAIC Annuity Suitability Model requires best interest standard. Variable annuities need SEC registration and prospectus. FINRA oversees broker-dealer sales practices. Suitability factors: age, risk tolerance, liquidity needs, financial situation. State-specific surrender charge limits apply.",
+    "Chief Actuary role: Quantitative Risk Expert. Reserve estimation uses chain_ladder, Bornhuetter_Ferguson, frequency_severity methods. Confidence levels: best_estimate, reasonably_likely, adverse. KPIs: reserve_adequacy within actuarial range, pricing_accuracy (A/E ratios). Vocabulary: Loss Triangle, IBNR, RBNS, Development Factor.",
+    "Chief Risk Officer role: Enterprise Risk Guardian. Risk acceptance authority: within_appetite=autonomous, at_boundary=consult_CEO, exceeds_appetite=board_approval. Considerations: probability, severity, correlation, concentration. Frameworks: ORSA, ERM, COSO. KPI: RBC ratio > regulatory minimum + buffer.",
+    "Claims handoff chain: FNOL → Adjuster (assignment 4h, contact 24h). If fraud indicators → SIU (24h acknowledgment). If reserve exceeds threshold → Reinsurance (30-60 day treaty timeframe). Large loss → L3 management escalation. Reserve development → Chief Actuary notification."
+  ]
+}

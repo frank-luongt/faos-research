@@ -1,0 +1,467 @@
+{
+  "meta": {
+    "analysis": "RA-3 Retroactive Entropy Analysis",
+    "date": "2026-04-14",
+    "baseline_model": "Claude Sonnet 4",
+    "n_rows": 600,
+    "n_tasks": 50
+  },
+  "E1_score_distribution_entropy": {
+    "per_condition_metric": {
+      "C1_TF": {
+        "entropy_bits": 2.8448,
+        "mean_score": 0.6439,
+        "std_score": 0.2493,
+        "n": 60
+      },
+      "C1_MA": {
+        "entropy_bits": 2.5352,
+        "mean_score": 0.3723,
+        "std_score": 0.1772,
+        "n": 45
+      },
+      "C1_RC": {
+        "entropy_bits": 3.0681,
+        "mean_score": 0.6171,
+        "std_score": 0.2995,
+        "n": 45
+      },
+      "C1_RS": {
+        "entropy_bits": 2.6021,
+        "mean_score": 0.7042,
+        "std_score": 0.1722,
+        "n": 45
+      },
+      "C2_TF": {
+        "entropy_bits": 2.077,
+        "mean_score": 0.8122,
+        "std_score": 0.2034,
+        "n": 60
+      },
+      "C2_MA": {
+        "entropy_bits": 2.13,
+        "mean_score": 0.7413,
+        "std_score": 0.3163,
+        "n": 45
+      },
+      "C2_RC": {
+        "entropy_bits": 1.9192,
+        "mean_score": 0.8347,
+        "std_score": 0.2291,
+        "n": 45
+      },
+      "C2_RS": {
+        "entropy_bits": 0.9102,
+        "mean_score": 0.9129,
+        "std_score": 0.0904,
+        "n": 45
+      },
+      "C3_TF": {
+        "entropy_bits": 2.5111,
+        "mean_score": 0.7105,
+        "std_score": 0.2459,
+        "n": 60
+      },
+      "C3_MA": {
+        "entropy_bits": 2.5712,
+        "mean_score": 0.7404,
+        "std_score": 0.2327,
+        "n": 45
+      },
+      "C3_RC": {
+        "entropy_bits": 2.6065,
+        "mean_score": 0.718,
+        "std_score": 0.252,
+        "n": 45
+      },
+      "C3_RS": {
+        "entropy_bits": 0.6889,
+        "mean_score": 0.9244,
+        "std_score": 0.0658,
+        "n": 45
+      },
+      "C4_TF": {
+        "entropy_bits": 2.3917,
+        "mean_score": 0.7115,
+        "std_score": 0.2592,
+        "n": 60
+      },
+      "C4_MA": {
+        "entropy_bits": 2.5299,
+        "mean_score": 0.7649,
+        "std_score": 0.2208,
+        "n": 45
+      },
+      "C4_RC": {
+        "entropy_bits": 2.167,
+        "mean_score": 0.8104,
+        "std_score": 0.1948,
+        "n": 45
+      },
+      "C4_RS": {
+        "entropy_bits": 0.7578,
+        "mean_score": 0.9251,
+        "std_score": 0.0729,
+        "n": 45
+      }
+    },
+    "entropy_deltas": {
+      "TF": {
+        "delta_H_C3_C1": -0.3337,
+        "delta_H_C2_C1": -0.7678,
+        "interpretation": "entropy_reduction (constructive)"
+      },
+      "MA": {
+        "delta_H_C3_C1": 0.036,
+        "delta_H_C2_C1": -0.4052,
+        "interpretation": "entropy_increase (destructive/Inverse_PKE)"
+      },
+      "RC": {
+        "delta_H_C3_C1": -0.4616,
+        "delta_H_C2_C1": -1.1489,
+        "interpretation": "entropy_reduction (constructive)"
+      },
+      "RS": {
+        "delta_H_C3_C1": -1.9132,
+        "delta_H_C2_C1": -1.6919,
+        "interpretation": "entropy_reduction (constructive)"
+      }
+    }
+  },
+  "E1b_industry_entropy": {
+    "per_industry_condition": {
+      "fintech_C1": {
+        "entropy_bits": 2.4975,
+        "mean_score": 0.6822,
+        "n": 30
+      },
+      "fintech_C2": {
+        "entropy_bits": 0.7703,
+        "mean_score": 0.9557,
+        "n": 30
+      },
+      "fintech_C3": {
+        "entropy_bits": 2.1031,
+        "mean_score": 0.7455,
+        "n": 30
+      },
+      "fintech_C4": {
+        "entropy_bits": 1.6419,
+        "mean_score": 0.8317,
+        "n": 30
+      },
+      "insurance_C1": {
+        "entropy_bits": 2.3219,
+        "mean_score": 0.7067,
+        "n": 30
+      },
+      "insurance_C2": {
+        "entropy_bits": 1.8015,
+        "mean_score": 0.7807,
+        "n": 30
+      },
+      "insurance_C3": {
+        "entropy_bits": 2.3144,
+        "mean_score": 0.766,
+        "n": 30
+      },
+      "insurance_C4": {
+        "entropy_bits": 2.2309,
+        "mean_score": 0.7405,
+        "n": 30
+      },
+      "healthcare_C1": {
+        "entropy_bits": 2.588,
+        "mean_score": 0.6525,
+        "n": 30
+      },
+      "healthcare_C2": {
+        "entropy_bits": 1.1722,
+        "mean_score": 0.9113,
+        "n": 30
+      },
+      "healthcare_C3": {
+        "entropy_bits": 1.8947,
+        "mean_score": 0.7822,
+        "n": 30
+      },
+      "healthcare_C4": {
+        "entropy_bits": 1.658,
+        "mean_score": 0.8123,
+        "n": 30
+      },
+      "banking_vn_C1": {
+        "entropy_bits": 2.5908,
+        "mean_score": 0.5095,
+        "n": 30
+      },
+      "banking_vn_C2": {
+        "entropy_bits": 2.078,
+        "mean_score": 0.7558,
+        "n": 30
+      },
+      "banking_vn_C3": {
+        "entropy_bits": 2.2124,
+        "mean_score": 0.7623,
+        "n": 30
+      },
+      "banking_vn_C4": {
+        "entropy_bits": 2.1595,
+        "mean_score": 0.7987,
+        "n": 30
+      },
+      "insurance_vn_C1": {
+        "entropy_bits": 2.5716,
+        "mean_score": 0.4625,
+        "n": 30
+      },
+      "insurance_vn_C2": {
+        "entropy_bits": 2.5097,
+        "mean_score": 0.6867,
+        "n": 30
+      },
+      "insurance_vn_C3": {
+        "entropy_bits": 2.2412,
+        "mean_score": 0.7143,
+        "n": 30
+      },
+      "insurance_vn_C4": {
+        "entropy_bits": 2.4011,
+        "mean_score": 0.7242,
+        "n": 30
+      }
+    },
+    "deltas": {
+      "fintech": {
+        "delta_H_C3_C1": -0.3944,
+        "domain_type": "English",
+        "interpretation": "entropy_reduction"
+      },
+      "insurance": {
+        "delta_H_C3_C1": -0.0075,
+        "domain_type": "English",
+        "interpretation": "entropy_reduction"
+      },
+      "healthcare": {
+        "delta_H_C3_C1": -0.6933,
+        "domain_type": "English",
+        "interpretation": "entropy_reduction"
+      },
+      "banking_vn": {
+        "delta_H_C3_C1": -0.3784,
+        "domain_type": "Vietnamese",
+        "interpretation": "entropy_reduction"
+      },
+      "insurance_vn": {
+        "delta_H_C3_C1": -0.3304,
+        "domain_type": "Vietnamese",
+        "interpretation": "entropy_reduction"
+      }
+    },
+    "en_vn_summary": {
+      "EN_mean_delta_H": -0.3651,
+      "VN_mean_delta_H": -0.3544
+    }
+  },
+  "E2_repetition_entropy": {
+    "per_condition": {
+      "C1": {
+        "mean_variance_entropy": -1.3724,
+        "mean_variance": 0.017699,
+        "n_tasks": 50
+      },
+      "C2": {
+        "mean_variance_entropy": -0.9187,
+        "mean_variance": 0.010154,
+        "n_tasks": 50
+      },
+      "C3": {
+        "mean_variance_entropy": -3.1705,
+        "mean_variance": 0.028784,
+        "n_tasks": 50
+      },
+      "C4": {
+        "mean_variance_entropy": -4.116,
+        "mean_variance": 0.02367,
+        "n_tasks": 50
+      }
+    },
+    "deltas": {
+      "delta_VE_C3_C1": -1.7981,
+      "delta_VE_C2_C1": 0.4537,
+      "interpretation": "ontology_reduces_uncertainty"
+    }
+  },
+  "E3_judge_detail_entropy": {
+    "C1": {
+      "H_correct_elements": 7.0458,
+      "H_incorrect_elements": 7.8784,
+      "H_all_elements": 8.376,
+      "precision_entropy_ratio": 0.8412,
+      "n_correct": 318,
+      "n_incorrect": 254,
+      "n_total": 642,
+      "mean_correct_per_task": 3.03,
+      "mean_incorrect_per_task": 2.42,
+      "incorrect_ratio": 0.3956
+    },
+    "C2": {
+      "H_correct_elements": 7.1203,
+      "H_incorrect_elements": 6.6678,
+      "H_all_elements": 7.7924,
+      "precision_entropy_ratio": 0.9138,
+      "n_correct": 396,
+      "n_incorrect": 127,
+      "n_total": 556,
+      "mean_correct_per_task": 3.77,
+      "mean_incorrect_per_task": 1.21,
+      "incorrect_ratio": 0.2284
+    },
+    "C3": {
+      "H_correct_elements": 7.4535,
+      "H_incorrect_elements": 7.8796,
+      "H_all_elements": 8.4548,
+      "precision_entropy_ratio": 0.8816,
+      "n_correct": 415,
+      "n_incorrect": 272,
+      "n_total": 761,
+      "mean_correct_per_task": 3.95,
+      "mean_incorrect_per_task": 2.59,
+      "incorrect_ratio": 0.3574
+    },
+    "C4": {
+      "H_correct_elements": 7.5659,
+      "H_incorrect_elements": 7.7939,
+      "H_all_elements": 8.4542,
+      "precision_entropy_ratio": 0.8949,
+      "n_correct": 418,
+      "n_incorrect": 255,
+      "n_total": 740,
+      "mean_correct_per_task": 3.98,
+      "mean_incorrect_per_task": 2.43,
+      "incorrect_ratio": 0.3446
+    }
+  },
+  "E4_cross_model_entropy": {
+    "C1": {
+      "mean_cross_model_entropy": -1.1852,
+      "mean_cross_model_variance": 0.019696,
+      "n_tasks": 50
+    },
+    "C2": {
+      "mean_cross_model_entropy": -1.1513,
+      "mean_cross_model_variance": 0.019196,
+      "n_tasks": 50
+    },
+    "C3": {
+      "mean_cross_model_entropy": -1.3608,
+      "mean_cross_model_variance": 0.016988,
+      "n_tasks": 50
+    },
+    "C4": {
+      "mean_cross_model_entropy": -1.4978,
+      "mean_cross_model_variance": 0.014366,
+      "n_tasks": 50
+    },
+    "delta_CME_C3_C1": -0.1756,
+    "interpretation": "ontology_aligns_models"
+  },
+  "E5_ontology_structural_entropy": {
+    "fintech": {
+      "n_roles": 4,
+      "n_concepts": 8,
+      "n_regulations": 2,
+      "n_handoffs": 3,
+      "n_kpis": 16,
+      "n_vocab_terms": 39,
+      "n_rag_chunks": 8,
+      "total_nodes": 17,
+      "layer_distribution_entropy": 1.8078,
+      "concept_property_entropy": 0.8113,
+      "vocabulary_diversity_entropy": 5.1316,
+      "composite_structural_entropy": 2.5835
+    },
+    "insurance": {
+      "n_roles": 3,
+      "n_concepts": 8,
+      "n_regulations": 4,
+      "n_handoffs": 4,
+      "n_kpis": 11,
+      "n_vocab_terms": 20,
+      "n_rag_chunks": 8,
+      "total_nodes": 19,
+      "layer_distribution_entropy": 1.8924,
+      "concept_property_entropy": 0.5436,
+      "vocabulary_diversity_entropy": 4.3219,
+      "composite_structural_entropy": 2.2526
+    },
+    "healthcare": {
+      "n_roles": 3,
+      "n_concepts": 9,
+      "n_regulations": 3,
+      "n_handoffs": 3,
+      "n_kpis": 12,
+      "n_vocab_terms": 16,
+      "n_rag_chunks": 9,
+      "total_nodes": 18,
+      "layer_distribution_entropy": 1.7925,
+      "concept_property_entropy": 0.9911,
+      "vocabulary_diversity_entropy": 4.0,
+      "composite_structural_entropy": 2.2612
+    },
+    "banking_vn": {
+      "n_roles": 4,
+      "n_concepts": 8,
+      "n_regulations": 5,
+      "n_handoffs": 5,
+      "n_kpis": 21,
+      "n_vocab_terms": 51,
+      "n_rag_chunks": 8,
+      "total_nodes": 22,
+      "layer_distribution_entropy": 1.9495,
+      "concept_property_entropy": 0.9544,
+      "vocabulary_diversity_entropy": 5.6332,
+      "composite_structural_entropy": 2.8457
+    },
+    "insurance_vn": {
+      "n_roles": 4,
+      "n_concepts": 8,
+      "n_regulations": 6,
+      "n_handoffs": 5,
+      "n_kpis": 17,
+      "n_vocab_terms": 51,
+      "n_rag_chunks": 8,
+      "total_nodes": 23,
+      "layer_distribution_entropy": 1.9532,
+      "concept_property_entropy": 1.75,
+      "vocabulary_diversity_entropy": 5.4763,
+      "composite_structural_entropy": 3.0598
+    }
+  },
+  "correlation_SE_vs_lift": {
+    "industries": [
+      "fintech",
+      "insurance",
+      "healthcare",
+      "banking_vn",
+      "insurance_vn"
+    ],
+    "structural_entropy": [
+      2.5835,
+      2.2526,
+      2.2612,
+      2.8457,
+      3.0598
+    ],
+    "ontology_lift_C3_C1": [
+      0.037,
+      0.0594,
+      0.1172,
+      0.2328,
+      0.2428
+    ],
+    "spearman_r": 0.7,
+    "spearman_p": 0.1881,
+    "interpretation": "Positive correlation (r=0.700, p=0.188): higher structural entropy \u2192 larger ontology lift"
+  }
+}

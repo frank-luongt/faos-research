@@ -1,0 +1,6 @@
+anthropic>=0.39.0
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+seaborn>=0.13
+numpy>=1.24

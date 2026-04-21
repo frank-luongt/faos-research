@@ -1,0 +1,1022 @@
+{
+  "Claude Sonnet 4": {
+    "model": "Claude Sonnet 4",
+    "n_rows": 600,
+    "E1": {
+      "per_condition_metric": {
+        "C1_TF": {
+          "entropy_bits": 2.8448,
+          "mean_score": 0.6439,
+          "std_score": 0.2493,
+          "n": 60
+        },
+        "C1_MA": {
+          "entropy_bits": 2.5352,
+          "mean_score": 0.3723,
+          "std_score": 0.1772,
+          "n": 45
+        },
+        "C1_RC": {
+          "entropy_bits": 3.0681,
+          "mean_score": 0.6171,
+          "std_score": 0.2995,
+          "n": 45
+        },
+        "C1_RS": {
+          "entropy_bits": 2.6021,
+          "mean_score": 0.7042,
+          "std_score": 0.1722,
+          "n": 45
+        },
+        "C2_TF": {
+          "entropy_bits": 2.077,
+          "mean_score": 0.8122,
+          "std_score": 0.2034,
+          "n": 60
+        },
+        "C2_MA": {
+          "entropy_bits": 2.13,
+          "mean_score": 0.7413,
+          "std_score": 0.3163,
+          "n": 45
+        },
+        "C2_RC": {
+          "entropy_bits": 1.9192,
+          "mean_score": 0.8347,
+          "std_score": 0.2291,
+          "n": 45
+        },
+        "C2_RS": {
+          "entropy_bits": 0.9102,
+          "mean_score": 0.9129,
+          "std_score": 0.0904,
+          "n": 45
+        },
+        "C3_TF": {
+          "entropy_bits": 2.5111,
+          "mean_score": 0.7105,
+          "std_score": 0.2459,
+          "n": 60
+        },
+        "C3_MA": {
+          "entropy_bits": 2.5712,
+          "mean_score": 0.7404,
+          "std_score": 0.2327,
+          "n": 45
+        },
+        "C3_RC": {
+          "entropy_bits": 2.6065,
+          "mean_score": 0.718,
+          "std_score": 0.252,
+          "n": 45
+        },
+        "C3_RS": {
+          "entropy_bits": 0.6889,
+          "mean_score": 0.9244,
+          "std_score": 0.0658,
+          "n": 45
+        },
+        "C4_TF": {
+          "entropy_bits": 2.3917,
+          "mean_score": 0.7115,
+          "std_score": 0.2592,
+          "n": 60
+        },
+        "C4_MA": {
+          "entropy_bits": 2.5299,
+          "mean_score": 0.7649,
+          "std_score": 0.2208,
+          "n": 45
+        },
+        "C4_RC": {
+          "entropy_bits": 2.167,
+          "mean_score": 0.8104,
+          "std_score": 0.1948,
+          "n": 45
+        },
+        "C4_RS": {
+          "entropy_bits": 0.7578,
+          "mean_score": 0.9251,
+          "std_score": 0.0729,
+          "n": 45
+        }
+      },
+      "entropy_deltas": {
+        "TF": {
+          "delta_H_C3_C1": -0.3337,
+          "delta_H_C2_C1": -0.7678,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "MA": {
+          "delta_H_C3_C1": 0.036,
+          "delta_H_C2_C1": -0.4052,
+          "interpretation": "entropy_increase (destructive/Inverse_PKE)"
+        },
+        "RC": {
+          "delta_H_C3_C1": -0.4616,
+          "delta_H_C2_C1": -1.1489,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "RS": {
+          "delta_H_C3_C1": -1.9132,
+          "delta_H_C2_C1": -1.6919,
+          "interpretation": "entropy_reduction (constructive)"
+        }
+      }
+    },
+    "E1b": {
+      "per_industry_condition": {
+        "fintech_C1": {
+          "entropy_bits": 2.4975,
+          "mean_score": 0.6822,
+          "n": 30
+        },
+        "fintech_C2": {
+          "entropy_bits": 0.7703,
+          "mean_score": 0.9557,
+          "n": 30
+        },
+        "fintech_C3": {
+          "entropy_bits": 2.1031,
+          "mean_score": 0.7455,
+          "n": 30
+        },
+        "fintech_C4": {
+          "entropy_bits": 1.6419,
+          "mean_score": 0.8317,
+          "n": 30
+        },
+        "insurance_C1": {
+          "entropy_bits": 2.3219,
+          "mean_score": 0.7067,
+          "n": 30
+        },
+        "insurance_C2": {
+          "entropy_bits": 1.8015,
+          "mean_score": 0.7807,
+          "n": 30
+        },
+        "insurance_C3": {
+          "entropy_bits": 2.3144,
+          "mean_score": 0.766,
+          "n": 30
+        },
+        "insurance_C4": {
+          "entropy_bits": 2.2309,
+          "mean_score": 0.7405,
+          "n": 30
+        },
+        "healthcare_C1": {
+          "entropy_bits": 2.588,
+          "mean_score": 0.6525,
+          "n": 30
+        },
+        "healthcare_C2": {
+          "entropy_bits": 1.1722,
+          "mean_score": 0.9113,
+          "n": 30
+        },
+        "healthcare_C3": {
+          "entropy_bits": 1.8947,
+          "mean_score": 0.7822,
+          "n": 30
+        },
+        "healthcare_C4": {
+          "entropy_bits": 1.658,
+          "mean_score": 0.8123,
+          "n": 30
+        },
+        "banking_vn_C1": {
+          "entropy_bits": 2.5908,
+          "mean_score": 0.5095,
+          "n": 30
+        },
+        "banking_vn_C2": {
+          "entropy_bits": 2.078,
+          "mean_score": 0.7558,
+          "n": 30
+        },
+        "banking_vn_C3": {
+          "entropy_bits": 2.2124,
+          "mean_score": 0.7623,
+          "n": 30
+        },
+        "banking_vn_C4": {
+          "entropy_bits": 2.1595,
+          "mean_score": 0.7987,
+          "n": 30
+        },
+        "insurance_vn_C1": {
+          "entropy_bits": 2.5716,
+          "mean_score": 0.4625,
+          "n": 30
+        },
+        "insurance_vn_C2": {
+          "entropy_bits": 2.5097,
+          "mean_score": 0.6867,
+          "n": 30
+        },
+        "insurance_vn_C3": {
+          "entropy_bits": 2.2412,
+          "mean_score": 0.7143,
+          "n": 30
+        },
+        "insurance_vn_C4": {
+          "entropy_bits": 2.4011,
+          "mean_score": 0.7242,
+          "n": 30
+        }
+      },
+      "deltas": {
+        "fintech": {
+          "delta_H_C3_C1": -0.3944,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "insurance": {
+          "delta_H_C3_C1": -0.0075,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "healthcare": {
+          "delta_H_C3_C1": -0.6933,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "banking_vn": {
+          "delta_H_C3_C1": -0.3784,
+          "domain_type": "Vietnamese",
+          "interpretation": "entropy_reduction"
+        },
+        "insurance_vn": {
+          "delta_H_C3_C1": -0.3304,
+          "domain_type": "Vietnamese",
+          "interpretation": "entropy_reduction"
+        }
+      },
+      "en_vn_summary": {
+        "EN_mean_delta_H": -0.3651,
+        "VN_mean_delta_H": -0.3544
+      }
+    },
+    "E2": {
+      "per_condition": {
+        "C1": {
+          "mean_variance_entropy": -1.3724,
+          "mean_variance": 0.017699,
+          "n_tasks": 50
+        },
+        "C2": {
+          "mean_variance_entropy": -0.9187,
+          "mean_variance": 0.010154,
+          "n_tasks": 50
+        },
+        "C3": {
+          "mean_variance_entropy": -3.1705,
+          "mean_variance": 0.028784,
+          "n_tasks": 50
+        },
+        "C4": {
+          "mean_variance_entropy": -4.116,
+          "mean_variance": 0.02367,
+          "n_tasks": 50
+        }
+      },
+      "deltas": {
+        "delta_VE_C3_C1": -1.7981,
+        "delta_VE_C2_C1": 0.4537,
+        "interpretation": "ontology_reduces_uncertainty"
+      }
+    },
+    "E3": {
+      "C1": {
+        "H_correct_elements": 7.0458,
+        "H_incorrect_elements": 7.8784,
+        "H_all_elements": 8.376,
+        "precision_entropy_ratio": 0.8412,
+        "n_correct": 318,
+        "n_incorrect": 254,
+        "n_total": 642,
+        "mean_correct_per_task": 3.03,
+        "mean_incorrect_per_task": 2.42,
+        "incorrect_ratio": 0.3956
+      },
+      "C2": {
+        "H_correct_elements": 7.1203,
+        "H_incorrect_elements": 6.6678,
+        "H_all_elements": 7.7924,
+        "precision_entropy_ratio": 0.9138,
+        "n_correct": 396,
+        "n_incorrect": 127,
+        "n_total": 556,
+        "mean_correct_per_task": 3.77,
+        "mean_incorrect_per_task": 1.21,
+        "incorrect_ratio": 0.2284
+      },
+      "C3": {
+        "H_correct_elements": 7.4535,
+        "H_incorrect_elements": 7.8796,
+        "H_all_elements": 8.4548,
+        "precision_entropy_ratio": 0.8816,
+        "n_correct": 415,
+        "n_incorrect": 272,
+        "n_total": 761,
+        "mean_correct_per_task": 3.95,
+        "mean_incorrect_per_task": 2.59,
+        "incorrect_ratio": 0.3574
+      },
+      "C4": {
+        "H_correct_elements": 7.5659,
+        "H_incorrect_elements": 7.7939,
+        "H_all_elements": 8.4542,
+        "precision_entropy_ratio": 0.8949,
+        "n_correct": 418,
+        "n_incorrect": 255,
+        "n_total": 740,
+        "mean_correct_per_task": 3.98,
+        "mean_incorrect_per_task": 2.43,
+        "incorrect_ratio": 0.3446
+      }
+    }
+  },
+  "Qwen 2.5 72B": {
+    "model": "Qwen 2.5 72B",
+    "n_rows": 600,
+    "E1": {
+      "per_condition_metric": {
+        "C1_TF": {
+          "entropy_bits": 2.8964,
+          "mean_score": 0.6118,
+          "std_score": 0.262,
+          "n": 60
+        },
+        "C1_MA": {
+          "entropy_bits": 2.7143,
+          "mean_score": 0.3692,
+          "std_score": 0.2329,
+          "n": 45
+        },
+        "C1_RC": {
+          "entropy_bits": 2.8049,
+          "mean_score": 0.5084,
+          "std_score": 0.3482,
+          "n": 45
+        },
+        "C1_RS": {
+          "entropy_bits": 2.4486,
+          "mean_score": 0.5564,
+          "std_score": 0.2104,
+          "n": 45
+        },
+        "C2_TF": {
+          "entropy_bits": 2.3768,
+          "mean_score": 0.7456,
+          "std_score": 0.2284,
+          "n": 60
+        },
+        "C2_MA": {
+          "entropy_bits": 2.5705,
+          "mean_score": 0.7418,
+          "std_score": 0.2776,
+          "n": 45
+        },
+        "C2_RC": {
+          "entropy_bits": 2.4698,
+          "mean_score": 0.7611,
+          "std_score": 0.2457,
+          "n": 45
+        },
+        "C2_RS": {
+          "entropy_bits": 2.1732,
+          "mean_score": 0.7527,
+          "std_score": 0.1769,
+          "n": 45
+        },
+        "C3_TF": {
+          "entropy_bits": 2.6983,
+          "mean_score": 0.6863,
+          "std_score": 0.2455,
+          "n": 60
+        },
+        "C3_MA": {
+          "entropy_bits": 2.0559,
+          "mean_score": 0.8296,
+          "std_score": 0.1859,
+          "n": 45
+        },
+        "C3_RC": {
+          "entropy_bits": 2.2857,
+          "mean_score": 0.7744,
+          "std_score": 0.2162,
+          "n": 45
+        },
+        "C3_RS": {
+          "entropy_bits": 2.0521,
+          "mean_score": 0.78,
+          "std_score": 0.1432,
+          "n": 45
+        },
+        "C4_TF": {
+          "entropy_bits": 2.6403,
+          "mean_score": 0.7405,
+          "std_score": 0.2457,
+          "n": 60
+        },
+        "C4_MA": {
+          "entropy_bits": 2.1443,
+          "mean_score": 0.8211,
+          "std_score": 0.191,
+          "n": 45
+        },
+        "C4_RC": {
+          "entropy_bits": 2.4003,
+          "mean_score": 0.7338,
+          "std_score": 0.2285,
+          "n": 45
+        },
+        "C4_RS": {
+          "entropy_bits": 2.0358,
+          "mean_score": 0.7938,
+          "std_score": 0.1461,
+          "n": 45
+        }
+      },
+      "entropy_deltas": {
+        "TF": {
+          "delta_H_C3_C1": -0.1981,
+          "delta_H_C2_C1": -0.5196,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "MA": {
+          "delta_H_C3_C1": -0.6584,
+          "delta_H_C2_C1": -0.1438,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "RC": {
+          "delta_H_C3_C1": -0.5192,
+          "delta_H_C2_C1": -0.3351,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "RS": {
+          "delta_H_C3_C1": -0.3965,
+          "delta_H_C2_C1": -0.2754,
+          "interpretation": "entropy_reduction (constructive)"
+        }
+      }
+    },
+    "E1b": {
+      "per_industry_condition": {
+        "fintech_C1": {
+          "entropy_bits": 2.3894,
+          "mean_score": 0.6748,
+          "n": 30
+        },
+        "fintech_C2": {
+          "entropy_bits": 1.2948,
+          "mean_score": 0.8732,
+          "n": 30
+        },
+        "fintech_C3": {
+          "entropy_bits": 1.7247,
+          "mean_score": 0.8342,
+          "n": 30
+        },
+        "fintech_C4": {
+          "entropy_bits": 1.4426,
+          "mean_score": 0.8493,
+          "n": 30
+        },
+        "insurance_C1": {
+          "entropy_bits": 2.669,
+          "mean_score": 0.6053,
+          "n": 30
+        },
+        "insurance_C2": {
+          "entropy_bits": 1.8987,
+          "mean_score": 0.7753,
+          "n": 30
+        },
+        "insurance_C3": {
+          "entropy_bits": 1.9283,
+          "mean_score": 0.8248,
+          "n": 30
+        },
+        "insurance_C4": {
+          "entropy_bits": 1.8402,
+          "mean_score": 0.8155,
+          "n": 30
+        },
+        "healthcare_C1": {
+          "entropy_bits": 2.7689,
+          "mean_score": 0.6208,
+          "n": 30
+        },
+        "healthcare_C2": {
+          "entropy_bits": 1.8023,
+          "mean_score": 0.8342,
+          "n": 30
+        },
+        "healthcare_C3": {
+          "entropy_bits": 2.0635,
+          "mean_score": 0.7632,
+          "n": 30
+        },
+        "healthcare_C4": {
+          "entropy_bits": 2.3109,
+          "mean_score": 0.752,
+          "n": 30
+        },
+        "banking_vn_C1": {
+          "entropy_bits": 2.726,
+          "mean_score": 0.4648,
+          "n": 30
+        },
+        "banking_vn_C2": {
+          "entropy_bits": 2.3331,
+          "mean_score": 0.7135,
+          "n": 30
+        },
+        "banking_vn_C3": {
+          "entropy_bits": 2.2057,
+          "mean_score": 0.7563,
+          "n": 30
+        },
+        "banking_vn_C4": {
+          "entropy_bits": 1.9947,
+          "mean_score": 0.7618,
+          "n": 30
+        },
+        "insurance_vn_C1": {
+          "entropy_bits": 1.9475,
+          "mean_score": 0.364,
+          "n": 30
+        },
+        "insurance_vn_C2": {
+          "entropy_bits": 2.2419,
+          "mean_score": 0.622,
+          "n": 30
+        },
+        "insurance_vn_C3": {
+          "entropy_bits": 2.1056,
+          "mean_score": 0.675,
+          "n": 30
+        },
+        "insurance_vn_C4": {
+          "entropy_bits": 2.1712,
+          "mean_score": 0.7278,
+          "n": 30
+        }
+      },
+      "deltas": {
+        "fintech": {
+          "delta_H_C3_C1": -0.6647,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "insurance": {
+          "delta_H_C3_C1": -0.7407,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "healthcare": {
+          "delta_H_C3_C1": -0.7054,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "banking_vn": {
+          "delta_H_C3_C1": -0.5203,
+          "domain_type": "Vietnamese",
+          "interpretation": "entropy_reduction"
+        },
+        "insurance_vn": {
+          "delta_H_C3_C1": 0.1581,
+          "domain_type": "Vietnamese",
+          "interpretation": "entropy_increase"
+        }
+      },
+      "en_vn_summary": {
+        "EN_mean_delta_H": -0.7036,
+        "VN_mean_delta_H": -0.1811
+      }
+    },
+    "E2": {
+      "per_condition": {
+        "C1": {
+          "mean_variance_entropy": -2.1303,
+          "mean_variance": 0.015922,
+          "n_tasks": 50
+        },
+        "C2": {
+          "mean_variance_entropy": -1.0898,
+          "mean_variance": 0.02119,
+          "n_tasks": 50
+        },
+        "C3": {
+          "mean_variance_entropy": -2.0366,
+          "mean_variance": 0.017536,
+          "n_tasks": 50
+        },
+        "C4": {
+          "mean_variance_entropy": -1.9983,
+          "mean_variance": 0.014759,
+          "n_tasks": 50
+        }
+      },
+      "deltas": {
+        "delta_VE_C3_C1": 0.0937,
+        "delta_VE_C2_C1": 1.0405,
+        "interpretation": "ontology_increases_uncertainty"
+      }
+    },
+    "E3": {
+      "C1": {
+        "H_correct_elements": 7.0915,
+        "H_incorrect_elements": 7.9618,
+        "H_all_elements": 8.4083,
+        "precision_entropy_ratio": 0.8434,
+        "n_correct": 305,
+        "n_incorrect": 269,
+        "n_total": 627,
+        "mean_correct_per_task": 2.9,
+        "mean_incorrect_per_task": 2.56,
+        "incorrect_ratio": 0.429
+      },
+      "C2": {
+        "H_correct_elements": 7.317,
+        "H_incorrect_elements": 6.9936,
+        "H_all_elements": 8.0128,
+        "precision_entropy_ratio": 0.9132,
+        "n_correct": 367,
+        "n_incorrect": 145,
+        "n_total": 563,
+        "mean_correct_per_task": 3.5,
+        "mean_incorrect_per_task": 1.38,
+        "incorrect_ratio": 0.2575
+      },
+      "C3": {
+        "H_correct_elements": 7.259,
+        "H_incorrect_elements": 7.3278,
+        "H_all_elements": 8.181,
+        "precision_entropy_ratio": 0.8873,
+        "n_correct": 383,
+        "n_incorrect": 182,
+        "n_total": 615,
+        "mean_correct_per_task": 3.65,
+        "mean_incorrect_per_task": 1.73,
+        "incorrect_ratio": 0.2959
+      },
+      "C4": {
+        "H_correct_elements": 7.3289,
+        "H_incorrect_elements": 7.2966,
+        "H_all_elements": 8.2323,
+        "precision_entropy_ratio": 0.8903,
+        "n_correct": 397,
+        "n_incorrect": 177,
+        "n_total": 629,
+        "mean_correct_per_task": 3.78,
+        "mean_incorrect_per_task": 1.69,
+        "incorrect_ratio": 0.2814
+      }
+    }
+  },
+  "Gemma 4 26B": {
+    "model": "Gemma 4 26B",
+    "n_rows": 600,
+    "E1": {
+      "per_condition_metric": {
+        "C1_TF": {
+          "entropy_bits": 2.918,
+          "mean_score": 0.6338,
+          "std_score": 0.2395,
+          "n": 60
+        },
+        "C1_MA": {
+          "entropy_bits": 2.3854,
+          "mean_score": 0.3443,
+          "std_score": 0.2071,
+          "n": 45
+        },
+        "C1_RC": {
+          "entropy_bits": 2.7539,
+          "mean_score": 0.6267,
+          "std_score": 0.2587,
+          "n": 45
+        },
+        "C1_RS": {
+          "entropy_bits": 2.1799,
+          "mean_score": 0.7778,
+          "std_score": 0.1472,
+          "n": 45
+        },
+        "C2_TF": {
+          "entropy_bits": 2.4548,
+          "mean_score": 0.7815,
+          "std_score": 0.2069,
+          "n": 60
+        },
+        "C2_MA": {
+          "entropy_bits": 2.1352,
+          "mean_score": 0.7453,
+          "std_score": 0.3421,
+          "n": 45
+        },
+        "C2_RC": {
+          "entropy_bits": 2.043,
+          "mean_score": 0.8053,
+          "std_score": 0.2353,
+          "n": 45
+        },
+        "C2_RS": {
+          "entropy_bits": 1.8652,
+          "mean_score": 0.846,
+          "std_score": 0.137,
+          "n": 45
+        },
+        "C3_TF": {
+          "entropy_bits": 2.4288,
+          "mean_score": 0.7116,
+          "std_score": 0.262,
+          "n": 60
+        },
+        "C3_MA": {
+          "entropy_bits": 2.05,
+          "mean_score": 0.8268,
+          "std_score": 0.1796,
+          "n": 45
+        },
+        "C3_RC": {
+          "entropy_bits": 2.1955,
+          "mean_score": 0.7789,
+          "std_score": 0.1648,
+          "n": 45
+        },
+        "C3_RS": {
+          "entropy_bits": 0.6752,
+          "mean_score": 0.9362,
+          "std_score": 0.0708,
+          "n": 45
+        },
+        "C4_TF": {
+          "entropy_bits": 2.5824,
+          "mean_score": 0.7309,
+          "std_score": 0.2502,
+          "n": 60
+        },
+        "C4_MA": {
+          "entropy_bits": 1.9858,
+          "mean_score": 0.8341,
+          "std_score": 0.1989,
+          "n": 45
+        },
+        "C4_RC": {
+          "entropy_bits": 2.1514,
+          "mean_score": 0.7671,
+          "std_score": 0.1766,
+          "n": 45
+        },
+        "C4_RS": {
+          "entropy_bits": 0.9246,
+          "mean_score": 0.9207,
+          "std_score": 0.0795,
+          "n": 45
+        }
+      },
+      "entropy_deltas": {
+        "TF": {
+          "delta_H_C3_C1": -0.4892,
+          "delta_H_C2_C1": -0.4632,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "MA": {
+          "delta_H_C3_C1": -0.3354,
+          "delta_H_C2_C1": -0.2502,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "RC": {
+          "delta_H_C3_C1": -0.5584,
+          "delta_H_C2_C1": -0.7109,
+          "interpretation": "entropy_reduction (constructive)"
+        },
+        "RS": {
+          "delta_H_C3_C1": -1.5047,
+          "delta_H_C2_C1": -0.3147,
+          "interpretation": "entropy_reduction (constructive)"
+        }
+      }
+    },
+    "E1b": {
+      "per_industry_condition": {
+        "fintech_C1": {
+          "entropy_bits": 2.2676,
+          "mean_score": 0.6865,
+          "n": 30
+        },
+        "fintech_C2": {
+          "entropy_bits": 1.4419,
+          "mean_score": 0.8968,
+          "n": 30
+        },
+        "fintech_C3": {
+          "entropy_bits": 1.7484,
+          "mean_score": 0.8003,
+          "n": 30
+        },
+        "fintech_C4": {
+          "entropy_bits": 1.5567,
+          "mean_score": 0.8418,
+          "n": 30
+        },
+        "insurance_C1": {
+          "entropy_bits": 2.4519,
+          "mean_score": 0.6083,
+          "n": 30
+        },
+        "insurance_C2": {
+          "entropy_bits": 1.6044,
+          "mean_score": 0.7943,
+          "n": 30
+        },
+        "insurance_C3": {
+          "entropy_bits": 2.1213,
+          "mean_score": 0.7938,
+          "n": 30
+        },
+        "insurance_C4": {
+          "entropy_bits": 2.0676,
+          "mean_score": 0.7655,
+          "n": 30
+        },
+        "healthcare_C1": {
+          "entropy_bits": 2.6933,
+          "mean_score": 0.6522,
+          "n": 30
+        },
+        "healthcare_C2": {
+          "entropy_bits": 0.8519,
+          "mean_score": 0.9463,
+          "n": 30
+        },
+        "healthcare_C3": {
+          "entropy_bits": 1.7247,
+          "mean_score": 0.7988,
+          "n": 30
+        },
+        "healthcare_C4": {
+          "entropy_bits": 1.9118,
+          "mean_score": 0.783,
+          "n": 30
+        },
+        "banking_vn_C1": {
+          "entropy_bits": 2.3726,
+          "mean_score": 0.5375,
+          "n": 30
+        },
+        "banking_vn_C2": {
+          "entropy_bits": 2.4738,
+          "mean_score": 0.7028,
+          "n": 30
+        },
+        "banking_vn_C3": {
+          "entropy_bits": 2.2486,
+          "mean_score": 0.7653,
+          "n": 30
+        },
+        "banking_vn_C4": {
+          "entropy_bits": 2.0044,
+          "mean_score": 0.7952,
+          "n": 30
+        },
+        "insurance_vn_C1": {
+          "entropy_bits": 2.0746,
+          "mean_score": 0.4812,
+          "n": 30
+        },
+        "insurance_vn_C2": {
+          "entropy_bits": 2.4138,
+          "mean_score": 0.6877,
+          "n": 30
+        },
+        "insurance_vn_C3": {
+          "entropy_bits": 1.9709,
+          "mean_score": 0.8239,
+          "n": 30
+        },
+        "insurance_vn_C4": {
+          "entropy_bits": 1.8486,
+          "mean_score": 0.8217,
+          "n": 30
+        }
+      },
+      "deltas": {
+        "fintech": {
+          "delta_H_C3_C1": -0.5192,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "insurance": {
+          "delta_H_C3_C1": -0.3306,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "healthcare": {
+          "delta_H_C3_C1": -0.9686,
+          "domain_type": "English",
+          "interpretation": "entropy_reduction"
+        },
+        "banking_vn": {
+          "delta_H_C3_C1": -0.124,
+          "domain_type": "Vietnamese",
+          "interpretation": "entropy_reduction"
+        },
+        "insurance_vn": {
+          "delta_H_C3_C1": -0.1037,
+          "domain_type": "Vietnamese",
+          "interpretation": "entropy_reduction"
+        }
+      },
+      "en_vn_summary": {
+        "EN_mean_delta_H": -0.6061,
+        "VN_mean_delta_H": -0.1139
+      }
+    },
+    "E2": {
+      "per_condition": {
+        "C1": {
+          "mean_variance_entropy": -4.1813,
+          "mean_variance": 0.018032,
+          "n_tasks": 50
+        },
+        "C2": {
+          "mean_variance_entropy": -2.943,
+          "mean_variance": 0.006848,
+          "n_tasks": 50
+        },
+        "C3": {
+          "mean_variance_entropy": -4.0007,
+          "mean_variance": 0.019549,
+          "n_tasks": 50
+        },
+        "C4": {
+          "mean_variance_entropy": -3.9342,
+          "mean_variance": 0.017377,
+          "n_tasks": 50
+        }
+      },
+      "deltas": {
+        "delta_VE_C3_C1": 0.1806,
+        "delta_VE_C2_C1": 1.2383,
+        "interpretation": "ontology_increases_uncertainty"
+      }
+    },
+    "E3": {
+      "C1": {
+        "H_correct_elements": 7.1825,
+        "H_incorrect_elements": 7.9552,
+        "H_all_elements": 8.5528,
+        "precision_entropy_ratio": 0.8398,
+        "n_correct": 344,
+        "n_incorrect": 286,
+        "n_total": 738,
+        "mean_correct_per_task": 3.28,
+        "mean_incorrect_per_task": 2.72,
+        "incorrect_ratio": 0.3875
+      },
+      "C2": {
+        "H_correct_elements": 7.1948,
+        "H_incorrect_elements": 6.1137,
+        "H_all_elements": 7.5845,
+        "precision_entropy_ratio": 0.9486,
+        "n_correct": 356,
+        "n_incorrect": 104,
+        "n_total": 480,
+        "mean_correct_per_task": 3.39,
+        "mean_incorrect_per_task": 0.99,
+        "incorrect_ratio": 0.2167
+      },
+      "C3": {
+        "H_correct_elements": 7.5826,
+        "H_incorrect_elements": 7.7456,
+        "H_all_elements": 8.5016,
+        "precision_entropy_ratio": 0.8919,
+        "n_correct": 427,
+        "n_incorrect": 238,
+        "n_total": 739,
+        "mean_correct_per_task": 4.07,
+        "mean_incorrect_per_task": 2.27,
+        "incorrect_ratio": 0.3221
+      },
+      "C4": {
+        "H_correct_elements": 7.6536,
+        "H_incorrect_elements": 7.4167,
+        "H_all_elements": 8.4649,
+        "precision_entropy_ratio": 0.9042,
+        "n_correct": 447,
+        "n_incorrect": 208,
+        "n_total": 738,
+        "mean_correct_per_task": 4.26,
+        "mean_incorrect_per_task": 1.98,
+        "incorrect_ratio": 0.2818
+      }
+    }
+  }
+}

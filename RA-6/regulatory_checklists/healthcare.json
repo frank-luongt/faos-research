@@ -1,0 +1,181 @@
+{
+  "industry": "healthcare",
+  "source_note": "Curated from US federal healthcare regulations (HIPAA, EMTALA, Stark, AKS). NOT derived from FAOS ontology blueprints (E1 anti-circularity).",
+  "requirements": [
+    {
+      "id": "HC-01",
+      "regulation": "HIPAA/Privacy",
+      "source": "45 CFR §164.502 (Privacy Rule)",
+      "requirement": "Apply minimum necessary standard — use or disclose only the minimum PHI needed for the purpose",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-02",
+      "regulation": "HIPAA/Privacy",
+      "source": "45 CFR §164.508",
+      "requirement": "Obtain written patient authorization before disclosing PHI for purposes not covered by TPO exceptions",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-03",
+      "regulation": "HIPAA/Privacy",
+      "source": "45 CFR §164.524",
+      "requirement": "Provide patients right of access to their own PHI within 30 days of request",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-04",
+      "regulation": "HIPAA/Security",
+      "source": "45 CFR §164.312",
+      "requirement": "Implement technical safeguards: access controls, audit controls, integrity controls, transmission security",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-05",
+      "regulation": "HIPAA/Breach",
+      "source": "45 CFR §164.404",
+      "requirement": "Notify affected individuals within 60 days of discovering a breach of unsecured PHI",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-06",
+      "regulation": "HIPAA/BAA",
+      "source": "45 CFR §164.502(e)",
+      "requirement": "Require Business Associate Agreements before sharing PHI with third-party service providers",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-07",
+      "regulation": "EMTALA",
+      "source": "42 USC §1395dd(a)",
+      "requirement": "Provide medical screening examination to any individual presenting at emergency department",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-08",
+      "regulation": "EMTALA",
+      "source": "42 USC §1395dd(b)",
+      "requirement": "Stabilize emergency medical condition before discharge or transfer",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-09",
+      "regulation": "EMTALA",
+      "source": "42 USC §1395dd(c)",
+      "requirement": "Ensure appropriate transfer with patient consent, physician certification, and receiving facility acceptance",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-10",
+      "regulation": "Stark Law",
+      "source": "42 USC §1395nn",
+      "requirement": "Prohibit physician self-referral for designated health services unless an exception applies",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-11",
+      "regulation": "Stark Law",
+      "source": "42 CFR §411.357",
+      "requirement": "Verify applicable Stark Law exceptions (in-office ancillary, fair market value, etc.) before referral",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-12",
+      "regulation": "Anti-Kickback",
+      "source": "42 USC §1320a-7b(b)",
+      "requirement": "Do not offer or receive remuneration to induce referrals for services covered by federal healthcare programs",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-13",
+      "regulation": "Anti-Kickback",
+      "source": "42 CFR §1001.952",
+      "requirement": "Verify applicable safe harbors (employee, personal services, warranties, etc.) for any financial arrangement",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-14",
+      "regulation": "Clinical",
+      "source": "Joint Commission Standards",
+      "requirement": "Obtain informed consent including risks, benefits, and alternatives before procedures",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-15",
+      "regulation": "Clinical",
+      "source": "CMS Conditions of Participation",
+      "requirement": "Maintain complete and accurate medical records for each patient",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-16",
+      "regulation": "Clinical/Triage",
+      "source": "Emergency Severity Index (ESI) v4",
+      "requirement": "Apply standardized triage scoring system to prioritize patients by acuity level",
+      "category": "metric"
+    },
+    {
+      "id": "HC-17",
+      "regulation": "Quality",
+      "source": "CMS Quality Measures",
+      "requirement": "Track and report core quality measures: readmission rates, mortality rates, patient satisfaction",
+      "category": "metric"
+    },
+    {
+      "id": "HC-18",
+      "regulation": "HIPAA/Privacy",
+      "source": "45 CFR §164.530(j)",
+      "requirement": "Retain HIPAA-related documentation for minimum 6 years from date of creation or last effective date",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-19",
+      "regulation": "Medicare",
+      "source": "42 CFR §482 (Conditions of Participation)",
+      "requirement": "Comply with CMS Conditions of Participation for Medicare-certified facilities",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-20",
+      "regulation": "Patient Safety",
+      "source": "42 CFR Part 3 (Patient Safety Rule)",
+      "requirement": "Report patient safety events to Patient Safety Organization without retaliation",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-21",
+      "regulation": "Prescribing",
+      "source": "21 CFR §1306 (DEA regulations)",
+      "requirement": "Only licensed practitioners may prescribe controlled substances with proper DEA registration",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-22",
+      "regulation": "Clinical",
+      "source": "Evidence-based medicine standards",
+      "requirement": "Base clinical recommendations on current evidence-based guidelines and clinical protocols",
+      "category": "regulatory"
+    },
+    {
+      "id": "HC-23",
+      "regulation": "Quality",
+      "source": "CMS Hospital Compare metrics",
+      "requirement": "Calculate hospital-acquired infection rates and compare against national benchmarks",
+      "category": "metric"
+    },
+    {
+      "id": "HC-24",
+      "regulation": "Operations",
+      "source": "Healthcare operations standards",
+      "requirement": "Monitor emergency department wait times and door-to-provider time against benchmarks",
+      "category": "metric"
+    },
+    {
+      "id": "HC-25",
+      "regulation": "Billing",
+      "source": "False Claims Act (31 USC §3729)",
+      "requirement": "Ensure accurate coding and billing — do not upcode, unbundle, or submit claims for services not rendered",
+      "category": "regulatory"
+    }
+  ]
+}

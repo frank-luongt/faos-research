@@ -1,0 +1,10 @@
+anthropic>=0.40.0
+pandas>=2.0.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+numpy>=1.24.0
+
+# Note: Google AI Studio and Dashscope backends use OpenAI-compatible
+# REST APIs via stdlib urllib.request — no extra SDK required.
+# API keys: GOOGLE_API_KEY, DASHSCOPE_API_KEY (env vars or .env file)

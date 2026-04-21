@@ -1,0 +1,181 @@
+{
+  "industry": "insurance",
+  "source_note": "Curated from NAIC model laws, state DOI regulations, and federal guidance. NOT derived from FAOS ontology blueprints (E1 anti-circularity).",
+  "requirements": [
+    {
+      "id": "IN-01",
+      "regulation": "NAIC/Solvency",
+      "source": "NAIC Risk-Based Capital (RBC) Model Act §1",
+      "requirement": "Calculate Risk-Based Capital ratio and identify company action level (200%, 150%, 100%, 70%)",
+      "category": "metric"
+    },
+    {
+      "id": "IN-02",
+      "regulation": "NAIC/Solvency",
+      "source": "NAIC ORSA Model Act (Model #505)",
+      "requirement": "Conduct Own Risk and Solvency Assessment annually for insurers with >$500M premium",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-03",
+      "regulation": "Claims",
+      "source": "NAIC Unfair Claims Settlement Practices Act (Model #900)",
+      "requirement": "Do not misrepresent pertinent facts or policy provisions relating to coverage",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-04",
+      "regulation": "Claims",
+      "source": "NAIC Model #900 §4.D",
+      "requirement": "Acknowledge and act reasonably promptly upon receipt of claim communications",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-05",
+      "regulation": "Claims",
+      "source": "NAIC Model #900 §4.F",
+      "requirement": "Attempt fair and equitable settlement when liability is reasonably clear",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-06",
+      "regulation": "Claims",
+      "source": "State prompt payment statutes (typical)",
+      "requirement": "Pay undisputed claims within statutory timeframe (typically 30-45 days after proof of loss)",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-07",
+      "regulation": "State DOI/Rate Filing",
+      "source": "NAIC Property & Casualty Rate Filing Model Law",
+      "requirement": "Rates must not be excessive, inadequate, or unfairly discriminatory",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-08",
+      "regulation": "State DOI/Forms",
+      "source": "NAIC Policy Form Filing Requirements",
+      "requirement": "All policy forms must be filed with and approved by state DOI before use",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-09",
+      "regulation": "State DOI/Licensing",
+      "source": "NAIC Producer Licensing Model Act (Model #218)",
+      "requirement": "Verify producer licensing status before accepting agent-submitted business",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-10",
+      "regulation": "SAP",
+      "source": "NAIC Accounting Practices and Procedures Manual",
+      "requirement": "Apply Statutory Accounting Principles (SAP) for regulatory financial reporting, not GAAP",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-11",
+      "regulation": "Reserves",
+      "source": "NAIC Statement of Statutory Accounting Principles No. 55",
+      "requirement": "Establish loss reserves based on individual case estimates plus IBNR (Incurred But Not Reported)",
+      "category": "metric"
+    },
+    {
+      "id": "IN-12",
+      "regulation": "Metrics",
+      "source": "Industry standard (AM Best, S&P)",
+      "requirement": "Calculate combined ratio as (loss ratio + expense ratio) to assess underwriting profitability",
+      "category": "metric"
+    },
+    {
+      "id": "IN-13",
+      "regulation": "Metrics",
+      "source": "Industry standard",
+      "requirement": "Calculate loss ratio as (incurred losses + LAE) / earned premium",
+      "category": "metric"
+    },
+    {
+      "id": "IN-14",
+      "regulation": "Market Conduct",
+      "source": "NAIC Market Conduct Surveillance Model Law",
+      "requirement": "Maintain complaint records and respond to DOI market conduct inquiries",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-15",
+      "regulation": "Privacy",
+      "source": "NAIC Insurance Data Security Model Law (Model #668)",
+      "requirement": "Implement information security program protecting nonpublic information",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-16",
+      "regulation": "Claims",
+      "source": "NAIC Model #900 §4.J",
+      "requirement": "Do not compel insureds to institute litigation to recover amounts due by offering substantially less than value",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-17",
+      "regulation": "Underwriting",
+      "source": "State insurance codes (typical)",
+      "requirement": "Apply consistent underwriting guidelines without unfair discrimination based on protected classes",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-18",
+      "regulation": "Reinsurance",
+      "source": "NAIC Credit for Reinsurance Model Law (Model #785)",
+      "requirement": "Only take credit for reinsurance from authorized or certified reinsurers",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-19",
+      "regulation": "Fraud",
+      "source": "NAIC Insurance Fraud Prevention Model Act (Model #680)",
+      "requirement": "Maintain Special Investigation Unit (SIU) or fraud detection program",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-20",
+      "regulation": "Claims",
+      "source": "Good faith claims handling doctrine",
+      "requirement": "Document claim investigation findings and communicate basis for claim decisions",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-21",
+      "regulation": "Metrics",
+      "source": "NAIC Financial Condition Examiners Handbook",
+      "requirement": "Monitor premium-to-surplus ratio (leverage) as indicator of financial strength",
+      "category": "metric"
+    },
+    {
+      "id": "IN-22",
+      "regulation": "Catastrophe",
+      "source": "NAIC Catastrophe Risk Management guidelines",
+      "requirement": "Assess probable maximum loss (PML) and catastrophe exposure relative to capital",
+      "category": "metric"
+    },
+    {
+      "id": "IN-23",
+      "regulation": "Claims",
+      "source": "Policy contract language (typical occurrence form)",
+      "requirement": "Determine coverage based on policy effective dates, exclusions, and conditions",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-24",
+      "regulation": "State DOI",
+      "source": "State holding company acts",
+      "requirement": "Report material transactions between affiliated entities within insurance holding company system",
+      "category": "regulatory"
+    },
+    {
+      "id": "IN-25",
+      "regulation": "Consumer Protection",
+      "source": "State unfair trade practices acts",
+      "requirement": "Do not engage in misleading advertising or misrepresentation of policy benefits",
+      "category": "regulatory"
+    }
+  ]
+}

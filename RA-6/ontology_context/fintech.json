@@ -1,0 +1,160 @@
+{
+  "industry": "fintech",
+  "role_layer": {
+    "bsa_officer": {
+      "title": "BSA/AML Officer",
+      "persona": "Financial Crime Prevention Expert",
+      "communication_style": "Precise, investigative, regulatory-aware, documentation-focused",
+      "kpis": {
+        "sar_filing_timeliness": "Within regulatory deadlines",
+        "false_positive_rate": "Alert quality",
+        "investigation_quality": "Case closure accuracy",
+        "regulatory_exam_results": "No findings",
+        "sanctions_screening_accuracy": "100% screening"
+      },
+      "vocabulary": ["KYC", "CDD", "EDD", "SAR", "CTR", "OFAC", "PEP", "Beneficial Ownership", "Transaction Monitoring", "Red Flags"],
+      "decision_patterns": {
+        "suspicious_activity": {
+          "factors": ["transaction_patterns", "customer_profile", "red_flags_identified", "documentation_available", "historical_activity"],
+          "outputs": ["investigation_result", "sar_recommendation", "account_action", "case_documentation"],
+          "escalation_to": "CCO"
+        },
+        "customer_risk_rating": {
+          "factors": ["customer_type", "product_usage", "geographic_risk", "transaction_patterns", "negative_news"],
+          "outputs": ["risk_rating", "monitoring_level", "review_frequency"]
+        }
+      },
+      "domain_knowledge": {
+        "red_flags": ["structuring", "rapid_movement", "unusual_patterns", "high_risk_jurisdictions"],
+        "regulations": ["BSA", "USA_PATRIOT", "OFAC", "FinCEN_guidance"]
+      }
+    },
+    "head_of_payments": {
+      "title": "Head of Payments",
+      "persona": "Payment Systems Expert & Rail Optimizer",
+      "communication_style": "Technical, cost-conscious, reliability-focused",
+      "kpis": {
+        "authorization_rate": "> 95%",
+        "settlement_accuracy": "99.99%",
+        "payment_cost_efficiency": "Cost per transaction",
+        "uptime_availability": "99.99%",
+        "dispute_rate": "< 0.5%"
+      },
+      "vocabulary": ["Interchange", "Scheme Fees", "Authorization Rate", "Settlement", "Reconciliation", "Chargeback", "3DS", "Tokenization", "BIN", "ISO 8583", "Payment Rail"],
+      "decision_patterns": {
+        "payment_routing": {
+          "factors": ["cost", "success_rate", "speed", "customer_experience", "risk_profile"],
+          "outputs": ["routing_rules", "fallback_logic", "optimization_recommendations"],
+          "escalation_to": "CTO"
+        }
+      }
+    },
+    "ceo": {
+      "title": "Chief Executive Officer",
+      "vocabulary": ["TPV", "Take Rate", "Unit Economics", "CAC Payback", "Runway", "Bank Partner", "Money Transmitter License"],
+      "kpis": {
+        "tpv_growth": "Total Payment Volume growth rate",
+        "revenue_growth": "YoY revenue increase",
+        "unit_economics": "LTV/CAC ratio > 3:1"
+      }
+    },
+    "cfo": {
+      "title": "Chief Financial Officer",
+      "vocabulary": ["TPV", "Take Rate", "Interchange Revenue", "Net Interest Margin", "Loss Reserve", "CAC", "LTV", "Contribution Margin", "Burn Rate", "Runway", "ARR/MRR"],
+      "kpis": {
+        "unit_economics": "LTV/CAC > 3:1",
+        "gross_margin": "Revenue minus direct costs",
+        "take_rate": "Revenue / TPV"
+      }
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "take_rate": {
+        "definition": "Revenue divided by Total Payment Volume; measures percentage of transaction volume converted to revenue",
+        "related": ["TPV", "Revenue", "Interchange"]
+      },
+      "tpv": {
+        "definition": "Total Payment Volume; aggregate value of all transactions processed through the platform",
+        "related": ["Take Rate", "Transaction Volume"]
+      },
+      "interchange": {
+        "definition": "Fee paid by the acquiring bank to the issuing bank for each card transaction",
+        "related": ["Scheme Fees", "Processing Fees", "Card Networks"]
+      },
+      "authorization_rate": {
+        "definition": "Percentage of payment requests successfully approved by the card issuer/network",
+        "healthy_range": "> 95%",
+        "world_class": "> 98%"
+      },
+      "chargeback_rate": {
+        "definition": "Ratio of disputed transactions reversed by card network to total transactions",
+        "healthy_range": "< 0.5%",
+        "threshold": "Card networks may impose penalties above 1%"
+      },
+      "settlement_accuracy": {
+        "definition": "Percentage of settlements correctly reconciled without discrepancy",
+        "target": "99.99%"
+      },
+      "tokenization": {
+        "definition": "Process of replacing sensitive cardholder data (PANs) with non-sensitive equivalents (tokens), reducing PCI-DSS scope",
+        "regulatory_reference": "PCI-DSS scope reduction"
+      },
+      "3ds": {
+        "definition": "3-D Secure; authentication protocol required by card networks for e-commerce transactions to reduce fraud",
+        "related": ["PCI-DSS", "Strong Customer Authentication"]
+      }
+    },
+    "regulations": {
+      "bsa_aml": {
+        "name": "Bank Secrecy Act / Anti-Money Laundering",
+        "ctr_threshold": "$10,000 aggregate daily transactions",
+        "sar_filing": "30 days from detection of suspicious activity",
+        "kyc_components": ["CIP", "CDD", "EDD", "Beneficial Ownership"]
+      },
+      "pci_dss": {
+        "name": "Payment Card Industry Data Security Standard",
+        "levels": {
+          "Level 1": "> 6M transactions/year",
+          "Level 2": "1-6M transactions/year",
+          "Level 3": "20K-1M e-commerce transactions/year",
+          "Level 4": "< 20K e-commerce or < 1M other transactions/year"
+        },
+        "requirements": ["cardholder data protection", "encryption", "access controls", "network security", "vulnerability management"]
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "product_to_compliance": {
+        "trigger": "New product or feature requiring compliance review",
+        "from": "CPO",
+        "to": "CCO",
+        "required_context": ["PRD", "data handling plan", "customer segments"],
+        "sla": {"response": "2 business days", "completion": "5 business days"}
+      },
+      "underwriting_to_bsa": {
+        "trigger": "High-risk customer application flagged",
+        "from": "Head of Risk & Underwriting",
+        "to": "BSA Officer",
+        "sla": {"response": "Same day", "completion": "2 business days"}
+      },
+      "bsa_to_compliance": {
+        "trigger": "Suspicious activity requiring escalation",
+        "from": "BSA Officer",
+        "to": "CCO",
+        "sla": {"sar_filing": "30 days from detection"}
+      }
+    }
+  },
+  "rag_chunks": [
+    "Take Rate is Revenue divided by Total Payment Volume (TPV). It measures the percentage of transaction volume converted to revenue and is a primary KPI for payments fintechs tracked by CFOs and CEOs.",
+    "Interchange is the fee paid by the acquiring bank to the issuing bank for each card transaction. Scheme fees are charged by card networks (Visa, Mastercard). Authorization rate measures the percentage of payment requests approved — benchmark is >95%. Chargeback rate is disputed transactions as a percentage of volume — threshold is <0.5%.",
+    "3-D Secure (3DS) is an authentication protocol required by card networks for online transactions. Tokenization replaces sensitive cardholder data with non-sensitive equivalents, reducing PCI-DSS scope. Both are key compliance technologies for payment processors.",
+    "BSA/AML compliance requires: Currency Transaction Reports (CTR) for transactions exceeding $10,000 in aggregate per day. Suspicious Activity Reports (SAR) must be filed within 30 days of detection. Red flags include structuring (breaking transactions to avoid thresholds), rapid movement of funds, and unusual transaction patterns. KYC components include CIP, CDD, and EDD.",
+    "PCI-DSS compliance levels: Level 1 (>6M transactions/year), Level 2 (1-6M), Level 3 (20K-1M e-commerce), Level 4 (<20K e-commerce). Requirements include cardholder data protection, encryption, access controls, and network security.",
+    "Head of Payments KPIs: authorization rate >95%, settlement accuracy 99.99%, uptime availability 99.99%, dispute rate <0.5%. Payment routing decisions consider cost, success rate, speed, customer experience, and risk profile.",
+    "BSA Officer role: Financial Crime Prevention Expert. Evaluates suspicious activity based on transaction_patterns, customer_profile, red_flags_identified, documentation_available. Outputs: investigation_result, sar_recommendation, account_action. Escalates to CCO.",
+    "Fintech compliance handoffs: Product→Compliance (new product review, SLA: 2 business day response, 5 day completion). BSA→Compliance (suspicious activity, SAR filing within 30 days). Required context includes PRD, data handling, customer segments, and state licensing plan."
+  ]
+}

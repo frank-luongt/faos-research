@@ -1,0 +1,299 @@
+{
+  "experiment": "RA-3 Pilot (5 industries)",
+  "total_rows": 600,
+  "industries": [
+    "fintech",
+    "insurance",
+    "healthcare",
+    "banking_vn",
+    "insurance_vn"
+  ],
+  "industry_counts": {
+    "fintech": 120,
+    "insurance": 120,
+    "healthcare": 120,
+    "banking_vn": 120,
+    "insurance_vn": 120
+  },
+  "industry_condition_means": {
+    "fintech": {
+      "C1_ungrounded": {
+        "TF": 0.74,
+        "MA": 0.191,
+        "RC": 0.922,
+        "RS": 0.863
+      },
+      "C2_rag": {
+        "TF": 0.78,
+        "MA": 0.936,
+        "RC": 0.867,
+        "RS": 0.922
+      },
+      "C3_ontology": {
+        "TF": 0.812,
+        "MA": 0.693,
+        "RC": 0.811,
+        "RS": 0.947
+      },
+      "C4_ontology_process": {
+        "TF": 0.9,
+        "MA": 0.659,
+        "RC": 0.856,
+        "RS": 0.933
+      }
+    },
+    "insurance": {
+      "C1_ungrounded": {
+        "TF": 0.675,
+        "MA": 0.267,
+        "RC": 0.686,
+        "RS": 0.851
+      },
+      "C2_rag": {
+        "TF": 0.803,
+        "MA": 0.6,
+        "RC": 0.9,
+        "RS": 0.843
+      },
+      "C3_ontology": {
+        "TF": 0.658,
+        "MA": 0.9,
+        "RC": 0.76,
+        "RS": 0.968
+      },
+      "C4_ontology_process": {
+        "TF": 0.598,
+        "MA": 0.933,
+        "RC": 0.707,
+        "RS": 0.922
+      }
+    },
+    "healthcare": {
+      "C1_ungrounded": {
+        "TF": 0.663,
+        "MA": 0.358,
+        "RC": 0.689,
+        "RS": 0.869
+      },
+      "C2_rag": {
+        "TF": 0.902,
+        "MA": 0.978,
+        "RC": 0.9,
+        "RS": 0.907
+      },
+      "C3_ontology": {
+        "TF": 0.621,
+        "MA": 0.933,
+        "RC": 0.767,
+        "RS": 0.934
+      },
+      "C4_ontology_process": {
+        "TF": 0.621,
+        "MA": 0.933,
+        "RC": 0.733,
+        "RS": 0.94
+      }
+    },
+    "banking_vn": {
+      "C1_ungrounded": {
+        "TF": 0.566,
+        "MA": 0.405,
+        "RC": 0.444,
+        "RS": 0.721
+      },
+      "C2_rag": {
+        "TF": 0.708,
+        "MA": 0.386,
+        "RC": 0.889,
+        "RS": 0.799
+      },
+      "C3_ontology": {
+        "TF": 0.683,
+        "MA": 0.803,
+        "RC": 0.73,
+        "RS": 0.933
+      },
+      "C4_ontology_process": {
+        "TF": 0.713,
+        "MA": 0.864,
+        "RC": 0.767,
+        "RS": 0.893
+      }
+    },
+    "insurance_vn": {
+      "C1_ungrounded": {
+        "TF": 0.526,
+        "MA": 0.501,
+        "RC": 0.392,
+        "RS": 0.584
+      },
+      "C2_rag": {
+        "TF": 0.713,
+        "MA": 0.828,
+        "RC": 0.471,
+        "RS": 0.759
+      },
+      "C3_ontology": {
+        "TF": 0.784,
+        "MA": 0.804,
+        "RC": 0.827,
+        "RS": 0.899
+      },
+      "C4_ontology_process": {
+        "TF": 0.822,
+        "MA": 0.781,
+        "RC": 0.773,
+        "RS": 0.914
+      }
+    }
+  },
+  "grand_means": {
+    "C1_ungrounded": {
+      "TF": 0.634,
+      "MA": 0.344,
+      "RC": 0.627,
+      "RS": 0.778
+    },
+    "C2_rag": {
+      "TF": 0.781,
+      "MA": 0.746,
+      "RC": 0.805,
+      "RS": 0.846
+    },
+    "C3_ontology": {
+      "TF": 0.712,
+      "MA": 0.827,
+      "RC": 0.779,
+      "RS": 0.936
+    },
+    "C4_ontology_process": {
+      "TF": 0.731,
+      "MA": 0.834,
+      "RC": 0.767,
+      "RS": 0.92
+    }
+  },
+  "statistical_tests": {
+    "TF": {
+      "test": "Friedman",
+      "statistic": 10.4057,
+      "p_value": 0.015414,
+      "significant": "True",
+      "effect_size_W": 0.1734,
+      "n_tasks": 20,
+      "k_conditions": 4,
+      "posthoc_wilcoxon": {
+        "C1_ungrounded_vs_C3_ontology": {
+          "statistic": 35.5,
+          "p_value": 0.029423,
+          "p_corrected": 0.088268,
+          "significant": false
+        },
+        "C2_rag_vs_C3_ontology": {
+          "statistic": 55.0,
+          "p_value": 0.308788,
+          "p_corrected": 0.926363,
+          "significant": false
+        },
+        "C3_ontology_vs_C4_ontology_process": {
+          "statistic": 41.0,
+          "p_value": 0.280531,
+          "p_corrected": 0.841593,
+          "significant": false
+        }
+      }
+    },
+    "MA": {
+      "test": "Friedman",
+      "statistic": 25.1395,
+      "p_value": 1.4e-05,
+      "significant": "True",
+      "effect_size_W": 0.5587,
+      "n_tasks": 15,
+      "k_conditions": 4,
+      "posthoc_wilcoxon": {
+        "C1_ungrounded_vs_C3_ontology": {
+          "statistic": 0.0,
+          "p_value": 6.1e-05,
+          "p_corrected": 0.000183,
+          "significant": true
+        },
+        "C2_rag_vs_C3_ontology": {
+          "statistic": 25.0,
+          "p_value": 0.476907,
+          "p_corrected": 1.0,
+          "significant": false
+        },
+        "C3_ontology_vs_C4_ontology_process": {
+          "statistic": 11.0,
+          "p_value": 0.61209,
+          "p_corrected": 1.0,
+          "significant": false
+        }
+      }
+    },
+    "RC": {
+      "test": "Friedman",
+      "statistic": 7.7578,
+      "p_value": 0.051291,
+      "significant": "False",
+      "effect_size_W": 0.1724,
+      "n_tasks": 15,
+      "k_conditions": 4,
+      "posthoc_wilcoxon": {
+        "C1_ungrounded_vs_C3_ontology": {
+          "statistic": 14.0,
+          "p_value": 0.027708,
+          "p_corrected": 0.083124,
+          "significant": false
+        },
+        "C2_rag_vs_C3_ontology": {
+          "statistic": 44.0,
+          "p_value": 0.593254,
+          "p_corrected": 1.0,
+          "significant": false
+        },
+        "C3_ontology_vs_C4_ontology_process": {
+          "statistic": 24.5,
+          "p_value": 0.44958,
+          "p_corrected": 1.0,
+          "significant": false
+        }
+      }
+    },
+    "RS": {
+      "test": "Friedman",
+      "statistic": 28.8643,
+      "p_value": 2e-06,
+      "significant": "True",
+      "effect_size_W": 0.6414,
+      "n_tasks": 15,
+      "k_conditions": 4,
+      "posthoc_wilcoxon": {
+        "C1_ungrounded_vs_C3_ontology": {
+          "statistic": 0.0,
+          "p_value": 6.1e-05,
+          "p_corrected": 0.000183,
+          "significant": true
+        },
+        "C2_rag_vs_C3_ontology": {
+          "statistic": 3.0,
+          "p_value": 0.001882,
+          "p_corrected": 0.005647,
+          "significant": true
+        },
+        "C3_ontology_vs_C4_ontology_process": {
+          "statistic": 23.0,
+          "p_value": 0.209427,
+          "p_corrected": 0.62828,
+          "significant": false
+        }
+      }
+    }
+  },
+  "n_tasks": 50,
+  "n_conditions": 4,
+  "results_file": "results_raw_gemma4_26b.csv",
+  "output_suffix": "gemma4_26b",
+  "generated": "2026-04-04T15:25:54.239097+00:00"
+}

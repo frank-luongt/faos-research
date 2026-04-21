@@ -1,0 +1,634 @@
+{
+  "baseline": {
+    "label": "Claude Sonnet 4",
+    "results_file": "results_raw.csv",
+    "anova": {
+      "TF": {
+        "test": "Friedman",
+        "statistic": 9.4162,
+        "p_value": 0.02424,
+        "significant": 1,
+        "effect_size_W": 0.1569,
+        "n_tasks": 20,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 64.0,
+            "p_value": 0.349102,
+            "p_corrected": 1.0,
+            "significant": false
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 34.0,
+            "p_value": 0.078731,
+            "p_corrected": 0.236192,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 50.0,
+            "p_value": 0.875291,
+            "p_corrected": 1.0,
+            "significant": false
+          }
+        }
+      },
+      "MA": {
+        "test": "Friedman",
+        "statistic": 20.7132,
+        "p_value": 0.000121,
+        "significant": 1,
+        "effect_size_W": 0.4603,
+        "n_tasks": 15,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 1.0,
+            "p_value": 0.000122,
+            "p_corrected": 0.000366,
+            "significant": true
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 38.0,
+            "p_value": 0.937473,
+            "p_corrected": 1.0,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 12.0,
+            "p_value": 0.213524,
+            "p_corrected": 0.640573,
+            "significant": false
+          }
+        }
+      },
+      "RC": {
+        "test": "Friedman",
+        "statistic": 14.3023,
+        "p_value": 0.002521,
+        "significant": 1,
+        "effect_size_W": 0.3178,
+        "n_tasks": 15,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 22.5,
+            "p_value": 0.107866,
+            "p_corrected": 0.323597,
+            "significant": false
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 20.5,
+            "p_value": 0.08052,
+            "p_corrected": 0.241561,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 8.0,
+            "p_value": 0.026231,
+            "p_corrected": 0.078694,
+            "significant": false
+          }
+        }
+      },
+      "RS": {
+        "test": "Friedman",
+        "statistic": 27.6412,
+        "p_value": 4e-06,
+        "significant": 1,
+        "effect_size_W": 0.6142,
+        "n_tasks": 15,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 0.0,
+            "p_value": 0.000982,
+            "p_corrected": 0.002945,
+            "significant": true
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 36.5,
+            "p_value": 0.84446,
+            "p_corrected": 1.0,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 19.0,
+            "p_value": 0.678402,
+            "p_corrected": 1.0,
+            "significant": false
+          }
+        }
+      }
+    },
+    "delta_summary": {
+      "overall": 0.1514,
+      "english": 0.0841,
+      "vietnamese": 0.2523
+    }
+  },
+  "comparison": {
+    "label": "Qwen 2.5 72B",
+    "results_file": "results_raw_qwen72b.csv",
+    "anova": {
+      "TF": {
+        "test": "Friedman",
+        "statistic": 13.5434,
+        "p_value": 0.003597,
+        "significant": 1,
+        "effect_size_W": 0.2257,
+        "n_tasks": 20,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 58.0,
+            "p_value": 0.231059,
+            "p_corrected": 0.693178,
+            "significant": false
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 39.0,
+            "p_value": 0.13373,
+            "p_corrected": 0.40119,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 40.0,
+            "p_value": 0.08393,
+            "p_corrected": 0.25179,
+            "significant": false
+          }
+        }
+      },
+      "MA": {
+        "test": "Friedman",
+        "statistic": 22.5221,
+        "p_value": 5.1e-05,
+        "significant": 1,
+        "effect_size_W": 0.5005,
+        "n_tasks": 15,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 2.0,
+            "p_value": 0.000183,
+            "p_corrected": 0.000549,
+            "significant": true
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 37.5,
+            "p_value": 0.346254,
+            "p_corrected": 1.0,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 5.0,
+            "p_value": 0.500184,
+            "p_corrected": 1.0,
+            "significant": false
+          }
+        }
+      },
+      "RC": {
+        "test": "Friedman",
+        "statistic": 20.0714,
+        "p_value": 0.000164,
+        "significant": 1,
+        "effect_size_W": 0.446,
+        "n_tasks": 15,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 6.5,
+            "p_value": 0.006403,
+            "p_corrected": 0.01921,
+            "significant": true
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 34.5,
+            "p_value": 0.72398,
+            "p_corrected": 1.0,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 18.0,
+            "p_value": 0.33288,
+            "p_corrected": 0.998639,
+            "significant": false
+          }
+        }
+      },
+      "RS": {
+        "test": "Friedman",
+        "statistic": 21.8219,
+        "p_value": 7.1e-05,
+        "significant": 1,
+        "effect_size_W": 0.4849,
+        "n_tasks": 15,
+        "k_conditions": 4,
+        "posthoc_wilcoxon": {
+          "C1_ungrounded_vs_C3_ontology": {
+            "statistic": 6.0,
+            "p_value": 0.002158,
+            "p_corrected": 0.006473,
+            "significant": true
+          },
+          "C2_rag_vs_C3_ontology": {
+            "statistic": 34.0,
+            "p_value": 0.421579,
+            "p_corrected": 1.0,
+            "significant": false
+          },
+          "C3_ontology_vs_C4_ontology_process": {
+            "statistic": 32.0,
+            "p_value": 0.345448,
+            "p_corrected": 1.0,
+            "significant": false
+          }
+        }
+      }
+    },
+    "delta_summary": {
+      "overall": 0.2247,
+      "english": 0.1737,
+      "vietnamese": 0.3012
+    }
+  },
+  "delta_comparison": {
+    "per_task": [
+      {
+        "task_id": "banking_vn_T1",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.3733333333333334,
+        "delta_c1_c3_compare": -0.039999999999999925
+      },
+      {
+        "task_id": "banking_vn_T10",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.4333333333333333,
+        "delta_c1_c3_compare": 0.46666666666666673
+      },
+      {
+        "task_id": "banking_vn_T2",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": -0.1333333333333333,
+        "delta_c1_c3_compare": 0.020000000000000018
+      },
+      {
+        "task_id": "banking_vn_T3",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.38500000000000006,
+        "delta_c1_c3_compare": -0.1766666666666667
+      },
+      {
+        "task_id": "banking_vn_T4",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.3633333333333333,
+        "delta_c1_c3_compare": 0.29499999999999993
+      },
+      {
+        "task_id": "banking_vn_T5",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.2066666666666666,
+        "delta_c1_c3_compare": -0.1233333333333333
+      },
+      {
+        "task_id": "banking_vn_T6",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": -0.053333333333333344,
+        "delta_c1_c3_compare": 0.9500000000000001
+      },
+      {
+        "task_id": "banking_vn_T7",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.36999999999999994,
+        "delta_c1_c3_compare": 0.8333333333333334
+      },
+      {
+        "task_id": "banking_vn_T8",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.2466666666666667,
+        "delta_c1_c3_compare": 0.31333333333333346
+      },
+      {
+        "task_id": "banking_vn_T9",
+        "industry": "banking_vn",
+        "delta_c1_c3_baseline": 0.33666666666666667,
+        "delta_c1_c3_compare": 0.37666666666666665
+      },
+      {
+        "task_id": "fintech_T1",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.33333333333333337,
+        "delta_c1_c3_compare": -0.16666666666666663
+      },
+      {
+        "task_id": "fintech_T10",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.29999999999999993,
+        "delta_c1_c3_compare": 0.29999999999999993
+      },
+      {
+        "task_id": "fintech_T2",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.13666666666666671,
+        "delta_c1_c3_compare": 0.1133333333333334
+      },
+      {
+        "task_id": "fintech_T3",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.013333333333333308,
+        "delta_c1_c3_compare": 0.21333333333333337
+      },
+      {
+        "task_id": "fintech_T4",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.18999999999999995,
+        "delta_c1_c3_compare": 0.07000000000000006
+      },
+      {
+        "task_id": "fintech_T5",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": -0.043333333333333335,
+        "delta_c1_c3_compare": 0.28
+      },
+      {
+        "task_id": "fintech_T6",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.06666666666666654,
+        "delta_c1_c3_compare": 0.029999999999999916
+      },
+      {
+        "task_id": "fintech_T7",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": -0.5833333333333333,
+        "delta_c1_c3_compare": 0.2333333333333334
+      },
+      {
+        "task_id": "fintech_T8",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.053333333333333344,
+        "delta_c1_c3_compare": 0.07333333333333336
+      },
+      {
+        "task_id": "fintech_T9",
+        "industry": "fintech",
+        "delta_c1_c3_baseline": 0.16666666666666652,
+        "delta_c1_c3_compare": 0.4466666666666667
+      },
+      {
+        "task_id": "healthcare_T1",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": -0.1299999999999999,
+        "delta_c1_c3_compare": -0.036666666666666736
+      },
+      {
+        "task_id": "healthcare_T10",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": 0.24166666666666659,
+        "delta_c1_c3_compare": 0.2666666666666667
+      },
+      {
+        "task_id": "healthcare_T2",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": -0.15666666666666673,
+        "delta_c1_c3_compare": -0.14166666666666672
+      },
+      {
+        "task_id": "healthcare_T3",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": 0.12833333333333335,
+        "delta_c1_c3_compare": 0.10333333333333333
+      },
+      {
+        "task_id": "healthcare_T4",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": 0.5833333333333333,
+        "delta_c1_c3_compare": 0.5
+      },
+      {
+        "task_id": "healthcare_T5",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": 0.5533333333333332,
+        "delta_c1_c3_compare": 0.7816666666666666
+      },
+      {
+        "task_id": "healthcare_T6",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": -0.1166666666666667,
+        "delta_c1_c3_compare": -0.2333333333333334
+      },
+      {
+        "task_id": "healthcare_T7",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": 0.0,
+        "delta_c1_c3_compare": 0.0
+      },
+      {
+        "task_id": "healthcare_T8",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": 0.04999999999999982,
+        "delta_c1_c3_compare": 0.026666666666666616
+      },
+      {
+        "task_id": "healthcare_T9",
+        "industry": "healthcare",
+        "delta_c1_c3_baseline": 0.1433333333333333,
+        "delta_c1_c3_compare": 0.15666666666666662
+      },
+      {
+        "task_id": "insurance_T1",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": -0.3166666666666667,
+        "delta_c1_c3_compare": 0.011666666666666714
+      },
+      {
+        "task_id": "insurance_T10",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": 0.05833333333333335,
+        "delta_c1_c3_compare": 0.10833333333333339
+      },
+      {
+        "task_id": "insurance_T2",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": -0.29333333333333333,
+        "delta_c1_c3_compare": 0.0
+      },
+      {
+        "task_id": "insurance_T3",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": -0.2466666666666666,
+        "delta_c1_c3_compare": -0.13333333333333325
+      },
+      {
+        "task_id": "insurance_T4",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": 0.2516666666666666,
+        "delta_c1_c3_compare": 0.4483333333333333
+      },
+      {
+        "task_id": "insurance_T5",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": 0.6233333333333334,
+        "delta_c1_c3_compare": 0.9166666666666666
+      },
+      {
+        "task_id": "insurance_T6",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": 0.19333333333333336,
+        "delta_c1_c3_compare": 0.49
+      },
+      {
+        "task_id": "insurance_T7",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": 0.0,
+        "delta_c1_c3_compare": 0.0
+      },
+      {
+        "task_id": "insurance_T8",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": 0.033333333333333326,
+        "delta_c1_c3_compare": 0.053333333333333344
+      },
+      {
+        "task_id": "insurance_T9",
+        "industry": "insurance",
+        "delta_c1_c3_baseline": 0.29000000000000004,
+        "delta_c1_c3_compare": 0.30000000000000004
+      },
+      {
+        "task_id": "insurance_vn_T1",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.20833333333333326,
+        "delta_c1_c3_compare": 0.5633333333333334
+      },
+      {
+        "task_id": "insurance_vn_T10",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.33333333333333337,
+        "delta_c1_c3_compare": 0.3583333333333332
+      },
+      {
+        "task_id": "insurance_vn_T2",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.07000000000000012,
+        "delta_c1_c3_compare": 0.0
+      },
+      {
+        "task_id": "insurance_vn_T3",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": -0.17333333333333334,
+        "delta_c1_c3_compare": 0.05833333333333335
+      },
+      {
+        "task_id": "insurance_vn_T4",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.046666666666666634,
+        "delta_c1_c3_compare": 0.1266666666666666
+      },
+      {
+        "task_id": "insurance_vn_T5",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.46333333333333326,
+        "delta_c1_c3_compare": 0.44333333333333336
+      },
+      {
+        "task_id": "insurance_vn_T6",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.14666666666666664,
+        "delta_c1_c3_compare": 0.31666666666666665
+      },
+      {
+        "task_id": "insurance_vn_T7",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.3566666666666667,
+        "delta_c1_c3_compare": 0.5033333333333332
+      },
+      {
+        "task_id": "insurance_vn_T8",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.5666666666666667,
+        "delta_c1_c3_compare": 0.2666666666666666
+      },
+      {
+        "task_id": "insurance_vn_T9",
+        "industry": "insurance_vn",
+        "delta_c1_c3_baseline": 0.4999999999999999,
+        "delta_c1_c3_compare": 0.4733333333333333
+      }
+    ],
+    "delta_test": {
+      "test": "Wilcoxon signed-rank",
+      "statistic": 370.0,
+      "p_value": 0.040077,
+      "significant": true
+    },
+    "baseline_minus_comparison_mean": -0.0733
+  },
+  "industry_delta_table": [
+    {
+      "industry": "banking_vn",
+      "C1_ungrounded_baseline": 0.5095,
+      "C2_rag_baseline": 0.7558333333333334,
+      "C3_ontology_baseline": 0.7623333333333333,
+      "C4_ontology_process_baseline": 0.7986666666666666,
+      "delta_c1_c3_baseline": 0.25283333333333335,
+      "C1_ungrounded_compare": 0.4648333333333333,
+      "C2_rag_compare": 0.7135,
+      "C3_ontology_compare": 0.7563333333333333,
+      "C4_ontology_process_compare": 0.7618333333333334,
+      "delta_c1_c3_compare": 0.2915
+    },
+    {
+      "industry": "fintech",
+      "C1_ungrounded_baseline": 0.6821666666666666,
+      "C2_rag_baseline": 0.9556666666666667,
+      "C3_ontology_baseline": 0.7454999999999999,
+      "C4_ontology_process_baseline": 0.8317499999999999,
+      "delta_c1_c3_baseline": 0.06333333333333335,
+      "C1_ungrounded_compare": 0.6748333333333333,
+      "C2_rag_compare": 0.87325,
+      "C3_ontology_compare": 0.8341666666666667,
+      "C4_ontology_process_compare": 0.8493333333333334,
+      "delta_c1_c3_compare": 0.15933333333333344
+    },
+    {
+      "industry": "healthcare",
+      "C1_ungrounded_baseline": 0.6525000000000001,
+      "C2_rag_baseline": 0.9113333333333333,
+      "C3_ontology_baseline": 0.7821666666666667,
+      "C4_ontology_process_baseline": 0.8123333333333334,
+      "delta_c1_c3_baseline": 0.1296666666666666,
+      "C1_ungrounded_compare": 0.6208333333333333,
+      "C2_rag_compare": 0.8341666666666667,
+      "C3_ontology_compare": 0.7631666666666665,
+      "C4_ontology_process_compare": 0.752,
+      "delta_c1_c3_compare": 0.1423333333333332
+    },
+    {
+      "industry": "insurance",
+      "C1_ungrounded_baseline": 0.7066666666666667,
+      "C2_rag_baseline": 0.7806666666666666,
+      "C3_ontology_baseline": 0.766,
+      "C4_ontology_process_baseline": 0.7405,
+      "delta_c1_c3_baseline": 0.05933333333333335,
+      "C1_ungrounded_compare": 0.6053333333333333,
+      "C2_rag_compare": 0.7753333333333334,
+      "C3_ontology_compare": 0.8248333333333333,
+      "C4_ontology_process_compare": 0.8154999999999999,
+      "delta_c1_c3_compare": 0.21950000000000003
+    },
+    {
+      "industry": "insurance_vn",
+      "C1_ungrounded_baseline": 0.4625,
+      "C2_rag_baseline": 0.6866666666666666,
+      "C3_ontology_baseline": 0.7143333333333334,
+      "C4_ontology_process_baseline": 0.7241666666666667,
+      "delta_c1_c3_baseline": 0.25183333333333335,
+      "C1_ungrounded_compare": 0.364,
+      "C2_rag_compare": 0.622,
+      "C3_ontology_compare": 0.675,
+      "C4_ontology_process_compare": 0.7278333333333333,
+      "delta_c1_c3_compare": 0.31100000000000005
+    }
+  ]
+}

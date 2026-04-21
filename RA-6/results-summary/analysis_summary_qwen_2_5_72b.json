@@ -1,0 +1,152 @@
+{
+  "H1_RC": {
+    "label": "H1_RC",
+    "n": 125,
+    "k": 4,
+    "chi2": 29.313,
+    "p_value": 2e-06,
+    "significant": true,
+    "kendall_w": 0.0782,
+    "condition_means": {
+      "G1_baseline": 0.1813,
+      "G2_persona": 0.1573,
+      "G3_rag": 0.296,
+      "G4_ontology": 0.3013
+    },
+    "posthoc": {
+      "G4_vs_G1_baseline": {
+        "w_stat": 296.0,
+        "p_raw": 0.002519,
+        "p_corrected": 0.007558,
+        "significant": true
+      },
+      "G4_vs_G2_persona": {
+        "w_stat": 468.0,
+        "p_raw": 0.001526,
+        "p_corrected": 0.004579,
+        "significant": true
+      },
+      "G4_vs_G3_rag": {
+        "w_stat": 588.0,
+        "p_raw": 0.805985,
+        "p_corrected": 1.0,
+        "significant": false
+      }
+    }
+  },
+  "H2_FDR_design": {
+    "label": "H2_FDR_design",
+    "n": 25,
+    "k": 4,
+    "chi2": 1.556,
+    "p_value": 0.669509,
+    "significant": false,
+    "kendall_w": 0.0207,
+    "condition_means": {
+      "G1_baseline": 0.36,
+      "G2_persona": 0.32,
+      "G3_rag": 0.3467,
+      "G4_ontology": 0.4
+    }
+  },
+  "H3_ISS": {
+    "label": "H3_ISS",
+    "n": 150,
+    "k": 4,
+    "chi2": 103.224,
+    "p_value": 0.0,
+    "significant": true,
+    "kendall_w": 0.2294,
+    "condition_means": {
+      "G1_baseline": 4.1667,
+      "G2_persona": 3.8444,
+      "G3_rag": 4.1289,
+      "G4_ontology": 4.3733
+    },
+    "posthoc": {
+      "G4_vs_G1_baseline": {
+        "w_stat": 1811.0,
+        "p_raw": 1.8e-05,
+        "p_corrected": 5.4e-05,
+        "significant": true
+      },
+      "G4_vs_G2_persona": {
+        "w_stat": 948.5,
+        "p_raw": 0.0,
+        "p_corrected": 0.0,
+        "significant": true
+      },
+      "G4_vs_G3_rag": {
+        "w_stat": 1427.5,
+        "p_raw": 1e-06,
+        "p_corrected": 3e-06,
+        "significant": true
+      }
+    }
+  },
+  "H4_AC": {
+    "label": "H4_AC",
+    "n": 6,
+    "k": 4,
+    "chi2": 12.661,
+    "p_value": 0.00543,
+    "significant": true,
+    "kendall_w": 0.7034,
+    "condition_means": {
+      "G1_baseline": 0.3333,
+      "G2_persona": 0.7,
+      "G3_rag": 0.5556,
+      "G4_ontology": 0.8111
+    },
+    "posthoc": {
+      "G4_vs_G1_baseline": {
+        "w_stat": 0.0,
+        "p_raw": 0.0625,
+        "p_corrected": 0.1875,
+        "significant": false
+      },
+      "G4_vs_G2_persona": {
+        "w_stat": 6.0,
+        "p_raw": 0.375,
+        "p_corrected": 1.0,
+        "significant": false
+      },
+      "G4_vs_G3_rag": {
+        "w_stat": 2.0,
+        "p_raw": 0.09375,
+        "p_corrected": 0.28125,
+        "significant": false
+      }
+    }
+  },
+  "condition_summary": {
+    "G1_baseline": {
+      "RC": 0.18133333333333335,
+      "FDR-design": 0.36,
+      "FDR-exec": 0.48,
+      "ISS (norm)": 0.8333333333333334,
+      "AC": 0.3333333333333333
+    },
+    "G2_persona": {
+      "RC": 0.15733333333333333,
+      "FDR-design": 0.32,
+      "FDR-exec": 0.5333333333333333,
+      "ISS (norm)": 0.768888888888889,
+      "AC": 0.7
+    },
+    "G3_rag": {
+      "RC": 0.296,
+      "FDR-design": 0.3466666666666667,
+      "FDR-exec": 0.52,
+      "ISS (norm)": 0.8257777777777777,
+      "AC": 0.5555555555555556
+    },
+    "G4_ontology": {
+      "RC": 0.30133333333333334,
+      "FDR-design": 0.4,
+      "FDR-exec": 0.56,
+      "ISS (norm)": 0.8746666666666666,
+      "AC": 0.8111111111111111
+    }
+  }
+}
