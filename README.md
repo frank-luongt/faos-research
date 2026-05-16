@@ -1,26 +1,44 @@
-# FAOS Research
+# FAOS Research Programme — Research, in the open.
 
-**Code, data, and ontologies for ontology-powered enterprise AI agent verification.**
+**Source LaTeX, raw model outputs, judge logs, evaluation scripts, and frozen-version DOIs for every accepted paper in the Foundation AgenticOS research portfolio.**
 
-This repository accompanies two research papers from the Foundation AgenticOS (FAOS) programme at Golden Gate University. It provides the analysis code, industry ontologies, regulatory checklists, fault definitions, and aggregated results needed to reproduce and audit the papers' empirical claims.
+The FAOS Research Programme is the empirical research arm of the [Foundation AgenticOS](https://www.faosx.ai) platform. We study how ontology-grounded, neurosymbolic, and context-engineered agent systems behave under the conditions enterprises actually face — regulated industries, multi-agent coordination, verification under uncertainty. The programme is run by Thanh Luong Tuan and a rotating bench of co-authors and chairs, with empirical work executed against the live FAOS platform across 22+ industry modules. We run our lab in the open: every accepted paper ships with reproduction artifacts under MIT licence.
 
 ---
 
 ## Papers
 
-### RA-3 — Neurosymbolic Enterprise AI
+| Paper | Title | Status | ETA |
+|---|---|---|---|
+| **RA-1** | Multi-Agent Coordination | `gated — Q3 2026` | Q3 2026 |
+| **RA-3** | Neurosymbolic Enterprise AI | [`arXiv-live`](https://arxiv.org/abs/RA-3) · [`./RA-3/`](./RA-3/) | Published |
+| **RA-4** | Context Engineering | `verification in progress — Q2 2026` | Q2 2026 |
+| **RA-6** | Agent Simulation & Verification | [`preprint`](./RA-6/) | Q2 2026 |
+| **RA-11** | Quantum Context Engineering | `gated — Q3 2026` | Q3 2026 |
+| **RA-12** | Entropy-Guided Ontology Design | [`preprint`](./RA-12/) | Q2 2026 |
+| **RA-15** | Contextuality Auditor | `method paper — Q2 2026` | Q2 2026 |
 
-*Ontology-Driven vs. RAG-Augmented vs. Baseline: A Controlled Study of Neurosymbolic Grounding for Enterprise AI Agents.*
-Thanh Luong Tuan · Abhijit Sanyal. 2026.
-Four-condition study across five regulated industries with Claude Sonnet 4 / Qwen 2.5 72B / Gemma 4 26B (1,800 runs total). Code + data in [`RA-3/`](./RA-3/).
+Status legend: `arXiv-live` = posted to arXiv with reproduction artifacts in this repo · `preprint` = preprint PDF + code in this repo, pre-arXiv · `verification in progress` = empirical runs underway, embargo placeholder · `method paper` = methods contribution under reframe, embargo placeholder · `gated` = clearing publication gates (co-author sign-off, bib-verification, chair review), embargo placeholder.
 
-### RA-6 — Agent Simulation, Testing & Formal Verification
+---
 
-*Toward Verifiable Enterprise AI Agents: Ontology-Powered Simulation and Formal Trust Certification.*
-Thanh Luong Tuan · Abhijit Sanyal. 2026.
-Four-condition scenario-generation study across five regulated industries, replicated across three generator LLMs (5,400 scenarios). Code + data in [`RA-6/`](./RA-6/).
+## Programme-level reproducibility commitment (v0.2 promise)
 
-Both papers share Vietnamese Banking and Vietnamese Insurance as empirical verticals; both use industry ontologies drawn from the FAOS platform; both use an LLM-as-judge evaluation pipeline at $T = 0.0$.
+For every accepted paper, we publish:
+
+- **Source LaTeX** — `main.tex`, bibliography, figure scripts
+- **Raw model outputs** — full scenario corpora and generated transcripts (post-acceptance)
+- **Judge logs** — LLM-as-judge evaluation traces where applicable, at $T = 0.0$
+- **Evaluation scripts** — `run_experiment.py`, `analyze_results.py`, `analyze_crossmodel.py`, figure generation
+- **A frozen-version DOI on Zenodo** — citable long-term preservation snapshot per release
+
+This is the programme-level reproducibility commitment. It replaces the v0.1 per-paper staged-release policy with a single uniform contract.
+
+---
+
+## What is NOT in this repository
+
+The FAOS dissertation manuscript and topic proposal are not public research artifacts and will not appear in this repository. The empirical papers above are independent research outputs that may share co-authors with dissertation work but are scoped, written, and released as standalone contributions.
 
 ---
 
@@ -32,60 +50,39 @@ faos-research/
 ├── LICENSE                      ← MIT
 ├── CITATION.cff                 ← structured citation metadata
 ├── .gitignore
-├── RA-3/
-│   ├── CROSS-MODEL-PROTOCOL.md  ← 3-model replication protocol
+├── docs/
+│   └── reproducibility.md       ← cross-paper reproduction notes
+├── RA-1/                        ← embargo placeholder
+│   └── README.md
+├── RA-3/                        ← arXiv-live; code + ontologies + summaries
+│   ├── CROSS-MODEL-PROTOCOL.md
 │   ├── requirements.txt
 │   ├── code/
-│   │   ├── run_experiment.py
-│   │   ├── analyze_results.py
-│   │   ├── analyze_crossmodel.py
-│   │   ├── analyze_entropy.py
-│   │   ├── conditions.py
-│   │   ├── config.py
-│   │   ├── judge.py
-│   │   ├── generate_paper_figures.py
-│   │   ├── generate_dissertation_figures.py
-│   │   └── tasks.json           ← 50 evaluation tasks
-│   ├── ontology_context/        ← industry ontologies (5 verticals)
-│   └── results-summary/         ← aggregated JSONs (no raw transcripts)
-└── RA-6/
-    ├── CROSS-MODEL-PROTOCOL.md
-    ├── requirements.txt
-    ├── code/
-    │   ├── run_experiment.py
-    │   ├── generate_scenarios.py
-    │   ├── assess_coverage.py
-    │   ├── detect_faults.py
-    │   ├── analyze_results.py
-    │   ├── analyze_crossmodel.py
-    │   ├── generate_paper_figures.py
-    │   ├── generate_crossmodel_figures.py
-    │   └── config.py
-    ├── ontology_context/        ← industry ontologies (5 verticals)
-    ├── regulatory_checklists/   ← 125-item primary-source checklist
-    ├── fault_definitions/       ← 25 injected faults across 5 categories
-    └── results-summary/         ← aggregated JSONs
+│   ├── ontology_context/
+│   └── results-summary/
+├── RA-4/                        ← embargo placeholder
+│   └── README.md
+├── RA-6/                        ← preprint; code + ontologies + checklists + faults + summaries
+│   ├── CROSS-MODEL-PROTOCOL.md
+│   ├── requirements.txt
+│   ├── code/
+│   ├── ontology_context/
+│   ├── regulatory_checklists/
+│   ├── fault_definitions/
+│   └── results-summary/
+├── RA-11/                       ← embargo placeholder
+│   └── README.md
+├── RA-12/                       ← embargo placeholder (preprint pending)
+│   └── README.md
+└── RA-15/                       ← embargo placeholder
+    └── README.md
 ```
 
----
-
-## Staged data release policy
-
-This repository follows a staged release model:
-
-| Release stage | Contents | Status |
-|---|---|---|
-| **v0.1 (now)** | All analysis code · ontology context · regulatory checklists · fault definitions · aggregated result JSONs (summaries, per-condition means, stat tests) | public |
-| **v0.2 (on paper acceptance)** | Full scenario corpus · raw LLM outputs · judge evaluation logs | planned |
-| **v1.0 (post-publication)** | Zenodo archive with DOI for citable long-term preservation | planned |
-
-**What is in `results-summary/` now:** per-model aggregated analyses sufficient to re-derive every numeric claim in the papers (effect sizes, $p$-values, Kendall's $W$, per-industry breakdowns, cross-model comparisons).
-
-**What is NOT in `results-summary/` yet:** raw LLM-generated scenario text and raw judge transcripts. These will be released under the same license at paper acceptance, per the papers' Data Availability statements.
+Embargo placeholder directories contain only a `README.md` with the paper's working title, authors, status badge, ETA, and research-question teaser. Code and data will be added when each paper clears its publication gates.
 
 ---
 
-## Reproduction
+## Reproduction (live papers)
 
 ### Prerequisites
 
@@ -136,7 +133,7 @@ If you use this repository in academic work, please cite both the code release a
 ```bibtex
 @misc{faos-research-repo,
   author       = {Luong, Thanh Tuan and Sanyal, Abhijit},
-  title        = {{FAOS}~Research: Code, Data, and Ontologies for Ontology-Powered Enterprise Agent Verification},
+  title        = {{FAOS}~Research Programme: Source, Data, and Ontologies for Ontology-Powered Enterprise Agent Verification},
   year         = {2026},
   howpublished = {\url{https://github.com/frank-luongt/faos-research}}
 }
@@ -144,14 +141,15 @@ If you use this repository in academic work, please cite both the code release a
 
 ### Papers
 
-See `CITATION.cff` and each paper's arXiv landing page for the canonical bibtex.
+See `CITATION.cff` and each paper's arXiv / preprint landing page for the canonical BibTeX entries.
 
 ---
 
 ## Authors
 
-- **Thanh Luong Tuan** (Golden Gate University · ORCID 0009-0000-1199-837X)
-- **Dr. Abhijit Sanyal** (Novartis Healthcare Pvt. Ltd. · PhD Computer Science & Engineering, University of Calcutta)
+- **Thanh Luong Tuan** (Golden Gate University · ORCID 0009-0000-1199-837X) — programme lead
+- **Dr. Abhijit Sanyal** (Novartis Healthcare Pvt. Ltd. · PhD Computer Science & Engineering, University of Calcutta) — co-author on RA-3, RA-6, RA-12
+- Additional co-authors per paper — see each paper directory's `README.md`
 
 ---
 
@@ -163,4 +161,4 @@ MIT. See [`LICENSE`](./LICENSE).
 
 ## Acknowledgements
 
-We thank the FAOS team for platform access and ontology content used in the empirical evaluation. We also acknowledge the Anthropic, OpenRouter, and Google API platforms that made the three-model cross-validation study feasible.
+We thank the FAOS team for platform access and ontology content used in the empirical evaluation. We also acknowledge the Anthropic, OpenRouter, and Google API platforms that made multi-model cross-validation studies feasible.
