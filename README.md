@@ -11,7 +11,7 @@ The FAOS Research Programme is the empirical research arm of the [Foundation Age
 | Paper | Title | Status | ETA |
 |---|---|---|---|
 | **RA-1** | Multi-Agent Coordination | `gated — Q3 2026` | Q3 2026 |
-| **RA-3** | Neurosymbolic Enterprise AI | [`arXiv-live`](https://arxiv.org/abs/RA-3) · [`./RA-3/`](./RA-3/) | Published |
+| **RA-3** | Neurosymbolic Enterprise AI | [`arXiv-live`](https://arxiv.org/abs/2604.00555) · [`./RA-3/`](./RA-3/) | Published |
 | **RA-4** | Context Engineering | `verification in progress — Q2 2026` | Q2 2026 |
 | **RA-6** | Agent Simulation & Verification | [`preprint`](./RA-6/) | Q2 2026 |
 | **RA-11** | Quantum Context Engineering | `gated — Q3 2026` | Q3 2026 |
