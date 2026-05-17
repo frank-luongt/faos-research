@@ -13,12 +13,14 @@ The FAOS Research Programme is the empirical research arm of the [Foundation Age
 | **RA-1** | Multi-Agent Coordination | `gated — Q3 2026` | Q3 2026 |
 | **RA-3** | Neurosymbolic Enterprise AI | [`arXiv-live`](https://arxiv.org/abs/2604.00555) · [`./RA-3/`](./RA-3/) | Published |
 | **RA-4** | Context Engineering | `verification in progress — Q2 2026` | Q2 2026 |
-| **RA-6** | Agent Simulation & Verification | [`preprint`](./RA-6/main.pdf) · [`./RA-6/`](./RA-6/) | Q2 2026 |
+| **RA-6** | Agent Simulation & Verification | [`preprint pending — arXiv submission imminent`](./RA-6/) | Q2 2026 |
 | **RA-11** | Quantum Context Engineering | `gated — Q3 2026` | Q3 2026 |
-| **RA-12** | Entropy-Guided Ontology Design | [`preprint`](./RA-12/main.pdf) · [`./RA-12/`](./RA-12/) | Q2 2026 |
+| **RA-12** | Entropy-Guided Ontology Design | [`preprint pending — arXiv submission imminent`](./RA-12/) | Q2 2026 |
 | **RA-15** | Contextuality Auditor | `method paper — Q2 2026` | Q2 2026 |
 
-Status legend: `arXiv-live` = posted to arXiv with reproduction artifacts in this repo · `preprint` = preprint PDF + code in this repo, pre-arXiv · `verification in progress` = empirical runs underway, embargo placeholder · `method paper` = methods contribution under reframe, embargo placeholder · `gated` = clearing publication gates (co-author sign-off, bib-verification, chair review), embargo placeholder.
+Status legend: `arXiv-live` = posted to arXiv; paper PDF mirrored in this repo alongside reproduction code/data · `preprint pending — arXiv submission imminent` = paper artifacts (PDF/LaTeX/bib) will be added to this repo once the canonical version is posted to arXiv; reproduction scaffolding (code/ontologies/checklists/results-summary/citation-audit) available now · `verification in progress` = empirical runs underway, embargo placeholder · `method paper` = methods contribution under reframe, embargo placeholder · `gated` = clearing publication gates (co-author sign-off, bib-verification, chair review), embargo placeholder.
+
+**Programme policy (2026-05-17):** Paper PDFs, LaTeX source, bibliographies, and arXiv submission tarballs are mirrored to this repository ONLY after the canonical version is live on arXiv or accepted by a journal. The repository's purpose is reproducibility scaffolding; pre-arXiv distribution short-circuits the canonical-version-on-arXiv discipline.
 
 ---
 
@@ -62,14 +64,9 @@ faos-research/
 │   └── results-summary/
 ├── RA-4/                        ← embargo placeholder
 │   └── README.md
-├── RA-6/                        ← preprint; PDF + LaTeX + bib + code + ontologies + checklists + faults + summaries
+├── RA-6/                        ← preprint pending arXiv; reproducibility scaffolding (code + ontologies + checklists + faults + summaries + citation audit) — paper PDF + LaTeX added at arXiv post
 │   ├── README.md
-│   ├── main.tex
-│   ├── main.pdf
-│   ├── references.bib
 │   ├── bib-verified-2026-05-17.md
-│   ├── RA-6-arxiv-submission-v0.9.8.tar.gz
-│   ├── figures/
 │   ├── CROSS-MODEL-PROTOCOL.md
 │   ├── requirements.txt
 │   ├── code/
@@ -79,18 +76,14 @@ faos-research/
 │   └── results-summary/
 ├── RA-11/                       ← embargo placeholder
 │   └── README.md
-├── RA-12/                       ← preprint; PDF + LaTeX + bib + figures
+├── RA-12/                       ← preprint pending arXiv; citation audit only — full reproducibility scaffolding + paper PDF + LaTeX added at arXiv post
 │   ├── README.md
-│   ├── main.tex
-│   ├── main.pdf
-│   ├── references.bib
-│   ├── bib-verified-2026-05-17.md
-│   └── figures/
+│   └── bib-verified-2026-05-17.md
 └── RA-15/                       ← embargo placeholder
     └── README.md
 ```
 
-Embargo placeholder directories (RA-1, RA-4, RA-11, RA-15) contain only a `README.md` with the paper's working title, authors, status badge, ETA, and research-question teaser. Code and data are added when each paper clears its publication gates. Preprint and arXiv-live directories (RA-3, RA-6, RA-12) ship source LaTeX, compiled PDF, bibliography, and a WebSearch-verified citation audit alongside reproduction code where available.
+Embargo placeholder directories (RA-1, RA-4, RA-11, RA-15) contain only a `README.md` with the paper's working title, authors, status badge, ETA, and research-question teaser. Preprint-pending directories (RA-6, RA-12) contain reproducibility scaffolding and a citation audit but **not** the paper PDF / LaTeX source — those are added once the paper is posted to arXiv. The arXiv-live directory (RA-3) ships reproduction code + ontologies + summaries; the canonical paper PDF lives on arXiv at https://arxiv.org/abs/2604.00555.
 
 ---
 
