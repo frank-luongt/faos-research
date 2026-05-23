@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite both the repository and the relevant paper(s)."
-title: "FAOS Research: Code, Data, and Ontologies for Ontology-Powered Enterprise Agent Verification"
+title: "FAOS Research Programme: Code, Data, and Ontologies for Enterprise Agentic AI"
 authors:
   - family-names: Luong
     given-names: Thanh Tuan
@@ -9,8 +9,8 @@ authors:
   - family-names: Sanyal
     given-names: Abhijit
     affiliation: "Novartis Healthcare Pvt. Ltd."
-version: "0.1.0"
-date-released: "2026-04-21"
+version: "0.2.1"
+date-released: "2026-05-23"
 url: "https://github.com/frank-luongt/faos-research"
 license: MIT
 keywords:
@@ -21,9 +21,11 @@ keywords:
   - regulatory compliance
   - trust certification
   - neurosymbolic AI
+  - context engineering
+  - ontology grounding
 preferred-citation:
   type: software
-  title: "FAOS Research: Code, Data, and Ontologies for Ontology-Powered Enterprise Agent Verification"
+  title: "FAOS Research Programme: Code, Data, and Ontologies for Enterprise Agentic AI"
   authors:
     - family-names: Luong
       given-names: Thanh Tuan
@@ -33,14 +35,21 @@ preferred-citation:
   url: "https://github.com/frank-luongt/faos-research"
 references:
   - type: article
-    title: "Neurosymbolic Grounding for Enterprise AI Agents: A Controlled Study of Ontology-Driven vs RAG-Augmented vs Baseline Conditions"
+    title: "Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents"
     authors:
       - family-names: Luong
         given-names: Thanh Tuan
       - family-names: Sanyal
         given-names: Abhijit
     year: 2026
-    notes: "RA-3 paper; arXiv ID pending"
+    notes: "RA-3 paper; arXiv:2604.00555"
+  - type: article
+    title: "Empirical Bounds of Ontological Context: A Pre-Registered Cross-Model Study of Length, Framing, and Domain Effects in Enterprise LLM Agents"
+    authors:
+      - family-names: Luong
+        given-names: Thanh Tuan
+    year: 2026
+    notes: "RA-4 paper; arXiv-ready source package prepared, preprint pending canonical arXiv posting"
   - type: article
     title: "Toward Verifiable Enterprise AI Agents: Ontology-Powered Simulation and Formal Trust Certification"
     authors:
