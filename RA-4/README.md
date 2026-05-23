@@ -1,20 +1,22 @@
-# RA-4 — Context Engineering
+# RA-4 — Empirical Bounds of Ontological Context
 
-**Working title:** Context Engineering for Agentic Systems: An Entropy-Bounded Framework for Prompt, Memory, and Retrieval Composition.
+**Title:** Empirical Bounds of Ontological Context: A Pre-Registered Cross-Model Study of Length, Framing, and Domain Effects in Enterprise LLM Agents.
 
-**Authors:** TBA — co-author lineage pending verification.
+**Authors:** Thanh Luong Tuan. Co-author/sign-off lineage pending final publication decision.
 
-**Status:** `verification in progress — Q2 2026`
+**Status:** `arXiv-ready — minor pre-submit revision`
 **ETA:** Q2 2026
 
 ---
 
 ## Research-question teaser
 
-Given finite context windows and heterogeneous model capabilities, how should an agent compose its prompt, working memory, retrieved knowledge, and tool descriptions to maximize task-relevant information density while staying inside an entropy budget? RA-4 introduces an entropy-bounded composition framework, validates it against four open-weight model families, and shows where the naive "stuff the context" heuristic systematically fails.
+Given finite context windows and heterogeneous model capabilities, does adding more ontological context produce a stable, universal efficiency frontier for enterprise agents? RA-4 answers no. The pre-registered theoretical prediction family failed, but the empirical results are still useful: context value is model-, domain-, language-, and framing-dependent, with especially strong insurance-specific length sensitivity and a practical warning against context maximalism.
 
 ---
 
 ## Status
 
-Empirical verification runs are in progress. Code and data will be added when this paper clears its publication gates.
+The 12-page arXiv v1.0 source package is prepared and has passed ScholarPeer and PaperViz review with a "post after minor revision" verdict. The remaining gate is a small pre-submit wording fix around the framing-heavy insurance result, followed by co-author/sign-off review and arXiv posting.
+
+Per programme policy, paper PDF, LaTeX source, bibliography, arXiv tarball, and reproduction artifacts will be mirrored here only after the canonical arXiv version is posted.
