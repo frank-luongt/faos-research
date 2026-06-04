@@ -64,7 +64,7 @@ faos-research/
 │   └── results-summary/
 ├── RA-4/                        ← arXiv-ready status page; paper PDF + LaTeX added at arXiv post
 │   └── README.md
-├── RA-6/                        ← preprint pending arXiv; reproducibility scaffolding (code + ontologies + checklists + faults + summaries + citation audit) — paper PDF + LaTeX added at arXiv post
+├── RA-6/                        ← arXiv-live (arXiv:2606.04037); reproducibility scaffolding (code + ontologies + checklists + faults + summaries + citation audit); canonical PDF/LaTeX on arXiv
 │   ├── README.md
 │   ├── bib-verified-2026-05-17.md
 │   ├── CROSS-MODEL-PROTOCOL.md
@@ -83,7 +83,7 @@ faos-research/
     └── README.md
 ```
 
-Embargo placeholder directories (RA-1, RA-11, RA-15) contain only a `README.md` with the paper's working title, authors, status badge, ETA, and research-question teaser. RA-4 has advanced to an arXiv-ready status page, but its paper PDF / LaTeX source still follows the same canonical-version policy and will be added only after arXiv posting. Preprint-pending directories (RA-6, RA-12) contain reproducibility scaffolding and a citation audit but **not** the paper PDF / LaTeX source — those are added once the paper is posted to arXiv. The arXiv-live directory (RA-3) ships reproduction code + ontologies + summaries; the canonical paper PDF lives on arXiv at https://arxiv.org/abs/2604.00555.
+Embargo placeholder directories (RA-1, RA-11, RA-15) contain only a `README.md` with the paper's working title, authors, status badge, ETA, and research-question teaser. RA-4 has advanced to an arXiv-ready status page, but its paper PDF / LaTeX source still follows the same canonical-version policy and will be added only after arXiv posting. Preprint-pending directories (RA-12) contain reproducibility scaffolding and a citation audit but **not** the paper PDF / LaTeX source — those are added once the paper is posted to arXiv. The arXiv-live directories (RA-3, RA-6) ship reproduction code + ontologies + summaries; the canonical paper PDFs live on arXiv at https://arxiv.org/abs/2604.00555 and https://arxiv.org/abs/2606.04037 respectively.
 
 ---
 
