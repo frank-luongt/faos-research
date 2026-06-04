@@ -51,11 +51,11 @@ references:
     year: 2026
     notes: "RA-4 paper; arXiv-ready source package prepared, preprint pending canonical arXiv posting"
   - type: article
-    title: "Toward Verifiable Enterprise AI Agents: Ontology-Powered Simulation and Formal Trust Certification"
+    title: "Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification"
     authors:
       - family-names: Luong
         given-names: Thanh Tuan
       - family-names: Sanyal
         given-names: Abhijit
     year: 2026
-    notes: "RA-6 paper; submitted to MDPI AI Journal"
+    notes: "RA-6 paper; arXiv:2606.04037"
