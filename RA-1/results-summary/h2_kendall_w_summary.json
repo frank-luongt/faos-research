@@ -1,0 +1,527 @@
+{
+  "input_files": [
+    "results/results_judged_gemma_openrouter_sonnet_2026_05_26.csv",
+    "results/results_judged_openai_consensus_sonnet_2026_05_24.csv",
+    "results/results_judged_openai_debate_sonnet_2026_05_26.csv",
+    "results/results_judged_openai_single_agent_sonnet_2026_05_24.csv",
+    "results/results_judged_openai_synthesis_sonnet_2026_05_26.csv",
+    "results/results_judged_qwen_local_consensus_sonnet_2026_05_19.csv",
+    "results/results_judged_qwen_local_debate_sonnet_2026_05_23.csv",
+    "results/results_judged_qwen_local_single_agent_sonnet_2026_05_19.csv",
+    "results/results_judged_qwen_local_synthesis_sonnet_2026_05_23.csv",
+    "results/results_judged_sonnet_sonnet_2026_05_26.csv"
+  ],
+  "parameters": {
+    "permutation_reps": 5000,
+    "bootstrap_reps": 5000,
+    "seed": 20260527
+  },
+  "load_report": {
+    "valid_unique_rows": 1440,
+    "skipped_errors": 0,
+    "skipped_unjudged": 0,
+    "duplicates_overwritten": 0
+  },
+  "h2": {
+    "strata": {
+      "VI": [
+        "banking_vn",
+        "insurance_vn"
+      ],
+      "EN": [
+        "fintech",
+        "insurance",
+        "healthcare",
+        "software"
+      ]
+    },
+    "pre_registered_arms": [
+      "sonnet",
+      "qwen_local",
+      "gemma_openrouter"
+    ],
+    "auxiliary_arms": [
+      "openai"
+    ],
+    "cells": {
+      "gemma_openrouter": {
+        "PC1": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.186111,
+            "friedman_q": 3.35,
+            "friedman_permutation_p": 0.305939
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.402083,
+            "friedman_q": 14.475,
+            "friedman_permutation_p": 0.0002
+          }
+        },
+        "PC2": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.463889,
+            "friedman_q": 8.35,
+            "friedman_permutation_p": 0.010998
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.227083,
+            "friedman_q": 8.175,
+            "friedman_permutation_p": 0.011798
+          }
+        },
+        "PC3": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.122222,
+            "friedman_q": 2.2,
+            "friedman_permutation_p": 0.470306
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.346528,
+            "friedman_q": 12.475,
+            "friedman_permutation_p": 0.0012
+          }
+        },
+        "PC4": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.036111,
+            "friedman_q": 0.65,
+            "friedman_permutation_p": 0.884423
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.188889,
+            "friedman_q": 6.8,
+            "friedman_permutation_p": 0.017397
+          }
+        },
+        "PC5": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.061111,
+            "friedman_q": 1.1,
+            "friedman_permutation_p": 0.741852
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.225,
+            "friedman_q": 8.1,
+            "friedman_permutation_p": 0.014197
+          }
+        }
+      },
+      "openai": {
+        "PC1": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.019444,
+            "friedman_q": 0.35,
+            "friedman_permutation_p": 1.0
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.052778,
+            "friedman_q": 1.9,
+            "friedman_permutation_p": 0.286343
+          }
+        },
+        "PC2": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.302778,
+            "friedman_q": 5.45,
+            "friedman_permutation_p": 0.071586
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.03125,
+            "friedman_q": 1.125,
+            "friedman_permutation_p": 0.504699
+          }
+        },
+        "PC3": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.175,
+            "friedman_q": 3.15,
+            "friedman_permutation_p": 0.194161
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.047222,
+            "friedman_q": 1.7,
+            "friedman_permutation_p": 0.552689
+          }
+        },
+        "PC4": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.013889,
+            "friedman_q": 0.25,
+            "friedman_permutation_p": 0.969806
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.085417,
+            "friedman_q": 3.075,
+            "friedman_permutation_p": 0.177365
+          }
+        },
+        "PC5": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.036111,
+            "friedman_q": 0.65,
+            "friedman_permutation_p": 0.683663
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.041667,
+            "friedman_q": 1.5,
+            "friedman_permutation_p": 0.396721
+          }
+        }
+      },
+      "qwen_local": {
+        "PC1": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.175,
+            "friedman_q": 3.15,
+            "friedman_permutation_p": 0.126175
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.138889,
+            "friedman_q": 5.0,
+            "friedman_permutation_p": 0.053589
+          }
+        },
+        "PC2": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.269444,
+            "friedman_q": 4.85,
+            "friedman_permutation_p": 0.104579
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.134028,
+            "friedman_q": 4.825,
+            "friedman_permutation_p": 0.017596
+          }
+        },
+        "PC3": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.475,
+            "friedman_q": 8.55,
+            "friedman_permutation_p": 0.009398
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.488194,
+            "friedman_q": 17.575,
+            "friedman_permutation_p": 0.0004
+          }
+        },
+        "PC4": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.075,
+            "friedman_q": 1.35,
+            "friedman_permutation_p": 0.44751
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.059028,
+            "friedman_q": 2.125,
+            "friedman_permutation_p": 0.346931
+          }
+        },
+        "PC5": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.152778,
+            "friedman_q": 2.75,
+            "friedman_permutation_p": 0.377924
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.203472,
+            "friedman_q": 7.325,
+            "friedman_permutation_p": 0.013597
+          }
+        }
+      },
+      "sonnet": {
+        "PC1": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.366667,
+            "friedman_q": 6.6,
+            "friedman_permutation_p": 0.032793
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.179861,
+            "friedman_q": 6.475,
+            "friedman_permutation_p": 0.041392
+          }
+        },
+        "PC2": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.130556,
+            "friedman_q": 2.35,
+            "friedman_permutation_p": 0.284943
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.138194,
+            "friedman_q": 4.975,
+            "friedman_permutation_p": 0.078784
+          }
+        },
+        "PC3": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.275,
+            "friedman_q": 4.95,
+            "friedman_permutation_p": 0.026795
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.171528,
+            "friedman_q": 6.175,
+            "friedman_permutation_p": 0.041592
+          }
+        },
+        "PC4": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.102778,
+            "friedman_q": 1.85,
+            "friedman_permutation_p": 0.55089
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.034028,
+            "friedman_q": 1.225,
+            "friedman_permutation_p": 0.517297
+          }
+        },
+        "PC5": {
+          "VI": {
+            "n_blocks": 6,
+            "kendall_w": 0.166667,
+            "friedman_q": 3.0,
+            "friedman_permutation_p": 0.234553
+          },
+          "EN": {
+            "n_blocks": 12,
+            "kendall_w": 0.079861,
+            "friedman_q": 2.875,
+            "friedman_permutation_p": 0.29874
+          }
+        }
+      }
+    },
+    "per_model_mean_w": {
+      "gemma_openrouter": {
+        "role": "pre-registered",
+        "mean_w_vi": 0.173889,
+        "mean_w_en": 0.277917,
+        "delta_vi_minus_en": -0.104028,
+        "direction": "EN >= VI"
+      },
+      "openai": {
+        "role": "auxiliary",
+        "mean_w_vi": 0.109444,
+        "mean_w_en": 0.051667,
+        "delta_vi_minus_en": 0.057777,
+        "direction": "VI > EN"
+      },
+      "qwen_local": {
+        "role": "pre-registered",
+        "mean_w_vi": 0.229444,
+        "mean_w_en": 0.204722,
+        "delta_vi_minus_en": 0.024722,
+        "direction": "VI > EN"
+      },
+      "sonnet": {
+        "role": "pre-registered",
+        "mean_w_vi": 0.208334,
+        "mean_w_en": 0.120694,
+        "delta_vi_minus_en": 0.08764,
+        "direction": "VI > EN"
+      }
+    },
+    "pre_registered_stratum_mean_w": {
+      "VI": 0.203889,
+      "EN": 0.201111
+    },
+    "pre_registered_paired_test": {
+      "n_pairs": 15,
+      "n_positive_vi_gt_en": 8,
+      "mean_delta": 0.002778,
+      "median_delta": 0.015972,
+      "wilcoxon_signed_rank_p": 0.846924,
+      "bootstrap_mean_ci": {
+        "mean": 0.002778,
+        "ci_low": -0.069305,
+        "ci_high": 0.07
+      }
+    },
+    "pre_registered_pairs": [
+      {
+        "model_arm": "sonnet",
+        "problem_class": "PC1",
+        "w_vi": 0.366667,
+        "w_en": 0.179861,
+        "delta_vi_minus_en": 0.186806
+      },
+      {
+        "model_arm": "sonnet",
+        "problem_class": "PC2",
+        "w_vi": 0.130556,
+        "w_en": 0.138194,
+        "delta_vi_minus_en": -0.007638
+      },
+      {
+        "model_arm": "sonnet",
+        "problem_class": "PC3",
+        "w_vi": 0.275,
+        "w_en": 0.171528,
+        "delta_vi_minus_en": 0.103472
+      },
+      {
+        "model_arm": "sonnet",
+        "problem_class": "PC4",
+        "w_vi": 0.102778,
+        "w_en": 0.034028,
+        "delta_vi_minus_en": 0.06875
+      },
+      {
+        "model_arm": "sonnet",
+        "problem_class": "PC5",
+        "w_vi": 0.166667,
+        "w_en": 0.079861,
+        "delta_vi_minus_en": 0.086806
+      },
+      {
+        "model_arm": "qwen_local",
+        "problem_class": "PC1",
+        "w_vi": 0.175,
+        "w_en": 0.138889,
+        "delta_vi_minus_en": 0.036111
+      },
+      {
+        "model_arm": "qwen_local",
+        "problem_class": "PC2",
+        "w_vi": 0.269444,
+        "w_en": 0.134028,
+        "delta_vi_minus_en": 0.135416
+      },
+      {
+        "model_arm": "qwen_local",
+        "problem_class": "PC3",
+        "w_vi": 0.475,
+        "w_en": 0.488194,
+        "delta_vi_minus_en": -0.013194
+      },
+      {
+        "model_arm": "qwen_local",
+        "problem_class": "PC4",
+        "w_vi": 0.075,
+        "w_en": 0.059028,
+        "delta_vi_minus_en": 0.015972
+      },
+      {
+        "model_arm": "qwen_local",
+        "problem_class": "PC5",
+        "w_vi": 0.152778,
+        "w_en": 0.203472,
+        "delta_vi_minus_en": -0.050694
+      },
+      {
+        "model_arm": "gemma_openrouter",
+        "problem_class": "PC1",
+        "w_vi": 0.186111,
+        "w_en": 0.402083,
+        "delta_vi_minus_en": -0.215972
+      },
+      {
+        "model_arm": "gemma_openrouter",
+        "problem_class": "PC2",
+        "w_vi": 0.463889,
+        "w_en": 0.227083,
+        "delta_vi_minus_en": 0.236806
+      },
+      {
+        "model_arm": "gemma_openrouter",
+        "problem_class": "PC3",
+        "w_vi": 0.122222,
+        "w_en": 0.346528,
+        "delta_vi_minus_en": -0.224306
+      },
+      {
+        "model_arm": "gemma_openrouter",
+        "problem_class": "PC4",
+        "w_vi": 0.036111,
+        "w_en": 0.188889,
+        "delta_vi_minus_en": -0.152778
+      },
+      {
+        "model_arm": "gemma_openrouter",
+        "problem_class": "PC5",
+        "w_vi": 0.061111,
+        "w_en": 0.225,
+        "delta_vi_minus_en": -0.163889
+      }
+    ],
+    "auxiliary_pairs": [
+      {
+        "model_arm": "openai",
+        "problem_class": "PC1",
+        "w_vi": 0.019444,
+        "w_en": 0.052778,
+        "delta_vi_minus_en": -0.033334
+      },
+      {
+        "model_arm": "openai",
+        "problem_class": "PC2",
+        "w_vi": 0.302778,
+        "w_en": 0.03125,
+        "delta_vi_minus_en": 0.271528
+      },
+      {
+        "model_arm": "openai",
+        "problem_class": "PC3",
+        "w_vi": 0.175,
+        "w_en": 0.047222,
+        "delta_vi_minus_en": 0.127778
+      },
+      {
+        "model_arm": "openai",
+        "problem_class": "PC4",
+        "w_vi": 0.013889,
+        "w_en": 0.085417,
+        "delta_vi_minus_en": -0.071528
+      },
+      {
+        "model_arm": "openai",
+        "problem_class": "PC5",
+        "w_vi": 0.036111,
+        "w_en": 0.041667,
+        "delta_vi_minus_en": -0.005556
+      }
+    ]
+  }
+}

@@ -1,0 +1,935 @@
+{
+  "input_files": [
+    "results/results_judged_gemma_openrouter_sonnet_2026_05_26.csv",
+    "results/results_judged_openai_consensus_sonnet_2026_05_24.csv",
+    "results/results_judged_openai_debate_sonnet_2026_05_26.csv",
+    "results/results_judged_openai_single_agent_sonnet_2026_05_24.csv",
+    "results/results_judged_openai_synthesis_sonnet_2026_05_26.csv",
+    "results/results_judged_qwen_local_consensus_sonnet_2026_05_19.csv",
+    "results/results_judged_qwen_local_debate_sonnet_2026_05_23.csv",
+    "results/results_judged_qwen_local_single_agent_sonnet_2026_05_19.csv",
+    "results/results_judged_qwen_local_synthesis_sonnet_2026_05_23.csv",
+    "results/results_judged_sonnet_sonnet_2026_05_26.csv"
+  ],
+  "parameters": {
+    "permutation_reps": 5000,
+    "bootstrap_reps": 5000,
+    "seed": 20260527
+  },
+  "load_report": {
+    "valid_unique_rows": 1440,
+    "skipped_errors": 0,
+    "skipped_unjudged": 0,
+    "duplicates_overwritten": 0
+  },
+  "formal": {
+    "gemma_openrouter": {
+      "PC1": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.939444,
+          "consensus": 0.905278,
+          "debate": 0.910833,
+          "synthesis": 0.877361
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.939444,
+        "delta_best_minus_predicted": 0.034166,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 17.216667,
+        "friedman_permutation_p": 0.0002,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.034167,
+            "ci_low": -0.064444,
+            "ci_high": -0.006667,
+            "signed_rank_p": 0.049316,
+            "bonferroni_p_m3": 0.147949
+          },
+          "debate": {
+            "mean": -0.005556,
+            "ci_low": -0.026111,
+            "ci_high": 0.014722,
+            "signed_rank_p": 0.787109,
+            "bonferroni_p_m3": 1.0
+          },
+          "synthesis": {
+            "mean": 0.027917,
+            "ci_low": 0.002917,
+            "ci_high": 0.050972,
+            "signed_rank_p": 0.034271,
+            "bonferroni_p_m3": 0.102814
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.034167,
+          "ci_low": -0.064722,
+          "ci_high": -0.007361
+        }
+      },
+      "PC2": {
+        "n_blocks": 18,
+        "predicted_strategy": "debate",
+        "means": {
+          "single_agent": 0.918056,
+          "consensus": 0.911806,
+          "debate": 0.857917,
+          "synthesis": 0.88125
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.918056,
+        "delta_best_minus_predicted": 0.060139,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 15.266667,
+        "friedman_permutation_p": 0.0004,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.060139,
+            "ci_low": -0.111111,
+            "ci_high": -0.024722,
+            "signed_rank_p": 0.000671,
+            "bonferroni_p_m3": 0.002014
+          },
+          "consensus": {
+            "mean": -0.053889,
+            "ci_low": -0.100139,
+            "ci_high": -0.020139,
+            "signed_rank_p": 0.003662,
+            "bonferroni_p_m3": 0.010986
+          },
+          "synthesis": {
+            "mean": -0.023333,
+            "ci_low": -0.073611,
+            "ci_high": 0.014167,
+            "signed_rank_p": 0.575684,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.060139,
+          "ci_low": -0.113194,
+          "ci_high": -0.024722
+        }
+      },
+      "PC3": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.872222,
+          "consensus": 0.875694,
+          "debate": 0.838889,
+          "synthesis": 0.875694
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.875694,
+        "delta_best_minus_predicted": 0.0,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 13.816667,
+        "friedman_permutation_p": 0.001,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": 0.003472,
+            "ci_low": -0.009028,
+            "ci_high": 0.015278,
+            "signed_rank_p": 0.498535,
+            "bonferroni_p_m3": 1.0
+          },
+          "consensus": {
+            "mean": -0.0,
+            "ci_low": -0.020139,
+            "ci_high": 0.020139,
+            "signed_rank_p": 0.828796,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": 0.036806,
+            "ci_low": 0.01875,
+            "ci_high": 0.054861,
+            "signed_rank_p": 0.002563,
+            "bonferroni_p_m3": 0.00769
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.0,
+          "ci_low": -0.020139,
+          "ci_high": 0.019444
+        }
+      },
+      "PC4": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.953194,
+          "consensus": 0.857083,
+          "debate": 0.93375,
+          "synthesis": 0.817083
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.953194,
+        "delta_best_minus_predicted": 0.096111,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 4.95,
+        "friedman_permutation_p": 0.034793,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.096111,
+            "ci_low": -0.1825,
+            "ci_high": -0.019444,
+            "signed_rank_p": 0.0625,
+            "bonferroni_p_m3": 0.1875
+          },
+          "debate": {
+            "mean": -0.076667,
+            "ci_low": -0.163611,
+            "ci_high": 0.003333,
+            "signed_rank_p": 0.099609,
+            "bonferroni_p_m3": 0.298828
+          },
+          "synthesis": {
+            "mean": 0.04,
+            "ci_low": -0.096111,
+            "ci_high": 0.184722,
+            "signed_rank_p": 0.621582,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.096111,
+          "ci_low": -0.188333,
+          "ci_high": -0.017778
+        }
+      },
+      "PC5": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.877778,
+          "consensus": 0.878472,
+          "debate": 0.854167,
+          "synthesis": 0.868056
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.878472,
+        "delta_best_minus_predicted": 0.010416,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 5.366667,
+        "friedman_permutation_p": 0.085583,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.009722,
+            "ci_low": -0.035417,
+            "ci_high": 0.015278,
+            "signed_rank_p": 0.513733,
+            "bonferroni_p_m3": 1.0
+          },
+          "consensus": {
+            "mean": -0.010417,
+            "ci_low": -0.031944,
+            "ci_high": 0.009722,
+            "signed_rank_p": 0.43988,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": 0.013889,
+            "ci_low": -0.006944,
+            "ci_high": 0.033333,
+            "signed_rank_p": 0.23584,
+            "bonferroni_p_m3": 0.70752
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.010417,
+          "ci_low": -0.030556,
+          "ci_high": 0.009028
+        }
+      }
+    },
+    "openai": {
+      "PC1": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.958333,
+          "consensus": 0.957639,
+          "debate": 0.961111,
+          "synthesis": 0.954306
+        },
+        "best_condition": "debate",
+        "best_mean": 0.961111,
+        "delta_best_minus_predicted": 0.003472,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 1.116667,
+        "friedman_permutation_p": 0.457708,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.000694,
+            "ci_low": -0.0125,
+            "ci_high": 0.0125,
+            "signed_rank_p": 1.0,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": -0.003472,
+            "ci_low": -0.017361,
+            "ci_high": 0.009028,
+            "signed_rank_p": 0.625,
+            "bonferroni_p_m3": 1.0
+          },
+          "synthesis": {
+            "mean": 0.003333,
+            "ci_low": -0.011667,
+            "ci_high": 0.018472,
+            "signed_rank_p": 0.6875,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "debate",
+          "mean": -0.003472,
+          "ci_low": -0.017361,
+          "ci_high": 0.009722
+        }
+      },
+      "PC2": {
+        "n_blocks": 18,
+        "predicted_strategy": "debate",
+        "means": {
+          "single_agent": 0.934028,
+          "consensus": 0.945833,
+          "debate": 0.925,
+          "synthesis": 0.940972
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.945833,
+        "delta_best_minus_predicted": 0.020833,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 3.716667,
+        "friedman_permutation_p": 0.088182,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.009028,
+            "ci_low": -0.027083,
+            "ci_high": 0.008333,
+            "signed_rank_p": 0.587891,
+            "bonferroni_p_m3": 1.0
+          },
+          "consensus": {
+            "mean": -0.020833,
+            "ci_low": -0.0375,
+            "ci_high": -0.005556,
+            "signed_rank_p": 0.046875,
+            "bonferroni_p_m3": 0.140625
+          },
+          "synthesis": {
+            "mean": -0.015972,
+            "ci_low": -0.030556,
+            "ci_high": -0.0,
+            "signed_rank_p": 0.089844,
+            "bonferroni_p_m3": 0.269531
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.020833,
+          "ci_low": -0.0375,
+          "ci_high": -0.005556
+        }
+      },
+      "PC3": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.874306,
+          "consensus": 0.889167,
+          "debate": 0.872639,
+          "synthesis": 0.883611
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.889167,
+        "delta_best_minus_predicted": 0.005556,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 2.483333,
+        "friedman_permutation_p": 0.335533,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": 0.009306,
+            "ci_low": -0.001806,
+            "ci_high": 0.021389,
+            "signed_rank_p": 0.145508,
+            "bonferroni_p_m3": 0.436523
+          },
+          "consensus": {
+            "mean": -0.005556,
+            "ci_low": -0.020556,
+            "ci_high": 0.007778,
+            "signed_rank_p": 0.613403,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": 0.010972,
+            "ci_low": 0.000417,
+            "ci_high": 0.021389,
+            "signed_rank_p": 0.052734,
+            "bonferroni_p_m3": 0.158203
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.005556,
+          "ci_low": -0.020694,
+          "ci_high": 0.008056
+        }
+      },
+      "PC4": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.893194,
+          "consensus": 0.855139,
+          "debate": 0.887778,
+          "synthesis": 0.815417
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.893194,
+        "delta_best_minus_predicted": 0.038055,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 2.216667,
+        "friedman_permutation_p": 0.290542,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.038056,
+            "ci_low": -0.137222,
+            "ci_high": 0.050556,
+            "signed_rank_p": 0.597656,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": -0.032639,
+            "ci_low": -0.146667,
+            "ci_high": 0.081806,
+            "signed_rank_p": 0.574219,
+            "bonferroni_p_m3": 1.0
+          },
+          "synthesis": {
+            "mean": 0.039722,
+            "ci_low": -0.078056,
+            "ci_high": 0.149583,
+            "signed_rank_p": 0.375,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.038056,
+          "ci_low": -0.135972,
+          "ci_high": 0.047778
+        }
+      },
+      "PC5": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.905556,
+          "consensus": 0.905556,
+          "debate": 0.896528,
+          "synthesis": 0.890278
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.905556,
+        "delta_best_minus_predicted": 0.015278,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 1.716667,
+        "friedman_permutation_p": 0.278344,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.015278,
+            "ci_low": -0.031944,
+            "ci_high": 0.0,
+            "signed_rank_p": 0.085938,
+            "bonferroni_p_m3": 0.257812
+          },
+          "consensus": {
+            "mean": -0.015278,
+            "ci_low": -0.03125,
+            "ci_high": -0.001389,
+            "signed_rank_p": 0.101562,
+            "bonferroni_p_m3": 0.304688
+          },
+          "debate": {
+            "mean": -0.00625,
+            "ci_low": -0.029167,
+            "ci_high": 0.016667,
+            "signed_rank_p": 0.726562,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.015278,
+          "ci_low": -0.03125,
+          "ci_high": -0.000694
+        }
+      }
+    },
+    "qwen_local": {
+      "PC1": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.948333,
+          "consensus": 0.950417,
+          "debate": 0.9225,
+          "synthesis": 0.942917
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.950417,
+        "delta_best_minus_predicted": 0.0,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 5.383333,
+        "friedman_permutation_p": 0.039192,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": 0.002083,
+            "ci_low": -0.024028,
+            "ci_high": 0.025972,
+            "signed_rank_p": 0.750977,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": 0.027917,
+            "ci_low": 0.011944,
+            "ci_high": 0.045417,
+            "signed_rank_p": 0.003906,
+            "bonferroni_p_m3": 0.011719
+          },
+          "synthesis": {
+            "mean": 0.0075,
+            "ci_low": -0.0125,
+            "ci_high": 0.027361,
+            "signed_rank_p": 0.640625,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": 0.002083,
+          "ci_low": -0.024722,
+          "ci_high": 0.025278
+        }
+      },
+      "PC2": {
+        "n_blocks": 18,
+        "predicted_strategy": "debate",
+        "means": {
+          "single_agent": 0.897917,
+          "consensus": 0.922917,
+          "debate": 0.872222,
+          "synthesis": 0.899306
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.922917,
+        "delta_best_minus_predicted": 0.050695,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 8.55,
+        "friedman_permutation_p": 0.0018,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.025694,
+            "ci_low": -0.051389,
+            "ci_high": -0.004167,
+            "signed_rank_p": 0.050781,
+            "bonferroni_p_m3": 0.152344
+          },
+          "consensus": {
+            "mean": -0.050694,
+            "ci_low": -0.076389,
+            "ci_high": -0.027778,
+            "signed_rank_p": 0.001953,
+            "bonferroni_p_m3": 0.005859
+          },
+          "synthesis": {
+            "mean": -0.027083,
+            "ci_low": -0.058333,
+            "ci_high": -0.004167,
+            "signed_rank_p": 0.054688,
+            "bonferroni_p_m3": 0.164062
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.050694,
+          "ci_low": -0.075694,
+          "ci_high": -0.027778
+        }
+      },
+      "PC3": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.883333,
+          "consensus": 0.897917,
+          "debate": 0.849722,
+          "synthesis": 0.922639
+        },
+        "best_condition": "synthesis",
+        "best_mean": 0.922639,
+        "delta_best_minus_predicted": 0.0,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 14.216667,
+        "friedman_permutation_p": 0.0004,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": 0.039306,
+            "ci_low": 0.004861,
+            "ci_high": 0.071944,
+            "signed_rank_p": 0.032135,
+            "bonferroni_p_m3": 0.096405
+          },
+          "consensus": {
+            "mean": 0.024722,
+            "ci_low": 0.002361,
+            "ci_high": 0.048611,
+            "signed_rank_p": 0.04834,
+            "bonferroni_p_m3": 0.14502
+          },
+          "debate": {
+            "mean": 0.072917,
+            "ci_low": 0.051389,
+            "ci_high": 0.093611,
+            "signed_rank_p": 6.1e-05,
+            "bonferroni_p_m3": 0.000183
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": 0.024722,
+          "ci_low": 0.002917,
+          "ci_high": 0.048472
+        }
+      },
+      "PC4": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.919583,
+          "consensus": 0.844722,
+          "debate": 0.849861,
+          "synthesis": 0.780278
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.919583,
+        "delta_best_minus_predicted": 0.074861,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 2.833333,
+        "friedman_permutation_p": 0.182563,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.074861,
+            "ci_low": -0.146528,
+            "ci_high": -0.013194,
+            "signed_rank_p": 0.09375,
+            "bonferroni_p_m3": 0.28125
+          },
+          "debate": {
+            "mean": -0.005139,
+            "ci_low": -0.084306,
+            "ci_high": 0.072222,
+            "signed_rank_p": 0.789062,
+            "bonferroni_p_m3": 1.0
+          },
+          "synthesis": {
+            "mean": 0.064444,
+            "ci_low": 0.003889,
+            "ci_high": 0.143333,
+            "signed_rank_p": 0.09375,
+            "bonferroni_p_m3": 0.28125
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.074861,
+          "ci_low": -0.144167,
+          "ci_high": -0.011389
+        }
+      },
+      "PC5": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.906944,
+          "consensus": 0.929861,
+          "debate": 0.913194,
+          "synthesis": 0.922222
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.929861,
+        "delta_best_minus_predicted": 0.007639,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 2.616667,
+        "friedman_permutation_p": 0.353729,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": 0.015278,
+            "ci_low": -0.008333,
+            "ci_high": 0.038889,
+            "signed_rank_p": 0.179443,
+            "bonferroni_p_m3": 0.53833
+          },
+          "consensus": {
+            "mean": -0.007639,
+            "ci_low": -0.017361,
+            "ci_high": 0.002778,
+            "signed_rank_p": 0.193359,
+            "bonferroni_p_m3": 0.580078
+          },
+          "debate": {
+            "mean": 0.009028,
+            "ci_low": -0.015278,
+            "ci_high": 0.034722,
+            "signed_rank_p": 0.700562,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.007639,
+          "ci_low": -0.017361,
+          "ci_high": 0.002083
+        }
+      }
+    },
+    "sonnet": {
+      "PC1": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.943056,
+          "consensus": 0.932083,
+          "debate": 0.909583,
+          "synthesis": 0.899861
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.943056,
+        "delta_best_minus_predicted": 0.010973,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 8.816667,
+        "friedman_permutation_p": 0.011198,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.010972,
+            "ci_low": -0.036806,
+            "ci_high": 0.014583,
+            "signed_rank_p": 0.556641,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": 0.0225,
+            "ci_low": -0.008333,
+            "ci_high": 0.050694,
+            "signed_rank_p": 0.139648,
+            "bonferroni_p_m3": 0.418945
+          },
+          "synthesis": {
+            "mean": 0.032222,
+            "ci_low": 0.006667,
+            "ci_high": 0.056806,
+            "signed_rank_p": 0.03833,
+            "bonferroni_p_m3": 0.11499
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.010972,
+          "ci_low": -0.038194,
+          "ci_high": 0.014306
+        }
+      },
+      "PC2": {
+        "n_blocks": 18,
+        "predicted_strategy": "debate",
+        "means": {
+          "single_agent": 0.877778,
+          "consensus": 0.879861,
+          "debate": 0.856667,
+          "synthesis": 0.874444
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.879861,
+        "delta_best_minus_predicted": 0.023194,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 2.083333,
+        "friedman_permutation_p": 0.384723,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.021111,
+            "ci_low": -0.043056,
+            "ci_high": -0.002778,
+            "signed_rank_p": 0.101562,
+            "bonferroni_p_m3": 0.304688
+          },
+          "consensus": {
+            "mean": -0.023194,
+            "ci_low": -0.045,
+            "ci_high": -0.003472,
+            "signed_rank_p": 0.0625,
+            "bonferroni_p_m3": 0.1875
+          },
+          "synthesis": {
+            "mean": -0.017778,
+            "ci_low": -0.038611,
+            "ci_high": 0.002778,
+            "signed_rank_p": 0.060547,
+            "bonferroni_p_m3": 0.181641
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.023194,
+          "ci_low": -0.045,
+          "ci_high": -0.003472
+        }
+      },
+      "PC3": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.85625,
+          "consensus": 0.867778,
+          "debate": 0.846528,
+          "synthesis": 0.87875
+        },
+        "best_condition": "synthesis",
+        "best_mean": 0.87875,
+        "delta_best_minus_predicted": 0.0,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 8.516667,
+        "friedman_permutation_p": 0.005399,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": 0.0225,
+            "ci_low": 0.011528,
+            "ci_high": 0.034444,
+            "signed_rank_p": 0.001953,
+            "bonferroni_p_m3": 0.005859
+          },
+          "consensus": {
+            "mean": 0.010972,
+            "ci_low": -0.001667,
+            "ci_high": 0.023889,
+            "signed_rank_p": 0.129395,
+            "bonferroni_p_m3": 0.388184
+          },
+          "debate": {
+            "mean": 0.032222,
+            "ci_low": 0.012917,
+            "ci_high": 0.0525,
+            "signed_rank_p": 0.006592,
+            "bonferroni_p_m3": 0.019775
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": 0.010972,
+          "ci_low": -0.001806,
+          "ci_high": 0.02375
+        }
+      },
+      "PC4": {
+        "n_blocks": 18,
+        "predicted_strategy": "consensus",
+        "means": {
+          "single_agent": 0.862361,
+          "consensus": 0.799028,
+          "debate": 0.82375,
+          "synthesis": 0.81875
+        },
+        "best_condition": "single_agent",
+        "best_mean": 0.862361,
+        "delta_best_minus_predicted": 0.063333,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 0.7,
+        "friedman_permutation_p": 0.783443,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": -0.063333,
+            "ci_low": -0.196944,
+            "ci_high": 0.07,
+            "signed_rank_p": 0.40625,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": -0.024722,
+            "ci_low": -0.15,
+            "ci_high": 0.087778,
+            "signed_rank_p": 0.813477,
+            "bonferroni_p_m3": 1.0
+          },
+          "synthesis": {
+            "mean": -0.019722,
+            "ci_low": -0.110972,
+            "ci_high": 0.049722,
+            "signed_rank_p": 0.71875,
+            "bonferroni_p_m3": 1.0
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "single_agent",
+          "mean": -0.063333,
+          "ci_low": -0.194722,
+          "ci_high": 0.075278
+        }
+      },
+      "PC5": {
+        "n_blocks": 18,
+        "predicted_strategy": "synthesis",
+        "means": {
+          "single_agent": 0.868056,
+          "consensus": 0.884028,
+          "debate": 0.843056,
+          "synthesis": 0.879861
+        },
+        "best_condition": "consensus",
+        "best_mean": 0.884028,
+        "delta_best_minus_predicted": 0.004167,
+        "tolerance_hit_0_10": true,
+        "friedman_q": 5.15,
+        "friedman_permutation_p": 0.063187,
+        "pairwise_predicted_minus": {
+          "single_agent": {
+            "mean": 0.011806,
+            "ci_low": -0.005556,
+            "ci_high": 0.029167,
+            "signed_rank_p": 0.142578,
+            "bonferroni_p_m3": 0.427734
+          },
+          "consensus": {
+            "mean": -0.004167,
+            "ci_low": -0.023611,
+            "ci_high": 0.015972,
+            "signed_rank_p": 0.787109,
+            "bonferroni_p_m3": 1.0
+          },
+          "debate": {
+            "mean": 0.036806,
+            "ci_low": 0.010417,
+            "ci_high": 0.067361,
+            "signed_rank_p": 0.020996,
+            "bonferroni_p_m3": 0.062988
+          }
+        },
+        "predicted_minus_best_non_predicted": {
+          "best_non_predicted": "consensus",
+          "mean": -0.004167,
+          "ci_low": -0.023611,
+          "ci_high": 0.015972
+        }
+      }
+    }
+  }
+}

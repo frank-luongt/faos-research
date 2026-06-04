@@ -10,10 +10,10 @@ The FAOS Research Programme is the empirical research arm of the [Foundation Age
 
 | Paper | Title | Status | ETA |
 |---|---|---|---|
-| **RA-1** | Multi-Agent Coordination | `gated — Q3 2026` | Q3 2026 |
+| **RA-1** | Multi-Agent Coordination | [`arXiv-live`](https://arxiv.org/abs/2606.00804) · [`./RA-1/`](./RA-1/) | Published |
 | **RA-3** | Neurosymbolic Enterprise AI | [`arXiv-live`](https://arxiv.org/abs/2604.00555) · [`./RA-3/`](./RA-3/) | Published |
 | **RA-4** | Empirical Bounds of Ontological Context | [`arXiv-ready — minor pre-submit revision`](./RA-4/) | Q2 2026 |
-| **RA-6** | Agent Simulation & Verification | [`preprint pending — arXiv submission imminent`](./RA-6/) | Q2 2026 |
+| **RA-6** | Agent Simulation & Verification | [`arXiv-live`](https://arxiv.org/abs/2606.04037) · [`./RA-6/`](./RA-6/) | Published |
 | **RA-11** | Quantum Context Engineering | `gated — Q3 2026` | Q3 2026 |
 | **RA-12** | Entropy-Guided Ontology Design | [`preprint pending — arXiv submission imminent`](./RA-12/) | Q2 2026 |
 | **RA-15** | Contextuality Auditor | `method paper — Q2 2026` | Q2 2026 |

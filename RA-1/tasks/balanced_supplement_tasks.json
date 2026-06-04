@@ -1,0 +1,210 @@
+[
+  {
+    "id": "fintech_RA1_PC3_01",
+    "industry": "fintech",
+    "category": "novel_design_synthesis",
+    "problem_class": "PC3",
+    "predicted_strategy": "synthesis",
+    "question": "Design a real-time fraud early-warning product for a payment processor that combines transaction monitoring, merchant risk scoring, chargeback signals, and compliance escalation.",
+    "ground_truth": {
+      "answer": "A strong answer synthesizes product, risk, compliance, data, and operations into one product design: risk scoring inputs, merchant segmentation, alert thresholds, analyst workflow, SAR escalation criteria, customer-facing controls, feedback loops, and KPIs such as authorization rate, chargeback rate, false-positive rate, and investigation SLA.",
+      "required_terms": ["transaction monitoring", "merchant risk", "chargeback", "SAR", "false positive", "investigation SLA"],
+      "design_dimensions": ["data_signals", "risk_model", "workflow", "compliance_escalation", "customer_controls", "kpis"]
+    }
+  },
+  {
+    "id": "insurance_RA1_PC3_01",
+    "industry": "insurance",
+    "category": "novel_design_synthesis",
+    "problem_class": "PC3",
+    "predicted_strategy": "synthesis",
+    "question": "Design a claims leakage reduction program for a property and casualty insurer that connects FNOL intake, adjuster workflow, reserve review, fraud indicators, and customer experience.",
+    "ground_truth": {
+      "answer": "A strong answer synthesizes claims operations, actuarial reserve control, fraud detection, and customer experience: standardized FNOL triage, leakage taxonomy, reserve adequacy checks, fraud red flags, adjuster decision support, escalation rules, customer communication standards, and metrics such as cycle time, severity variance, leakage rate, and NPS.",
+      "required_terms": ["FNOL", "claims leakage", "reserve adequacy", "fraud indicators", "cycle time", "severity"],
+      "design_dimensions": ["triage", "reserve_review", "fraud_detection", "adjuster_workflow", "customer_experience", "metrics"]
+    }
+  },
+  {
+    "id": "healthcare_RA1_PC3_01",
+    "industry": "healthcare",
+    "category": "novel_design_synthesis",
+    "problem_class": "PC3",
+    "predicted_strategy": "synthesis",
+    "question": "Design a post-discharge coordination program that reduces readmission risk while improving patient experience and revenue-cycle completeness.",
+    "ground_truth": {
+      "answer": "A strong answer synthesizes clinical, operational, patient-experience, and revenue-cycle perspectives: risk stratification at discharge, medication reconciliation, follow-up scheduling, patient education, care-manager outreach, documentation completeness, denial prevention, and metrics such as readmission rate, HCAHPS, follow-up completion, and denial rate.",
+      "required_terms": ["readmission", "discharge", "medication reconciliation", "care manager", "HCAHPS", "denial rate"],
+      "design_dimensions": ["risk_stratification", "care_coordination", "patient_experience", "documentation", "revenue_cycle", "metrics"]
+    }
+  },
+  {
+    "id": "banking_vn_RA1_PC3_01",
+    "industry": "banking_vn",
+    "category": "novel_design_synthesis",
+    "problem_class": "PC3",
+    "predicted_strategy": "synthesis",
+    "question": "Design an SME digital credit monitoring operating model for a Vietnamese bank that combines CIC data, cash-flow signals, collateral monitoring, NPL early warning, and branch relationship management.",
+    "ground_truth": {
+      "answer": "A strong answer synthesizes credit risk, compliance, digital operations, and branch execution: CIC refresh cadence, transaction cash-flow monitoring, collateral revaluation triggers, early-warning indicators, RM intervention playbooks, credit committee escalation, SBV reporting awareness, and KPIs such as NPL ratio, overdue migration, approval cycle time, and recovery rate.",
+      "required_terms": ["CIC", "cash-flow monitoring", "collateral", "NPL", "relationship manager", "SBV"],
+      "design_dimensions": ["data_inputs", "early_warning", "branch_workflow", "credit_escalation", "regulatory_reporting", "kpis"]
+    }
+  },
+  {
+    "id": "insurance_vn_RA1_PC3_01",
+    "industry": "insurance_vn",
+    "category": "novel_design_synthesis",
+    "problem_class": "PC3",
+    "predicted_strategy": "synthesis",
+    "question": "Design a bancassurance quality-monitoring program for a Vietnamese insurer that reduces mis-selling risk while improving persistency and partner-bank performance.",
+    "ground_truth": {
+      "answer": "A strong answer synthesizes compliance, distribution, customer protection, and performance management: needs-analysis controls, disclosure checks, cooling-off monitoring, complaint triage, bank-branch coaching, persistency dashboards, partner scorecards, and escalation to compliance for mis-selling indicators.",
+      "required_terms": ["bancassurance", "mis-selling", "needs analysis", "cooling-off", "persistency", "partner scorecard"],
+      "design_dimensions": ["sales_quality", "compliance_controls", "customer_protection", "partner_management", "coaching", "metrics"]
+    }
+  },
+  {
+    "id": "insurance_RA1_PC2_01",
+    "industry": "insurance",
+    "category": "conflicting_objective_tradeoff",
+    "problem_class": "PC2",
+    "predicted_strategy": "debate",
+    "question": "A property insurer can grow premium quickly by relaxing underwriting for small commercial accounts, while the CRO and Chief Actuary warn that loss ratio and reserve volatility will breach risk appetite. Recommend the underwriting posture.",
+    "ground_truth": {
+      "answer": "A strong answer explicitly debates growth against underwriting discipline. It should compare premium growth, loss ratio, reserve volatility, risk appetite, reinsurance capacity, producer incentives, and customer segment quality before recommending a constrained growth posture, tightened eligibility, or temporary pause.",
+      "required_terms": ["premium growth", "underwriting", "loss ratio", "reserve volatility", "risk appetite", "reinsurance"],
+      "tradeoff_axes": ["growth", "risk_appetite", "reserve_volatility", "distribution", "capital"]
+    }
+  },
+  {
+    "id": "healthcare_RA1_PC1_01",
+    "industry": "healthcare",
+    "category": "high_uncertainty_risk_decision",
+    "problem_class": "PC1",
+    "predicted_strategy": "consensus",
+    "question": "A hospital sees a two-week rise in readmissions, patient complaints, and near-miss medication events, but the sample is small and root cause is unclear. Decide whether to trigger an immediate quality-safety intervention.",
+    "ground_truth": {
+      "answer": "A strong answer treats the signal as uncertain but material. It should weigh readmission trend, near-miss severity, medication safety, patient complaints, sample size, possible confounders, and operational disruption before recommending a proportionate intervention such as focused review, safety huddle, temporary monitoring, and escalation criteria.",
+      "required_terms": ["readmission", "near miss", "medication safety", "quality intervention", "root cause", "escalation"],
+      "decision_factors": ["signal_strength", "patient_safety", "sample_size", "operational_disruption", "monitoring_plan"]
+    }
+  },
+  {
+    "id": "healthcare_RA1_PC2_01",
+    "industry": "healthcare",
+    "category": "conflicting_objective_tradeoff",
+    "problem_class": "PC2",
+    "predicted_strategy": "debate",
+    "question": "The CFO wants to reduce agency-nurse spend by 20% this quarter, while the CNO and CMO warn that staffing cuts could worsen falls, readmissions, and HCAHPS scores. Recommend the staffing posture.",
+    "ground_truth": {
+      "answer": "A strong answer debates cost control against patient-safety and experience risk. It should compare agency spend, nurse staffing ratios, fall risk, readmission risk, HCAHPS, unit acuity, recruitment pipeline, and phased alternatives before recommending where cuts are safe or where staffing must be protected.",
+      "required_terms": ["agency nurse", "staffing ratio", "falls", "readmission", "HCAHPS", "acuity"],
+      "tradeoff_axes": ["cost", "patient_safety", "experience", "capacity", "staff_retention"]
+    }
+  },
+  {
+    "id": "banking_vn_RA1_PC2_01",
+    "industry": "banking_vn",
+    "category": "conflicting_objective_tradeoff",
+    "problem_class": "PC2",
+    "predicted_strategy": "debate",
+    "question": "A Vietnamese bank wants to loosen SME credit criteria to gain market share, while Risk warns that CIC history, collateral volatility, and early NPL migration are deteriorating. Recommend the credit growth posture.",
+    "ground_truth": {
+      "answer": "A strong answer debates market-share growth against credit quality and SBV risk controls. It should compare loan growth, CIC history, collateral value, debt-service capacity, early NPL migration, provisioning exposure, branch incentives, and monitoring cadence before recommending tightened, segmented, or conditional growth.",
+      "required_terms": ["SME credit", "CIC", "collateral", "NPL", "provisioning", "SBV"],
+      "tradeoff_axes": ["market_share", "credit_quality", "collateral_risk", "branch_growth", "provisioning"]
+    }
+  },
+  {
+    "id": "insurance_vn_RA1_PC1_01",
+    "industry": "insurance_vn",
+    "category": "high_uncertainty_risk_decision",
+    "problem_class": "PC1",
+    "predicted_strategy": "consensus",
+    "question": "A Vietnamese life insurer receives a spike in bancassurance complaints from one partner bank, but complaint narratives are inconsistent and sales-volume data are incomplete. Decide whether to suspend sales at the affected branches while the investigation continues.",
+    "ground_truth": {
+      "answer": "A strong answer weighs uncertain but serious conduct risk. It should consider complaint volume, narrative consistency, branch concentration, needs-analysis evidence, cooling-off cancellations, partner-bank incentives, customer harm, regulatory exposure, and interim controls before recommending suspension, enhanced monitoring, or targeted remediation.",
+      "required_terms": ["bancassurance", "complaint", "needs analysis", "cooling-off", "customer harm", "interim control"],
+      "decision_factors": ["evidence_quality", "customer_harm", "regulatory_exposure", "partner_concentration", "interim_controls"]
+    }
+  },
+  {
+    "id": "insurance_vn_RA1_PC2_01",
+    "industry": "insurance_vn",
+    "category": "conflicting_objective_tradeoff",
+    "problem_class": "PC2",
+    "predicted_strategy": "debate",
+    "question": "A partner bank asks a Vietnamese insurer to simplify bancassurance sales scripts to raise conversion, while Compliance warns this may weaken needs analysis, disclosure, and cooling-off communication. Recommend the distribution posture.",
+    "ground_truth": {
+      "answer": "A strong answer debates conversion growth against customer-protection and compliance obligations. It should compare sales conversion, persistency, complaint risk, needs-analysis quality, disclosure completeness, cooling-off communication, bank incentives, and monitoring evidence before recommending script changes, guardrails, or rejection.",
+      "required_terms": ["bancassurance", "conversion", "needs analysis", "disclosure", "cooling-off", "persistency"],
+      "tradeoff_axes": ["sales_growth", "customer_protection", "compliance", "partner_performance", "persistency"]
+    }
+  },
+  {
+    "id": "fintech_RA1_PC5_01",
+    "industry": "fintech",
+    "category": "ambiguous_requirement_clarification",
+    "problem_class": "PC5",
+    "predicted_strategy": "synthesis",
+    "question": "The CEO says, 'Make onboarding safer without hurting conversion.' Clarify this ambiguous directive into requirements that product, compliance, risk, data, and operations can evaluate.",
+    "ground_truth": {
+      "answer": "A strong answer does not design the final solution first. It clarifies the target customer segment, risk types, conversion baseline, acceptable friction, KYC/CDD controls, fraud signals, manual-review thresholds, data availability, success metrics, owners, and decision gates.",
+      "required_terms": ["onboarding", "conversion", "KYC", "CDD", "fraud signal", "manual review"],
+      "clarification_dimensions": ["scope", "risk", "user_experience", "data", "metrics", "owners"]
+    }
+  },
+  {
+    "id": "insurance_RA1_PC5_01",
+    "industry": "insurance",
+    "category": "ambiguous_requirement_clarification",
+    "problem_class": "PC5",
+    "predicted_strategy": "synthesis",
+    "question": "The COO says, 'Fix claims leakage this quarter.' Clarify this ambiguous directive into requirements that claims, actuarial, fraud, finance, and customer experience leaders can execute.",
+    "ground_truth": {
+      "answer": "A strong answer turns the vague directive into clarified requirements: leakage definition, claim segment, baseline severity, reserve-review scope, fraud indicators, adjuster workflow, customer impact, target metrics, data sources, accountable owners, and sequencing.",
+      "required_terms": ["claims leakage", "severity", "reserve review", "fraud indicator", "adjuster workflow", "customer impact"],
+      "clarification_dimensions": ["definition", "scope", "baseline", "workflow", "metrics", "owners"]
+    }
+  },
+  {
+    "id": "healthcare_RA1_PC5_01",
+    "industry": "healthcare",
+    "category": "ambiguous_requirement_clarification",
+    "problem_class": "PC5",
+    "predicted_strategy": "synthesis",
+    "question": "The hospital CEO says, 'Improve discharge experience before the next CMS survey.' Clarify this ambiguous directive into requirements for clinical, case-management, patient-experience, and revenue-cycle teams.",
+    "ground_truth": {
+      "answer": "A strong answer clarifies patient segment, discharge unit, HCAHPS dimension, readmission-risk focus, medication reconciliation, SNF authorization, follow-up scheduling, documentation completeness, patient communication, success metrics, and accountable owners.",
+      "required_terms": ["discharge", "CMS", "HCAHPS", "medication reconciliation", "SNF authorization", "follow-up"],
+      "clarification_dimensions": ["patient_segment", "clinical_workflow", "authorization", "experience", "metrics", "owners"]
+    }
+  },
+  {
+    "id": "banking_vn_RA1_PC5_01",
+    "industry": "banking_vn",
+    "category": "ambiguous_requirement_clarification",
+    "problem_class": "PC5",
+    "predicted_strategy": "synthesis",
+    "question": "A Vietnamese bank deputy CEO says, 'Make SME credit monitoring more proactive.' Clarify this ambiguous directive into requirements for risk, branch, credit, compliance, and data teams.",
+    "ground_truth": {
+      "answer": "A strong answer clarifies SME segment, monitoring frequency, CIC refresh, cash-flow signals, collateral triggers, early-warning thresholds, RM actions, SBV reporting considerations, data owners, success metrics, and escalation rules.",
+      "required_terms": ["SME credit", "CIC", "cash-flow signal", "collateral", "early warning", "relationship manager"],
+      "clarification_dimensions": ["scope", "signals", "thresholds", "workflow", "reporting", "owners"]
+    }
+  },
+  {
+    "id": "insurance_vn_RA1_PC5_01",
+    "industry": "insurance_vn",
+    "category": "ambiguous_requirement_clarification",
+    "problem_class": "PC5",
+    "predicted_strategy": "synthesis",
+    "question": "The distribution head says, 'Clean up bancassurance quality without upsetting the bank partner.' Clarify this ambiguous directive into requirements for compliance, distribution, customer service, actuarial, and partner-management teams.",
+    "ground_truth": {
+      "answer": "A strong answer clarifies what quality means: needs-analysis completion, disclosure evidence, complaint threshold, cooling-off communication, persistency target, bank-branch coaching, partner scorecard, monitoring cadence, escalation rules, and customer-remediation criteria.",
+      "required_terms": ["bancassurance", "needs analysis", "disclosure", "complaint", "cooling-off", "persistency"],
+      "clarification_dimensions": ["quality_definition", "controls", "customer_harm", "partner_management", "metrics", "escalation"]
+    }
+  }
+]
