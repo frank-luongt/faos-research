@@ -6,6 +6,10 @@
 
 **Public snapshot:** <https://github.com/frank-luongt/faos-research/tree/ra-15-artifacts-v1.1/RA-15/experiment>
 
+**Zenodo version DOI:** <https://doi.org/10.5281/zenodo.21288508>
+
+**Zenodo concept DOI:** <https://doi.org/10.5281/zenodo.21288507>
+
 **License:** MIT; see repository `LICENSE`
 
 This manifest identifies the primary empirical artifacts used by the RA-15 method / negative-results manuscript. The complete exploratory pilot history is stored in `experiment/`. It contains synthetic prompts only; it contains no customer records, production tenant data, human-subject observations, or personally identifiable information.
