@@ -1,0 +1,28 @@
+{
+  "title": "RA-15 Contextuality Auditor for Enterprise LLM Agents: Reproducibility Artifacts v1.1",
+  "description": "Complete reproducibility artifacts for the RA-15 method and negative-results study. The release contains synthetic prompts, frozen prompt matrices, raw and repaired Qwen 3.6 and OpenRouter Gemma 4 outputs, canonical Contextuality-by-Default summaries, analysis and validation code, analytic fixtures, protocols, and reports. The corrected Phase 1.3 result is a canonical contextuality null across all groups. No human-subject, customer, production tenant, or personally identifiable data are included.",
+  "creators": [
+    {
+      "name": "Luong Tuan, Thanh",
+      "affiliation": "Foundation AgenticOS; Golden Gate University",
+      "orcid": "0009-0000-1199-837X"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Contextuality-by-Default",
+    "enterprise LLM agents",
+    "direct influence",
+    "construct validity",
+    "multi-agent orchestration",
+    "negative results",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/frank-luongt/faos-research/tree/ra-15-artifacts-v1.1/RA-15",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    }
+  ]
+}

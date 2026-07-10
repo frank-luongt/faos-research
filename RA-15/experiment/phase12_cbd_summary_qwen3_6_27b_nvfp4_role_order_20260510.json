@@ -1,0 +1,346 @@
+{
+  "input": "research-academic/experiments/RA-15-contextuality-pilot/phase12_outputs_qwen3_6_27b_nvfp4_nojson_role_order_20260510.jsonl",
+  "groups": [
+    {
+      "task_id": "healthcare_T6",
+      "block": "canonical_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 1.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 1.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1
+      },
+      "s_odd": 4,
+      "cntx_raw": 1.0,
+      "cntx": 1.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.5
+    },
+    {
+      "task_id": "healthcare_T6",
+      "block": "canonical_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 1.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 1.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": 1
+      },
+      "s_odd": 4,
+      "cntx_raw": 1.0,
+      "cntx": 1.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.5
+    },
+    {
+      "task_id": "insurance_T6",
+      "block": "canonical_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T6",
+      "block": "canonical_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "canonical_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.16666666666666666
+      },
+      "di_total": 0.16666666666666666,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -0.6666666666666666,
+        "C4": 1
+      },
+      "s_odd": 2.3333333333333335,
+      "cntx_raw": 0.16666666666666682,
+      "cntx": 0.16666666666666682,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.6500224216483541,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.08125280270604426,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "canonical_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.08333333333333333
+      },
+      "di_total": 0.08333333333333333,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -0.8333333333333334,
+        "C4": 1
+      },
+      "s_odd": 2.1666666666666665,
+      "cntx_raw": 0.08333333333333319,
+      "cntx": 0.08333333333333319,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.41381685030363374,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.05172710628795422,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "conflict_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.5833333333333334
+      },
+      "di_total": 0.5833333333333334,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 0.16666666666666666,
+        "C4": 1
+      },
+      "s_odd": 3.1666666666666665,
+      "cntx_raw": 0.5833333333333331,
+      "cntx": 0.5833333333333331,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.9798687566511528,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.1224835945813941,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "conflict_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.4166666666666667
+      },
+      "di_total": 0.4166666666666667,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -0.16666666666666666,
+        "C4": 1
+      },
+      "s_odd": 2.833333333333333,
+      "cntx_raw": 0.41666666666666635,
+      "cntx": 0.41666666666666635,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.9798687566511528,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.1224835945813941,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "conflict_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "conflict_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    }
+  ],
+  "skipped_incomplete": []
+}

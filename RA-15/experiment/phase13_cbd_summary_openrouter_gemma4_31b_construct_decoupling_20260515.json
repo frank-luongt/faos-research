@@ -1,0 +1,502 @@
+{
+  "input": "phase13_outputs_openrouter_gemma4_31b_construct_decoupling_repaired_20260515.jsonl",
+  "groups": [
+    {
+      "task_id": "healthcare_T6",
+      "block": "canonical_order_neutral",
+      "model": "google/gemma-4-31b-it",
+      "industry": "healthcare",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "healthcare_T6",
+      "block": "canonical_role_fixed",
+      "model": "google/gemma-4-31b-it",
+      "industry": "healthcare",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T6",
+      "block": "canonical_order_neutral",
+      "model": "google/gemma-4-31b-it",
+      "industry": "insurance",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.16666666666666663,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.16666666666666663,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.33333333333333326,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.16666666666666663,
+      "di_probability_total": 0.16666666666666663,
+      "di_expectation_total": 0.33333333333333326,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -0.6666666666666666
+      },
+      "s_odd": 2.3333333333333335,
+      "cntx_legacy_probability_drift_raw": 0.16666666666666685,
+      "cntx_legacy_probability_drift": 0.16666666666666685,
+      "cntx_raw": 1.1102230246251565e-16,
+      "cntx": 1.1102230246251565e-16,
+      "cntx_canonical_raw": 1.1102230246251565e-16,
+      "cntx_canonical": 1.1102230246251565e-16,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.6500224216483541
+      },
+      "h_mean": 0.08125280270604426,
+      "q1_instability": 0.08333333333333337
+    },
+    {
+      "task_id": "insurance_T6",
+      "block": "canonical_role_fixed",
+      "model": "google/gemma-4-31b-it",
+      "industry": "insurance",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "conflict_order_neutral",
+      "model": "google/gemma-4-31b-it",
+      "industry": "insurance",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.9166666666666666,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.9166666666666666,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 1.8333333333333333,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.9166666666666666,
+      "di_probability_total": 0.9166666666666666,
+      "di_expectation_total": 1.8333333333333333,
+      "correlations": {
+        "C1": -0.8333333333333334,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 3.8333333333333335,
+      "cntx_legacy_probability_drift_raw": 0.9166666666666669,
+      "cntx_legacy_probability_drift": 0.9166666666666669,
+      "cntx_raw": 1.1102230246251565e-16,
+      "cntx": 1.1102230246251565e-16,
+      "cntx_canonical_raw": 1.1102230246251565e-16,
+      "cntx_canonical": 1.1102230246251565e-16,
+      "entropy": {
+        "C1.q1": 0.41381685030363374,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.05172710628795422,
+      "q1_instability": 0.45833333333333337
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "conflict_role_fixed",
+      "model": "google/gemma-4-31b-it",
+      "industry": "insurance",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "conflict_order_neutral",
+      "model": "google/gemma-4-31b-it",
+      "industry": "software",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "conflict_role_fixed",
+      "model": "google/gemma-4-31b-it",
+      "industry": "software",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    }
+  ],
+  "skipped_incomplete": []
+}

@@ -1,0 +1,51 @@
+{
+  "input": "research-academic/experiments/RA-15-contextuality-pilot/phase0_outputs_qwen3_6_27b_nvfp4_v02_20260509.jsonl",
+  "groups": [
+    {
+      "task_id": "fintech_T6",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 12,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 12,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "q1_instability": 0.0
+    }
+  ]
+}

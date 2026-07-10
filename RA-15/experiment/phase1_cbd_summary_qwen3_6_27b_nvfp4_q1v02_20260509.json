@@ -1,0 +1,414 @@
+{
+  "input": "research-academic/experiments/RA-15-contextuality-pilot/phase1_outputs_qwen3_6_27b_nvfp4_nojson_q1v02_20260509.jsonl",
+  "groups": [
+    {
+      "task_id": "banking_vn_T6",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -0.8333333333333334,
+        "C4": 0.8333333333333334
+      },
+      "s_odd": 2.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.41381685030363374,
+        "C4.q4": 0.41381685030363374,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.10345421257590844,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "fintech_T6",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.16666666666666663
+      },
+      "di_total": 0.16666666666666663,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 0.6666666666666666,
+        "C4": -1
+      },
+      "s_odd": 2.3333333333333335,
+      "cntx_raw": 0.16666666666666685,
+      "cntx": 0.16666666666666685,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.6500224216483541,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.08125280270604426,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "fintech_T9",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.9166666666666666,
+        "q2": 0.08333333333333333,
+        "q3": 0.0,
+        "q4": 0.5
+      },
+      "di_total": 1.5,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 0,
+        "C4": 1
+      },
+      "s_odd": 3,
+      "cntx_raw": -0.5,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.41381685030363385,
+        "C1.q2": 0.41381685030363374,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 1.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.22845421257590845,
+      "q1_instability": 0.45833333333333337
+    },
+    {
+      "task_id": "fintech_T9",
+      "block": "conflict",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.16666666666666666
+      },
+      "di_total": 0.16666666666666666,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 0.6666666666666666
+      },
+      "s_odd": 2.3333333333333335,
+      "cntx_raw": 0.16666666666666682,
+      "cntx": 0.16666666666666682,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.6500224216483541,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.08125280270604426,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "healthcare_T6",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.9166666666666666,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.16666666666666669
+      },
+      "di_total": 1.0833333333333333,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 0.5,
+        "C4": 1
+      },
+      "s_odd": 3.5,
+      "cntx_raw": 0.41666666666666674,
+      "cntx": 0.41666666666666674,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.8112781244591328,
+        "C4.q4": 0.41381685030363374,
+        "C4.q1": 0.41381685030363374
+      },
+      "h_mean": 0.20486397813330004,
+      "q1_instability": 0.45833333333333337
+    },
+    {
+      "task_id": "insurance_T6",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.5
+      },
+      "di_total": 0.5,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": 0
+      },
+      "s_odd": 3,
+      "cntx_raw": 0.5,
+      "cntx": 0.5,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 1.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.125,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "conflict",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.8333333333333334
+      },
+      "di_total": 0.8333333333333334,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": 0.6666666666666666
+      },
+      "s_odd": 3.6666666666666665,
+      "cntx_raw": 0.8333333333333331,
+      "cntx": 0.8333333333333331,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.6500224216483541,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.08125280270604426,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_vn_T8",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_vn_T8",
+      "block": "conflict",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "canonical",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "conflict",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "n_records": 48,
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": -1,
+        "C4": 1
+      },
+      "s_odd": 2,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    }
+  ],
+  "skipped_incomplete": []
+}

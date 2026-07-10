@@ -1,0 +1,27 @@
+{
+  "phase": "phase1.1",
+  "records": 336,
+  "expected_records": 336,
+  "groups": [
+    "banking_vn_T6:canonical",
+    "fintech_T6:canonical",
+    "healthcare_T6:canonical",
+    "insurance_T9:canonical",
+    "insurance_T9:conflict",
+    "insurance_vn_T8:conflict",
+    "software_T3:conflict"
+  ],
+  "group_counts": {
+    "banking_vn_T6:canonical": 48,
+    "fintech_T6:canonical": 48,
+    "healthcare_T6:canonical": 48,
+    "insurance_T9:canonical": 48,
+    "insurance_T9:conflict": 48,
+    "insurance_vn_T8:conflict": 48,
+    "software_T3:conflict": 48
+  },
+  "q4_labels": [
+    "evidence_ready_for_action",
+    "evidence_not_ready_for_action"
+  ]
+}

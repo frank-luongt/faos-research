@@ -9,8 +9,8 @@ authors:
   - family-names: Sanyal
     given-names: Abhijit
     affiliation: "Novartis Healthcare Pvt. Ltd."
-version: "0.2.1"
-date-released: "2026-05-23"
+version: "0.3.0"
+date-released: "2026-07-10"
 url: "https://github.com/frank-luongt/faos-research"
 license: MIT
 keywords:
@@ -23,6 +23,8 @@ keywords:
   - neurosymbolic AI
   - context engineering
   - ontology grounding
+  - contextuality
+  - direct influence
 preferred-citation:
   type: software
   title: "FAOS Research Programme: Code, Data, and Ontologies for Enterprise Agentic AI"
@@ -59,3 +61,11 @@ references:
         given-names: Abhijit
     year: 2026
     notes: "RA-6 paper; arXiv:2606.04037"
+  - type: article
+    title: "Contextuality Auditor for Enterprise LLM Agents: A Negative-Results Method Study of Direct Influence and Construct Coupling"
+    authors:
+      - family-names: Luong Tuan
+        given-names: Thanh
+        orcid: "https://orcid.org/0009-0000-1199-837X"
+    year: 2026
+    notes: "RA-15 method / negative-results preprint candidate; reproducibility artifacts v1.1 public"

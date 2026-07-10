@@ -1,0 +1,502 @@
+{
+  "input": "phase13_outputs_qwen3_6_27b_nvfp4_construct_decoupling_repaired_20260512.jsonl",
+  "groups": [
+    {
+      "task_id": "healthcare_T6",
+      "block": "canonical_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "healthcare",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.08333333333333333,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.08333333333333333,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.16666666666666666,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.08333333333333333,
+      "di_probability_total": 0.08333333333333333,
+      "di_expectation_total": 0.16666666666666666,
+      "correlations": {
+        "C1": -0.8333333333333334,
+        "C2": 1,
+        "C3": 1,
+        "C4": -1
+      },
+      "s_odd": 2.1666666666666665,
+      "cntx_legacy_probability_drift_raw": 0.08333333333333319,
+      "cntx_legacy_probability_drift": 0.08333333333333319,
+      "cntx_raw": -6.938893903907228e-17,
+      "cntx": 0.0,
+      "cntx_canonical_raw": -6.938893903907228e-17,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.41381685030363374,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.05172710628795422,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "healthcare_T6",
+      "block": "canonical_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "healthcare",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": -1,
+        "C2": 1,
+        "C3": 1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T6",
+      "block": "canonical_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "insurance",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.08333333333333337,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.08333333333333337,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.16666666666666674,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.08333333333333337,
+      "di_probability_total": 0.08333333333333337,
+      "di_expectation_total": 0.16666666666666674,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -0.8333333333333334
+      },
+      "s_odd": 2.1666666666666665,
+      "cntx_legacy_probability_drift_raw": 0.08333333333333315,
+      "cntx_legacy_probability_drift": 0.08333333333333315,
+      "cntx_raw": -1.1102230246251565e-16,
+      "cntx": 0.0,
+      "cntx_canonical_raw": -1.1102230246251565e-16,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.41381685030363385
+      },
+      "h_mean": 0.05172710628795423,
+      "q1_instability": 0.04166666666666663
+    },
+    {
+      "task_id": "insurance_T6",
+      "block": "canonical_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "insurance",
+      "problem_class": "PC4",
+      "conflict_band": "low",
+      "predicted_strategy": "consensus",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "conflict_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "insurance",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.3333333333333333,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.3333333333333333,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.6666666666666666,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.3333333333333333,
+      "di_probability_total": 0.3333333333333333,
+      "di_expectation_total": 0.6666666666666666,
+      "correlations": {
+        "C1": -0.16666666666666666,
+        "C2": 1,
+        "C3": -1,
+        "C4": -0.5
+      },
+      "s_odd": 2.6666666666666665,
+      "cntx_legacy_probability_drift_raw": 0.3333333333333332,
+      "cntx_legacy_probability_drift": 0.3333333333333332,
+      "cntx_raw": -5.551115123125783e-17,
+      "cntx": 0.0,
+      "cntx_canonical_raw": -5.551115123125783e-17,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.9798687566511528,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.8112781244591328
+      },
+      "h_mean": 0.2238933601387857,
+      "q1_instability": 0.41666666666666663
+    },
+    {
+      "task_id": "insurance_T9",
+      "block": "conflict_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "insurance",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.3333333333333333,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.3333333333333333,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.6666666666666666,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.3333333333333333,
+      "di_probability_total": 0.3333333333333333,
+      "di_expectation_total": 0.6666666666666666,
+      "correlations": {
+        "C1": -0.16666666666666666,
+        "C2": 1,
+        "C3": -1,
+        "C4": -0.5
+      },
+      "s_odd": 2.6666666666666665,
+      "cntx_legacy_probability_drift_raw": 0.3333333333333332,
+      "cntx_legacy_probability_drift": 0.3333333333333332,
+      "cntx_raw": -5.551115123125783e-17,
+      "cntx": 0.0,
+      "cntx_canonical_raw": -5.551115123125783e-17,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.9798687566511528,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.8112781244591328
+      },
+      "h_mean": 0.2238933601387857,
+      "q1_instability": 0.41666666666666663
+    },
+    {
+      "task_id": "software_T3",
+      "block": "conflict_order_neutral",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "software",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    },
+    {
+      "task_id": "software_T3",
+      "block": "conflict_role_fixed",
+      "model": "qwen3.6:27b-coding-nvfp4",
+      "industry": "software",
+      "problem_class": "PC2",
+      "conflict_band": "high",
+      "predicted_strategy": "debate",
+      "n_records": 48,
+      "context_counts": {
+        "C1": 12,
+        "C2": 12,
+        "C3": 12,
+        "C4": 12
+      },
+      "direct_influence": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_probability": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "direct_influence_expectation": {
+        "q1": 0.0,
+        "q2": 0.0,
+        "q3": 0.0,
+        "q4": 0.0
+      },
+      "di_total": 0.0,
+      "di_probability_total": 0.0,
+      "di_expectation_total": 0.0,
+      "correlations": {
+        "C1": 1,
+        "C2": 1,
+        "C3": -1,
+        "C4": -1
+      },
+      "s_odd": 2,
+      "cntx_legacy_probability_drift_raw": 0.0,
+      "cntx_legacy_probability_drift": 0.0,
+      "cntx_raw": 0.0,
+      "cntx": 0.0,
+      "cntx_canonical_raw": 0.0,
+      "cntx_canonical": 0.0,
+      "entropy": {
+        "C1.q1": 0.0,
+        "C1.q2": 0.0,
+        "C2.q2": 0.0,
+        "C2.q3": 0.0,
+        "C3.q3": 0.0,
+        "C3.q4": 0.0,
+        "C4.q4": 0.0,
+        "C4.q1": 0.0
+      },
+      "h_mean": 0.0,
+      "q1_instability": 0.0
+    }
+  ],
+  "skipped_incomplete": []
+}

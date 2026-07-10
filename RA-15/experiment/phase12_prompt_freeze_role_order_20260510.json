@@ -1,0 +1,37 @@
+{
+  "phase": "phase1.2",
+  "records": 480,
+  "expected_records": 480,
+  "conditions": [
+    "role_fixed",
+    "order_neutral"
+  ],
+  "groups": [
+    "healthcare_T6:canonical_order_neutral",
+    "healthcare_T6:canonical_role_fixed",
+    "insurance_T6:canonical_order_neutral",
+    "insurance_T6:canonical_role_fixed",
+    "insurance_T9:canonical_order_neutral",
+    "insurance_T9:canonical_role_fixed",
+    "insurance_T9:conflict_order_neutral",
+    "insurance_T9:conflict_role_fixed",
+    "software_T3:conflict_order_neutral",
+    "software_T3:conflict_role_fixed"
+  ],
+  "group_counts": {
+    "healthcare_T6:canonical_order_neutral": 48,
+    "healthcare_T6:canonical_role_fixed": 48,
+    "insurance_T6:canonical_order_neutral": 48,
+    "insurance_T6:canonical_role_fixed": 48,
+    "insurance_T9:canonical_order_neutral": 48,
+    "insurance_T9:canonical_role_fixed": 48,
+    "insurance_T9:conflict_order_neutral": 48,
+    "insurance_T9:conflict_role_fixed": 48,
+    "software_T3:conflict_order_neutral": 48,
+    "software_T3:conflict_role_fixed": 48
+  },
+  "q4_labels": [
+    "evidence_ready_for_action",
+    "evidence_not_ready_for_action"
+  ]
+}
