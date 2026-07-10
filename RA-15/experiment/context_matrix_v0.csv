@@ -1,0 +1,9 @@
+block,context_id,measured_contents,role_frame,prompt_order,ontology_condition,framing,expected_primary_disturbance
+canonical,C1,"q1,q2","domain operator / business owner","q1 then q2",canonical,"business-continuity posture first","business-role posture may shift q1"
+canonical,C2,"q2,q3","risk / compliance reviewer","q2 then q3",canonical,"risk first","risk role may shift q2 and q3"
+canonical,C3,"q3,q4","audit / governance reviewer","q3 then q4",canonical,"escalation first","audit role may shift q3"
+canonical,C4,"q4,q1","neutral arbitration reviewer","q4 then q1",canonical,"evidence first","evidence-first framing may shift q1"
+conflict,C1X,"q1,q2","domain operator / business owner","q1 then q2",conflict,"business-continuity posture first with controlled contradiction","conflict snippet may amplify q1/q2 disturbance"
+conflict,C2X,"q2,q3","risk / compliance reviewer","q2 then q3",conflict,"risk first with controlled contradiction","conflict snippet may amplify q2/q3 disturbance"
+conflict,C3X,"q3,q4","audit / governance reviewer","q3 then q4",conflict,"escalation first with controlled contradiction","conflict snippet may amplify q3/q4 disturbance"
+conflict,C4X,"q4,q1","neutral arbitration reviewer","q4 then q1",conflict,"evidence first with controlled contradiction","conflict snippet may amplify q4/q1 disturbance"

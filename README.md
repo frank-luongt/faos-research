@@ -16,9 +16,9 @@ The FAOS Research Programme is the empirical research arm of the [Foundation Age
 | **RA-6** | Agent Simulation & Verification | [`arXiv-live`](https://arxiv.org/abs/2606.04037) · [`./RA-6/`](./RA-6/) | Published |
 | **RA-11** | Quantum Context Engineering | `gated — Q3 2026` | Q3 2026 |
 | **RA-12** | Entropy-Guided Ontology Design | [`preprint pending — arXiv submission imminent`](./RA-12/) | Q2 2026 |
-| **RA-15** | Contextuality Auditor | `method paper — Q2 2026` | Q2 2026 |
+| **RA-15** | Contextuality Auditor | [`reproducibility artifacts v1.1 public — arXiv submission pending`](./RA-15/) | Q3 2026 |
 
-Status legend: `arXiv-live` = posted to arXiv; paper PDF mirrored in this repo alongside reproduction code/data · `preprint pending — arXiv submission imminent` = paper artifacts (PDF/LaTeX/bib) will be added to this repo once the canonical version is posted to arXiv; reproduction scaffolding (code/ontologies/checklists/results-summary/citation-audit) available now · `arXiv-ready — minor pre-submit revision` = source package is prepared and peer-review simulation is complete, but PDF/LaTeX remain private until the canonical arXiv version is posted · `method paper` = methods contribution under reframe, embargo placeholder · `gated` = clearing publication gates (co-author sign-off, bib-verification, chair review), embargo placeholder.
+Status legend: `arXiv-live` = posted to arXiv; paper PDF mirrored in this repo alongside reproduction code/data · `reproducibility artifacts public — arXiv submission pending` = code, synthetic inputs, outputs, summaries, and protocols are public while PDF/LaTeX remain private until the canonical arXiv version is posted · `preprint pending — arXiv submission imminent` = paper artifacts (PDF/LaTeX/bib) will be added to this repo once the canonical version is posted to arXiv; reproduction scaffolding available now · `arXiv-ready — minor pre-submit revision` = source package is prepared and peer-review simulation is complete, but PDF/LaTeX remain private until the canonical arXiv version is posted · `method paper` = methods contribution under reframe, embargo placeholder · `gated` = clearing publication gates (co-author sign-off, bib-verification, chair review), embargo placeholder.
 
 **Programme policy (2026-05-17):** Paper PDFs, LaTeX source, bibliographies, and arXiv submission tarballs are mirrored to this repository ONLY after the canonical version is live on arXiv or accepted by a journal. The repository's purpose is reproducibility scaffolding; pre-arXiv distribution short-circuits the canonical-version-on-arXiv discipline.
 
@@ -79,11 +79,13 @@ faos-research/
 ├── RA-12/                       ← preprint pending arXiv; citation audit only — full reproducibility scaffolding + paper PDF + LaTeX added at arXiv post
 │   ├── README.md
 │   └── bib-verified-2026-05-17.md
-└── RA-15/                       ← embargo placeholder
-    └── README.md
+└── RA-15/                       ← reproducibility artifacts v1.1 public; arXiv submission pending
+    ├── README.md
+    ├── ARTIFACT-MANIFEST-v1.1.md
+    └── experiment/              ← synthetic inputs, outputs, summaries, code, protocols, reports
 ```
 
-Embargo placeholder directories (RA-1, RA-11, RA-15) contain only a `README.md` with the paper's working title, authors, status badge, ETA, and research-question teaser. RA-4 has advanced to an arXiv-ready status page, but its paper PDF / LaTeX source still follows the same canonical-version policy and will be added only after arXiv posting. Preprint-pending directories (RA-12) contain reproducibility scaffolding and a citation audit but **not** the paper PDF / LaTeX source — those are added once the paper is posted to arXiv. The arXiv-live directories (RA-3, RA-6) ship reproduction code + ontologies + summaries; the canonical paper PDFs live on arXiv at https://arxiv.org/abs/2604.00555 and https://arxiv.org/abs/2606.04037 respectively.
+Embargo placeholder directories contain only a `README.md` with the paper's working title, authors, status badge, ETA, and research-question teaser. RA-15 now publishes its complete synthetic reproducibility bundle while keeping the pre-arXiv PDF and LaTeX private under the same canonical-version policy. RA-4 has advanced to an arXiv-ready status page, and RA-12 remains preprint-pending; their paper artifacts are added only after arXiv posting. The arXiv-live directories (RA-3, RA-6) ship reproduction code, ontologies, and summaries; their canonical paper PDFs live on arXiv.
 
 ---
 

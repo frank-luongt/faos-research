@@ -1,0 +1,43 @@
+{
+  "phase": "phase1.3",
+  "records": 384,
+  "expected_records": 384,
+  "conditions": [
+    "role_fixed",
+    "order_neutral"
+  ],
+  "groups": [
+    "healthcare_T6:canonical_order_neutral",
+    "healthcare_T6:canonical_role_fixed",
+    "insurance_T6:canonical_order_neutral",
+    "insurance_T6:canonical_role_fixed",
+    "insurance_T9:conflict_order_neutral",
+    "insurance_T9:conflict_role_fixed",
+    "software_T3:conflict_order_neutral",
+    "software_T3:conflict_role_fixed"
+  ],
+  "group_counts": {
+    "healthcare_T6:canonical_order_neutral": 48,
+    "healthcare_T6:canonical_role_fixed": 48,
+    "insurance_T6:canonical_order_neutral": 48,
+    "insurance_T6:canonical_role_fixed": 48,
+    "insurance_T9:conflict_order_neutral": 48,
+    "insurance_T9:conflict_role_fixed": 48,
+    "software_T3:conflict_order_neutral": 48,
+    "software_T3:conflict_role_fixed": 48
+  },
+  "q1_labels": [
+    "action_permitted_in_principle",
+    "action_not_permitted_in_principle"
+  ],
+  "q4_labels": [
+    "evidence_packet_ready",
+    "evidence_packet_not_ready"
+  ],
+  "minimum_decisive_set": [
+    "healthcare_T6:canonical",
+    "insurance_T6:canonical",
+    "insurance_T9:conflict",
+    "software_T3:conflict"
+  ]
+}

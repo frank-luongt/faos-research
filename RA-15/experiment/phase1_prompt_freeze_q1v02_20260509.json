@@ -1,0 +1,31 @@
+{
+  "records": 576,
+  "expected_records": 576,
+  "canonical_tasks": [
+    "banking_vn_T6",
+    "fintech_T6",
+    "fintech_T9",
+    "healthcare_T6",
+    "insurance_T6",
+    "insurance_T9",
+    "insurance_vn_T8",
+    "software_T3"
+  ],
+  "conflict_tasks": [
+    "fintech_T9",
+    "insurance_T9",
+    "insurance_vn_T8",
+    "software_T3"
+  ],
+  "expected_conflict_tasks": [
+    "fintech_T9",
+    "insurance_T9",
+    "insurance_vn_T8",
+    "software_T3"
+  ],
+  "conflict_routing_ok": true,
+  "q1_labels": [
+    "clear_to_continue",
+    "hold_for_review"
+  ]
+}
