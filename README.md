@@ -16,7 +16,7 @@ The FAOS Research Programme is the empirical research arm of the [Foundation Age
 | **RA-6** | Agent Simulation & Verification | [`arXiv-live`](https://arxiv.org/abs/2606.04037) · [`./RA-6/`](./RA-6/) | Published |
 | **RA-11** | Quantum Context Engineering | `gated — Q3 2026` | Q3 2026 |
 | **RA-12** | Entropy-Guided Ontology Design | [`preprint pending — arXiv submission imminent`](./RA-12/) | Q2 2026 |
-| **RA-15** | Contextuality Auditor | [`reproducibility artifacts v1.1 public — arXiv submission pending`](./RA-15/) | Q3 2026 |
+| **RA-15** | Contextuality Auditor | [`artifacts v1.1 public`](./RA-15/) · [`Zenodo DOI`](https://doi.org/10.5281/zenodo.21288508) · arXiv submission pending | Q3 2026 |
 
 Status legend: `arXiv-live` = posted to arXiv; paper PDF mirrored in this repo alongside reproduction code/data · `reproducibility artifacts public — arXiv submission pending` = code, synthetic inputs, outputs, summaries, and protocols are public while PDF/LaTeX remain private until the canonical arXiv version is posted · `preprint pending — arXiv submission imminent` = paper artifacts (PDF/LaTeX/bib) will be added to this repo once the canonical version is posted to arXiv; reproduction scaffolding available now · `arXiv-ready — minor pre-submit revision` = source package is prepared and peer-review simulation is complete, but PDF/LaTeX remain private until the canonical arXiv version is posted · `method paper` = methods contribution under reframe, embargo placeholder · `gated` = clearing publication gates (co-author sign-off, bib-verification, chair review), embargo placeholder.
 

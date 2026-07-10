@@ -10,6 +10,8 @@
 
 **Release tag:** `ra-15-artifacts-v1.1`
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21288508.svg)](https://doi.org/10.5281/zenodo.21288508)
+
 ## Scope and claim boundary
 
 RA-15 develops a bounded Contextuality-by-Default-style audit for forced-choice enterprise-agent decisions. The corrected Phase 1.3 result is a canonical contextuality null across every Qwen 3.6 and Gemma 4 group. The release therefore supports a method / negative-results claim: the audit separates stable controls, direct influence, measurement artifacts, and patterns consistent with construct coupling before any routing decision is made.
@@ -64,7 +66,11 @@ The canonical manuscript will be linked here after it is posted to arXiv. In acc
 
 ## Citation
 
-Until the arXiv identifier is assigned, cite this tagged artifact release. The Zenodo DOI will be added to this page after the release is archived.
+Until the arXiv identifier is assigned, cite the archived artifact release:
+
+> Luong Tuan, Thanh. (2026). *RA-15 Contextuality Auditor for Enterprise LLM Agents: Reproducibility Artifacts v1.1* [Computer software]. Zenodo. <https://doi.org/10.5281/zenodo.21288508>
+
+Version DOI: [`10.5281/zenodo.21288508`](https://doi.org/10.5281/zenodo.21288508). Concept DOI for all versions: [`10.5281/zenodo.21288507`](https://doi.org/10.5281/zenodo.21288507).
 
 ## License
 

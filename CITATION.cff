@@ -68,4 +68,13 @@ references:
         given-names: Thanh
         orcid: "https://orcid.org/0009-0000-1199-837X"
     year: 2026
-    notes: "RA-15 method / negative-results preprint candidate; reproducibility artifacts v1.1 public"
+    notes: "RA-15 method / negative-results preprint candidate"
+  - type: software
+    title: "RA-15 Contextuality Auditor for Enterprise LLM Agents: Reproducibility Artifacts v1.1"
+    authors:
+      - family-names: Luong Tuan
+        given-names: Thanh
+        orcid: "https://orcid.org/0009-0000-1199-837X"
+    year: 2026
+    doi: "10.5281/zenodo.21288508"
+    repository-code: "https://github.com/frank-luongt/faos-research/tree/ra-15-artifacts-v1.1/RA-15"
