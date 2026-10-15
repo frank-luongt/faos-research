@@ -100,5 +100,6 @@ Representative live source links used for this pass:
 2. Decide whether to cite benchmark/evaluation entries such as `liu2024agentbench` or
    `zhu2025multiagentbench` if the Related Work expands from coordination mechanisms into benchmark
    methodology.
-3. Preserve the current bounded language: RA-1 supports near-best routing, not universal
-   coordination superiority.
+3. Preserve the corrected bounded language: RA-1 does not support near-best routing or
+   problem-class routing as a default (retired in v3; see `README.md`), and makes no claim of
+   universal coordination superiority.
