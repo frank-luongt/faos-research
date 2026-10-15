@@ -50,7 +50,7 @@ as a within-subjects factor with `single_agent` as the baseline reference point.
 
 - Generation and judging at temperature `T = 0.0`.
 - Formal analysis seed: `20260527`; 5,000 permutation replications and 5,000 bootstrap replications.
-- Pre-registered hypotheses: **H1** (exact-winner per problem class) and **H2** (Kendall's *W* rank-concordance, VI vs EN strata). Neither is supported. The post-hoc **near-best** reading (the predicted strategy within 0.10 quality-score points of the best observed condition) is retired: always-`single_agent`, always-`consensus` and always-`debate`, fixed policies that ignore problem class, also meet it in 20 of 20 cells, and routing at random would meet it in every cell with probability 0.56 (see [`README.md`](README.md), Key results).
+- Pre-registered hypotheses: **H1** (exact-winner per problem class) and **H2** (Kendall's *W* rank-concordance, VI vs EN strata). Neither is supported. The post-hoc **near-best** reading (the predicted strategy within 0.10 quality-score points of the best observed condition) is retired: always-`single_agent`, always-`consensus` and always-`debate`, fixed policies that ignore problem class, also meet it in 20 of 20 cells, and a random problem-class mapping would meet it in every cell with probability 0.75 (see [`README.md`](README.md), Key results).
 
 ## Corpus provenance
 
