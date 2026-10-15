@@ -1,7 +1,7 @@
 # RA-1 — Cross-Model Evaluation Protocol
 
-This protocol documents the four-arm, cross-model design used to test whether the dynamic
-coordination-routing finding holds across heterogeneous LLM families rather than a single model.
+This protocol documents the four-arm, cross-model design used to test whether the pre-registered
+coordination mapping holds across heterogeneous LLM families rather than a single model.
 
 ## Model arms (4)
 
@@ -43,14 +43,14 @@ as a within-subjects factor with `single_agent` as the baseline reference point.
 ## Judging
 
 - A **single fixed Sonnet rubric** scores every row, so each output carries a comparable quality score; the design is paired across conditions within a (task, arm).
-- **Second-judge sensitivity:** an external GPT-5.1 judge was run as a robustness check (Pearson *r* = 0.40, *n* = 480 after de-duplication). The PC4 `single_agent` dominance and the near-best routing pattern both replicate. See the paper §7.
+- **Second-judge sensitivity:** an external GPT-5.1 judge was run as a sensitivity check (Pearson *r* = 0.40, *n* = 480 after de-duplication). It used the same RA-3 rubric prompts, so it received the same incomplete regulatory-compliance reference material; its agreement with the Sonnet judge on PC4 is not independent confirmation of the compliance result, and it provides no evidence for routing. See [`README.md`](README.md) (Key results) and §7 of the v3 paper.
 - **Dedup discipline:** second-judge rows must be de-duplicated by `(arm, task, condition)` before any statistic is recomputed — the resumable runner can emit duplicate cells. See [`results-summary/SECOND-JUDGE-DEDUP-NOTE-2026-05-30.md`](results-summary/SECOND-JUDGE-DEDUP-NOTE-2026-05-30.md).
 
 ## Determinism and statistics
 
 - Generation and judging at temperature `T = 0.0`.
 - Formal analysis seed: `20260527`; 5,000 permutation replications and 5,000 bootstrap replications.
-- Pre-registered hypotheses: **H1** (exact-winner per problem class) and **H2** (Kendall's *W* rank-concordance, VI vs EN strata). The supported result is the weaker **near-best** claim: the predicted strategy lands within 0.10 quality-score points of the best observed condition in every pre-registered arm and problem class.
+- Pre-registered hypotheses: **H1** (exact-winner per problem class) and **H2** (Kendall's *W* rank-concordance, VI vs EN strata). Neither is supported. The post-hoc **near-best** reading (the predicted strategy within 0.10 quality-score points of the best observed condition) is retired: always-`single_agent`, always-`consensus` and always-`debate`, fixed policies that ignore problem class, also meet it in 20 of 20 cells, and a random problem-class mapping would meet it in every cell with probability 0.75 (see [`README.md`](README.md), Key results).
 
 ## Corpus provenance
 
