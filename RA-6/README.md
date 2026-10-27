@@ -5,7 +5,13 @@
 **Last revised:** 2026-05-17 (reproducibility scaffolding)
 **Related:** Builds on the neurosymbolic ontology architecture of RA-3 ([`../RA-3/`](../RA-3/), [arXiv:2604.00555](https://arxiv.org/abs/2604.00555)).
 
-Pre-deployment verification of enterprise AI agents remains a critical gap between large language model capability benchmarking and production deployment, where post-deployment monitoring, human-in-the-loop controls, and prompt-level guardrails provide limited assurance. This paper proposes an ontology-grounded verification framework combining an Agent Operational Envelope, an ontology-to-scenario generation pipeline, and a Trust Certificate carrying a machine-verifiable attestation with graduated deployment verdicts. A controlled pilot across four regulated industries — Fintech, Banking, Insurance, and Healthcare — instantiated as five industry-by-regulatory-regime cells across the United States and Vietnam generated 1,800 scenarios evaluated against 125 primary-source regulatory requirements and 25 injected faults. Ontology-grounded generation (G4) achieved 48.3% regulatory coverage versus 33.1% for the persona-based baseline ($p_c = 0.0006$) and the highest domain specificity (4.77/5.0, $p = 2 \times 10^{-6}$); cross-validation across three LLM families (Claude Sonnet 4, Qwen 2.5 72B, Gemma 4 26B; 5,400 total scenarios) replicated the persona-versus-ontology pattern. The results establish ontology-grounded scenario generation as a credible complement to persona-based test suites for regulatory-intensive domains.
+## Current interpretation (27 October 2026)
+
+This directory preserves the historical RA-6 reproduction bundle and its June 2026 preprint. The later [REGATTA preprint, arXiv:2610.30924](https://arxiv.org/abs/2610.30924), shares the experimental corpus and two-stage approach and adds a source audit and measurement diagnostics. Its public record reports acceptance at 2026 IEEE ICoDSE; this is a separate paper, not an acceptance claim for RA-6.
+
+REGATTA identifies defects in the checklist and fault instruments and requires correction before they are used as legal ground truth. Historical coverage and fault-detection measurements concern the instruments as written; they do not establish legal compliance, a validated deployment verdict, or production readiness. The earlier framing of all 125 items as verified primary-source requirements should therefore not be relied upon.
+
+The historical result files, checklist texts, fault definitions, code, and citation audit are retained unchanged for provenance. The bibliography audit below is not a legal-source validation of the checklist. Use [REGATTA's archived release](https://doi.org/10.5281/zenodo.23006005) for the later audit and reusable instruments.
 
 ## Paper
 
@@ -16,7 +22,7 @@ The canonical paper is published on arXiv at **[arXiv:2606.04037](https://arxiv.
 - `bib-verified-2026-05-17.md` — WebSearch-verified citation audit (55 entries verified clean, 0 fabrications) per FAOS Research Programme reproducibility commitment
 - `code/` — experimental scripts (`generate_scenarios.py`, `assess_coverage.py`, `detect_faults.py`, `analyze_results.py`, `analyze_crossmodel.py`)
 - `ontology_context/` — ontology fragments used at $T = 0.0$ generation
-- `regulatory_checklists/` — 125 primary-source regulatory requirements
+- `regulatory_checklists/` — 125 historical source-cited checklist items; see the source-audit caveat above
 - `fault_definitions/` — 25 injected fault scenarios
 - `results-summary/` — aggregated analysis JSONs across three generator models
 - `CROSS-MODEL-PROTOCOL.md` — cross-model replication protocol

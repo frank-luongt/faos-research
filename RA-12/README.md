@@ -1,14 +1,14 @@
 # RA-12 — Entropy-Guided Ontology Design for Enterprise Agentic Systems: A Structural Entropy Analysis of 23 Industry Verticals
 
 **Authors:** Thanh Luong Tuan, Abhijit Sanyal
-**Status:** Preprint pending — arXiv submission imminent
+**Status:** Canonical public preprint pending; no current release date asserted (checked 27 October 2026).
 **Last revised:** 2026-05-17
 
-A design-time method for predicting whether an enterprise ontology will earn its grounding lift. Structural entropy of the ontology, measured before any agent experiments are run, predicts downstream agent performance at Spearman r = 0.811 across fifteen industry-model cells (n = 15). The interaction layer of the ontology does most of the predictive work, validated across three LLM families (Claude Sonnet 4, Qwen 2.5 72B, Gemma 4 26B). The result establishes a quantitative pre-deployment signal for ontology investment decisions in enterprise agentic systems.
+A research track on structural entropy and ontology design for enterprise agentic systems. This public directory contains a status page and bibliography audit, not a released canonical paper or a runnable evaluation bundle. It does not establish a predictive-performance claim. Earlier pending-release wording and numerical teasers should not be treated as a substitute for a public paper and its supporting evidence.
 
 ## Paper
 
-The paper PDF and LaTeX source will be published in this directory after arXiv submission. Per the FAOS Research Programme policy, paper artifacts (PDF, LaTeX, bibliography, submission tarball, figures) are mirrored to this repository only after the canonical version is live on arXiv or accepted by a journal.
+The paper PDF and LaTeX source will be published in this directory after the canonical arXiv version is publicly posted. Per the FAOS Research Programme policy, paper artifacts (PDF, LaTeX, bibliography, submission tarball, figures) are mirrored to this repository only after the canonical version is live on arXiv or accepted by a journal.
 
 ## Contents (reproducibility scaffolding)
 

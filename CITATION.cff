@@ -62,13 +62,14 @@ references:
     year: 2026
     notes: "RA-6 paper; arXiv:2606.04037"
   - type: article
-    title: "Contextuality Auditor for Enterprise LLM Agents: A Negative-Results Method Study of Direct Influence and Construct Coupling"
+    title: "Ontology-Amplified Distillation and Contextuality Auditing for Sovereign Enterprise Language Models: A Combined Proof-of-Mechanism and Negative-Results Method Study"
     authors:
       - family-names: Luong Tuan
         given-names: Thanh
         orcid: "https://orcid.org/0009-0000-1199-837X"
     year: 2026
-    notes: "RA-15 method / negative-results preprint candidate"
+    url: "https://arxiv.org/abs/2607.11948"
+    notes: "Combined RA-15/RA-17 preprint, posted 11 July 2026"
   - type: software
     title: "RA-15 Contextuality Auditor for Enterprise LLM Agents: Reproducibility Artifacts v1.1"
     authors:
@@ -78,3 +79,13 @@ references:
     year: 2026
     doi: "10.5281/zenodo.21288508"
     repository-code: "https://github.com/frank-luongt/faos-research/tree/ra-15-artifacts-v1.1/RA-15"
+  - type: article
+    title: "REGATTA: A Cross-Domain Measurement Framework and Fault-Injection Harness for Enterprise AI Agents"
+    authors:
+      - family-names: Thanh
+        given-names: Luong Tuan
+      - family-names: Sanyal
+        given-names: Abhijit
+    year: 2026
+    url: "https://arxiv.org/abs/2610.30924"
+    notes: "arXiv record reports acceptance at 2026 IEEE ICoDSE; research artifact DOI 10.5281/zenodo.23006005"

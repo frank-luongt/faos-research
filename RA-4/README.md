@@ -5,7 +5,7 @@
 **Authors:** Thanh Luong Tuan. Co-author/sign-off lineage pending final publication decision.
 
 **Status:** `arXiv-ready — minor pre-submit revision`
-**ETA:** Q2 2026
+**ETA:** No current public release date asserted (status refreshed 27 October 2026).
 
 ---
 
