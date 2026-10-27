@@ -6,7 +6,7 @@
 
 **ORCID:** [0009-0000-1199-837X](https://orcid.org/0009-0000-1199-837X)
 
-**Status:** reproducibility artifacts v1.1 public; arXiv submission pending
+**Status:** reproducibility artifacts v1.1 public; combined RA-15/RA-17 preprint posted 11 July 2026 ([arXiv:2607.11948](https://arxiv.org/abs/2607.11948))
 
 **Release tag:** `ra-15-artifacts-v1.1`
 
@@ -62,11 +62,11 @@ All prompts are synthetic benchmark scenarios. No human-subject observations, cu
 
 ## Paper availability
 
-The canonical manuscript will be linked here after it is posted to arXiv. In accordance with this repository's canonical-version policy, the pre-arXiv PDF, LaTeX source, and submission tarball are not mirrored in this release.
+The canonical combined article is [Ontology-Amplified Distillation and Contextuality Auditing for Sovereign Enterprise Language Models: A Combined Proof-of-Mechanism and Negative-Results Method Study](https://arxiv.org/abs/2607.11948), posted 11 July 2026. This directory supplies the RA-15 contextuality-audit artifacts, not the complete RA-17 distillation/model pipeline. The paper PDF and source are available through arXiv; no additional manuscript files are mirrored by this documentation update.
 
 ## Citation
 
-Until the arXiv identifier is assigned, cite the archived artifact release:
+Cite the [combined preprint](https://arxiv.org/abs/2607.11948) for the paper and the archived artifact release for this bundle:
 
 > Luong Tuan, Thanh. (2026). *RA-15 Contextuality Auditor for Enterprise LLM Agents: Reproducibility Artifacts v1.1* [Computer software]. Zenodo. <https://doi.org/10.5281/zenodo.21288508>
 

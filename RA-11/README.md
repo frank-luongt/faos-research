@@ -4,8 +4,8 @@
 
 **Authors:** TBA — co-author lineage pending verification.
 
-**Status:** `gated — Q3 2026`
-**ETA:** Q3 2026
+**Status:** `research in progress — public release pending`
+**ETA:** No current public release date asserted (status refreshed 27 October 2026).
 
 ---
 
