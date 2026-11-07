@@ -1,0 +1,1443 @@
+{
+  "status": "INVENTORY_ONLY_NOT_CONTENT_QUALIFICATION",
+  "module_directories": 28,
+  "excluded_horizontal_modules": [
+    "faos-fleet",
+    "faos-scholar"
+  ],
+  "candidate_groups": [
+    {
+      "domain": "agriculture",
+      "modules": [
+        "faos-agri-ecosystem",
+        "faos-agritech"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/crop-agriculture-ecosystem-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/agritech ecosystem-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Merge overlapping farm-to-fork and precision-agriculture scopes.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "automotive",
+      "modules": [
+        "faos-automotive"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/automotive-industry-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Exclude generic manufacturing and transport operations.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "aviation",
+      "modules": [
+        "faos-aviation"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/aviation-industry-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Exclude airline tasks from hospitality and logistics.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "banking",
+      "modules": [
+        "faos-bank",
+        "faos-bankvn"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-vn-ontology-blueprint.md"
+      ],
+      "scope_proposal": "VN overlay is a jurisdiction, not another industry.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "securities",
+      "modules": [
+        "faos-investment",
+        "faos-capitalmarketsvn"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-vn-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Merge buy-side/sell-side investment and securities scopes.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "education",
+      "modules": [
+        "faos-edutech"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/edutech-industry-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Define education operators, not generic software products.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "payments",
+      "modules": [
+        "faos-fintech"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Narrow FinTech to payments; exclude banking, wealth and insurance tasks.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "games",
+      "modules": [
+        "faos-game"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/game-development-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Require game-specific facts, not generic software operations.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "healthcare",
+      "modules": [
+        "faos-healthcare"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Provider scope; do not mix payer/insurance rules.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "insurance",
+      "modules": [
+        "faos-insurance",
+        "faos-insurancevn"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/insurance-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/insurance-vn-ontology-blueprint.md"
+      ],
+      "scope_proposal": "VN overlay is a jurisdiction, not another industry.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "logistics",
+      "modules": [
+        "faos-logistic-supplychain"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/logistics-supply-chain-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Exclude aviation operations and hospitality travel.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "manufacturing",
+      "modules": [
+        "faos-manufacturing"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/manufacturing-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Non-automotive product scope needs an explicit sampling frame.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "advertising",
+      "modules": [
+        "faos-martech"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/martech-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Narrow to advertising services; exclude retail/software tasks.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "accounting",
+      "modules": [
+        "faos-profserv"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/professional-services-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Extract accounting/audit; exclude legal/general management consulting.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "property",
+      "modules": [
+        "faos-proptechvn"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/proptech-vn-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/proptech-asia-ontology-blueprint.md"
+      ],
+      "scope_proposal": "VN material exists; other countries require authored children.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "retail",
+      "modules": [
+        "faos-retail",
+        "faos-retailvn"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-vn-ontology-blueprint.md"
+      ],
+      "scope_proposal": "VN overlay is a jurisdiction, not another industry.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "cybersecurity",
+      "modules": [
+        "faos-security"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/cybersecurity-services-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Require security-service-specific tasks beyond generic IT controls.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "it_services",
+      "modules": [
+        "faos-si",
+        "faos-software"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/services-integrator-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/software-product-ontology-blueprint.md",
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/software-cloud-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Conservatively merge overlapping IT/SaaS scopes pending task-level review.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "employment",
+      "modules": [
+        "faos-talent"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/talent-hr-services-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Recruitment/staffing operators; exclude generic HR tasks shared everywhere.",
+      "independence": "UNESTABLISHED"
+    },
+    {
+      "domain": "hospitality",
+      "modules": [
+        "faos-tth"
+      ],
+      "blueprints": [
+        "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/travel-transportation-hospitality-ontology-blueprint.md"
+      ],
+      "scope_proposal": "Narrow to lodging/hospitality; exclude aviation and freight.",
+      "independence": "UNESTABLISHED"
+    }
+  ],
+  "cells": [
+    {
+      "domain": "agriculture",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "agriculture",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "agriculture",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "automotive",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "automotive",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "automotive",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "aviation",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "aviation",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "aviation",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 12,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "VN",
+      "legacy_set": "banking_vn",
+      "legacy_tasks": 10,
+      "explicit_metric_ground_truth": 2,
+      "legacy_ma_scored_tasks": 3,
+      "government_url_locators": 2,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 1,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 5,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 1,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 1,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "education",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "education",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "education",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "US",
+      "legacy_set": "fintech",
+      "legacy_tasks": 10,
+      "explicit_metric_ground_truth": 2,
+      "legacy_ma_scored_tasks": 3,
+      "government_url_locators": 6,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "games",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "games",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "games",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "legacy_set": "healthcare",
+      "legacy_tasks": 10,
+      "explicit_metric_ground_truth": 2,
+      "legacy_ma_scored_tasks": 3,
+      "government_url_locators": 6,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "insurance",
+      "jurisdiction": "US",
+      "legacy_set": "insurance",
+      "legacy_tasks": 10,
+      "explicit_metric_ground_truth": 2,
+      "legacy_ma_scored_tasks": 3,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "insurance",
+      "jurisdiction": "VN",
+      "legacy_set": "insurance_vn",
+      "legacy_tasks": 10,
+      "explicit_metric_ground_truth": 2,
+      "legacy_ma_scored_tasks": 3,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "insurance",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "logistics",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "logistics",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "logistics",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "manufacturing",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "manufacturing",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "manufacturing",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "advertising",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "advertising",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "advertising",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "accounting",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "accounting",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "accounting",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "property",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "property",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "property",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "retail",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "retail",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 3,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "retail",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "cybersecurity",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "cybersecurity",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "cybersecurity",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "it_services",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "it_services",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "it_services",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "employment",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "employment",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "employment",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "hospitality",
+      "jurisdiction": "US",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "hospitality",
+      "jurisdiction": "VN",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    },
+    {
+      "domain": "hospitality",
+      "jurisdiction": "SG",
+      "legacy_set": "",
+      "legacy_tasks": 0,
+      "explicit_metric_ground_truth": 0,
+      "legacy_ma_scored_tasks": 0,
+      "government_url_locators": 0,
+      "fact_source_validation": "NOT_ESTABLISHED",
+      "sixty_probe_items": "NOT_FOUND_IN_REVIEWED_RA3_PACKAGE",
+      "expert_competency_and_commitment": "NOT_DOCUMENTED_IN_REVIEWED_RA3_RECORDS",
+      "launch_ready": false
+    }
+  ],
+  "government_url_locators": [
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.occ.gov/topics/supervision-and-examination/index.html",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4705,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.federalreserve.gov/supervisionreg.htm",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4705,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.fdic.gov/laws-and-regulations",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4705,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.consumerfinance.gov/rules-policy/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4705,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.sec.gov/rules",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4705,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "SG",
+      "url": "https://www.mas.gov.sg/regulation",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4708,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "VN",
+      "url": "https://www.sbv.gov.vn/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4708,
+      "root_only": true,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260319a.htm",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4718,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/powell-statement-20260319.htm",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4718,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.consumerfinance.gov/rules-policy/rules-under-development/personal-financial-data-rights-reconsideration/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4726,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.consumerfinance.gov/personal-financial-data-rights/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4726,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.htm",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4729,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4731,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "US",
+      "url": "https://www.consumerfinance.gov/rules-policy/final-rules/equal-credit-opportunity-act-regulation-b/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md",
+      "line": 4731,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "banking",
+      "jurisdiction": "VN",
+      "url": "https://sbv.gov.vn/en/w/d%E1%BB%B1-th%E1%BA%A3o-th%C3%B4ng-t%C6%B0-s%E1%BB%ADa-%C4%91%E1%BB%95i-b%E1%BB%95-sung-m%E1%BB%99t-s%E1%BB%91-%C4%91i%E1%BB%81u-c%E1%BB%A7a-th%C3%B4ng-t%C6%B0-s%E1%BB%91-31/2024/tt-nhnn",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-vn-ontology-blueprint.md",
+      "line": 3487,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "US",
+      "url": "https://www.sec.gov/rules",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+      "line": 3667,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "US",
+      "url": "https://www.cftc.gov/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+      "line": 3669,
+      "root_only": true,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "SG",
+      "url": "https://www.mas.gov.sg/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+      "line": 3675,
+      "root_only": true,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "VN",
+      "url": "https://ssc.gov.vn/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+      "line": 3679,
+      "root_only": true,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "US",
+      "url": "https://www.sec.gov/exams/educationhelpguidesfaqs/t1-faq",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+      "line": 3699,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "US",
+      "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13.html",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+      "line": 3706,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "securities",
+      "jurisdiction": "US",
+      "url": "https://www.sec.gov/newsroom/press-releases/2025-132-sec-division-examinations-announces-2026-priorities",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md",
+      "line": 3707,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "US",
+      "url": "https://www.consumerfinance.gov/rules-policy/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md",
+      "line": 5918,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "US",
+      "url": "https://www.fincen.gov/resources/statutes-and-regulations",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md",
+      "line": 5919,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "US",
+      "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13.html",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md",
+      "line": 5920,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "US",
+      "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.pdf",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md",
+      "line": 5921,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "US",
+      "url": "https://www.sec.gov/rules",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md",
+      "line": 5922,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "payments",
+      "jurisdiction": "US",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582/text",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md",
+      "line": 5924,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/regulatory-initiatives/index.html",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md",
+      "line": 3976,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "url": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-software-medical-device",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md",
+      "line": 3977,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md",
+      "line": 3978,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md",
+      "line": 3979,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "url": "https://healthit.gov/regulations/hti-rules/hti-1-final-rule/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md",
+      "line": 3980,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/federal-independent-dispute-resolution-operations-final-rule",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md",
+      "line": 3981,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "retail",
+      "jurisdiction": "VN",
+      "url": "https://vfa.gov.vn/tin-tuc/chinh-phu-ban-hanh-nghi-quyet-so-152026nq-cp-tam-ngung-hieu-luc-nghi-quyet-so-66132026nq-cp-va-nghi-dinh-so-462026nd-cp.html",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-vn-ontology-blueprint.md",
+      "line": 3624,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "retail",
+      "jurisdiction": "VN",
+      "url": "https://tapchinganhang.gov.vn/253.docs",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-vn-ontology-blueprint.md",
+      "line": 3634,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "retail",
+      "jurisdiction": "VN",
+      "url": "https://tapchinganhang.gov.vn/253.docs",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-vn-ontology-blueprint.md",
+      "line": 3635,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    },
+    {
+      "domain": "retail",
+      "jurisdiction": "VN",
+      "url": "https://tcvn.gov.vn/luat-sua-doi-bo-sung-luat-chat-luong-san-pham-hang-hoa-nhung-thay-doi-cot-loi-trong-tu-duy-quan-ly-va-bao-ve-nguoi-tieu-dung/18/07/2025/",
+      "file": "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-vn-ontology-blueprint.md",
+      "line": 3637,
+      "root_only": false,
+      "verification": "NOT_FETCHED_NOT_FACT_VALIDATED"
+    }
+  ],
+  "source_sha256": {
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-agri-ecosystem/module.yaml": "e966646e6b27703bc9a728eac84f1934c30e32ae53e36070d03a3910ae830648",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-agritech/module.yaml": "3fd7b939cd583b74d2e8ea86ef6ffbea3a91862f30407ad8f79d4bde0e12cd82",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/crop-agriculture-ecosystem-ontology-blueprint.md": "bb910338cb491d718422db3cca2f5264e6446ef64a09c93e00912bdec0c56104",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/agritech ecosystem-ontology-blueprint.md": "c0fb7c2d4fefe6793c200d95e89f1e7781c6eb5ce5008444b0c2b1c8917350a5",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-automotive/module.yaml": "1c7e2880134907bf549ba17e151f4293a32fb63a8e6816e85a7bf5d8ae3094e7",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/automotive-industry-ontology-blueprint.md": "fb85f5d723c1bc82979a62f73c896fc98abfe473688ed7a1c59ed541824d35e2",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-aviation/module.yaml": "f9eba21194aac591b7b6819cc0a4b7779b7b6f7388a31e40fa17ede7e4ad8cdc",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/aviation-industry-ontology-blueprint.md": "2f8e05cb0ed19b3191f8ad1b31739cf05cfc84756b53e7815e876ae89e0e0c3f",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-bank/module.yaml": "4e60280d076712c3a3e3a2d62b70c5139571186c080e08a4bc9c88356ba296bc",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-bankvn/module.yaml": "cb724a425052dd970473ea05afd654cae90de900defab0e66723855566cdcbb6",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-ontology-blueprint.md": "acd6966212522775d5a1627da5a65b3514dd1bd0b5c906537ea87dac11ed5d4d",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/banking-vn-ontology-blueprint.md": "d3f5c5c710d16f0aa86092a1e00cceb63e029bab579ff16b4c7637a50f7f834f",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-investment/module.yaml": "b412dad495e127b7dc9cb297e316b231baddc75083ddc22a58e487c793e0e0a3",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-capitalmarketsvn/module.yaml": "19ab5550dd8f03b10d809a86cae0f372ce6ed5800ffd9a5aefca4f864d8d661b",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-ontology-blueprint.md": "a44befb823a5d63eec96a35b76d707a8eb03606cf47c316e4c091b046265b20c",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/capital-markets-vn-ontology-blueprint.md": "76e4a5fc5befd79e9aa7e05ec661f837ae85f9e46b874c76d97dfda8fa1227ed",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-edutech/module.yaml": "f8ba1fb24eccb2407f0f01ec7af8e6d9f46b3e83264ef26dcaabe53518891081",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/edutech-industry-ontology-blueprint.md": "1ae86b2aa5cbaf24dc5aa3d939e3b1b98c0c44675b0d967ee7a868844071a541",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-fintech/module.yaml": "d498668e6881af78bc60e714a63e82a38cd71df7ce69cea82ae6e10ed463fecb",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/fintech-ontology-blueprint.md": "0b91068c6a4d0f5e786e0f7d43cff9853466da62074c943f040a351899009f71",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-game/module.yaml": "27fa9aa142fe260e9eccf4f96c2d5ebb1c6208ea6e97966030c8bc670d477c9c",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/game-development-ontology-blueprint.md": "1bc87f145e71a7edf4817183f1ee8d0c0e0afb1f3dc7cd697dd8f6b4358445f4",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-healthcare/module.yaml": "f136d32eaf556f8d11bcc3c6e406ee6d49cb6b630746610535e21cb8a19f8ea1",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/healthcare-ontology-blueprint.md": "f67ab8c8634f5efff775d186830b05faba4b07a0fca1a0e7ae4e5d25e528aee0",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-insurance/module.yaml": "8b6c26249d9bc5ba1efe5e3c93b1f5601229e10f5e447ad784b036ad8d3d0265",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-insurancevn/module.yaml": "20bd9928192fb7baa916c60a1a7d9be7181ae15a98b166d9d172b931689c19f3",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/insurance-ontology-blueprint.md": "3df8cd31a641db6ab8ac7d45a6f1a785c812672f0f246b4da4b90814c0c4f9ef",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/insurance-vn-ontology-blueprint.md": "3bbaa9b00c7227b1c24891883a67ed6c7b82416336192e8162c0b3c5d997c6ca",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-logistic-supplychain/module.yaml": "b0efc7a0a8c1773a1efd1e38fb510872ec22828aecea7c3cdfdc3eb140953d70",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/logistics-supply-chain-ontology-blueprint.md": "e64c419c04b7bb60fc6a0f39c338ab5a26869e17fb2da4338b9d2387011442f3",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-manufacturing/module.yaml": "0185d2ed31790bcda72992a3dbc96406d92d4a525bb95328b013ebcea7f1ff72",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/manufacturing-ontology-blueprint.md": "c1720fb21ea53cd17aef4a90dff1e23b93ebb7d2e343aaa8dd4999c454a2220e",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-martech/module.yaml": "b744fc27e2f8de1faba8e3acd5d1d82a0f0e73dc97fc01a8e24abaff297791bb",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/martech-ontology-blueprint.md": "2300f7e8587b5afa6cf68b71c72e9d302b4833326591766e7da162ddb55df96f",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-profserv/module.yaml": "7c82e1a18d3f334590529facb159533fcf81a7510e19fe0bca8043a016505233",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/professional-services-ontology-blueprint.md": "28feae163633d7da8ca13bde7e6b903a9b20e05833634271ee9d76859b6e6ad5",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-proptechvn/module.yaml": "c7b229a14c376195ad0b0dc49749a99a96440d8567bd028b1dd91127c29bff85",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/proptech-vn-ontology-blueprint.md": "62af2bf33c58f186c3afdd6990f8e2aa80bbf571bfd7ebedc644fdfbf7a28287",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/proptech-asia-ontology-blueprint.md": "63eac2ea6f9e5754b41cc0abbab6601815bde95e1060f355de211aa76350e916",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-retail/module.yaml": "d2f2619eecae6fc2f292490f6b7ef32022ac6792b7dab38a7c743689bd81b70c",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-retailvn/module.yaml": "9e89a2f38d5863b858a5e9a508696803a51cdc3dfa27da8def9d784a82c46036",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-ontology-blueprint.md": "7e54be2c5d2b690eeff4a3d8658319840bd043b3e6100f841e638da15fb089e7",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/retail-vn-ontology-blueprint.md": "3c4fdc1dc17e27bb95ea3410dcbc99490bca69237b88dd046da913fa6c4d9d89",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-security/module.yaml": "fcffc45f2294692807c6e2147cfa4acbd7a7a281ecdfc091a1eaa9dd7977a863",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/cybersecurity-services-ontology-blueprint.md": "daf5b7bcd22b8033c117f9400db60ad0c5cb4753d678b50515d7294a6884f481",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-si/module.yaml": "cd5c1fffa9cffa67a09c9f8cfc3008f586a3f0065a3cdb30ddcbaaa6a2437735",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-software/module.yaml": "1b4d42575001716abe81763b525a300d8a2ff550cae0e5c443499a80f647be08",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/services-integrator-ontology-blueprint.md": "c3f7b9dbcb3f616c1ee2102e9bc538ff1b4c7f88e226345a5a99de339f952503",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/software-product-ontology-blueprint.md": "14877e2c116a0a826ce7060c3cb1130c999428664d56cf06cc4ff7f3a20526f4",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/software-cloud-ontology-blueprint.md": "e6cbebf399a70d8d24d8cf7b208280032c228360d565d4ad5c3553fca12de495",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-talent/module.yaml": "93ec91bf92b46b4791eb411e3d268579daaa5e6ddc476a9522745d4aef407b03",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/talent-hr-services-ontology-blueprint.md": "d5848385a53b6f8d7be574b624153685b884322274c268f3ff6ff243d80536be",
+    "/workspace/Foundation-AgenticOS/.faos/modules/faos-tth/module.yaml": "5a0587adc9592abd7e37ddc6249d68ecc00021005f4702a7140b3f5be105b164",
+    "/workspace/Foundation-AgenticOS/docs/architecture/ontology-blueprint/travel-transportation-hospitality-ontology-blueprint.md": "df8414a169151a0d11f9865d61ef75a6aec8cabd5b7209a8c20440e9bfa92bcb",
+    "/workspace/faos-research/RA-3/code/tasks.json": "1bce0e000375591270b9254d98b29c063fdfb2da5d5ca5ba5618d37f4af0fae4",
+    "/workspace/faos-research/RA-3/code/run_experiment.py": "ac350fab34ecd6b58d9bab7ffc58377c4b026c9e81f1220d1d9685c14c6f56f5",
+    "/workspace/faos-research/RA-3/code/judge.py": "913d6f57ecf68c6f6c1c020a0d43fe3d24e91733ee549fb9fa1048bd7c12cb62",
+    "/workspace/faos-research/RA-3/ontology_context/banking_vn.json": "b8d536ad128a5e3e129d044406131bcf3a78cda57c09aafd40e099caa1092a6a",
+    "/workspace/faos-research/RA-3/ontology_context/fintech.json": "83e2272300e79614f711c49c53329702f4b44d622ef9176c969a57b5d400132e",
+    "/workspace/faos-research/RA-3/ontology_context/healthcare.json": "ae219cbc3fffc23aae85ba3bd99b518da89075b9850f93d24030bd971b537903",
+    "/workspace/faos-research/RA-3/ontology_context/insurance.json": "27c7946d9ccd862ec68414ea94267fe08c8be5ad12780f1281a56c2688ab5fef",
+    "/workspace/faos-research/RA-3/ontology_context/insurance_vn.json": "7d33ad48b02f027f8233f66cd2505de85066661a7994fe2cdc7c6533584d0f67"
+  },
+  "script_sha256": "1eb35dc44d1fe44853202222713ab98b72bbc0c66ed3c7b35068f7578d7fb2cb",
+  "legacy_tasks_by_metric": {
+    "TF": 15,
+    "MA": 10,
+    "RC": 10,
+    "RS": 10,
+    "ALL": 5
+  },
+  "scope": "Module descriptors, mapped blueprint files, five RA-3 ontology JSONs, task list and judge dispatch. No primary-source web verification or private expert roster access."
+}

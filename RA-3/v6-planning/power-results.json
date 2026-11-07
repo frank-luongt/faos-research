@@ -1,0 +1,623 @@
+{
+  "status": "SYNTHETIC_PLANNING_ONLY_NOT_A_LOCK",
+  "seed": 20261107,
+  "source_sha256": "dda8b5cf963a39b2a85722fb069c0e43e917f2a226801c9552c5f75282454e5b",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "unit": "18 industry-jurisdiction cells; six fixed model snapshots; ten tasks/cell",
+  "limitations": [
+    "Direct Gaussian paired-difference DGP, not rubric-item simulation",
+    "CR1 t(17) is approximate with only 18 clusters",
+    "Probe error is not corrected; attenuation is retained",
+    "Calibration scenarios cannot prove error control for all null configurations",
+    "H4/H5/H6 and task-level fitting are not powered here",
+    "Does not reproduce the unavailable November 1 simulation"
+  ],
+  "results": {
+    "coverage_full_probe30": {
+      "assumptions": {
+        "slope": -0.8
+      },
+      "probe_items": 30,
+      "reps": 2000,
+      "mean_estimated_slope": -0.21284459791549662,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 1479,
+          "rate": 0.7395,
+          "mc_95ci": [
+            0.7198182161636315,
+            0.7582635181886483
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "coverage_full_probe60": {
+      "assumptions": {
+        "slope": -0.8
+      },
+      "probe_items": 60,
+      "reps": 2000,
+      "mean_estimated_slope": -0.33655454485109737,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 1679,
+          "rate": 0.8395,
+          "mc_95ci": [
+            0.8227641986329085,
+            0.8549341262631208
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "coverage_half_probe30": {
+      "assumptions": {
+        "slope": -0.4,
+        "lift": 0.1
+      },
+      "probe_items": 30,
+      "reps": 2000,
+      "mean_estimated_slope": -0.10620069310123523,
+      "tests": {
+        "h1": {
+          "count": 1947,
+          "rate": 0.9735,
+          "mc_95ci": [
+            0.9655014766396225,
+            0.979683079585031
+          ]
+        },
+        "h2": {
+          "count": 809,
+          "rate": 0.4045,
+          "mc_95ci": [
+            0.38319328072906367,
+            0.4261728753016556
+          ]
+        },
+        "h3_equivalence": {
+          "count": 3,
+          "rate": 0.0015,
+          "mc_95ci": [
+            0.0005102635836384819,
+            0.004401032555770693
+          ]
+        },
+        "full_sequence": {
+          "count": 3,
+          "rate": 0.0015,
+          "mc_95ci": [
+            0.0005102635836384819,
+            0.004401032555770693
+          ]
+        }
+      }
+    },
+    "coverage_half_probe60": {
+      "assumptions": {
+        "slope": -0.4,
+        "lift": 0.1
+      },
+      "probe_items": 60,
+      "reps": 2000,
+      "mean_estimated_slope": -0.16786641240778477,
+      "tests": {
+        "h1": {
+          "count": 1947,
+          "rate": 0.9735,
+          "mc_95ci": [
+            0.9655014766396225,
+            0.979683079585031
+          ]
+        },
+        "h2": {
+          "count": 954,
+          "rate": 0.477,
+          "mc_95ci": [
+            0.4551751724430595,
+            0.49891301173187796
+          ]
+        },
+        "h3_equivalence": {
+          "count": 8,
+          "rate": 0.004,
+          "mc_95ci": [
+            0.0020282466069651696,
+            0.007873464296037741
+          ]
+        },
+        "full_sequence": {
+          "count": 6,
+          "rate": 0.003,
+          "mc_95ci": [
+            0.0013756299236301083,
+            0.006529915073935308
+          ]
+        }
+      }
+    },
+    "pure_vietnam_null_slope_probe30": {
+      "assumptions": {
+        "slope": 0.0,
+        "vn": 0.1
+      },
+      "probe_items": 30,
+      "reps": 2000,
+      "mean_estimated_slope": 0.00044321171302623874,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 209,
+          "rate": 0.1045,
+          "mc_95ci": [
+            0.09184284051856186,
+            0.11867354388090919
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "pure_vietnam_null_slope_probe60": {
+      "assumptions": {
+        "slope": 0.0,
+        "vn": 0.1
+      },
+      "probe_items": 60,
+      "reps": 2000,
+      "mean_estimated_slope": 0.0008217200355279823,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 238,
+          "rate": 0.119,
+          "mc_95ci": [
+            0.10553480426223787,
+            0.13392598576607684
+          ]
+        },
+        "h3_equivalence": {
+          "count": 1,
+          "rate": 0.0005,
+          "mc_95ci": [
+            8.826773070546787e-05,
+            0.0028268625032662133
+          ]
+        },
+        "full_sequence": {
+          "count": 1,
+          "rate": 0.0005,
+          "mc_95ci": [
+            8.826773070546787e-05,
+            0.0028268625032662133
+          ]
+        }
+      }
+    },
+    "zero_grounding_probe30": {
+      "assumptions": {
+        "slope": 0.0,
+        "lift": 0.0
+      },
+      "probe_items": 30,
+      "reps": 2000,
+      "mean_estimated_slope": 0.00044321171302615634,
+      "tests": {
+        "h1": {
+          "count": 45,
+          "rate": 0.0225,
+          "mc_95ci": [
+            0.01685787548400037,
+            0.02997290466959618
+          ]
+        },
+        "h2": {
+          "count": 209,
+          "rate": 0.1045,
+          "mc_95ci": [
+            0.09184284051856186,
+            0.11867354388090919
+          ]
+        },
+        "h3_equivalence": {
+          "count": 37,
+          "rate": 0.0185,
+          "mc_95ci": [
+            0.013451349814109871,
+            0.025394766717736703
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "zero_grounding_probe60": {
+      "assumptions": {
+        "slope": 0.0,
+        "lift": 0.0
+      },
+      "probe_items": 60,
+      "reps": 2000,
+      "mean_estimated_slope": 0.0008217200355278722,
+      "tests": {
+        "h1": {
+          "count": 45,
+          "rate": 0.0225,
+          "mc_95ci": [
+            0.01685787548400037,
+            0.02997290466959618
+          ]
+        },
+        "h2": {
+          "count": 238,
+          "rate": 0.119,
+          "mc_95ci": [
+            0.10553480426223787,
+            0.13392598576607684
+          ]
+        },
+        "h3_equivalence": {
+          "count": 22,
+          "rate": 0.011,
+          "mc_95ci": [
+            0.007275425411318251,
+            0.016599446829747115
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "equivalence_boundary_vn_probe30": {
+      "assumptions": {
+        "slope": -0.8,
+        "vn": 0.05
+      },
+      "probe_items": 30,
+      "reps": 2000,
+      "mean_estimated_slope": -0.21284459791549662,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 1479,
+          "rate": 0.7395,
+          "mc_95ci": [
+            0.7198182161636315,
+            0.7582635181886483
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "equivalence_boundary_vn_probe60": {
+      "assumptions": {
+        "slope": -0.8,
+        "vn": 0.05
+      },
+      "probe_items": 60,
+      "reps": 2000,
+      "mean_estimated_slope": -0.33655454485109737,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 1679,
+          "rate": 0.8395,
+          "mc_95ci": [
+            0.8227641986329085,
+            0.8549341262631208
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "equivalence_boundary_sg_probe30": {
+      "assumptions": {
+        "slope": -0.8,
+        "sg": -0.05
+      },
+      "probe_items": 30,
+      "reps": 2000,
+      "mean_estimated_slope": -0.21284459791549662,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 1479,
+          "rate": 0.7395,
+          "mc_95ci": [
+            0.7198182161636315,
+            0.7582635181886483
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "equivalence_boundary_sg_probe60": {
+      "assumptions": {
+        "slope": -0.8,
+        "sg": -0.05
+      },
+      "probe_items": 60,
+      "reps": 2000,
+      "mean_estimated_slope": -0.33655454485109737,
+      "tests": {
+        "h1": {
+          "count": 2000,
+          "rate": 1.0,
+          "mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "h2": {
+          "count": 1679,
+          "rate": 0.8395,
+          "mc_95ci": [
+            0.8227641986329085,
+            0.8549341262631208
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "coverage_half_high_cluster_noise_probe30": {
+      "assumptions": {
+        "slope": -0.4,
+        "lift": 0.1,
+        "cluster_sd": 0.1
+      },
+      "probe_items": 30,
+      "reps": 2000,
+      "mean_estimated_slope": -0.10643138643036627,
+      "tests": {
+        "h1": {
+          "count": 1499,
+          "rate": 0.7495,
+          "mc_95ci": [
+            0.7300439749792367,
+            0.7679994184274181
+          ]
+        },
+        "h2": {
+          "count": 553,
+          "rate": 0.2765,
+          "mc_95ci": [
+            0.25734059205454174,
+            0.29651632808017825
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    },
+    "coverage_half_high_cluster_noise_probe60": {
+      "assumptions": {
+        "slope": -0.4,
+        "lift": 0.1,
+        "cluster_sd": 0.1
+      },
+      "probe_items": 60,
+      "reps": 2000,
+      "mean_estimated_slope": -0.16816636521099787,
+      "tests": {
+        "h1": {
+          "count": 1499,
+          "rate": 0.7495,
+          "mc_95ci": [
+            0.7300439749792367,
+            0.7679994184274181
+          ]
+        },
+        "h2": {
+          "count": 632,
+          "rate": 0.316,
+          "mc_95ci": [
+            0.29599388872795984,
+            0.33671158467154116
+          ]
+        },
+        "h3_equivalence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "full_sequence": {
+          "count": 0,
+          "rate": 0.0,
+          "mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5544 @@
+{
+  "status": "SYNTHETIC_QUALIFICATION_ONLY",
+  "seed": 20261108,
+  "source_sha256": "bb5f85fc1dcd263058e2527b6bfee28215b0751aa030e2c87c7fdf34d142c928",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "results": [
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 133,
+            "rate": 0.044333333333333336,
+            "mc95": [
+              0.03753218141738335,
+              0.05229994272096372
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 52,
+            "rate": 0.017333333333333333,
+            "mc95": [
+              0.013242778833405518,
+              0.022658403136109142
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 133,
+            "rate": 0.044333333333333336,
+            "mc95": [
+              0.03753218141738335,
+              0.05229994272096372
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.005307468036856623,
+      "moment_correction": {
+        "valid": 2999,
+        "nonpositive_denominator": 1,
+        "median": 0.00487382099057978,
+        "quantiles_05_95": [
+          -0.4633314517728927,
+          0.4791821177066706
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 130,
+            "rate": 0.043333333333333335,
+            "mc95": [
+              0.0366127910180945,
+              0.051221890817703224
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 42,
+            "rate": 0.014,
+            "mc95": [
+              0.010374225398683868,
+              0.01886881556233297
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 117,
+            "rate": 0.039,
+            "mc95": [
+              0.0326413451987874,
+              0.04653775332596314
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.009364485099039331,
+      "moment_correction": {
+        "valid": 2999,
+        "nonpositive_denominator": 1,
+        "median": 0.012496233965301017,
+        "quantiles_05_95": [
+          -0.6028490296775507,
+          0.6167703568064583
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 152,
+            "rate": 0.050666666666666665,
+            "mc95": [
+              0.04337731140028998,
+              0.05910528065420295
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 43,
+            "rate": 0.014333333333333333,
+            "mc95": [
+              0.01065870981448653,
+              0.019250145247380092
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 137,
+            "rate": 0.04566666666666667,
+            "mc95": [
+              0.03875960781167959,
+              0.0537357727300666
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0037650883470622927,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.002103287201139676,
+        "quantiles_05_95": [
+          -0.7657287411150236,
+          0.787321808633983
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 140,
+            "rate": 0.04666666666666667,
+            "mc95": [
+              0.03968131639113648,
+              0.05481150645315906
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 33,
+            "rate": 0.011,
+            "mc95": [
+              0.007843338161892114,
+              0.015407375891476676
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 120,
+            "rate": 0.04,
+            "mc95": [
+              0.0335559270537099,
+              0.04762061377358999
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0013748597370524802,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0021518892142485643,
+        "quantiles_05_95": [
+          -0.39834920259096457,
+          0.38857918960114074
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 127,
+            "rate": 0.042333333333333334,
+            "mc95": [
+              0.03569444849435774,
+              0.05014279103889063
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 51,
+            "rate": 0.017,
+            "mc95": [
+              0.012953739842509025,
+              0.02228162802615586
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 135,
+            "rate": 0.045,
+            "mc95": [
+              0.0381456739237067,
+              0.05301807841633993
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.00830478387981796,
+      "moment_correction": {
+        "valid": 2631,
+        "nonpositive_denominator": 369,
+        "median": 0.030558343469768386,
+        "quantiles_05_95": [
+          -2.901788759755377,
+          3.4589238926629595
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2535,
+            "rate": 0.845,
+            "mc95": [
+              0.8316092075545916,
+              0.8575083868249336
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1790,
+            "rate": 0.5966666666666667,
+            "mc95": [
+              0.5789994608139035,
+              0.6140866284325335
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2242,
+            "rate": 0.7473333333333333,
+            "mc95": [
+              0.7314741803093628,
+              0.7625598825211758
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7297179204830248,
+      "moment_correction": {
+        "valid": 2999,
+        "nonpositive_denominator": 1,
+        "median": -0.8049995068468309,
+        "quantiles_05_95": [
+          -1.3295862096523634,
+          -0.34570939823847835
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 1279,
+            "rate": 0.42633333333333334,
+            "mc95": [
+              0.4087419254197541,
+              0.44411315829244397
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 611,
+            "rate": 0.20366666666666666,
+            "mc95": [
+              0.18963883916717608,
+              0.2184524251773671
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 1069,
+            "rate": 0.35633333333333334,
+            "mc95": [
+              0.33938958750393694,
+              0.3736445350298067
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.3622052262230841,
+      "moment_correction": {
+        "valid": 2999,
+        "nonpositive_denominator": 1,
+        "median": -0.39921006196135234,
+        "quantiles_05_95": [
+          -0.8980151821814172,
+          0.057366103986927396
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2666,
+            "rate": 0.8886666666666667,
+            "mc95": [
+              0.8769102214343106,
+              0.8994290201565361
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1963,
+            "rate": 0.6543333333333333,
+            "mc95": [
+              0.6371274217210783,
+              0.6711445069723712
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2391,
+            "rate": 0.797,
+            "mc95": [
+              0.7822309333072431,
+              0.8110094305499133
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7953124931836694,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.7971695549612836,
+        "quantiles_05_95": [
+          -1.2315969296970568,
+          -0.35714803639204484
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 60,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2535,
+            "rate": 0.845,
+            "mc95": [
+              0.8316092075545916,
+              0.8575083868249336
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1790,
+            "rate": 0.5966666666666667,
+            "mc95": [
+              0.5789994608139035,
+              0.6140866284325335
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2242,
+            "rate": 0.7473333333333333,
+            "mc95": [
+              0.7314741803093628,
+              0.7625598825211758
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7297179204830246,
+      "moment_correction": {
+        "valid": 2999,
+        "nonpositive_denominator": 1,
+        "median": -0.8049995068468309,
+        "quantiles_05_95": [
+          -1.3295862096523632,
+          -0.3457093982384777
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 147,
+            "rate": 0.049,
+            "mc95": [
+              0.041835590014624356,
+              0.05731793153561967
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 40,
+            "rate": 0.013333333333333334,
+            "mc95": [
+              0.009807054350147202,
+              0.01810435840917007
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 136,
+            "rate": 0.04533333333333334,
+            "mc95": [
+              0.038452586272197074,
+              0.053376980168699344
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.007819447104998168,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.010511223601124317,
+        "quantiles_05_95": [
+          -0.41486874768820037,
+          0.4294774428720597
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 135,
+            "rate": 0.045,
+            "mc95": [
+              0.0381456739237067,
+              0.05301807841633993
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 36,
+            "rate": 0.012,
+            "mc95": [
+              0.008680538643521852,
+              0.01656761771239629
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 127,
+            "rate": 0.042333333333333334,
+            "mc95": [
+              0.03569444849435774,
+              0.05014279103889063
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.012022982662137142,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.01384271089502443,
+        "quantiles_05_95": [
+          -0.5255166825321682,
+          0.5622993766763913
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 145,
+            "rate": 0.04833333333333333,
+            "mc95": [
+              0.041219579683999655,
+              0.056602313664544796
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 50,
+            "rate": 0.016666666666666666,
+            "mc95": [
+              0.012665148121147283,
+              0.02190440564666782
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 153,
+            "rate": 0.051,
+            "mc95": [
+              0.04368593909682877,
+              0.05946246705851394
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.008291433680339393,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.0022345309636286237,
+        "quantiles_05_95": [
+          -0.7149500762946023,
+          0.7434365080436958
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 136,
+            "rate": 0.04533333333333334,
+            "mc95": [
+              0.038452586272197074,
+              0.053376980168699344
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 31,
+            "rate": 0.010333333333333333,
+            "mc95": [
+              0.007289344567375226,
+              0.014629741284294003
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 121,
+            "rate": 0.04033333333333333,
+            "mc95": [
+              0.03386105069778884,
+              0.04798130423036084
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0009545937649211762,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0005073979686041085,
+        "quantiles_05_95": [
+          -0.40990242160175805,
+          0.41563499854600605
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 153,
+            "rate": 0.051,
+            "mc95": [
+              0.04368593909682877,
+              0.05946246705851394
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 53,
+            "rate": 0.017666666666666667,
+            "mc95": [
+              0.013532252704955044,
+              0.023034743365409404
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 156,
+            "rate": 0.052,
+            "mc95": [
+              0.044612373435453025,
+              0.06053347502243903
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0010988200887451125,
+      "moment_correction": {
+        "valid": 2905,
+        "nonpositive_denominator": 95,
+        "median": -0.019036138379189167,
+        "quantiles_05_95": [
+          -2.2457625957680176,
+          2.4969692298266803
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2604,
+            "rate": 0.868,
+            "mc95": [
+              0.8554154721916143,
+              0.8796432951465458
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1847,
+            "rate": 0.6156666666666667,
+            "mc95": [
+              0.5981226369093592,
+              0.6329148560855155
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2308,
+            "rate": 0.7693333333333333,
+            "mc95": [
+              0.7539203014874936,
+              0.7840574919991308
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7594203052221163,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.7940078617157186,
+        "quantiles_05_95": [
+          -1.2520001918570585,
+          -0.3743709527952432
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 1287,
+            "rate": 0.429,
+            "mc95": [
+              0.4113912573267211,
+              0.4467903391922752
+            ]
+          },
+          "joint_equivalence": {
+            "count": 3,
+            "rate": 0.001,
+            "mc95": [
+              0.00034014721903916404,
+              0.002936143808836147
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 644,
+            "rate": 0.21466666666666667,
+            "mc95": [
+              0.20034389242236128,
+              0.22971923725022475
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 1067,
+            "rate": 0.3556666666666667,
+            "mc95": [
+              0.33873093371819235,
+              0.3729715606138518
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.37580042905855915,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.39188016590567587,
+        "quantiles_05_95": [
+          -0.8278824389914836,
+          0.026817950522481558
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2655,
+            "rate": 0.885,
+            "mc95": [
+              0.8730884819668893,
+              0.8959268045146097
+            ]
+          },
+          "joint_equivalence": {
+            "count": 4,
+            "rate": 0.0013333333333333333,
+            "mc95": [
+              0.0005186256496617009,
+              0.0034234794790633924
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1962,
+            "rate": 0.654,
+            "mc95": [
+              0.6367906561903359,
+              0.6708154584022638
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2380,
+            "rate": 0.7933333333333333,
+            "mc95": [
+              0.7784732095527616,
+              0.8074431991950473
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7904259199964231,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.7896707467269984,
+        "quantiles_05_95": [
+          -1.203852099438414,
+          -0.38279747073256015
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 6,
+      "cells": 18,
+      "probe_items_per_model_cell": 120,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2604,
+            "rate": 0.868,
+            "mc95": [
+              0.8554154721916143,
+              0.8796432951465458
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1847,
+            "rate": 0.6156666666666667,
+            "mc95": [
+              0.5981226369093592,
+              0.6329148560855155
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2308,
+            "rate": 0.7693333333333333,
+            "mc95": [
+              0.7539203014874936,
+              0.7840574919991308
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7594203052221163,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.7940078617157184,
+        "quantiles_05_95": [
+          -1.2520001918570585,
+          -0.3743709527952428
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 160,
+            "rate": 0.05333333333333334,
+            "mc95": [
+              0.04584887477722538,
+              0.06196023008406583
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 67,
+            "rate": 0.022333333333333334,
+            "mc95": [
+              0.01762477500157414,
+              0.028263618480687265
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 129,
+            "rate": 0.043,
+            "mc95": [
+              0.0363065587076942,
+              0.05086230902725372
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.00040682269785573694,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.003535666744941785,
+        "quantiles_05_95": [
+          -0.3154093070993328,
+          0.32425167298818525
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 141,
+            "rate": 0.047,
+            "mc95": [
+              0.03998876360822058,
+              0.055169873336924746
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 57,
+            "rate": 0.019,
+            "mc95": [
+              0.014694268417491864,
+              0.024535984056271713
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 95,
+            "rate": 0.03166666666666667,
+            "mc95": [
+              0.02597487167043385,
+              0.03855631663562147
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0023404597860711253,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.004518169192840274,
+        "quantiles_05_95": [
+          -0.39800139665443984,
+          0.4022951903343162
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 154,
+            "rate": 0.051333333333333335,
+            "mc95": [
+              0.043994659229371014,
+              0.05981956102682148
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 59,
+            "rate": 0.019666666666666666,
+            "mc95": [
+              0.015277602104816938,
+              0.0252842785706462
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 121,
+            "rate": 0.04033333333333333,
+            "mc95": [
+              0.03386105069778884,
+              0.04798130423036084
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0036961089758073946,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.004544279644318314,
+        "quantiles_05_95": [
+          -0.5093307639453386,
+          0.5051683438956254
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 145,
+            "rate": 0.04833333333333333,
+            "mc95": [
+              0.041219579683999655,
+              0.056602313664544796
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 42,
+            "rate": 0.014,
+            "mc95": [
+              0.010374225398683868,
+              0.01886881556233297
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 89,
+            "rate": 0.029666666666666668,
+            "mc95": [
+              0.024170985762442646,
+              0.03636531793851398
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.002786870492912903,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.0021403285632416447,
+        "quantiles_05_95": [
+          -0.28872046973373805,
+          0.296341768188227
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 148,
+            "rate": 0.04933333333333333,
+            "mc95": [
+              0.04214374236315084,
+              0.05767559328794296
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 60,
+            "rate": 0.02,
+            "mc95": [
+              0.015569816893370038,
+              0.025657877882942888
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 109,
+            "rate": 0.036333333333333336,
+            "mc95": [
+              0.030208539096929325,
+              0.043644046621022954
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.002276990996448548,
+      "moment_correction": {
+        "valid": 2875,
+        "nonpositive_denominator": 125,
+        "median": -0.010379417072704686,
+        "quantiles_05_95": [
+          -2.2189669612880762,
+          2.0502738120772714
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2919,
+            "rate": 0.973,
+            "mc95": [
+              0.9665673662810922,
+              0.9782228428247494
+            ]
+          },
+          "joint_equivalence": {
+            "count": 4,
+            "rate": 0.0013333333333333333,
+            "mc95": [
+              0.0005186256496617009,
+              0.0034234794790633924
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2714,
+            "rate": 0.9046666666666666,
+            "mc95": [
+              0.8936343135116187,
+              0.9146640049200174
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2807,
+            "rate": 0.9356666666666666,
+            "mc95": [
+              0.926318033305003,
+              0.9439009965056631
+            ]
+          },
+          "joint_equivalence": {
+            "count": 3,
+            "rate": 0.001,
+            "mc95": [
+              0.00034014721903916404,
+              0.002936143808836147
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7349663968207251,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8061516713424713,
+        "quantiles_05_95": [
+          -1.1466656544478728,
+          -0.47708229298952204
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2020,
+            "rate": 0.6733333333333333,
+            "mc95": [
+              0.6563385025909272,
+              0.6898848298509599
+            ]
+          },
+          "joint_equivalence": {
+            "count": 6,
+            "rate": 0.002,
+            "mc95": [
+              0.000916930269583324,
+              0.004356803060841335
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1349,
+            "rate": 0.44966666666666666,
+            "mc95": [
+              0.4319412508884104,
+              0.46752081988327243
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 1670,
+            "rate": 0.5566666666666666,
+            "mc95": [
+              0.5388287571872031,
+              0.5743596399572598
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.36768660975929046,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.40506631307934116,
+        "quantiles_05_95": [
+          -0.7348521548192462,
+          -0.07904226801618826
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2957,
+            "rate": 0.9856666666666667,
+            "mc95": [
+              0.98074985475262,
+              0.9893412901855135
+            ]
+          },
+          "joint_equivalence": {
+            "count": 6,
+            "rate": 0.002,
+            "mc95": [
+              0.000916930269583324,
+              0.004356803060841335
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2814,
+            "rate": 0.938,
+            "mc95": [
+              0.9287977303482605,
+              0.9460819981683538
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2884,
+            "rate": 0.9613333333333334,
+            "mc95": [
+              0.9538234685125888,
+              0.9676632470635105
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.8006993141717201,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.804180036847497,
+        "quantiles_05_95": [
+          -1.0928373573040067,
+          -0.5008674132591362
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 60,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2919,
+            "rate": 0.973,
+            "mc95": [
+              0.9665673662810922,
+              0.9782228428247494
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2714,
+            "rate": 0.9046666666666666,
+            "mc95": [
+              0.8936343135116187,
+              0.9146640049200174
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2807,
+            "rate": 0.9356666666666666,
+            "mc95": [
+              0.926318033305003,
+              0.9439009965056631
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7349663968207251,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8061516713424719,
+        "quantiles_05_95": [
+          -1.1466656544478735,
+          -0.47708229298952287
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 152,
+            "rate": 0.050666666666666665,
+            "mc95": [
+              0.04337731140028998,
+              0.05910528065420295
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 58,
+            "rate": 0.019333333333333334,
+            "mc95": [
+              0.014985749590420355,
+              0.02491031698419301
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 119,
+            "rate": 0.03966666666666667,
+            "mc95": [
+              0.03325093387303913,
+              0.04725979285341098
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0026412158591528857,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.0007008075153992002,
+        "quantiles_05_95": [
+          -0.3093188940828312,
+          0.2994524853793948
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 146,
+            "rate": 0.048666666666666664,
+            "mc95": [
+              0.04152753547220747,
+              0.056960171977186766
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 59,
+            "rate": 0.019666666666666666,
+            "mc95": [
+              0.015277602104816938,
+              0.0252842785706462
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 121,
+            "rate": 0.04033333333333333,
+            "mc95": [
+              0.03386105069778884,
+              0.04798130423036084
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.001247920275752561,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0025489054355139202,
+        "quantiles_05_95": [
+          -0.3951655575983832,
+          0.4049456213500241
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 149,
+            "rate": 0.049666666666666665,
+            "mc95": [
+              0.042451991585445485,
+              0.0580331581664981
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 46,
+            "rate": 0.015333333333333332,
+            "mc95": [
+              0.011515523944774946,
+              0.020390773419641017
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 121,
+            "rate": 0.04033333333333333,
+            "mc95": [
+              0.03386105069778884,
+              0.04798130423036084
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.010300993846256915,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.012259651060799685,
+        "quantiles_05_95": [
+          -0.5011473608354694,
+          0.4804441540055093
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 163,
+            "rate": 0.05433333333333333,
+            "mc95": [
+              0.046777164892545124,
+              0.06302938227129541
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 48,
+            "rate": 0.016,
+            "mc95": [
+              0.012089359129497938,
+              0.0211485664366176
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 107,
+            "rate": 0.035666666666666666,
+            "mc95": [
+              0.029601796731603472,
+              0.042919160784649246
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.003533754815361404,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0031762867305655694,
+        "quantiles_05_95": [
+          -0.2854377490173356,
+          0.2794841888450687
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 138,
+            "rate": 0.046,
+            "mc95": [
+              0.03906673741365379,
+              0.05409445722894219
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 41,
+            "rate": 0.013666666666666667,
+            "mc95": [
+              0.010090333246530282,
+              0.018486893613636774
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 106,
+            "rate": 0.035333333333333335,
+            "mc95": [
+              0.029298655057599106,
+              0.042556488357803825
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.008256072804901964,
+      "moment_correction": {
+        "valid": 2979,
+        "nonpositive_denominator": 21,
+        "median": 0.025136835092155096,
+        "quantiles_05_95": [
+          -1.4556444818083505,
+          1.4908513829589192
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2949,
+            "rate": 0.983,
+            "mc95": [
+              0.977718371973844,
+              0.987046260157491
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2793,
+            "rate": 0.931,
+            "mc95": [
+              0.9213683004184239,
+              0.9395293319803453
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2871,
+            "rate": 0.957,
+            "mc95": [
+              0.9491376909727463,
+              0.9636934412923057
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7700136866551229,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8046720451300944,
+        "quantiles_05_95": [
+          -1.1255858556841118,
+          -0.4990170530068261
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2044,
+            "rate": 0.6813333333333333,
+            "mc95": [
+              0.6644366480526301,
+              0.6977662228096516
+            ]
+          },
+          "joint_equivalence": {
+            "count": 4,
+            "rate": 0.0013333333333333333,
+            "mc95": [
+              0.0005186256496617009,
+              0.0034234794790633924
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 1403,
+            "rate": 0.4676666666666667,
+            "mc95": [
+              0.4498648962635153,
+              0.4855511359540558
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 1733,
+            "rate": 0.5776666666666667,
+            "mc95": [
+              0.5599035977053618,
+              0.5952310877926376
+            ]
+          },
+          "joint_equivalence": {
+            "count": 4,
+            "rate": 0.0013333333333333333,
+            "mc95": [
+              0.0005186256496617009,
+              0.0034234794790633924
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.38632745125713785,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.4038581187359858,
+        "quantiles_05_95": [
+          -0.7212475200917586,
+          -0.10157043447873354
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2969,
+            "rate": 0.9896666666666667,
+            "mc95": [
+              0.985370258715706,
+              0.9927106554326248
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2834,
+            "rate": 0.9446666666666667,
+            "mc95": [
+              0.9359022265984466,
+              0.9522937839351636
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2897,
+            "rate": 0.9656666666666667,
+            "mc95": [
+              0.958532472064013,
+              0.9716098268231333
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.8027912358942956,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8024521096826649,
+        "quantiles_05_95": [
+          -1.0963824974970415,
+          -0.512999899893607
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 10,
+      "cells": 30,
+      "probe_items_per_model_cell": 120,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2949,
+            "rate": 0.983,
+            "mc95": [
+              0.977718371973844,
+              0.987046260157491
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2793,
+            "rate": 0.931,
+            "mc95": [
+              0.9213683004184239,
+              0.9395293319803453
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2871,
+            "rate": 0.957,
+            "mc95": [
+              0.9491376909727463,
+              0.9636934412923057
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7700136866551229,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.804672045130095,
+        "quantiles_05_95": [
+          -1.1255858556841123,
+          -0.49901705300682686
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 156,
+            "rate": 0.052,
+            "mc95": [
+              0.044612373435453025,
+              0.06053347502243903
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 51,
+            "rate": 0.017,
+            "mc95": [
+              0.012953739842509025,
+              0.02228162802615586
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 84,
+            "rate": 0.028,
+            "mc95": [
+              0.022673228760591496,
+              0.03453400443611621
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 9.444234980604656e-05,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.0008792979981412859,
+        "quantiles_05_95": [
+          -0.2385066263547118,
+          0.23472614386271254
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 157,
+            "rate": 0.052333333333333336,
+            "mc95": [
+              0.04492136585872146,
+              0.0608902967000204
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 59,
+            "rate": 0.019666666666666666,
+            "mc95": [
+              0.015277602104816938,
+              0.0252842785706462
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 100,
+            "rate": 0.03333333333333333,
+            "mc95": [
+              0.027483152333113072,
+              0.04037710647719116
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0018084167311148889,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0016158571731446024,
+        "quantiles_05_95": [
+          -0.31145710922165903,
+          0.29843793142478464
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 145,
+            "rate": 0.04833333333333333,
+            "mc95": [
+              0.041219579683999655,
+              0.056602313664544796
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 58,
+            "rate": 0.019333333333333334,
+            "mc95": [
+              0.014985749590420355,
+              0.02491031698419301
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 97,
+            "rate": 0.03233333333333333,
+            "mc95": [
+              0.026577655785116974,
+              0.03928516072263791
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0015560437860061781,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.007014995284668272,
+        "quantiles_05_95": [
+          -0.39037460255432227,
+          0.3868960389786689
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 178,
+            "rate": 0.059333333333333335,
+            "mc95": [
+              0.05142965866607647,
+              0.06836410001051083
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 63,
+            "rate": 0.021,
+            "mc95": [
+              0.01644854964331183,
+              0.026776587435550444
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 109,
+            "rate": 0.036333333333333336,
+            "mc95": [
+              0.030208539096929325,
+              0.043644046621022954
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.004287371687428384,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0028305625416644533,
+        "quantiles_05_95": [
+          -0.2314506109534734,
+          0.21683126451472426
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 143,
+            "rate": 0.04766666666666667,
+            "mc95": [
+              0.040603968243672725,
+              0.05588629690317218
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 51,
+            "rate": 0.017,
+            "mc95": [
+              0.012953739842509025,
+              0.02228162802615586
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 79,
+            "rate": 0.026333333333333334,
+            "mc95": [
+              0.021180915850328608,
+              0.03269724684213019
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0010896568898942523,
+      "moment_correction": {
+        "valid": 2962,
+        "nonpositive_denominator": 38,
+        "median": -0.011985810422050328,
+        "quantiles_05_95": [
+          -1.41957410898199,
+          1.3931542168471773
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 34,
+            "rate": 0.011333333333333334,
+            "mc95": [
+              0.008121612371847138,
+              0.015794915782371438
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2987,
+            "rate": 0.9956666666666667,
+            "mc95": [
+              0.9925997876540877,
+              0.9974657803095393
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2992,
+            "rate": 0.9973333333333333,
+            "mc95": [
+              0.9947465032080693,
+              0.9986481352598064
+            ]
+          },
+          "joint_equivalence": {
+            "count": 9,
+            "rate": 0.003,
+            "mc95": [
+              0.0015791325142942543,
+              0.005692043118679753
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7367017027045509,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8047782119089705,
+        "quantiles_05_95": [
+          -1.0528678428077491,
+          -0.5634106633549253
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2577,
+            "rate": 0.859,
+            "mc95": [
+              0.8460868314112725,
+              0.8709949552039434
+            ]
+          },
+          "joint_equivalence": {
+            "count": 55,
+            "rate": 0.018333333333333333,
+            "mc95": [
+              0.014112458346255944,
+              0.023786165925808074
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2122,
+            "rate": 0.7073333333333334,
+            "mc95": [
+              0.6907952485510612,
+              0.7233411221775038
+            ]
+          },
+          "joint_equivalence": {
+            "count": 6,
+            "rate": 0.002,
+            "mc95": [
+              0.000916930269583324,
+              0.004356803060841335
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2255,
+            "rate": 0.7516666666666667,
+            "mc95": [
+              0.7358910707863104,
+              0.7667985753552755
+            ]
+          },
+          "joint_equivalence": {
+            "count": 15,
+            "rate": 0.005,
+            "mc95": [
+              0.0030324533483749197,
+              0.008233606889697783
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.36830363017737244,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.4035120928335302,
+        "quantiles_05_95": [
+          -0.6429751572791397,
+          -0.16665912298694163
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 45,
+            "rate": 0.015,
+            "mc95": [
+              0.011229377297908946,
+              0.02001110596565724
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2996,
+            "rate": 0.9986666666666667,
+            "mc95": [
+              0.9965765205209367,
+              0.9994813743503383
+            ]
+          },
+          "joint_equivalence": {
+            "count": 5,
+            "rate": 0.0016666666666666668,
+            "mc95": [
+              0.0007121039409388158,
+              0.0038958152886360608
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2997,
+            "rate": 0.999,
+            "mc95": [
+              0.9970638561911638,
+              0.9996598527809608
+            ]
+          },
+          "joint_equivalence": {
+            "count": 16,
+            "rate": 0.005333333333333333,
+            "mc95": [
+              0.0032855756253714974,
+              0.00864629871355099
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.8001680264867733,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.7990856030099145,
+        "quantiles_05_95": [
+          -1.0277357731722234,
+          -0.5775714658514081
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 60,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 5,
+            "rate": 0.0016666666666666668,
+            "mc95": [
+              0.0007121039409388158,
+              0.0038958152886360608
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2987,
+            "rate": 0.9956666666666667,
+            "mc95": [
+              0.9925997876540877,
+              0.9974657803095393
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2992,
+            "rate": 0.9973333333333333,
+            "mc95": [
+              0.9947465032080693,
+              0.9986481352598064
+            ]
+          },
+          "joint_equivalence": {
+            "count": 3,
+            "rate": 0.001,
+            "mc95": [
+              0.00034014721903916404,
+              0.002936143808836147
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7367017027045509,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8047782119089701,
+        "quantiles_05_95": [
+          -1.0528678428077485,
+          -0.5634106633549247
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 153,
+            "rate": 0.051,
+            "mc95": [
+              0.04368593909682877,
+              0.05946246705851394
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 68,
+            "rate": 0.02266666666666667,
+            "mc95": [
+              0.017919601836232955,
+              0.028634605746878237
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 98,
+            "rate": 0.03266666666666666,
+            "mc95": [
+              0.02687931450264561,
+              0.03964931610595905
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0020121096331084743,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 1.7234980756447753e-05,
+        "quantiles_05_95": [
+          -0.23012048182174988,
+          0.2241709208866139
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 173,
+            "rate": 0.057666666666666665,
+            "mc95": [
+              0.04987685524861582,
+              0.06658783292372254
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 61,
+            "rate": 0.02033333333333333,
+            "mc95": [
+              0.01586238525779264,
+              0.026031123619370065
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 106,
+            "rate": 0.035333333333333335,
+            "mc95": [
+              0.029298655057599106,
+              0.042556488357803825
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0033762688557651497,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.00045231085890890254,
+        "quantiles_05_95": [
+          -0.3079307794010728,
+          0.2847134090236418
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 137,
+            "rate": 0.04566666666666667,
+            "mc95": [
+              0.03875960781167959,
+              0.0537357727300666
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 55,
+            "rate": 0.018333333333333333,
+            "mc95": [
+              0.014112458346255944,
+              0.023786165925808074
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 89,
+            "rate": 0.029666666666666668,
+            "mc95": [
+              0.024170985762442646,
+              0.03636531793851398
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0012826684668093477,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.004932678336656261,
+        "quantiles_05_95": [
+          -0.37447209811702653,
+          0.3756493171404153
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 158,
+            "rate": 0.05266666666666667,
+            "mc95": [
+              0.04523044741686434,
+              0.06124702924272729
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 56,
+            "rate": 0.018666666666666668,
+            "mc95": [
+              0.014403168044713584,
+              0.024161270328200212
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 95,
+            "rate": 0.03166666666666667,
+            "mc95": [
+              0.02597487167043385,
+              0.03855631663562147
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.002117780926369637,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.002976705270763086,
+        "quantiles_05_95": [
+          -0.21818609802603128,
+          0.20991984415421414
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 171,
+            "rate": 0.057,
+            "mc95": [
+              0.04925627402901687,
+              0.06587678594162194
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 71,
+            "rate": 0.023666666666666666,
+            "mc95": [
+              0.018805828331833658,
+              0.029745821553826875
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 100,
+            "rate": 0.03333333333333333,
+            "mc95": [
+              0.027483152333113072,
+              0.04037710647719116
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0028901347132527714,
+      "moment_correction": {
+        "valid": 2996,
+        "nonpositive_denominator": 4,
+        "median": 0.00368368725064995,
+        "quantiles_05_95": [
+          -1.024381594213935,
+          1.0583448413504537
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2998,
+            "rate": 0.9993333333333333,
+            "mc95": [
+              0.9975723661607839,
+              0.9998171569121904
+            ]
+          },
+          "joint_equivalence": {
+            "count": 31,
+            "rate": 0.010333333333333333,
+            "mc95": [
+              0.007289344567375226,
+              0.014629741284294003
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2995,
+            "rate": 0.9983333333333333,
+            "mc95": [
+              0.9961041847113639,
+              0.9992878960590612
+            ]
+          },
+          "joint_equivalence": {
+            "count": 6,
+            "rate": 0.002,
+            "mc95": [
+              0.000916930269583324,
+              0.004356803060841335
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2996,
+            "rate": 0.9986666666666667,
+            "mc95": [
+              0.9965765205209367,
+              0.9994813743503383
+            ]
+          },
+          "joint_equivalence": {
+            "count": 15,
+            "rate": 0.005,
+            "mc95": [
+              0.0030324533483749197,
+              0.008233606889697783
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7680249486810234,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8004314266524992,
+        "quantiles_05_95": [
+          -1.0416792646537174,
+          -0.5741041850231244
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2640,
+            "rate": 0.88,
+            "mc95": [
+              0.8678829332822373,
+              0.891145141686515
+            ]
+          },
+          "joint_equivalence": {
+            "count": 39,
+            "rate": 0.013,
+            "mc95": [
+              0.009524410987561932,
+              0.017721187670905556
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2175,
+            "rate": 0.725,
+            "mc95": [
+              0.708741872082386,
+              0.7406826459912171
+            ]
+          },
+          "joint_equivalence": {
+            "count": 5,
+            "rate": 0.0016666666666666668,
+            "mc95": [
+              0.0007121039409388158,
+              0.0038958152886360608
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2333,
+            "rate": 0.7776666666666666,
+            "mc95": [
+              0.7624374142325786,
+              0.7921857317752904
+            ]
+          },
+          "joint_equivalence": {
+            "count": 17,
+            "rate": 0.005666666666666667,
+            "mc95": [
+              0.0035410565832478284,
+              0.00905663185652444
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.3850185291570659,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.40001680328737815,
+        "quantiles_05_95": [
+          -0.6328876008284591,
+          -0.17705858497176347
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 37,
+            "rate": 0.012333333333333333,
+            "mc95": [
+              0.008961127098019293,
+              0.01695284335874863
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2993,
+            "rate": 0.9976666666666667,
+            "mc95": [
+              0.9951911846593626,
+              0.9988692679093629
+            ]
+          },
+          "joint_equivalence": {
+            "count": 6,
+            "rate": 0.002,
+            "mc95": [
+              0.000916930269583324,
+              0.004356803060841335
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2997,
+            "rate": 0.999,
+            "mc95": [
+              0.9970638561911638,
+              0.9996598527809608
+            ]
+          },
+          "joint_equivalence": {
+            "count": 14,
+            "rate": 0.004666666666666667,
+            "mc95": [
+              0.0027819139335313083,
+              0.007818332203691613
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.8019449446933368,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.7977617731274981,
+        "quantiles_05_95": [
+          -1.0233909121712816,
+          -0.581875097782828
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 16,
+      "cells": 48,
+      "probe_items_per_model_cell": 120,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2998,
+            "rate": 0.9993333333333333,
+            "mc95": [
+              0.9975723661607839,
+              0.9998171569121904
+            ]
+          },
+          "joint_equivalence": {
+            "count": 5,
+            "rate": 0.0016666666666666668,
+            "mc95": [
+              0.0007121039409388158,
+              0.0038958152886360608
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2995,
+            "rate": 0.9983333333333333,
+            "mc95": [
+              0.9961041847113639,
+              0.9992878960590612
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2996,
+            "rate": 0.9986666666666667,
+            "mc95": [
+              0.9965765205209367,
+              0.9994813743503383
+            ]
+          },
+          "joint_equivalence": {
+            "count": 3,
+            "rate": 0.001,
+            "mc95": [
+              0.00034014721903916404,
+              0.002936143808836147
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7680249486810234,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8004314266524989,
+        "quantiles_05_95": [
+          -1.041679264653717,
+          -0.574104185023124
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 144,
+            "rate": 0.048,
+            "mc95": [
+              0.04091172361423537,
+              0.05624435563345931
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 56,
+            "rate": 0.018666666666666668,
+            "mc95": [
+              0.014403168044713584,
+              0.024161270328200212
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 81,
+            "rate": 0.027,
+            "mc95": [
+              0.021777157175250608,
+              0.033432633718907756
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0016351386997332821,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.003025460668699728,
+        "quantiles_05_95": [
+          -0.20320040198612524,
+          0.20258236520142925
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 159,
+            "rate": 0.053,
+            "mc95": [
+              0.04553961731667641,
+              0.061603673443764995
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 66,
+            "rate": 0.022,
+            "mc95": [
+              0.017330249617000953,
+              0.02789232976441067
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 90,
+            "rate": 0.03,
+            "mc95": [
+              0.02447115109496187,
+              0.03673096670684454
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.001251005702031355,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.0008044789551626035,
+        "quantiles_05_95": [
+          -0.26334564382815573,
+          0.2666676107982751
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 161,
+            "rate": 0.05366666666666667,
+            "mc95": [
+              0.04615821902958661,
+              0.06231669993255437
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 73,
+            "rate": 0.024333333333333332,
+            "mc95": [
+              0.01939804205131041,
+              0.03048523603604969
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 110,
+            "rate": 0.03666666666666667,
+            "mc95": [
+              0.030512135769472128,
+              0.04400626404932994
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0028257096615100443,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0065572006477481815,
+        "quantiles_05_95": [
+          -0.35716627379444565,
+          0.329689305728333
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 165,
+            "rate": 0.055,
+            "mc95": [
+              0.047396448984681316,
+              0.06374172638085879
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 51,
+            "rate": 0.017,
+            "mc95": [
+              0.012953739842509025,
+              0.02228162802615586
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 93,
+            "rate": 0.031,
+            "mc95": [
+              0.02537281666935177,
+              0.03782674343500397
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.00015983542252996882,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 3.476211508415425e-05,
+        "quantiles_05_95": [
+          -0.19572236445655541,
+          0.19039893760581683
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 132,
+            "rate": 0.044,
+            "mc95": [
+              0.037225603621850144,
+              0.05194070641564714
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 57,
+            "rate": 0.019,
+            "mc95": [
+              0.014694268417491864,
+              0.024535984056271713
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 89,
+            "rate": 0.029666666666666668,
+            "mc95": [
+              0.024170985762442646,
+              0.03636531793851398
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.010200704435595708,
+      "moment_correction": {
+        "valid": 2983,
+        "nonpositive_denominator": 17,
+        "median": 0.01828128230323957,
+        "quantiles_05_95": [
+          -1.1472931966489688,
+          1.2622150859192462
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 88,
+            "rate": 0.029333333333333333,
+            "mc95": [
+              0.023871020606005804,
+              0.03599946899410103
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 11,
+            "rate": 0.0036666666666666666,
+            "mc95": [
+              0.0020486685952001804,
+              0.006554135239473392
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 23,
+            "rate": 0.007666666666666666,
+            "mc95": [
+              0.005114186560027724,
+              0.01147838648484324
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7339987632519669,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8025710358007125,
+        "quantiles_05_95": [
+          -1.018991149174926,
+          -0.5846712027876392
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2763,
+            "rate": 0.921,
+            "mc95": [
+              0.9108004647994692,
+              0.9301227445738065
+            ]
+          },
+          "joint_equivalence": {
+            "count": 155,
+            "rate": 0.051666666666666666,
+            "mc95": [
+              0.04430347095281026,
+              0.060176563404232025
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2462,
+            "rate": 0.8206666666666667,
+            "mc95": [
+              0.8065314220224461,
+              0.8339817429950448
+            ]
+          },
+          "joint_equivalence": {
+            "count": 19,
+            "rate": 0.006333333333333333,
+            "mc95": [
+              0.004058346146037406,
+              0.009870970495434426
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2550,
+            "rate": 0.85,
+            "mc95": [
+              0.8367753314662666,
+              0.8623294744260052
+            ]
+          },
+          "joint_equivalence": {
+            "count": 41,
+            "rate": 0.013666666666666667,
+            "mc95": [
+              0.010090333246530282,
+              0.018486893613636774
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.3661818122761168,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.40022653299155436,
+        "quantiles_05_95": [
+          -0.6075061634425408,
+          -0.19341310204083792
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 137,
+            "rate": 0.04566666666666667,
+            "mc95": [
+              0.03875960781167959,
+              0.0537357727300666
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 24,
+            "rate": 0.008,
+            "mc95": [
+              0.005381913474637302,
+              0.011876473671083446
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 44,
+            "rate": 0.014666666666666666,
+            "mc95": [
+              0.010943766686006835,
+              0.019630902476709566
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7991280158772318,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.802153527332582,
+        "quantiles_05_95": [
+          -0.9955190482346923,
+          -0.602528946911214
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 60,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 1,
+            "rate": 0.0003333333333333333,
+            "mc95": [
+              5.8843941871566355e-05,
+              0.0018858188843041794
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7339987632519669,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8025710358007128,
+        "quantiles_05_95": [
+          -1.0189911491749262,
+          -0.5846712027876392
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "iid_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 143,
+            "rate": 0.04766666666666667,
+            "mc95": [
+              0.040603968243672725,
+              0.05588629690317218
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 64,
+            "rate": 0.021333333333333333,
+            "mc95": [
+              0.01674212993362851,
+              0.027148821246083546
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 99,
+            "rate": 0.033,
+            "mc95": [
+              0.027181147525451723,
+              0.04001329718400274
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0012500335269547132,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.0019240522961507143,
+        "quantiles_05_95": [
+          -0.19890818470276403,
+          0.20303453892598045
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heteroskedastic_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 141,
+            "rate": 0.047,
+            "mc95": [
+              0.03998876360822058,
+              0.055169873336924746
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 57,
+            "rate": 0.019,
+            "mc95": [
+              0.014694268417491864,
+              0.024535984056271713
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 91,
+            "rate": 0.030333333333333334,
+            "mc95": [
+              0.024771513412896875,
+              0.03709641848975932
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0023225300974639537,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.004751567152508841,
+        "quantiles_05_95": [
+          -0.25267340078015665,
+          0.2621105305752917
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "industry_correlated_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 142,
+            "rate": 0.04733333333333333,
+            "mc95": [
+              0.04029631456999429,
+              0.055528136476000814
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 56,
+            "rate": 0.018666666666666668,
+            "mc95": [
+              0.014403168044713584,
+              0.024161270328200212
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 78,
+            "rate": 0.026,
+            "mc95": [
+              0.02088314953637451,
+              0.0323291990552345
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.0011121753884404141,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.001836275597172441,
+        "quantiles_05_95": [
+          -0.329526450966024,
+          0.3367339902181073
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "heavy_tail_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 144,
+            "rate": 0.048,
+            "mc95": [
+              0.04091172361423537,
+              0.05624435563345931
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 65,
+            "rate": 0.021666666666666667,
+            "mc95": [
+              0.017036032303674745,
+              0.027520732976887098
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 93,
+            "rate": 0.031,
+            "mc95": [
+              0.02537281666935177,
+              0.03782674343500397
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.0010393226572421733,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": 0.0012356435808175896,
+        "quantiles_05_95": [
+          -0.1917583556691122,
+          0.1720574379631971
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "low_overlap_null",
+      "replicates": 3000,
+      "true_slope": 0.0,
+      "true_vn_contrast": 0.1,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 132,
+            "rate": 0.044,
+            "mc95": [
+              0.037225603621850144,
+              0.05194070641564714
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 49,
+            "rate": 0.01633333333333333,
+            "mc95": [
+              0.012377016667028243,
+              0.02152672299993707
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 82,
+            "rate": 0.027333333333333334,
+            "mc95": [
+              0.022075623775343264,
+              0.03379998121966488
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": 0.00459620149756736,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.0012785997359276548,
+        "quantiles_05_95": [
+          -0.9101927482345573,
+          0.9182274395495382
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 104,
+            "rate": 0.034666666666666665,
+            "mc95": [
+              0.028692841126501147,
+              0.04183067408720221
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 14,
+            "rate": 0.004666666666666667,
+            "mc95": [
+              0.0027819139335313083,
+              0.007818332203691613
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 39,
+            "rate": 0.013,
+            "mc95": [
+              0.009524410987561932,
+              0.017721187670905556
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7661718703093484,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8006646604783789,
+        "quantiles_05_95": [
+          -1.0067488497710844,
+          -0.6006371370236769
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "half",
+      "replicates": 3000,
+      "true_slope": -0.4,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 2808,
+            "rate": 0.936,
+            "mc95": [
+              0.9266720714885675,
+              0.9442127724229483
+            ]
+          },
+          "joint_equivalence": {
+            "count": 135,
+            "rate": 0.045,
+            "mc95": [
+              0.0381456739237067,
+              0.05301807841633993
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2509,
+            "rate": 0.8363333333333334,
+            "mc95": [
+              0.8226656282161575,
+              0.8491407995412732
+            ]
+          },
+          "joint_equivalence": {
+            "count": 15,
+            "rate": 0.005,
+            "mc95": [
+              0.0030324533483749197,
+              0.008233606889697783
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2597,
+            "rate": 0.8656666666666667,
+            "mc95": [
+              0.852995211206453,
+              0.8774028574257585
+            ]
+          },
+          "joint_equivalence": {
+            "count": 39,
+            "rate": 0.013,
+            "mc95": [
+              0.009524410987561932,
+              0.017721187670905556
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.38246091839119684,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.39993544355409927,
+        "quantiles_05_95": [
+          -0.6003487334615584,
+          -0.20142576527366113
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "oracle_full",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.0,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 144,
+            "rate": 0.048,
+            "mc95": [
+              0.04091172361423537,
+              0.05624435563345931
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 16,
+            "rate": 0.005333333333333333,
+            "mc95": [
+              0.0032855756253714974,
+              0.00864629871355099
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 37,
+            "rate": 0.012333333333333333,
+            "mc95": [
+              0.008961127098019293,
+              0.01695284335874863
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7988293719304159,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.7989038383262402,
+        "quantiles_05_95": [
+          -0.9949380218192481,
+          -0.6034715494582837
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    },
+    {
+      "industries": 20,
+      "cells": 60,
+      "probe_items_per_model_cell": 120,
+      "scenario": "boundary_vn",
+      "replicates": 3000,
+      "true_slope": -0.8,
+      "true_vn_contrast": 0.05,
+      "results": {
+        "OLS": {
+          "negative_slope": {
+            "count": 3000,
+            "rate": 1.0,
+            "mc95": [
+              0.9987211512746742,
+              1.0
+            ]
+          },
+          "joint_equivalence": {
+            "count": 6,
+            "rate": 0.002,
+            "mc95": [
+              0.000916930269583324,
+              0.004356803060841335
+            ]
+          }
+        },
+        "HC3": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 0,
+            "rate": 0.0,
+            "mc95": [
+              0.0,
+              0.0012788487253259629
+            ]
+          }
+        },
+        "industry_CR1": {
+          "negative_slope": {
+            "count": 2999,
+            "rate": 0.9996666666666667,
+            "mc95": [
+              0.9981141811156959,
+              0.9999411560581286
+            ]
+          },
+          "joint_equivalence": {
+            "count": 2,
+            "rate": 0.0006666666666666666,
+            "mc95": [
+              0.00018284308780954395,
+              0.0024276338392159843
+            ]
+          }
+        }
+      },
+      "naive_slope_mean": -0.7661718703093484,
+      "moment_correction": {
+        "valid": 3000,
+        "nonpositive_denominator": 0,
+        "median": -0.8006646604783789,
+        "quantiles_05_95": [
+          -1.0067488497710844,
+          -0.600637137023677
+        ],
+        "inferential_status": "DIAGNOSTIC_ONLY_NO_CONFIDENCE_INTERVAL"
+      }
+    }
+  ],
+  "screening_gate": {
+    "6_industries_OLS": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.05946246705851394
+    },
+    "6_industries_HC3": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.023034743365409404
+    },
+    "6_industries_industry_CR1": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": false,
+      "worst_upper_mc95": 0.06053347502243903
+    },
+    "10_industries_OLS": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": false,
+      "worst_upper_mc95": 0.06302938227129541
+    },
+    "10_industries_HC3": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.028263618480687265
+    },
+    "10_industries_industry_CR1": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.05086230902725372
+    },
+    "16_industries_OLS": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": false,
+      "worst_upper_mc95": 0.06836410001051083
+    },
+    "16_industries_HC3": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.029745821553826875
+    },
+    "16_industries_industry_CR1": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.043644046621022954
+    },
+    "20_industries_OLS": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": false,
+      "worst_upper_mc95": 0.06374172638085879
+    },
+    "20_industries_HC3": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.03048523603604969
+    },
+    "20_industries_industry_CR1": {
+      "tested_nulls": 10,
+      "passes_upper_mc95_at_most_006": true,
+      "worst_upper_mc95": 0.04400626404932994
+    }
+  },
+  "scope": "Aggregate fixed-six-model MA association; does not qualify full H1-H6 sequence, causal identification, judge/human calibration, or latent-coverage equivalence."
+}
