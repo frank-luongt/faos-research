@@ -1,0 +1,868 @@
+{
+  "schema_version": 2,
+  "status": "DRAFT_CONTENT_PILOT",
+  "prepared_on": "2026-11-07",
+  "purpose": "Second authoring snapshot: three banking role variants plus three healthcare tasks; no model outcomes.",
+  "cells": [
+    {
+      "cell_id": "banking-US",
+      "domain": "banking",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal baseline",
+      "scope": "Deposit-taking institutions and eligible personal deposit balances; version-bound deposit-insurance examples.",
+      "exclusions": "Credit underwriting; payment intermediaries; insurance underwriting; investments; joint/trust/retirement-account exceptions.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "banking-VN",
+      "domain": "banking",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Deposit-taking institutions and eligible personal deposit balances; version-bound deposit-insurance examples.",
+      "exclusions": "Credit underwriting; payment intermediaries; insurance underwriting; investments; joint/trust/retirement-account exceptions.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "banking-SG",
+      "domain": "banking",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Deposit-taking institutions and eligible personal deposit balances; version-bound deposit-insurance examples.",
+      "exclusions": "Credit underwriting; payment intermediaries; insurance underwriting; investments; joint/trust/retirement-account exceptions.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "insurance-US",
+      "domain": "insurance",
+      "jurisdiction": "US",
+      "subjurisdiction": "New York proposed; product and regulator applicability still require review",
+      "scope": "Insurance undertaking operations; choose product and contract type per item.",
+      "exclusions": "Deposit insurance belongs to banking; provider clinical administration belongs to healthcare; exclude securities and pensions unless explicitly scoped.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "insurance-VN",
+      "domain": "insurance",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Insurance undertaking operations; choose product and contract type per item.",
+      "exclusions": "Deposit insurance belongs to banking; provider clinical administration belongs to healthcare; exclude securities and pensions unless explicitly scoped.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "insurance-SG",
+      "domain": "insurance",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Insurance undertaking operations; choose product and contract type per item.",
+      "exclusions": "Deposit insurance belongs to banking; provider clinical administration belongs to healthcare; exclude securities and pensions unless explicitly scoped.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "healthcare-US",
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal provider baseline; add named state only when a task requires it",
+      "scope": "Licensed healthcare providers: administrative records, patient access and provider obligations.",
+      "exclusions": "Payer coverage decisions; clinical diagnosis/treatment; general privacy tasks with no provider-specific facts.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "healthcare-VN",
+      "domain": "healthcare",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Licensed healthcare providers: administrative records, patient access and provider obligations.",
+      "exclusions": "Payer coverage decisions; clinical diagnosis/treatment; general privacy tasks with no provider-specific facts.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "healthcare-SG",
+      "domain": "healthcare",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Private healthcare providers subject to PDPA; access-request administration. Public agencies excluded from this initial task.",
+      "exclusions": "Payer coverage decisions; clinical diagnosis/treatment; general privacy tasks with no provider-specific facts.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "securities-US",
+      "domain": "securities",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal baseline",
+      "scope": "Securities intermediaries: cash-equity order, settlement and client-asset operations; specify venue and actor per item.",
+      "exclusions": "Bank deposits; payment transfers; issuer accounting; derivatives and investment recommendations.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "securities-VN",
+      "domain": "securities",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Securities intermediaries: cash-equity order, settlement and client-asset operations; specify venue and actor per item.",
+      "exclusions": "Bank deposits; payment transfers; issuer accounting; derivatives and investment recommendations.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "securities-SG",
+      "domain": "securities",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Securities intermediaries: cash-equity order, settlement and client-asset operations; specify venue and actor per item.",
+      "exclusions": "Bank deposits; payment transfers; issuer accounting; derivatives and investment recommendations.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "payments-US",
+      "domain": "payments",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal baseline",
+      "scope": "Non-bank payment-service providers: payment execution, safeguarding and operational obligations; specify licence/product per item.",
+      "exclusions": "Deposit-taking; securities trading; insurance; generic banking AML facts duplicated across domains.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "payments-VN",
+      "domain": "payments",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Non-bank payment-service providers: payment execution, safeguarding and operational obligations; specify licence/product per item.",
+      "exclusions": "Deposit-taking; securities trading; insurance; generic banking AML facts duplicated across domains.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "payments-SG",
+      "domain": "payments",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Non-bank payment-service providers: payment execution, safeguarding and operational obligations; specify licence/product per item.",
+      "exclusions": "Deposit-taking; securities trading; insurance; generic banking AML facts duplicated across domains.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "accounting-US",
+      "domain": "accounting",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal/engagement framework; state licensing facts excluded unless a state is named",
+      "scope": "Accounting and external-audit service providers: engagements, professional duties and applicable reporting frameworks.",
+      "exclusions": "Generic company filing deadlines unless the task tests an accounting engagement; legal consulting; general management; securities settlement.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "accounting-VN",
+      "domain": "accounting",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Accounting and external-audit service providers: engagements, professional duties and applicable reporting frameworks.",
+      "exclusions": "Generic company filing deadlines unless the task tests an accounting engagement; legal consulting; general management; securities settlement.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "accounting-SG",
+      "domain": "accounting",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Accounting and external-audit service providers: engagements, professional duties and applicable reporting frameworks.",
+      "exclusions": "Generic company filing deadlines unless the task tests an accounting engagement; legal consulting; general management; securities settlement.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-US-OCC",
+      "authority": "Office of the Comptroller of the Currency",
+      "title": "Are the deposits in my bank insured? What is FDIC insurance?",
+      "url": "https://www2.helpwithmybank.gov/help-topics/bank-accounts/fdic-deposit-insurance/fdic.html",
+      "version": "Last reviewed April 2021; webpage retrieved 2026-11-07",
+      "source_type": "Official regulator explanation",
+      "section": "Body paragraphs on coverage; last-reviewed footer",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-US-OCC.md",
+      "evidence_note_sha256": "6ab84bddfa8863147c011bb83a491208933571a68505ea0d51a0a8343d8c0909",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-VN-GOV",
+      "authority": "Viet Nam Government News",
+      "title": "Nâng hạn mức trả tiền bảo hiểm tiền gửi lên 125 triệu đồng",
+      "url": "https://baochinhphu.vn/nang-han-muc-tra-tien-bao-hiem-tien-gui-len-125-trieu-dong-102302543.htm",
+      "version": "2021-10-21 report on Decision 32/2021/QD-TTg",
+      "source_type": "Official government explanation",
+      "section": "Coverage paragraph and effective-date paragraphs",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-VN-GOV.md",
+      "evidence_note_sha256": "4c037fad6e082c0fc1f88f649249a14b6a423fd31dc355599e2d37bb0611d5b1",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-SG-SDIC",
+      "authority": "Singapore Deposit Insurance Corporation",
+      "title": "Deposit Insurance Scheme consumer guide",
+      "url": "https://www.sdic.org.sg/api/166/SDIC%20consumer%20guide%20English.pdf",
+      "version": "Guide served at the retrieved URL; content reflects SGD 100,000 coverage; publication date not independently established",
+      "source_type": "Scheme administrator consumer guidance",
+      "section": "What does DI cover?; How are you protected?; DI coverage",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-SG-SDIC.md",
+      "evidence_note_sha256": "d0dcc40a81501c5c5fa7fa232310e586ec9d8ff6ad0f02c03ccd727799cec795",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-SG-CIRCULAR",
+      "authority": "Singapore Deposit Insurance Corporation",
+      "title": "Amendments to SDIC DI Rules, Circular-01/2024",
+      "url": "https://www.sdic.org.sg/api/154/012024%20Circular%2001%20Amendments%20to%20SDIC%20DI%20Rules.pdf",
+      "version": "3 January 2024, Circular-01/2024",
+      "source_type": "Scheme administrator circular",
+      "section": "Opening paragraph",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-SG-CIRCULAR.md",
+      "evidence_note_sha256": "a3696c8337f67452c40c762636425a1ac3bff36db238bc5a459dd7c1cfdd248b",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-US-HHS-ACCESS",
+      "authority": "US Department of Health and Human Services",
+      "title": "How timely must a covered entity be in responding to individuals’ requests for access to their PHI?",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/faq/how-timely-must-a-covered-entity-be/index.html",
+      "version": "HHS FAQ as retrieved 2026-11-07, citing 45 CFR 164.524(b)(2); publication/revision date not established",
+      "source_type": "Official regulator guidance",
+      "section": "Opening answer; business-associate paragraph",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-US-HHS-ACCESS.md",
+      "evidence_note_sha256": "57fdcb5c5a0f1406fbd4e6ec1ec28d0f78125c0b61eae6f6013b2cd52337120a",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-SG-PDPC-HEALTH",
+      "authority": "Singapore Personal Data Protection Commission",
+      "title": "Advisory Guidelines for the Healthcare Sector",
+      "url": "https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/advisory-guidelines-for-the-healthcare-sector-sep-2023.pdf",
+      "version": "Revised 20 September 2023",
+      "source_type": "Official regulator sector guidance",
+      "section": "Access-request example, printed pages 20–21; Other matters relating to an access request",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-SG-PDPC-HEALTH.md",
+      "evidence_note_sha256": "a38af4f12b2169ec01fe920d144d79785fc04aa8686bbb6804497863df69d26f",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-VN-GOV-HEALTH",
+      "authority": "Viet Nam Government policy portal",
+      "title": "Toàn văn Luật 15/2023/QH15 khám bệnh, chữa bệnh",
+      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-15-2023-qh15-kham-benh-chua-benh-119231127164453959.htm",
+      "version": "Law 15/2023/QH15 dated 9 January 2023, text reproduced on government portal",
+      "source_type": "Official government reproduction of legislation",
+      "section": "Article 69(4)(d) and (5); Article 120(1)",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-VN-GOV-HEALTH.md",
+      "evidence_note_sha256": "7cf121e97a4ea50f32f6c1906cf9a21737aaa28d91036db638a09fddf7b3d6b9",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-ONET-CSR",
+      "authority": "O*NET OnLine",
+      "title": "Job Duties Custom List 43-4051.00 — Customer Service Representatives",
+      "url": "https://www.onetonline.org/search/task/choose/43-4051.00",
+      "version": "Occupational task list retrieved 2026-11-07; revision date not established",
+      "source_type": "US occupational information; not banking regulation",
+      "section": "Tasks: customer communication, interaction records, unresolved grievances",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-ONET-CSR.md",
+      "evidence_note_sha256": "b39b5fa61dd1d7a1b9c22e54dedf926d11f997cbc6e858e8869661753a3c10c5",
+      "archive_sha256": null,
+      "current_law_verified": false
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "BANK-US-DI-CAP-001",
+      "cell_id": "banking-US",
+      "source_ids": [
+        "SRC-US-OCC"
+      ],
+      "version_scope": "OCC explanation last reviewed April 2021; source-bound exercise, not a current-law assertion.",
+      "effective_from": null,
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "One depositor, one FDIC-insured bank, same single-owner category; eligible deposits, no beneficiaries or other ownership categories.",
+      "reference_fact": "USD 250,000 ceiling for the stipulated aggregation unit; apply once to the combined eligible balance.",
+      "cap": 250000,
+      "currency": "USD",
+      "allowed_use": "task",
+      "shared_fact_family": "deposit-insurance-aggregation-and-cap",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    },
+    {
+      "fact_id": "BANK-VN-DI-CAP-001",
+      "cell_id": "banking-VN",
+      "source_ids": [
+        "SRC-VN-GOV"
+      ],
+      "version_scope": "Decision 32/2021/QD-TTg as described in the 21 October 2021 government report; exclude transitional obligations predating 12 December 2021.",
+      "effective_from": "2021-12-12",
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "One insured individual, one participating institution; both deposits are stipulated eligible for deposit insurance.",
+      "reference_fact": "VND 125,000,000 ceiling for the stipulated aggregation unit; apply once to the combined eligible balance.",
+      "cap": 125000000,
+      "currency": "VND",
+      "allowed_use": "task",
+      "shared_fact_family": "deposit-insurance-aggregation-and-cap",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    },
+    {
+      "fact_id": "BANK-SG-DI-CAP-001",
+      "cell_id": "banking-SG",
+      "source_ids": [
+        "SRC-SG-SDIC",
+        "SRC-SG-CIRCULAR"
+      ],
+      "version_scope": "SDIC consumer guide plus Circular-01/2024 coverage increase effective 1 April 2024; no claim about later amendments.",
+      "effective_from": "2024-04-01",
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "One non-bank individual, one DI scheme member; eligible Singapore-dollar personal savings and fixed deposits.",
+      "reference_fact": "SGD 100,000 ceiling for the stipulated aggregation unit; apply once to the combined eligible balance.",
+      "cap": 100000,
+      "currency": "SGD",
+      "allowed_use": "task",
+      "shared_fact_family": "deposit-insurance-aggregation-and-cap",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    },
+    {
+      "fact_id": "HEALTH-US-ACCESS-001",
+      "cell_id": "healthcare-US",
+      "source_ids": [
+        "SRC-US-HHS-ACCESS"
+      ],
+      "version_scope": "HHS FAQ retrieved 2026-11-07 citing 45 CFR 164.524(b)(2); evaluate only its federal guidance.",
+      "effective_from": null,
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "HIPAA-covered provider handling an adult patient’s own access request for an eligible designated record set. Identity and access eligibility are stipulated; no denial ground or special state rule is in scope.",
+      "reference_fact": "The provider receipt anchors the timeline; forwarding does not reset it. Initial action is due within 30 calendar days. If unable to act in time, an additional period no longer than 30 days requires timely written reasons and a completion date. Silent waiting until day 45 is not justified by vendor delay.",
+      "allowed_use": "task",
+      "shared_fact_family": "patient-record-access-administration",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    },
+    {
+      "fact_id": "HEALTH-SG-ACCESS-001",
+      "cell_id": "healthcare-SG",
+      "source_ids": [
+        "SRC-SG-PDPC-HEALTH"
+      ],
+      "version_scope": "PDPC Healthcare Sector Guidelines revised 20 September 2023, access-request example on printed pages 20–21.",
+      "effective_from": null,
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "Private clinic subject to the PDPA handling an adult patient’s own data-access request; identity and access entitlement are stipulated, and no exception applies.",
+      "reference_fact": "Respond as soon as reasonably possible. If unable to respond within 30 days, provide written notification within that period. The notice states when the clinic can respond, at the soonest possible time. The cited passage does not grant an automatic extra 30 days or establish a universal day-60 deadline.",
+      "allowed_use": "task",
+      "shared_fact_family": "patient-record-access-administration",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    },
+    {
+      "fact_id": "HEALTH-VN-ACCESS-001",
+      "cell_id": "healthcare-VN",
+      "source_ids": [
+        "SRC-VN-GOV-HEALTH"
+      ],
+      "version_scope": "Law 15/2023/QH15, Article 69(4)(d) and (5), as reproduced on the government portal; not a consolidated current-law claim.",
+      "effective_from": "2024-01-01",
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "Medical examination/treatment facility holding a competent adult patient’s own completed-treatment record already transferred to archive; verified identity, written request, no representative or special restriction.",
+      "reference_fact": "The selected archived-record provision supports the patient’s written request to inspect, copy, take notes and receive a summary. The cited use restrictions require confidentiality and the stated purpose. Archival status alone does not justify the proposed blanket refusal under this provision. No numeric response deadline is established by the selected clauses; check other applicable rules before asserting one.",
+      "allowed_use": "task",
+      "shared_fact_family": "patient-record-access-administration",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    }
+  ],
+  "tasks": [
+    {
+      "item_id": "BANK-US-TASK-002",
+      "cell_id": "banking-US",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "BANK-US-DI-CAP-001"
+      ],
+      "template_family": "deposit-cap-two-accounts",
+      "language": "en",
+      "version_scope": "OCC explanation last reviewed April 2021; source-bound exercise, not a current-law assertion.",
+      "prompt": "Use the source version specified here: OCC explanation last reviewed April 2021; source-bound exercise, not a current-law assertion. One depositor, one FDIC-insured bank, same single-owner category; eligible deposits, no beneficiaries or other ownership categories. Principal and accrued interest are already included in the supplied balances. Two eligible balances are USD 180,000 and USD 120,000. State the applicable coverage cap and aggregation unit; calculate the combined eligible balance, the amount covered by deposit insurance, and the amount above that cap. Explain whether opening two accounts at this same institution creates two caps. Treat this as a version-bound research exercise. The customer still disputes the institution’s explanation after receiving the calculation. Provide your customer reply and internal handling note under the common scenario policy.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology reference set."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit cap and derived balance references support candidate metric scoring; denominator policy remains unresolved."
+        },
+        "RC": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "Arithmetic exercise; full regulatory-compliance rubric and legal applicability review absent."
+        },
+        "RS": {
+          "eligible": true,
+          "rubric_id": "RS-three-dimension-anchored-candidate-v1",
+          "reason": "Explicit fictional policy and role anchors; candidate only, not independently validated professional behavior."
+        }
+      },
+      "reference_keys": {
+        "MA": {
+          "currency": "USD",
+          "cap": 250000,
+          "combined_eligible_balance": 300000,
+          "covered_amount": 250000,
+          "amount_above_cap": 50000,
+          "assessment": "Aggregate the two balances before applying one cap. An amount above the insurance cap is not a prediction of ultimate recovery or loss.",
+          "derivation": "total = balance_1 + balance_2; covered = min(total, cap); above_cap = max(total - cap, 0).",
+          "inputs": [
+            180000,
+            120000
+          ]
+        },
+        "RS": {
+          "profile_id": "BANK-DEPOSIT-SERVICE-001",
+          "policy_id": "BANK-SERVICE-SCENARIO-001"
+        }
+      },
+      "rubric_limitations": "MA remains response-reference precision; required-answer completeness is separate. RS anchors operationalize a fictional assigned role and do not establish real-world role validity.",
+      "primary_ma_rs_eligible": true,
+      "supersedes_item_id": "BANK-US-TASK-001",
+      "common_context": "Fictional institution policy for this exercise: you are a deposit-service case officer. Draft a customer reply and an internal case note. Check the stated account scope, document the calculation and the customer concern, and route any unresolved disagreement to the deposit-operations specialist. You may explain the cited insurance rules but cannot authorize an insurer payout or promise recovery. Service review tracks case-note completeness and unresolved-case follow-through; no numeric SLA is stipulated. Use plain, respectful language and separate confirmed facts from matters needing specialist review.",
+      "scenario_policy_id": "BANK-SERVICE-SCENARIO-001",
+      "role_profile_id": "BANK-DEPOSIT-SERVICE-001",
+      "required_numeric_ids": [
+        "cap",
+        "combined_eligible_balance",
+        "covered_amount",
+        "amount_above_cap"
+      ]
+    },
+    {
+      "item_id": "BANK-VN-TASK-002",
+      "cell_id": "banking-VN",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "BANK-VN-DI-CAP-001"
+      ],
+      "template_family": "deposit-cap-two-accounts",
+      "language": "en",
+      "version_scope": "Decision 32/2021/QD-TTg as described in the 21 October 2021 government report; exclude transitional obligations predating 12 December 2021.",
+      "prompt": "Use the source version specified here: Decision 32/2021/QD-TTg as described in the 21 October 2021 government report; exclude transitional obligations predating 12 December 2021. One insured individual, one participating institution; both deposits are stipulated eligible for deposit insurance. Principal and accrued interest are already included; no pre-effective-date payment obligation. Two eligible balances are VND 90,000,000 and VND 60,000,000. State the applicable coverage cap and aggregation unit; calculate the combined eligible balance, the amount covered by deposit insurance, and the amount above that cap. Explain whether opening two accounts at this same institution creates two caps. Treat this as a version-bound research exercise. The customer still disputes the institution’s explanation after receiving the calculation. Provide your customer reply and internal handling note under the common scenario policy.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology reference set."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit cap and derived balance references support candidate metric scoring; denominator policy remains unresolved."
+        },
+        "RC": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "Arithmetic exercise; full regulatory-compliance rubric and legal applicability review absent."
+        },
+        "RS": {
+          "eligible": true,
+          "rubric_id": "RS-three-dimension-anchored-candidate-v1",
+          "reason": "Explicit fictional policy and role anchors; candidate only, not independently validated professional behavior."
+        }
+      },
+      "reference_keys": {
+        "MA": {
+          "currency": "VND",
+          "cap": 125000000,
+          "combined_eligible_balance": 150000000,
+          "covered_amount": 125000000,
+          "amount_above_cap": 25000000,
+          "assessment": "Aggregate the two balances before applying one cap. An amount above the insurance cap is not a prediction of ultimate recovery or loss.",
+          "derivation": "total = balance_1 + balance_2; covered = min(total, cap); above_cap = max(total - cap, 0).",
+          "inputs": [
+            90000000,
+            60000000
+          ]
+        },
+        "RS": {
+          "profile_id": "BANK-DEPOSIT-SERVICE-001",
+          "policy_id": "BANK-SERVICE-SCENARIO-001"
+        }
+      },
+      "rubric_limitations": "MA remains response-reference precision; required-answer completeness is separate. RS anchors operationalize a fictional assigned role and do not establish real-world role validity.",
+      "primary_ma_rs_eligible": true,
+      "supersedes_item_id": "BANK-VN-TASK-001",
+      "common_context": "Fictional institution policy for this exercise: you are a deposit-service case officer. Draft a customer reply and an internal case note. Check the stated account scope, document the calculation and the customer concern, and route any unresolved disagreement to the deposit-operations specialist. You may explain the cited insurance rules but cannot authorize an insurer payout or promise recovery. Service review tracks case-note completeness and unresolved-case follow-through; no numeric SLA is stipulated. Use plain, respectful language and separate confirmed facts from matters needing specialist review.",
+      "scenario_policy_id": "BANK-SERVICE-SCENARIO-001",
+      "role_profile_id": "BANK-DEPOSIT-SERVICE-001",
+      "required_numeric_ids": [
+        "cap",
+        "combined_eligible_balance",
+        "covered_amount",
+        "amount_above_cap"
+      ]
+    },
+    {
+      "item_id": "BANK-SG-TASK-002",
+      "cell_id": "banking-SG",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "BANK-SG-DI-CAP-001"
+      ],
+      "template_family": "deposit-cap-two-accounts",
+      "language": "en",
+      "version_scope": "SDIC consumer guide plus Circular-01/2024 coverage increase effective 1 April 2024; no claim about later amendments.",
+      "prompt": "Use the source version specified here: SDIC consumer guide plus Circular-01/2024 coverage increase effective 1 April 2024; no claim about later amendments. One non-bank individual, one DI scheme member; eligible Singapore-dollar personal savings and fixed deposits. Balances include all relevant amounts; exclude CPF, SRS, joint, trust and sole-proprietorship accounts. Two eligible balances are SGD 70,000 and SGD 50,000. State the applicable coverage cap and aggregation unit; calculate the combined eligible balance, the amount covered by deposit insurance, and the amount above that cap. Explain whether opening two accounts at this same institution creates two caps. Treat this as a version-bound research exercise. The customer still disputes the institution’s explanation after receiving the calculation. Provide your customer reply and internal handling note under the common scenario policy.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology reference set."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit cap and derived balance references support candidate metric scoring; denominator policy remains unresolved."
+        },
+        "RC": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "Arithmetic exercise; full regulatory-compliance rubric and legal applicability review absent."
+        },
+        "RS": {
+          "eligible": true,
+          "rubric_id": "RS-three-dimension-anchored-candidate-v1",
+          "reason": "Explicit fictional policy and role anchors; candidate only, not independently validated professional behavior."
+        }
+      },
+      "reference_keys": {
+        "MA": {
+          "currency": "SGD",
+          "cap": 100000,
+          "combined_eligible_balance": 120000,
+          "covered_amount": 100000,
+          "amount_above_cap": 20000,
+          "assessment": "Aggregate the two balances before applying one cap. An amount above the insurance cap is not a prediction of ultimate recovery or loss.",
+          "derivation": "total = balance_1 + balance_2; covered = min(total, cap); above_cap = max(total - cap, 0).",
+          "inputs": [
+            70000,
+            50000
+          ]
+        },
+        "RS": {
+          "profile_id": "BANK-DEPOSIT-SERVICE-001",
+          "policy_id": "BANK-SERVICE-SCENARIO-001"
+        }
+      },
+      "rubric_limitations": "MA remains response-reference precision; required-answer completeness is separate. RS anchors operationalize a fictional assigned role and do not establish real-world role validity.",
+      "primary_ma_rs_eligible": true,
+      "supersedes_item_id": "BANK-SG-TASK-001",
+      "common_context": "Fictional institution policy for this exercise: you are a deposit-service case officer. Draft a customer reply and an internal case note. Check the stated account scope, document the calculation and the customer concern, and route any unresolved disagreement to the deposit-operations specialist. You may explain the cited insurance rules but cannot authorize an insurer payout or promise recovery. Service review tracks case-note completeness and unresolved-case follow-through; no numeric SLA is stipulated. Use plain, respectful language and separate confirmed facts from matters needing specialist review.",
+      "scenario_policy_id": "BANK-SERVICE-SCENARIO-001",
+      "role_profile_id": "BANK-DEPOSIT-SERVICE-001",
+      "required_numeric_ids": [
+        "cap",
+        "combined_eligible_balance",
+        "covered_amount",
+        "amount_above_cap"
+      ]
+    },
+    {
+      "item_id": "HEALTH-US-TASK-001",
+      "cell_id": "healthcare-US",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "HEALTH-US-ACCESS-001"
+      ],
+      "template_family": "patient-record-access-administration",
+      "language": "en",
+      "version_scope": "HHS FAQ retrieved 2026-11-07 citing 45 CFR 164.524(b)(2); evaluate only its federal guidance.",
+      "prompt": "Source-bound exercise: HHS FAQ retrieved 2026-11-07 citing 45 CFR 164.524(b)(2); evaluate only its federal guidance. HIPAA-covered provider handling an adult patient’s own access request for an eligible designated record set. Identity and access eligibility are stipulated; no denial ground or special state rule is in scope. The request was received by the provider and 25 calendar days have elapsed. Its records vendor says the clock starts only when the vendor receives the forwarded request, and proposes waiting silently until day 45. Under the specified guidance, assess this proposal, give the initial time allowance and maximum additional allowance, and describe what a valid delay notice needs. Do not calculate a calendar date.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology rubric."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit source-bound deadline references."
+        },
+        "RC": {
+          "eligible": true,
+          "rubric_id": "legacy-RC-reference-precision-candidate",
+          "reason": "Explicit source-bound requirements support candidate regulatory-reference precision."
+        },
+        "RS": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No validated provider-administration role profile supplied."
+        }
+      },
+      "reference_keys": {
+        "RC": {
+          "source_ids": [
+            "SRC-US-HHS-ACCESS"
+          ],
+          "requirements": [
+            "The provider receipt anchors the timeline; forwarding does not reset it.",
+            "Initial action is due within 30 calendar days.",
+            "If unable to act in time, an additional period no longer than 30 days requires timely written reasons and a completion date.",
+            "Silent waiting until day 45 is not justified by vendor delay."
+          ],
+          "unsupported_deadline_is_error": true
+        },
+        "MA": {
+          "initial_calendar_days": 30,
+          "maximum_additional_calendar_days": 30
+        }
+      },
+      "required_numeric_ids": [
+        "initial_calendar_days",
+        "maximum_additional_calendar_days"
+      ],
+      "primary_ma_rs_eligible": false,
+      "rubric_limitations": "Source-bound regulatory-reference precision only; no demonstration of complete legal advice, task equivalence or current-law compliance."
+    },
+    {
+      "item_id": "HEALTH-SG-TASK-001",
+      "cell_id": "healthcare-SG",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "HEALTH-SG-ACCESS-001"
+      ],
+      "template_family": "patient-record-access-administration",
+      "language": "en",
+      "version_scope": "PDPC Healthcare Sector Guidelines revised 20 September 2023, access-request example on printed pages 20–21.",
+      "prompt": "Source-bound exercise: PDPC Healthcare Sector Guidelines revised 20 September 2023, access-request example on printed pages 20–21. Private clinic subject to the PDPA handling an adult patient’s own data-access request; identity and access entitlement are stipulated, and no exception applies. At 25 days after the request, the clinic knows it cannot respond within 30 days. A colleague proposes silence until day 60, claiming an automatic extra 30 days. Assess that proposal, state when a written update is required and what it should communicate, and distinguish a notification trigger from a universal deadline for completing access.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology rubric."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit source-bound deadline references."
+        },
+        "RC": {
+          "eligible": true,
+          "rubric_id": "legacy-RC-reference-precision-candidate",
+          "reason": "Explicit source-bound requirements support candidate regulatory-reference precision."
+        },
+        "RS": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No validated provider-administration role profile supplied."
+        }
+      },
+      "reference_keys": {
+        "RC": {
+          "source_ids": [
+            "SRC-SG-PDPC-HEALTH"
+          ],
+          "requirements": [
+            "Respond as soon as reasonably possible.",
+            "If unable to respond within 30 days, provide written notification within that period.",
+            "The notice states when the clinic can respond, at the soonest possible time.",
+            "The cited passage does not grant an automatic extra 30 days or establish a universal day-60 deadline."
+          ],
+          "unsupported_deadline_is_error": true
+        },
+        "MA": {
+          "written_update_trigger_days": 30
+        }
+      },
+      "required_numeric_ids": [
+        "written_update_trigger_days"
+      ],
+      "primary_ma_rs_eligible": false,
+      "rubric_limitations": "Source-bound regulatory-reference precision only; no demonstration of complete legal advice, task equivalence or current-law compliance."
+    },
+    {
+      "item_id": "HEALTH-VN-TASK-001",
+      "cell_id": "healthcare-VN",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "HEALTH-VN-ACCESS-001"
+      ],
+      "template_family": "patient-record-access-administration",
+      "language": "en",
+      "version_scope": "Law 15/2023/QH15, Article 69(4)(d) and (5), as reproduced on the government portal; not a consolidated current-law claim.",
+      "prompt": "Source-bound exercise: Law 15/2023/QH15, Article 69(4)(d) and (5), as reproduced on the government portal; not a consolidated current-law claim. Medical examination/treatment facility holding a competent adult patient’s own completed-treatment record already transferred to archive; verified identity, written request, no representative or special restriction. The patient requests to inspect, copy and take notes from the archived record and obtain a summary. Staff propose refusing all access solely because the file is archived and importing a 30-day deadline from another country. Assess the proposal under the selected provisions. State the supported access rights and use restrictions, and whether those provisions establish a numeric response deadline. Do not infer that other Vietnamese rules contain no deadline.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology rubric."
+        },
+        "MA": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "Selected clauses provide no numeric deadline; do not invent a MA denominator."
+        },
+        "RC": {
+          "eligible": true,
+          "rubric_id": "legacy-RC-reference-precision-candidate",
+          "reason": "Explicit source-bound requirements support candidate regulatory-reference precision."
+        },
+        "RS": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No validated provider-administration role profile supplied."
+        }
+      },
+      "reference_keys": {
+        "RC": {
+          "source_ids": [
+            "SRC-VN-GOV-HEALTH"
+          ],
+          "requirements": [
+            "The selected archived-record provision supports the patient’s written request to inspect, copy, take notes and receive a summary.",
+            "The cited use restrictions require confidentiality and the stated purpose.",
+            "Archival status alone does not justify the proposed blanket refusal under this provision.",
+            "No numeric response deadline is established by the selected clauses; check other applicable rules before asserting one."
+          ],
+          "unsupported_deadline_is_error": true
+        }
+      },
+      "required_numeric_ids": [],
+      "primary_ma_rs_eligible": false,
+      "rubric_limitations": "Source-bound regulatory-reference precision only; no demonstration of complete legal advice, task equivalence or current-law compliance."
+    }
+  ],
+  "probes": [],
+  "parent_corpus_sha256": "ce3d4f7b739637bea437cac0b30b10c05650cc33a417377caeec75029f65b7a6",
+  "scenario_policies": [
+    {
+      "policy_id": "BANK-SERVICE-SCENARIO-001",
+      "status": "RESEARCHER_AUTHORED_FICTIONAL_POLICY",
+      "scope": "Same stipulated policy for all three country variants; not a claim about any real institution or legal duty.",
+      "common_context": "Fictional institution policy for this exercise: you are a deposit-service case officer. Draft a customer reply and an internal case note. Check the stated account scope, document the calculation and the customer concern, and route any unresolved disagreement to the deposit-operations specialist. You may explain the cited insurance rules but cannot authorize an insurer payout or promise recovery. Service review tracks case-note completeness and unresolved-case follow-through; no numeric SLA is stipulated. Use plain, respectful language and separate confirmed facts from matters needing specialist review.",
+      "condition_visibility": "IDENTICAL_COMMON_CONTEXT_ALL_ARMS",
+      "kpis": [
+        "case-note completeness",
+        "unresolved-case follow-through"
+      ],
+      "numeric_targets": null,
+      "provenance": "Agent-authored scenario policy, informed only at the general-duty level by SRC-ONET-CSR."
+    }
+  ],
+  "role_profiles": [
+    {
+      "profile_id": "BANK-DEPOSIT-SERVICE-001",
+      "role": "Deposit-service case officer in the fictional exercise",
+      "source_ids": [
+        "SRC-ONET-CSR"
+      ],
+      "policy_id": "BANK-SERVICE-SCENARIO-001",
+      "provenance": "General communication, records and referral duties have occupational support; banking adaptation, KPIs and anchors are researcher-authored.",
+      "external_validity": "UNVALIDATED_ACROSS_JURISDICTIONS",
+      "dimensions": {
+        "decision_pattern": {
+          "zero": "No usable case decision process, or claims authority to authorize insurer payment.",
+          "half": "Provides a relevant case process but omits documentation or unresolved-disagreement referral.",
+          "one": "Uses the stated scope, records the case and calculation, and routes the explicitly unresolved disagreement without claiming payout authority."
+        },
+        "metric_alignment": {
+          "zero": "Neither stipulated service measure is operationalized, or replaces them with sales targets.",
+          "half": "Operationalizes only case-note completeness or only unresolved-case follow-through.",
+          "one": "Makes both measures actionable in the internal note; no invented numeric SLA is required."
+        },
+        "communication_style": {
+          "zero": "Response is hostile, promises guaranteed recovery, or has no usable customer communication.",
+          "half": "Generally respectful but fails to explain key terms or distinguish confirmed facts from pending review.",
+          "one": "Uses clear, respectful customer language with explained terms and a clear distinction between facts and pending review."
+        }
+      },
+      "scoring": "Mean of three dimension ratings in {0, 0.5, 1}; task-specific candidate anchors for the legacy RS dimensions.",
+      "separation_from_ma": "RS checks workflow and communication; it does not award a second numeric-accuracy point. Avoid double counting the cap calculation as a KPI.",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW"
+    }
+  ]
+}

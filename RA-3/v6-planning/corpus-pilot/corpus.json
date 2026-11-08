@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "status": "DRAFT_CONTENT_PILOT",
+  "prepared_on": "2026-11-07",
+  "purpose": "Authoring and offline contract validation only; no model outputs or human validation.",
+  "cells": [
+    {
+      "cell_id": "banking-US",
+      "domain": "banking",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal baseline",
+      "scope": "Deposit-taking institutions and eligible personal deposit balances; version-bound deposit-insurance examples.",
+      "exclusions": "Credit underwriting; payment intermediaries; insurance underwriting; investments; joint/trust/retirement-account exceptions.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "banking-VN",
+      "domain": "banking",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Deposit-taking institutions and eligible personal deposit balances; version-bound deposit-insurance examples.",
+      "exclusions": "Credit underwriting; payment intermediaries; insurance underwriting; investments; joint/trust/retirement-account exceptions.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "banking-SG",
+      "domain": "banking",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Deposit-taking institutions and eligible personal deposit balances; version-bound deposit-insurance examples.",
+      "exclusions": "Credit underwriting; payment intermediaries; insurance underwriting; investments; joint/trust/retirement-account exceptions.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "STARTER_FACT_AND_TASK",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "insurance-US",
+      "domain": "insurance",
+      "jurisdiction": "US",
+      "subjurisdiction": "New York proposed; product and regulator applicability still require review",
+      "scope": "Insurance undertaking operations; choose product and contract type per item.",
+      "exclusions": "Deposit insurance belongs to banking; provider clinical administration belongs to healthcare; exclude securities and pensions unless explicitly scoped.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "insurance-VN",
+      "domain": "insurance",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Insurance undertaking operations; choose product and contract type per item.",
+      "exclusions": "Deposit insurance belongs to banking; provider clinical administration belongs to healthcare; exclude securities and pensions unless explicitly scoped.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "insurance-SG",
+      "domain": "insurance",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Insurance undertaking operations; choose product and contract type per item.",
+      "exclusions": "Deposit insurance belongs to banking; provider clinical administration belongs to healthcare; exclude securities and pensions unless explicitly scoped.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "healthcare-US",
+      "domain": "healthcare",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal provider baseline; add named state only when a task requires it",
+      "scope": "Licensed healthcare providers: administrative records, patient access and provider obligations.",
+      "exclusions": "Payer coverage decisions; clinical diagnosis/treatment; general privacy tasks with no provider-specific facts.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "healthcare-VN",
+      "domain": "healthcare",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Licensed healthcare providers: administrative records, patient access and provider obligations.",
+      "exclusions": "Payer coverage decisions; clinical diagnosis/treatment; general privacy tasks with no provider-specific facts.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "healthcare-SG",
+      "domain": "healthcare",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Licensed healthcare providers: administrative records, patient access and provider obligations.",
+      "exclusions": "Payer coverage decisions; clinical diagnosis/treatment; general privacy tasks with no provider-specific facts.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "securities-US",
+      "domain": "securities",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal baseline",
+      "scope": "Securities intermediaries: cash-equity order, settlement and client-asset operations; specify venue and actor per item.",
+      "exclusions": "Bank deposits; payment transfers; issuer accounting; derivatives and investment recommendations.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "securities-VN",
+      "domain": "securities",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Securities intermediaries: cash-equity order, settlement and client-asset operations; specify venue and actor per item.",
+      "exclusions": "Bank deposits; payment transfers; issuer accounting; derivatives and investment recommendations.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "securities-SG",
+      "domain": "securities",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Securities intermediaries: cash-equity order, settlement and client-asset operations; specify venue and actor per item.",
+      "exclusions": "Bank deposits; payment transfers; issuer accounting; derivatives and investment recommendations.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "payments-US",
+      "domain": "payments",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal baseline",
+      "scope": "Non-bank payment-service providers: payment execution, safeguarding and operational obligations; specify licence/product per item.",
+      "exclusions": "Deposit-taking; securities trading; insurance; generic banking AML facts duplicated across domains.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "payments-VN",
+      "domain": "payments",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Non-bank payment-service providers: payment execution, safeguarding and operational obligations; specify licence/product per item.",
+      "exclusions": "Deposit-taking; securities trading; insurance; generic banking AML facts duplicated across domains.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "payments-SG",
+      "domain": "payments",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Non-bank payment-service providers: payment execution, safeguarding and operational obligations; specify licence/product per item.",
+      "exclusions": "Deposit-taking; securities trading; insurance; generic banking AML facts duplicated across domains.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "accounting-US",
+      "domain": "accounting",
+      "jurisdiction": "US",
+      "subjurisdiction": "Federal/engagement framework; state licensing facts excluded unless a state is named",
+      "scope": "Accounting and external-audit service providers: engagements, professional duties and applicable reporting frameworks.",
+      "exclusions": "Generic company filing deadlines unless the task tests an accounting engagement; legal consulting; general management; securities settlement.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "accounting-VN",
+      "domain": "accounting",
+      "jurisdiction": "VN",
+      "subjurisdiction": "National baseline",
+      "scope": "Accounting and external-audit service providers: engagements, professional duties and applicable reporting frameworks.",
+      "exclusions": "Generic company filing deadlines unless the task tests an accounting engagement; legal consulting; general management; securities settlement.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    },
+    {
+      "cell_id": "accounting-SG",
+      "domain": "accounting",
+      "jurisdiction": "SG",
+      "subjurisdiction": "National baseline",
+      "scope": "Accounting and external-audit service providers: engagements, professional duties and applicable reporting frameworks.",
+      "exclusions": "Generic company filing deadlines unless the task tests an accounting engagement; legal consulting; general management; securities settlement.",
+      "scope_status": "PROPOSED_PENDING_DOMAIN_REVIEW",
+      "temporal_policy": "Each item pins an instrument or guidance version; no assumption of current law.",
+      "content_status": "SCOPE_ONLY",
+      "cross_domain_dependence": "Tag shared fact families globally; domain labels do not establish independent clusters."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SRC-US-OCC",
+      "authority": "Office of the Comptroller of the Currency",
+      "title": "Are the deposits in my bank insured? What is FDIC insurance?",
+      "url": "https://www2.helpwithmybank.gov/help-topics/bank-accounts/fdic-deposit-insurance/fdic.html",
+      "version": "Last reviewed April 2021; webpage retrieved 2026-11-07",
+      "source_type": "Official regulator explanation",
+      "section": "Body paragraphs on coverage; last-reviewed footer",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-US-OCC.md",
+      "evidence_note_sha256": "6ab84bddfa8863147c011bb83a491208933571a68505ea0d51a0a8343d8c0909",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-VN-GOV",
+      "authority": "Viet Nam Government News",
+      "title": "Nâng hạn mức trả tiền bảo hiểm tiền gửi lên 125 triệu đồng",
+      "url": "https://baochinhphu.vn/nang-han-muc-tra-tien-bao-hiem-tien-gui-len-125-trieu-dong-102302543.htm",
+      "version": "2021-10-21 report on Decision 32/2021/QD-TTg",
+      "source_type": "Official government explanation",
+      "section": "Coverage paragraph and effective-date paragraphs",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-VN-GOV.md",
+      "evidence_note_sha256": "4c037fad6e082c0fc1f88f649249a14b6a423fd31dc355599e2d37bb0611d5b1",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-SG-SDIC",
+      "authority": "Singapore Deposit Insurance Corporation",
+      "title": "Deposit Insurance Scheme consumer guide",
+      "url": "https://www.sdic.org.sg/api/166/SDIC%20consumer%20guide%20English.pdf",
+      "version": "Guide served at the retrieved URL; content reflects SGD 100,000 coverage; publication date not independently established",
+      "source_type": "Scheme administrator consumer guidance",
+      "section": "What does DI cover?; How are you protected?; DI coverage",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-SG-SDIC.md",
+      "evidence_note_sha256": "d0dcc40a81501c5c5fa7fa232310e586ec9d8ff6ad0f02c03ccd727799cec795",
+      "archive_sha256": null,
+      "current_law_verified": false
+    },
+    {
+      "source_id": "SRC-SG-CIRCULAR",
+      "authority": "Singapore Deposit Insurance Corporation",
+      "title": "Amendments to SDIC DI Rules, Circular-01/2024",
+      "url": "https://www.sdic.org.sg/api/154/012024%20Circular%2001%20Amendments%20to%20SDIC%20DI%20Rules.pdf",
+      "version": "3 January 2024, Circular-01/2024",
+      "source_type": "Scheme administrator circular",
+      "section": "Opening paragraph",
+      "retrieved_on": "2026-11-07",
+      "retrieval_status": "WEB_TEXT_RETRIEVED",
+      "evidence_note_path": "evidence/SRC-SG-CIRCULAR.md",
+      "evidence_note_sha256": "a3696c8337f67452c40c762636425a1ac3bff36db238bc5a459dd7c1cfdd248b",
+      "archive_sha256": null,
+      "current_law_verified": false
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "BANK-US-DI-CAP-001",
+      "cell_id": "banking-US",
+      "source_ids": [
+        "SRC-US-OCC"
+      ],
+      "version_scope": "OCC explanation last reviewed April 2021; source-bound exercise, not a current-law assertion.",
+      "effective_from": null,
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "One depositor, one FDIC-insured bank, same single-owner category; eligible deposits, no beneficiaries or other ownership categories.",
+      "reference_fact": "USD 250,000 ceiling for the stipulated aggregation unit; apply once to the combined eligible balance.",
+      "cap": 250000,
+      "currency": "USD",
+      "allowed_use": "task",
+      "shared_fact_family": "deposit-insurance-aggregation-and-cap",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    },
+    {
+      "fact_id": "BANK-VN-DI-CAP-001",
+      "cell_id": "banking-VN",
+      "source_ids": [
+        "SRC-VN-GOV"
+      ],
+      "version_scope": "Decision 32/2021/QD-TTg as described in the 21 October 2021 government report; exclude transitional obligations predating 12 December 2021.",
+      "effective_from": "2021-12-12",
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "One insured individual, one participating institution; both deposits are stipulated eligible for deposit insurance.",
+      "reference_fact": "VND 125,000,000 ceiling for the stipulated aggregation unit; apply once to the combined eligible balance.",
+      "cap": 125000000,
+      "currency": "VND",
+      "allowed_use": "task",
+      "shared_fact_family": "deposit-insurance-aggregation-and-cap",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    },
+    {
+      "fact_id": "BANK-SG-DI-CAP-001",
+      "cell_id": "banking-SG",
+      "source_ids": [
+        "SRC-SG-SDIC",
+        "SRC-SG-CIRCULAR"
+      ],
+      "version_scope": "SDIC consumer guide plus Circular-01/2024 coverage increase effective 1 April 2024; no claim about later amendments.",
+      "effective_from": "2024-04-01",
+      "effective_until": null,
+      "effective_until_status": "NOT_ESTABLISHED",
+      "actor_product_scope": "One non-bank individual, one DI scheme member; eligible Singapore-dollar personal savings and fixed deposits.",
+      "reference_fact": "SGD 100,000 ceiling for the stipulated aggregation unit; apply once to the combined eligible balance.",
+      "cap": 100000,
+      "currency": "SGD",
+      "allowed_use": "task",
+      "shared_fact_family": "deposit-insurance-aggregation-and-cap",
+      "review_disposition": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "reviewers": []
+    }
+  ],
+  "tasks": [
+    {
+      "item_id": "BANK-US-TASK-001",
+      "cell_id": "banking-US",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "BANK-US-DI-CAP-001"
+      ],
+      "template_family": "deposit-cap-two-accounts",
+      "language": "en",
+      "version_scope": "OCC explanation last reviewed April 2021; source-bound exercise, not a current-law assertion.",
+      "prompt": "Use the source version specified here: OCC explanation last reviewed April 2021; source-bound exercise, not a current-law assertion. One depositor, one FDIC-insured bank, same single-owner category; eligible deposits, no beneficiaries or other ownership categories. Principal and accrued interest are already included in the supplied balances. Two eligible balances are USD 180,000 and USD 120,000. State the applicable coverage cap and aggregation unit; calculate the combined eligible balance, the amount covered by deposit insurance, and the amount above that cap. Explain whether opening two accounts at this same institution creates two caps. Treat this as a version-bound research exercise.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology reference set."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit cap and derived balance references support candidate metric scoring; denominator policy remains unresolved."
+        },
+        "RC": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "Arithmetic exercise; full regulatory-compliance rubric and legal applicability review absent."
+        },
+        "RS": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently sourced role, decision-pattern or KPI rubric."
+        }
+      },
+      "reference_keys": {
+        "MA": {
+          "currency": "USD",
+          "cap": 250000,
+          "combined_eligible_balance": 300000,
+          "covered_amount": 250000,
+          "amount_above_cap": 50000,
+          "assessment": "Aggregate the two balances before applying one cap. An amount above the insurance cap is not a prediction of ultimate recovery or loss.",
+          "derivation": "total = balance_1 + balance_2; covered = min(total, cap); above_cap = max(total - cap, 0).",
+          "inputs": [
+            180000,
+            120000
+          ]
+        }
+      },
+      "rubric_limitations": "Legacy MA divides correct references by references made in the response, not by all required answers. Missing requested numbers and a response with no numeric references need a prespecified policy before launch. These candidate references do not change the legacy rubric.",
+      "primary_ma_rs_eligible": false
+    },
+    {
+      "item_id": "BANK-VN-TASK-001",
+      "cell_id": "banking-VN",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "BANK-VN-DI-CAP-001"
+      ],
+      "template_family": "deposit-cap-two-accounts",
+      "language": "en",
+      "version_scope": "Decision 32/2021/QD-TTg as described in the 21 October 2021 government report; exclude transitional obligations predating 12 December 2021.",
+      "prompt": "Use the source version specified here: Decision 32/2021/QD-TTg as described in the 21 October 2021 government report; exclude transitional obligations predating 12 December 2021. One insured individual, one participating institution; both deposits are stipulated eligible for deposit insurance. Principal and accrued interest are already included; no pre-effective-date payment obligation. Two eligible balances are VND 90,000,000 and VND 60,000,000. State the applicable coverage cap and aggregation unit; calculate the combined eligible balance, the amount covered by deposit insurance, and the amount above that cap. Explain whether opening two accounts at this same institution creates two caps. Treat this as a version-bound research exercise.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology reference set."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit cap and derived balance references support candidate metric scoring; denominator policy remains unresolved."
+        },
+        "RC": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "Arithmetic exercise; full regulatory-compliance rubric and legal applicability review absent."
+        },
+        "RS": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently sourced role, decision-pattern or KPI rubric."
+        }
+      },
+      "reference_keys": {
+        "MA": {
+          "currency": "VND",
+          "cap": 125000000,
+          "combined_eligible_balance": 150000000,
+          "covered_amount": 125000000,
+          "amount_above_cap": 25000000,
+          "assessment": "Aggregate the two balances before applying one cap. An amount above the insurance cap is not a prediction of ultimate recovery or loss.",
+          "derivation": "total = balance_1 + balance_2; covered = min(total, cap); above_cap = max(total - cap, 0).",
+          "inputs": [
+            90000000,
+            60000000
+          ]
+        }
+      },
+      "rubric_limitations": "Legacy MA divides correct references by references made in the response, not by all required answers. Missing requested numbers and a response with no numeric references need a prespecified policy before launch. These candidate references do not change the legacy rubric.",
+      "primary_ma_rs_eligible": false
+    },
+    {
+      "item_id": "BANK-SG-TASK-001",
+      "cell_id": "banking-SG",
+      "status": "DRAFT_PENDING_INDEPENDENT_REVIEW",
+      "fact_ids": [
+        "BANK-SG-DI-CAP-001"
+      ],
+      "template_family": "deposit-cap-two-accounts",
+      "language": "en",
+      "version_scope": "SDIC consumer guide plus Circular-01/2024 coverage increase effective 1 April 2024; no claim about later amendments.",
+      "prompt": "Use the source version specified here: SDIC consumer guide plus Circular-01/2024 coverage increase effective 1 April 2024; no claim about later amendments. One non-bank individual, one DI scheme member; eligible Singapore-dollar personal savings and fixed deposits. Balances include all relevant amounts; exclude CPF, SRS, joint, trust and sole-proprietorship accounts. Two eligible balances are SGD 70,000 and SGD 50,000. State the applicable coverage cap and aggregation unit; calculate the combined eligible balance, the amount covered by deposit insurance, and the amount above that cap. Explain whether opening two accounts at this same institution creates two caps. Treat this as a version-bound research exercise.",
+      "metric_eligibility": {
+        "TF": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently specified terminology reference set."
+        },
+        "MA": {
+          "eligible": true,
+          "rubric_id": "legacy-MA-reference-precision-candidate",
+          "reason": "Explicit cap and derived balance references support candidate metric scoring; denominator policy remains unresolved."
+        },
+        "RC": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "Arithmetic exercise; full regulatory-compliance rubric and legal applicability review absent."
+        },
+        "RS": {
+          "eligible": false,
+          "rubric_id": null,
+          "reason": "No independently sourced role, decision-pattern or KPI rubric."
+        }
+      },
+      "reference_keys": {
+        "MA": {
+          "currency": "SGD",
+          "cap": 100000,
+          "combined_eligible_balance": 120000,
+          "covered_amount": 100000,
+          "amount_above_cap": 20000,
+          "assessment": "Aggregate the two balances before applying one cap. An amount above the insurance cap is not a prediction of ultimate recovery or loss.",
+          "derivation": "total = balance_1 + balance_2; covered = min(total, cap); above_cap = max(total - cap, 0).",
+          "inputs": [
+            70000,
+            50000
+          ]
+        }
+      },
+      "rubric_limitations": "Legacy MA divides correct references by references made in the response, not by all required answers. Missing requested numbers and a response with no numeric references need a prespecified policy before launch. These candidate references do not change the legacy rubric.",
+      "primary_ma_rs_eligible": false
+    }
+  ],
+  "probes": []
+}

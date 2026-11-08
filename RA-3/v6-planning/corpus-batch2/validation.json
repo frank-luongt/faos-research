@@ -1,0 +1,15 @@
+{
+  "status": "STRUCTURAL_CHECKS_PASS_NOT_CONTENT_QUALIFICATION",
+  "cells_scoped": 18,
+  "source_records": 8,
+  "draft_facts": 6,
+  "draft_tasks": 6,
+  "draft_probes": 0,
+  "ma_rs_candidate_tasks": 3,
+  "launch_ready_cells": 0,
+  "overlap_check": "NO_PROBES_YET",
+  "revision_count": 3,
+  "role_profiles": 1,
+  "cells_with_tasks": 6,
+  "independently_reviewed_tasks": 0
+}
