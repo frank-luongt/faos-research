@@ -1,0 +1,13 @@
+v5 anchor: baseline 3 countries x 4 industries             cells=12  H3=0.68  H3(Holm)=0.44
+v5 anchor: + 4th country at .60 (e.g. Indonesia)           cells=16  H3=0.79  H3(Holm)=0.55
+v5 anchor: 3 countries x 6 industries                      cells=18  H3=0.76  H3(Holm)=0.69
+v5 anchor: 3 countries x 4 ind, probe 60                   cells=12  H3=0.81  H3(Holm)=0.63
+v5 anchor: 4th country .60 + probe 60                      cells=16  H3=0.89  H3(Holm)=0.78
+v5 anchor: 3 x 6 industries + probe 60                     cells=18  H3=0.90  H3(Holm)=0.86
+half effect: baseline 3 countries x 4 industries           cells=12  H3=0.41  H3(Holm)=0.17
+half effect: + 4th country at .60 (e.g. Indonesia)         cells=16  H3=0.45  H3(Holm)=0.23
+half effect: 3 countries x 6 industries                    cells=18  H3=0.60  H3(Holm)=0.36
+half effect: 3 countries x 4 ind, probe 60                 cells=12  H3=0.54  H3(Holm)=0.27
+half effect: 4th country .60 + probe 60                    cells=16  H3=0.57  H3(Holm)=0.30
+half effect: 3 x 6 industries + probe 60                   cells=18  H3=0.72  H3(Holm)=0.49
+null check: slope 0, VN +.15, 4th country + probe 60       cells=16  H3=0.00  H3(Holm)=0.00

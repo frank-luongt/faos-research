@@ -1,0 +1,89 @@
+{
+  "status": "draft-pin",
+  "note": "Model IDs pinned for the RA-3 v6 study (protocol in Foundation-AgenticOS, research-academic/papers/RA-3-Neurosymbolic-Enterprise-AI/RA-3-V6-STUDY-PROTOCOL-DRAFT-2026-10-31.md). Status becomes 'locked' only when the PI approves the protocol lock; the smoke test must pass first. Prices are OpenRouter base prices in USD per million tokens, read from https://openrouter.ai/api/v1/models/{id}/endpoints on 2026-11-12, and are re-checked at lock.",
+  "retrieved": "2026-11-12",
+  "gateway": "openrouter",
+  "agents": [
+    {
+      "key": "claude-opus-5.5",
+      "openrouter_id": "anthropic/claude-opus-5.5",
+      "type": "frontier",
+      "family": "anthropic",
+      "created_unix": 1790094732,
+      "price_in_per_m": 4.0,
+      "price_out_per_m": 20.0,
+      "provider_order": []
+    },
+    {
+      "key": "gpt-6.1-sol",
+      "openrouter_id": "openai/gpt-6.1-sol",
+      "type": "frontier",
+      "family": "openai",
+      "created_unix": 1790702882,
+      "price_in_per_m": 2.0,
+      "price_out_per_m": 10.0,
+      "provider_order": []
+    },
+    {
+      "key": "gemini-4-argon",
+      "openrouter_id": "google/gemini-4-argon",
+      "type": "frontier",
+      "family": "google",
+      "created_unix": 1791907477,
+      "price_in_per_m": 2.0,
+      "price_out_per_m": 10.0,
+      "provider_order": []
+    },
+    {
+      "key": "kimi-k3.1-pro",
+      "openrouter_id": "moonshotai/kimi-k3.1-pro",
+      "type": "open-weight",
+      "family": "moonshot",
+      "created_unix": 1792778188,
+      "price_in_per_m": 2.0,
+      "price_out_per_m": 10.0,
+      "weights": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "provider_order": [],
+      "pick_note": "Replaces Kimi K3 (moonshotai/kimi-k3, Jul 2026) as the newer snapshot; PI decision 2026-11-12"
+    },
+    {
+      "key": "deepseek-v4-pro-0813",
+      "openrouter_id": "deepseek/deepseek-v4-pro-0813",
+      "type": "open-weight",
+      "family": "deepseek",
+      "created_unix": null,
+      "price_in_per_m": null,
+      "price_out_per_m": null,
+      "weights": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "provider_order": [],
+      "pick_note": "Replaces the Apr 2026 snapshot (deepseek/deepseek-v4-pro = V4 Pro 0423); PI decision 2026-11-12. Price, created time and provider are filled from the smoke test"
+    },
+    {
+      "key": "qwen3.8-2.4t-a95b",
+      "openrouter_id": "qwen/qwen3.8-2.4t-a95b",
+      "type": "open-weight",
+      "family": "qwen",
+      "created_unix": 1786551702,
+      "price_in_per_m": 2.0,
+      "price_out_per_m": 6.0,
+      "provider_order": []
+    }
+  ],
+  "panel_judges": [
+    {"family": "anthropic", "openrouter_id": "anthropic/claude-opus-5.5", "provider_order": []},
+    {"family": "openai", "openrouter_id": "openai/gpt-6.1-sol", "provider_order": []},
+    {"family": "google", "openrouter_id": "google/gemini-4-argon", "provider_order": []}
+  ],
+  "secondary_judge": {
+    "name": "Jev",
+    "openrouter_id": "typesafe/jev-1.14",
+    "price_in_per_m": 0.042,
+    "price_out_per_m": 0.0,
+    "pick_note": "Pinned version, not the ~typesafe/jev-latest alias"
+  },
+  "settle_at_lock": [
+    "Reasoning effort for reasoning models (provider default vs a fixed effort); temperature 0 may be ignored by some reasoning endpoints, so the routed parameters are logged per call",
+    "Provider order per model, from the providers the smoke test reports (empty = OpenRouter default routing)",
+    "Whether provider fallbacks are allowed for open-weight models (default here: allowed, routed provider logged)"
+  ]
+}
