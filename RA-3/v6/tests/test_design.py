@@ -61,6 +61,16 @@ class JudgeRotation(unittest.TestCase):
         self.assertEqual(self.assign, design.assign_judge_pairs(TASKS_BY_CELL, LOCK))
 
 
+class Materials(unittest.TestCase):
+    def test_written_probe_sets_valid(self):
+        import json
+        for path in sorted(design.PROBE_DIR.glob("*.json")):
+            cell = path.stem
+            self.assertIn(cell, design.CELLS)
+            with open(path) as f:
+                self.assertEqual(design.validate_probe(cell, json.load(f)), [])
+
+
 class Prompts(unittest.TestCase):
     def test_c2b_never_exceeds_c3_budget(self):
         for t in design.load_v5_tasks_as_v6():

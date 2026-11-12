@@ -34,6 +34,16 @@ OPENROUTER_API_KEY=... python run_judges.py       # ~4,752 calls
 python coverage.py
 ```
 
+## Pilot cell: accounting_us (draft, awaiting review)
+
+US Accounting is the first cell written in full, as a pattern for the other new cells. It has three parts:
+
+- `../ontology_context/accounting_us.json`: Controller, Chief Audit Executive and Tax Director roles; concepts from ASC 606, 842, 326, 350, 330, 450, 820 and 740; and SOX, PCAOB and SEC rules. Its RAG corpus is about 8,800 characters, so C2b matches C3 to within 41 characters.
+- `pilot/tasks_accounting_us.json`: 10 tasks in v5's mix and schema. They merge into `tasks_v6.json` once reviewed.
+- `probe/accounting_us.json`: 90 multiple-choice items with a seeded, balanced answer key.
+
+The facts were written from the standards and SEC rules as of November 2026. A US accounting expert should check them before lock.
+
 ## Still to build before lock
 
 - **Materials.** These are still to write:

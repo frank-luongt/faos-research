@@ -169,3 +169,23 @@ PROBE_MAX_TOKENS = 512
 
 def call_seed(key: str) -> int:
     return _rng("seed", key).randrange(2**31)
+
+
+def validate_probe(cell: str, items: list[dict]) -> list[str]:
+    """Return problems with one cell's probe set (empty list = valid)."""
+    problems = []
+    if len(items) != PROBE_ITEMS_PER_CELL:
+        problems.append(f"{cell}: {len(items)} items, expected {PROBE_ITEMS_PER_CELL}")
+    ids = [i["id"] for i in items]
+    if len(ids) != len(set(ids)) or not all(i.startswith(f"{cell}_P") for i in ids):
+        problems.append(f"{cell}: item ids must be unique and start with {cell}_P")
+    answers = {}
+    for it in items:
+        if sorted(it["options"]) != ["A", "B", "C", "D"] or it["answer"] not in it["options"]:
+            problems.append(f"{it['id']}: needs options A-D and an answer among them")
+        if len(set(it["options"].values())) != 4:
+            problems.append(f"{it['id']}: duplicate option text")
+        answers[it["answer"]] = answers.get(it["answer"], 0) + 1
+    if answers and max(answers.values()) - min(answers.values()) > 2:
+        problems.append(f"{cell}: answer letters unbalanced {answers}")
+    return problems

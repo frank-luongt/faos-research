@@ -1,0 +1,992 @@
+[
+ {
+  "id": "accounting_us_P001",
+  "question": "Under ASC 606, how is the transaction price allocated to multiple performance obligations?",
+  "options": {
+   "A": "On a relative standalone selling price basis",
+   "B": "Equally across all obligations",
+   "C": "Entirely to the first obligation delivered",
+   "D": "In proportion to each obligation's cost"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P002",
+  "question": "Under ASC 606, variable consideration is included in the transaction price only to the extent that:",
+  "options": {
+   "A": "It has been received in cash",
+   "B": "A significant reversal of cumulative revenue is not probable",
+   "C": "The customer has signed an amendment",
+   "D": "It is less than 10% of the fixed price"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P003",
+  "question": "Under ASC 606, revenue is recognized when the entity:",
+  "options": {
+   "A": "Incurs the related costs",
+   "B": "Transfers control of a good or service to the customer",
+   "C": "Signs the contract",
+   "D": "Receives payment from the customer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P004",
+  "question": "An entity that controls a specified good before it is transferred to the customer reports revenue:",
+  "options": {
+   "A": "As other income",
+   "B": "Gross, as a principal",
+   "C": "Only when cash is received",
+   "D": "Net, as an agent"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P005",
+  "question": "An entity that arranges for another party to provide goods reports revenue:",
+  "options": {
+   "A": "As a contract asset",
+   "B": "As deferred revenue",
+   "C": "Net, as an agent",
+   "D": "Gross, as a principal"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P006",
+  "question": "Which is NOT an indicator that an entity is a principal under ASC 606?",
+  "options": {
+   "A": "It bears inventory risk",
+   "B": "It has primary responsibility for fulfilment",
+   "C": "It earns a fixed commission per transaction",
+   "D": "It has discretion in setting the price"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P007",
+  "question": "A customer pays in advance for services not yet delivered. Under ASC 606 the entity records a:",
+  "options": {
+   "A": "Receivable",
+   "B": "Contract liability",
+   "C": "Revenue",
+   "D": "Contract asset"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P008",
+  "question": "A right to consideration that is conditional on something other than the passage of time is a:",
+  "options": {
+   "A": "Receivable",
+   "B": "Prepaid expense",
+   "C": "Contract asset",
+   "D": "Contract liability"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P009",
+  "question": "An unconditional right to consideration under ASC 606 is presented as a:",
+  "options": {
+   "A": "Receivable",
+   "B": "Contract asset",
+   "C": "Deferred charge",
+   "D": "Contract liability"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P010",
+  "question": "Deferred revenue is the common name for which ASC 606 balance?",
+  "options": {
+   "A": "Contract asset",
+   "B": "Accrued revenue",
+   "C": "Unbilled receivable",
+   "D": "Contract liability"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P011",
+  "question": "Under ASC 842, a lessee recognizes a right-of-use asset and lease liability for leases with terms longer than:",
+  "options": {
+   "A": "24 months",
+   "B": "36 months",
+   "C": "6 months",
+   "D": "12 months"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P012",
+  "question": "Under ASC 842, a lessee may elect not to recognize leases with terms of:",
+  "options": {
+   "A": "12 months or less",
+   "B": "Any length if the asset is low value",
+   "C": "24 months or less",
+   "D": "36 months or less"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P013",
+  "question": "Under ASC 842, how does a lessee present the cost of an operating lease in the income statement?",
+  "options": {
+   "A": "As a single straight-line lease cost",
+   "B": "As a reduction of revenue",
+   "C": "As separate interest and amortization",
+   "D": "Only in other comprehensive income"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P014",
+  "question": "Under ASC 842, a finance lease presents in the income statement:",
+  "options": {
+   "A": "Rent expense equal to cash paid",
+   "B": "No expense until the lease ends",
+   "C": "Interest expense and amortization separately",
+   "D": "A single straight-line lease cost"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P015",
+  "question": "Under ASC 842, leases are classified by a lessee as:",
+  "options": {
+   "A": "Finance or operating",
+   "B": "Capital or rental",
+   "C": "Short or long",
+   "D": "Sales-type or direct financing only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P016",
+  "question": "ASC 326 (CECL) replaced which model for credit losses?",
+  "options": {
+   "A": "The fair value model",
+   "B": "The direct write-off model",
+   "C": "The cash basis model",
+   "D": "The incurred loss model"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P017",
+  "question": "Under CECL, the allowance covers expected credit losses over:",
+  "options": {
+   "A": "The next 12 months only",
+   "B": "The next reporting period only",
+   "C": "The full contractual life of the asset",
+   "D": "Losses already incurred at the balance-sheet date"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P018",
+  "question": "Under CECL, when is the allowance first recorded for a new loan?",
+  "options": {
+   "A": "When the loan is 90 days past due",
+   "B": "When a loss event occurs",
+   "C": "At origination or purchase",
+   "D": "At the next annual audit"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P019",
+  "question": "Which assets does CECL apply to?",
+  "options": {
+   "A": "Financial assets measured at amortized cost, such as loans and trade receivables",
+   "B": "Goodwill",
+   "C": "Equity securities at fair value through net income",
+   "D": "Inventory"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P020",
+  "question": "CECL estimates are based on historical experience, current conditions and:",
+  "options": {
+   "A": "Management's target margins",
+   "B": "Peer-company loss rates only",
+   "C": "Reasonable and supportable forecasts",
+   "D": "The prior auditor's estimate"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P021",
+  "question": "Do US public business entities amortize goodwill?",
+  "options": {
+   "A": "Yes, over its useful life up to 20 years",
+   "B": "No; they test it for impairment at least annually",
+   "C": "Yes, over 10 years",
+   "D": "Yes, over 40 years"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P022",
+  "question": "At what level is goodwill tested for impairment under ASC 350?",
+  "options": {
+   "A": "The whole consolidated entity only",
+   "B": "The reporting unit",
+   "C": "The individual asset",
+   "D": "The legal entity"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P023",
+  "question": "After ASU 2017-04, goodwill impairment equals:",
+  "options": {
+   "A": "Ten percent of goodwill each year",
+   "B": "The implied fair value of goodwill less its carrying amount (Step 2)",
+   "C": "The excess of a reporting unit's carrying amount over its fair value, limited to its goodwill",
+   "D": "The decline in the company's share price"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P024",
+  "question": "Which step did ASU 2017-04 remove from the goodwill impairment test?",
+  "options": {
+   "A": "The qualitative assessment",
+   "B": "Step 2, the hypothetical purchase price allocation",
+   "C": "The reporting-unit allocation",
+   "D": "The annual testing requirement"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P025",
+  "question": "Under the private company alternative, goodwill may be amortized straight-line over:",
+  "options": {
+   "A": "Up to 40 years",
+   "B": "Up to 10 years",
+   "C": "Up to 20 years",
+   "D": "Up to 5 years"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P026",
+  "question": "Besides the annual test, goodwill must be tested when:",
+  "options": {
+   "A": "The auditor changes",
+   "B": "A triggering event occurs",
+   "C": "Dividends are declared",
+   "D": "The fiscal year changes"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P027",
+  "question": "Inventory measured using FIFO is carried at:",
+  "options": {
+   "A": "The lower of cost or market",
+   "B": "Replacement cost",
+   "C": "Fair value",
+   "D": "The lower of cost and net realizable value"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P028",
+  "question": "Inventory measured using LIFO is carried at:",
+  "options": {
+   "A": "The lower of cost and net realizable value",
+   "B": "Historical cost with no write-down",
+   "C": "Fair value",
+   "D": "The lower of cost or market"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P029",
+  "question": "Is LIFO permitted under IFRS?",
+  "options": {
+   "A": "Yes, without restriction",
+   "B": "Yes, for US subsidiaries only",
+   "C": "Yes, if disclosed",
+   "D": "No"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P030",
+  "question": "The LIFO conformity rule requires a company using LIFO for tax to:",
+  "options": {
+   "A": "Use FIFO for financial reporting",
+   "B": "Disclose a LIFO reserve only to the IRS",
+   "C": "Also use LIFO for financial reporting",
+   "D": "Switch to average cost after five years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P031",
+  "question": "Which inventory method remains under lower of cost or market along with LIFO?",
+  "options": {
+   "A": "FIFO",
+   "B": "The retail inventory method",
+   "C": "Average cost",
+   "D": "Specific identification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P032",
+  "question": "Under ASC 450, a loss contingency is accrued when it is:",
+  "options": {
+   "A": "Probable and reasonably estimable",
+   "B": "Asserted by a third party",
+   "C": "Reasonably possible",
+   "D": "Remote but large"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P033",
+  "question": "A loss contingency that is reasonably possible should be:",
+  "options": {
+   "A": "Disclosed but not accrued",
+   "B": "Ignored",
+   "C": "Accrued at the high end of the range",
+   "D": "Recognized in equity"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P034",
+  "question": "A loss contingency that is remote generally requires:",
+  "options": {
+   "A": "Accrual at the midpoint",
+   "B": "No accrual and no disclosure",
+   "C": "Recognition as a liability",
+   "D": "Disclosure only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P035",
+  "question": "Gain contingencies are recognized:",
+  "options": {
+   "A": "Only when realized",
+   "B": "When asserted",
+   "C": "When probable",
+   "D": "When reasonably possible"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P036",
+  "question": "If a loss is probable but cannot be reasonably estimated, the entity:",
+  "options": {
+   "A": "Defers recognition to the next year without disclosure",
+   "B": "Accrues the maximum possible loss",
+   "C": "Accrues zero and discloses nothing",
+   "D": "Discloses it, with an estimate of the range or a statement that none can be made"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P037",
+  "question": "ASC 820 defines fair value as:",
+  "options": {
+   "A": "An exit price between market participants at the measurement date",
+   "B": "The entry price paid by the entity",
+   "C": "Historical cost adjusted for inflation",
+   "D": "The entity-specific value in use"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P038",
+  "question": "Quoted prices in active markets for identical assets are which fair value level?",
+  "options": {
+   "A": "Level 1",
+   "B": "Level 0",
+   "C": "Level 2",
+   "D": "Level 3"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P039",
+  "question": "Unobservable inputs are which fair value level?",
+  "options": {
+   "A": "Level 3",
+   "B": "Level 2",
+   "C": "Level 4",
+   "D": "Level 1"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P040",
+  "question": "Observable inputs other than quoted prices for identical items are:",
+  "options": {
+   "A": "Level 1",
+   "B": "Level 2",
+   "C": "Not part of the hierarchy",
+   "D": "Level 3"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P041",
+  "question": "Which fair value level requires the most disclosure?",
+  "options": {
+   "A": "Level 3",
+   "B": "All levels require the same",
+   "C": "Level 2",
+   "D": "Level 1"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P042",
+  "question": "The equity method under ASC 323 is presumed to apply at what ownership of voting stock?",
+  "options": {
+   "A": "Over 50%",
+   "B": "5% to 20%",
+   "C": "Any ownership above 10%",
+   "D": "20% to 50%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P043",
+  "question": "The equity method applies when an investor has:",
+  "options": {
+   "A": "Significant influence",
+   "B": "No influence",
+   "C": "Joint control only",
+   "D": "Control"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P044",
+  "question": "Under ASC 205-40, management evaluates going concern over what period?",
+  "options": {
+   "A": "The next operating cycle",
+   "B": "One year after the financial statements are issued",
+   "C": "Two years after year-end",
+   "D": "Six months after the balance-sheet date"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P045",
+  "question": "Who is first responsible for the going-concern evaluation under ASC 205-40?",
+  "options": {
+   "A": "The audit committee only",
+   "B": "The SEC",
+   "C": "Management",
+   "D": "The external auditor only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P046",
+  "question": "SEC Staff Accounting Bulletin 99 says a 5% materiality threshold is:",
+  "options": {
+   "A": "Only a starting point, not a safe harbor",
+   "B": "Replaced by a 10% threshold",
+   "C": "A bright-line safe harbor",
+   "D": "Required for all public companies"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P047",
+  "question": "Under SAB 99, can a quantitatively small misstatement be material?",
+  "options": {
+   "A": "Only for banks",
+   "B": "No, never",
+   "C": "Only if over 1% of assets",
+   "D": "Yes, qualitative factors can make it material"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P048",
+  "question": "Materiality in US financial reporting is judged by whether a reasonable investor would:",
+  "options": {
+   "A": "Notice it in the footnotes",
+   "B": "Sell the stock within a day",
+   "C": "Consider the item important",
+   "D": "Lose money"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P049",
+  "question": "A significant deficiency must be communicated to:",
+  "options": {
+   "A": "Shareholders in the proxy only",
+   "B": "Those responsible for oversight of financial reporting, such as the audit committee",
+   "C": "The SEC within four days",
+   "D": "The IRS"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P050",
+  "question": "Under COSO 2013, can management conclude ICFR is effective if a material weakness exists at year-end?",
+  "options": {
+   "A": "Yes, if the auditor agrees",
+   "B": "Yes, if remediation has begun",
+   "C": "No",
+   "D": "Yes, if it is disclosed"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P051",
+  "question": "Which framework do most US public companies use to assess ICFR?",
+  "options": {
+   "A": "COSO 2013 Internal Control - Integrated Framework",
+   "B": "Basel III",
+   "C": "COBIT 5",
+   "D": "ISO 27001"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P052",
+  "question": "PCAOB AS 2201 governs:",
+  "options": {
+   "A": "Review of interim financial information",
+   "B": "Auditor independence for tax services",
+   "C": "Audit firm inspections",
+   "D": "An audit of ICFR integrated with the financial statement audit"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P053",
+  "question": "SOX Section 302 requires certification of periodic reports by:",
+  "options": {
+   "A": "The audit committee chair",
+   "B": "The CEO and CFO",
+   "C": "The external auditor",
+   "D": "The general counsel"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P054",
+  "question": "SOX Section 404(a) requires:",
+  "options": {
+   "A": "Whistleblower protection",
+   "B": "An auditor attestation on ICFR",
+   "C": "Audit partner rotation",
+   "D": "Management's annual assessment of ICFR"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P055",
+  "question": "SOX Section 404(b) auditor attestation is required for:",
+  "options": {
+   "A": "Non-accelerated filers only",
+   "B": "Emerging growth companies",
+   "C": "All SEC registrants",
+   "D": "Accelerated and large accelerated filers"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P056",
+  "question": "SOX Section 203 requires lead and concurring audit partners to rotate after:",
+  "options": {
+   "A": "7 consecutive years",
+   "B": "10 consecutive years",
+   "C": "5 consecutive years",
+   "D": "3 consecutive years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P057",
+  "question": "SEC Regulation S-X Rule 2-06 requires auditors to retain audit workpapers for:",
+  "options": {
+   "A": "7 years",
+   "B": "5 years",
+   "C": "3 years",
+   "D": "10 years"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P058",
+  "question": "A large accelerated filer has a public float of at least:",
+  "options": {
+   "A": "$700 million",
+   "B": "$1 billion",
+   "C": "$250 million",
+   "D": "$75 million"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P059",
+  "question": "An accelerated filer has a public float of:",
+  "options": {
+   "A": "$75 million to under $700 million",
+   "B": "$250 million to under $1 billion",
+   "C": "$25 million to under $75 million",
+   "D": "Under $75 million"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P060",
+  "question": "Since 2020, which issuers are excluded from accelerated filer status?",
+  "options": {
+   "A": "All companies with fewer than 500 employees",
+   "B": "Banks with under $1 billion in assets",
+   "C": "Smaller reporting companies with annual revenue under $100 million",
+   "D": "Foreign private issuers only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P061",
+  "question": "Form 10-K for an accelerated filer is due within:",
+  "options": {
+   "A": "75 days of fiscal year-end",
+   "B": "90 days",
+   "C": "60 days",
+   "D": "45 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P062",
+  "question": "Form 10-K for a non-accelerated filer is due within:",
+  "options": {
+   "A": "60 days",
+   "B": "120 days",
+   "C": "75 days",
+   "D": "90 days of fiscal year-end"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P063",
+  "question": "Form 10-Q for a non-accelerated filer is due within:",
+  "options": {
+   "A": "60 days",
+   "B": "40 days",
+   "C": "45 days of quarter-end",
+   "D": "30 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P064",
+  "question": "Most Form 8-K items must be filed within:",
+  "options": {
+   "A": "15 calendar days",
+   "B": "10 calendar days",
+   "C": "4 business days",
+   "D": "2 business days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P065",
+  "question": "Regulation G and Item 10(e) require a non-GAAP measure in a filing to be:",
+  "options": {
+   "A": "Approved by the FASB",
+   "B": "Shown only in the MD&A appendix",
+   "C": "Audited separately",
+   "D": "Reconciled to the most comparable GAAP measure, which is shown with equal or greater prominence"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P066",
+  "question": "Under PCAOB AS 3101, auditors communicate in their report:",
+  "options": {
+   "A": "Management letter points",
+   "B": "Key performance indicators",
+   "C": "Tax positions",
+   "D": "Critical audit matters"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P067",
+  "question": "Critical audit matters first became required for large accelerated filers for fiscal years ending on or after:",
+  "options": {
+   "A": "15 December 2017",
+   "B": "1 January 2023",
+   "C": "30 June 2019",
+   "D": "15 December 2021"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P068",
+  "question": "Form 8-K Item 4.02 is titled:",
+  "options": {
+   "A": "Material Cybersecurity Incidents",
+   "B": "Changes in Registrant's Certifying Accountant",
+   "C": "Results of Operations and Financial Condition",
+   "D": "Non-Reliance on Previously Issued Financial Statements"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P069",
+  "question": "The SEC clawback listing standards under Rule 10D-1 became effective on:",
+  "options": {
+   "A": "1 January 2020",
+   "B": "15 December 2024",
+   "C": "30 June 2019",
+   "D": "2 October 2023"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P070",
+  "question": "Rule 10D-1 recovery applies to which compensation?",
+  "options": {
+   "A": "Only stock options",
+   "B": "Only severance",
+   "C": "Incentive-based compensation erroneously received",
+   "D": "All salary and bonus"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P071",
+  "question": "Does Rule 10D-1 recovery require the executive to be at fault?",
+  "options": {
+   "A": "Only for CEOs",
+   "B": "Yes",
+   "C": "No",
+   "D": "Only for fraud"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P072",
+  "question": "Under ASC 740, an uncertain tax position is recognized only if it is:",
+  "options": {
+   "A": "Approved by the IRS in advance",
+   "B": "Reasonably possible to be sustained",
+   "C": "Certain to be sustained",
+   "D": "More likely than not to be sustained on its technical merits"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P073",
+  "question": "An uncertain tax position that passes recognition is measured as:",
+  "options": {
+   "A": "Zero until audited",
+   "B": "The largest benefit greater than 50% likely to be realized on settlement",
+   "C": "The full benefit claimed",
+   "D": "The midpoint of possible outcomes"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P074",
+  "question": "A valuation allowance reduces deferred tax assets when it is:",
+  "options": {
+   "A": "Possible that some portion will not be realized",
+   "B": "More likely than not that some portion will not be realized",
+   "C": "Required by state law",
+   "D": "Certain that none will be realized"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P075",
+  "question": "The US federal corporate income tax rate after the TCJA is:",
+  "options": {
+   "A": "25%",
+   "B": "15%",
+   "C": "35%",
+   "D": "21%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P076",
+  "question": "Which ASU expanded income tax rate-reconciliation disclosures?",
+  "options": {
+   "A": "ASU 2014-09",
+   "B": "ASU 2023-09",
+   "C": "ASU 2017-04",
+   "D": "ASU 2016-02"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P077",
+  "question": "Days sales outstanding is calculated as:",
+  "options": {
+   "A": "Revenue divided by accounts receivable",
+   "B": "Accounts payable divided by COGS, times days",
+   "C": "Inventory divided by COGS, times days",
+   "D": "Accounts receivable divided by revenue, times days in the period"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P078",
+  "question": "Days payable outstanding is calculated as:",
+  "options": {
+   "A": "Cash divided by accounts payable",
+   "B": "Accounts payable divided by COGS, times days in the period",
+   "C": "COGS divided by accounts payable",
+   "D": "Accounts payable divided by revenue"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P079",
+  "question": "The current ratio is:",
+  "options": {
+   "A": "Current assets divided by current liabilities",
+   "B": "Cash divided by current liabilities",
+   "C": "Total assets divided by total liabilities",
+   "D": "Current liabilities divided by equity"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P080",
+  "question": "The quick ratio excludes which current asset from the numerator?",
+  "options": {
+   "A": "Cash",
+   "B": "Accounts receivable",
+   "C": "Inventory",
+   "D": "Marketable securities"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P081",
+  "question": "A current ratio below 1.0 means:",
+  "options": {
+   "A": "Equity is negative",
+   "B": "Current liabilities exceed current assets",
+   "C": "The company is insolvent under GAAP",
+   "D": "Inventory exceeds cash"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P082",
+  "question": "A healthy quick ratio is generally at least:",
+  "options": {
+   "A": "3.0",
+   "B": "5.0",
+   "C": "0.5",
+   "D": "1.0"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P083",
+  "question": "In a typical close, which reconciliation coverage does a well-run controller target each month?",
+  "options": {
+   "A": "Only accounts over $1 million",
+   "B": "All balance-sheet accounts",
+   "C": "Only cash accounts",
+   "D": "Only accounts with variances"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P084",
+  "question": "A flux analysis in the close compares:",
+  "options": {
+   "A": "Bank statements to the general ledger",
+   "B": "Tax returns to the provision",
+   "C": "Account balances against prior periods or budget to explain variances",
+   "D": "Payroll to headcount"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_us_P085",
+  "question": "Who typically certifies disclosure controls alongside the CEO under SOX 302?",
+  "options": {
+   "A": "The audit committee chair",
+   "B": "The CFO",
+   "C": "The controller",
+   "D": "The chief audit executive"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P086",
+  "question": "To whom does a chief audit executive functionally report under the IIA standards?",
+  "options": {
+   "A": "The controller",
+   "B": "The external auditor",
+   "C": "The CFO",
+   "D": "The board or its audit committee"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_us_P087",
+  "question": "An out-of-period adjustment is appropriate for an error that is:",
+  "options": {
+   "A": "Immaterial to both prior and current periods",
+   "B": "Caused by fraud",
+   "C": "Material to the current period only after correction",
+   "D": "Material to prior periods"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P088",
+  "question": "Which body issues US GAAP through the Accounting Standards Codification?",
+  "options": {
+   "A": "The AICPA",
+   "B": "The FASB",
+   "C": "The SEC",
+   "D": "The PCAOB"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_us_P089",
+  "question": "Which body sets auditing standards for audits of US public companies?",
+  "options": {
+   "A": "The PCAOB",
+   "B": "The FASB",
+   "C": "The IASB",
+   "D": "The AICPA Auditing Standards Board"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_us_P090",
+  "question": "Under ASC 260, which method is used to compute the dilutive effect of options and warrants?",
+  "options": {
+   "A": "The equity method",
+   "B": "The two-class method",
+   "C": "The treasury stock method",
+   "D": "The if-converted method"
+  },
+  "answer": "C"
+ }
+]
