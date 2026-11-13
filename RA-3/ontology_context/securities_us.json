@@ -1,0 +1,263 @@
+{
+  "industry": "securities_us",
+  "jurisdiction": "US",
+  "status": "draft RA-3 v6 cell, pending expert review",
+  "role_layer": {
+    "chief_compliance_officer": {
+      "title": "Chief Compliance Officer (Broker-Dealer)",
+      "persona": "Owner of the firm's supervisory and compliance system",
+      "communication_style": "Rule-citing, supervisory, documentation-first",
+      "kpis": {
+        "exam_findings": "No repeat FINRA or SEC findings",
+        "surveillance_alert_closure": "Within 30 days",
+        "reg_bi_exceptions": "Reviewed within 10 business days"
+      },
+      "vocabulary": [
+        "Reg BI",
+        "Form CRS",
+        "Care Obligation",
+        "Supervision",
+        "FINRA Rule 3110",
+        "Trade Surveillance",
+        "Rule 4530",
+        "Best Execution"
+      ],
+      "decision_patterns": {
+        "recommendation_review": {
+          "steps": [
+            "reasonable_basis",
+            "customer_profile_fit",
+            "costs_and_alternatives",
+            "conflict_check",
+            "supervisory_action"
+          ],
+          "outcomes": [
+            "approve",
+            "reverse_trade",
+            "remediate_client",
+            "discipline_rep"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "rules": [
+          "Reg BI",
+          "FINRA 2111",
+          "FINRA 3110",
+          "FINRA 5310",
+          "FINRA 4530"
+        ]
+      }
+    },
+    "finop": {
+      "title": "Financial and Operations Principal (FINOP)",
+      "persona": "Guardian of net capital and customer reserve",
+      "communication_style": "Exact, deadline-driven, conservative",
+      "kpis": {
+        "net_capital_cushion": "> 120% of the minimum requirement",
+        "aggregate_indebtedness": "< 12:1 (1200%) of net capital",
+        "focus_report_timeliness": "Filed on time every period"
+      },
+      "vocabulary": [
+        "Net Capital",
+        "Rule 15c3-1",
+        "Aggregate Indebtedness",
+        "Haircut",
+        "Rule 15c3-3",
+        "Reserve Formula",
+        "FOCUS Report",
+        "Rule 17a-11"
+      ],
+      "decision_patterns": {
+        "capital_deterioration": {
+          "steps": [
+            "recompute_net_capital",
+            "file_17a-11_notice_if_early_warning",
+            "restrict_capital_intensive_business",
+            "capital_infusion_or_subordinated_loan",
+            "daily_monitoring"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "filings": [
+          "FOCUS Report (Form X-17A-5)",
+          "annual audited report"
+        ]
+      }
+    },
+    "head_of_trading": {
+      "title": "Head of Trading",
+      "persona": "Owner of execution quality and trading conduct",
+      "communication_style": "Fast, data-led, risk-aware",
+      "kpis": {
+        "execution_quality": "Regular and rigorous best-execution reviews",
+        "trade_errors": "< 0.1% of orders"
+      },
+      "vocabulary": [
+        "Best Execution",
+        "Reg NMS",
+        "NBBO",
+        "Rule 606",
+        "Reg SHO",
+        "Locate",
+        "Front-Running"
+      ]
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "net_capital": {
+        "definition": "Liquid net worth after haircuts under SEC Rule 15c3-1",
+        "minimums": "$250,000 for firms that carry customer accounts; $5,000 for introducing firms that never receive customer funds or securities",
+        "healthy_range": "> 120% of the minimum (early-warning level)"
+      },
+      "aggregate_indebtedness_ratio": {
+        "definition": "Aggregate indebtedness divided by net capital under the basic method",
+        "regulatory_maximum": "15:1 (1500%)",
+        "early_warning": "12:1 (1200%)"
+      },
+      "customer_reserve": {
+        "definition": "Rule 15c3-3 reserve formula: credits owed to customers less debits, deposited in a special reserve bank account"
+      },
+      "settlement_cycle": {
+        "definition": "US equities, corporate bonds and ETFs settle T+1 since 28 May 2024 (previously T+2)"
+      },
+      "expense_ratio": {
+        "definition": "Annual fund operating expenses divided by average net assets",
+        "healthy_range": "about 0.6% or less for active equity funds; under 0.1% for broad index funds"
+      },
+      "tracking_error": {
+        "definition": "Standard deviation of the difference between fund and index returns",
+        "healthy_range": "< 0.1% for a broad index fund"
+      },
+      "nbbo": {
+        "definition": "National best bid and offer across protected quotations"
+      }
+    },
+    "regulations": {
+      "reg_bi": {
+        "name": "Regulation Best Interest (compliance from 30 June 2020)",
+        "obligations": [
+          "disclosure",
+          "care",
+          "conflict of interest",
+          "compliance"
+        ],
+        "related": "Form CRS relationship summary for retail investors"
+      },
+      "rule_17a_11": {
+        "name": "SEC Rule 17a-11",
+        "rule": "Notify the SEC and FINRA within 24 hours if net capital falls below 120% of the minimum or aggregate indebtedness exceeds 1200%; same day if below the minimum"
+      },
+      "insider_trading": {
+        "name": "Rule 10b-5 and Rule 10b5-1",
+        "rule": "Trading on material nonpublic information is prohibited; 10b5-1 plans for directors and officers need a cooling-off period of the later of 90 days or 2 business days after the next 10-Q/10-K, capped at 120 days"
+      },
+      "section_16": {
+        "name": "Exchange Act Section 16",
+        "rule": "Officers, directors and 10% owners report trades on Form 4 within 2 business days"
+      },
+      "schedule_13d": {
+        "name": "Schedule 13D/13G",
+        "rule": "Beneficial ownership over 5% with control intent: Schedule 13D within 5 business days (since 2023), amendments within 2 business days"
+      },
+      "finra_4530": {
+        "name": "FINRA Rule 4530",
+        "rule": "Report specified events, such as findings of violations or written customer complaints alleging theft, within 30 calendar days"
+      },
+      "sar_bd": {
+        "name": "Broker-dealer SAR rule",
+        "rule": "File a SAR for suspicious transactions of $5,000 or more within 30 calendar days of detection"
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "surveillance_to_compliance": {
+        "trigger": "Trade-surveillance alert (front-running, spoofing, insider pattern)",
+        "from": "Trade Surveillance",
+        "to": "Chief Compliance Officer",
+        "context": [
+          "alert_details",
+          "order_and_execution_data",
+          "trader_communications"
+        ],
+        "sla": {
+          "triage": "5 business days"
+        }
+      },
+      "compliance_to_legal": {
+        "trigger": "Alert substantiated",
+        "from": "Chief Compliance Officer",
+        "to": "Legal",
+        "context": [
+          "investigation_file",
+          "customer_harm_estimate"
+        ],
+        "sla": {
+          "escalation": "Same day as substantiation"
+        }
+      },
+      "compliance_to_regulator": {
+        "trigger": "Reportable event",
+        "from": "Chief Compliance Officer",
+        "to": "FINRA",
+        "context": [
+          "Rule_4530_report"
+        ],
+        "sla": {
+          "report": "30 calendar days"
+        }
+      },
+      "compliance_to_aml": {
+        "trigger": "Suspicious transaction of $5,000 or more",
+        "from": "Chief Compliance Officer",
+        "to": "AML Officer",
+        "context": [
+          "case_file"
+        ],
+        "sla": {
+          "sar": "30 calendar days from detection"
+        }
+      },
+      "finop_to_regulators": {
+        "trigger": "Net capital early warning",
+        "from": "FINOP",
+        "to": "SEC and FINRA",
+        "context": [
+          "17a-11_notice",
+          "capital_computation"
+        ],
+        "sla": {
+          "notice": "24 hours"
+        }
+      }
+    },
+    "escalation_matrix": {
+      "conduct": {
+        "substantiated_front_running": "L4_executive",
+        "regulatory_inquiry": "L4_executive"
+      },
+      "capital": {
+        "below_minimum": "L5_board, cease business"
+      }
+    }
+  },
+  "rag_chunks": [
+    "SEC Rule 15c3-1, the net capital rule, requires a broker-dealer to keep enough liquid assets to meet its obligations. Net capital is net worth adjusted for nonallowable assets and haircuts on securities positions. A firm that carries customer accounts needs at least 250,000 dollars; an introducing firm that never receives customer funds or securities needs 5,000 dollars. Under the basic method, aggregate indebtedness may not exceed 1500 percent of net capital; under the alternative method, net capital must be at least the greater of 250,000 dollars or 2 percent of aggregate debit items.",
+    "Rule 17a-11 is the early-warning rule. A broker-dealer must notify the SEC and its designated examining authority, usually FINRA, within 24 hours if its net capital falls below 120 percent of its minimum requirement or its aggregate indebtedness exceeds 1200 percent of net capital. If net capital falls below the minimum, notice is due the same day and the firm must stop business until it is back in compliance. Firms file FOCUS reports, Form X-17A-5, monthly or quarterly.",
+    "Rule 15c3-3, the customer protection rule, requires a carrying broker-dealer to maintain physical possession or control of customers' fully paid and excess margin securities and to compute a reserve formula, customer credits less customer debits, depositing any excess in a special reserve bank account for the exclusive benefit of customers. The computation has been weekly; 2024 amendments require the largest carrying firms to compute it daily. SIPC protects customer accounts up to 500,000 dollars, including up to 250,000 dollars of cash, if a member firm fails.",
+    "Regulation Best Interest has applied since 30 June 2020. When a broker-dealer recommends a securities transaction or investment strategy to a retail customer, it must act in the customer's best interest without placing its own interest ahead. Reg BI has four component obligations: disclosure, care, conflict of interest and compliance. Broker-dealers and investment advisers serving retail investors also deliver Form CRS, a short relationship summary. FINRA Rule 2111 suitability continues to apply to recommendations to non-retail customers.",
+    "Since 28 May 2024 most US securities transactions, including equities, corporate and municipal bonds, ETFs and unit investment trusts, settle one business day after the trade date, T+1, instead of T+2. The change shortened the time for affirmations and confirmations, which under Rule 15c6-2 should be completed as soon as practicable and no later than the end of trade date.",
+    "Rule 10b-5 prohibits fraud in connection with the purchase or sale of securities, including trading on material nonpublic information in breach of a duty. Rule 10b5-1 provides an affirmative defense for trades under a plan adopted when the insider was unaware of such information. Since the 2022 amendments, directors and officers must wait a cooling-off period of the later of 90 days after adoption or two business days after the next Form 10-Q or 10-K, up to 120 days, before the first trade; other persons wait 30 days.",
+    "Under Section 16 of the Exchange Act, officers, directors and holders of more than 10 percent of a registered class of equity file Form 3 on becoming insiders, Form 4 within two business days of a change in ownership, and Form 5 within 45 days after fiscal year-end for exempt transactions not yet reported. Section 16(b) allows the company to recover short-swing profits from purchases and sales within six months.",
+    "A person who acquires beneficial ownership of more than 5 percent of a class of registered equity with an intent to change or influence control files Schedule 13D. Since amendments effective in 2024, the initial filing is due within five business days, down from ten calendar days, and material amendments within two business days. Passive investors may instead file the shorter Schedule 13G. Institutional investment managers with at least 100 million dollars in 13(f) securities file Form 13F within 45 days after each quarter.",
+    "Investment advisers generally register with the SEC once they have 100 million dollars or more in regulatory assets under management, and must do so at 110 million dollars; smaller advisers register with their states. Advisers file an annual updating amendment to Form ADV within 90 days of fiscal year-end. The custody rule requires a surprise examination by an independent accountant for advisers with custody, and the marketing rule has governed testimonials, endorsements and performance advertising since November 2022.",
+    "Regulation NMS Rule 611, the order protection rule, requires trading centers to prevent trade-throughs of protected quotations, the best displayed bids and offers. FINRA Rule 5310 requires a member to use reasonable diligence to obtain the most favorable terms for a customer order, and firms conduct regular and rigorous reviews of execution quality. Rule 606 requires broker-dealers to publish quarterly reports on order routing and payment for order flow, and Rule 605 requires market centers to publish monthly execution-quality statistics.",
+    "Regulation SHO requires a broker-dealer to locate securities that can be borrowed before effecting a short sale. Rule 204 requires participants of a clearing agency to close out fails to deliver from short sales by the beginning of regular trading hours on the settlement day after the settlement date. Rule 201, the alternative uptick rule, restricts short selling at or below the national best bid for the rest of the day and the next day once a stock falls 10 percent from the prior close.",
+    "Under SEC Rule 17a-4, broker-dealers keep blotters, ledgers and similar records for six years and most other records, including business communications, for three years, the first two years in an easily accessible place. FINRA Rule 3110 requires a supervisory system with written procedures, a designated principal for each business line and annual compliance meetings. FINRA Rule 2210 requires a principal to approve retail communications before use. FINRA Rule 4530 requires member firms to report specified events, such as certain customer complaints, regulatory findings and disciplinary actions, within 30 calendar days.",
+    "Federal Reserve Regulation T sets initial margin for equity securities at 50 percent of the purchase price. FINRA Rule 4210 sets maintenance margin at 25 percent of the market value of long equity positions, and many firms set higher house requirements. Broker-dealers must file Suspicious Activity Reports for transactions of 5,000 dollars or more that they know or suspect involve illicit funds, evasion or no apparent lawful purpose, within 30 calendar days of detection.",
+    "Front-running is trading ahead of a customer's order, or ahead of a block transaction, using knowledge of the imminent order; FINRA Rule 5270 prohibits it for block transactions and Rule 5320 prohibits trading ahead of customer orders. Spoofing, placing orders without intending to execute them to move the price, is barred by the Dodd-Frank Act and manipulation rules. Index funds are judged by expense ratio and tracking error: broad index funds commonly charge under 0.1 percent a year, and asset-weighted expense ratios for active equity funds are around 0.6 percent."
+  ]
+}
