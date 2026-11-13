@@ -1,0 +1,992 @@
+[
+ {
+  "id": "healthcare_vn_P001",
+  "question": "Which law on medical examination and treatment took effect on 1 January 2024?",
+  "options": {
+   "A": "Law No. 15/2023/QH15",
+   "B": "Law No. 51/2024/QH15",
+   "C": "Law No. 40/2009/QH12",
+   "D": "Law No. 105/2016/QH13"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P002",
+  "question": "Which law did Law 15/2023/QH15 replace?",
+  "options": {
+   "A": "The Law on Health Insurance",
+   "B": "The Law on Pharmacy",
+   "C": "The 2009 Law on Medical Examination and Treatment",
+   "D": "The Law on Infectious Diseases"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P003",
+  "question": "Which decree guides the 2023 Law on Medical Examination and Treatment?",
+  "options": {
+   "A": "Decree 146/2018/ND-CP",
+   "B": "Decree 96/2023/ND-CP",
+   "C": "Decree 13/2023/ND-CP",
+   "D": "Decree 109/2016/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P004",
+  "question": "How many technical levels of health facilities does Law 15/2023 set?",
+  "options": {
+   "A": "Two",
+   "B": "Four",
+   "C": "Five",
+   "D": "Three"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P005",
+  "question": "Which is NOT a technical level under Law 15/2023?",
+  "options": {
+   "A": "Specialised level",
+   "B": "Initial level",
+   "C": "Central level",
+   "D": "Basic level"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P006",
+  "question": "Practitioners in Vietnam must hold:",
+  "options": {
+   "A": "A health insurance card",
+   "B": "A practice licence",
+   "C": "Only a university diploma",
+   "D": "A business registration"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P007",
+  "question": "Law 15/2023 introduced what for practitioner licensing?",
+  "options": {
+   "A": "Licensing only for foreign doctors",
+   "B": "A national competency assessment",
+   "C": "No licensing",
+   "D": "Licensing by hospitals themselves"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P008",
+  "question": "May a Vietnamese facility refuse emergency care to a patient who cannot pay?",
+  "options": {
+   "A": "No",
+   "B": "Yes",
+   "C": "Only for foreigners",
+   "D": "Only private facilities may"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P009",
+  "question": "After emergency stabilisation, a facility may:",
+  "options": {
+   "A": "Report the patient to the police for non-payment",
+   "B": "Demand a deposit before treating",
+   "C": "Discharge without care",
+   "D": "Arrange payment or transfer"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P010",
+  "question": "Do patients have the right to receive copies of their medical records?",
+  "options": {
+   "A": "Yes",
+   "B": "No",
+   "C": "Only after 10 years",
+   "D": "Only with a court order"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P011",
+  "question": "Medical records are generally kept for at least:",
+  "options": {
+   "A": "20 years",
+   "B": "10 years",
+   "C": "5 years",
+   "D": "3 years"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P012",
+  "question": "Records of occupational and traffic accident cases are kept for at least:",
+  "options": {
+   "A": "25 years",
+   "B": "10 years",
+   "C": "15 years",
+   "D": "20 years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P013",
+  "question": "Records of mental illness and death cases are kept for at least:",
+  "options": {
+   "A": "10 years",
+   "B": "20 years",
+   "C": "15 years",
+   "D": "30 years"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P014",
+  "question": "Which circular governs electronic medical records?",
+  "options": {
+   "A": "Circular 46/2018/TT-BYT",
+   "B": "Circular 54/2015/TT-BYT",
+   "C": "Circular 31/2021/TT-BYT",
+   "D": "Circular 39/2017/TT-BYT"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P015",
+  "question": "Under Decree 13/2023/ND-CP, health information is:",
+  "options": {
+   "A": "Public data",
+   "B": "Sensitive personal data",
+   "C": "Not personal data",
+   "D": "Basic personal data"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P016",
+  "question": "Processing sensitive health data requires:",
+  "options": {
+   "A": "Explicit consent",
+   "B": "No consent",
+   "C": "Only verbal notice",
+   "D": "Only a hospital policy"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P017",
+  "question": "Who runs Vietnam's health insurance fund?",
+  "options": {
+   "A": "Private insurers",
+   "B": "The State Bank",
+   "C": "Vietnam Social Security",
+   "D": "The Ministry of Health"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P018",
+  "question": "What is the total health insurance contribution for employees?",
+  "options": {
+   "A": "4.5% of salary",
+   "B": "8% of salary",
+   "C": "6% of salary",
+   "D": "3% of salary"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P019",
+  "question": "What share of salary does the employer contribute to health insurance?",
+  "options": {
+   "A": "2%",
+   "B": "4.5%",
+   "C": "3%",
+   "D": "1.5%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P020",
+  "question": "What share of salary does the employee contribute to health insurance?",
+  "options": {
+   "A": "4.5%",
+   "B": "3%",
+   "C": "1%",
+   "D": "1.5%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P021",
+  "question": "Which law amended the Law on Health Insurance from 1 July 2025?",
+  "options": {
+   "A": "Law No. 46/2014/QH13",
+   "B": "Law No. 51/2024/QH15",
+   "C": "Law No. 15/2023/QH15",
+   "D": "Law No. 44/2024/QH15"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P022",
+  "question": "Health insurance coverage in Vietnam in 2024 was about:",
+  "options": {
+   "A": "94% of the population",
+   "B": "60%",
+   "C": "99.9%",
+   "D": "75%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P023",
+  "question": "Which group receives a 100% health insurance benefit level?",
+  "options": {
+   "A": "Self-employed traders",
+   "B": "Students over 18",
+   "C": "Children under six",
+   "D": "Office employees"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P024",
+  "question": "Pensioners generally receive what benefit level?",
+  "options": {
+   "A": "80%",
+   "B": "95%",
+   "C": "100%",
+   "D": "70%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P025",
+  "question": "Near-poor households generally receive what benefit level?",
+  "options": {
+   "A": "100%",
+   "B": "80%",
+   "C": "60%",
+   "D": "95%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P026",
+  "question": "Most other insured people receive what benefit level?",
+  "options": {
+   "A": "80%",
+   "B": "95%",
+   "C": "100%",
+   "D": "60%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P027",
+  "question": "At an 80% benefit level, the patient co-pays:",
+  "options": {
+   "A": "5%",
+   "B": "40%",
+   "C": "20%",
+   "D": "0%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P028",
+  "question": "Which documents can insured patients now use to check in instead of a paper card?",
+  "options": {
+   "A": "A passport only",
+   "B": "A driver's licence",
+   "C": "A bank card",
+   "D": "Chip-based citizen ID or the VssID app"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P029",
+  "question": "VssID is:",
+  "options": {
+   "A": "A Ministry of Health hospital rating",
+   "B": "A national ID number",
+   "C": "A drug code",
+   "D": "Vietnam Social Security's app"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P030",
+  "question": "Hospitals send health insurance claims data to Vietnam Social Security:",
+  "options": {
+   "A": "Weekly",
+   "B": "Only on request",
+   "C": "Annually",
+   "D": "Monthly"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P031",
+  "question": "Rejected health insurance claims are known in Vietnamese as:",
+  "options": {
+   "A": "Xuat toan",
+   "B": "Dau thau",
+   "C": "Tu chu",
+   "D": "Chuyen tuyen"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P032",
+  "question": "When Vietnam Social Security rejects a claim, who bears the cost?",
+  "options": {
+   "A": "The hospital",
+   "B": "The patient always",
+   "C": "The insurer's reinsurer",
+   "D": "The Ministry of Health"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P033",
+  "question": "A well-run hospital keeps rejected claims below about:",
+  "options": {
+   "A": "5%",
+   "B": "1% of claimed value",
+   "C": "10%",
+   "D": "20%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P034",
+  "question": "How many hospital quality criteria are in Decision 6858/QD-BYT?",
+  "options": {
+   "A": "120",
+   "B": "100",
+   "C": "50",
+   "D": "83"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P035",
+  "question": "In what year was the hospital quality criteria set (Decision 6858/QD-BYT) issued?",
+  "options": {
+   "A": "2023",
+   "B": "2020",
+   "C": "2010",
+   "D": "2016"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P036",
+  "question": "The hospital quality criteria are grouped into how many parts?",
+  "options": {
+   "A": "Seven",
+   "B": "Five",
+   "C": "Ten",
+   "D": "Three"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P037",
+  "question": "Which is a part of the hospital quality criteria?",
+  "options": {
+   "A": "Marketing",
+   "B": "Patient orientation",
+   "C": "Tax compliance",
+   "D": "Shareholder returns"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P038",
+  "question": "Which decision sets the Ministry of Health's patient satisfaction survey method?",
+  "options": {
+   "A": "Decision 6858/QD-BYT",
+   "B": "Decision 2345/QD-NHNN",
+   "C": "Decision 1813/QD-TTg",
+   "D": "Decision 3869/QD-BYT"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P039",
+  "question": "What patient satisfaction level do hospitals typically target?",
+  "options": {
+   "A": "100% by law",
+   "B": "90% or more",
+   "C": "50%",
+   "D": "70%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P040",
+  "question": "Bed occupancy equals:",
+  "options": {
+   "A": "Discharges divided by days",
+   "B": "Occupied bed-days divided by available bed-days",
+   "C": "Beds divided by doctors",
+   "D": "Admissions divided by beds"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P041",
+  "question": "Which bed occupancy range is considered efficient?",
+  "options": {
+   "A": "70-75%",
+   "B": "50-60%",
+   "C": "85-90%",
+   "D": "100-120%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P042",
+  "question": "Occupancy above 100% in Vietnamese central hospitals has meant:",
+  "options": {
+   "A": "Patients sharing beds",
+   "B": "Empty wards",
+   "C": "Faster discharges",
+   "D": "Lower costs"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P043",
+  "question": "Average length of stay equals:",
+  "options": {
+   "A": "Outpatient visits per day",
+   "B": "Doctors per bed",
+   "C": "Inpatient days divided by discharges",
+   "D": "Beds divided by admissions"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P044",
+  "question": "A typical average length of stay for a general hospital is:",
+  "options": {
+   "A": "20 days",
+   "B": "5-7 days",
+   "C": "12-15 days",
+   "D": "1-2 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P045",
+  "question": "A healthy hospital-acquired infection rate is below about:",
+  "options": {
+   "A": "25%",
+   "B": "0.1%",
+   "C": "15%",
+   "D": "5% of inpatients"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P046",
+  "question": "Which circular regulates nursing activities in hospitals?",
+  "options": {
+   "A": "Circular 31/2021/TT-BYT",
+   "B": "Circular 54/2015/TT-BYT",
+   "C": "Circular 46/2018/TT-BYT",
+   "D": "Circular 07/2011/TT-BYT only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P047",
+  "question": "Which decree governs financial autonomy of public service units such as public hospitals?",
+  "options": {
+   "A": "Decree 16/2015/ND-CP only",
+   "B": "Decree 96/2023/ND-CP",
+   "C": "Decree 13/2023/ND-CP",
+   "D": "Decree 60/2021/ND-CP"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P048",
+  "question": "Group A infectious diseases must be reported within:",
+  "options": {
+   "A": "24 hours",
+   "B": "7 days",
+   "C": "30 days",
+   "D": "48 hours"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P049",
+  "question": "Which circular sets infectious disease reporting?",
+  "options": {
+   "A": "Circular 46/2018/TT-BYT",
+   "B": "Circular 31/2021/TT-BYT",
+   "C": "Circular 22/2019/TT-NHNN",
+   "D": "Circular 54/2015/TT-BYT"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P050",
+  "question": "Which is a Group A infectious disease?",
+  "options": {
+   "A": "Influenza (seasonal)",
+   "B": "Cholera",
+   "C": "Common cold",
+   "D": "Chickenpox"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P051",
+  "question": "Which law governs medicines?",
+  "options": {
+   "A": "Law No. 22/2023/QH15",
+   "B": "Law No. 59/2020/QH14",
+   "C": "Law on Pharmacy No. 105/2016/QH13",
+   "D": "Law No. 15/2023/QH15"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P052",
+  "question": "Which law amended the Law on Pharmacy from 1 July 2025?",
+  "options": {
+   "A": "Law No. 32/2024/QH15",
+   "B": "Law No. 15/2023/QH15",
+   "C": "Law No. 44/2024/QH15",
+   "D": "Law No. 51/2024/QH15"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P053",
+  "question": "Prescription drugs may be dispensed:",
+  "options": {
+   "A": "Only to foreigners",
+   "B": "Only with a prescription",
+   "C": "Freely over the counter",
+   "D": "Only in hospitals"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P054",
+  "question": "Drug procurement in public hospitals follows:",
+  "options": {
+   "A": "The Law on Enterprises",
+   "B": "No rules",
+   "C": "The Law on Bidding No. 22/2023/QH15",
+   "D": "The Law on Securities"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P055",
+  "question": "Which ministry regulates hospitals and medical practice nationally?",
+  "options": {
+   "A": "The Ministry of Science and Technology",
+   "B": "The Ministry of Finance",
+   "C": "The Ministry of Labour",
+   "D": "The Ministry of Health"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P056",
+  "question": "Which provincial body supervises health facilities in a province?",
+  "options": {
+   "A": "The Department of Finance",
+   "B": "The provincial court",
+   "C": "The provincial police",
+   "D": "The Department of Health"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P057",
+  "question": "A referral form (giay chuyen tuyen) is used to:",
+  "options": {
+   "A": "Claim sick leave",
+   "B": "Transfer a patient between facility levels",
+   "C": "Register a birth",
+   "D": "Buy prescription drugs"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P058",
+  "question": "When a case exceeds a facility's technical capability, the patient is:",
+  "options": {
+   "A": "Discharged",
+   "B": "Charged double",
+   "C": "Kept without treatment",
+   "D": "Referred to a higher level"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P059",
+  "question": "Who usually escorts an emergency transfer between hospitals?",
+  "options": {
+   "A": "Medical staff from the sending hospital",
+   "B": "The patient's family only",
+   "C": "No one",
+   "D": "The police"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P060",
+  "question": "Hospitals in Vietnam have been pushed to replace paper records with:",
+  "options": {
+   "A": "Microfilm",
+   "B": "Audio recordings",
+   "C": "Electronic medical records",
+   "D": "Handwritten copies"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P061",
+  "question": "Who may receive a patient's medical record copy?",
+  "options": {
+   "A": "The patient or an authorised person",
+   "B": "Only insurers",
+   "C": "Anyone who asks",
+   "D": "Only the police"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P062",
+  "question": "What does Vietnam Social Security pay providers from?",
+  "options": {
+   "A": "The health insurance fund",
+   "B": "Hospital profits",
+   "C": "The state budget directly",
+   "D": "Patients' deposits"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P063",
+  "question": "Which is NOT a common reason Vietnam Social Security rejects claims?",
+  "options": {
+   "A": "The patient's nationality",
+   "B": "Drugs outside the reimbursement list",
+   "C": "Missing referral papers",
+   "D": "Prices above approved levels"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P064",
+  "question": "Health insurance co-payment is the share paid by:",
+  "options": {
+   "A": "The employer",
+   "B": "Vietnam Social Security",
+   "C": "The Ministry of Health",
+   "D": "The patient"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P065",
+  "question": "A patient who skips the referral pathway may receive:",
+  "options": {
+   "A": "Lower coverage in some cases",
+   "B": "Free care",
+   "C": "Higher coverage",
+   "D": "No care"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P066",
+  "question": "What does 'tu chu' refer to for public hospitals?",
+  "options": {
+   "A": "Referral",
+   "B": "Financial and operational autonomy",
+   "C": "Insurance rejection",
+   "D": "Emergency care"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P067",
+  "question": "Which body assesses hospitals against the quality criteria each year?",
+  "options": {
+   "A": "Vietnam Social Security",
+   "B": "The State Audit only",
+   "C": "Private rating agencies",
+   "D": "The Ministry of Health and Departments of Health"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P068",
+  "question": "Which information must a patient receive before consenting to treatment?",
+  "options": {
+   "A": "Nothing",
+   "B": "Only the doctor's name",
+   "C": "Only the price list",
+   "D": "Information about their condition and the treatment"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P069",
+  "question": "Which is a right of patients under Law 15/2023?",
+  "options": {
+   "A": "To demand any doctor's home address",
+   "B": "To choose any drug at state expense",
+   "C": "To skip registration",
+   "D": "To consent to or refuse treatment"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P070",
+  "question": "Which agency handles enforcement against unlicensed medical practice?",
+  "options": {
+   "A": "Napas",
+   "B": "The tax office",
+   "C": "Vietnam Social Security",
+   "D": "The health inspectorate"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P071",
+  "question": "Which document gives a nurse the right to practise?",
+  "options": {
+   "A": "A hospital ID badge",
+   "B": "A practice licence",
+   "C": "A residence card",
+   "D": "A health insurance card"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P072",
+  "question": "Health facilities' technical level determines:",
+  "options": {
+   "A": "Which services they may provide",
+   "B": "Their tax rate",
+   "C": "Their bank's interest rate",
+   "D": "Their stock exchange listing"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P073",
+  "question": "Patient safety incidents are reported through:",
+  "options": {
+   "A": "Social media",
+   "B": "The Ministry of Health's incident reporting system",
+   "C": "The police only",
+   "D": "Vietnam Social Security"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P074",
+  "question": "Which ministry issues decisions on hospital quality criteria?",
+  "options": {
+   "A": "The Ministry of Health",
+   "B": "The Ministry of Home Affairs",
+   "C": "The Ministry of Education",
+   "D": "The Ministry of Finance"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P075",
+  "question": "Vietnam's health insurance is mainly:",
+  "options": {
+   "A": "Voluntary private insurance only",
+   "B": "Funded only by patients",
+   "C": "A compulsory social health insurance scheme",
+   "D": "Employer self-insurance"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P076",
+  "question": "The 2024 amendment to the Law on Health Insurance is numbered:",
+  "options": {
+   "A": "46/2014/QH13",
+   "B": "15/2023/QH15",
+   "C": "51/2024/QH15",
+   "D": "25/2008/QH12"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P077",
+  "question": "Which group pays nothing toward health insurance contributions because the state pays?",
+  "options": {
+   "A": "Students over 25",
+   "B": "Corporate executives",
+   "C": "Poor households",
+   "D": "Foreign workers"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P078",
+  "question": "Health insurance for students is generally:",
+  "options": {
+   "A": "Banned",
+   "B": "Compulsory, with state support",
+   "C": "Private only",
+   "D": "Only for medical students"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P079",
+  "question": "Which body pays most hospital costs for insured patients?",
+  "options": {
+   "A": "Commercial banks",
+   "B": "The Department of Health",
+   "C": "Vietnam Social Security",
+   "D": "The hospital itself"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P080",
+  "question": "Electronic medical records may replace paper records once a hospital:",
+  "options": {
+   "A": "Joins the stock exchange",
+   "B": "Is privatised",
+   "C": "Meets the technical conditions",
+   "D": "Gets patient votes"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P081",
+  "question": "A death case's medical record must be kept for at least:",
+  "options": {
+   "A": "20 years",
+   "B": "10 years",
+   "C": "5 years",
+   "D": "15 years"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P082",
+  "question": "A hospital-acquired infection is one that:",
+  "options": {
+   "A": "A patient had before admission",
+   "B": "A patient acquires while in hospital",
+   "C": "Only staff catch",
+   "D": "Spreads in schools"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P083",
+  "question": "Which hospitals have most often reported bed occupancy above 100%?",
+  "options": {
+   "A": "Central hospitals in Hanoi and Ho Chi Minh City",
+   "B": "Military field hospitals",
+   "C": "Private dental clinics",
+   "D": "Rural commune health stations"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_vn_P084",
+  "question": "Infection control programmes aim to reduce:",
+  "options": {
+   "A": "Drug prices",
+   "B": "Bed counts",
+   "C": "Health insurance premiums",
+   "D": "Hospital-acquired infections"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_vn_P085",
+  "question": "Which unit in a hospital usually manages referrals and planning?",
+  "options": {
+   "A": "The pharmacy only",
+   "B": "The canteen",
+   "C": "The planning department",
+   "D": "The security office"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P086",
+  "question": "Insurance eligibility for an admitted patient is checked:",
+  "options": {
+   "A": "Only at discharge",
+   "B": "Never",
+   "C": "At admission",
+   "D": "Once a year"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P087",
+  "question": "Which is required to dispense antibiotics in Vietnam?",
+  "options": {
+   "A": "A health insurance card",
+   "B": "A police permit",
+   "C": "A prescription",
+   "D": "Nothing"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P088",
+  "question": "What is the main purpose of a practice licence?",
+  "options": {
+   "A": "To collect taxes",
+   "B": "To ensure practitioners meet competence standards",
+   "C": "To set drug prices",
+   "D": "To register patients"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_vn_P089",
+  "question": "Which body issues practice licences to doctors?",
+  "options": {
+   "A": "Hospitals' boards",
+   "B": "Vietnam Social Security",
+   "C": "Health authorities (Ministry or Department of Health)",
+   "D": "Medical universities"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_vn_P090",
+  "question": "The national competency assessment for practitioners was introduced by:",
+  "options": {
+   "A": "Law 15/2023/QH15",
+   "B": "Decree 13/2023/ND-CP",
+   "C": "Circular 46/2018/TT-BYT",
+   "D": "Law 40/2009/QH12"
+  },
+  "answer": "A"
+ }
+]
