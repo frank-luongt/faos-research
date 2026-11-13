@@ -68,11 +68,34 @@ def c2b_system_prompt(task: dict) -> tuple[str, dict]:
     return RAG_HEADER + "\n\n".join(picked), meta
 
 
-def build_prompt(task: dict, condition: str) -> tuple[list[dict], dict]:
-    """Return (messages, meta) for one task and condition."""
+def c3g_system_prompt(task: dict, known: set[str]) -> tuple[str, dict]:
+    """C3 with the entries this model already knows removed (stage 2, see gating.py)."""
+    import gating
+
+    t = _v5_task(task)
+    full = v5._load_ontology(t["industry"])
+    gated = gating.gate(full, known)
+    v5._load_ontology = lambda _industry: gated
+    try:
+        system = v5.c3_system_prompt(t)
+    finally:
+        v5._load_ontology = _load_corrected_ontology
+    return system, {"gated_entries": len(known)}
+
+
+def build_prompt(task: dict, condition: str, known: set[str] | None = None) -> tuple[list[dict], dict]:
+    """Return (messages, meta) for one task and condition.
+
+    ``known`` is required for the stage-2 condition C3g_gated: the ontology
+    entries this model knows, from gating.known_entries.
+    """
     t = _v5_task(task)
     meta = {}
-    if condition == "C1_ungrounded":
+    if condition == "C3g_gated":
+        if known is None:
+            raise ValueError("C3g_gated needs the model's known entries")
+        system, meta = c3g_system_prompt(task, known)
+    elif condition == "C1_ungrounded":
         system = v5.c1_system_prompt(t)
     elif condition == "C3_ontology":
         system = v5.c3_system_prompt(t)

@@ -4,9 +4,11 @@
     python run_agents.py --dry-run                 # counts and prompt sizes, no calls
     python run_agents.py --dry-run --v5-tasks      # same, on v5's tasks mapped to v6 cells
     python run_agents.py --models kimi-k3.1-pro --limit 5
+    python run_agents.py --stage2 --dry-run        # C3g runs; needs the registered addendum
 """
 
 import argparse
+import json
 import sys
 
 import design
@@ -23,6 +25,7 @@ def main() -> int:
     ap.add_argument("--models", nargs="*", help="model keys from models.lock.json")
     ap.add_argument("--cells", nargs="*")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--stage2", action="store_true", help="coverage-gated C3g runs (see gating.py)")
     args = ap.parse_args()
 
     if args.v5_tasks and not args.dry_run:
@@ -40,7 +43,19 @@ def main() -> int:
     by_id = {t["id"]: t for t in tasks}
     models = {m["key"]: m for m in design.agent_models(lock)}
 
-    runs = design.run_matrix(list(by_id), lock)
+    known = {}
+    if args.stage2:
+        import gating
+
+        if args.v5_tasks:
+            sys.exit("--stage2 runs on the v6 tasks only")
+        if not gating.ADDENDUM.exists():
+            sys.exit("register the stage-2 addendum first: python gating.py --addendum")
+        with open(gating.ADDENDUM) as f:
+            known = {(e["task_id"], e["model"]): set(e["known_entries"]) for e in json.load(f)["contexts"]}
+        runs = design.stage2_matrix(list(by_id), lock)
+    else:
+        runs = design.run_matrix(list(by_id), lock)
     if args.models:
         runs = [r for r in runs if r["model"] in args.models]
     if args.cells:
@@ -57,7 +72,7 @@ def main() -> int:
         for r in runs:
             if r["model"] != runs[0]["model"] or r["rep"] != 1:
                 continue
-            _, meta = build_prompt(by_id[r["task_id"]], r["condition"])
+            _, meta = build_prompt(by_id[r["task_id"]], r["condition"], known=known.get((r["task_id"], r["model"])))
             sizes.setdefault(r["condition"], []).append(meta)
         for cond, metas in sizes.items():
             chars = [m["system_chars"] for m in metas]
@@ -73,7 +88,7 @@ def main() -> int:
     for i, r in enumerate(todo, 1):
         key = design.run_key(r)
         task, m = by_id[r["task_id"]], models[r["model"]]
-        messages, meta = build_prompt(task, r["condition"])
+        messages, meta = build_prompt(task, r["condition"], known=known.get((r["task_id"], r["model"])))
         row = {"key": key, **r, "cell": task["cell"], "openrouter_id": m["openrouter_id"], "prompt_meta": meta}
         try:
             res = chat(m["openrouter_id"], messages, max_tokens=design.AGENT_MAX_TOKENS,

@@ -122,6 +122,18 @@ def run_matrix(task_ids: list[str], lock: dict | None = None) -> list[dict]:
     return primary + [{**r, "rep": 2} for r in sorted(repeats, key=run_key)]
 
 
+STAGE2_CONDITION = "C3g_gated"
+
+
+def stage2_matrix(task_ids: list[str], lock: dict | None = None) -> list[dict]:
+    """Stage-2 runs (C3g): every task x model once, plus seeded 10% repeats (792 in all)."""
+    lock = lock or load_lock()
+    primary = [{"task_id": t, "model": m["key"], "condition": STAGE2_CONDITION, "rep": 1}
+               for t in task_ids for m in agent_models(lock)]
+    repeats = _rng("repeats-stage2").sample(primary, round(len(primary) * REPEAT_SHARE))
+    return primary + [{**r, "rep": 2} for r in sorted(repeats, key=run_key)]
+
+
 def run_key(run: dict) -> str:
     return f"{run['model']}|{run['task_id']}|{run['condition']}|{run['rep']}"
 
