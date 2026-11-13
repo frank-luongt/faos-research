@@ -1,0 +1,10 @@
+Power (share of 300 simulated studies), 999 permutations each; probe noise included
+
+A v5 anchor: slope -0.8, spread .06/.06, probe 30    H2= 1.00  H3= 0.65  H3(Holm .0125)= 0.41
+B half effect: slope -0.4, spread .06/.06, probe 30  H2= 0.99  H3= 0.36  H3(Holm .0125)= 0.15
+C v5 anchor, low spread .03/.03, probe 30            H2= 1.00  H3= 0.32  H3(Holm .0125)= 0.14
+D half effect, low spread .03/.03, probe 30          H2= 0.97  H3= 0.18  H3(Holm .0125)= 0.07
+E v5 anchor, SG = US coverage, probe 30              H2= 1.00  H3= 0.65  H3(Holm .0125)= 0.44
+F half effect, spread .06/.06, probe 60              H2= 1.00  H3= 0.53  H3(Holm .0125)= 0.25
+G half effect, low spread .03/.03, probe 60          H2= 1.00  H3= 0.22  H3(Holm .0125)= 0.07
+N null: slope 0, VN effect +.15, probe 30            H2= 0.98  H3= 0.01  H3(Holm .0125)= 0.00

@@ -1,0 +1,9 @@
+v5 anchor: US+SG+VN x 6 ind (current)                      cells=18  H3=0.90  H3(Holm)=0.86
+v5 anchor: US+VN x 6 ind, probe 60                         cells=12  H3=0.86  H3(Holm)=0.73
+v5 anchor: US+VN x 6 ind, probe 90                         cells=12  H3=0.94  H3(Holm)=0.84
+v5 anchor: US+VN x 6 ind, probe 60, 15 tasks/cell          cells=12  H3=0.89  H3(Holm)=0.79
+half effect: US+SG+VN x 6 ind (current)                    cells=18  H3=0.72  H3(Holm)=0.49
+half effect: US+VN x 6 ind, probe 60                       cells=12  H3=0.58  H3(Holm)=0.32
+half effect: US+VN x 6 ind, probe 90                       cells=12  H3=0.66  H3(Holm)=0.39
+half effect: US+VN x 6 ind, probe 60, 15 tasks/cell        cells=12  H3=0.67  H3(Holm)=0.42
+null: slope 0, VN +.15, US+VN x 6, probe 60                cells=12  H3=0.01  H3(Holm)=0.00

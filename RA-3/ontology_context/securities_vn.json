@@ -1,0 +1,236 @@
+{
+  "industry": "securities_vn",
+  "jurisdiction": "Vietnam",
+  "status": "draft RA-3 v6 cell, pending Vietnamese expert review",
+  "role_layer": {
+    "head_of_risk_management": {
+      "title": "Head of Risk Management (Securities Company)",
+      "persona": "Guardian of the firm's financial safety and margin book",
+      "communication_style": "Quantitative, threshold-driven, cites SSC rules",
+      "kpis": {
+        "available_capital_ratio": ">= 180%",
+        "margin_book": "Total margin loans <= 200% of equity",
+        "client_margin_calls": "Resolved within the call period"
+      },
+      "vocabulary": [
+        "Available Capital Ratio",
+        "Circular 91/2020/TT-BTC",
+        "Margin Lending",
+        "Initial Margin",
+        "Maintenance Margin",
+        "Margin Call",
+        "Forced Sale",
+        "Concentration Limit"
+      ],
+      "decision_patterns": {
+        "market_stress": {
+          "steps": [
+            "recompute_account_ratios",
+            "issue_margin_calls",
+            "forced_sale_below_maintenance",
+            "tighten_eligible_stock_list",
+            "review_available_capital_ratio"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "thresholds": {
+          "warning": "150% to under 180%",
+          "control": "120% to under 150%",
+          "special_control": "under 120%"
+        }
+      }
+    },
+    "head_of_compliance": {
+      "title": "Head of Compliance (Securities Company)",
+      "persona": "Owner of market-conduct and AML compliance",
+      "communication_style": "Formal, legalistic, cites Law, Decree and Circular",
+      "kpis": {
+        "str_timeliness": "Suspicious transaction reports within 3 working days",
+        "ssc_findings": "No repeat inspection findings"
+      },
+      "vocabulary": [
+        "Law on Securities 54/2019/QH14",
+        "Market Manipulation",
+        "Insider Trading",
+        "Decree 156/2020/ND-CP",
+        "Suspicious Transaction Report",
+        "Law on AML 14/2022/QH15",
+        "SSC"
+      ],
+      "decision_patterns": {
+        "suspected_manipulation": {
+          "steps": [
+            "review_linked_accounts",
+            "freeze_or_restrict_where_permitted",
+            "report_to_SSC",
+            "file_STR_with_SBV",
+            "preserve_records_5_years"
+          ]
+        }
+      }
+    },
+    "investor_relations_head": {
+      "title": "Head of Investor Relations (Listed Company)",
+      "persona": "Owner of the company's disclosure obligations",
+      "communication_style": "Timely, factual, bilingual",
+      "kpis": {
+        "disclosure_timeliness": "Extraordinary events disclosed within 24 hours"
+      },
+      "vocabulary": [
+        "Circular 96/2020/TT-BTC",
+        "Extraordinary Disclosure",
+        "Major Shareholder",
+        "Insider",
+        "Public Tender Offer"
+      ]
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "available_capital_ratio": {
+        "definition": "Available capital divided by total risk value under Circular 91/2020/TT-BTC",
+        "regulatory_minimum": "180%",
+        "warning": "150% to under 180%",
+        "control": "120% to under 150%",
+        "special_control": "under 120%"
+      },
+      "margin_lending": {
+        "definition": "Securities company loans to clients against eligible listed shares",
+        "initial_margin": ">= 50%",
+        "maintenance_margin": ">= 30% (firm may set higher)",
+        "total_limit": "Margin loans <= 200% of the securities company's equity"
+      },
+      "price_band": {
+        "definition": "Daily price limits from the reference price",
+        "HOSE": "+/-7%",
+        "HNX": "+/-10%",
+        "UPCoM": "+/-15%",
+        "first_trading_day": "HOSE +/-20%, HNX +/-30%, UPCoM +/-40%"
+      },
+      "settlement_cycle_vn": {
+        "definition": "Equities settle T+2 through VSDC; foreign institutional investors may trade without pre-funding since November 2024 (Circular 68/2024/TT-BTC)"
+      },
+      "public_company": {
+        "definition": "Joint stock company with charter capital of VND 30 billion or more and at least 10% of voting shares held by at least 100 non-major investors, or that has made an IPO"
+      },
+      "major_shareholder": {
+        "definition": "Holds 5% or more of voting shares"
+      }
+    },
+    "regulations": {
+      "law_on_securities": {
+        "name": "Law on Securities No. 54/2019/QH14",
+        "effective": "1 January 2021",
+        "amended": "Law No. 56/2024/QH15 from 1 January 2025"
+      },
+      "tender_offer": {
+        "name": "Law on Securities 54/2019, Article 35",
+        "rule": "A public tender offer is required to acquire shares that bring ownership to 25% or more of voting shares of a public company, and at each further 35%, 45%, 55%, 65% and 75% threshold"
+      },
+      "insider_trading_reporting": {
+        "name": "Circular 96/2020/TT-BTC",
+        "rule": "Insiders and related persons report at least 3 working days before trading, trade within 30 days, and report the result within 5 working days of completing"
+      },
+      "major_shareholder_disclosure": {
+        "name": "Circular 96/2020/TT-BTC",
+        "rule": "Report becoming or ceasing to be a major shareholder, or a change crossing each 1%, within 5 working days"
+      },
+      "extraordinary_disclosure": {
+        "name": "Circular 96/2020/TT-BTC",
+        "rule": "Extraordinary information disclosed within 24 hours of the event"
+      },
+      "sanctions": {
+        "name": "Decree 156/2020/ND-CP",
+        "rule": "Administrative penalties in securities; insider trading and manipulation are also crimes under Penal Code Articles 210 and 211"
+      },
+      "aml": {
+        "name": "Law on Anti-Money Laundering No. 14/2022/QH15",
+        "rule": "Suspicious transaction reports to the State Bank's AML department within 3 working days of detection; records kept 5 years"
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "board_to_ir": {
+        "trigger": "Board resolution or event requiring extraordinary disclosure",
+        "from": "Board of Directors / Company Secretary",
+        "to": "Head of Investor Relations",
+        "context": [
+          "resolution_text",
+          "event_details"
+        ],
+        "sla": {
+          "handover": "Same day"
+        }
+      },
+      "ir_to_regulators": {
+        "from": "Head of Investor Relations",
+        "to": "State Securities Commission and Stock Exchange",
+        "context": [
+          "disclosure_document",
+          "company_website_posting"
+        ],
+        "sla": {
+          "disclosure": "Within 24 hours of the event"
+        }
+      },
+      "surveillance_to_compliance": {
+        "trigger": "Abnormal linked-account trading",
+        "from": "Brokerage Operations",
+        "to": "Head of Compliance",
+        "context": [
+          "account_links",
+          "order_patterns",
+          "funding_sources"
+        ],
+        "sla": {
+          "review": "3 working days"
+        }
+      },
+      "compliance_to_sbv": {
+        "trigger": "Suspicion confirmed",
+        "from": "Head of Compliance",
+        "to": "State Bank of Vietnam AML Department",
+        "context": [
+          "STR"
+        ],
+        "sla": {
+          "report": "3 working days"
+        }
+      },
+      "risk_to_clients": {
+        "trigger": "Account ratio below maintenance margin",
+        "from": "Head of Risk Management",
+        "to": "Brokers and Clients",
+        "context": [
+          "margin_call_notice",
+          "deadline",
+          "forced_sale_list"
+        ]
+      }
+    },
+    "escalation_matrix": {
+      "capital": {
+        "acr_below_180": "L5_board (SSC warning status)"
+      },
+      "conduct": {
+        "suspected_manipulation": "L4_executive"
+      }
+    }
+  },
+  "rag_chunks": [
+    "Vietnam's Law on Securities No. 54/2019/QH14 took effect on 1 January 2021 and was amended by Law No. 56/2024/QH15 from 1 January 2025. The State Securities Commission, under the Ministry of Finance, licenses and supervises securities companies, fund managers and public companies. The Vietnam Exchange is the parent of the Ho Chi Minh City Stock Exchange (HOSE) and the Hanoi Stock Exchange (HNX), which also runs the UPCoM market; the Vietnam Securities Depository and Clearing Corporation (VSDC) clears and settles trades.",
+    "A public company is a joint stock company that has made an initial public offering, or has charter capital of 30 billion dong or more with at least 10 percent of its voting shares held by at least 100 investors who are not major shareholders. A major shareholder holds 5 percent or more of the voting shares. Public companies must register their shares with VSDC and list or register them for trading.",
+    "Daily price limits apply from the reference price: plus or minus 7 percent on HOSE, 10 percent on HNX and 15 percent on UPCoM. On a stock's first trading day the limits are 20 percent on HOSE, 30 percent on HNX and 40 percent on UPCoM. HOSE trading opens with a periodic auction from 9:00 to 9:15, runs continuous matching until 11:30 and from 13:00 to 14:30, and closes with an auction from 14:30 to 14:45; the standard lot is 100 shares, with odd lots traded separately.",
+    "Equity trades settle on T+2 through VSDC. Circular 68/2024/TT-BTC, effective 2 November 2024, allows foreign institutional investors to buy shares without pre-funding the full amount, with the securities company bearing settlement risk. HOSE moved its trading onto a new system built with the Korea Exchange in May 2025. FTSE Russell announced in October 2025 that Vietnam would be reclassified from frontier to secondary emerging market status from September 2026, subject to review.",
+    "Circular 91/2020/TT-BTC sets the financial safety ratio for securities companies, the available capital ratio, equal to available capital divided by total risk value. A firm must keep the ratio at 180 percent or more. Between 150 and under 180 percent it is placed under warning status; between 120 and under 150 percent it is placed under control; below 120 percent it is placed under special control and may have its operations restricted. Firms report the ratio to the SSC monthly.",
+    "Securities companies may lend on margin only against eligible shares listed on the exchanges. The initial margin ratio may not be below 50 percent, and the maintenance ratio is set by the firm at no lower than the SSC minimum, commonly 30 percent or more. When an account falls below the maintenance ratio the firm issues a margin call and may force-sell if the client does not add collateral. Total margin lending of a securities company may not exceed 200 percent of its owner's equity.",
+    "Securities companies need minimum charter capital for each licensed business under Decree 155/2020/ND-CP: 25 billion dong for brokerage, 50 billion dong for proprietary trading, 165 billion dong for underwriting and 10 billion dong for investment advisory. Fund management companies need 25 billion dong. Individuals pay personal income tax of 0.1 percent on the sale value of each securities transfer and 5 percent on cash dividends.",
+    "Under Article 35 of the Law on Securities, an investor must make a public tender offer when buying voting shares that would bring its holding, with related persons, to 25 percent or more of a public company, and again when crossing 35, 45, 55, 65 and 75 percent. Circular 96/2020/TT-BTC requires a person who becomes or ceases to be a major shareholder, or whose holding changes across each 1 percent step, to report within five working days.",
+    "Insiders of a public company and their related persons must report to the SSC, the exchange and the company at least three working days before trading the company's shares, carry out the trade within 30 days, and report the result within five working days of completing it or of the end of the period. Trading on inside information is prohibited by the Law on Securities and is a crime under Article 210 of the Penal Code; market manipulation is a crime under Article 211.",
+    "Listed companies must disclose extraordinary information, such as major board resolutions, changes of key managers, suspension of business, or the arrest or prosecution of insiders, within 24 hours of the event, on their website and through the SSC and exchange systems. Periodic disclosure covers audited annual statements, reviewed semi-annual statements, quarterly statements, the annual report and the corporate governance report.",
+    "Decree 156/2020/ND-CP, amended by Decree 128/2021/ND-CP, sets administrative penalties for violations in securities and the securities market, including late disclosure, trading without reporting, and manipulation, with fines for organisations up to twice those for individuals. The Law on Anti-Money Laundering No. 14/2022/QH15, in force since 1 March 2023, applies to securities companies: they identify customers, report suspicious transactions to the State Bank of Vietnam within three working days, and keep records for five years.",
+    "Foreign investors in Vietnamese listed companies face foreign ownership limits. The general limit is set by sector under the investment law and Vietnam's international commitments, often 49 or 50 percent in conditional sectors; banks have a 30 percent aggregate foreign limit, with no single strategic foreign investor above 20 percent. Where no limit applies the company may open up to 100 percent. Index futures on the VN30 have traded on HNX since August 2017, and covered warrants have traded on HOSE since 2019."
+  ]
+}

@@ -1,0 +1,1082 @@
+[
+ {
+  "id": "banking_vn_S01",
+  "cell": "banking_vn",
+  "question": "Under Vietnam's current AML rules, how soon must a bank file a suspicious transaction report?",
+  "options": {
+   "A": "Within 24 hours of the transaction",
+   "B": "Within 10 working days of the month end",
+   "C": "Within 3 working days of the transaction or of detecting it",
+   "D": "Within 48 hours of confirming the suspicion"
+  },
+  "answer": "C",
+  "superseded": "D",
+  "effective": "2023-03-01",
+  "source": "Law 14/2022/QH15 on Anti-Money Laundering",
+  "evidence": "3_working_days",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S02",
+  "cell": "banking_vn",
+  "question": "Which decree currently implements Vietnam's anti-money-laundering law for banks?",
+  "options": {
+   "A": "Decree 19/2023/ND-CP",
+   "B": "Decree 13/2023/ND-CP",
+   "C": "Decree 52/2024/ND-CP",
+   "D": "Decree 116/2013/ND-CP"
+  },
+  "answer": "A",
+  "superseded": "D",
+  "effective": "2023-05-15",
+  "source": "Decree 19/2023/ND-CP",
+  "evidence": "19/2023",
+  "check": "effective date of Decree 19/2023",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S03",
+  "cell": "banking_vn",
+  "question": "What is the large-value cash transaction reporting threshold for Vietnamese banks?",
+  "options": {
+   "A": "VND 200 million",
+   "B": "VND 300 million",
+   "C": "VND 400 million",
+   "D": "VND 1 billion"
+  },
+  "answer": "C",
+  "superseded": "B",
+  "effective": "2023-07-15",
+  "source": "Decision 11/2023/QD-TTg",
+  "evidence": "VND 400,000,000",
+  "check": "effective date of Decision 11/2023",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S04",
+  "cell": "banking_vn",
+  "question": "Which SBV circular governs loan classification and provisioning at Vietnamese banks?",
+  "options": {
+   "A": "Circular 39/2016/TT-NHNN",
+   "B": "Circular 11/2021/TT-NHNN",
+   "C": "Circular 22/2019/TT-NHNN",
+   "D": "Circular 31/2024/TT-NHNN"
+  },
+  "answer": "D",
+  "superseded": "B",
+  "effective": "2024-07-01",
+  "source": "Circular 31/2024/TT-NHNN",
+  "evidence": "31/2024",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S05",
+  "cell": "banking_vn",
+  "question": "Which law on credit institutions currently governs Vietnamese banks?",
+  "options": {
+   "A": "Law 47/2010/QH12",
+   "B": "Law 32/2024/QH15",
+   "C": "Law 14/2022/QH15",
+   "D": "Law 54/2019/QH14"
+  },
+  "answer": "B",
+  "superseded": "A",
+  "effective": "2024-07-01",
+  "source": "Law 32/2024/QH15 on Credit Institutions",
+  "evidence": "Law 32/2024",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S06",
+  "cell": "banking_vn",
+  "question": "In 2026, what is a Vietnamese bank's maximum credit exposure to a single customer?",
+  "options": {
+   "A": "13% of the bank's equity",
+   "B": "10% of the bank's equity",
+   "C": "25% of the bank's equity",
+   "D": "15% of the bank's equity"
+  },
+  "answer": "A",
+  "superseded": "D",
+  "effective": "2024-07-01",
+  "source": "Law 32/2024/QH15, art. 136 and transition schedule",
+  "evidence": "13% of the bank's equity in 2026",
+  "check": "the 2026 step of the transition schedule",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S07",
+  "cell": "banking_vn",
+  "question": "In 2026, what is a Vietnamese bank's maximum credit exposure to one customer and its related persons?",
+  "options": {
+   "A": "21% of the bank's equity",
+   "B": "15% of the bank's equity",
+   "C": "25% of the bank's equity",
+   "D": "30% of the bank's equity"
+  },
+  "answer": "A",
+  "superseded": "C",
+  "effective": "2024-07-01",
+  "source": "Law 32/2024/QH15, art. 136 and transition schedule",
+  "evidence": "21% for a customer and related persons",
+  "check": "the 2026 step of the transition schedule",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S08",
+  "cell": "banking_vn",
+  "question": "Which SBV circular now sets the rules for payment accounts and eKYC account opening?",
+  "options": {
+   "A": "Circular 16/2020/TT-NHNN",
+   "B": "Circular 40/2024/TT-NHNN",
+   "C": "Circular 17/2024/TT-NHNN",
+   "D": "Circular 64/2024/TT-NHNN"
+  },
+  "answer": "C",
+  "superseded": "A",
+  "effective": "2024-07-01",
+  "source": "Circular 17/2024/TT-NHNN",
+  "evidence": "17/2024",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_vn_S01",
+  "cell": "insurance_vn",
+  "question": "Which law is Vietnam's primary insurance business law?",
+  "options": {
+   "A": "Law 14/2022/QH15",
+   "B": "The 2000 Law on Insurance Business (amended 2010 and 2019)",
+   "C": "Law 51/2024/QH15",
+   "D": "Law 08/2022/QH15, effective 1 January 2023"
+  },
+  "answer": "D",
+  "superseded": "B",
+  "effective": "2023-01-01",
+  "source": "Law 08/2022/QH15 on Insurance Business",
+  "evidence": "Law 08/2022/QH15",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_vn_S02",
+  "cell": "insurance_vn",
+  "question": "Which decree implements Vietnam's insurance business law on licensing, capital and solvency?",
+  "options": {
+   "A": "Decree 73/2016/ND-CP",
+   "B": "Decree 67/2023/ND-CP",
+   "C": "Decree 19/2023/ND-CP",
+   "D": "Decree 46/2023/ND-CP"
+  },
+  "answer": "D",
+  "superseded": "A",
+  "effective": "2023-07-01",
+  "source": "Decree 46/2023/ND-CP",
+  "evidence": "46/2023",
+  "check": "effective date of Decree 46/2023",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_vn_S03",
+  "cell": "insurance_vn",
+  "question": "Which decree now governs compulsory motor third-party liability and fire insurance in Vietnam?",
+  "options": {
+   "A": "Decree 03/2021/ND-CP",
+   "B": "Decree 46/2023/ND-CP",
+   "C": "Decree 67/2023/ND-CP",
+   "D": "Decree 13/2023/ND-CP"
+  },
+  "answer": "C",
+  "superseded": "A",
+  "effective": "2023-09-06",
+  "source": "Decree 67/2023/ND-CP",
+  "evidence": "67/2023",
+  "check": "effective date; Decree 03/2021 as the motor predecessor",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_vn_S04",
+  "cell": "insurance_vn",
+  "question": "How soon must a Vietnamese insurer file a suspicious transaction report?",
+  "options": {
+   "A": "Within 48 hours",
+   "B": "Within 24 hours",
+   "C": "Within 3 working days",
+   "D": "Within 15 working days"
+  },
+  "answer": "C",
+  "superseded": "A",
+  "effective": "2023-03-01",
+  "source": "Law 14/2022/QH15 on Anti-Money Laundering",
+  "evidence": "STR_filing_3_working_days",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_vn_S05",
+  "cell": "insurance_vn",
+  "question": "What legal status does microinsurance have in Vietnam?",
+  "options": {
+   "A": "Banned for commercial insurers",
+   "B": "A formal framework in its own chapter of the insurance business law",
+   "C": "Pilot schemes only, with no framework in the insurance law",
+   "D": "Allowed only for state-owned insurers"
+  },
+  "answer": "B",
+  "superseded": "C",
+  "effective": "2023-01-01",
+  "source": "Law 08/2022/QH15, Chapter VII",
+  "evidence": "first formal legal framework",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_vn_S06",
+  "cell": "insurance_vn",
+  "question": "How does Vietnam's insurance regulator supervise insurers under the current law?",
+  "options": {
+   "A": "Self-regulation by the insurance association",
+   "B": "Supervision by the State Bank of Vietnam",
+   "C": "Rule-based compliance supervision",
+   "D": "Risk-based supervision"
+  },
+  "answer": "D",
+  "superseded": "C",
+  "effective": "2023-01-01",
+  "source": "Law 08/2022/QH15",
+  "evidence": "risk-based oversight",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S01",
+  "cell": "fintech_vn",
+  "question": "Which decree now governs non-cash payments and payment intermediaries in Vietnam?",
+  "options": {
+   "A": "Decree 94/2025/ND-CP",
+   "B": "Decree 52/2024/ND-CP",
+   "C": "Decree 13/2023/ND-CP",
+   "D": "Decree 101/2012/ND-CP"
+  },
+  "answer": "B",
+  "superseded": "D",
+  "effective": "2024-07-01",
+  "source": "Decree 52/2024/ND-CP",
+  "evidence": "Decree 52/2024",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S02",
+  "cell": "fintech_vn",
+  "question": "What cap applies to foreign ownership of a Vietnamese payment intermediary?",
+  "options": {
+   "A": "49%",
+   "B": "30%",
+   "C": "No specific cap",
+   "D": "100% after a licence"
+  },
+  "answer": "A",
+  "superseded": "C",
+  "effective": "2024-07-01",
+  "source": "Decree 52/2024/ND-CP",
+  "evidence": "49%",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S03",
+  "cell": "fintech_vn",
+  "question": "When must a Vietnamese bank customer pass biometric authentication for an online transfer?",
+  "options": {
+   "A": "For a single transfer over VND 10 million, or once a day's total exceeds VND 20 million",
+   "B": "Never; an SMS OTP or soft token is enough at any amount",
+   "C": "Only for transfers over VND 500 million",
+   "D": "For every online transfer"
+  },
+  "answer": "A",
+  "superseded": "B",
+  "effective": "2024-07-01",
+  "source": "Decision 2345/QD-NHNN",
+  "evidence": "over VND 10 million",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S04",
+  "cell": "fintech_vn",
+  "question": "Can a Vietnamese bank account or e-wallet that has not been verified against biometric data transact online?",
+  "options": {
+   "A": "Yes, with an OTP",
+   "B": "Yes, up to VND 5 million a day",
+   "C": "No, not since 1 January 2025",
+   "D": "Only for domestic payments"
+  },
+  "answer": "C",
+  "superseded": "A",
+  "effective": "2025-01-01",
+  "source": "Circular 17/2024/TT-NHNN",
+  "evidence": "From 1 January 2025 accounts",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S05",
+  "cell": "fintech_vn",
+  "question": "Is there a legal regulatory sandbox for banking fintech in Vietnam?",
+  "options": {
+   "A": "Yes, under Decree 52/2024/ND-CP",
+   "B": "Only for securities firms",
+   "C": "No; only a draft decree exists",
+   "D": "Yes, under Decree 94/2025/ND-CP from 1 July 2025"
+  },
+  "answer": "D",
+  "superseded": "C",
+  "effective": "2025-07-01",
+  "source": "Decree 94/2025/ND-CP",
+  "evidence": "Decree 94/2025",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S06",
+  "cell": "fintech_vn",
+  "question": "What is the main legal basis for personal data protection in Vietnam from 1 January 2026?",
+  "options": {
+   "A": "The Law on Personal Data Protection, No. 91/2025/QH15",
+   "B": "The 2018 Law on Cybersecurity alone",
+   "C": "Circular 64/2024/TT-NHNN",
+   "D": "Decree 13/2023/ND-CP alone, with no statute"
+  },
+  "answer": "A",
+  "superseded": "D",
+  "effective": "2026-01-01",
+  "source": "Law 91/2025/QH15",
+  "evidence": "91/2025",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S07",
+  "cell": "fintech_vn",
+  "question": "Is there a binding open-API standard for Vietnamese banks sharing data with third parties?",
+  "options": {
+   "A": "Yes, Decree 13/2023/ND-CP",
+   "B": "Only for state-owned banks",
+   "C": "No; open APIs are voluntary bank practice",
+   "D": "Yes, Circular 64/2024/TT-NHNN"
+  },
+  "answer": "D",
+  "superseded": "C",
+  "effective": "2025-03-01",
+  "source": "Circular 64/2024/TT-NHNN",
+  "evidence": "Circular 64/2024",
+  "check": "effective date of Circular 64/2024",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_vn_S08",
+  "cell": "fintech_vn",
+  "question": "From what cash amount must a Vietnamese payment provider report a large-value transaction?",
+  "options": {
+   "A": "VND 300 million",
+   "B": "VND 100 million",
+   "C": "VND 1 billion",
+   "D": "VND 400 million"
+  },
+  "answer": "D",
+  "superseded": "A",
+  "effective": "2023-07-15",
+  "source": "Decision 11/2023/QD-TTg",
+  "evidence": "VND 400 million or more",
+  "check": "effective date of Decision 11/2023",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_vn_S01",
+  "cell": "healthcare_vn",
+  "question": "Which law governs medical examination and treatment in Vietnam?",
+  "options": {
+   "A": "Law 15/2023/QH15",
+   "B": "Law 51/2024/QH15",
+   "C": "Law 08/2022/QH15",
+   "D": "Law 40/2009/QH12"
+  },
+  "answer": "A",
+  "superseded": "D",
+  "effective": "2024-01-01",
+  "source": "Law 15/2023/QH15",
+  "evidence": "15/2023/QH15",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_vn_S02",
+  "cell": "healthcare_vn",
+  "question": "How does Vietnamese law now classify medical facilities?",
+  "options": {
+   "A": "Two levels: public and private",
+   "B": "Three technical levels: initial, basic and specialised",
+   "C": "Five grades by bed count",
+   "D": "Four administrative tiers: central, provincial, district and commune"
+  },
+  "answer": "B",
+  "superseded": "D",
+  "effective": "2024-01-01",
+  "source": "Law 15/2023/QH15",
+  "evidence": "initial, basic and specialised",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_vn_S03",
+  "cell": "healthcare_vn",
+  "question": "Which decree guides Vietnam's current law on medical examination and treatment?",
+  "options": {
+   "A": "Decree 13/2023/ND-CP",
+   "B": "Decree 96/2023/ND-CP",
+   "C": "Decree 109/2016/ND-CP",
+   "D": "Decree 52/2024/ND-CP"
+  },
+  "answer": "B",
+  "superseded": "C",
+  "effective": "2023-12-30",
+  "source": "Decree 96/2023/ND-CP",
+  "evidence": "Decree 96/2023",
+  "check": "effective date of Decree 96/2023",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_vn_S04",
+  "cell": "healthcare_vn",
+  "question": "How must a Vietnamese hospital treat patients' health information as personal data?",
+  "options": {
+   "A": "As public data once anonymised by the hospital",
+   "B": "As sensitive personal data needing explicit consent under Decree 13/2023/ND-CP",
+   "C": "Under general privacy provisions only, with no personal data decree",
+   "D": "As state secrets under the Ministry of Health"
+  },
+  "answer": "B",
+  "superseded": "C",
+  "effective": "2023-07-01",
+  "source": "Decree 13/2023/ND-CP",
+  "evidence": "Decree 13/2023/ND-CP",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "securities_vn_S01",
+  "cell": "securities_vn",
+  "question": "Must a foreign institutional investor pre-fund a share purchase on Vietnam's exchanges?",
+  "options": {
+   "A": "Yes, 50% before the order",
+   "B": "No, not since November 2024",
+   "C": "Only for orders over VND 10 billion",
+   "D": "Yes, the full amount before the order"
+  },
+  "answer": "B",
+  "superseded": "D",
+  "effective": "2024-11-02",
+  "source": "Circular 68/2024/TT-BTC",
+  "evidence": "without pre-funding",
+  "check": "effective date of Circular 68/2024",
+  "status": "draft"
+ },
+ {
+  "id": "securities_vn_S02",
+  "cell": "securities_vn",
+  "question": "How soon must a Vietnamese securities firm report a suspicious transaction?",
+  "options": {
+   "A": "Within 24 hours",
+   "B": "Within 3 working days of detection",
+   "C": "At the next quarterly report",
+   "D": "Within 48 hours of confirmation"
+  },
+  "answer": "B",
+  "superseded": "D",
+  "effective": "2023-03-01",
+  "source": "Law 14/2022/QH15 on Anti-Money Laundering",
+  "evidence": "within 3 working days of detection",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_vn_S09",
+  "cell": "banking_vn",
+  "question": "What must a Vietnamese bank check when a customer opens an account online by eKYC?",
+  "options": {
+   "A": "The chip-based citizen ID, with a biometric match to the chip data",
+   "B": "Any photo ID, with a video call",
+   "C": "A paper ID copy sent by post",
+   "D": "Only the customer's mobile number"
+  },
+  "answer": "A",
+  "superseded": "B",
+  "effective": "2024-07-01",
+  "source": "Circular 17/2024/TT-NHNN and Decision 2345/QD-NHNN",
+  "evidence": "biometric_verification_against_chip_ID",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "accounting_vn_S01",
+  "cell": "accounting_vn",
+  "question": "Can a Vietnamese business still issue paper invoices for its sales?",
+  "options": {
+   "A": "Only businesses with revenue under VND 3 billion",
+   "B": "Yes; paper invoices remain allowed alongside e-invoices",
+   "C": "No; electronic invoices are mandatory nationwide since 1 July 2022",
+   "D": "Only for exports"
+  },
+  "answer": "C",
+  "superseded": "B",
+  "effective": "2022-07-01",
+  "source": "Decree 123/2020/ND-CP",
+  "evidence": "from 1 July 2022",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_us_S01",
+  "cell": "banking_us",
+  "question": "Which companies must file beneficial ownership information reports with FinCEN under the Corporate Transparency Act?",
+  "options": {
+   "A": "Only banks and credit unions",
+   "B": "All domestic and foreign reporting companies",
+   "C": "Only publicly traded companies",
+   "D": "Only foreign companies registered to do business in the US"
+  },
+  "answer": "D",
+  "superseded": "B",
+  "effective": "2025-03-26",
+  "source": "Corporate Transparency Act beneficial ownership reporting",
+  "evidence": "only foreign reporting companies",
+  "check": "final status of the March 2025 interim rule",
+  "status": "draft"
+ },
+ {
+  "id": "banking_us_S02",
+  "cell": "banking_us",
+  "question": "Which message format does the Fedwire Funds Service use?",
+  "options": {
+   "A": "SWIFT MT103 only",
+   "B": "ISO 20022",
+   "C": "The legacy FAIM proprietary format",
+   "D": "NACHA fixed-width files"
+  },
+  "answer": "B",
+  "superseded": "C",
+  "effective": "2025-07-14",
+  "source": "Fedwire Funds Service message format",
+  "evidence": "ISO 20022 format since 14 July 2025",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_us_S03",
+  "cell": "banking_us",
+  "question": "How must a smaller US community bank measure its allowance for loan losses?",
+  "options": {
+   "A": "A fixed 1.25% of risk-weighted assets",
+   "B": "Only losses on loans already 90 days past due",
+   "C": "Lifetime expected credit losses under CECL",
+   "D": "Incurred losses that are probable and estimable"
+  },
+  "answer": "C",
+  "superseded": "D",
+  "effective": "2023-01-01",
+  "source": "Current expected credit losses (ASC 326)",
+  "evidence": "lifetime expected losses replace the incurred-loss model",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_us_S04",
+  "cell": "banking_us",
+  "question": "What guidance governs a US bank's management of risks from third-party relationships?",
+  "options": {
+   "A": "No supervisory guidance; contracts only",
+   "B": "Separate guidance from each banking agency",
+   "C": "One interagency guidance issued jointly by the Fed, FDIC and OCC in June 2023",
+   "D": "Only the FFIEC IT handbook"
+  },
+  "answer": "C",
+  "superseded": "B",
+  "effective": "2023-06-06",
+  "source": "Interagency third-party risk management guidance",
+  "evidence": "replacing each agency's separate guidance",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "banking_us_S05",
+  "cell": "banking_us",
+  "question": "Which Federal Reserve service lets a bank settle instant payments around the clock?",
+  "options": {
+   "A": "FedNow",
+   "B": "FedACH Same Day",
+   "C": "None; Fedwire runs only on business days and no Fed instant service exists",
+   "D": "CHIPS"
+  },
+  "answer": "A",
+  "superseded": "C",
+  "effective": "2023-07-20",
+  "source": "FedNow instant payments",
+  "evidence": "FedNow Service has offered 24x7",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_us_S01",
+  "cell": "fintech_us",
+  "question": "Which Visa program monitors a merchant's fraud and dispute levels?",
+  "options": {
+   "A": "Mastercard's Excessive Chargeback Program",
+   "B": "The Visa Acquirer Monitoring Program (VAMP), with one combined ratio",
+   "C": "No Visa program; only the acquirer monitors",
+   "D": "The separate Visa Dispute Monitoring Program and Visa Fraud Monitoring Program"
+  },
+  "answer": "B",
+  "superseded": "D",
+  "effective": "2025-04-01",
+  "source": "Visa Acquirer Monitoring Program (VAMP)",
+  "evidence": "replacing the separate VDMP and VFMP programs",
+  "check": "enforcement start dates by region",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_us_S02",
+  "cell": "fintech_us",
+  "question": "What fraud screening do Nacha's rules require of large ACH originators?",
+  "options": {
+   "A": "None; fraud is the bank's own policy",
+   "B": "Fraud screening only for consumer WEB debits",
+   "C": "Manual review of every entry over USD 1 million",
+   "D": "Risk-based fraud monitoring of all ACH entries, including credit-push fraud"
+  },
+  "answer": "D",
+  "superseded": "B",
+  "effective": "2026-03-20",
+  "source": "Nacha risk-based fraud monitoring rules",
+  "evidence": "risk-based fraud monitoring on all entries",
+  "check": "phase dates and size thresholds",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_us_S03",
+  "cell": "fintech_us",
+  "question": "Which PCI DSS version must a US payment fintech meet?",
+  "options": {
+   "A": "PCI DSS v3.2.1",
+   "B": "PCI DSS v4.0, with its future-dated requirements mandatory",
+   "C": "PCI DSS v2.0",
+   "D": "No version; PCI DSS was withdrawn"
+  },
+  "answer": "B",
+  "superseded": "A",
+  "effective": "2025-03-31",
+  "source": "PCI DSS v4.0",
+  "evidence": "mandatory since 31 March 2025",
+  "check": "whether v4.0.1 should be named",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_us_S04",
+  "cell": "fintech_us",
+  "question": "Above what level must a payment app file Form 1099-K for a US seller?",
+  "options": {
+   "A": "USD 20,000 and 200 transactions",
+   "B": "USD 600 with no transaction minimum",
+   "C": "USD 5,000 with no transaction minimum",
+   "D": "USD 50,000 and 500 transactions"
+  },
+  "answer": "A",
+  "superseded": "B",
+  "effective": "2025-07-04",
+  "source": "Form 1099-K reporting threshold",
+  "evidence": "USD 20,000 and 200 transactions",
+  "check": "effective tax years under the 2025 law",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_us_S05",
+  "cell": "fintech_us",
+  "question": "What legal framework governs payment stablecoin issuers in the US?",
+  "options": {
+   "A": "SEC registration as a securities offering",
+   "B": "A federal framework under the GENIUS Act with one-to-one reserves",
+   "C": "CFTC regulation as a commodity",
+   "D": "State money-transmitter licences only, with no federal stablecoin law"
+  },
+  "answer": "B",
+  "superseded": "D",
+  "effective": "2025-07-18",
+  "source": "GENIUS Act payment stablecoins",
+  "evidence": "one-to-one reserves",
+  "check": "effective date versus enactment, and rulemaking status",
+  "status": "draft"
+ },
+ {
+  "id": "fintech_us_S06",
+  "cell": "fintech_us",
+  "question": "What is the per-payment limit for Same Day ACH?",
+  "options": {
+   "A": "USD 100,000",
+   "B": "USD 25,000",
+   "C": "USD 1 million",
+   "D": "USD 10 million"
+  },
+  "answer": "C",
+  "superseded": "A",
+  "effective": "2022-03-18",
+  "source": "Same Day ACH per-payment limit",
+  "evidence": "USD 1 million per payment",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_us_S01",
+  "cell": "insurance_us",
+  "question": "What do state insurance regulators expect of an insurer that uses AI in decisions about consumers?",
+  "options": {
+   "A": "Nothing specific to AI; only general unfair discrimination laws apply",
+   "B": "Prior approval of every model by the NAIC",
+   "C": "A federal AI licence",
+   "D": "A written AI governance and risk program under the NAIC model bulletin"
+  },
+  "answer": "D",
+  "superseded": "A",
+  "effective": "2023-12-04",
+  "source": "NAIC Model Bulletin on insurers' use of AI",
+  "evidence": "written AI governance program",
+  "check": "count of adopting states",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_us_S02",
+  "cell": "insurance_us",
+  "question": "How must a public US life insurer treat the assumptions behind its liability for future policy benefits?",
+  "options": {
+   "A": "Update them at least yearly under LDTI",
+   "B": "Reset them only when the regulator asks",
+   "C": "Use the statutory valuation assumptions",
+   "D": "Lock them in at issue unless a premium deficiency arises"
+  },
+  "answer": "A",
+  "superseded": "D",
+  "effective": "2023-01-01",
+  "source": "Long-duration targeted improvements (ASU 2018-12)",
+  "evidence": "ending locked-in assumptions",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_us_S03",
+  "cell": "insurance_us",
+  "question": "What does New York require of an insurer using external consumer data or AI in underwriting?",
+  "options": {
+   "A": "A ban on all external data",
+   "B": "No specific requirement beyond general rate filing rules",
+   "C": "Approval by the NAIC",
+   "D": "Testing for unfair discrimination and governance under Circular Letter No. 7"
+  },
+  "answer": "D",
+  "superseded": "B",
+  "effective": "2024-07-11",
+  "source": "NYDFS Circular Letter No. 7 (2024)",
+  "evidence": "Circular Letter No. 7 of July 2024",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "insurance_us_S04",
+  "cell": "insurance_us",
+  "question": "What framework does the NAIC climate risk disclosure survey for insurers follow?",
+  "options": {
+   "A": "The TCFD framework of four pillars",
+   "B": "The original eight-question NAIC survey",
+   "C": "The EU Sustainable Finance Disclosure Regulation",
+   "D": "No framework; free-text answers"
+  },
+  "answer": "A",
+  "superseded": "B",
+  "effective": "2022-04-08",
+  "source": "NAIC climate risk disclosure survey",
+  "evidence": "follows the TCFD framework",
+  "check": "the adoption date of the revised survey",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_us_S01",
+  "cell": "healthcare_us",
+  "question": "Within what time must a Medicare Advantage plan decide a standard prior authorization request?",
+  "options": {
+   "A": "7 calendar days",
+   "B": "14 calendar days",
+   "C": "72 hours",
+   "D": "30 calendar days"
+  },
+  "answer": "A",
+  "superseded": "B",
+  "effective": "2026-01-01",
+  "source": "CMS Interoperability and Prior Authorization final rule",
+  "evidence": "standard ones within 7 calendar days",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_us_S02",
+  "cell": "healthcare_us",
+  "question": "What data do the information blocking rules cover?",
+  "options": {
+   "A": "Only the USCDI data elements",
+   "B": "All electronic health information in the designated record set",
+   "C": "Only data in certified EHR modules",
+   "D": "Only billing data"
+  },
+  "answer": "B",
+  "superseded": "A",
+  "effective": "2022-10-06",
+  "source": "Information blocking (21st Century Cures Act)",
+  "evidence": "not only USCDI data",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_us_S03",
+  "cell": "healthcare_us",
+  "question": "Can an out-of-network emergency physician balance-bill a patient in the US?",
+  "options": {
+   "A": "No; the No Surprises Act bars surprise balance bills for emergency care",
+   "B": "Yes, unless state law forbids it",
+   "C": "Only for Medicaid patients",
+   "D": "Yes, up to 50% of billed charges"
+  },
+  "answer": "A",
+  "superseded": "B",
+  "effective": "2022-01-01",
+  "source": "No Surprises Act",
+  "evidence": "protected from surprise balance bills",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_us_S04",
+  "cell": "healthcare_us",
+  "question": "How many patient consents does a US provider need to use substance use disorder records for treatment, payment and operations?",
+  "options": {
+   "A": "One consent can cover all future uses",
+   "B": "A separate written consent for each disclosure",
+   "C": "None; HIPAA alone applies",
+   "D": "A court order for each use"
+  },
+  "answer": "A",
+  "superseded": "B",
+  "effective": "2026-02-16",
+  "source": "42 CFR Part 2 final rule (2024)",
+  "evidence": "one patient consent can cover all future uses",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_us_S05",
+  "cell": "healthcare_us",
+  "question": "In what format must a US hospital post its standard charges?",
+  "options": {
+   "A": "A PDF list of the 300 shoppable services only",
+   "B": "No posting duty",
+   "C": "Any machine-readable format the hospital chooses",
+   "D": "The CMS machine-readable template"
+  },
+  "answer": "D",
+  "superseded": "C",
+  "effective": "2024-07-01",
+  "source": "Hospital price transparency",
+  "evidence": "in the CMS template",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "healthcare_us_S06",
+  "cell": "healthcare_us",
+  "question": "What must certified US health IT disclose about a predictive decision support tool it offers?",
+  "options": {
+   "A": "Its full source code",
+   "B": "FDA clearance for every tool",
+   "C": "Nothing beyond the older clinical decision support criterion",
+   "D": "Its source attributes, under the HTI-1 decision support interventions criterion"
+  },
+  "answer": "D",
+  "superseded": "C",
+  "effective": "2025-01-01",
+  "source": "ONC HTI-1 decision support interventions",
+  "evidence": "show source attributes for predictive decision support",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "securities_us_S01",
+  "cell": "securities_us",
+  "question": "What is the standard settlement cycle for US equity trades?",
+  "options": {
+   "A": "T+0",
+   "B": "T+2",
+   "C": "T+1",
+   "D": "T+3"
+  },
+  "answer": "C",
+  "superseded": "B",
+  "effective": "2024-05-28",
+  "source": "already in the ontology",
+  "evidence": "settle T+1 since 28 May 2024",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "securities_us_S02",
+  "cell": "securities_us",
+  "question": "Within how many days must an investor crossing 5% with control intent file Schedule 13D?",
+  "options": {
+   "A": "10 calendar days",
+   "B": "5 business days",
+   "C": "2 business days",
+   "D": "45 days after year end"
+  },
+  "answer": "B",
+  "superseded": "A",
+  "effective": "2024-02-05",
+  "source": "already in the ontology",
+  "evidence": "Schedule 13D within 5 business days",
+  "check": "the ontology says 'since 2023'; the amendment took effect 5 Feb 2024",
+  "status": "draft"
+ },
+ {
+  "id": "securities_us_S03",
+  "cell": "securities_us",
+  "question": "When must a US listed company disclose a material cybersecurity incident?",
+  "options": {
+   "A": "No specific deadline; in the next periodic report if material",
+   "B": "Within 72 hours of detection",
+   "C": "Only in the annual 10-K",
+   "D": "On Form 8-K within 4 business days of determining it is material"
+  },
+  "answer": "D",
+  "superseded": "A",
+  "effective": "2023-12-18",
+  "source": "SEC cybersecurity incident disclosure (Form 8-K Item 1.05)",
+  "evidence": "within 4 business days of finding it material",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "securities_us_S04",
+  "cell": "securities_us",
+  "question": "How soon must a large US broker-dealer notify customers whose sensitive information was breached?",
+  "options": {
+   "A": "Within 72 hours",
+   "B": "Within 90 days",
+   "C": "Within 30 days",
+   "D": "No federal deadline; state breach laws only"
+  },
+  "answer": "C",
+  "superseded": "D",
+  "effective": "2025-12-03",
+  "source": "Regulation S-P amendments (2024)",
+  "evidence": "within 30 days of a breach",
+  "check": "compliance date for larger entities",
+  "status": "draft"
+ },
+ {
+  "id": "securities_us_S05",
+  "cell": "securities_us",
+  "question": "Which rule governs a US investment adviser's use of testimonials and paid promoters?",
+  "options": {
+   "A": "The separate advertising rule and cash solicitation rule",
+   "B": "FINRA Rule 2210 only",
+   "C": "The SEC Marketing Rule, Rule 206(4)-1",
+   "D": "No federal rule"
+  },
+  "answer": "C",
+  "superseded": "A",
+  "effective": "2022-11-04",
+  "source": "SEC Marketing Rule (Rule 206(4)-1)",
+  "evidence": "one SEC Marketing Rule",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "accounting_us_S01",
+  "cell": "accounting_us",
+  "question": "How must a US public company present its income tax rate reconciliation?",
+  "options": {
+   "A": "Not at all; only the effective rate",
+   "B": "Only the significant reconciling items, in any form",
+   "C": "In a table with set categories, plus taxes paid by jurisdiction",
+   "D": "Only in the MD&A"
+  },
+  "answer": "C",
+  "superseded": "B",
+  "effective": "2025-01-01",
+  "source": "ASU 2023-09 income tax disclosures",
+  "evidence": "tabular rate reconciliation in set categories",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "accounting_us_S02",
+  "cell": "accounting_us",
+  "question": "What segment expense information must a US public company disclose?",
+  "options": {
+   "A": "No segment data in the notes",
+   "B": "Full segment balance sheets",
+   "C": "Significant segment expenses regularly given to the chief operating decision maker",
+   "D": "Only segment revenue and a single profit measure"
+  },
+  "answer": "C",
+  "superseded": "D",
+  "effective": "2024-01-01",
+  "source": "ASU 2023-07 segment reporting",
+  "evidence": "significant segment expenses",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "accounting_us_S03",
+  "cell": "accounting_us",
+  "question": "How must a US company measure bitcoin it holds?",
+  "options": {
+   "A": "At fair value through other comprehensive income",
+   "B": "At fair value, with changes in net income",
+   "C": "As an indefinite-lived intangible at cost less impairment",
+   "D": "As cash and cash equivalents"
+  },
+  "answer": "B",
+  "superseded": "C",
+  "effective": "2025-01-01",
+  "source": "ASU 2023-08 crypto assets",
+  "evidence": "fair value with changes in net income",
+  "check": "",
+  "status": "draft"
+ },
+ {
+  "id": "accounting_us_S04",
+  "cell": "accounting_us",
+  "question": "How must a private US company account for an operating lease of office space?",
+  "options": {
+   "A": "As a finance lease in all cases",
+   "B": "In the notes only",
+   "C": "As rent expense only, off the balance sheet",
+   "D": "A right-of-use asset and a lease liability on the balance sheet"
+  },
+  "answer": "D",
+  "superseded": "C",
+  "effective": "2022-01-01",
+  "source": "ASC 842 leases for private companies",
+  "evidence": "right-of-use assets and lease liabilities",
+  "check": "",
+  "status": "draft"
+ }
+]

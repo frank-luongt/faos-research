@@ -1,0 +1,282 @@
+[
+ {
+  "id": "healthcare_vn_T1",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain how Vietnam's health insurance contributions and benefit levels work.",
+  "ground_truth": {
+   "answer": "Vietnam Social Security runs the health insurance fund. Employees pay 1.5% and employers 3% of salary (4.5% in total). The fund pays 100% of covered costs for groups such as children under six and poor households, 95% for pensioners and near-poor households, and 80% for most other insured people, who co-pay 20%.",
+   "required_terms": [
+    "Health Insurance",
+    "Vietnam Social Security",
+    "Benefit Level",
+    "Co-payment",
+    "4.5% Contribution"
+   ],
+   "term_definitions": {
+    "Benefit Level": "Share of covered costs paid by the fund: 100%, 95% or 80%"
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T2",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What are the technical levels of health facilities under Vietnam's Law on Medical Examination and Treatment 2023?",
+  "ground_truth": {
+   "answer": "Law 15/2023/QH15, effective 1 January 2024, groups facilities into three technical levels: initial, basic and specialised. Patients are referred to a higher level when a case exceeds the facility's capability.",
+   "required_terms": [
+    "Law 15/2023/QH15",
+    "Technical Level",
+    "Initial Level",
+    "Basic Level",
+    "Specialised Level",
+    "Referral"
+   ],
+   "term_definitions": {
+    "Technical Level": "Initial, basic or specialised capability tier"
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T3",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "How does Vietnam's Ministry of Health assess hospital quality and patient satisfaction?",
+  "ground_truth": {
+   "answer": "Hospitals are assessed annually against 83 hospital quality criteria in five parts (Decision 6858/QD-BYT, 2016): patient orientation, human resources, professional activities, quality improvement and specialty criteria. Patient satisfaction is measured with the Ministry's survey method (Decision 3869/QD-BYT), targeting 90% or more satisfied.",
+   "required_terms": [
+    "Hospital Quality Criteria",
+    "Decision 6858/QD-BYT",
+    "Patient Satisfaction",
+    "Decision 3869/QD-BYT",
+    "Ministry of Health"
+   ],
+   "term_definitions": {
+    "Hospital Quality Criteria": "83 criteria in five parts"
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T4",
+  "industry": "healthcare",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A provincial general hospital reports bed occupancy of 115%, average length of stay of 9 days and patient satisfaction of 78%. Assess each.",
+  "ground_truth": {
+   "answer": "Bed occupancy of 115% EXCEEDS the efficient 85-90% range, implying bed sharing and overcrowding. ALOS of 9 days EXCEEDS the 5-7 day norm for a general hospital. Satisfaction of 78% is BELOW the 90% target.",
+   "metrics": {
+    "bed_occupancy": {
+     "value": 1.15,
+     "healthy": "0.85-0.90",
+     "assessment": "EXCEEDS"
+    },
+    "average_length_of_stay": {
+     "value": 9,
+     "healthy": "5-7 days",
+     "assessment": "EXCEEDS"
+    },
+    "patient_satisfaction": {
+     "value": 0.78,
+     "healthy": ">=0.90",
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T5",
+  "industry": "healthcare",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "Vietnam Social Security rejected 4% of a hospital's claimed value last quarter, and its hospital-acquired infection rate is 7%. Assess both.",
+  "ground_truth": {
+   "answer": "Rejected claims of 4% EXCEED the under-1% benchmark, a direct financial loss the hospital bears. A hospital-acquired infection rate of 7% EXCEEDS the under-5% healthy level and calls for an infection control review.",
+   "metrics": {
+    "rejected_claims_rate": {
+     "value": 0.04,
+     "healthy": "<0.01",
+     "assessment": "EXCEEDS"
+    },
+    "hospital_acquired_infection": {
+     "value": 0.07,
+     "healthy": "<0.05",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T6",
+  "industry": "healthcare",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A former patient asks a Vietnamese hospital for a copy of her inpatient record from six years ago. What rules apply?",
+  "ground_truth": {
+   "answer": "Under Law 15/2023/QH15 patients may read and receive copies of their medical records, so the hospital should provide a copy after verifying identity. Inpatient records are kept at least 10 years, so a six-year-old record must still exist (15 years for occupational or traffic accidents, 20 for mental illness or death). The record is sensitive personal data under Decree 13/2023/ND-CP and may be released only to the patient or an authorised person; electronic records follow Circular 46/2018/TT-BYT.",
+   "regulations": [
+    "Law 15/2023/QH15",
+    "Decree 13/2023/ND-CP",
+    "Circular 46/2018/TT-BYT"
+   ],
+   "requirements": [
+    "patient right to a copy",
+    "10-year retention",
+    "identity verification",
+    "sensitive data protection"
+   ]
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T7",
+  "industry": "healthcare",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An uninsured motorbike accident victim without identity papers arrives at a Vietnamese hospital emergency department. May the hospital ask for payment or papers before treating him?",
+  "ground_truth": {
+   "answer": "No. Law 15/2023/QH15 requires facilities to provide emergency care and forbids refusing or delaying it for lack of payment, papers or insurance. The hospital stabilises the patient first and then handles payment, identification and, if needed, transfer. As a traffic accident case, the record must be kept 15 years.",
+   "regulations": [
+    "Law 15/2023/QH15",
+    "Decree 96/2023/ND-CP"
+   ],
+   "requirements": [
+    "no refusal of emergency care",
+    "treat before payment",
+    "stabilise then transfer",
+    "15-year record retention for traffic accidents"
+   ]
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T8",
+  "industry": "healthcare",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Medical Officer, your hospital's quality criteria score fell this year, infections are rising and the medical wards run at 120% occupancy. What is your plan?",
+  "ground_truth": {
+   "role": "Chief Medical Officer",
+   "decision_pattern": "quality_deterioration",
+   "expected_factors": [
+    "review scores against the 83 quality criteria",
+    "root cause by department",
+    "infection control audit",
+    "patient flow and bed measures, including referral down to lower levels",
+    "report to the hospital council and Department of Health",
+    "monthly monitoring"
+   ],
+   "kpi_references": [
+    "bed occupancy 85-90%",
+    "hospital-acquired infection < 5%",
+    "patient satisfaction >= 90%"
+   ],
+   "vocabulary": [
+    "Hospital Quality Criteria",
+    "Decision 6858/QD-BYT",
+    "Infection Control",
+    "Bed Occupancy",
+    "Referral"
+   ],
+   "communication_style": "Clinical, evidence-based, cites Ministry of Health rules"
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T9",
+  "industry": "healthcare",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Nursing Officer, nurse turnover reached 18% last year and two wards report unsafe workloads. How do you respond?",
+  "ground_truth": {
+   "role": "Chief Nursing Officer",
+   "decision_pattern": "staffing_shortfall",
+   "expected_factors": [
+    "measure workload and patient acuity",
+    "redeploy nurses across wards",
+    "recruit or contract",
+    "retention measures (pay, schedules, training)",
+    "incident reporting and patient safety",
+    "report to the director"
+   ],
+   "kpi_references": [
+    "nurse turnover < 10%",
+    "zero serious care events"
+   ],
+   "vocabulary": [
+    "Staffing Plan",
+    "Patient Safety",
+    "Circular 31/2021/TT-BYT",
+    "Nursing Care",
+    "Incident Reporting"
+   ],
+   "communication_style": "Practical, patient-centred, staffing-focused"
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T10",
+  "industry": "healthcare",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A district hospital must transfer an insured stroke patient to the provincial hospital. Trace the handoff chain, including health insurance.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Treating Doctor (district hospital)",
+     "to": "Hospital Planning Department",
+     "context": [
+      "clinical_summary",
+      "referral_form",
+      "health_insurance_details"
+     ],
+     "sla": {
+      "referral_form": "Emergency transfer immediately"
+     }
+    },
+    {
+     "step": 2,
+     "from": "District Hospital",
+     "to": "Provincial Hospital",
+     "context": [
+      "referral_form",
+      "test_results",
+      "treatment_given"
+     ],
+     "sla": {
+      "transport": "Staff escort"
+     }
+    },
+    {
+     "step": 3,
+     "from": "Provincial Hospital admissions",
+     "to": "Head of Health Insurance",
+     "context": [
+      "chip_citizen_ID_or_VssID",
+      "referral_form",
+      "benefit_level"
+     ],
+     "also": "Claims sent to Vietnam Social Security monthly"
+    }
+   ],
+   "terms": [
+    "Referral Form",
+    "Technical Level",
+    "Health Insurance",
+    "VssID",
+    "Vietnam Social Security"
+   ],
+   "escalation_level": "L3_management"
+  },
+  "cell": "healthcare_vn"
+ }
+]

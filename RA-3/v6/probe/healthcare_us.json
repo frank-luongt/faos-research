@@ -1,0 +1,992 @@
+[
+ {
+  "id": "healthcare_us_P001",
+  "question": "In which year was HIPAA enacted?",
+  "options": {
+   "A": "2003",
+   "B": "2009",
+   "C": "1986",
+   "D": "1996"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P002",
+  "question": "Which law strengthened HIPAA enforcement and created the breach notification rule?",
+  "options": {
+   "A": "The Affordable Care Act",
+   "B": "The No Surprises Act",
+   "C": "The 21st Century Cures Act",
+   "D": "The HITECH Act"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P003",
+  "question": "Which agency enforces the HIPAA Privacy and Security Rules?",
+  "options": {
+   "A": "The FTC",
+   "B": "CMS",
+   "C": "The OIG",
+   "D": "The HHS Office for Civil Rights"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P004",
+  "question": "Which entities are HIPAA covered entities?",
+  "options": {
+   "A": "Health plans, clearinghouses and providers that bill electronically",
+   "B": "Only hospitals",
+   "C": "All employers",
+   "D": "All apps that store health data"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P005",
+  "question": "A vendor that handles PHI for a covered entity must sign a:",
+  "options": {
+   "A": "Participation agreement",
+   "B": "Non-disclosure agreement only",
+   "C": "Data use agreement only",
+   "D": "Business associate agreement"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P006",
+  "question": "How many identifiers must be removed under HIPAA's Safe Harbor de-identification method?",
+  "options": {
+   "A": "12",
+   "B": "25",
+   "C": "10",
+   "D": "18"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P007",
+  "question": "A breach affecting fewer than 500 people must be reported to HHS:",
+  "options": {
+   "A": "Within 60 days after the end of the calendar year",
+   "B": "Never",
+   "C": "Within 10 days",
+   "D": "Within 24 hours"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P008",
+  "question": "Which federal rule protects substance use disorder treatment records beyond HIPAA?",
+  "options": {
+   "A": "45 CFR Part 46",
+   "B": "21 CFR Part 11",
+   "C": "42 CFR Part 2",
+   "D": "42 CFR Part 482"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P009",
+  "question": "Which law prohibits information blocking of electronic health information?",
+  "options": {
+   "A": "EMTALA",
+   "B": "The Stark Law",
+   "C": "The 21st Century Cures Act",
+   "D": "HIPAA"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P010",
+  "question": "Which law bars physicians from referring Medicare patients for designated health services to entities they have a financial relationship with?",
+  "options": {
+   "A": "The False Claims Act",
+   "B": "The Anti-Kickback Statute",
+   "C": "The Stark Law",
+   "D": "EMTALA"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P011",
+  "question": "Which statute makes it a crime to pay for referrals of federal health program business?",
+  "options": {
+   "A": "The Anti-Kickback Statute",
+   "B": "HIPAA",
+   "C": "The Sherman Act",
+   "D": "The Stark Law"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P012",
+  "question": "Which feature distinguishes the Stark Law from the Anti-Kickback Statute?",
+  "options": {
+   "A": "Stark covers all payers",
+   "B": "Stark is strict liability and needs no intent",
+   "C": "Stark is criminal only",
+   "D": "Stark has no exceptions"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P013",
+  "question": "Whistleblower suits under the False Claims Act are called:",
+  "options": {
+   "A": "Class actions",
+   "B": "Derivative suits",
+   "C": "Bivens actions",
+   "D": "Qui tam actions"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P014",
+  "question": "The False Claims Act allows damages of up to:",
+  "options": {
+   "A": "Ten times the loss",
+   "B": "The government's loss only",
+   "C": "Twice the loss",
+   "D": "Three times the government's loss plus penalties"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P015",
+  "question": "Within how long must an identified Medicare overpayment be reported and returned?",
+  "options": {
+   "A": "One year",
+   "B": "60 days of identification",
+   "C": "30 days of the payment",
+   "D": "90 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P016",
+  "question": "Which database lists individuals excluded from federal health programs?",
+  "options": {
+   "A": "PECOS",
+   "B": "The NPDB only",
+   "C": "The OIG LEIE",
+   "D": "The NPPES"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P017",
+  "question": "In which year was EMTALA enacted?",
+  "options": {
+   "A": "1965",
+   "B": "1996",
+   "C": "1986",
+   "D": "2010"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P018",
+  "question": "EMTALA applies to which hospitals?",
+  "options": {
+   "A": "All clinics",
+   "B": "Only public hospitals",
+   "C": "Medicare-participating hospitals with emergency departments",
+   "D": "Only teaching hospitals"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P019",
+  "question": "Medicare Part A mainly covers:",
+  "options": {
+   "A": "Outpatient drugs",
+   "B": "Hospital inpatient care",
+   "C": "Physician services",
+   "D": "Private plans"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P020",
+  "question": "Medicare Part B mainly covers:",
+  "options": {
+   "A": "Prescription drugs",
+   "B": "Physician and outpatient services",
+   "C": "Inpatient hospital stays",
+   "D": "Long-term custodial care"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P021",
+  "question": "Medicare's inpatient prospective payment system classifies stays by:",
+  "options": {
+   "A": "APCs",
+   "B": "RUGs",
+   "C": "HCCs",
+   "D": "MS-DRGs"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P022",
+  "question": "Medicare's hospital outpatient payment system groups services into:",
+  "options": {
+   "A": "PDPM groups",
+   "B": "CPT bundles",
+   "C": "MS-DRGs",
+   "D": "APCs"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P023",
+  "question": "Under the Two-Midnight Rule, inpatient admission is generally appropriate when care is expected to span:",
+  "options": {
+   "A": "Any overnight stay",
+   "B": "At least 24 hours",
+   "C": "At least three days",
+   "D": "At least two midnights"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P024",
+  "question": "Which notice must hospitals give Medicare patients in observation for more than 24 hours?",
+  "options": {
+   "A": "The IM",
+   "B": "The HINN",
+   "C": "The MOON",
+   "D": "The ABN"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P025",
+  "question": "Which conditions are in the CMS Hospital Readmissions Reduction Program?",
+  "options": {
+   "A": "Diabetes and hypertension only",
+   "B": "All conditions",
+   "C": "AMI, heart failure, pneumonia, COPD, CABG and hip/knee replacement",
+   "D": "Sepsis and stroke only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P026",
+  "question": "What is the maximum HRRP payment reduction?",
+  "options": {
+   "A": "3% of base DRG payments",
+   "B": "10%",
+   "C": "1%",
+   "D": "5%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P027",
+  "question": "Under the HAC Reduction Program, the worst-performing quartile loses:",
+  "options": {
+   "A": "2%",
+   "B": "3%",
+   "C": "5%",
+   "D": "1% of Medicare payments"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P028",
+  "question": "Hospital Value-Based Purchasing funds incentives by withholding:",
+  "options": {
+   "A": "1%",
+   "B": "5%",
+   "C": "2% of base DRG payments",
+   "D": "0.5%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P029",
+  "question": "Medicare covers SNF care after a qualifying inpatient stay of at least:",
+  "options": {
+   "A": "1 day",
+   "B": "3 days",
+   "C": "7 days",
+   "D": "2 midnights only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P030",
+  "question": "For how many days per benefit period can Medicare Part A cover SNF care?",
+  "options": {
+   "A": "Up to 60",
+   "B": "Up to 100",
+   "C": "Up to 150",
+   "D": "Up to 30"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P031",
+  "question": "Which hospital type has at most 25 beds and cost-based Medicare payment?",
+  "options": {
+   "A": "Critical access hospital",
+   "B": "Long-term care hospital",
+   "C": "Sole community hospital",
+   "D": "Rural emergency hospital"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P032",
+  "question": "Which program lets eligible hospitals buy outpatient drugs at discounted prices?",
+  "options": {
+   "A": "The Medicaid Drug Rebate Program only",
+   "B": "Medicare Part D",
+   "C": "The 340B Drug Pricing Program",
+   "D": "DSH"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P033",
+  "question": "Which contractors process Medicare fee-for-service claims for a region?",
+  "options": {
+   "A": "Medicare Administrative Contractors",
+   "B": "UPICs",
+   "C": "QIOs",
+   "D": "RACs"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P034",
+  "question": "Which Medicare contractors audit paid claims for improper payments on contingency fees?",
+  "options": {
+   "A": "PSOs",
+   "B": "MACs",
+   "C": "QIOs",
+   "D": "Recovery Audit Contractors"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P035",
+  "question": "What is the first level of Medicare fee-for-service appeal?",
+  "options": {
+   "A": "Federal court",
+   "B": "Reconsideration by a QIC",
+   "C": "ALJ hearing",
+   "D": "Redetermination by the MAC"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P036",
+  "question": "How long does a provider have to request a Medicare redetermination?",
+  "options": {
+   "A": "1 year",
+   "B": "30 days",
+   "C": "60 days",
+   "D": "120 days from the initial determination"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P037",
+  "question": "What is Medicare's timely filing limit for fee-for-service claims?",
+  "options": {
+   "A": "6 months",
+   "B": "12 months from the date of service",
+   "C": "90 days",
+   "D": "24 months"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P038",
+  "question": "CMS's 2024 interoperability and prior authorization rule requires impacted payers to answer standard prior auth requests within:",
+  "options": {
+   "A": "30 days",
+   "B": "7 calendar days",
+   "C": "72 hours",
+   "D": "14 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P039",
+  "question": "The same CMS rule requires expedited prior authorization decisions within:",
+  "options": {
+   "A": "7 days",
+   "B": "24 hours",
+   "C": "72 hours",
+   "D": "48 hours"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P040",
+  "question": "Since 2021 the hospital price transparency rule requires a consumer-friendly list of how many shoppable services?",
+  "options": {
+   "A": "500",
+   "B": "100",
+   "C": "70",
+   "D": "300"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P041",
+  "question": "The No Surprises Act took effect on:",
+  "options": {
+   "A": "1 January 2020",
+   "B": "1 January 2022",
+   "C": "1 July 2023",
+   "D": "1 January 2021"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P042",
+  "question": "Under the No Surprises Act, uninsured or self-pay patients are entitled to:",
+  "options": {
+   "A": "A price cap of 150% of Medicare",
+   "B": "Free emergency care",
+   "C": "Automatic charity care",
+   "D": "A good faith estimate of expected charges"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P043",
+  "question": "Payment disputes between out-of-network providers and plans under the No Surprises Act go to:",
+  "options": {
+   "A": "Independent dispute resolution",
+   "B": "State court only",
+   "C": "Binding Medicare rates",
+   "D": "CMS rate setting"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P044",
+  "question": "Which code set reports diagnoses on US claims?",
+  "options": {
+   "A": "ICD-10-PCS",
+   "B": "ICD-10-CM",
+   "C": "CPT",
+   "D": "HCPCS Level II"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P045",
+  "question": "Which code set reports inpatient hospital procedures?",
+  "options": {
+   "A": "ICD-10-PCS",
+   "B": "ICD-10-CM",
+   "C": "SNOMED CT",
+   "D": "CPT"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P046",
+  "question": "Who maintains CPT codes?",
+  "options": {
+   "A": "AHA",
+   "B": "CMS",
+   "C": "WHO",
+   "D": "The American Medical Association"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P047",
+  "question": "HCPCS Level II codes mainly cover:",
+  "options": {
+   "A": "Diagnoses",
+   "B": "Supplies, drugs and services not in CPT",
+   "C": "Inpatient procedures",
+   "D": "Lab results"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P048",
+  "question": "Which paper claim form do hospitals use for institutional billing?",
+  "options": {
+   "A": "UB-04 (CMS-1450)",
+   "B": "NCPDP D.0",
+   "C": "CMS-1500",
+   "D": "ADA J430"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P049",
+  "question": "Which electronic transaction is a professional claim?",
+  "options": {
+   "A": "270",
+   "B": "837P",
+   "C": "278",
+   "D": "835"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P050",
+  "question": "Which electronic transaction carries a payer's remittance advice?",
+  "options": {
+   "A": "834",
+   "B": "276",
+   "C": "835",
+   "D": "837I"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P051",
+  "question": "Codes that explain why a claim line was adjusted are:",
+  "options": {
+   "A": "CARCs",
+   "B": "CPT modifiers",
+   "C": "NPIs",
+   "D": "DRG weights"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P052",
+  "question": "What is a clean claim rate?",
+  "options": {
+   "A": "The share of patients with insurance",
+   "B": "The share of claims never appealed",
+   "C": "The share of claims paid on first submission without errors",
+   "D": "The share of claims below $1,000"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P053",
+  "question": "Days in accounts receivable measures:",
+  "options": {
+   "A": "How long claims take to code",
+   "B": "How long on average a hospital takes to collect payment",
+   "C": "How long patients stay",
+   "D": "How long until a denial"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P054",
+  "question": "Geometric mean length of stay (GMLOS) is set for each:",
+  "options": {
+   "A": "Hospital",
+   "B": "Payer",
+   "C": "Physician",
+   "D": "MS-DRG"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P055",
+  "question": "A hospital's denial rate is:",
+  "options": {
+   "A": "Appeals won divided by appeals filed",
+   "B": "Write-offs divided by revenue",
+   "C": "Denied claims divided by claims submitted",
+   "D": "Rejected prior authorisations only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P056",
+  "question": "Which body accredits most US hospitals with Medicare deemed status?",
+  "options": {
+   "A": "URAC",
+   "B": "The Joint Commission",
+   "C": "NCQA",
+   "D": "AAAHC only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P057",
+  "question": "The Joint Commission expects a root cause analysis for a sentinel event within:",
+  "options": {
+   "A": "One year",
+   "B": "90 days",
+   "C": "45 business days",
+   "D": "10 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P058",
+  "question": "Which agency's PSI-90 is a composite patient safety measure?",
+  "options": {
+   "A": "NIH",
+   "B": "AHRQ",
+   "C": "FDA",
+   "D": "CDC"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P059",
+  "question": "Which CDC system collects hospital infection data?",
+  "options": {
+   "A": "CDC WONDER",
+   "B": "NHSN",
+   "C": "NNDSS",
+   "D": "VAERS"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P060",
+  "question": "CLABSI stands for:",
+  "options": {
+   "A": "Central line-associated bloodstream infection",
+   "B": "Clinical lab-associated blood sample infection",
+   "C": "Chronic lung-associated bacterial infection",
+   "D": "Catheter line and blood-stream incident"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P061",
+  "question": "CAUTI stands for:",
+  "options": {
+   "A": "Central airway upper tract infection",
+   "B": "Catheter-associated urinary tract infection",
+   "C": "Chronic acute urinary tract inflammation",
+   "D": "Clinical antibiotic use tracking index"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P062",
+  "question": "Which organisation awards Magnet recognition for nursing excellence?",
+  "options": {
+   "A": "NCSBN",
+   "B": "AACN",
+   "C": "ANCC",
+   "D": "The Joint Commission"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P063",
+  "question": "Which company now runs the NDNQI database?",
+  "options": {
+   "A": "Vizient",
+   "B": "Press Ganey",
+   "C": "Epic",
+   "D": "Premier"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P064",
+  "question": "Which group publishes A-to-F hospital safety grades?",
+  "options": {
+   "A": "CMS",
+   "B": "U.S. News",
+   "C": "The Leapfrog Group",
+   "D": "NCQA"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P065",
+  "question": "CMS's Overall Hospital Quality Star Rating ranges from:",
+  "options": {
+   "A": "A to F",
+   "B": "1 to 10 stars",
+   "C": "0 to 3 stars",
+   "D": "1 to 5 stars"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P066",
+  "question": "Which state sets mandatory nurse-to-patient ratios across hospital units?",
+  "options": {
+   "A": "California",
+   "B": "Florida",
+   "C": "New York",
+   "D": "Texas"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P067",
+  "question": "California's required ratio for ICU nurses is:",
+  "options": {
+   "A": "1 nurse to 2 patients",
+   "B": "1 to 1 for all",
+   "C": "1 to 5",
+   "D": "1 to 4"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P068",
+  "question": "California's required ratio for medical-surgical nurses is:",
+  "options": {
+   "A": "1 nurse to 5 patients",
+   "B": "1 to 8",
+   "C": "1 to 2",
+   "D": "1 to 3"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P069",
+  "question": "SBAR is a structured method for:",
+  "options": {
+   "A": "Bed assignment",
+   "B": "Infection reporting",
+   "C": "Clinical handoff communication",
+   "D": "Billing review"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P070",
+  "question": "The Swiss cheese model explains:",
+  "options": {
+   "A": "Infection spread",
+   "B": "Staffing ratios",
+   "C": "How errors pass through aligned gaps in layered defences",
+   "D": "Revenue leakage"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P071",
+  "question": "A sentinel event is:",
+  "options": {
+   "A": "Any minor medication delay",
+   "B": "A patient safety event causing death, permanent harm or severe temporary harm",
+   "C": "A billing error",
+   "D": "A near miss with no harm"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P072",
+  "question": "PDSA stands for:",
+  "options": {
+   "A": "Prevent-Detect-Stop-Audit",
+   "B": "Plan-Do-Study-Act",
+   "C": "Patient-Doctor-Safety-Action",
+   "D": "Plan-Deliver-Score-Adjust"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P073",
+  "question": "The Hospital Consumer Assessment survey is administered to:",
+  "options": {
+   "A": "A random sample of adult inpatients after discharge",
+   "B": "All ED patients during their visit",
+   "C": "Nurses",
+   "D": "Physicians"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P074",
+  "question": "Which patient safety indicator is a nursing-sensitive measure?",
+  "options": {
+   "A": "Hospital-acquired pressure injuries",
+   "B": "Case mix index",
+   "C": "Days cash on hand",
+   "D": "Clean claim rate"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P075",
+  "question": "Days cash on hand measures:",
+  "options": {
+   "A": "Days until debt maturity",
+   "B": "Average patient days",
+   "C": "How many days a hospital could pay operating expenses from cash",
+   "D": "Days to collect receivables"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P076",
+  "question": "Average length of stay is:",
+  "options": {
+   "A": "Bed days per physician",
+   "B": "Total inpatient days divided by discharges",
+   "C": "Discharges divided by beds",
+   "D": "Admissions per day"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P077",
+  "question": "Agency nurse utilization is tracked mainly because:",
+  "options": {
+   "A": "CMS requires it",
+   "B": "Contract labor costs far more than staff nurses",
+   "C": "It lowers turnover",
+   "D": "It improves HCAHPS automatically"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P078",
+  "question": "RN turnover rate is:",
+  "options": {
+   "A": "Overtime hours divided by total hours",
+   "B": "New hires divided by vacancies",
+   "C": "RNs leaving divided by average RN headcount",
+   "D": "Travel nurses divided by staff nurses"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P079",
+  "question": "Skill mix in nursing refers to:",
+  "options": {
+   "A": "The proportion of RNs to LPNs and aides",
+   "B": "The number of shifts",
+   "C": "Years of nurse experience only",
+   "D": "Specialty certifications only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P080",
+  "question": "Acuity-based staffing sets nurse hours by:",
+  "options": {
+   "A": "Patient care needs",
+   "B": "Prior-year budget only",
+   "C": "Physician preference",
+   "D": "Bed count only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P081",
+  "question": "Medicaid DSH payments support hospitals that:",
+  "options": {
+   "A": "Have the highest margins",
+   "B": "Have Magnet status",
+   "C": "Are critical access hospitals",
+   "D": "Serve a disproportionate share of low-income patients"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P082",
+  "question": "CMS's Hospital at Home programme is formally the:",
+  "options": {
+   "A": "Acute Hospital Care at Home waiver",
+   "B": "Chronic Care Management code",
+   "C": "Home Health PPS",
+   "D": "Hospice benefit"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P083",
+  "question": "Which agency runs Medicare and Medicaid?",
+  "options": {
+   "A": "AHRQ",
+   "B": "CMS",
+   "C": "CDC",
+   "D": "HRSA"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "healthcare_us_P084",
+  "question": "Hospital Compare data now sits on:",
+  "options": {
+   "A": "HealthCare.gov",
+   "B": "CDC WONDER",
+   "C": "ClinicalTrials.gov",
+   "D": "Care Compare on Medicare.gov"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P085",
+  "question": "An Advance Beneficiary Notice (ABN) warns a Medicare patient that:",
+  "options": {
+   "A": "Medicare may not pay for a service",
+   "B": "They are in observation",
+   "C": "Their plan is changing",
+   "D": "They are being admitted"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P086",
+  "question": "The Important Message from Medicare (IM) informs inpatients of:",
+  "options": {
+   "A": "Their discharge appeal rights",
+   "B": "Their premium increase",
+   "C": "Observation status",
+   "D": "Drug coverage"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P087",
+  "question": "Utilization review in a hospital checks:",
+  "options": {
+   "A": "Bed cleaning times",
+   "B": "Coding productivity only",
+   "C": "Whether admissions and continued stays meet medical necessity criteria",
+   "D": "Staff overtime"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "healthcare_us_P088",
+  "question": "Which tools are commonly used as inpatient medical necessity criteria?",
+  "options": {
+   "A": "HCAHPS and NDNQI",
+   "B": "CPT and HCPCS",
+   "C": "SNOMED and LOINC",
+   "D": "InterQual and MCG"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "healthcare_us_P089",
+  "question": "Which identifier is the unique 10-digit number for US health care providers?",
+  "options": {
+   "A": "The NPI",
+   "B": "The DEA number",
+   "C": "The TIN",
+   "D": "The CCN"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "healthcare_us_P090",
+  "question": "A peer-to-peer review is a conversation between the treating physician and:",
+  "options": {
+   "A": "The payer's medical director",
+   "B": "The patient's family",
+   "C": "A coder",
+   "D": "The hospital CFO"
+  },
+  "answer": "A"
+ }
+]

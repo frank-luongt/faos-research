@@ -1,0 +1,256 @@
+{
+  "industry": "accounting_vn",
+  "jurisdiction": "Vietnam",
+  "status": "draft RA-3 v6 cell, pending Vietnamese expert review",
+  "role_layer": {
+    "chief_accountant": {
+      "title": "Chief Accountant (Ke toan truong)",
+      "persona": "Legally accountable head of the accounting function",
+      "communication_style": "Formal, regulation-citing (Law, Decree, Circular), documentation-heavy",
+      "kpis": {
+        "fs_submission": "Annual financial statements submitted within the legal deadline",
+        "audit_adjustments": "No material audit adjustments",
+        "document_retention": "Bookkeeping vouchers kept at least 10 years"
+      },
+      "vocabulary": [
+        "VAS",
+        "Circular 200/2014/TT-BTC",
+        "Chart of Accounts",
+        "B01-DN",
+        "B02-DN",
+        "B09-DN",
+        "Accounting Voucher",
+        "VAS 29",
+        "Retrospective Restatement"
+      ],
+      "decision_patterns": {
+        "prior_period_error": {
+          "steps": [
+            "quantify_error",
+            "assess_materiality",
+            "retrospective_restatement_under_VAS_29",
+            "adjust_opening_retained_earnings",
+            "file_supplementary_tax_declaration",
+            "disclose_in_notes_B09"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "appointment": "Required for every enterprise except where a person in charge of accounting is allowed; must hold a chief accountant training certificate and meet experience requirements (Decree 174/2016/ND-CP)"
+      }
+    },
+    "tax_manager": {
+      "title": "Tax Manager",
+      "persona": "Owner of tax compliance and transfer pricing",
+      "communication_style": "Precise, deadline-focused, conservative",
+      "kpis": {
+        "cit_provisional": "Four quarters' provisional CIT >= 80% of the final annual liability",
+        "filing": "All declarations filed on time",
+        "tp_documentation": "Local and master file ready before CIT finalization"
+      },
+      "vocabulary": [
+        "CIT",
+        "VAT",
+        "Provisional Payment",
+        "CIT Finalization",
+        "Transfer Pricing",
+        "Decree 132/2020/ND-CP",
+        "EBITDA Cap",
+        "E-invoice",
+        "Late Payment Interest"
+      ],
+      "decision_patterns": {
+        "related_party_interest": {
+          "steps": [
+            "identify_related_parties_25pct",
+            "compute_EBITDA_cap_30pct",
+            "disallow_excess_interest",
+            "carry_forward_up_to_5_years",
+            "prepare_TP_documentation",
+            "disclose_in_appendix"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "rates": {
+          "CIT_standard": "20%",
+          "VAT_standard": "10%",
+          "VAT_reduced": "5%",
+          "VAT_export": "0%"
+        }
+      }
+    },
+    "internal_audit_head": {
+      "title": "Head of Internal Audit",
+      "persona": "Independent reviewer for the board",
+      "communication_style": "Objective, risk-based",
+      "kpis": {
+        "plan_completion": ">= 90% of the annual audit plan"
+      },
+      "vocabulary": [
+        "Internal Audit",
+        "Decree 05/2019/ND-CP",
+        "Audit Committee",
+        "Internal Control"
+      ]
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "vas": {
+        "definition": "Vietnamese Accounting Standards: 26 standards issued by the Ministry of Finance from 2001 to 2005, applied through the enterprise accounting regime"
+      },
+      "accounting_regime": {
+        "definition": "Circular 200/2014/TT-BTC sets the chart of accounts, vouchers, books and statement forms for enterprises; Circular 133/2016/TT-BTC for small and medium enterprises",
+        "note": "Circular 99/2025/TT-BTC replaces Circular 200 for fiscal years from 2026 (verify with expert)"
+      },
+      "ifrs_roadmap": {
+        "definition": "Decision 345/QD-BTC (2020) approved applying IFRS in Vietnam: voluntary phase 2022-2025, then mandatory for selected groups"
+      },
+      "fixed_asset_criteria": {
+        "definition": "Circular 45/2013/TT-BTC: useful life over one year and historical cost of VND 30 million or more",
+        "depreciation_methods": [
+          "straight-line",
+          "declining balance with adjustment",
+          "units of production"
+        ]
+      },
+      "doubtful_debt_provision": {
+        "definition": "Circular 48/2019/TT-BTC provision rates for overdue receivables",
+        "rates": {
+          "6_months_to_under_1_year": "30%",
+          "1_to_under_2_years": "50%",
+          "2_to_under_3_years": "70%",
+          "3_years_or_more": "100%"
+        }
+      },
+      "cit_provisional": {
+        "definition": "Quarterly provisional CIT; the four quarters together must reach at least 80% of the final annual CIT, otherwise late-payment interest applies to the shortfall",
+        "late_interest": "0.03% per day"
+      },
+      "goodwill_vn": {
+        "definition": "Goodwill from business combinations is amortized over no more than 10 years (Circular 202/2014/TT-BTC)"
+      },
+      "inventory_vn": {
+        "definition": "VAS 02 allows specific identification, weighted average and FIFO; LIFO was removed by Circular 200"
+      }
+    },
+    "regulations": {
+      "law_on_accounting": {
+        "name": "Law on Accounting No. 88/2015/QH13",
+        "effective": "1 January 2017"
+      },
+      "document_retention": {
+        "name": "Decree 174/2016/ND-CP",
+        "rule": "Vouchers used directly for bookkeeping and financial statements kept at least 10 years; management documents at least 5 years; documents of special significance permanently"
+      },
+      "fs_deadlines": {
+        "name": "Circular 200/2014/TT-BTC",
+        "rule": "Annual financial statements: private enterprises and partnerships within 30 days of year-end; other enterprises within 90 days"
+      },
+      "mandatory_audit": {
+        "name": "Law on Independent Audit No. 67/2011/QH12 and Decree 17/2012/ND-CP",
+        "rule": "Annual audit required for foreign-invested enterprises, credit institutions, insurers, listed and public companies, among others"
+      },
+      "listed_disclosure": {
+        "name": "Circular 96/2020/TT-BTC",
+        "rule": "Listed companies disclose audited annual statements within 10 days of the audit report and no later than 90 days after year-end; reviewed semi-annual statements no later than 45 days after the half; quarterly statements within 20 days of quarter-end"
+      },
+      "transfer_pricing": {
+        "name": "Decree 132/2020/ND-CP",
+        "rule": "Related parties include direct or indirect ownership of 25% or more; deductible net interest capped at 30% of EBITDA, excess carried forward up to 5 years"
+      },
+      "cit_finalization": {
+        "name": "Law on Tax Administration No. 38/2019/QH14",
+        "rule": "Annual CIT finalization due by the last day of the third month after year-end"
+      },
+      "e_invoice": {
+        "name": "Decree 123/2020/ND-CP",
+        "rule": "Electronic invoices mandatory nationwide from 1 July 2022"
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "accountants_to_chief_accountant": {
+        "from": "General Accountants",
+        "to": "Chief Accountant",
+        "context": [
+          "trial_balance",
+          "reconciliations",
+          "provision_schedules"
+        ],
+        "sla": {
+          "year_end_close": "Within 20 days of year-end"
+        }
+      },
+      "chief_accountant_to_legal_rep": {
+        "from": "Chief Accountant",
+        "to": "Legal Representative (General Director)",
+        "context": [
+          "draft_financial_statements_B01_B02_B03_B09",
+          "significant_judgments"
+        ],
+        "sla": {
+          "sign_off": "Before audit fieldwork closes"
+        }
+      },
+      "company_to_auditor": {
+        "from": "Chief Accountant",
+        "to": "Independent Auditor",
+        "context": [
+          "signed_draft_FS",
+          "supporting_vouchers",
+          "related_party_list"
+        ]
+      },
+      "company_to_authorities": {
+        "from": "Chief Accountant",
+        "to": "Tax authority, statistics office and licensing authority",
+        "context": [
+          "audited_FS",
+          "CIT_finalization_return",
+          "TP_disclosure_appendix"
+        ],
+        "sla": {
+          "submission": "90 days after year-end for non-private enterprises"
+        }
+      },
+      "company_to_ssc": {
+        "trigger": "Listed company",
+        "from": "Investor Relations",
+        "to": "State Securities Commission and Stock Exchange",
+        "context": [
+          "audited_FS_disclosure"
+        ],
+        "sla": {
+          "disclosure": "10 days after audit report, max 90 days after year-end"
+        }
+      }
+    },
+    "escalation_matrix": {
+      "close": {
+        "missed_fs_deadline": "L4_executive (administrative penalty under Decree 41/2018/ND-CP)"
+      },
+      "tax": {
+        "material_tp_adjustment": "L4_executive"
+      }
+    }
+  },
+  "rag_chunks": [
+    "Vietnam's Law on Accounting No. 88/2015/QH13 took effect on 1 January 2017. It requires every accounting unit to keep accounts in Vietnamese dong, unless it meets the conditions to use a foreign currency, in which case its statutory financial statements must still be translated into dong. Each enterprise must appoint a chief accountant, who is responsible for organising the accounting work and cannot be a relative of the legal representative or the treasurer.",
+    "Decree 174/2016/ND-CP guides the Law on Accounting. A chief accountant must hold a chief accountant training certificate and have at least two years of accounting experience with a university degree, or three years with an intermediate or college qualification. Accounting vouchers used directly for bookkeeping and preparing financial statements must be kept for at least 10 years, management-use documents for at least 5 years, and documents of special historical or economic significance permanently.",
+    "Vietnamese Accounting Standards, VAS, comprise 26 standards issued by the Ministry of Finance between 2001 and 2005, largely based on international standards of that era. They are applied through the enterprise accounting regime in Circular 200/2014/TT-BTC, which sets the chart of accounts, voucher forms, accounting books and the financial statement forms: the balance sheet B01-DN, the income statement B02-DN, the cash flow statement B03-DN and the notes B09-DN. Small and medium enterprises may use the simplified regime in Circular 133/2016/TT-BTC.",
+    "Decision 345/QD-BTC of 16 March 2020 approved the scheme for applying International Financial Reporting Standards in Vietnam. A voluntary phase runs from 2022 to 2025 for groups such as parent companies of large state-owned groups, listed companies and FDI subsidiaries of foreign parents; a mandatory phase follows for selected entities, alongside issuing new Vietnamese Financial Reporting Standards, VFRS, based on IFRS.",
+    "Under Circular 200, annual financial statements are submitted within 30 days after year-end by private enterprises and partnerships and within 90 days by other enterprises, to the tax authority, the statistics office and the business registration authority. The fiscal year is twelve months, usually the calendar year, but may start on the first day of any quarter; a first fiscal year may run up to 15 months.",
+    "The Law on Independent Audit No. 67/2011/QH12 and Decree 17/2012/ND-CP require an annual audit for foreign-invested enterprises, credit institutions, financial institutions, insurers, public companies, listed companies and state-owned enterprises, among others. The audited statements must be filed with the authorities with the auditor's report attached. Administrative penalties for accounting and audit violations are set by Decree 41/2018/ND-CP.",
+    "Circular 96/2020/TT-BTC governs disclosure on the securities market. A listed company discloses its audited annual financial statements within 10 days of the date of the audit report and no later than 90 days after the end of the fiscal year, its reviewed semi-annual statements within 5 days of the review report and no later than 45 days after the half-year, and its quarterly statements within 20 days after quarter-end.",
+    "Circular 45/2013/TT-BTC recognises a tangible fixed asset when it is expected to bring future economic benefits, has a useful life of more than one year and a historical cost of 30 million dong or more. Assets below the threshold are allocated to expenses. Enterprises depreciate using the straight-line method, the declining balance method with adjustment, or the units of production method, within the useful-life frames in the circular.",
+    "Circular 48/2019/TT-BTC sets provisions for doubtful receivables: 30 percent of the value of debts overdue from six months to under one year, 50 percent from one year to under two years, 70 percent from two years to under three years, and 100 percent for debts overdue three years or more. Inventory write-down provisions are made when net realisable value falls below cost. VAS 02 permits specific identification, weighted average and first-in first-out; Circular 200 removed last-in first-out.",
+    "The standard corporate income tax rate in Vietnam is 20 percent. Enterprises make provisional CIT payments each quarter, no later than the 30th day of the month after the quarter. The total of the four quarterly payments must be at least 80 percent of the final CIT payable for the year; on any shortfall, late-payment interest of 0.03 percent per day runs from the deadline for the fourth quarter. The annual CIT finalization is due by the last day of the third month after year-end, 31 March for calendar-year companies.",
+    "Value added tax has a standard rate of 10 percent, a reduced rate of 5 percent for essential goods and services, and 0 percent for exports. Electronic invoices became mandatory nationwide from 1 July 2022 under Decree 123/2020/ND-CP and Circular 78/2021/TT-BTC, with invoices issued through or registered with the tax authority's system.",
+    "Decree 132/2020/ND-CP governs transfer pricing. Parties are related when one holds, directly or indirectly, at least 25 percent of the other's owner's equity, among other tests. Total deductible net interest expense is capped at 30 percent of EBITDA; disallowed interest may be carried forward for up to five years. Taxpayers with related-party transactions disclose them in an appendix to the annual CIT return and prepare a local file and, where applicable, a master file before the finalization deadline.",
+    "VAS 29 covers changes in accounting policies, accounting estimates and errors. A material prior-period error is corrected retrospectively by restating comparative amounts and adjusting the opening balance of retained earnings of the earliest period presented, with disclosure in the notes. Where the error affects taxable income, the enterprise files a supplementary tax declaration and pays any additional tax with late-payment interest.",
+    "Under Circular 202/2014/TT-BTC on consolidated financial statements, goodwill arising on a business combination is amortized on a straight-line basis over a period of no more than ten years, and is written down if impaired. Employers in Vietnam contribute 17.5 percent of salary to social insurance, 3 percent to health insurance and 1 percent to unemployment insurance, while employees contribute 8, 1.5 and 1 percent respectively."
+  ]
+}

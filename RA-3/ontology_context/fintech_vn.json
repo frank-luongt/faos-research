@@ -1,0 +1,232 @@
+{
+  "industry": "fintech_vn",
+  "jurisdiction": "Vietnam",
+  "status": "draft RA-3 v6 cell, pending Vietnamese expert review",
+  "role_layer": {
+    "head_of_payments": {
+      "title": "Head of Payments (E-wallet / Payment Intermediary)",
+      "persona": "Owner of payment reliability and the scheme connections",
+      "communication_style": "Operational, metrics-led, customer-aware",
+      "kpis": {
+        "transaction_success_rate": ">= 99%",
+        "system_uptime": ">= 99.95%",
+        "fraud_loss_rate": "< 0.05% of TPV"
+      },
+      "vocabulary": [
+        "Napas",
+        "Napas 247",
+        "VietQR",
+        "E-wallet",
+        "Payment Gateway",
+        "TPV",
+        "Linked Bank Account",
+        "Reconciliation"
+      ],
+      "decision_patterns": {
+        "payment_incident": {
+          "steps": [
+            "detect_and_triage",
+            "reroute_or_queue",
+            "customer_communication",
+            "reconcile_failed_transactions",
+            "report_incident_to_SBV",
+            "post_incident_review"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "rails": [
+          "Napas 247 interbank fast transfer",
+          "VietQR",
+          "domestic chip cards (TCCS 01:2019)"
+        ]
+      }
+    },
+    "compliance_officer": {
+      "title": "Compliance Officer (AML / Payments)",
+      "persona": "Owner of KYC, AML and SBV compliance",
+      "communication_style": "Formal, regulation-citing, risk-based",
+      "kpis": {
+        "str_timeliness": "Suspicious transaction reports within 3 working days",
+        "ekyc_verification": "100% of wallets verified against chip ID biometrics"
+      },
+      "vocabulary": [
+        "eKYC",
+        "Chip-based Citizen ID",
+        "Biometric Authentication",
+        "Mule Account",
+        "Suspicious Transaction Report",
+        "Law on AML 14/2022/QH15",
+        "Decree 52/2024/ND-CP"
+      ],
+      "decision_patterns": {
+        "mule_accounts": {
+          "steps": [
+            "link_accounts_by_device_and_ID",
+            "suspend_outgoing_transactions",
+            "re_verify_biometrics",
+            "file_STR_with_SBV",
+            "report_to_police_if_fraud",
+            "retain_records_5_years"
+          ]
+        }
+      }
+    },
+    "ciso": {
+      "title": "CISO",
+      "persona": "Owner of information-system security",
+      "communication_style": "Risk-based, standards-citing",
+      "kpis": {
+        "critical_vulnerabilities": "Patched within the SLA",
+        "security_incidents": "Reported on time"
+      },
+      "vocabulary": [
+        "Circular 09/2020/TT-NHNN",
+        "Information System Level",
+        "Multi-factor Authentication",
+        "Device Binding"
+      ]
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "e_wallet": {
+        "definition": "Electronic account of a customer at a licensed non-bank payment intermediary, linked to the customer's bank account, holding stored value used for payments"
+      },
+      "napas": {
+        "definition": "National Payment Corporation of Vietnam: domestic card switch, Napas 247 round-the-clock interbank fast transfer, and the VietQR standard"
+      },
+      "transaction_success_rate": {
+        "definition": "Successful transactions divided by attempted transactions",
+        "healthy_range": ">= 99%"
+      },
+      "fraud_loss_rate": {
+        "definition": "Fraud losses divided by total payment value",
+        "healthy_range": "< 0.05% (5 bps)"
+      },
+      "system_uptime": {
+        "definition": "Share of time core payment services are available",
+        "healthy_range": ">= 99.95%"
+      },
+      "e_wallet_limit": {
+        "definition": "Total value of payments through an individual's e-wallet",
+        "limit": "VND 100 million per month"
+      },
+      "biometric_threshold": {
+        "definition": "Decision 2345/QD-NHNN from 1 July 2024: biometric authentication matched to chip-based citizen ID for an online transfer over VND 10 million, or once a day's total exceeds VND 20 million"
+      }
+    },
+    "regulations": {
+      "non_cash_payments": {
+        "name": "Decree 52/2024/ND-CP",
+        "effective": "1 July 2024",
+        "rule": "Replaces Decree 101/2012; licenses intermediary payment services by the State Bank of Vietnam; caps foreign ownership of payment intermediaries at 49%"
+      },
+      "intermediary_services": {
+        "name": "Circular 40/2024/TT-NHNN",
+        "rule": "E-wallets must be linked to the holder's bank account and topped up from it; individual e-wallet payments capped at VND 100 million per month"
+      },
+      "accounts_biometrics": {
+        "name": "Circular 17/2024/TT-NHNN",
+        "rule": "From 1 January 2025 accounts and e-wallets not verified against biometric data may not make online transactions"
+      },
+      "sandbox": {
+        "name": "Decree 94/2025/ND-CP",
+        "effective": "1 July 2025",
+        "rule": "Controlled testing mechanism for banking fintech: credit scoring, open-API data sharing and peer-to-peer lending"
+      },
+      "open_api": {
+        "name": "Circular 64/2024/TT-NHNN",
+        "rule": "Open API standards for banks sharing data with third parties"
+      },
+      "data_protection": {
+        "name": "Decree 13/2023/ND-CP and Law on Personal Data Protection No. 91/2025/QH15",
+        "rule": "Consent-based processing of personal data; the law takes effect on 1 January 2026"
+      },
+      "aml": {
+        "name": "Law on Anti-Money Laundering No. 14/2022/QH15",
+        "rule": "Suspicious transaction reports to the SBV within 3 working days; cash transactions of VND 400 million or more reported as large-value (Decision 11/2023/QD-TTg)"
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "cs_to_fraud": {
+        "trigger": "Customer reports an unauthorised e-wallet transfer",
+        "from": "Customer Service",
+        "to": "Fraud Operations",
+        "context": [
+          "transaction_id",
+          "device_and_login_history",
+          "customer_statement"
+        ],
+        "sla": {
+          "lock_wallet": "Immediately",
+          "triage": "4 hours"
+        }
+      },
+      "fraud_to_napas": {
+        "trigger": "Funds sent to another bank via Napas 247",
+        "from": "Fraud Operations",
+        "to": "Napas / beneficiary bank",
+        "context": [
+          "recall_request",
+          "beneficiary_account"
+        ],
+        "sla": {
+          "recall_request": "Same day"
+        }
+      },
+      "fraud_to_compliance": {
+        "trigger": "Fraud or mule pattern confirmed",
+        "from": "Fraud Operations",
+        "to": "Compliance Officer",
+        "context": [
+          "case_file",
+          "linked_accounts"
+        ],
+        "sla": {
+          "str": "3 working days"
+        }
+      },
+      "compliance_to_authorities": {
+        "from": "Compliance Officer",
+        "to": "SBV AML Department and police",
+        "context": [
+          "STR",
+          "crime_report"
+        ]
+      },
+      "payments_to_sbv": {
+        "trigger": "Service outage or major security incident",
+        "from": "Head of Payments / CISO",
+        "to": "State Bank of Vietnam",
+        "context": [
+          "incident_report"
+        ]
+      }
+    },
+    "escalation_matrix": {
+      "fraud": {
+        "customer_loss": "L3_management",
+        "mule_network": "L4_executive"
+      },
+      "operations": {
+        "outage_over_1_hour": "L4_executive"
+      }
+    }
+  },
+  "rag_chunks": [
+    "Decree 52/2024/ND-CP on non-cash payments took effect on 1 July 2024, replacing Decree 101/2012/ND-CP. It lets the State Bank of Vietnam license non-bank organisations to provide intermediary payment services such as e-wallets, payment gateways, collection and disbursement support, and electronic clearing. It caps total foreign ownership of a payment intermediary at 49 percent of charter capital.",
+    "An e-wallet in Vietnam is an electronic account that a licensed intermediary opens for a customer to hold stored value for payments. Under Circular 40/2024/TT-NHNN the wallet must be linked to the holder's own bank account, top-ups come from that account, and withdrawals go back to it. Total payments through an individual's e-wallets at one provider are capped at 100 million dong per month.",
+    "The National Payment Corporation of Vietnam, Napas, runs the domestic card switching system, the Napas 247 interbank fast-transfer service that settles transfers around the clock, and the VietQR standard that lets customers pay or transfer by scanning a QR code with any banking or wallet app. Domestic cards follow the Vietnamese chip standard TCCS 01:2019 after the migration from magnetic stripe.",
+    "Decision 2345/QD-NHNN required banks and intermediaries, from 1 July 2024, to authenticate customers with biometrics matched to the chip-based citizen identity card for an online transfer above 10 million dong, or when the day's total online transfers exceed 20 million dong. Circular 17/2024/TT-NHNN requires accounts and e-wallets to be verified against biometric data; from 1 January 2025, unverified accounts may not make online transactions.",
+    "Payment firms track the transaction success rate, successful transactions divided by attempts, aiming for 99 percent or better; the fraud loss rate, fraud losses divided by total payment value, kept below about 5 basis points; and availability of core services of at least 99.95 percent. Failed transfers must be reconciled and refunded promptly, with incident reports to the State Bank for major outages.",
+    "Decree 94/2025/ND-CP, effective 1 July 2025, created a controlled testing mechanism, a regulatory sandbox, for fintech in banking. It covers credit scoring, data sharing through open application programming interfaces, and peer-to-peer lending platforms, which previously had no specific legal framework. Participants must meet conditions on capital, risk management and consumer protection and are supervised by the State Bank during the test.",
+    "Circular 64/2024/TT-NHNN sets open API standards for banks sharing customer data and services with third parties, with customer consent. Personal data protection is governed by Decree 13/2023/ND-CP, effective 1 July 2023, which requires consent and impact assessments, and from 1 January 2026 by the Law on Personal Data Protection No. 91/2025/QH15. Information system security for banking and payment firms is governed by Circular 09/2020/TT-NHNN.",
+    "Payment intermediaries are reporting entities under the Law on Anti-Money Laundering No. 14/2022/QH15. They must identify customers, monitor transactions, report suspicious transactions to the State Bank's anti-money laundering department within three working days of detection, and keep records for five years. Decision 11/2023/QD-TTg sets 400 million dong as the threshold for reporting large-value cash transactions. Common fraud typologies include mule accounts opened with borrowed or bought identities.",
+    "The Law on Digital Technology Industry No. 71/2025/QH15, effective 1 January 2026, recognises digital assets, including crypto-assets, as a legal category. Resolution 05/2025/NQ-CP of September 2025 launched a five-year pilot for a domestic crypto-asset market, limited to licensed service providers that meet high capital requirements. Cash-on-delivery remains common in e-commerce, which national schemes for non-cash payment development aim to reduce.",
+    "Consumer lending through apps must be done by licensed credit institutions, such as banks and consumer finance companies, which report to the National Credit Information Centre of Vietnam, CIC. Unlicensed lending apps have been targeted by the police for usurious interest and abusive debt collection. E-wallet providers may partner with banks to offer buy-now-pay-later and loans, with the bank as the lender.",
+    "When a customer reports an unauthorised transfer, the provider should lock the wallet immediately, review device and login history, request a recall through Napas or the beneficiary bank, and refund the customer where the provider is at fault. Confirmed fraud is reported to the police, and patterns indicating money laundering are reported to the State Bank as suspicious transactions."
+  ]
+}

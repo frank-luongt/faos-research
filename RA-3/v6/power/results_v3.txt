@@ -1,0 +1,8 @@
+v5 anchor, margin 0.05                                  supported=0.05 inconclusive=0.93 CI half-width~0.057
+half effect, margin 0.05                                supported=0.08 inconclusive=0.66 CI half-width~0.051
+v5 anchor, margin 0.08                                  supported=0.43 inconclusive=0.55 CI half-width~0.057
+half effect, margin 0.08                                supported=0.51 inconclusive=0.23 CI half-width~0.051
+v5 anchor, margin 0.1                                   supported=0.65 inconclusive=0.33 CI half-width~0.057
+half effect, margin 0.1                                 supported=0.65 inconclusive=0.09 CI half-width~0.051
+false-support check: slope -0.4 + true VN effect +.10, margin .08 supported=0.01 inconclusive=0.73 CI half-width~0.051
+false-support check: slope -0.4 + true VN effect +.10, margin .10 supported=0.03 inconclusive=0.71 CI half-width~0.051

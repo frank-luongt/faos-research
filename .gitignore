@@ -50,3 +50,6 @@ generated_scenarios*.json
 *.fls
 *.out
 *.toc
+
+# RA-3 v6 run logs (released with the paper per Data Availability policy)
+RA-3/v6/results/

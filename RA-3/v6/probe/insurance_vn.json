@@ -1,0 +1,992 @@
+[
+ {
+  "id": "insurance_vn_P001",
+  "question": "Which law currently governs insurance business in Vietnam?",
+  "options": {
+   "A": "Law No. 08/2022/QH15",
+   "B": "Law No. 61/2010/QH12",
+   "C": "Law No. 24/2000/QH10",
+   "D": "Law No. 32/2024/QH15"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P002",
+  "question": "When did Vietnam's 2022 Law on Insurance Business take effect?",
+  "options": {
+   "A": "1 July 2023",
+   "B": "1 January 2022",
+   "C": "1 January 2023",
+   "D": "1 July 2022"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P003",
+  "question": "Which law did the 2022 Law on Insurance Business replace?",
+  "options": {
+   "A": "The 2000 Law on Insurance Business, as amended",
+   "B": "The 2015 Civil Code",
+   "C": "The 2014 Law on Social Insurance",
+   "D": "The 2010 Law on Credit Institutions"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P004",
+  "question": "Which body directly supervises insurers in Vietnam?",
+  "options": {
+   "A": "The Insurance Supervisory Authority under the Ministry of Finance",
+   "B": "Vietnam Social Security",
+   "C": "The State Bank of Vietnam",
+   "D": "The State Securities Commission"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P005",
+  "question": "Which decree guides the 2022 Law on Insurance Business in general?",
+  "options": {
+   "A": "Decree 67/2023/ND-CP",
+   "B": "Decree 46/2023/ND-CP",
+   "C": "Decree 73/2016/ND-CP",
+   "D": "Decree 19/2023/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P006",
+  "question": "Which decree regulates compulsory motor, fire and construction insurance?",
+  "options": {
+   "A": "Decree 23/2018/ND-CP",
+   "B": "Decree 67/2023/ND-CP",
+   "C": "Decree 46/2023/ND-CP",
+   "D": "Decree 03/2021/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P007",
+  "question": "Which circular guides insurance product rules, bancassurance conduct and agent training?",
+  "options": {
+   "A": "Circular 67/2023/TT-BTC",
+   "B": "Circular 50/2017/TT-BTC",
+   "C": "Circular 96/2020/TT-BTC",
+   "D": "Circular 22/2019/TT-NHNN"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P008",
+  "question": "What is the industry association of Vietnamese insurers?",
+  "options": {
+   "A": "The Insurance Association of Vietnam (IAV)",
+   "B": "VCCI",
+   "C": "The Vietnam Bankers Association",
+   "D": "The Vietnam Securities Business Association"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P009",
+  "question": "Which company is Vietnam's national reinsurer?",
+  "options": {
+   "A": "Swiss Re Vietnam",
+   "B": "Vinare",
+   "C": "PVI Re only",
+   "D": "Bảo Minh"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P010",
+  "question": "Under the 2022 law, which cover is compulsory for motor vehicle owners?",
+  "options": {
+   "A": "Theft cover",
+   "B": "Third-party civil liability (TNDS)",
+   "C": "Driver accident cover",
+   "D": "Own-damage cover"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P011",
+  "question": "Under Decree 67/2023, what is the compulsory motor TNDS limit for bodily injury?",
+  "options": {
+   "A": "VND 150 million per person per accident",
+   "B": "VND 300 million per person per accident",
+   "C": "VND 100 million per person per accident",
+   "D": "VND 70 million per person per accident"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P012",
+  "question": "Under Decree 67/2023, what is the compulsory TNDS property-damage limit for a motorbike?",
+  "options": {
+   "A": "VND 30 million per accident",
+   "B": "VND 150 million per accident",
+   "C": "VND 50 million per accident",
+   "D": "VND 100 million per accident"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P013",
+  "question": "Under Decree 67/2023, what is the compulsory TNDS property-damage limit for a car?",
+  "options": {
+   "A": "VND 150 million per accident",
+   "B": "VND 200 million per accident",
+   "C": "VND 100 million per accident",
+   "D": "VND 50 million per accident"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P014",
+  "question": "Who sets the premium for compulsory motor TNDS insurance?",
+  "options": {
+   "A": "The government, by decree",
+   "B": "The State Bank",
+   "C": "Each insurer freely",
+   "D": "The Insurance Association"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P015",
+  "question": "Which of these is a compulsory insurance line under Vietnamese law?",
+  "options": {
+   "A": "Pet insurance",
+   "B": "Construction works insurance",
+   "C": "Critical illness insurance",
+   "D": "Travel insurance"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P016",
+  "question": "How long is the cooling-off period for a life or health policy over one year?",
+  "options": {
+   "A": "30 days",
+   "B": "15 days",
+   "C": "14 days",
+   "D": "21 days"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P017",
+  "question": "What does a policyholder who cancels during the cooling-off period get back?",
+  "options": {
+   "A": "The surrender value only",
+   "B": "Half the premium",
+   "C": "The premium paid less reasonable costs such as a medical exam",
+   "D": "Nothing"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P018",
+  "question": "Within how many days must an insurer pay after receiving a complete claim file, absent other agreement?",
+  "options": {
+   "A": "7 days",
+   "B": "15 days",
+   "C": "60 days",
+   "D": "30 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P019",
+  "question": "Under the 2022 law, the general time limit to submit a claim is:",
+  "options": {
+   "A": "1 year from the insured event",
+   "B": "5 years from the insured event",
+   "C": "3 months from the insured event",
+   "D": "There is no limit"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P020",
+  "question": "What is the limitation period for lawsuits over insurance contracts?",
+  "options": {
+   "A": "3 years from the dispute arising",
+   "B": "1 year",
+   "C": "6 months",
+   "D": "10 years"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P021",
+  "question": "Under Circular 67/2023, bank staff may not offer unit-linked products to a borrower within:",
+  "options": {
+   "A": "30 days after disbursement only",
+   "B": "7 days of disbursement",
+   "C": "60 days before or after loan disbursement",
+   "D": "The loan term"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P022",
+  "question": "Under Circular 67/2023, sales of investment-linked policies must be:",
+  "options": {
+   "A": "Sold only online",
+   "B": "Signed before a notary",
+   "C": "Audio and video recorded",
+   "D": "Approved by the SBV"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P023",
+  "question": "The 2024 Law on Credit Institutions bars banks from:",
+  "options": {
+   "A": "Acting as insurance agents",
+   "B": "Selling any life insurance",
+   "C": "Tying non-compulsory insurance to banking products",
+   "D": "Accepting insurance premiums by transfer"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P024",
+  "question": "In bancassurance, a Vietnamese bank acts legally as:",
+  "options": {
+   "A": "A loss adjuster",
+   "B": "An insurance agent organisation",
+   "C": "An insurance broker",
+   "D": "A reinsurer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P025",
+  "question": "Which scandal year triggered Vietnam's crackdown on bancassurance mis-selling?",
+  "options": {
+   "A": "2023",
+   "B": "2018",
+   "C": "2020",
+   "D": "2025"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P026",
+  "question": "Insurers in Vietnam are reporting entities under which law?",
+  "options": {
+   "A": "The 2022 Law on Anti-Money Laundering",
+   "B": "The 2018 Law on Cybersecurity",
+   "C": "The 2023 Law on Prices",
+   "D": "The 2015 Law on Accounting"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P027",
+  "question": "Which article of the 2015 Penal Code criminalises insurance business fraud?",
+  "options": {
+   "A": "Article 213",
+   "B": "Article 174",
+   "C": "Article 200",
+   "D": "Article 355"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P028",
+  "question": "Who runs Vietnam's compulsory social health insurance (BHYT)?",
+  "options": {
+   "A": "The Ministry of Health's hospitals",
+   "B": "Vietnam Social Security",
+   "C": "Commercial health insurers",
+   "D": "The Insurance Supervisory Authority"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P029",
+  "question": "What is the total social health insurance contribution rate on an employee's salary?",
+  "options": {
+   "A": "6%",
+   "B": "4.5%",
+   "C": "10.5%",
+   "D": "8%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P030",
+  "question": "Which decree governs personal data processing that insurers must follow?",
+  "options": {
+   "A": "Decree 52/2024/ND-CP",
+   "B": "Decree 15/2020/ND-CP",
+   "C": "Decree 46/2023/ND-CP",
+   "D": "Decree 13/2023/ND-CP"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P031",
+  "question": "Which body approves or registers life insurance product terms before sale?",
+  "options": {
+   "A": "Vietnam Social Security",
+   "B": "The Ministry of Justice",
+   "C": "The Insurance Association of Vietnam",
+   "D": "The Ministry of Finance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P032",
+  "question": "Foreign insurers enter Vietnam's non-life market mainly as:",
+  "options": {
+   "A": "Agents of the State Bank",
+   "B": "Unlicensed cross-border sellers",
+   "C": "Licensed subsidiaries or branches",
+   "D": "Social insurance funds"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P033",
+  "question": "Which of these is a large Vietnamese non-life insurer?",
+  "options": {
+   "A": "Prudential",
+   "B": "Dai-ichi Life",
+   "C": "PVI",
+   "D": "Manulife"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P034",
+  "question": "Which of these is a Vietnamese state-linked insurance group?",
+  "options": {
+   "A": "AIA",
+   "B": "FWD",
+   "C": "Generali",
+   "D": "Bảo Việt"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P035",
+  "question": "'Bảo hiểm nhân thọ' means:",
+  "options": {
+   "A": "Health insurance",
+   "B": "Non-life insurance",
+   "C": "Life insurance",
+   "D": "Reinsurance"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P036",
+  "question": "'Bảo hiểm phi nhân thọ' means:",
+  "options": {
+   "A": "Social insurance",
+   "B": "Life insurance",
+   "C": "Microinsurance",
+   "D": "Non-life insurance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P037",
+  "question": "'Bên mua bảo hiểm' means:",
+  "options": {
+   "A": "Beneficiary",
+   "B": "Insurer",
+   "C": "Policyholder",
+   "D": "Insured person"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P038",
+  "question": "'Người được bảo hiểm' means:",
+  "options": {
+   "A": "Insurance agent",
+   "B": "Policyholder",
+   "C": "Beneficiary",
+   "D": "Insured person"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P039",
+  "question": "'Người thụ hưởng' means:",
+  "options": {
+   "A": "Surveyor",
+   "B": "Insured person",
+   "C": "Beneficiary",
+   "D": "Policyholder"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P040",
+  "question": "'Phí bảo hiểm' means:",
+  "options": {
+   "A": "Commission",
+   "B": "Premium",
+   "C": "Claim payment",
+   "D": "Sum insured"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P041",
+  "question": "'Số tiền bảo hiểm' means:",
+  "options": {
+   "A": "Deductible",
+   "B": "Sum insured",
+   "C": "Surrender value",
+   "D": "Premium"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P042",
+  "question": "'Giá trị hoàn lại' means:",
+  "options": {
+   "A": "Commission clawback",
+   "B": "Maturity benefit",
+   "C": "Sum insured",
+   "D": "Cash surrender value"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P043",
+  "question": "'Tái bảo hiểm' means:",
+  "options": {
+   "A": "Coinsurance",
+   "B": "Retrocession only",
+   "C": "Self-insurance",
+   "D": "Reinsurance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P044",
+  "question": "'Mức miễn thường' means:",
+  "options": {
+   "A": "Waiting period",
+   "B": "Exclusion",
+   "C": "Sum insured",
+   "D": "Deductible"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P045",
+  "question": "'Thế quyền' in claims means:",
+  "options": {
+   "A": "Subrogation",
+   "B": "Contribution",
+   "C": "Salvage",
+   "D": "Indemnity"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P046",
+  "question": "'Giám định viên' is:",
+  "options": {
+   "A": "A broker",
+   "B": "A loss surveyor or adjuster",
+   "C": "An actuary",
+   "D": "An insurance agent"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P047",
+  "question": "'Bảo hiểm liên kết đơn vị' is:",
+  "options": {
+   "A": "Endowment insurance",
+   "B": "Universal life insurance",
+   "C": "Term life insurance",
+   "D": "Unit-linked insurance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P048",
+  "question": "'Bảo hiểm liên kết chung' is:",
+  "options": {
+   "A": "Credit life insurance",
+   "B": "Unit-linked insurance",
+   "C": "Universal life insurance",
+   "D": "Group insurance"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P049",
+  "question": "'Bảo hiểm tử kỳ' is:",
+  "options": {
+   "A": "Endowment insurance",
+   "B": "Term life insurance",
+   "C": "Whole life insurance",
+   "D": "Pension insurance"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P050",
+  "question": "'Bảo hiểm hỗn hợp' is:",
+  "options": {
+   "A": "Endowment insurance",
+   "B": "Health insurance",
+   "C": "Unit-linked insurance",
+   "D": "Term life insurance"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P051",
+  "question": "'Bảo hiểm trọn đời' is:",
+  "options": {
+   "A": "Annuity",
+   "B": "Term life insurance",
+   "C": "Endowment insurance",
+   "D": "Whole life insurance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P052",
+  "question": "'Bảo hiểm vi mô' is:",
+  "options": {
+   "A": "Microinsurance",
+   "B": "Social insurance",
+   "C": "Group insurance",
+   "D": "Reinsurance"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P053",
+  "question": "'Đại lý bảo hiểm' is:",
+  "options": {
+   "A": "An insurance agent",
+   "B": "An insurer",
+   "C": "A loss adjuster",
+   "D": "An insurance broker"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P054",
+  "question": "'Doanh nghiệp môi giới bảo hiểm' is:",
+  "options": {
+   "A": "A reinsurer",
+   "B": "An insurance broking firm",
+   "C": "An insurance agency",
+   "D": "A claims adjuster"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P055",
+  "question": "'Hoa hồng' in distribution means:",
+  "options": {
+   "A": "Bonus to policyholders",
+   "B": "Premium",
+   "C": "Commission",
+   "D": "Fee to the MoF"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P056",
+  "question": "'Bảng minh họa quyền lợi' is:",
+  "options": {
+   "A": "A premium invoice",
+   "B": "A benefit illustration",
+   "C": "A claim form",
+   "D": "A needs analysis form"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P057",
+  "question": "'Dự phòng phí chưa được hưởng' is:",
+  "options": {
+   "A": "The catastrophe reserve",
+   "B": "The unearned premium reserve",
+   "C": "The claims reserve",
+   "D": "The mathematical reserve"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P058",
+  "question": "'Dự phòng dao động lớn' is:",
+  "options": {
+   "A": "The catastrophe or equalisation reserve",
+   "B": "The IBNR reserve",
+   "C": "The bonus reserve",
+   "D": "The unearned premium reserve"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P059",
+  "question": "'Biên khả năng thanh toán' is:",
+  "options": {
+   "A": "The loss ratio",
+   "B": "The investment limit",
+   "C": "The solvency margin",
+   "D": "The charter capital"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P060",
+  "question": "'Hợp đồng bảo hiểm nhóm' is:",
+  "options": {
+   "A": "A coinsurance agreement",
+   "B": "A broker agreement",
+   "C": "A reinsurance treaty",
+   "D": "A group insurance contract"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P061",
+  "question": "'Thời gian chờ' in health insurance is:",
+  "options": {
+   "A": "A waiting period",
+   "B": "A grace period",
+   "C": "A claim deadline",
+   "D": "A cooling-off period"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P062",
+  "question": "'Quyền lợi đáo hạn' is:",
+  "options": {
+   "A": "The death benefit",
+   "B": "The surrender value",
+   "C": "The annual bonus",
+   "D": "The maturity benefit"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P063",
+  "question": "'Đồng bảo hiểm' means:",
+  "options": {
+   "A": "Group insurance",
+   "B": "Reinsurance",
+   "C": "Coinsurance",
+   "D": "Self-insurance"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P064",
+  "question": "'Bồi thường' in non-life insurance means:",
+  "options": {
+   "A": "A premium refund",
+   "B": "The claim indemnity payment",
+   "C": "Agent commission",
+   "D": "A reserve release"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P065",
+  "question": "'Thời gian gia hạn đóng phí' in life insurance is:",
+  "options": {
+   "A": "The policy term",
+   "B": "The premium grace period",
+   "C": "The cooling-off period",
+   "D": "The waiting period"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P066",
+  "question": "'Hủy bỏ hợp đồng' by the policyholder after cooling-off usually yields:",
+  "options": {
+   "A": "The sum insured",
+   "B": "A full premium refund",
+   "C": "The cash surrender value, if any",
+   "D": "Nothing in every case"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P067",
+  "question": "'Gian lận bảo hiểm' is:",
+  "options": {
+   "A": "Insurance mis-selling",
+   "B": "Insurance surrender",
+   "C": "Insurance fraud",
+   "D": "Insurance lapse"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P068",
+  "question": "Loss ratio is incurred losses divided by:",
+  "options": {
+   "A": "Written premium",
+   "B": "Total assets",
+   "C": "Policy count",
+   "D": "Earned premium"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P069",
+  "question": "Expense ratio in the combined ratio usually uses which denominator?",
+  "options": {
+   "A": "Incurred losses",
+   "B": "Equity",
+   "C": "Earned premium",
+   "D": "Written premium"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P070",
+  "question": "A combined ratio of 98% means the insurer:",
+  "options": {
+   "A": "Made an underwriting loss",
+   "B": "Is insolvent",
+   "C": "Had a 98% loss ratio",
+   "D": "Made a small underwriting profit"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P071",
+  "question": "Which method projects ultimate claims from development factors in a loss triangle?",
+  "options": {
+   "A": "Net premium method",
+   "B": "Chain ladder",
+   "C": "Straight-line method",
+   "D": "Pro rata temporis"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P072",
+  "question": "Which reserving method blends an expected loss ratio with reported development?",
+  "options": {
+   "A": "Case reserving",
+   "B": "Chain ladder only",
+   "C": "Bornhuetter-Ferguson",
+   "D": "Pro rata temporis"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P073",
+  "question": "IBNR reserves cover:",
+  "options": {
+   "A": "Future policy lapses",
+   "B": "Premiums not yet earned",
+   "C": "Claims reported but not yet paid only",
+   "D": "Claims incurred but not yet reported"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P074",
+  "question": "Pro rata temporis is used to compute:",
+  "options": {
+   "A": "The IBNR reserve",
+   "B": "The unearned premium reserve",
+   "C": "Persistency",
+   "D": "The solvency margin"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P075",
+  "question": "An A/E ratio compares:",
+  "options": {
+   "A": "Agents with employees",
+   "B": "Assets with equity",
+   "C": "Actual experience with expected experience",
+   "D": "Annual with earned premium"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P076",
+  "question": "A quota share treaty means the reinsurer:",
+  "options": {
+   "A": "Takes a fixed share of every risk's premium and losses",
+   "B": "Covers only catastrophes",
+   "C": "Covers only life policies",
+   "D": "Pays only losses above a retention"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P077",
+  "question": "An excess-of-loss treaty pays:",
+  "options": {
+   "A": "Only expenses",
+   "B": "Losses above the cedant's retention up to a limit",
+   "C": "Only premium refunds",
+   "D": "A fixed share of every loss"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P078",
+  "question": "The insurer's 'retention' is:",
+  "options": {
+   "A": "Its policy persistency",
+   "B": "Its staff turnover",
+   "C": "Its cash reserve",
+   "D": "The share of risk it keeps after reinsurance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P079",
+  "question": "APE in life distribution stands for:",
+  "options": {
+   "A": "Agent productivity estimate",
+   "B": "Average policy expense",
+   "C": "Annualised premium equivalent",
+   "D": "Actuarial projection estimate"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P080",
+  "question": "13th-month persistency measures:",
+  "options": {
+   "A": "Premium growth over 13 months",
+   "B": "Claims paid in month 13",
+   "C": "Agents active after a year",
+   "D": "The share of new policies still in force after 13 months"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P081",
+  "question": "Low persistency in a bancassurance channel most often signals:",
+  "options": {
+   "A": "Mis-selling or unsuitable sales",
+   "B": "Low claims",
+   "C": "High solvency",
+   "D": "Strong investment returns"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P082",
+  "question": "FNOL stands for:",
+  "options": {
+   "A": "First net operating loss",
+   "B": "Formal notice of lapse",
+   "C": "Final notice of liability",
+   "D": "First notice of loss"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P083",
+  "question": "SIU stands for:",
+  "options": {
+   "A": "Settlement Insurance Unit",
+   "B": "Special Investigations Unit",
+   "C": "Survey and Inspection Unit",
+   "D": "Solvency Inspection Unit"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P084",
+  "question": "Subrogation lets the insurer:",
+  "options": {
+   "A": "Recover the paid claim from a liable third party",
+   "B": "Cancel the policy",
+   "C": "Refuse the claim",
+   "D": "Raise the premium mid-term"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P085",
+  "question": "A needs analysis form is used to:",
+  "options": {
+   "A": "Register the product with the MoF",
+   "B": "Calculate the claim payment",
+   "C": "Record reinsurance cessions",
+   "D": "Show the product suits the customer's needs and means"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_vn_P086",
+  "question": "Why do life policies carry higher AML risk than most non-life policies?",
+  "options": {
+   "A": "They build cash surrender values",
+   "B": "They have lower premiums",
+   "C": "They cannot be cancelled",
+   "D": "They are always sold online"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P087",
+  "question": "Risk-based supervision differs from rule-based supervision by:",
+  "options": {
+   "A": "Sizing capital and oversight to each insurer's risks",
+   "B": "Banning reinsurance",
+   "C": "Removing solvency rules",
+   "D": "Using fixed premium tariffs"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_vn_P088",
+  "question": "Who certifies a new life product's premium basis before filing?",
+  "options": {
+   "A": "The external auditor only",
+   "B": "The bank partner",
+   "C": "The appointed actuary",
+   "D": "The insurance agent"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_vn_P089",
+  "question": "A catastrophe reserve is meant to:",
+  "options": {
+   "A": "Fund unearned premium",
+   "B": "Smooth results across years with large losses",
+   "C": "Pay agents' commission",
+   "D": "Cover policy loans"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_vn_P090",
+  "question": "Mathematical reserves apply mainly to:",
+  "options": {
+   "A": "Travel insurance",
+   "B": "Marine cargo insurance",
+   "C": "Motor insurance",
+   "D": "Life insurance"
+  },
+  "answer": "D"
+ }
+]

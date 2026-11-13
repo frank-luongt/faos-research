@@ -1,0 +1,992 @@
+[
+ {
+  "id": "securities_us_P001",
+  "question": "Under Rule 15c3-1, what is the minimum net capital for a broker-dealer that carries customer accounts?",
+  "options": {
+   "A": "$100,000",
+   "B": "$250,000",
+   "C": "$50,000",
+   "D": "$1,000,000"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P002",
+  "question": "What is the minimum net capital for an introducing broker-dealer that never receives customer funds or securities?",
+  "options": {
+   "A": "$50,000",
+   "B": "$250,000",
+   "C": "$25,000",
+   "D": "$5,000"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P003",
+  "question": "Under the basic method, aggregate indebtedness may not exceed what multiple of net capital?",
+  "options": {
+   "A": "12 times",
+   "B": "20 times",
+   "C": "15 times (1500%)",
+   "D": "8 times"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P004",
+  "question": "Under the alternative method, net capital must be at least the greater of $250,000 or what share of aggregate debit items?",
+  "options": {
+   "A": "1%",
+   "B": "2%",
+   "C": "5%",
+   "D": "10%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P005",
+  "question": "Net capital is net worth adjusted for nonallowable assets and:",
+  "options": {
+   "A": "Haircuts on securities positions",
+   "B": "Deferred taxes only",
+   "C": "Unrealized gains",
+   "D": "Goodwill amortization"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P006",
+  "question": "Rule 17a-11 requires notice when net capital falls below what share of the minimum?",
+  "options": {
+   "A": "120%",
+   "B": "100%",
+   "C": "150%",
+   "D": "110%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P007",
+  "question": "Rule 17a-11 requires notice when aggregate indebtedness exceeds:",
+  "options": {
+   "A": "1500% of net capital",
+   "B": "1000% of net capital",
+   "C": "1200% of net capital",
+   "D": "800% of net capital"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P008",
+  "question": "How quickly must a firm give the early-warning notice under Rule 17a-11?",
+  "options": {
+   "A": "Within 30 days",
+   "B": "At the next FOCUS report",
+   "C": "Within 24 hours",
+   "D": "Within 5 business days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P009",
+  "question": "If net capital falls below the minimum, the firm must:",
+  "options": {
+   "A": "Notify the same day and cease business until compliant",
+   "B": "Notify SIPC only",
+   "C": "Only record it in the FOCUS report",
+   "D": "Notify within a week and continue"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P010",
+  "question": "What form is the FOCUS report?",
+  "options": {
+   "A": "Form ADV",
+   "B": "Form BD",
+   "C": "Form 13F",
+   "D": "Form X-17A-5"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P011",
+  "question": "Rule 15c3-3 is known as the:",
+  "options": {
+   "A": "Customer protection rule",
+   "B": "Net capital rule",
+   "C": "Order protection rule",
+   "D": "Locate rule"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P012",
+  "question": "Under Rule 15c3-3, excess customer credits over debits are deposited in:",
+  "options": {
+   "A": "A special reserve bank account for the exclusive benefit of customers",
+   "B": "An FDIC escrow",
+   "C": "The firm's operating account",
+   "D": "A SIPC trust fund"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P013",
+  "question": "The customer reserve computation has traditionally been performed:",
+  "options": {
+   "A": "Quarterly",
+   "B": "Weekly",
+   "C": "Monthly",
+   "D": "Daily for all firms"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P014",
+  "question": "SIPC protects a customer's account up to:",
+  "options": {
+   "A": "$250,000 including up to $100,000 cash",
+   "B": "$100,000 in total",
+   "C": "$500,000 including up to $250,000 cash",
+   "D": "$1,000,000 in securities only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P015",
+  "question": "Does SIPC protect against losses from market declines?",
+  "options": {
+   "A": "Yes, for retail customers only",
+   "B": "Yes, for bonds only",
+   "C": "No",
+   "D": "Yes, up to $500,000"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P016",
+  "question": "Regulation Best Interest compliance began on:",
+  "options": {
+   "A": "4 November 2022",
+   "B": "1 January 2018",
+   "C": "28 May 2024",
+   "D": "30 June 2020"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P017",
+  "question": "How many component obligations does Reg BI have?",
+  "options": {
+   "A": "Two",
+   "B": "Four",
+   "C": "Six",
+   "D": "Three"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P018",
+  "question": "Which is NOT a Reg BI component obligation?",
+  "options": {
+   "A": "Care obligation",
+   "B": "Conflict of interest obligation",
+   "C": "Disclosure obligation",
+   "D": "Best execution obligation"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P019",
+  "question": "Form CRS is a:",
+  "options": {
+   "A": "Short relationship summary for retail investors",
+   "B": "Net capital filing",
+   "C": "Insider trading report",
+   "D": "Fund prospectus"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P020",
+  "question": "Which FINRA rule still governs suitability for non-retail customers?",
+  "options": {
+   "A": "Rule 2111",
+   "B": "Rule 4530",
+   "C": "Rule 3110",
+   "D": "Rule 5310"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P021",
+  "question": "Which FINRA rule requires a supervisory system and written procedures?",
+  "options": {
+   "A": "Rule 2111",
+   "B": "Rule 3110",
+   "C": "Rule 4210",
+   "D": "Rule 2210"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P022",
+  "question": "Under FINRA Rule 2210, retail communications generally need:",
+  "options": {
+   "A": "Customer consent",
+   "B": "Approval by a principal before use",
+   "C": "SEC pre-clearance",
+   "D": "No review"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P023",
+  "question": "FINRA Rule 4530 requires reporting of specified events within:",
+  "options": {
+   "A": "10 business days",
+   "B": "24 hours",
+   "C": "30 calendar days",
+   "D": "60 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P024",
+  "question": "Which FINRA rule sets maintenance margin requirements?",
+  "options": {
+   "A": "Rule 5310",
+   "B": "Rule 2111",
+   "C": "Rule 3310",
+   "D": "Rule 4210"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P025",
+  "question": "Regulation T initial margin for equity securities is:",
+  "options": {
+   "A": "30%",
+   "B": "75%",
+   "C": "50%",
+   "D": "25%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P026",
+  "question": "FINRA's minimum maintenance margin for long equity positions is:",
+  "options": {
+   "A": "25%",
+   "B": "50%",
+   "C": "10%",
+   "D": "35%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P027",
+  "question": "Which agency's regulation sets initial margin (Regulation T)?",
+  "options": {
+   "A": "The OCC",
+   "B": "The SEC",
+   "C": "FINRA",
+   "D": "The Federal Reserve Board"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P028",
+  "question": "US equities moved to T+1 settlement on:",
+  "options": {
+   "A": "30 June 2020",
+   "B": "5 September 2017",
+   "C": "28 May 2024",
+   "D": "1 January 2023"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P029",
+  "question": "Before T+1, the standard US equity settlement cycle was:",
+  "options": {
+   "A": "T+3",
+   "B": "T+2",
+   "C": "T+0",
+   "D": "T+5"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P030",
+  "question": "Under Rule 15c6-2, allocations, confirmations and affirmations should be completed by:",
+  "options": {
+   "A": "T+2",
+   "B": "The end of the week",
+   "C": "T+1 noon",
+   "D": "The end of trade date"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P031",
+  "question": "Which SEC rule sets the standard settlement cycle for broker-dealer trades?",
+  "options": {
+   "A": "Rule 15c6-1",
+   "B": "Rule 15c6-2",
+   "C": "Rule 17a-4",
+   "D": "Rule 15c3-3"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P032",
+  "question": "Rule 10b-5 prohibits:",
+  "options": {
+   "A": "Margin lending",
+   "B": "Short selling",
+   "C": "Fraud in connection with the purchase or sale of securities",
+   "D": "Payment for order flow"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P033",
+  "question": "Rule 10b5-1 provides:",
+  "options": {
+   "A": "An affirmative defense for trades under a plan adopted while unaware of MNPI",
+   "B": "A safe harbor for all executive sales",
+   "C": "An exemption from Form 4",
+   "D": "A right to trade during blackout periods without limits"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P034",
+  "question": "For directors and officers, the 10b5-1 cooling-off period is at most:",
+  "options": {
+   "A": "90 days",
+   "B": "60 days",
+   "C": "120 days",
+   "D": "180 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P035",
+  "question": "For directors and officers, the 10b5-1 cooling-off period is the later of 90 days or how long after the next 10-Q/10-K?",
+  "options": {
+   "A": "30 days",
+   "B": "10 days",
+   "C": "2 business days",
+   "D": "5 business days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P036",
+  "question": "The 10b5-1 cooling-off period for persons other than directors, officers or the issuer is:",
+  "options": {
+   "A": "30 days",
+   "B": "120 days",
+   "C": "No cooling-off",
+   "D": "90 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P037",
+  "question": "Form 4 must be filed within:",
+  "options": {
+   "A": "30 days",
+   "B": "45 days after year-end",
+   "C": "2 business days of the transaction",
+   "D": "10 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P038",
+  "question": "Form 5 is due within how many days after fiscal year-end?",
+  "options": {
+   "A": "90 days",
+   "B": "60 days",
+   "C": "30 days",
+   "D": "45 days"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P039",
+  "question": "Section 16 reporting applies to officers, directors and holders of more than:",
+  "options": {
+   "A": "20%",
+   "B": "50%",
+   "C": "5%",
+   "D": "10% of a registered equity class"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P040",
+  "question": "Section 16(b) recovers short-swing profits from matched trades within:",
+  "options": {
+   "A": "One year",
+   "B": "30 days",
+   "C": "Three months",
+   "D": "Six months"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P041",
+  "question": "Schedule 13D is triggered by beneficial ownership above:",
+  "options": {
+   "A": "20%",
+   "B": "5% with control intent",
+   "C": "10% for any investor",
+   "D": "3%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P042",
+  "question": "Since the recent amendments, the initial Schedule 13D is due within:",
+  "options": {
+   "A": "10 calendar days",
+   "B": "2 business days",
+   "C": "45 days",
+   "D": "5 business days"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P043",
+  "question": "Material amendments to Schedule 13D are due within:",
+  "options": {
+   "A": "5 business days",
+   "B": "10 days",
+   "C": "2 business days",
+   "D": "30 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P044",
+  "question": "Passive investors above 5% may file:",
+  "options": {
+   "A": "Schedule 13G",
+   "B": "Form 4",
+   "C": "Form 13F",
+   "D": "Schedule 13D only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P045",
+  "question": "Form 13F is filed by institutional managers with 13(f) securities of at least:",
+  "options": {
+   "A": "$10 million",
+   "B": "$50 million",
+   "C": "$100 million",
+   "D": "$1 billion"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P046",
+  "question": "Form 13F is due within how many days after quarter-end?",
+  "options": {
+   "A": "60 days",
+   "B": "30 days",
+   "C": "45 days",
+   "D": "15 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P047",
+  "question": "Investment advisers generally must register with the SEC at regulatory AUM of:",
+  "options": {
+   "A": "$110 million",
+   "B": "$500 million",
+   "C": "$1 billion",
+   "D": "$25 million"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P048",
+  "question": "Advisers may register with the SEC once AUM reaches:",
+  "options": {
+   "A": "$50 million",
+   "B": "$100 million",
+   "C": "$150 million",
+   "D": "$10 million"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P049",
+  "question": "Form ADV annual updating amendments are due within:",
+  "options": {
+   "A": "90 days of fiscal year-end",
+   "B": "30 days",
+   "C": "45 days",
+   "D": "120 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P050",
+  "question": "Advisers with custody must generally undergo:",
+  "options": {
+   "A": "A surprise examination by an independent accountant",
+   "B": "An annual FINRA exam",
+   "C": "A monthly SEC audit",
+   "D": "No examination"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P051",
+  "question": "The SEC adviser marketing rule compliance date was:",
+  "options": {
+   "A": "28 May 2024",
+   "B": "1 January 2019",
+   "C": "4 November 2022",
+   "D": "30 June 2020"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P052",
+  "question": "Reg NMS Rule 611 is the:",
+  "options": {
+   "A": "Sub-penny rule",
+   "B": "Order protection rule",
+   "C": "Access rule",
+   "D": "Market data rule"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P053",
+  "question": "Rule 611 requires trading centers to prevent:",
+  "options": {
+   "A": "Trade-throughs of protected quotations",
+   "B": "Short sales",
+   "C": "After-hours trading",
+   "D": "Odd-lot trades"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P054",
+  "question": "FINRA Rule 5310 concerns:",
+  "options": {
+   "A": "Margin",
+   "B": "Communications",
+   "C": "Supervision",
+   "D": "Best execution"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P055",
+  "question": "Rule 606 requires broker-dealers to publish:",
+  "options": {
+   "A": "Annual audited financials",
+   "B": "Monthly net capital",
+   "C": "Quarterly order-routing reports",
+   "D": "Daily trade blotters"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P056",
+  "question": "Rule 605 requires market centers to publish:",
+  "options": {
+   "A": "Weekly short interest",
+   "B": "Monthly execution-quality statistics",
+   "C": "Annual best-interest reports",
+   "D": "Quarterly routing reports"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P057",
+  "question": "NBBO stands for:",
+  "options": {
+   "A": "National broker bid order",
+   "B": "Net bid-to-bid offset",
+   "C": "National best bid and offer",
+   "D": "New best bond offer"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P058",
+  "question": "Regulation SHO requires a broker-dealer, before a short sale, to:",
+  "options": {
+   "A": "Hold 150% cash collateral",
+   "B": "Get exchange approval",
+   "C": "Obtain customer consent",
+   "D": "Locate shares that can be borrowed"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P059",
+  "question": "Rule 201 short-sale restrictions are triggered when a stock falls how much from the prior close?",
+  "options": {
+   "A": "10%",
+   "B": "15%",
+   "C": "20%",
+   "D": "5%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P060",
+  "question": "Under Rule 201, the restriction lasts for:",
+  "options": {
+   "A": "Five trading days",
+   "B": "Until the price recovers",
+   "C": "One hour",
+   "D": "The rest of the day and the next trading day"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P061",
+  "question": "Rule 204 of Reg SHO concerns:",
+  "options": {
+   "A": "Locate exceptions for market makers",
+   "B": "Short interest reporting",
+   "C": "Naked option writing",
+   "D": "Closing out fails to deliver"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P062",
+  "question": "Under Rule 17a-4, blotters and ledgers are retained for:",
+  "options": {
+   "A": "3 years",
+   "B": "7 years",
+   "C": "6 years",
+   "D": "10 years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P063",
+  "question": "Under Rule 17a-4, most business communications are retained for:",
+  "options": {
+   "A": "3 years, the first 2 easily accessible",
+   "B": "10 years",
+   "C": "1 year",
+   "D": "6 years, all easily accessible"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P064",
+  "question": "A broker-dealer must file a SAR for suspicious transactions of at least:",
+  "options": {
+   "A": "$25,000",
+   "B": "$2,000",
+   "C": "$10,000",
+   "D": "$5,000"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P065",
+  "question": "Broker-dealer SARs are due within how many days of detection?",
+  "options": {
+   "A": "30 calendar days",
+   "B": "15 days",
+   "C": "60 days",
+   "D": "10 business days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P066",
+  "question": "Which FINRA rule requires a broker-dealer AML program?",
+  "options": {
+   "A": "Rule 2111",
+   "B": "Rule 3310",
+   "C": "Rule 5310",
+   "D": "Rule 4512"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P067",
+  "question": "Which FINRA rule requires knowing essential facts about every customer?",
+  "options": {
+   "A": "Rule 6000",
+   "B": "Rule 2090",
+   "C": "Rule 2210",
+   "D": "Rule 4210"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P068",
+  "question": "Which FINRA rule prohibits trading ahead of customer orders?",
+  "options": {
+   "A": "Rule 2210",
+   "B": "Rule 4210",
+   "C": "Rule 3110",
+   "D": "Rule 5320"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P069",
+  "question": "Which FINRA rule addresses front-running of block transactions?",
+  "options": {
+   "A": "Rule 5270",
+   "B": "Rule 3240",
+   "C": "Rule 5310",
+   "D": "Rule 2111"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P070",
+  "question": "Spoofing is:",
+  "options": {
+   "A": "Delaying settlement",
+   "B": "Placing orders without intent to execute, to move the price",
+   "C": "Selling short without a locate",
+   "D": "Trading on MNPI"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P071",
+  "question": "Which qualification exam is required for a FINOP?",
+  "options": {
+   "A": "Series 27",
+   "B": "Series 7",
+   "C": "Series 63",
+   "D": "Series 65"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P072",
+  "question": "Which exam qualifies a General Securities Principal?",
+  "options": {
+   "A": "Series 99",
+   "B": "Series 27",
+   "C": "Series 79",
+   "D": "Series 24"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P073",
+  "question": "Broker-dealers register with the SEC on:",
+  "options": {
+   "A": "Form ADV",
+   "B": "Form BD",
+   "C": "Form S-1",
+   "D": "Form U4"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P074",
+  "question": "Registered representatives are registered with FINRA on:",
+  "options": {
+   "A": "Form ADV",
+   "B": "Form U4",
+   "C": "Form U5",
+   "D": "Form BD"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P075",
+  "question": "When a representative leaves a firm, the firm files:",
+  "options": {
+   "A": "Form BD-W",
+   "B": "Form U5",
+   "C": "Form 4",
+   "D": "Form U4"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P076",
+  "question": "An expense ratio is:",
+  "options": {
+   "A": "Load divided by price",
+   "B": "Trading costs divided by turnover",
+   "C": "Annual fund operating expenses divided by average net assets",
+   "D": "Management fee only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P077",
+  "question": "Tracking error measures:",
+  "options": {
+   "A": "The fund's total return",
+   "B": "The bid-ask spread",
+   "C": "The expense ratio",
+   "D": "The volatility of the difference between fund and index returns"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P078",
+  "question": "Broad US index funds commonly charge expense ratios of:",
+  "options": {
+   "A": "About 1% a year",
+   "B": "Under 0.1% a year",
+   "C": "About 2% a year",
+   "D": "About 0.75% a year"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P079",
+  "question": "Which body is the self-regulatory organization for US broker-dealers?",
+  "options": {
+   "A": "The PCAOB",
+   "B": "The NFA",
+   "C": "SIPC",
+   "D": "FINRA"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P080",
+  "question": "Which body regulates US futures commission merchants?",
+  "options": {
+   "A": "FINRA only",
+   "B": "The CFTC (with the NFA)",
+   "C": "The OCC",
+   "D": "The SEC only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P081",
+  "question": "Which act requires most broker-dealers to register with the SEC?",
+  "options": {
+   "A": "The Trust Indenture Act",
+   "B": "The Securities Exchange Act of 1934",
+   "C": "The Securities Act of 1933",
+   "D": "The Investment Company Act of 1940"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P082",
+  "question": "Which act governs mutual funds?",
+  "options": {
+   "A": "The Securities Act of 1933 only",
+   "B": "The Investment Company Act of 1940",
+   "C": "The Bank Holding Company Act",
+   "D": "The Commodity Exchange Act"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P083",
+  "question": "Which act requires registration of public securities offerings?",
+  "options": {
+   "A": "The Securities Act of 1933",
+   "B": "The Sarbanes-Oxley Act",
+   "C": "The Advisers Act of 1940",
+   "D": "The Exchange Act of 1934"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_us_P084",
+  "question": "Payment for order flow is disclosed in reports under:",
+  "options": {
+   "A": "Rule 605",
+   "B": "Rule 15c3-1",
+   "C": "Rule 606",
+   "D": "Rule 611"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P085",
+  "question": "Which document must be delivered before or at the time of a recommendation to a retail investor under Reg BI rules?",
+  "options": {
+   "A": "Form 13F",
+   "B": "Form CRS",
+   "C": "Form X-17A-5",
+   "D": "Form 4"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P086",
+  "question": "Which rule requires a broker-dealer to keep customers' fully paid securities in possession or control?",
+  "options": {
+   "A": "Rule 15c3-1",
+   "B": "Rule 10b-10",
+   "C": "Rule 15c3-3",
+   "D": "Rule 17a-11"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_us_P087",
+  "question": "Which rule requires trade confirmations to customers?",
+  "options": {
+   "A": "Rule 17a-4",
+   "B": "Rule 10b-5",
+   "C": "Rule 15c3-3",
+   "D": "Rule 10b-10"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P088",
+  "question": "Under FINRA Rule 3110, firms must hold compliance meetings with registered persons at least:",
+  "options": {
+   "A": "Monthly",
+   "B": "Quarterly",
+   "C": "Every three years",
+   "D": "Annually"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_us_P089",
+  "question": "A broker-dealer's annual audited report under Rule 17a-5 is generally due within how many days of fiscal year-end?",
+  "options": {
+   "A": "120 days",
+   "B": "60 days",
+   "C": "90 days",
+   "D": "30 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_us_P090",
+  "question": "The marketing rule for advisers replaced the earlier:",
+  "options": {
+   "A": "Advertising and cash solicitation rules",
+   "B": "Brochure rule",
+   "C": "Pay-to-play rule",
+   "D": "Custody rule"
+  },
+  "answer": "A"
+ }
+]

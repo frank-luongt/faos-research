@@ -1,0 +1,225 @@
+{
+  "industry": "healthcare_vn",
+  "jurisdiction": "Vietnam",
+  "status": "draft RA-3 v6 cell, pending Vietnamese expert review",
+  "role_layer": {
+    "chief_medical_officer": {
+      "title": "Chief Medical Officer (Deputy Director for Professional Affairs)",
+      "persona": "Clinical quality and patient safety lead",
+      "communication_style": "Clinical, evidence-based, cites Ministry of Health rules",
+      "kpis": {
+        "bed_occupancy": "85-90%",
+        "hospital_acquired_infection": "< 5% of inpatients",
+        "average_length_of_stay": "5-7 days (general hospital)",
+        "patient_satisfaction": ">= 90% satisfied"
+      },
+      "vocabulary": [
+        "Law on Medical Examination and Treatment 15/2023/QH15",
+        "Practice Licence",
+        "Hospital Quality Criteria",
+        "Decision 6858/QD-BYT",
+        "Infection Control",
+        "Bed Occupancy",
+        "Referral"
+      ],
+      "decision_patterns": {
+        "quality_deterioration": {
+          "steps": [
+            "review_quality_criteria_scores",
+            "root_cause_by_department",
+            "infection_control_audit",
+            "bed_and_patient_flow_measures",
+            "report_to_hospital_council_and_DOH",
+            "monitor_monthly"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "quality_framework": "83 hospital quality criteria in five parts (Decision 6858/QD-BYT, 2016)"
+      }
+    },
+    "chief_nursing_officer": {
+      "title": "Chief Nursing Officer (Head of Nursing Department)",
+      "persona": "Leader of nursing care and staffing",
+      "communication_style": "Practical, patient-centred, staffing-focused",
+      "kpis": {
+        "nurse_turnover": "< 10% a year",
+        "care_errors": "Zero serious events",
+        "patient_satisfaction_nursing": ">= 90%"
+      },
+      "vocabulary": [
+        "Nursing Care",
+        "Staffing Plan",
+        "Patient Safety",
+        "Incident Reporting",
+        "Circular 31/2021/TT-BYT"
+      ],
+      "decision_patterns": {
+        "staffing_shortfall": {
+          "steps": [
+            "measure_workload_and_acuity",
+            "redeploy_across_wards",
+            "recruit_or_contract",
+            "retention_measures",
+            "report_to_director"
+          ]
+        }
+      }
+    },
+    "health_insurance_manager": {
+      "title": "Head of Health Insurance (Hospital)",
+      "persona": "Owner of claims to Vietnam Social Security",
+      "communication_style": "Exact, rules-driven",
+      "kpis": {
+        "rejected_claims": "< 1% of claimed value",
+        "claims_submission": "Monthly data sent on time"
+      },
+      "vocabulary": [
+        "Health Insurance",
+        "Vietnam Social Security",
+        "Benefit Level",
+        "Rejected Claims (xuat toan)",
+        "Referral Form",
+        "VssID"
+      ]
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "bed_occupancy": {
+        "definition": "Occupied bed-days divided by available bed-days",
+        "healthy_range": "85-90%",
+        "note": "Central hospitals have run above 100% (bed sharing)"
+      },
+      "average_length_of_stay": {
+        "definition": "Inpatient days divided by discharges",
+        "healthy_range": "5-7 days for a general hospital"
+      },
+      "hospital_acquired_infection": {
+        "definition": "Share of inpatients acquiring an infection in hospital",
+        "healthy_range": "< 5%"
+      },
+      "patient_satisfaction": {
+        "definition": "Share of surveyed patients satisfied, using the Ministry of Health survey method (Decision 3869/QD-BYT)",
+        "healthy_range": ">= 90%"
+      },
+      "rejected_claims_rate": {
+        "definition": "Value of claims rejected by Vietnam Social Security divided by value claimed",
+        "healthy_range": "< 1%"
+      },
+      "health_insurance_benefit": {
+        "definition": "Share of covered costs paid by the fund",
+        "levels": {
+          "100%": "children under 6, poor households, revolutionary contributors, among others",
+          "95%": "pensioners and near-poor, among others",
+          "80%": "most other insured people"
+        }
+      },
+      "technical_levels": {
+        "definition": "Law 15/2023/QH15 sorts facilities into three technical levels: initial, basic and specialised"
+      }
+    },
+    "regulations": {
+      "law_kcb": {
+        "name": "Law on Medical Examination and Treatment No. 15/2023/QH15",
+        "effective": "1 January 2024",
+        "guidance": "Decree 96/2023/ND-CP"
+      },
+      "health_insurance_law": {
+        "name": "Law on Health Insurance (amended by Law No. 51/2024/QH15)",
+        "contribution": "4.5% of salary: employer 3%, employee 1.5%",
+        "payer": "Vietnam Social Security"
+      },
+      "emergency_care": {
+        "name": "Law 15/2023/QH15",
+        "rule": "Facilities must provide emergency care and may not refuse or delay it for lack of payment or papers"
+      },
+      "medical_records": {
+        "name": "Law 15/2023/QH15 and Circular 46/2018/TT-BYT (electronic records)",
+        "retention": "At least 10 years; 15 years for occupational and traffic accidents; 20 years for mental illness and deaths",
+        "access": "Patients may read and receive copies of their records"
+      },
+      "health_data": {
+        "name": "Decree 13/2023/ND-CP",
+        "rule": "Health information is sensitive personal data requiring explicit consent"
+      },
+      "infectious_disease_reporting": {
+        "name": "Circular 54/2015/TT-BYT",
+        "rule": "Group A infectious diseases reported within 24 hours"
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "doctor_to_referral": {
+        "trigger": "Case beyond the facility's technical level",
+        "from": "Treating Doctor (district hospital)",
+        "to": "Hospital Planning Department",
+        "context": [
+          "clinical_summary",
+          "referral_form",
+          "health_insurance_details"
+        ],
+        "sla": {
+          "referral_form": "Before transfer; emergency transfer immediately"
+        }
+      },
+      "referral_to_receiving": {
+        "from": "District Hospital",
+        "to": "Provincial Hospital",
+        "context": [
+          "referral_form",
+          "test_results",
+          "treatment_given"
+        ],
+        "sla": {
+          "transport": "With staff escort for emergencies"
+        }
+      },
+      "receiving_to_insurance": {
+        "from": "Provincial Hospital admissions",
+        "to": "Head of Health Insurance",
+        "context": [
+          "chip_citizen_ID_or_VssID",
+          "referral_form",
+          "benefit_level"
+        ],
+        "sla": {
+          "eligibility_check": "At admission"
+        }
+      },
+      "insurance_to_vss": {
+        "from": "Head of Health Insurance",
+        "to": "Vietnam Social Security",
+        "context": [
+          "claims_data",
+          "XML_files"
+        ],
+        "sla": {
+          "submission": "Monthly"
+        }
+      }
+    },
+    "escalation_matrix": {
+      "clinical": {
+        "serious_adverse_event": "L4_executive (report to Department of Health)",
+        "group_A_disease": "L4_executive (report within 24 hours)"
+      },
+      "finance": {
+        "rejected_claims_over_threshold": "L3_management"
+      }
+    }
+  },
+  "rag_chunks": [
+    "The Law on Medical Examination and Treatment No. 15/2023/QH15 took effect on 1 January 2024, replacing the 2009 law, and is guided by Decree 96/2023/ND-CP. It requires practitioners to hold a practice licence, introduces a national competency assessment for licensing, and groups health facilities into three technical levels: initial, basic and specialised. Patients may be referred between levels when a case exceeds a facility's capability.",
+    "Health facilities must provide emergency care to anyone who needs it and may not refuse or delay emergency treatment because the patient cannot pay or lacks identity papers or insurance. After stabilisation the facility may arrange payment or transfer. Patients have the right to be informed about their condition, to consent to treatment and to read and receive copies of their medical records.",
+    "Medical records are kept for at least 10 years, 15 years for cases of occupational and traffic accidents, and 20 years for mental illness and deaths. Circular 46/2018/TT-BYT governs electronic medical records, which may replace paper records once a hospital meets the technical conditions; the Ministry of Health has pushed hospitals to complete electronic records. Health information is sensitive personal data under Decree 13/2023/ND-CP and needs explicit consent for processing.",
+    "Vietnam's health insurance is run by Vietnam Social Security, which pays providers from the health insurance fund. Employees and employers contribute 4.5 percent of salary, 1.5 percent from the employee and 3 percent from the employer. Coverage reached about 94 percent of the population in 2024. The Law on Health Insurance was amended by Law No. 51/2024/QH15, effective 1 July 2025.",
+    "The fund pays 100 percent of covered costs for groups such as children under six, poor households and people with revolutionary contributions; 95 percent for pensioners and near-poor households; and 80 percent for most other insured people, who pay the remaining 20 percent. Patients who go outside their registered referral pathway receive lower coverage in some cases. Insured patients can now check in with the chip-based citizen identity card or the VssID app instead of a paper card.",
+    "Hospitals send claims data to Vietnam Social Security every month in standard electronic files. Claims that breach rules, such as drugs outside the list, services above approved prices or missing referral papers, are rejected, known in Vietnamese as xuat toan, and the hospital bears the cost. Well-run hospitals keep rejected claims below about 1 percent of the value claimed.",
+    "The Ministry of Health assesses hospitals annually against 83 hospital quality criteria issued in Decision 6858/QD-BYT in 2016, grouped in five parts: patient orientation, human resources, professional activities, quality improvement, and specialty criteria. Patient satisfaction is measured with the Ministry's survey method under Decision 3869/QD-BYT, and hospitals aim for 90 percent or more of patients satisfied.",
+    "Common hospital performance measures include bed occupancy, occupied bed-days divided by available bed-days, with 85 to 90 percent considered efficient; central hospitals in Hanoi and Ho Chi Minh City have often run above 100 percent, with patients sharing beds. Average length of stay for a general hospital is typically 5 to 7 days, and hospital-acquired infection rates should be kept below about 5 percent of inpatients through infection control programmes.",
+    "Circular 31/2021/TT-BYT regulates nursing activities in hospitals, including the nursing department's role, patient care by acuity level, and the duties of nurses. Hospitals plan staffing based on workload and patient acuity, and report serious incidents through the patient safety incident reporting system set by the Ministry of Health. Public hospitals' financial autonomy is governed by Decree 60/2021/ND-CP.",
+    "Group A infectious diseases, such as cholera, plague and new emerging diseases, must be reported within 24 hours under Circular 54/2015/TT-BYT. Medicines are regulated by the Law on Pharmacy No. 105/2016/QH13, amended by Law No. 44/2024/QH15 from 1 July 2025; prescription drugs may be dispensed only with a prescription. Drug procurement in public hospitals follows the Law on Bidding No. 22/2023/QH15."
+  ]
+}

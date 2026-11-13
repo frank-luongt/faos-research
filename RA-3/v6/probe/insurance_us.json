@@ -1,0 +1,992 @@
+[
+ {
+  "id": "insurance_us_P001",
+  "question": "Which federal law leaves insurance regulation primarily to the states?",
+  "options": {
+   "A": "The Gramm-Leach-Bliley Act",
+   "B": "The McCarran-Ferguson Act",
+   "C": "The Dodd-Frank Act",
+   "D": "ERISA"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P002",
+  "question": "What does NAIC stand for?",
+  "options": {
+   "A": "National Association of Insurance Commissioners",
+   "B": "National Association of Insurance Carriers",
+   "C": "National Actuarial Insurance Council",
+   "D": "North American Insurance Commission"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P003",
+  "question": "Which federal office in the Treasury monitors the insurance industry?",
+  "options": {
+   "A": "The Federal Insurance Office",
+   "B": "FINRA",
+   "C": "The Office of the Comptroller of the Currency",
+   "D": "The CFPB"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P004",
+  "question": "Which law created the Federal Insurance Office?",
+  "options": {
+   "A": "The Sarbanes-Oxley Act",
+   "B": "The McCarran-Ferguson Act",
+   "C": "The Dodd-Frank Act",
+   "D": "TRIA"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P005",
+  "question": "At what percentage of Authorized Control Level RBC does the Company Action Level sit?",
+  "options": {
+   "A": "200%",
+   "B": "100%",
+   "C": "300%",
+   "D": "150%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P006",
+  "question": "At what percentage of Authorized Control Level RBC does the Regulatory Action Level sit?",
+  "options": {
+   "A": "150%",
+   "B": "70%",
+   "C": "125%",
+   "D": "200%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P007",
+  "question": "At what percentage of Authorized Control Level RBC may the regulator be required to take control?",
+  "options": {
+   "A": "Below 50%",
+   "B": "Below 100%",
+   "C": "Below 150%",
+   "D": "Below 70%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P008",
+  "question": "Which NAIC model act requires ORSA?",
+  "options": {
+   "A": "Standard Valuation Law",
+   "B": "Unfair Trade Practices Act",
+   "C": "Risk Management and Own Risk and Solvency Assessment Model Act",
+   "D": "Insurance Holding Company System Regulatory Act"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P009",
+  "question": "ORSA applies to insurers above roughly which annual direct written and assumed premium?",
+  "options": {
+   "A": "$100 million",
+   "B": "$50 million",
+   "C": "$500 million",
+   "D": "$5 billion"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P010",
+  "question": "How often must an ORSA Summary Report be filed?",
+  "options": {
+   "A": "Only on change of control",
+   "B": "Annually",
+   "C": "Every five years",
+   "D": "Quarterly"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P011",
+  "question": "What is the name of insurers' statutory financial filing with state regulators?",
+  "options": {
+   "A": "Form 10-K",
+   "B": "The Annual Statement",
+   "C": "The Call Report",
+   "D": "Form N-CEN"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P012",
+  "question": "By what date is the statutory Annual Statement normally due?",
+  "options": {
+   "A": "March 1",
+   "B": "June 30",
+   "C": "April 15",
+   "D": "December 31"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P013",
+  "question": "Which Annual Statement schedule holds P&C loss development data?",
+  "options": {
+   "A": "Schedule F",
+   "B": "Schedule T",
+   "C": "Schedule P",
+   "D": "Schedule D"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P014",
+  "question": "Which Annual Statement schedule reports reinsurance?",
+  "options": {
+   "A": "Schedule D",
+   "B": "Schedule F",
+   "C": "Schedule P",
+   "D": "Schedule A"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P015",
+  "question": "Which Annual Statement schedule reports bond and stock investments?",
+  "options": {
+   "A": "Schedule Y",
+   "B": "Schedule F",
+   "C": "Schedule P",
+   "D": "Schedule D"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P016",
+  "question": "Which accounting basis do US insurers use for regulatory filings?",
+  "options": {
+   "A": "Statutory Accounting Principles",
+   "B": "Tax basis",
+   "C": "IFRS 17",
+   "D": "US GAAP only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P017",
+  "question": "Which document gives the appointed actuary's view on reserve adequacy?",
+  "options": {
+   "A": "Form A",
+   "B": "Management's Discussion and Analysis",
+   "C": "ORSA Summary Report",
+   "D": "Statement of Actuarial Opinion"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P018",
+  "question": "Which manual sets principle-based reserving requirements for life insurers?",
+  "options": {
+   "A": "The Financial Condition Examiners Handbook",
+   "B": "The Accounting Practices and Procedures Manual",
+   "C": "The NAIC Valuation Manual",
+   "D": "The Market Regulation Handbook"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P019",
+  "question": "Which Valuation Manual section covers PBR for life insurance?",
+  "options": {
+   "A": "VM-21",
+   "B": "VM-20",
+   "C": "VM-31",
+   "D": "VM-50"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P020",
+  "question": "Which Valuation Manual section covers variable annuity reserves?",
+  "options": {
+   "A": "VM-20",
+   "B": "VM-22",
+   "C": "VM-21",
+   "D": "VM-51"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P021",
+  "question": "Which mortality table is the current standard for US life valuation?",
+  "options": {
+   "A": "2012 IAM",
+   "B": "2001 CSO",
+   "C": "1980 CSO",
+   "D": "2017 CSO"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P022",
+  "question": "Which NAIC model regulation sets the annuity best-interest standard?",
+  "options": {
+   "A": "Suitability in Annuity Transactions Model Regulation (#275)",
+   "B": "Standard Nonforfeiture Law",
+   "C": "Life Insurance Illustrations Model Regulation",
+   "D": "Unfair Claims Settlement Practices Act"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P023",
+  "question": "In which year did NAIC adopt the best-interest revision of its annuity suitability model?",
+  "options": {
+   "A": "2020",
+   "B": "2010",
+   "C": "2016",
+   "D": "2024"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P024",
+  "question": "Which SEC rule sets a best-interest standard for broker-dealers?",
+  "options": {
+   "A": "Rule 2330",
+   "B": "Regulation Best Interest",
+   "C": "Rule 10b-5",
+   "D": "Regulation S-P"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P025",
+  "question": "Which FINRA rule governs sales of deferred variable annuities?",
+  "options": {
+   "A": "Rule 2111 only",
+   "B": "Rule 4512",
+   "C": "Rule 3110",
+   "D": "Rule 2330"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P026",
+  "question": "Variable annuities are registered under which law?",
+  "options": {
+   "A": "The Securities Exchange Act of 1934 only",
+   "B": "ERISA",
+   "C": "The Investment Advisers Act only",
+   "D": "The Securities Act of 1933"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P027",
+  "question": "Which law requires most variable annuity separate accounts to register as investment companies?",
+  "options": {
+   "A": "The Investment Company Act of 1940",
+   "B": "The Securities Act of 1933 only",
+   "C": "The Bank Holding Company Act",
+   "D": "The Commodity Exchange Act"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P028",
+  "question": "Which actuarial guideline regulates indexed universal life illustrations?",
+  "options": {
+   "A": "AG 43",
+   "B": "AG 49",
+   "C": "AG 38",
+   "D": "AG 48"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P029",
+  "question": "Which NAIC filing must an acquirer make for a change of control of an insurer?",
+  "options": {
+   "A": "Form B",
+   "B": "Form A",
+   "C": "Form D",
+   "D": "Form F"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P030",
+  "question": "Which holding-company form is the enterprise risk report?",
+  "options": {
+   "A": "Form F",
+   "B": "Form A",
+   "C": "Form E",
+   "D": "Form B"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P031",
+  "question": "What do state guaranty associations do?",
+  "options": {
+   "A": "License agents",
+   "B": "Reinsure catastrophe risk",
+   "C": "Pay covered claims of insolvent insurers up to limits",
+   "D": "Approve rates"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P032",
+  "question": "Who runs the National Flood Insurance Program?",
+  "options": {
+   "A": "The Federal Insurance Office",
+   "B": "HUD",
+   "C": "FEMA",
+   "D": "The NAIC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P033",
+  "question": "Which act set the federal terrorism insurance backstop?",
+  "options": {
+   "A": "The Terrorism Risk Insurance Act",
+   "B": "The Patriot Act",
+   "C": "The Defense Production Act",
+   "D": "The Homeland Security Act"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P034",
+  "question": "Insurers not licensed in a state but allowed to write hard-to-place risks are:",
+  "options": {
+   "A": "Fraternal insurers",
+   "B": "Surplus lines (non-admitted) insurers",
+   "C": "Captive insurers only",
+   "D": "Risk retention groups only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P035",
+  "question": "Under the Nonadmitted and Reinsurance Reform Act, surplus lines premium tax goes to:",
+  "options": {
+   "A": "The federal government",
+   "B": "The insurer's domicile",
+   "C": "The insured's home state",
+   "D": "Every state with exposure"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P036",
+  "question": "A rate filing system where rates can be used only after regulator approval is:",
+  "options": {
+   "A": "File and use",
+   "B": "Use and file",
+   "C": "Prior approval",
+   "D": "Open competition"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P037",
+  "question": "Which NAIC tool is a set of early-warning financial ratios?",
+  "options": {
+   "A": "ORSA",
+   "B": "VM-20",
+   "C": "IRIS ratios",
+   "D": "Schedule P"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P038",
+  "question": "Which NAIC model law sets cybersecurity rules for insurers?",
+  "options": {
+   "A": "Unfair Trade Practices Act",
+   "B": "Privacy of Consumer Financial Information Model Regulation",
+   "C": "Standard Valuation Law",
+   "D": "Insurance Data Security Model Law"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P039",
+  "question": "In December 2023 the NAIC adopted a model bulletin on:",
+  "options": {
+   "A": "Cyber insurance pricing",
+   "B": "Long-term care rate increases",
+   "C": "Insurers' use of AI systems",
+   "D": "Flood insurance"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P040",
+  "question": "Which state enacted a 2021 law restricting unfair discrimination from insurers' external data and algorithms?",
+  "options": {
+   "A": "Texas",
+   "B": "Florida",
+   "C": "Colorado",
+   "D": "Ohio"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P041",
+  "question": "Which line is compulsory for employers in nearly every state?",
+  "options": {
+   "A": "Directors and officers",
+   "B": "Cyber liability",
+   "C": "Workers' compensation",
+   "D": "Commercial property"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P042",
+  "question": "Which state does not require auto liability insurance for most drivers?",
+  "options": {
+   "A": "Texas",
+   "B": "California",
+   "C": "New York",
+   "D": "New Hampshire"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P043",
+  "question": "Which NAIC tool measures capital at the insurance group level?",
+  "options": {
+   "A": "VM-21",
+   "B": "Schedule P",
+   "C": "Group Capital Calculation",
+   "D": "IRIS"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P044",
+  "question": "Which US GAAP update changed long-duration contract accounting from 2023 for large public insurers?",
+  "options": {
+   "A": "ASC 606",
+   "B": "CECL (ASU 2016-13)",
+   "C": "IFRS 17",
+   "D": "LDTI (ASU 2018-12)"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P045",
+  "question": "Reinsurance arranged risk by risk is called:",
+  "options": {
+   "A": "Treaty",
+   "B": "Facultative",
+   "C": "Fronting",
+   "D": "Retrocession"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P046",
+  "question": "Reinsurance of a reinsurer's own book is called:",
+  "options": {
+   "A": "Retrocession",
+   "B": "Fronting",
+   "C": "Facultative",
+   "D": "Coinsurance"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P047",
+  "question": "A cat excess-of-loss treaty responds to:",
+  "options": {
+   "A": "Every loss proportionally",
+   "B": "Only life claims",
+   "C": "Only single-risk losses",
+   "D": "Aggregated losses from one catastrophe event above a retention"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P048",
+  "question": "Which reinsurance cover limits the insurer's total losses in a year?",
+  "options": {
+   "A": "Surplus treaty",
+   "B": "Quota share",
+   "C": "Aggregate stop loss",
+   "D": "Facultative per risk"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P049",
+  "question": "Securities that transfer catastrophe risk to capital markets are:",
+  "options": {
+   "A": "Trust preferred securities",
+   "B": "Surplus notes",
+   "C": "Catastrophe bonds",
+   "D": "Municipal bonds"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P050",
+  "question": "Which firms are major catastrophe model vendors?",
+  "options": {
+   "A": "S&P and Fitch",
+   "B": "ISO and NCCI only",
+   "C": "Moody's RMS and Verisk",
+   "D": "Milliman and Oliver Wyman"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P051",
+  "question": "Credit for reinsurance from an unauthorized reinsurer usually requires:",
+  "options": {
+   "A": "SEC registration",
+   "B": "Nothing extra",
+   "C": "A FINRA licence",
+   "D": "Collateral such as a trust or letter of credit"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P052",
+  "question": "The US-EU covered agreement of 2017 mainly addresses:",
+  "options": {
+   "A": "Reinsurance collateral and group supervision",
+   "B": "Flood insurance pricing",
+   "C": "Agent licensing",
+   "D": "Annuity suitability"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P053",
+  "question": "A probable maximum loss (PML) estimates:",
+  "options": {
+   "A": "Average annual claims",
+   "B": "A large loss at a chosen return period",
+   "C": "Premium growth",
+   "D": "Expense ratio"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P054",
+  "question": "ALAE refers to:",
+  "options": {
+   "A": "Average loss after exposure",
+   "B": "Allocated loss adjustment expenses",
+   "C": "Annual loss and expense",
+   "D": "Adjusted lapse experience"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P055",
+  "question": "ULAE refers to:",
+  "options": {
+   "A": "Ultimate loss after expenses",
+   "B": "Unallocated loss adjustment expenses",
+   "C": "Underwriting loss and expense",
+   "D": "Unearned loss adjustment estimate"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P056",
+  "question": "RBNS reserves cover:",
+  "options": {
+   "A": "Unearned premium",
+   "B": "Policyholder dividends",
+   "C": "Claims reported but not settled",
+   "D": "Claims not yet reported"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P057",
+  "question": "Which method uses an a priori expected loss ratio estimated from the data itself?",
+  "options": {
+   "A": "Cape Cod",
+   "B": "Case reserving",
+   "C": "Pro rata",
+   "D": "Chain ladder"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P058",
+  "question": "Which stochastic model gives standard errors for chain-ladder reserves?",
+  "options": {
+   "A": "The Mack model",
+   "B": "Gompertz",
+   "C": "Lee-Carter",
+   "D": "Black-Scholes"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P059",
+  "question": "An age-to-age factor in a loss triangle measures:",
+  "options": {
+   "A": "Premium change by year",
+   "B": "Inflation only",
+   "C": "Policyholder age",
+   "D": "Growth in losses from one development age to the next"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P060",
+  "question": "Rising jury awards that push liability claims costs above inflation are called:",
+  "options": {
+   "A": "Medical inflation",
+   "B": "Social inflation",
+   "C": "Loss trending",
+   "D": "Rate adequacy"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P061",
+  "question": "Which model act sets standards for fair claims handling?",
+  "options": {
+   "A": "Holding Company Act",
+   "B": "Standard Valuation Law",
+   "C": "Producer Licensing Model Act",
+   "D": "Unfair Claims Settlement Practices Act"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P062",
+  "question": "A first-party bad-faith claim alleges the insurer:",
+  "options": {
+   "A": "Paid a claim too fast",
+   "B": "Unreasonably denied or delayed its own policyholder's claim",
+   "C": "Missed its Annual Statement",
+   "D": "Overcharged reinsurance"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P063",
+  "question": "Which unit investigates suspected insurance fraud?",
+  "options": {
+   "A": "Reinsurance unit",
+   "B": "Market conduct unit",
+   "C": "Actuarial unit",
+   "D": "Special Investigations Unit"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P064",
+  "question": "Recovering a paid loss from the at-fault party is:",
+  "options": {
+   "A": "Contribution",
+   "B": "Salvage",
+   "C": "Subrogation",
+   "D": "Retrocession"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P065",
+  "question": "Selling recovered damaged property to offset a claim is:",
+  "options": {
+   "A": "Coinsurance",
+   "B": "Subrogation",
+   "C": "Indemnity",
+   "D": "Salvage"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P066",
+  "question": "Which life product builds cash value and lets premiums and death benefit flex?",
+  "options": {
+   "A": "Term life",
+   "B": "Final expense term",
+   "C": "Group term life",
+   "D": "Universal life"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P067",
+  "question": "Indexed annuity returns are linked to:",
+  "options": {
+   "A": "A market index, with a floor and a cap or participation rate",
+   "B": "The insurer's stock price",
+   "C": "Separate account fund units",
+   "D": "Fixed declared rates only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P068",
+  "question": "A surrender charge on an annuity is:",
+  "options": {
+   "A": "A sales commission paid by the buyer up front",
+   "B": "A fee for dying early",
+   "C": "A fee for withdrawing early in the contract",
+   "D": "A premium tax"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P069",
+  "question": "The free-look period on a life or annuity contract lets the buyer:",
+  "options": {
+   "A": "Return it for a refund within a set number of days",
+   "B": "Change beneficiaries for free",
+   "C": "Convert term to whole life",
+   "D": "Skip a premium"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P070",
+  "question": "Statutory nonforfeiture laws guarantee policyholders:",
+  "options": {
+   "A": "A minimum interest rate on loans",
+   "B": "Minimum cash or reduced paid-up values on lapse",
+   "C": "Premium refunds",
+   "D": "Free conversion"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P071",
+  "question": "Which ratio is losses plus LAE divided by earned premium?",
+  "options": {
+   "A": "Loss and LAE ratio",
+   "B": "Expense ratio",
+   "C": "Combined ratio",
+   "D": "Operating ratio"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P072",
+  "question": "Operating ratio equals combined ratio minus:",
+  "options": {
+   "A": "The investment income ratio",
+   "B": "The expense ratio",
+   "C": "The dividend ratio",
+   "D": "The loss ratio"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P073",
+  "question": "Premiums written divided by policyholder surplus measures:",
+  "options": {
+   "A": "Underwriting leverage",
+   "B": "Reserve adequacy",
+   "C": "Liquidity",
+   "D": "Persistency"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P074",
+  "question": "Policyholder surplus is statutory:",
+  "options": {
+   "A": "Reserves minus reinsurance",
+   "B": "Assets minus liabilities",
+   "C": "Premiums minus losses",
+   "D": "Revenue minus expenses"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P075",
+  "question": "Mortality A/E of 110% means deaths were:",
+  "options": {
+   "A": "Exactly as expected",
+   "B": "10% higher than expected",
+   "C": "10% lower than expected",
+   "D": "110 in number"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P076",
+  "question": "RAROC stands for:",
+  "options": {
+   "A": "Reserve adequacy return of capital",
+   "B": "Risk-adjusted return on capital",
+   "C": "Rate of return on combined ratio",
+   "D": "Reinsurance-adjusted return on cost"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P077",
+  "question": "Tail value at risk (TVaR) measures:",
+  "options": {
+   "A": "The most likely loss",
+   "B": "The average loss beyond a chosen percentile",
+   "C": "Premium volatility",
+   "D": "The loss at the median"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P078",
+  "question": "The underwriting cycle refers to:",
+  "options": {
+   "A": "The reserving calendar",
+   "B": "The days to underwrite one application",
+   "C": "The policy renewal date",
+   "D": "Alternating soft and hard pricing markets"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P079",
+  "question": "A hard insurance market has:",
+  "options": {
+   "A": "Stable rates and more capacity",
+   "B": "Rising rates and tighter terms",
+   "C": "No reinsurance available",
+   "D": "Falling rates and broad terms"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P080",
+  "question": "Which captive type lets unrelated companies share a captive?",
+  "options": {
+   "A": "Pure captive",
+   "B": "Group captive",
+   "C": "Fronted captive only",
+   "D": "Branch captive"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P081",
+  "question": "A fronting insurer:",
+  "options": {
+   "A": "Is a guaranty fund",
+   "B": "Only sells reinsurance",
+   "C": "Only handles claims",
+   "D": "Issues the policy and cedes most risk to another carrier"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P082",
+  "question": "Which body licenses insurance producers?",
+  "options": {
+   "A": "Each state's insurance department",
+   "B": "FINRA",
+   "C": "The NAIC",
+   "D": "The Federal Insurance Office"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P083",
+  "question": "Which national database supports multistate producer licensing?",
+  "options": {
+   "A": "NMLS",
+   "B": "NIPR",
+   "C": "EDGAR",
+   "D": "CRD"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "insurance_us_P084",
+  "question": "Who conducts insurer market conduct examinations?",
+  "options": {
+   "A": "The FDIC",
+   "B": "The Federal Reserve",
+   "C": "The SEC",
+   "D": "State insurance regulators"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P085",
+  "question": "Florida's state-created insurer of last resort for property is:",
+  "options": {
+   "A": "Universal Property",
+   "B": "FIGA",
+   "C": "Florida Hurricane Catastrophe Fund",
+   "D": "Citizens Property Insurance Corporation"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P086",
+  "question": "Florida Hurricane Catastrophe Fund provides:",
+  "options": {
+   "A": "Reinsurance to residential property insurers",
+   "B": "Flood insurance",
+   "C": "Direct policies to homeowners",
+   "D": "Auto insurance"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "insurance_us_P087",
+  "question": "Which federal law preempts state law for most self-insured employer health plans?",
+  "options": {
+   "A": "HIPAA",
+   "B": "The McCarran-Ferguson Act",
+   "C": "COBRA",
+   "D": "ERISA"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P088",
+  "question": "An insurer's 'A.M. Best' rating assesses:",
+  "options": {
+   "A": "Stock price",
+   "B": "Customer satisfaction",
+   "C": "Financial strength and ability to pay claims",
+   "D": "Agent performance"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "insurance_us_P089",
+  "question": "Reserves set using the Commissioners Reserve Valuation Method apply to:",
+  "options": {
+   "A": "Surety bonds",
+   "B": "Workers' compensation",
+   "C": "Auto physical damage",
+   "D": "Life insurance policies"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "insurance_us_P090",
+  "question": "A loss development triangle is organised by accident year and:",
+  "options": {
+   "A": "Development age",
+   "B": "Policy number",
+   "C": "Agent",
+   "D": "Premium band"
+  },
+  "answer": "A"
+ }
+]

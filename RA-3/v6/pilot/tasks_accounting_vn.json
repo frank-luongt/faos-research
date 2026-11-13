@@ -1,0 +1,282 @@
+[
+ {
+  "id": "accounting_vn_T1",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is the role of the chief accountant (ke toan truong) in a Vietnamese enterprise, and what qualifications are required?",
+  "ground_truth": {
+   "answer": "Under the Law on Accounting 88/2015/QH13 every enterprise appoints a chief accountant who organises the accounting work and is accountable for the books and financial statements. Decree 174/2016/ND-CP requires a chief accountant training certificate and at least two years' experience with a university degree (three with an intermediate or college qualification); the chief accountant cannot be a relative of the legal representative or treasurer.",
+   "required_terms": [
+    "Chief Accountant",
+    "Law on Accounting 88/2015/QH13",
+    "Decree 174/2016/ND-CP",
+    "Training Certificate",
+    "Legal Representative"
+   ],
+   "term_definitions": {
+    "Chief Accountant": "Ke toan truong, legally accountable head of accounting",
+    "Decree 174/2016/ND-CP": "Guides the Law on Accounting, including qualifications and retention"
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T2",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "How do Vietnamese Accounting Standards relate to IFRS, and what is Vietnam's IFRS roadmap?",
+  "ground_truth": {
+   "answer": "VAS are 26 standards issued by the Ministry of Finance in 2001-2005, applied through the accounting regime in Circular 200/2014/TT-BTC; they are based on older international standards and differ from current IFRS (for example on fair value). Decision 345/QD-BTC (2020) set a voluntary IFRS phase in 2022-2025 and a later mandatory phase for selected entities, with new VFRS based on IFRS.",
+   "required_terms": [
+    "VAS",
+    "IFRS",
+    "Circular 200/2014/TT-BTC",
+    "Decision 345/QD-BTC",
+    "VFRS"
+   ],
+   "term_definitions": {
+    "VAS": "26 Vietnamese Accounting Standards (2001-2005)",
+    "Decision 345/QD-BTC": "2020 IFRS adoption scheme"
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T3",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "When is an asset recognized as a tangible fixed asset in Vietnam, and which depreciation methods are allowed?",
+  "ground_truth": {
+   "answer": "Under Circular 45/2013/TT-BTC an asset is a tangible fixed asset if it brings future economic benefits, has a useful life of more than one year and a historical cost of VND 30 million or more. Allowed methods are straight-line, declining balance with adjustment, and units of production.",
+   "required_terms": [
+    "Tangible Fixed Asset",
+    "Circular 45/2013/TT-BTC",
+    "VND 30 million",
+    "Straight-Line",
+    "Declining Balance with Adjustment",
+    "Units of Production"
+   ],
+   "term_definitions": {
+    "Tangible Fixed Asset": "Useful life > 1 year and cost >= VND 30 million"
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T4",
+  "industry": "accounting",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A company has a VND 2 billion receivable overdue 18 months and a VND 1 billion receivable overdue 8 months. What provisions are required, and is a provision of VND 500 million in total adequate?",
+  "ground_truth": {
+   "answer": "Under Circular 48/2019/TT-BTC the 18-month debt needs 50% (VND 1 billion) and the 8-month debt 30% (VND 300 million), VND 1.3 billion in total. A VND 500 million provision is BELOW the required amount.",
+   "metrics": {
+    "provision_18_months": {
+     "value": 0.5,
+     "required": "50%",
+     "amount": "VND 1,000 million"
+    },
+    "provision_8_months": {
+     "value": 0.3,
+     "required": "30%",
+     "amount": "VND 300 million"
+    },
+    "total_provision": {
+     "value": 500,
+     "required": 1300,
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T5",
+  "industry": "accounting",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A company's four quarterly provisional CIT payments total VND 7 billion, and its final CIT for the year is VND 10 billion. Assess its position.",
+  "ground_truth": {
+   "answer": "Provisional payments cover 70% of the final CIT, BELOW the 80% minimum. Late-payment interest of 0.03% per day applies to the VND 1 billion shortfall (80% of 10 billion less 7 billion) from the fourth-quarter deadline; the remaining VND 3 billion is paid with the finalization by the last day of the third month after year-end.",
+   "metrics": {
+    "provisional_coverage": {
+     "value": 0.7,
+     "healthy": ">=0.80",
+     "assessment": "BELOW"
+    },
+    "shortfall_subject_to_interest": {
+     "value": "VND 1 billion"
+    },
+    "late_interest": {
+     "value": "0.03% per day"
+    }
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T6",
+  "industry": "accounting",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A wholly foreign-owned manufacturing company closes its books on 31 December. What are its audit and financial statement filing obligations?",
+  "ground_truth": {
+   "answer": "As a foreign-invested enterprise it must have its annual financial statements audited by an independent audit firm (Law on Independent Audit 67/2011/QH12, Decree 17/2012/ND-CP). As a non-private enterprise it files audited statements, prepared under VAS and Circular 200/2014/TT-BTC, within 90 days after year-end (by 31 March) with the tax authority, statistics office and licensing authority, alongside the CIT finalization due by the last day of the third month.",
+   "regulations": [
+    "Law on Independent Audit 67/2011/QH12",
+    "Decree 17/2012/ND-CP",
+    "Circular 200/2014/TT-BTC",
+    "Law on Tax Administration 38/2019/QH14"
+   ],
+   "requirements": [
+    "mandatory audit for FDI enterprises",
+    "90-day filing deadline",
+    "file with tax, statistics and licensing authorities",
+    "CIT finalization by 31 March"
+   ]
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T7",
+  "industry": "accounting",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "What are the financial statement disclosure deadlines for a company listed on the Ho Chi Minh City Stock Exchange?",
+  "ground_truth": {
+   "answer": "Under Circular 96/2020/TT-BTC: audited annual statements within 10 days of the audit report and no later than 90 days after year-end; reviewed semi-annual statements within 5 days of the review report and no later than 45 days after the half-year; quarterly statements within 20 days after quarter-end.",
+   "regulations": [
+    "Circular 96/2020/TT-BTC",
+    "Law on Securities 54/2019/QH14"
+   ],
+   "requirements": [
+    "annual: 10 days after audit report, max 90 days",
+    "semi-annual: max 45 days",
+    "quarterly: 20 days"
+   ]
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T8",
+  "industry": "accounting",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Accountant, you discover that last year's revenue was overstated by a material amount because of an invoicing error. How do you handle it?",
+  "ground_truth": {
+   "role": "Chief Accountant",
+   "decision_pattern": "prior_period_error",
+   "expected_factors": [
+    "quantify and assess materiality",
+    "retrospective restatement under VAS 29",
+    "adjust opening retained earnings",
+    "supplementary tax declaration and late interest",
+    "disclosure in notes B09-DN"
+   ],
+   "kpi_references": [
+    "no material audit adjustments",
+    "statements submitted within the legal deadline"
+   ],
+   "vocabulary": [
+    "VAS 29",
+    "Retrospective Restatement",
+    "B09-DN",
+    "Circular 200/2014/TT-BTC",
+    "Accounting Voucher"
+   ],
+   "communication_style": "Formal, regulation-citing (Law, Decree, Circular), documentation-heavy"
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T9",
+  "industry": "accounting",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Tax Manager, a loan from the foreign parent produces net interest equal to 45% of the subsidiary's EBITDA. How do you treat it for CIT?",
+  "ground_truth": {
+   "role": "Tax Manager",
+   "decision_pattern": "related_party_interest",
+   "expected_factors": [
+    "related party under Decree 132/2020/ND-CP (25% ownership)",
+    "30% of EBITDA cap",
+    "disallow the excess 15 points of EBITDA",
+    "carry forward up to 5 years",
+    "transfer pricing documentation and disclosure appendix"
+   ],
+   "kpi_references": [
+    "TP documentation ready before CIT finalization",
+    "all declarations on time"
+   ],
+   "vocabulary": [
+    "Transfer Pricing",
+    "Decree 132/2020/ND-CP",
+    "EBITDA Cap",
+    "CIT Finalization"
+   ],
+   "communication_style": "Precise, deadline-focused, conservative"
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T10",
+  "industry": "accounting",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "Trace the year-end handoff chain for a listed Vietnamese company, from closing the books to public disclosure of its audited financial statements.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "General Accountants",
+     "to": "Chief Accountant",
+     "context": [
+      "trial_balance",
+      "reconciliations",
+      "provision_schedules"
+     ]
+    },
+    {
+     "step": 2,
+     "from": "Chief Accountant",
+     "to": "Legal Representative (General Director)",
+     "context": [
+      "draft_financial_statements_B01_B02_B03_B09",
+      "significant_judgments"
+     ]
+    },
+    {
+     "step": 3,
+     "from": "Chief Accountant",
+     "to": "Independent Auditor",
+     "context": [
+      "signed_draft_FS",
+      "supporting_vouchers",
+      "related_party_list"
+     ]
+    },
+    {
+     "step": 4,
+     "from": "Investor Relations",
+     "to": "State Securities Commission and Stock Exchange",
+     "sla": {
+      "disclosure": "10 days after audit report, max 90 days after year-end"
+     },
+     "also": "Audited FS and CIT finalization filed with the tax authority"
+    }
+   ],
+   "terms": [
+    "Chief Accountant",
+    "Legal Representative",
+    "Independent Audit",
+    "Circular 96/2020/TT-BTC",
+    "State Securities Commission"
+   ],
+   "escalation_level": "L4_executive (missed deadline)"
+  },
+  "cell": "accounting_vn"
+ }
+]

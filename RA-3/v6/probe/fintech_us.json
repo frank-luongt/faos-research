@@ -1,0 +1,992 @@
+[
+ {
+  "id": "fintech_us_P001",
+  "question": "Which Treasury bureau administers the Bank Secrecy Act?",
+  "options": {
+   "A": "The CFPB",
+   "B": "FinCEN",
+   "C": "OFAC",
+   "D": "The OCC"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P002",
+  "question": "Within how many days of the transaction must a CTR be filed?",
+  "options": {
+   "A": "30 days",
+   "B": "60 days",
+   "C": "5 business days",
+   "D": "15 calendar days"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P003",
+  "question": "If no suspect is identified, how long can a bank take to file a SAR?",
+  "options": {
+   "A": "90 days",
+   "B": "120 days",
+   "C": "30 days with no extension",
+   "D": "Up to 60 days from initial detection"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P004",
+  "question": "How long must SARs and supporting documents be retained?",
+  "options": {
+   "A": "3 years",
+   "B": "5 years",
+   "C": "10 years",
+   "D": "7 years"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P005",
+  "question": "What is the SAR filing threshold for money services businesses?",
+  "options": {
+   "A": "$10,000",
+   "B": "$2,000",
+   "C": "$5,000",
+   "D": "$25,000"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P006",
+  "question": "For banks, the SAR threshold when a suspect is identified is:",
+  "options": {
+   "A": "$2,000",
+   "B": "$25,000",
+   "C": "$5,000",
+   "D": "$10,000"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P007",
+  "question": "For continuing suspicious activity, banks review and file follow-up SARs about every:",
+  "options": {
+   "A": "90 days, filing within 120 days of the prior SAR",
+   "B": "30 days",
+   "C": "Year",
+   "D": "Six months, filing within a year"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P008",
+  "question": "Money services businesses register with FinCEN and renew registration every:",
+  "options": {
+   "A": "5 years",
+   "B": "2 years",
+   "C": "Year",
+   "D": "Never"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P009",
+  "question": "Which PATRIOT Act section requires a Customer Identification Program?",
+  "options": {
+   "A": "Section 326",
+   "B": "Section 311",
+   "C": "Section 352",
+   "D": "Section 314(a)"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P010",
+  "question": "Which PATRIOT Act section lets FinCEN seek information from institutions about suspects?",
+  "options": {
+   "A": "Section 326",
+   "B": "Section 352",
+   "C": "Section 314(a)",
+   "D": "Section 312"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P011",
+  "question": "Under the CDD Rule, beneficial owners include each individual owning at least:",
+  "options": {
+   "A": "25% of the equity",
+   "B": "10%",
+   "C": "50%",
+   "D": "5%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P012",
+  "question": "The CDD Rule also requires identifying how many individuals with significant control?",
+  "options": {
+   "A": "One",
+   "B": "All directors",
+   "C": "Two",
+   "D": "Three"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P013",
+  "question": "The BSA Travel Rule applies to funds transfers of at least:",
+  "options": {
+   "A": "$5,000",
+   "B": "$1,000",
+   "C": "$10,000",
+   "D": "$3,000"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P014",
+  "question": "Which agency maintains the Specially Designated Nationals list?",
+  "options": {
+   "A": "The State Department only",
+   "B": "FinCEN",
+   "C": "OFAC",
+   "D": "The FBI"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P015",
+  "question": "Under OFAC's 50 percent rule, an entity is blocked if blocked persons own:",
+  "options": {
+   "A": "50% or more in aggregate",
+   "B": "Any share",
+   "C": "A majority of the board",
+   "D": "More than 25%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P016",
+  "question": "OFAC civil liability for sanctions violations is:",
+  "options": {
+   "A": "Strict liability",
+   "B": "Limited to banks",
+   "C": "Intent-based only",
+   "D": "Only for wilful acts"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P017",
+  "question": "In March 2025 FinCEN's interim rule removed Corporate Transparency Act BOI reporting for:",
+  "options": {
+   "A": "Nobody",
+   "B": "Banks only",
+   "C": "All foreign companies",
+   "D": "US domestic companies"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P018",
+  "question": "Making deposits across accounts to exploit float is called:",
+  "options": {
+   "A": "Chargeback fraud",
+   "B": "Check kiting",
+   "C": "Integration",
+   "D": "Structuring"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P019",
+  "question": "Which body coordinates state licensing through a national system for money transmitters?",
+  "options": {
+   "A": "NMLS",
+   "B": "FINRA",
+   "C": "NIPR",
+   "D": "EDGAR"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P020",
+  "question": "Which model law by state regulators harmonises money transmitter licensing?",
+  "options": {
+   "A": "The Uniform Commercial Code Article 4A",
+   "B": "The Electronic Fund Transfer Act",
+   "C": "The Model Payments Act of 2010",
+   "D": "The Money Transmission Modernization Act"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P021",
+  "question": "Which agency can grant a national bank charter to a fintech?",
+  "options": {
+   "A": "FinCEN",
+   "B": "The CFPB",
+   "C": "The SEC",
+   "D": "The OCC"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P022",
+  "question": "A fintech that partners with a chartered bank to offer accounts is using:",
+  "options": {
+   "A": "Banking as a service",
+   "B": "A money market fund",
+   "C": "Payment facilitation only",
+   "D": "A credit union charter"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P023",
+  "question": "Which BaaS middleware firm's 2024 bankruptcy froze end-user funds at partner banks?",
+  "options": {
+   "A": "Marqeta",
+   "B": "Unit",
+   "C": "Plaid",
+   "D": "Synapse"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P024",
+  "question": "FDIC deposit insurance can reach a fintech's end users through:",
+  "options": {
+   "A": "Pass-through coverage when records identify each owner",
+   "B": "State guaranty funds",
+   "C": "SIPC coverage",
+   "D": "The fintech's own FDIC licence"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P025",
+  "question": "Which 2025 federal law sets a framework for payment stablecoins?",
+  "options": {
+   "A": "The Payments Act",
+   "B": "The Payment Stablecoin Act of 2018",
+   "C": "The STABLE Act of 2019",
+   "D": "The GENIUS Act"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P026",
+  "question": "Which 2015 Second Circuit case challenged non-bank buyers' ability to keep bank interest rates?",
+  "options": {
+   "A": "Watters v. Wachovia",
+   "B": "Marquette v. First of Omaha",
+   "C": "Madden v. Midland Funding",
+   "D": "Smiley v. Citibank"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P027",
+  "question": "Which Dodd-Frank provision gives consumers a right to access their financial data?",
+  "options": {
+   "A": "Section 619",
+   "B": "Section 1075",
+   "C": "Section 1033",
+   "D": "Section 1071"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P028",
+  "question": "Which Dodd-Frank provision capped debit interchange for large issuers?",
+  "options": {
+   "A": "The Collins Amendment",
+   "B": "The Volcker Rule",
+   "C": "The Durbin Amendment",
+   "D": "Section 1033"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P029",
+  "question": "Regulation II's debit interchange cap applies to issuers with assets of at least:",
+  "options": {
+   "A": "$50 billion",
+   "B": "$1 billion",
+   "C": "$10 billion",
+   "D": "$250 billion"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P030",
+  "question": "Which standard prohibits unfair, deceptive or abusive acts in consumer finance?",
+  "options": {
+   "A": "UDAAP",
+   "B": "UDAP only",
+   "C": "ECOA",
+   "D": "TILA"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P031",
+  "question": "Which regulation implements the Electronic Fund Transfer Act?",
+  "options": {
+   "A": "Regulation CC",
+   "B": "Regulation DD",
+   "C": "Regulation Z",
+   "D": "Regulation E"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P032",
+  "question": "Under Regulation E, a consumer who reports a lost debit card within 2 business days is liable for at most:",
+  "options": {
+   "A": "$150",
+   "B": "$500",
+   "C": "$50",
+   "D": "$0"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P033",
+  "question": "Under Regulation E, a bank must investigate an error within 10 business days, or up to 45 days if it:",
+  "options": {
+   "A": "Freezes the account",
+   "B": "Files a SAR",
+   "C": "Asks the merchant",
+   "D": "Gives provisional credit"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P034",
+  "question": "Within how many days of the statement must a consumer report an error under Regulation E to keep full protection?",
+  "options": {
+   "A": "120 days",
+   "B": "30 days",
+   "C": "90 days",
+   "D": "60 days"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P035",
+  "question": "Which regulation implements the Truth in Lending Act?",
+  "options": {
+   "A": "Regulation Z",
+   "B": "Regulation P",
+   "C": "Regulation B",
+   "D": "Regulation E"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P036",
+  "question": "Which regulation implements the Equal Credit Opportunity Act?",
+  "options": {
+   "A": "Regulation Z",
+   "B": "Regulation M",
+   "C": "Regulation B",
+   "D": "Regulation V"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P037",
+  "question": "Under ECOA, an adverse action notice is generally due within how long of a completed application?",
+  "options": {
+   "A": "10 days",
+   "B": "30 days",
+   "C": "90 days",
+   "D": "60 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P038",
+  "question": "Which law governs consumer reports and their accuracy?",
+  "options": {
+   "A": "The Gramm-Leach-Bliley Act",
+   "B": "The Fair Credit Reporting Act",
+   "C": "TILA",
+   "D": "The EFTA"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P039",
+  "question": "Which law requires financial privacy notices and safeguards?",
+  "options": {
+   "A": "ECOA",
+   "B": "The Gramm-Leach-Bliley Act",
+   "C": "FCRA",
+   "D": "RESPA"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P040",
+  "question": "When did the Federal Reserve launch FedNow?",
+  "options": {
+   "A": "July 2023",
+   "B": "October 2017",
+   "C": "January 2021",
+   "D": "March 2025"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P041",
+  "question": "Which real-time payment network launched in 2017?",
+  "options": {
+   "A": "FedNow",
+   "B": "Same Day ACH",
+   "C": "RTP by The Clearing House",
+   "D": "Zelle"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P042",
+  "question": "Which organisation writes the ACH Network rules?",
+  "options": {
+   "A": "FINRA",
+   "B": "Nacha",
+   "C": "The Federal Reserve only",
+   "D": "The Clearing House"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P043",
+  "question": "Which ACH return code means insufficient funds?",
+  "options": {
+   "A": "R01",
+   "B": "R03",
+   "C": "R10",
+   "D": "R29"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P044",
+  "question": "Which ACH return code means the consumer says the debit was unauthorised?",
+  "options": {
+   "A": "R10",
+   "B": "R01",
+   "C": "R02",
+   "D": "R16"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P045",
+  "question": "How long does a consumer have to return an unauthorised ACH debit?",
+  "options": {
+   "A": "1 year",
+   "B": "30 days",
+   "C": "2 banking days only",
+   "D": "60 days from settlement"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P046",
+  "question": "Fedwire Funds moved to which message standard in July 2025?",
+  "options": {
+   "A": "SWIFT MT103 only",
+   "B": "ISO 20022",
+   "C": "ISO 8583",
+   "D": "NACHA CCD+"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P047",
+  "question": "ISO 8583 is the standard for:",
+  "options": {
+   "A": "Card transaction messages",
+   "B": "ACH files",
+   "C": "QR payments",
+   "D": "Bank-to-bank wire messages"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P048",
+  "question": "In ISO 8583, which message type indicator is an authorization request?",
+  "options": {
+   "A": "0400",
+   "B": "0200",
+   "C": "0800",
+   "D": "0100"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P049",
+  "question": "Card networks expanded BINs from 6 to how many digits in 2022?",
+  "options": {
+   "A": "10",
+   "B": "9",
+   "C": "8",
+   "D": "7"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P050",
+  "question": "Which code classifies a merchant's line of business on card transactions?",
+  "options": {
+   "A": "CVV2",
+   "B": "Merchant category code (MCC)",
+   "C": "ARN",
+   "D": "BIN"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P051",
+  "question": "Which card network runs a three-party model as both issuer and acquirer?",
+  "options": {
+   "A": "Mastercard",
+   "B": "Visa",
+   "C": "Discover in all markets",
+   "D": "American Express"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P052",
+  "question": "Since October 2015 in the US, counterfeit fraud liability shifts to the party that:",
+  "options": {
+   "A": "Issued the card",
+   "B": "Has not adopted EMV chip",
+   "C": "Owns the terminal",
+   "D": "Processed the refund"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P053",
+  "question": "Which check confirms the cardholder's billing address in card-not-present payments?",
+  "options": {
+   "A": "CVV2",
+   "B": "BIN lookup",
+   "C": "AVS",
+   "D": "3DS"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P054",
+  "question": "CVV2 is:",
+  "options": {
+   "A": "The PIN",
+   "B": "The security code printed on the card",
+   "C": "The token",
+   "D": "The chip cryptogram"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P055",
+  "question": "A network token is issued by:",
+  "options": {
+   "A": "The PCI Council",
+   "B": "The merchant",
+   "C": "The card network",
+   "D": "The acquirer only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P056",
+  "question": "EMV 3-D Secure's frictionless flow means:",
+  "options": {
+   "A": "The issuer authenticates using data without challenging the cardholder",
+   "B": "The merchant bears no fraud risk",
+   "C": "No authentication at all",
+   "D": "A one-time password every time"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P057",
+  "question": "Which Mastercard programme flags merchants with a chargeback ratio of 1.5% or more?",
+  "options": {
+   "A": "Global Merchant Audit Program",
+   "B": "Excessive Chargeback Program",
+   "C": "Merchant Monitoring Program",
+   "D": "VAMP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P058",
+  "question": "Which Visa programme replaced its separate dispute and fraud monitoring programmes in 2025?",
+  "options": {
+   "A": "VAMP",
+   "B": "CEMP",
+   "C": "VDMP",
+   "D": "VFMP"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P059",
+  "question": "When a merchant contests a chargeback with evidence, this is called:",
+  "options": {
+   "A": "Retrieval",
+   "B": "Reversal",
+   "C": "Representment",
+   "D": "Refund"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P060",
+  "question": "A cardholder who disputes a purchase they actually made is committing:",
+  "options": {
+   "A": "Skimming",
+   "B": "Account takeover",
+   "C": "Friendly fraud",
+   "D": "Card testing"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P061",
+  "question": "Many tiny authorizations to check stolen card numbers are called:",
+  "options": {
+   "A": "Friendly fraud",
+   "B": "Bust-out",
+   "C": "Card testing",
+   "D": "Kiting"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P062",
+  "question": "Building credit and then maxing out lines with no intent to repay is:",
+  "options": {
+   "A": "Card testing",
+   "B": "Synthetic identity theft only",
+   "C": "Chargeback abuse",
+   "D": "Bust-out fraud"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P063",
+  "question": "A synthetic identity combines:",
+  "options": {
+   "A": "Real and fabricated personal data",
+   "B": "Two real people's names",
+   "C": "A stolen card and PIN",
+   "D": "A merchant and acquirer ID"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P064",
+  "question": "A retrieval request in card disputes asks the merchant for:",
+  "options": {
+   "A": "A refund",
+   "B": "Arbitration fees",
+   "C": "A copy of the transaction record",
+   "D": "A new authorization"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P065",
+  "question": "Which body manages the PCI DSS standard?",
+  "options": {
+   "A": "The PCI Security Standards Council",
+   "B": "NIST",
+   "C": "Visa alone",
+   "D": "The Federal Reserve"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P066",
+  "question": "When did PCI DSS v4.0's future-dated requirements become mandatory?",
+  "options": {
+   "A": "31 March 2026",
+   "B": "31 March 2025",
+   "C": "1 July 2023",
+   "D": "1 January 2024"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P067",
+  "question": "Which SAQ fits an e-commerce merchant that fully outsources payment pages?",
+  "options": {
+   "A": "SAQ P2PE",
+   "B": "SAQ B",
+   "C": "SAQ D",
+   "D": "SAQ A"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P068",
+  "question": "Who performs a formal PCI on-site assessment?",
+  "options": {
+   "A": "An ASV",
+   "B": "A Qualified Security Assessor",
+   "C": "The merchant's CFO",
+   "D": "The card issuer"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P069",
+  "question": "An Approved Scanning Vendor performs:",
+  "options": {
+   "A": "Penetration tests only",
+   "B": "Code reviews",
+   "C": "Annual on-site audits",
+   "D": "Quarterly external vulnerability scans"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P070",
+  "question": "Which PCI DSS level classes are set by the card networks rather than the Council?",
+  "options": {
+   "A": "Merchant levels",
+   "B": "QSA rules",
+   "C": "Requirements",
+   "D": "SAQ types"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P071",
+  "question": "A payment facilitator (PayFac):",
+  "options": {
+   "A": "Issues cards to consumers",
+   "B": "Operates a card network",
+   "C": "Is a type of bank charter",
+   "D": "Onboards sub-merchants under its own master merchant account"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P072",
+  "question": "A sponsor bank in card acquiring:",
+  "options": {
+   "A": "Issues consumer loans only",
+   "B": "Holds network membership for a non-bank processor",
+   "C": "Sets interchange",
+   "D": "Runs FedNow"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P073",
+  "question": "Interchange-plus pricing passes through interchange and adds:",
+  "options": {
+   "A": "A share of TPV to the issuer",
+   "B": "A fixed processor markup",
+   "C": "Scheme fees only",
+   "D": "Nothing"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P074",
+  "question": "A net take rate deducts which costs from gross revenue first?",
+  "options": {
+   "A": "Salaries",
+   "B": "Taxes",
+   "C": "Marketing spend",
+   "D": "Interchange and scheme fees"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P075",
+  "question": "LTV/CAC compares:",
+  "options": {
+   "A": "Losses with credit",
+   "B": "Liquidity with assets",
+   "C": "Customer lifetime value with acquisition cost",
+   "D": "Loan-to-value with capital"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P076",
+  "question": "CAC payback is:",
+  "options": {
+   "A": "Loan repayment term",
+   "B": "Days to settle a payment",
+   "C": "Months of gross profit needed to recover acquisition cost",
+   "D": "Chargeback recovery time"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P077",
+  "question": "ARR stands for:",
+  "options": {
+   "A": "Annual risk rating",
+   "B": "Annual recurring revenue",
+   "C": "Average revenue rate",
+   "D": "Authorized refund rate"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P078",
+  "question": "Runway is:",
+  "options": {
+   "A": "Time to settlement",
+   "B": "Months to the next audit",
+   "C": "Time to profitability",
+   "D": "How long cash lasts at the current burn"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P079",
+  "question": "Contribution margin is revenue minus:",
+  "options": {
+   "A": "All fixed costs",
+   "B": "Interest only",
+   "C": "Taxes only",
+   "D": "Variable costs"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P080",
+  "question": "Settlement in card payments is when:",
+  "options": {
+   "A": "The cardholder taps the card",
+   "B": "The issuer approves the authorization",
+   "C": "Funds actually move from issuer to acquirer to merchant",
+   "D": "The merchant ships goods"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P081",
+  "question": "Reconciliation in payments means:",
+  "options": {
+   "A": "Matching processor, bank and ledger records",
+   "B": "Tokenizing card numbers",
+   "C": "Approving disputes",
+   "D": "Pricing transactions"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P082",
+  "question": "A false positive in transaction monitoring is:",
+  "options": {
+   "A": "A missed suspicious transaction",
+   "B": "A filed SAR",
+   "C": "An alert on legitimate activity",
+   "D": "A confirmed fraud"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P083",
+  "question": "Smart routing across acquirers mainly aims to:",
+  "options": {
+   "A": "Lift approvals and cut cost",
+   "B": "Avoid PCI scope",
+   "C": "Reduce interchange to zero",
+   "D": "Remove the need for 3DS"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P084",
+  "question": "A soft decline from an issuer usually means:",
+  "options": {
+   "A": "The transaction can be retried or needs authentication",
+   "B": "The merchant is blocked",
+   "C": "The card is permanently invalid",
+   "D": "Fraud is confirmed"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_us_P085",
+  "question": "Under BNPL pay-in-4, consumers typically pay:",
+  "options": {
+   "A": "One lump sum after a year",
+   "B": "Monthly forever",
+   "C": "Interest only",
+   "D": "Four instalments, often interest-free"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_us_P086",
+  "question": "A Know Your Business (KYB) check verifies:",
+  "options": {
+   "A": "An employee's background",
+   "B": "A business customer's identity, ownership and legitimacy",
+   "C": "A consumer's credit score",
+   "D": "A merchant's PCI level"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P087",
+  "question": "Which agency supervises large non-bank consumer finance firms for federal consumer law?",
+  "options": {
+   "A": "The FDIC",
+   "B": "FinCEN",
+   "C": "The CFPB",
+   "D": "The OCC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_us_P088",
+  "question": "Which network operates Zelle?",
+  "options": {
+   "A": "The Federal Reserve",
+   "B": "Early Warning Services",
+   "C": "The Clearing House",
+   "D": "Visa"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P089",
+  "question": "In card payments, the 'merchant of record' is:",
+  "options": {
+   "A": "The card issuer",
+   "B": "The entity named on the cardholder's statement and liable for the sale",
+   "C": "The payment gateway vendor",
+   "D": "The card network"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_us_P090",
+  "question": "Which state regulator is known for its BitLicense?",
+  "options": {
+   "A": "California DFPI",
+   "B": "New York DFS",
+   "C": "Florida OFR",
+   "D": "Texas DOB"
+  },
+  "answer": "B"
+ }
+]

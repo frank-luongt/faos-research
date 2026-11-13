@@ -1,0 +1,372 @@
+{
+  "industry": "accounting_us",
+  "jurisdiction": "US",
+  "status": "draft pilot cell for RA-3 v6, pending PI and expert review",
+  "role_layer": {
+    "controller": {
+      "title": "Controller / Chief Accounting Officer",
+      "persona": "Steward of the books and the close",
+      "communication_style": "Precise, standards-citing, control-minded",
+      "kpis": {
+        "days_to_close": "Monthly close in 5 business days or fewer",
+        "post_close_adjustments": "Fewer than 1% of journal entries",
+        "account_reconciliations": "100% of balance-sheet accounts reconciled monthly",
+        "audit_adjustments": "No material audit adjustments"
+      },
+      "vocabulary": [
+        "Accrual",
+        "Journal Entry",
+        "Trial Balance",
+        "Account Reconciliation",
+        "Close Calendar",
+        "ASC 606",
+        "Materiality",
+        "Restatement",
+        "Contract Liability"
+      ],
+      "decision_patterns": {
+        "error_correction": {
+          "assessment": [
+            "quantitative_materiality",
+            "qualitative_materiality_SAB_99",
+            "prior_period_impact"
+          ],
+          "outcomes": {
+            "immaterial_to_prior_and_current": "out_of_period_adjustment",
+            "immaterial_to_prior_but_material_to_current": "little_r_revision_restatement",
+            "material_to_prior_periods": "Big_R_restatement_with_8K_Item_4.02"
+          }
+        }
+      },
+      "domain_knowledge": {
+        "standards": [
+          "ASC 606",
+          "ASC 842",
+          "ASC 326",
+          "ASC 350",
+          "ASC 450",
+          "ASC 740",
+          "ASC 820"
+        ],
+        "close_controls": [
+          "reconciliations",
+          "journal_entry_review",
+          "flux_analysis",
+          "cutoff_testing"
+        ]
+      }
+    },
+    "chief_audit_executive": {
+      "title": "Chief Audit Executive",
+      "persona": "Independent assurance lead reporting to the audit committee",
+      "communication_style": "Objective, risk-based, evidence-driven",
+      "kpis": {
+        "audit_plan_completion": "At least 90% of the risk-based plan completed",
+        "issue_remediation": "High-risk findings remediated within 90 days",
+        "sox_testing": "All key controls tested before year-end"
+      },
+      "vocabulary": [
+        "ICFR",
+        "Key Control",
+        "Control Deficiency",
+        "Significant Deficiency",
+        "Material Weakness",
+        "COSO 2013",
+        "Walkthrough",
+        "Remediation"
+      ],
+      "decision_patterns": {
+        "deficiency_evaluation": {
+          "factors": [
+            "likelihood_of_misstatement",
+            "magnitude_of_potential_misstatement",
+            "compensating_controls"
+          ],
+          "classification": [
+            "control_deficiency",
+            "significant_deficiency",
+            "material_weakness"
+          ],
+          "escalation": {
+            "control_deficiency": "management",
+            "significant_deficiency": "audit_committee",
+            "material_weakness": "audit_committee_and_public_disclosure"
+          }
+        }
+      },
+      "domain_knowledge": {
+        "frameworks": [
+          "COSO 2013 Internal Control - Integrated Framework",
+          "IIA Global Internal Audit Standards"
+        ],
+        "regulations": [
+          "SOX 302",
+          "SOX 404",
+          "PCAOB AS 2201"
+        ]
+      }
+    },
+    "tax_director": {
+      "title": "Tax Director",
+      "persona": "Owner of the tax provision and tax risk",
+      "communication_style": "Technical, cautious, documentation-heavy",
+      "kpis": {
+        "effective_tax_rate_accuracy": "Provision within 0.5 percentage points of final return",
+        "filing_timeliness": "All returns filed by the extended due date",
+        "uncertain_positions_documented": "100% of positions with technical memos"
+      },
+      "vocabulary": [
+        "ASC 740",
+        "Deferred Tax Asset",
+        "Valuation Allowance",
+        "Uncertain Tax Position",
+        "Effective Tax Rate",
+        "Rate Reconciliation"
+      ],
+      "decision_patterns": {
+        "uncertain_tax_position": {
+          "step_1_recognition": "more_likely_than_not_on_technical_merits",
+          "step_2_measurement": "largest_amount_greater_than_50_percent_likely_on_settlement"
+        }
+      },
+      "domain_knowledge": {
+        "federal_rate": "21% corporate rate (TCJA 2017)",
+        "disclosures": [
+          "ASU 2023-09 income tax disclosures"
+        ]
+      }
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "days_sales_outstanding": {
+        "definition": "Accounts receivable divided by revenue, times the days in the period",
+        "formula": "DSO = (Accounts Receivable / Revenue) x Days",
+        "healthy_range": "30-45 days",
+        "world_class": "< 30 days",
+        "related": [
+          "Cash Conversion Cycle"
+        ]
+      },
+      "days_payable_outstanding": {
+        "definition": "Accounts payable divided by cost of goods sold, times the days in the period",
+        "formula": "DPO = (Accounts Payable / COGS) x Days",
+        "healthy_range": "30-60 days"
+      },
+      "cash_conversion_cycle": {
+        "definition": "Days to turn inventory and receivables into cash, net of payables",
+        "formula": "CCC = DSO + DIO - DPO",
+        "healthy_range": "< 60 days"
+      },
+      "current_ratio": {
+        "definition": "Current assets divided by current liabilities",
+        "healthy_range": "1.5-2.0",
+        "interpretation": "Below 1.0 means current liabilities exceed current assets"
+      },
+      "quick_ratio": {
+        "definition": "Cash, marketable securities and receivables divided by current liabilities",
+        "healthy_range": ">= 1.0"
+      },
+      "days_to_close": {
+        "definition": "Business days from period end to closed books",
+        "healthy_range": "5-6 business days",
+        "world_class": "<= 3 business days"
+      },
+      "revenue_recognition_asc_606": {
+        "definition": "Five-step model: identify the contract; identify performance obligations; determine the transaction price; allocate it to the obligations; recognize revenue when or as each obligation is satisfied",
+        "related": [
+          "Contract Liability",
+          "Contract Asset",
+          "Principal vs Agent"
+        ]
+      },
+      "contract_liability": {
+        "definition": "An entity's obligation to transfer goods or services for which it has received consideration; commonly called deferred revenue"
+      },
+      "principal_vs_agent": {
+        "definition": "A principal controls the good or service before transfer and reports revenue gross; an agent arranges for another party to provide it and reports revenue net"
+      },
+      "lease_accounting_asc_842": {
+        "definition": "Lessees recognize a right-of-use asset and a lease liability for leases longer than 12 months, classified as finance or operating",
+        "related": [
+          "Right-of-Use Asset",
+          "Short-Term Lease Exemption"
+        ]
+      },
+      "cecl_asc_326": {
+        "definition": "Current Expected Credit Loss model: an allowance for lifetime expected credit losses recognized at origination or purchase of financial assets at amortized cost"
+      },
+      "goodwill_asc_350": {
+        "definition": "Not amortized by public business entities; tested for impairment at least annually at the reporting-unit level, with impairment equal to the excess of carrying amount over fair value (ASU 2017-04 removed Step 2)",
+        "private_company_alternative": "May amortize goodwill straight-line over up to 10 years"
+      },
+      "inventory_asc_330": {
+        "definition": "Inventory measured at the lower of cost and net realizable value under FIFO or average cost; LIFO and retail inventory use lower of cost or market",
+        "note": "LIFO is permitted under US GAAP but not under IFRS; the IRS LIFO conformity rule ties tax and book use"
+      },
+      "loss_contingency_asc_450": {
+        "definition": "Accrue when a loss is probable and reasonably estimable; disclose when reasonably possible; no accrual or disclosure is generally required when remote"
+      },
+      "fair_value_hierarchy_asc_820": {
+        "definition": "Level 1 quoted prices in active markets for identical items; Level 2 other observable inputs; Level 3 unobservable inputs"
+      },
+      "equity_method_asc_323": {
+        "definition": "Used when an investor has significant influence, presumed at 20-50% of voting stock"
+      },
+      "going_concern_asc_205_40": {
+        "definition": "Management evaluates whether substantial doubt exists about the entity's ability to continue as a going concern within one year after the financial statements are issued"
+      },
+      "materiality": {
+        "definition": "A misstatement is material if there is a substantial likelihood a reasonable investor would consider it important",
+        "guidance": "SAB 99: a 5% rule of thumb is only a starting point; qualitative factors can make small amounts material"
+      },
+      "material_weakness": {
+        "definition": "A deficiency, or combination of deficiencies, in ICFR such that there is a reasonable possibility that a material misstatement of the annual or interim financial statements will not be prevented or detected on a timely basis",
+        "related": [
+          "Significant Deficiency",
+          "Control Deficiency"
+        ]
+      },
+      "significant_deficiency": {
+        "definition": "A deficiency in ICFR less severe than a material weakness yet important enough to merit the attention of those responsible for oversight of financial reporting"
+      }
+    },
+    "regulations": {
+      "sox_302": {
+        "name": "Sarbanes-Oxley Act Section 302",
+        "requirement": "CEO and CFO certify each quarterly and annual report, including disclosure controls"
+      },
+      "sox_404": {
+        "name": "Sarbanes-Oxley Act Section 404",
+        "404a": "Management's annual assessment of internal control over financial reporting",
+        "404b": "Auditor attestation on ICFR, required for accelerated and large accelerated filers"
+      },
+      "pcaob_as_2201": {
+        "name": "PCAOB AS 2201",
+        "scope": "Audit of ICFR integrated with the audit of financial statements"
+      },
+      "sec_filing_deadlines": {
+        "10-K": {
+          "large_accelerated": "60 days",
+          "accelerated": "75 days",
+          "non_accelerated": "90 days"
+        },
+        "10-Q": {
+          "large_accelerated": "40 days",
+          "accelerated": "40 days",
+          "non_accelerated": "45 days"
+        },
+        "8-K": "4 business days after the triggering event"
+      },
+      "filer_status": {
+        "large_accelerated_filer": "Public float of $700 million or more",
+        "accelerated_filer": "Public float of $75 million to under $700 million (smaller reporting companies with revenue under $100 million excluded since 2020)"
+      },
+      "form_8k_item_4_02": {
+        "name": "Form 8-K Item 4.02 Non-Reliance on Previously Issued Financial Statements",
+        "trigger": "Board, committee or officer concludes prior financial statements should no longer be relied on (a Big R restatement)"
+      },
+      "sec_rule_10d_1_clawback": {
+        "name": "SEC Rule 10D-1 compensation recovery",
+        "requirement": "Listed issuers recover erroneously awarded incentive-based compensation received in the three completed fiscal years before a required restatement, Big R or little r"
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "subledger_to_gl": {
+        "from": "AP/AR Accounting",
+        "to": "General Ledger Accountant",
+        "context": [
+          "subledger_balances",
+          "cutoff_support",
+          "accrual_schedules"
+        ],
+        "sla": {
+          "subledger_lock": "Business day 2"
+        }
+      },
+      "gl_to_controller": {
+        "from": "General Ledger Accountant",
+        "to": "Controller",
+        "context": [
+          "trial_balance",
+          "account_reconciliations",
+          "flux_analysis"
+        ],
+        "sla": {
+          "review": "Business day 4"
+        }
+      },
+      "controller_to_cfo": {
+        "from": "Controller",
+        "to": "CFO",
+        "context": [
+          "draft_financial_statements",
+          "significant_judgments",
+          "control_exceptions"
+        ],
+        "sla": {
+          "sign_off": "Business day 5"
+        }
+      },
+      "deficiency_to_audit_committee": {
+        "trigger": "Control deficiency assessed as significant deficiency or material weakness",
+        "from": "Chief Audit Executive",
+        "to": "Audit Committee",
+        "context": [
+          "deficiency_description",
+          "severity_assessment",
+          "remediation_plan"
+        ],
+        "sla": {
+          "notification": "Before the next quarterly filing"
+        }
+      },
+      "error_to_disclosure_committee": {
+        "trigger": "Prior-period error identified",
+        "from": "Controller",
+        "to": "Disclosure Committee",
+        "context": [
+          "error_quantification",
+          "SAB_99_qualitative_analysis",
+          "restatement_type"
+        ],
+        "sla": {
+          "8K_Item_4.02_if_Big_R": "4 business days after non-reliance conclusion"
+        }
+      }
+    },
+    "escalation_matrix": {
+      "close": {
+        "missed_close_deadline": "L3_management",
+        "material_post_close_adjustment": "L4_executive"
+      },
+      "controls": {
+        "significant_deficiency": "L4_executive",
+        "material_weakness": "L5_board"
+      }
+    }
+  },
+  "rag_chunks": [
+    "ASC 606 sets a five-step revenue model. An entity identifies the contract with a customer, identifies the performance obligations in the contract, determines the transaction price, allocates that price to the performance obligations on a relative standalone selling price basis, and recognizes revenue when or as it satisfies each obligation by transferring control of a good or service. Variable consideration is included only to the extent a significant reversal is not probable.",
+    "A contract liability, often called deferred revenue, arises when a customer pays before the entity transfers the promised goods or services. A contract asset arises when the entity has transferred goods or services but its right to consideration is conditional on something other than the passage of time. An unconditional right to consideration is a receivable.",
+    "Under ASC 606 an entity is a principal if it controls a specified good or service before it is transferred to the customer, and reports revenue gross. It is an agent if its role is to arrange for another party to provide the good or service, and it reports revenue net as a fee or commission. Indicators include primary responsibility for fulfilment, inventory risk and discretion over price.",
+    "ASC 842 requires lessees to recognize a right-of-use asset and a lease liability for leases with terms longer than 12 months. A lessee may elect not to recognize short-term leases of 12 months or less. Leases are classified as finance leases or operating leases; a finance lease shows interest and amortization separately, while an operating lease shows a single straight-line lease cost.",
+    "The Current Expected Credit Loss model in ASC 326 replaced the incurred loss model. Entities record an allowance for expected credit losses over the full contractual life of financial assets measured at amortized cost, such as loans and trade receivables, from the day they are originated or purchased. Estimates use historical experience, current conditions and reasonable and supportable forecasts.",
+    "Public business entities do not amortize goodwill. They test it for impairment at least annually at the reporting-unit level and between tests when a triggering event occurs. Since ASU 2017-04 the impairment equals the amount by which a reporting unit's carrying amount exceeds its fair value, limited to the goodwill allocated to it. Private companies may elect to amortize goodwill on a straight-line basis over ten years or less.",
+    "Inventory measured using FIFO or average cost is carried at the lower of cost and net realizable value. Inventory measured using LIFO or the retail inventory method remains at the lower of cost or market. LIFO is allowed under US GAAP but prohibited under IFRS, and the LIFO conformity rule requires a company that uses LIFO for tax to use it for financial reporting.",
+    "ASC 450 requires a loss contingency to be accrued when it is probable that a liability has been incurred and the amount can be reasonably estimated. When the loss is only reasonably possible, or probable but not estimable, the entity discloses the nature of the contingency and an estimate of the possible loss or range, or states that an estimate cannot be made. Gain contingencies are not recognized until realized.",
+    "ASC 820 defines fair value as the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date. Inputs fall in a three-level hierarchy: Level 1 quoted prices in active markets for identical assets or liabilities, Level 2 other observable inputs, and Level 3 unobservable inputs. Level 3 measurements require the most disclosure.",
+    "Section 302 of the Sarbanes-Oxley Act requires the principal executive and principal financial officers to certify each annual and quarterly report, including that they are responsible for disclosure controls and have disclosed significant deficiencies and material weaknesses to the auditors and audit committee. Section 404(a) requires management's annual report on internal control over financial reporting; Section 404(b) requires an auditor attestation for accelerated and large accelerated filers.",
+    "A material weakness is a deficiency, or a combination of deficiencies, in internal control over financial reporting such that there is a reasonable possibility that a material misstatement of the company's annual or interim financial statements will not be prevented or detected on a timely basis. A significant deficiency is less severe than a material weakness yet important enough to merit the attention of those responsible for oversight of financial reporting. Companies using the COSO 2013 framework cannot conclude ICFR is effective if a material weakness exists.",
+    "Large accelerated filers have a public float of 700 million dollars or more and file Form 10-K within 60 days of fiscal year-end; accelerated filers, with a public float of 75 million to under 700 million dollars, file within 75 days; non-accelerated filers have 90 days. Form 10-Q is due within 40 days for large accelerated and accelerated filers and 45 days for others. Most Form 8-K items are due within four business days.",
+    "When previously issued financial statements contain a material error, the company restates them, a Big R restatement, and files Form 8-K Item 4.02 within four business days of concluding they should no longer be relied on. An error that is immaterial to prior periods but would be material if corrected in the current period is fixed by revising the prior periods the next time they are presented, a little r revision. SEC Staff Accounting Bulletin 99 says a 5% threshold is only a starting point for materiality.",
+    "SEC Rule 10D-1 and the related exchange listing standards, effective from 2 October 2023, require listed companies to recover incentive-based compensation erroneously received by current or former executive officers during the three completed fiscal years before the date a restatement is required. The rule covers both Big R and little r restatements and applies regardless of fault.",
+    "ASC 740 uses a two-step approach to uncertain tax positions. A position is recognized only if it is more likely than not to be sustained on examination based on its technical merits; it is then measured as the largest amount of benefit that is greater than 50 percent likely to be realized on settlement. A valuation allowance reduces deferred tax assets when it is more likely than not that some portion will not be realized. The US federal corporate income tax rate is 21 percent.",
+    "Days sales outstanding measures how quickly receivables are collected: accounts receivable divided by revenue, multiplied by the days in the period. The cash conversion cycle adds days inventory outstanding to DSO and subtracts days payable outstanding. Finance teams track the monthly close in business days; benchmark studies put a typical close at about five to six business days, with leading teams closing in three or fewer.",
+    "PCAOB AS 3101 requires the auditor's report to communicate critical audit matters, matters communicated to the audit committee that relate to material accounts or disclosures and involved especially challenging, subjective or complex auditor judgment. CAMs became required for audits of large accelerated filers for fiscal years ending on or after 30 June 2019 and for most other filers for fiscal years ending on or after 15 December 2020. Section 203 of the Sarbanes-Oxley Act requires the lead and concurring audit partners to rotate off an engagement after five consecutive years, and SEC Regulation S-X Rule 2-06 requires auditors to retain audit and review workpapers for seven years.",
+    "Regulation G and Item 10(e) of Regulation S-K govern non-GAAP financial measures. A company presenting a non-GAAP measure must reconcile it to the most directly comparable GAAP measure, and in SEC filings the GAAP measure must be presented with equal or greater prominence. ASC 260 requires basic and diluted earnings per share; the dilutive effect of options and warrants uses the treasury stock method and convertible securities use the if-converted method. Investments that give significant influence, presumed at 20 to 50 percent of voting stock, use the equity method under ASC 323.",
+    "Under ASC 205-40 management, not the auditor, evaluates at each annual and interim period whether conditions raise substantial doubt about the entity's ability to continue as a going concern within one year after the date the financial statements are issued, and discloses the conditions and management's plans. The chief audit executive reports functionally to the board or its audit committee under the IIA standards, and most US public companies assess internal control against the COSO 2013 Internal Control - Integrated Framework."
+  ]
+}

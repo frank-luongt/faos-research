@@ -1,0 +1,3410 @@
+[
+ {
+  "id": "banking_us_T1",
+  "industry": "banking",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the CET1 ratio and how the capital conservation buffer changes the effective minimum for a US bank.",
+  "ground_truth": {
+   "answer": "CET1 ratio is Common Equity Tier 1 capital divided by risk-weighted assets. The minimum is 4.5%; the 2.5% capital conservation buffer raises the effective floor to 7%, below which capital distributions and discretionary bonuses are restricted. Well capitalized under prompt corrective action is 6.5%.",
+   "required_terms": [
+    "CET1",
+    "Risk-Weighted Assets",
+    "Capital Conservation Buffer",
+    "Well Capitalized"
+   ],
+   "term_definitions": {
+    "CET1": "Common Equity Tier 1 capital / RWA; minimum 4.5%",
+    "Capital Conservation Buffer": "2.5% of CET1 above the minimum; breach restricts payouts"
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T2",
+  "industry": "banking",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Define the liquidity coverage ratio and the net stable funding ratio and the horizon each covers.",
+  "ground_truth": {
+   "answer": "LCR is high-quality liquid assets divided by total net cash outflows over a 30-day stress period, at least 100%. NSFR is available stable funding divided by required stable funding over one year, at least 100%.",
+   "required_terms": [
+    "LCR",
+    "HQLA",
+    "Net Cash Outflows",
+    "NSFR",
+    "Stable Funding"
+   ],
+   "term_definitions": {
+    "LCR": "HQLA / 30-day net cash outflows >= 100%",
+    "NSFR": "Available / required stable funding over 1 year >= 100%"
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T3",
+  "industry": "banking",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is a CAMELS rating and what do its components measure?",
+  "ground_truth": {
+   "answer": "CAMELS is the supervisory rating under the Uniform Financial Institutions Rating System: Capital adequacy, Asset quality, Management, Earnings, Liquidity and Sensitivity to market risk, each rated 1 (strongest) to 5 (weakest), with a composite rating.",
+   "required_terms": [
+    "CAMELS",
+    "Capital Adequacy",
+    "Asset Quality",
+    "Sensitivity to Market Risk",
+    "Composite Rating"
+   ],
+   "term_definitions": {
+    "CAMELS": "Six-component supervisory rating, 1 best to 5 worst"
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T4",
+  "industry": "banking",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A regional bank reports CET1 of 6.2%, an LCR of 92% and an efficiency ratio of 68%. Assess each metric.",
+  "ground_truth": {
+   "answer": "CET1 of 6.2% is BELOW the 7% effective minimum (4.5% plus the 2.5% buffer) and below the 6.5% well-capitalized level, so payouts are restricted. LCR of 92% is BELOW the 100% requirement. An efficiency ratio of 68% EXCEEDS the healthy level of under 60%.",
+   "metrics": {
+    "cet1_ratio": {
+     "value": 0.062,
+     "healthy": ">=0.07",
+     "assessment": "BELOW"
+    },
+    "lcr": {
+     "value": 0.92,
+     "healthy": ">=1.00",
+     "assessment": "BELOW"
+    },
+    "efficiency_ratio": {
+     "value": 0.68,
+     "healthy": "<0.60",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T5",
+  "industry": "banking",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A community bank has a net interest margin of 2.4%, return on assets of 0.6% and a loan-to-deposit ratio of 105%. Assess each metric.",
+  "ground_truth": {
+   "answer": "NIM of 2.4% is BELOW the healthy 3.0-3.5% range. ROA of 0.6% is BELOW the ~1% benchmark. A loan-to-deposit ratio of 105% EXCEEDS the healthy 70-90% range, signalling reliance on non-deposit funding.",
+   "metrics": {
+    "net_interest_margin": {
+     "value": 0.024,
+     "healthy": "0.030-0.035",
+     "assessment": "BELOW"
+    },
+    "return_on_assets": {
+     "value": 0.006,
+     "healthy": "~0.01",
+     "assessment": "BELOW"
+    },
+    "loan_to_deposit_ratio": {
+     "value": 1.05,
+     "healthy": "0.70-0.90",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T6",
+  "industry": "banking",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A customer deposits $9,500 in cash on each of three consecutive days and asks the teller how to avoid 'the government form'. What are the bank's obligations?",
+  "ground_truth": {
+   "answer": "No CTR is triggered because no single business day exceeds $10,000, but the pattern and the question indicate structuring, a federal crime under 31 U.S.C. 5324. The bank should investigate and file a SAR within 30 calendar days of detection (total $28,500 exceeds the $5,000 threshold with a known suspect). Staff must not tell the customer about the SAR, and must not advise on avoiding the CTR.",
+   "regulations": [
+    "Bank Secrecy Act",
+    "31 U.S.C. 5324",
+    "FinCEN SAR rule",
+    "CTR rule"
+   ],
+   "requirements": [
+    "no CTR (no day over $10,000)",
+    "structuring indicators",
+    "SAR within 30 days",
+    "SAR confidentiality, no tipping off"
+   ]
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T7",
+  "industry": "banking",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A bank director asks for a $750,000 loan from the bank. What does Regulation O require?",
+  "ground_truth": {
+   "answer": "The loan must be on substantially the same terms, including rate and collateral, as comparable loans to unrelated borrowers and carry no more than normal risk. Because it exceeds $500,000, it needs prior approval by the full board with the director abstaining. It also counts toward the insider and aggregate lending limits.",
+   "regulations": [
+    "Regulation O"
+   ],
+   "requirements": [
+    "substantially same terms",
+    "prior board approval above $500,000",
+    "interested director abstains",
+    "lending limits"
+   ]
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T8",
+  "industry": "banking",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Credit Officer, a commercial real estate borrower's DSCR has fallen from 1.40x to 1.05x. How do you respond?",
+  "ground_truth": {
+   "role": "Chief Credit Officer",
+   "decision_pattern": "deteriorating_credit",
+   "expected_factors": [
+    "re-underwrite cash flow and collateral",
+    "risk rating downgrade (special mention or substandard)",
+    "CECL allowance update",
+    "special assets or workout plan",
+    "CRE concentration"
+   ],
+   "kpi_references": [
+    "noncurrent loan ratio < 1%",
+    "criticized assets vs capital"
+   ],
+   "vocabulary": [
+    "DSCR",
+    "Risk Rating",
+    "Special Mention",
+    "Substandard",
+    "ACL",
+    "Workout"
+   ],
+   "communication_style": "Conservative, evidence-based, policy-anchored"
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T9",
+  "industry": "banking",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As BSA Officer, monitoring shows a foreign correspondent account moving funds rapidly through to high-risk jurisdictions with no clear purpose. What do you do?",
+  "ground_truth": {
+   "role": "BSA Officer",
+   "decision_pattern": "suspicious_activity",
+   "expected_factors": [
+    "case investigation",
+    "enhanced due diligence on the correspondent",
+    "SAR decision within 30 days",
+    "account restriction or exit",
+    "board reporting"
+   ],
+   "kpi_references": [
+    "SARs filed within 30 days of detection",
+    "alert backlog under 30 days"
+   ],
+   "vocabulary": [
+    "EDD",
+    "SAR",
+    "FinCEN",
+    "CDD",
+    "OFAC"
+   ],
+   "communication_style": "Precise, regulation-citing, confidential"
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T10",
+  "industry": "banking",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "An outgoing wire hits a possible match against OFAC's SDN list during screening. Trace the handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Payments Operations",
+     "to": "Sanctions Compliance",
+     "context": [
+      "wire_details",
+      "hit_details",
+      "originator_and_beneficiary_data"
+     ],
+     "sla": {
+      "hold_and_review": "Same business day"
+     }
+    },
+    {
+     "step": 2,
+     "condition": "If confirmed SDN match",
+     "from": "Sanctions Compliance",
+     "to": "OFAC",
+     "action": "Block funds in an interest-bearing blocked account",
+     "sla": {
+      "report": "10 business days"
+     }
+    },
+    {
+     "step": 3,
+     "from": "Sanctions Compliance",
+     "to": "BSA Officer",
+     "context": [
+      "case_file",
+      "related_accounts"
+     ],
+     "sla": {
+      "sar_decision": "30 days from detection"
+     }
+    }
+   ],
+   "terms": [
+    "OFAC",
+    "SDN List",
+    "Blocked Property",
+    "SAR",
+    "BSA Officer"
+   ],
+   "escalation_level": "L4_executive (confirmed sanctions match)"
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_vn_T1",
+  "industry": "banking_vn",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the loan classification system in Vietnamese banking under SBV Circular 31/2024 (which replaced Circular 11/2021), including the five debt groups and their provisioning rates.",
+  "ground_truth": {
+   "answer": "SBV Circular 31/2024 (Thông tư 31/2024/TT-NHNN), which replaced Circular 11/2021 from 1 July 2024, classifies loans into 5 groups: Group 1 (Current) — overdue under 10 days, provision 0%; Group 2 (Special Mention) — overdue 10 to under 90 days, provision 5%; Group 3 (Substandard) — overdue 90 to under 180 days, provision 20%; Group 4 (Doubtful) — overdue 180 to under 360 days, provision 50%; Group 5 (Loss) — overdue 360 days or more, provision 100%. NPL ratio (Groups 3-5) target is <3%.",
+   "required_terms": [
+    "Thông tư 31",
+    "NPL",
+    "Group 1",
+    "Group 2",
+    "Group 3",
+    "Group 4",
+    "Group 5",
+    "Provision",
+    "Nợ xấu"
+   ],
+   "term_definitions": {
+    "NPL": "Non-Performing Loans; Groups 3-5 in SBV classification; target ratio <3%",
+    "Thông tư 31/2024": "SBV circular governing loan classification and provisioning requirements; replaced Thông tư 11/2021",
+    "Provisioning": "Reserve set aside against potential loan losses; rates 0-100% by group"
+   }
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T2",
+  "industry": "banking_vn",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Define CAR, LCR and NSFR, and explain which of them SBV rules require Vietnamese banks to meet.",
+  "ground_truth": {
+   "answer": "CAR (Capital Adequacy Ratio / Tỷ lệ an toàn vốn) = (Tier 1 + Tier 2 Capital) / Risk-Weighted Assets; the SBV requires at least 8% under Circular 41/2016 (Basel II). LCR (Liquidity Coverage Ratio / Tỷ lệ bao phủ thanh khoản) = High-Quality Liquid Assets / Total Net Cash Outflows over 30 days, and NSFR (Net Stable Funding Ratio / Tỷ lệ nguồn vốn ổn định ròng) = Available Stable Funding / Required Stable Funding; both are Basel III measures with a 100% benchmark that banks may track internally, but the SBV has not made them legal minimums. Instead SBV Circular 22/2019 requires a liquidity reserve ratio of at least 10%, a 30-day solvency ratio and a loan-to-deposit ratio of at most 85%.",
+   "required_terms": [
+    "CAR",
+    "LCR",
+    "NSFR",
+    "Thông tư 41",
+    "Thông tư 22",
+    "Basel III",
+    "Tier 1",
+    "Risk-Weighted Assets"
+   ],
+   "term_definitions": {
+    "CAR": "Capital Adequacy Ratio; (Tier 1 + Tier 2) / RWA; SBV minimum 8% (Circular 41/2016)",
+    "LCR": "Liquidity Coverage Ratio; HQLA / 30-day net outflows; Basel III benchmark 100%, not an SBV legal minimum",
+    "NSFR": "Net Stable Funding Ratio; available stable funding / required; Basel III benchmark 100%, not an SBV legal minimum"
+   }
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T3",
+  "industry": "banking_vn",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is the CIC (Vietnam National Credit Information Center) and how does its credit scoring system work?",
+  "ground_truth": {
+   "answer": "CIC (Trung tâm Thông tin Tín dụng Quốc gia Việt Nam) is Vietnam's national credit bureau under SBV. Credit scores range 300-900. Scoring factors: payment history (35%), credit utilization (30%), credit history length (15%), credit mix (10%), new credit (10%). Banks must query CIC before lending. Group 5 (loss) classification in CIC disqualifies new credit. CIC data includes all credit facilities, payment history, collateral records.",
+   "required_terms": [
+    "CIC",
+    "Credit Score",
+    "300-900",
+    "Payment History",
+    "Credit Bureau"
+   ],
+   "term_definitions": {
+    "CIC": "Vietnam National Credit Information Center; national credit bureau under SBV",
+    "CIC Score": "Credit score 300-900; based on payment history (35%), utilization (30%), history length (15%), mix (10%), new credit (10%)"
+   }
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T4",
+  "industry": "banking_vn",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A Vietnamese bank reports: CAR of 7.5%, NPL ratio of 4.2%, and NIM of 3.8%. Assess whether these metrics are within acceptable ranges.",
+  "ground_truth": {
+   "answer": "CAR of 7.5% is BELOW the minimum 8% required by SBV Circular 41/2016 — this is a regulatory violation requiring immediate capital injection. NPL ratio of 4.2% EXCEEDS the healthy threshold of <3% per SBV guidance, indicating deteriorating asset quality. NIM of 3.8% is WITHIN the healthy range of 3-5%, indicating adequate interest income generation. Two of three metrics signal serious financial distress.",
+   "metrics": {
+    "car": {
+     "value": 0.075,
+     "minimum": "0.08",
+     "healthy": "≥0.10",
+     "assessment": "BELOW MINIMUM — regulatory violation"
+    },
+    "npl_ratio": {
+     "value": 0.042,
+     "healthy": "<0.03",
+     "assessment": "EXCEEDS — asset quality deterioration"
+    },
+    "nim": {
+     "value": 0.038,
+     "healthy": "0.03-0.05",
+     "assessment": "WITHIN healthy range"
+    }
+   }
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T5",
+  "industry": "banking_vn",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "What CIR (cost-to-income ratio) and ROE should a well-performing Vietnamese bank target, and what are world-class benchmarks?",
+  "ground_truth": {
+   "answer": "CIR (Cost-to-Income Ratio / Tỷ lệ chi phí trên thu nhập): healthy range is <50%, world-class is <40%. Leading Vietnamese banks like Techcombank and VPBank achieve 30-40%. ROE (Return on Equity / Tỷ suất sinh lời trên vốn chủ): target is >15%, world-class Vietnamese banks achieve 20-25%. Both metrics are key CFO KPIs tracked at ALCO meetings.",
+   "metrics": {
+    "cir": {
+     "healthy": "<50%",
+     "world_class": "<40%",
+     "source": "CFO KPIs"
+    },
+    "roe": {
+     "target": ">15%",
+     "world_class": "20-25%",
+     "source": "CEO/CFO KPIs"
+    }
+   }
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T6",
+  "industry": "banking_vn",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A customer deposits VND 450 million in cash at a Vietnamese bank branch. What AML/CFT obligations apply under Vietnamese law?",
+  "ground_truth": {
+   "answer": "The deposit of VND 450 million exceeds the large-value cash transaction reporting threshold of VND 400 million set under the 2022 AML Law (Luật PCRT 2022) by Decision 11/2023/QĐ-TTg, with Decree 19/2023/NĐ-CP. The bank must: (1) File a large-value transaction report (CTR) with AMLD (Cục Phòng chống rửa tiền), (2) Verify customer identity through CDD, (3) Document the source of funds, (4) Screen against sanctions lists (UN, OFAC, SBV domestic list). If the pattern suggests structuring or is inconsistent with the customer profile, an STR must also be filed within 3 working days.",
+   "regulations": [
+    "Luật PCRT 2022",
+    "Nghị định 19/2023",
+    "CTR threshold VND 400M (Quyết định 11/2023)",
+    "STR filing within 3 working days"
+   ],
+   "red_flags": [
+    "structuring",
+    "inconsistent_with_profile",
+    "undocumented_source_of_funds"
+   ]
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T7",
+  "industry": "banking_vn",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "What are the key prudential ratios and lending limits under SBV rules (Circular 22/2019, Circular 41/2016 and the 2024 Law on Credit Institutions) that a Vietnamese bank must comply with?",
+  "ground_truth": {
+   "answer": "Vietnamese banks must meet: (1) CAR ≥ 8% (Circular 41/2016/TT-NHNN); under Circular 22/2019/TT-NHNN, (2) short-term capital used for medium/long-term lending ≤ 30%, (3) loan-to-deposit ratio ≤ 85%, (4) liquidity reserve ratio ≥ 10% and the 30-day solvency ratio; under Law 32/2024 on Credit Institutions, (5) single-customer exposure ≤ 13% of equity in 2026 (falling to 10% from 2029; 21% with related persons, falling to 15%), and (6) related party exposure ≤ 5% of equity. LCR and NSFR are Basel III benchmarks, not SBV legal minimums. Violation triggers SBV corrective action. These ratios are reported regularly and are key CFO/CRO responsibilities.",
+   "regulations": [
+    "SBV Circular 22/2019",
+    "SBV Circular 41/2016",
+    "Law on Credit Institutions 32/2024"
+   ],
+   "requirements": [
+    "CAR ≥ 8%",
+    "Short-term for MLT ≤ 30%",
+    "LDR ≤ 85%",
+    "Single exposure ≤ 13% equity (2026)",
+    "Related party ≤ 5% equity"
+   ]
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T8",
+  "industry": "banking_vn",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As a Giám đốc Tuân thủ (Chief Compliance Officer) of a Vietnamese bank, evaluate a scenario where a corporate customer's transaction patterns show rapid cross-border fund movements to a high-risk jurisdiction.",
+  "ground_truth": {
+   "role": "Giám đốc Tuân thủ (Chief Compliance Officer)",
+   "decision_pattern": "aml_cft_screening",
+   "expected_factors": [
+    "transaction_amount",
+    "customer_profile",
+    "destination_country",
+    "transaction_frequency",
+    "documentation_quality"
+   ],
+   "expected_outputs": [
+    "risk_assessment",
+    "str_recommendation",
+    "account_action",
+    "enhanced_monitoring_level"
+   ],
+   "kpi_references": [
+    "str_filing_timeliness (3 working days)",
+    "incident_response_time (<24 hours)"
+   ],
+   "vocabulary": [
+    "PCRT",
+    "STR",
+    "CDD",
+    "EDD",
+    "PEP",
+    "Sanctions screening",
+    "AMLD",
+    "Nghị định 19/2023"
+   ],
+   "escalation_to": "CEO"
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T9",
+  "industry": "banking_vn",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As a Giám đốc Quản lý Rủi ro (CRO) of a Vietnamese bank, a loan of VND 5 billion has been overdue for 95 days. Classify this loan and determine the required actions.",
+  "ground_truth": {
+   "role": "Giám đốc Quản lý Rủi ro (Chief Risk Officer)",
+   "decision_pattern": "npl_classification",
+   "expected_factors": [
+    "days_past_due",
+    "restructuring_history",
+    "collateral_value",
+    "borrower_financial_condition"
+   ],
+   "expected_outputs": [
+    "debt_classification_group_1_to_5",
+    "specific_provision_amount",
+    "recovery_action_plan"
+   ],
+   "kpi_references": [
+    "npl_ratio <3%",
+    "provision_coverage >100%"
+   ],
+   "vocabulary": [
+    "Thông tư 31",
+    "Group 3 Substandard",
+    "Provision 20%",
+    "CIC reporting",
+    "Recovery plan"
+   ],
+   "classification": "Group 3 (Substandard) — 90 to under 180 days overdue; provision rate 20%; must report to CIC; initiate recovery action plan within 15 days",
+   "escalation_to": "Board Risk Committee"
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "banking_vn_T10",
+  "industry": "banking_vn",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A Vietnamese bank's Relationship Manager receives a loan application for VND 15 billion from a corporate customer. Trace the complete handoff chain from application through credit approval, identifying quality gates and escalation points.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "gate": "CIC Credit Check Gate",
+     "from": "Relationship Manager",
+     "to": "Credit Officer",
+     "trigger": "Loan application submitted",
+     "required_context": [
+      "applicant_CCCD",
+      "income_documents",
+      "CIC_report",
+      "collateral_details"
+     ],
+     "sla": "Review initiation within 24 hours"
+    },
+    {
+     "step": 2,
+     "gate": "Credit Approval Gate",
+     "owner": "Credit Officer → Credit Manager",
+     "criteria": [
+      "CIC_check_passed",
+      "collateral_valuation_complete",
+      "TT39_compliance_verified",
+      "DTI_LTV_within_policy"
+     ],
+     "sla": "Corporate decision 10-20 days"
+    },
+    {
+     "step": 3,
+     "escalation": "VND 15B falls in L4 Division Head authority (VND 10B-50B)",
+     "approval_authority": "Division Head",
+     "note": "If single customer total exposure approaches the single-customer limit (13% of equity in 2026 under Law 32/2024) → escalate to Credit Committee"
+    },
+    {
+     "step": 4,
+     "gate": "Legal Documentation Gate",
+     "from": "Credit Officer",
+     "to": "Legal Department",
+     "sla": "Documentation prepared within 5 business days"
+    }
+   ],
+   "terms": [
+    "CIC",
+    "TT39",
+    "Collateral valuation",
+    "Credit Committee",
+    "Single customer exposure",
+    "Giải ngân"
+   ],
+   "regulations": [
+    "TT39/2016 lending requirements",
+    "Law 32/2024 exposure limits",
+    "CIC reporting requirements"
+   ],
+   "roles_involved": [
+    "Relationship Manager",
+    "Credit Officer",
+    "Division Head",
+    "Legal Department"
+   ]
+  },
+  "cell": "banking_vn"
+ },
+ {
+  "id": "insurance_T1",
+  "industry": "insurance",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the combined ratio in property & casualty insurance and its relationship to loss ratio and expense ratio.",
+  "ground_truth": {
+   "answer": "Combined ratio equals loss ratio plus expense ratio. A combined ratio below 100% indicates underwriting profit; above 100% indicates underwriting loss. Healthy target is <100%; world-class is <95%.",
+   "required_terms": [
+    "Combined Ratio",
+    "Loss Ratio",
+    "Expense Ratio",
+    "Underwriting Profit"
+   ],
+   "term_definitions": {
+    "Combined Ratio": "Loss ratio + Expense ratio; <100% = underwriting profit",
+    "Loss Ratio": "Incurred losses / Earned premiums",
+    "Expense Ratio": "Underwriting expenses / Written premiums"
+   }
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T2",
+  "industry": "insurance",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Define persistency rate, lapse rate, and placement rate in life insurance.",
+  "ground_truth": {
+   "answer": "Persistency rate is the percentage of policies remaining in force year-over-year (healthy 85-90%). Lapse rate is the percentage of policies terminated by the policyholder (inverse of persistency). Placement rate is applications issued divided by applications submitted times 100% (healthy 70-80%).",
+   "required_terms": [
+    "Persistency Rate",
+    "Lapse Rate",
+    "Placement Rate"
+   ],
+   "term_definitions": {
+    "Persistency Rate": "Policies remaining in force YoY; healthy 85-90%",
+    "Lapse Rate": "Policies terminated by policyholder; inverse of persistency",
+    "Placement Rate": "Applications issued / submitted × 100%; healthy 70-80%"
+   }
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T3",
+  "industry": "insurance",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is IBNR and how does it relate to reserve adequacy?",
+  "ground_truth": {
+   "answer": "IBNR stands for Incurred But Not Reported reserves — an actuarial estimate of claims that have occurred but have not yet been reported to the insurer. IBNR is a critical component of reserve estimation, calculated using methods like chain ladder or Bornhuetter-Ferguson. Reserve adequacy measures actual reserves versus required reserves per RBC (Risk-Based Capital) regulations.",
+   "required_terms": [
+    "IBNR",
+    "Incurred But Not Reported",
+    "Reserve Adequacy",
+    "Chain Ladder",
+    "Bornhuetter-Ferguson",
+    "RBC"
+   ],
+   "term_definitions": {
+    "IBNR": "Incurred But Not Reported; actuarial estimate of occurred-but-unreported claims",
+    "Reserve Adequacy": "Actual reserves vs. required reserves per RBC regulations"
+   }
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T4",
+  "industry": "insurance",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "An insurer reports an RBC ratio of 130%, a loss ratio of 78%, and a persistency rate of 82%. Assess each metric.",
+  "ground_truth": {
+   "answer": "RBC ratio of 130% is BELOW healthy (>150% with buffer above regulatory minimum). Loss ratio of 78% EXCEEDS the healthy range (60-75% for P&C). Persistency rate of 82% is BELOW healthy (85-90%). All three metrics indicate financial and operational risk.",
+   "metrics": {
+    "rbc_ratio": {
+     "value": 1.3,
+     "healthy": ">1.50",
+     "assessment": "BELOW"
+    },
+    "loss_ratio": {
+     "value": 0.78,
+     "healthy": "0.60-0.75",
+     "assessment": "EXCEEDS"
+    },
+    "persistency_rate": {
+     "value": 0.82,
+     "healthy": "0.85-0.90",
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T5",
+  "industry": "insurance",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "What underwriting cycle time should a world-class insurer target?",
+  "ground_truth": {
+   "answer": "World-class underwriting cycle time is less than 7 days. Healthy range is 10-15 days from application to decision.",
+   "metrics": {
+    "underwriting_cycle_time": {
+     "healthy": "10-15 days",
+     "world_class": "<7 days"
+    }
+   }
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T6",
+  "industry": "insurance",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An insurance agent recommends a variable annuity to a 75-year-old retiree with modest savings. What suitability and regulatory requirements apply?",
+  "ground_truth": {
+   "answer": "NAIC Annuity Suitability Model Regulation applies (best interest standard). Variable annuity is a securities product requiring SEC registration and prospectus delivery. FINRA sales practice rules apply to the broker-dealer. State-specific surrender charge limits must be checked. Suitability factors: age (75 — high concern), risk tolerance, liquidity needs, financial situation (modest savings — red flag for variable product).",
+   "regulations": [
+    "NAIC Annuity Suitability Model",
+    "SEC registration",
+    "FINRA",
+    "State surrender charge limits"
+   ],
+   "suitability_factors": [
+    "age",
+    "risk_tolerance",
+    "liquidity_needs",
+    "financial_situation"
+   ]
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T7",
+  "industry": "insurance",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "Explain the ORSA requirement and its relationship to Risk-Based Capital.",
+  "ground_truth": {
+   "answer": "ORSA (Own Risk and Solvency Assessment) is an enterprise risk assessment requirement per the NAIC. RBC (Risk-Based Capital) is a minimum capital calculation per NAIC guidelines using a formulaic approach. ORSA supplements RBC by requiring forward-looking, comprehensive risk assessment beyond the backward-looking formulaic RBC calculation. Together they form a two-pillar solvency framework.",
+   "regulations": [
+    "NAIC ORSA",
+    "NAIC RBC"
+   ],
+   "frameworks": [
+    "ORSA",
+    "ERM",
+    "COSO"
+   ]
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T8",
+  "industry": "insurance",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Actuary, evaluate reserve adequacy for a casualty book with deteriorating loss development triangles.",
+  "ground_truth": {
+   "role": "Chief Actuary / Appointed Actuary",
+   "decision_pattern": "reserve_estimation",
+   "expected_methods": [
+    "chain_ladder",
+    "Bornhuetter_Ferguson",
+    "frequency_severity"
+   ],
+   "expected_confidence_levels": [
+    "best_estimate",
+    "reasonably_likely",
+    "adverse"
+   ],
+   "kpi_references": [
+    "reserve_adequacy within actuarial range",
+    "pricing_accuracy A/E ratios"
+   ],
+   "vocabulary": [
+    "Loss Triangle",
+    "IBNR",
+    "RBNS",
+    "Development Factor",
+    "Loss Ratio"
+   ],
+   "communication_style": "Data-driven, precise, technically rigorous"
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T9",
+  "industry": "insurance",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Risk Officer, a catastrophe model shows potential losses exceeding the company's risk appetite. What is your decision framework?",
+  "ground_truth": {
+   "role": "Chief Risk Officer",
+   "decision_pattern": "risk_acceptance",
+   "authority_levels": {
+    "within_appetite": "autonomous",
+    "at_appetite_boundary": "consult_CEO",
+    "exceeds_appetite": "board_approval"
+   },
+   "considerations": [
+    "probability",
+    "severity",
+    "correlation",
+    "concentration"
+   ],
+   "frameworks": [
+    "ORSA",
+    "ERM",
+    "COSO"
+   ],
+   "kpi_references": [
+    "risk_based_capital_ratio > regulatory minimum + buffer"
+   ],
+   "vocabulary": [
+    "Risk Appetite",
+    "Risk Tolerance",
+    "Economic Capital",
+    "Tail Risk",
+    "Concentration Risk"
+   ]
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_T10",
+  "industry": "insurance",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A large commercial property claim is reported via FNOL with initial reserve estimate of $2M, exceeding the reinsurance notification threshold. Trace the handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Customer Service (FNOL)",
+     "to": "Claims Adjuster",
+     "context": [
+      "loss_details",
+      "policy_information",
+      "initial_reserve",
+      "priority_indicators"
+     ],
+     "sla": {
+      "assignment": "4 hours",
+      "contact": "24 hours"
+     }
+    },
+    {
+     "step": 2,
+     "from": "Claims",
+     "to": "Reinsurance",
+     "trigger": "Reserve exceeds reinsurance notification threshold",
+     "sla": {
+      "notification": "within treaty timeframe 30-60 days"
+     }
+    },
+    {
+     "step": 3,
+     "condition": "If fraud indicators present",
+     "from": "Adjuster",
+     "to": "SIU (Special Investigations Unit)",
+     "context": [
+      "claim_details",
+      "red_flag_indicators",
+      "investigation_request"
+     ],
+     "sla": {
+      "acknowledgment": "24 hours"
+     }
+    }
+   ],
+   "terms": [
+    "FNOL",
+    "Reserve",
+    "Reinsurance",
+    "SIU",
+    "Subrogation"
+   ],
+   "escalation_level": "L3_management (large loss threshold)"
+  },
+  "cell": "insurance_us"
+ },
+ {
+  "id": "insurance_vn_T1",
+  "industry": "insurance_vn",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the concept of 'Dự phòng nghiệp vụ' (DPNV) in Vietnamese insurance, including the four types of technical provisions required by TT 132/2023.",
+  "ground_truth": {
+   "answer": "Dự phòng nghiệp vụ (DPNV / Technical Provisions) are reserves Vietnamese insurers must maintain per TT 132/2023/TT-BTC. Four types: (1) Dự phòng toán học — mathematical reserve for life insurance, calculated using net premium or prospective method; (2) Dự phòng phí chưa được hưởng — unearned premium reserve, calculated pro-rata temporis for non-life; (3) Dự phòng bồi thường — outstanding claims reserve, case-by-case estimation plus IBNR; (4) Dự phòng dao động lớn — catastrophe/equalization reserve, as prescribed by MoF formula.",
+   "required_terms": [
+    "DPNV",
+    "Dự phòng nghiệp vụ",
+    "Dự phòng toán học",
+    "Dự phòng phí chưa được hưởng",
+    "Dự phòng bồi thường",
+    "Dự phòng dao động lớn",
+    "IBNR"
+   ],
+   "term_definitions": {
+    "DPNV": "Dự phòng nghiệp vụ / Technical Provisions — mandatory reserves per TT 132/2023",
+    "Dự phòng toán học": "Mathematical reserve for life insurance policies",
+    "IBNR": "Incurred But Not Reported — claims reserve for losses that have occurred but not yet been reported"
+   }
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T2",
+  "industry": "insurance_vn",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What are the three types of compulsory insurance (Bảo hiểm bắt buộc / BHBB) mandated in Vietnam under Nghị định 67/2023?",
+  "ground_truth": {
+   "answer": "Under NĐ 67/2023/NĐ-CP, Vietnam mandates three types of compulsory insurance (BHBB): (1) BH TNDS bắt buộc chủ xe cơ giới — motor vehicle civil liability, covering VND 150M per person bodily injury and VND 100M property damage per incident, premiums fixed by government decree; (2) BH cháy nổ bắt buộc — compulsory fire and explosion insurance for facilities on the government high-risk list (Danh mục cơ sở nguy hiểm), governed by TT 70/2023; (3) BH trách nhiệm nghề nghiệp bắt buộc — professional liability for insurance brokers, notaries, and construction consultants.",
+   "required_terms": [
+    "BHBB",
+    "Bảo hiểm bắt buộc",
+    "TNDS xe cơ giới",
+    "Cháy nổ",
+    "Trách nhiệm nghề nghiệp",
+    "NĐ 67/2023"
+   ],
+   "term_definitions": {
+    "BHBB": "Bảo hiểm bắt buộc / Compulsory Insurance — mandated by government decree",
+    "TNDS": "Trách nhiệm Dân sự / Civil Liability",
+    "Cháy nổ bắt buộc": "Compulsory fire and explosion insurance for high-risk facilities"
+   }
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T3",
+  "industry": "insurance_vn",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Define 'Biên khả năng thanh toán' and 'Vốn điều lệ' in the context of Vietnamese insurance solvency regulation.",
+  "ground_truth": {
+   "answer": "Biên khả năng thanh toán (Solvency Margin) is the ratio of available capital to required minimum, mandated at ≥100% per TT 132/2023. Below 100% triggers MoF corrective action; below 80% triggers enhanced supervision. Vốn điều lệ (Charter Capital) is the minimum registered capital required: VND 750 billion for life insurers, VND 400 billion for non-life and standalone health insurers, VND 500 billion for reinsurers, VND 8 billion for brokers. These are set by NĐ 46/2023/NĐ-CP.",
+   "required_terms": [
+    "Biên khả năng thanh toán",
+    "Vốn điều lệ",
+    "Solvency Margin",
+    "Charter Capital",
+    "TT 132/2023",
+    "NĐ 46/2023"
+   ],
+   "term_definitions": {
+    "Biên khả năng thanh toán": "Solvency Margin Ratio; must be ≥100%; corrective action below 100%, enhanced supervision below 80%",
+    "Vốn điều lệ": "Charter Capital; minimum registered capital: life VND 750B, non-life VND 400B, reinsurer VND 500B"
+   }
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T4",
+  "industry": "insurance_vn",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A Vietnamese non-life insurer reports: combined ratio of 105%, loss ratio of 72%, and claims cycle time of 45 days. Assess whether these metrics are within healthy ranges.",
+  "ground_truth": {
+   "answer": "Combined ratio of 105% EXCEEDS the profitability threshold of 100% — the insurer is losing money on underwriting and must reduce losses or expenses. Loss ratio of 72% is ELEVATED but within a manageable range (healthy is <65-70% depending on line); the expense ratio must be the remaining 33%, which is high. Claims cycle time of 45 days EXCEEDS the standard target of 15 business days for routine claims and 30 days for complex — indicating operational inefficiency.",
+   "metrics": {
+    "combined_ratio": {
+     "value": 1.05,
+     "healthy": "<1.00",
+     "assessment": "EXCEEDS — underwriting loss"
+    },
+    "loss_ratio": {
+     "value": 0.72,
+     "healthy": "<0.65-0.70",
+     "assessment": "ELEVATED"
+    },
+    "claims_cycle_time": {
+     "value": "45 days",
+     "healthy": "15 standard, 30 complex",
+     "assessment": "EXCEEDS — operational inefficiency"
+    }
+   }
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T5",
+  "industry": "insurance_vn",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "What 13th-month persistency rate should a Vietnamese life insurer target, and what does a rate of 55% indicate?",
+  "ground_truth": {
+   "answer": "A Vietnamese life insurer should target 13th-month persistency (Tỷ lệ duy trì hợp đồng tháng 13) above 80%. Industry average in Vietnam is approximately 60-70%. A rate of 55% is BELOW average and indicates serious problems: likely bancassurance mis-selling (policies sold without genuine customer need), poor agent quality, or product-customer mismatch. This rate means 45% of policies lapse within the first year, destroying value and potentially triggering MoF scrutiny.",
+   "metrics": {
+    "persistency_13th_month": {
+     "value": 0.55,
+     "target": ">0.80",
+     "vietnam_average": "0.60-0.70",
+     "assessment": "BELOW AVERAGE — mis-selling indicator"
+    }
+   }
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T6",
+  "industry": "insurance_vn",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A bank in Vietnam sells a unit-linked life insurance policy to a customer who came to apply for a mortgage loan. What regulatory requirements must be met under current Vietnamese insurance law?",
+  "ground_truth": {
+   "answer": "Under Luật KDBH 2022 and MoF/SBV joint directives on bancassurance conduct: (1) A written needs analysis form (biểu mẫu phân tích nhu cầu) must be completed documenting the customer's actual insurance needs; (2) The insurance sale CANNOT be forced or bundled with the mortgage — the customer must confirm voluntary purchase; (3) A benefit illustration (bảng minh họa quyền lợi) must be provided and signed by the customer; (4) Audio/video recording of the sales conversation is encouraged/required; (5) The 21-day cooling-off period (thời gian xem xét hợp đồng) must be clearly communicated; (6) Insurance sales must be conducted separately from banking counter services.",
+   "regulations": [
+    "Luật 08/2022 Insurance Business Law",
+    "TT 67/2023 guidance",
+    "MoF/SBV joint bancassurance directives"
+   ],
+   "requirements": [
+    "needs_analysis_form",
+    "no_forced_bundling",
+    "benefit_illustration_signed",
+    "audio_video_recording",
+    "21_day_cooling_off",
+    "separate_from_banking"
+   ]
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T7",
+  "industry": "insurance_vn",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "What solvency and reporting requirements must a Vietnamese life insurance company comply with under TT 132/2023 and NĐ 46/2023?",
+  "ground_truth": {
+   "answer": "Under TT 132/2023 and NĐ 46/2023: (1) Solvency margin (Biên khả năng thanh toán) must be ≥100% — below 100% triggers MoF corrective action, below 80% triggers enhanced supervision; (2) Charter capital (Vốn điều lệ) minimum VND 750 billion for life insurers; (3) Technical provisions (DPNV) must be calculated per prescribed methodology — mathematical reserve, unearned premium, outstanding claims, catastrophe reserve; (4) Investment portfolio must comply with MoF asset allocation limits — minimum government bond holdings, caps on equity and real estate; (5) Quarterly solvency reports, annual financial statements, and actuarial reports must be filed with ISA/MoF.",
+   "regulations": [
+    "TT 132/2023",
+    "NĐ 46/2023",
+    "Luật KDBH 2022"
+   ],
+   "requirements": [
+    "solvency_margin_100%",
+    "charter_capital_VND_750B",
+    "DPNV_per_methodology",
+    "investment_limits",
+    "quarterly_solvency_report",
+    "annual_financial_statement",
+    "actuarial_report"
+   ]
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T8",
+  "industry": "insurance_vn",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Giám đốc Tuân thủ (Chief Compliance Officer) of a Vietnamese life insurer, you discover that bancassurance sales at a partner bank systematically lack needs analysis forms and customers report being told they were buying 'savings deposits'. What is your response?",
+  "ground_truth": {
+   "role": "Giám đốc Tuân thủ (Chief Compliance Officer)",
+   "decision_pattern": "bancassurance_conduct",
+   "expected_factors": [
+    "needs_analysis_completion",
+    "audio_video_recording",
+    "no_forced_bundling",
+    "cooling_off_communication"
+   ],
+   "expected_outputs": [
+    "compliance_clearance_revoked",
+    "remediation_action",
+    "training_requirement",
+    "mof_self_report_consideration"
+   ],
+   "kpi_references": [
+    "bancassurance_compliance (100% needs analysis)",
+    "mof_inspection_findings (zero critical)"
+   ],
+   "vocabulary": [
+    "Luật KDBH 2022",
+    "NĐ 46/2023",
+    "TT 67/2023",
+    "Bancassurance",
+    "Phân tích nhu cầu",
+    "Cooling-off",
+    "Bảng minh họa"
+   ],
+   "escalation_to": "CEO",
+   "communication_style": "Precise, regulatory-aware, documentation-focused"
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T9",
+  "industry": "insurance_vn",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chuyên gia Định phí trưởng (Chief Actuary) of a Vietnamese non-life insurer, the solvency margin has dropped to 95%. What actions do you recommend?",
+  "ground_truth": {
+   "role": "Chuyên gia Định phí trưởng (Chief Actuary)",
+   "decision_pattern": "reserve_estimation + solvency_management",
+   "expected_factors": [
+    "loss_triangle_development",
+    "claim_frequency_trend",
+    "severity_trend",
+    "catastrophe_exposure",
+    "investment_portfolio_valuation"
+   ],
+   "expected_outputs": [
+    "dpnv_recommendation",
+    "solvency_impact_analysis",
+    "reinsurance_optimization",
+    "capital_injection_recommendation"
+   ],
+   "kpi_references": [
+    "solvency_margin ≥100%",
+    "DPNV adequacy",
+    "pricing_accuracy"
+   ],
+   "vocabulary": [
+    "Biên khả năng thanh toán",
+    "DPNV",
+    "Dự phòng dao động lớn",
+    "TT 132/2023",
+    "Vốn điều lệ",
+    "Tái bảo hiểm"
+   ],
+   "classification": "Solvency at 95% is BELOW the 100% minimum — triggers MoF corrective action. Immediate steps: review DPNV adequacy (potential over-reserving?), optimize reinsurance program, reduce catastrophe exposure, recommend capital injection to HĐQT if structural.",
+   "escalation_to": "CFO and CEO → HĐQT (Board)"
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "insurance_vn_T10",
+  "industry": "insurance_vn",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A typhoon strikes central Vietnam causing widespread property damage. Trace the complete claims handling chain for a Vietnamese non-life insurer, from first notice of loss through settlement and reinsurance recovery, identifying quality gates and escalation points.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "gate": "FNOL Gate (Thông báo tổn thất)",
+     "from": "Customer / Agent",
+     "to": "Customer Service (CSKH)",
+     "criteria": [
+      "loss_details_captured",
+      "policy_verified_in_force",
+      "initial_reserve_set",
+      "fraud_screening_initiated"
+     ],
+     "sla": "Assignment within 4 hours (catastrophe protocol)"
+    },
+    {
+     "step": 2,
+     "gate": "Coverage Verification Gate",
+     "owner": "Claims Examiner",
+     "criteria": [
+      "policy_covers_typhoon_peril",
+      "not_excluded",
+      "deductible_identified"
+     ],
+     "sla": "24 hours"
+    },
+    {
+     "step": 3,
+     "gate": "Giám định (Survey/Adjustment) Gate",
+     "from": "Claims Examiner",
+     "to": "Giám định viên (Loss Adjuster)",
+     "criteria": [
+      "physical_inspection_complete",
+      "damage_quantified",
+      "photos_documented",
+      "repair_vs_total_loss_determined"
+     ],
+     "sla": "Field survey within 48 hours of assignment"
+    },
+    {
+     "step": 4,
+     "gate": "Settlement Authority Gate",
+     "escalation": {
+      "L1_adjuster": "< VND 200M",
+      "L2_supervisor": "VND 200M - 1B",
+      "L3_manager": "VND 1B - 5B",
+      "L4_director": "> VND 5B"
+     },
+     "criteria": [
+      "amount_within_authority",
+      "documentation_complete",
+      "subrogation_rights_preserved"
+     ]
+    },
+    {
+     "step": 5,
+     "gate": "Reinsurance Recovery Gate",
+     "trigger": "Claim exceeds retention threshold",
+     "from": "Claims Manager",
+     "to": "Reinsurance Recovery (VINARE / international treaty)",
+     "sla": "Large loss notification within 48 hours"
+    }
+   ],
+   "terms": [
+    "FNOL",
+    "Giám định",
+    "Giám định viên",
+    "Biên bản giám định",
+    "Thế quyền",
+    "Tái bảo hiểm",
+    "VINARE",
+    "Dự phòng bồi thường",
+    "Catastrophe reserve"
+   ],
+   "regulations": [
+    "Claims handling per company standards",
+    "NĐ 46/2023 claims provisions",
+    "Reinsurance treaty terms"
+   ]
+  },
+  "cell": "insurance_vn"
+ },
+ {
+  "id": "healthcare_T1",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain Case Mix Index (CMI) and its relationship to hospital reimbursement.",
+  "ground_truth": {
+   "answer": "Case Mix Index (CMI) is the weighted average of DRG (Diagnosis Related Group) weights assigned to a hospital's patients. It measures patient acuity and complexity. A higher CMI indicates more complex patients. CMI directly impacts DRG-based reimbursement rates — higher CMI leads to higher Medicare payments per discharge.",
+   "required_terms": [
+    "Case Mix Index",
+    "CMI",
+    "DRG",
+    "Reimbursement",
+    "Acuity"
+   ],
+   "term_definitions": {
+    "CMI": "Weighted average of DRG weights; measures patient acuity and complexity",
+    "DRG": "Diagnosis Related Group; basis for inpatient reimbursement classification"
+   }
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T2",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Define HCAHPS and explain its impact on hospital finances.",
+  "ground_truth": {
+   "answer": "HCAHPS (Hospital Consumer Assessment of Healthcare Providers and Systems) is a standardized patient satisfaction survey. Results are publicly reported on Hospital Compare. HCAHPS scores directly impact hospital reimbursement through the Value-Based Purchasing (VBP) program — hospitals with higher patient experience scores receive payment bonuses, while lower scores result in penalties.",
+   "required_terms": [
+    "HCAHPS",
+    "Patient Satisfaction",
+    "Value-Based Purchasing",
+    "VBP",
+    "Hospital Compare"
+   ],
+   "term_definitions": {
+    "HCAHPS": "Hospital Consumer Assessment of Healthcare Providers and Systems; patient experience survey",
+    "VBP": "Value-Based Purchasing; CMS program linking payment to quality and patient experience"
+   }
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T3",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is medical necessity and why is it important for claims?",
+  "ground_truth": {
+   "answer": "Medical necessity is the clinical justification that a provided healthcare service is required for the diagnosis or treatment of a patient's condition. It is a core requirement for claim reimbursement from insurance payers. Failure to demonstrate medical necessity is one of the most common reasons for claim denial.",
+   "required_terms": [
+    "Medical Necessity",
+    "Claim Denial",
+    "Reimbursement",
+    "Clinical Justification"
+   ],
+   "term_definitions": {
+    "Medical Necessity": "Clinical justification that service is required for diagnosis or treatment; core reimbursement requirement"
+   }
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T4",
+  "industry": "healthcare",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A hospital reports 30-day readmission rate of 16%, HAI rate of 2.0%, and operating margin of 1.5%. Assess each metric.",
+  "ground_truth": {
+   "answer": "30-day readmission rate of 16% EXCEEDS the healthy threshold of <15%, triggering CMS penalty risk under HRRP. HAI (Hospital-Acquired Infection) rate of 2.0% EXCEEDS healthy threshold of <1.5%, signaling infection control concerns and potential HAC penalty. Operating margin of 1.5% is BELOW the healthy range of 2-5%, indicating financial pressure. The hospital faces both quality penalties and financial challenges.",
+   "metrics": {
+    "readmission_rate": {
+     "value": 0.16,
+     "healthy": "<0.15",
+     "assessment": "EXCEEDS"
+    },
+    "hai_rate": {
+     "value": 0.02,
+     "healthy": "<0.015",
+     "assessment": "EXCEEDS"
+    },
+    "operating_margin": {
+     "value": 0.015,
+     "healthy": "0.02-0.05",
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T5",
+  "industry": "healthcare",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "What bed occupancy rate and ED throughput time should a world-class hospital target?",
+  "ground_truth": {
+   "answer": "Bed occupancy rate target for world-class hospitals is >85%. ED throughput time (door-to-disposition) target is <3 hours.",
+   "metrics": {
+    "bed_occupancy": {
+     "world_class": ">85%"
+    },
+    "ed_throughput": {
+     "world_class": "<3 hours door-to-disposition"
+    }
+   }
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T6",
+  "industry": "healthcare",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A patient requests their complete medical record. What HIPAA requirements apply to this request?",
+  "ground_truth": {
+   "answer": "Under the HIPAA Privacy Rule, patients have a right of access to their medical records. The provider must provide the record within 30 days (with one 30-day extension allowed). A reasonable, cost-based fee may be charged. Records must be provided in the format requested if readily producible. The minimum necessary standard does NOT apply to patient access requests.",
+   "regulations": [
+    "HIPAA Privacy Rule",
+    "Patient Right of Access",
+    "45 CFR 164.524"
+   ],
+   "requirements": [
+    "30-day response",
+    "cost-based fee only",
+    "patient-requested format",
+    "minimum necessary does NOT apply"
+   ]
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T7",
+  "industry": "healthcare",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An uninsured patient presents to the ED with chest pain. Can the hospital require proof of insurance before treatment?",
+  "ground_truth": {
+   "answer": "NO. EMTALA (Emergency Medical Treatment and Labor Act) requires a Medical Screening Examination (MSE) for ALL emergency presentations regardless of insurance status or ability to pay. The hospital must stabilize the patient before any transfer. Violations carry Civil Monetary Penalties (CMPs) and risk of Medicare exclusion. Asking for proof of insurance before MSE is an EMTALA violation.",
+   "regulations": [
+    "EMTALA",
+    "Medical Screening Examination",
+    "Stabilization requirement"
+   ],
+   "key_points": [
+    "Cannot require insurance proof before MSE",
+    "Must stabilize before transfer",
+    "CMPs for violations",
+    "Medicare exclusion risk"
+   ]
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T8",
+  "industry": "healthcare",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Medical Officer, a department shows rising readmission rates and declining HCAHPS scores. What is your quality improvement approach?",
+  "ground_truth": {
+   "role": "Chief Medical Officer",
+   "decision_pattern": "clinical_policy + quality_improvement",
+   "expected_factors": [
+    "clinical_evidence",
+    "regulatory_requirements",
+    "resource_availability",
+    "patient_impact"
+   ],
+   "framework": "PDSA cycles",
+   "kpi_references": [
+    "quality_metrics (core measures)",
+    "patient_safety (PSI, HAI)",
+    "patient_experience (HCAHPS)",
+    "clinical_outcomes (mortality, readmission)"
+   ],
+   "vocabulary": [
+    "Evidence-Based",
+    "Quality Improvement",
+    "Patient Safety",
+    "Clinical Outcomes",
+    "Medical Necessity"
+   ],
+   "communication_style": "Evidence-based, compassionate, strategic"
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T9",
+  "industry": "healthcare",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Nursing Officer, assess the staffing plan given NHPPD of 8.5 hours and RN turnover rate of 22%.",
+  "ground_truth": {
+   "role": "Chief Nursing Officer",
+   "kpi_references": [
+    "nursing_quality (NDNQI measures)",
+    "staffing (NHPPD, agency utilization)",
+    "retention (RN turnover rate)",
+    "patient_satisfaction (Nursing HCAHPS)",
+    "safety (falls, pressure injuries)"
+   ],
+   "vocabulary": [
+    "NHPPD",
+    "Skill Mix",
+    "Nurse Sensitive Indicators",
+    "Evidence-Based Practice",
+    "Magnet",
+    "NDNQI"
+   ],
+   "communication_style": "Caring, operational, staff-focused",
+   "assessment_context": "NHPPD 8.5 may be adequate depending on acuity; RN turnover 22% is high (healthy <18%) indicating retention crisis"
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_T10",
+  "industry": "healthcare",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A patient is being discharged from inpatient care to a skilled nursing facility, and the case manager discovers the payer has denied the SNF authorization. Trace the handoff and escalation chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "gate": "Discharge Readiness Gate",
+     "owner": "case_management_agent",
+     "sla": "4 hours from clinical readiness",
+     "criteria": [
+      "discharge_criteria_met",
+      "medications_reconciled",
+      "post_acute_arranged"
+     ]
+    },
+    {
+     "step": 2,
+     "trigger": "SNF authorization denied",
+     "gate": "Denial Management Gate",
+     "owner": "denial_management_agent",
+     "actions": [
+      "denial_reason_analyzed",
+      "appeal_strategy_determined",
+      "supporting_documentation_gathered"
+     ],
+     "sla": "Appeal within 50% of deadline"
+    },
+    {
+     "step": 3,
+     "if": "Medical necessity denial",
+     "action": "peer_to_peer review with payer medical director",
+     "escalation": "um_medical_director → CMO (payer)"
+    },
+    {
+     "step": 4,
+     "if": "Clinical deterioration during delay",
+     "action": "Discharge delayed; patient remains inpatient",
+     "escalation": "nurse_director → CNO"
+    }
+   ],
+   "terms": [
+    "SNF",
+    "Authorization",
+    "Denial Appeal",
+    "Peer-to-Peer",
+    "Case Management",
+    "Medical Necessity"
+   ],
+   "regulations": [
+    "CMS discharge planning requirements",
+    "Appeal rights under payer contract"
+   ]
+  },
+  "cell": "healthcare_us"
+ },
+ {
+  "id": "healthcare_vn_T1",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain how Vietnam's health insurance contributions and benefit levels work.",
+  "ground_truth": {
+   "answer": "Vietnam Social Security runs the health insurance fund. Employees pay 1.5% and employers 3% of salary (4.5% in total). The fund pays 100% of covered costs for groups such as children under six and poor households, 95% for pensioners and near-poor households, and 80% for most other insured people, who co-pay 20%.",
+   "required_terms": [
+    "Health Insurance",
+    "Vietnam Social Security",
+    "Benefit Level",
+    "Co-payment",
+    "4.5% Contribution"
+   ],
+   "term_definitions": {
+    "Benefit Level": "Share of covered costs paid by the fund: 100%, 95% or 80%"
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T2",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What are the technical levels of health facilities under Vietnam's Law on Medical Examination and Treatment 2023?",
+  "ground_truth": {
+   "answer": "Law 15/2023/QH15, effective 1 January 2024, groups facilities into three technical levels: initial, basic and specialised. Patients are referred to a higher level when a case exceeds the facility's capability.",
+   "required_terms": [
+    "Law 15/2023/QH15",
+    "Technical Level",
+    "Initial Level",
+    "Basic Level",
+    "Specialised Level",
+    "Referral"
+   ],
+   "term_definitions": {
+    "Technical Level": "Initial, basic or specialised capability tier"
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T3",
+  "industry": "healthcare",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "How does Vietnam's Ministry of Health assess hospital quality and patient satisfaction?",
+  "ground_truth": {
+   "answer": "Hospitals are assessed annually against 83 hospital quality criteria in five parts (Decision 6858/QD-BYT, 2016): patient orientation, human resources, professional activities, quality improvement and specialty criteria. Patient satisfaction is measured with the Ministry's survey method (Decision 3869/QD-BYT), targeting 90% or more satisfied.",
+   "required_terms": [
+    "Hospital Quality Criteria",
+    "Decision 6858/QD-BYT",
+    "Patient Satisfaction",
+    "Decision 3869/QD-BYT",
+    "Ministry of Health"
+   ],
+   "term_definitions": {
+    "Hospital Quality Criteria": "83 criteria in five parts"
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T4",
+  "industry": "healthcare",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A provincial general hospital reports bed occupancy of 115%, average length of stay of 9 days and patient satisfaction of 78%. Assess each.",
+  "ground_truth": {
+   "answer": "Bed occupancy of 115% EXCEEDS the efficient 85-90% range, implying bed sharing and overcrowding. ALOS of 9 days EXCEEDS the 5-7 day norm for a general hospital. Satisfaction of 78% is BELOW the 90% target.",
+   "metrics": {
+    "bed_occupancy": {
+     "value": 1.15,
+     "healthy": "0.85-0.90",
+     "assessment": "EXCEEDS"
+    },
+    "average_length_of_stay": {
+     "value": 9,
+     "healthy": "5-7 days",
+     "assessment": "EXCEEDS"
+    },
+    "patient_satisfaction": {
+     "value": 0.78,
+     "healthy": ">=0.90",
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T5",
+  "industry": "healthcare",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "Vietnam Social Security rejected 4% of a hospital's claimed value last quarter, and its hospital-acquired infection rate is 7%. Assess both.",
+  "ground_truth": {
+   "answer": "Rejected claims of 4% EXCEED the under-1% benchmark, a direct financial loss the hospital bears. A hospital-acquired infection rate of 7% EXCEEDS the under-5% healthy level and calls for an infection control review.",
+   "metrics": {
+    "rejected_claims_rate": {
+     "value": 0.04,
+     "healthy": "<0.01",
+     "assessment": "EXCEEDS"
+    },
+    "hospital_acquired_infection": {
+     "value": 0.07,
+     "healthy": "<0.05",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T6",
+  "industry": "healthcare",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A former patient asks a Vietnamese hospital for a copy of her inpatient record from six years ago. What rules apply?",
+  "ground_truth": {
+   "answer": "Under Law 15/2023/QH15 patients may read and receive copies of their medical records, so the hospital should provide a copy after verifying identity. Inpatient records are kept at least 10 years, so a six-year-old record must still exist (15 years for occupational or traffic accidents, 20 for mental illness or death). The record is sensitive personal data under Decree 13/2023/ND-CP and may be released only to the patient or an authorised person; electronic records follow Circular 46/2018/TT-BYT.",
+   "regulations": [
+    "Law 15/2023/QH15",
+    "Decree 13/2023/ND-CP",
+    "Circular 46/2018/TT-BYT"
+   ],
+   "requirements": [
+    "patient right to a copy",
+    "10-year retention",
+    "identity verification",
+    "sensitive data protection"
+   ]
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T7",
+  "industry": "healthcare",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An uninsured motorbike accident victim without identity papers arrives at a Vietnamese hospital emergency department. May the hospital ask for payment or papers before treating him?",
+  "ground_truth": {
+   "answer": "No. Law 15/2023/QH15 requires facilities to provide emergency care and forbids refusing or delaying it for lack of payment, papers or insurance. The hospital stabilises the patient first and then handles payment, identification and, if needed, transfer. As a traffic accident case, the record must be kept 15 years.",
+   "regulations": [
+    "Law 15/2023/QH15",
+    "Decree 96/2023/ND-CP"
+   ],
+   "requirements": [
+    "no refusal of emergency care",
+    "treat before payment",
+    "stabilise then transfer",
+    "15-year record retention for traffic accidents"
+   ]
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T8",
+  "industry": "healthcare",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Medical Officer, your hospital's quality criteria score fell this year, infections are rising and the medical wards run at 120% occupancy. What is your plan?",
+  "ground_truth": {
+   "role": "Chief Medical Officer",
+   "decision_pattern": "quality_deterioration",
+   "expected_factors": [
+    "review scores against the 83 quality criteria",
+    "root cause by department",
+    "infection control audit",
+    "patient flow and bed measures, including referral down to lower levels",
+    "report to the hospital council and Department of Health",
+    "monthly monitoring"
+   ],
+   "kpi_references": [
+    "bed occupancy 85-90%",
+    "hospital-acquired infection < 5%",
+    "patient satisfaction >= 90%"
+   ],
+   "vocabulary": [
+    "Hospital Quality Criteria",
+    "Decision 6858/QD-BYT",
+    "Infection Control",
+    "Bed Occupancy",
+    "Referral"
+   ],
+   "communication_style": "Clinical, evidence-based, cites Ministry of Health rules"
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T9",
+  "industry": "healthcare",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Nursing Officer, nurse turnover reached 18% last year and two wards report unsafe workloads. How do you respond?",
+  "ground_truth": {
+   "role": "Chief Nursing Officer",
+   "decision_pattern": "staffing_shortfall",
+   "expected_factors": [
+    "measure workload and patient acuity",
+    "redeploy nurses across wards",
+    "recruit or contract",
+    "retention measures (pay, schedules, training)",
+    "incident reporting and patient safety",
+    "report to the director"
+   ],
+   "kpi_references": [
+    "nurse turnover < 10%",
+    "zero serious care events"
+   ],
+   "vocabulary": [
+    "Staffing Plan",
+    "Patient Safety",
+    "Circular 31/2021/TT-BYT",
+    "Nursing Care",
+    "Incident Reporting"
+   ],
+   "communication_style": "Practical, patient-centred, staffing-focused"
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "healthcare_vn_T10",
+  "industry": "healthcare",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A district hospital must transfer an insured stroke patient to the provincial hospital. Trace the handoff chain, including health insurance.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Treating Doctor (district hospital)",
+     "to": "Hospital Planning Department",
+     "context": [
+      "clinical_summary",
+      "referral_form",
+      "health_insurance_details"
+     ],
+     "sla": {
+      "referral_form": "Emergency transfer immediately"
+     }
+    },
+    {
+     "step": 2,
+     "from": "District Hospital",
+     "to": "Provincial Hospital",
+     "context": [
+      "referral_form",
+      "test_results",
+      "treatment_given"
+     ],
+     "sla": {
+      "transport": "Staff escort"
+     }
+    },
+    {
+     "step": 3,
+     "from": "Provincial Hospital admissions",
+     "to": "Head of Health Insurance",
+     "context": [
+      "chip_citizen_ID_or_VssID",
+      "referral_form",
+      "benefit_level"
+     ],
+     "also": "Claims sent to Vietnam Social Security monthly"
+    }
+   ],
+   "terms": [
+    "Referral Form",
+    "Technical Level",
+    "Health Insurance",
+    "VssID",
+    "Vietnam Social Security"
+   ],
+   "escalation_level": "L3_management"
+  },
+  "cell": "healthcare_vn"
+ },
+ {
+  "id": "securities_us_T1",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain Regulation Best Interest's four component obligations and how Form CRS relates to them.",
+  "ground_truth": {
+   "answer": "Reg BI requires a broker-dealer recommending to a retail customer to act in the customer's best interest. Its four obligations are disclosure, care, conflict of interest and compliance. Form CRS is a short relationship summary delivered to retail investors describing services, fees and conflicts.",
+   "required_terms": [
+    "Reg BI",
+    "Disclosure Obligation",
+    "Care Obligation",
+    "Conflict of Interest Obligation",
+    "Compliance Obligation",
+    "Form CRS"
+   ],
+   "term_definitions": {
+    "Reg BI": "Best-interest standard for broker-dealer recommendations to retail customers (from 30 June 2020)",
+    "Form CRS": "Customer relationship summary"
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T2",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the broker-dealer net capital rule and the aggregate indebtedness ratio.",
+  "ground_truth": {
+   "answer": "SEC Rule 15c3-1 requires minimum net capital, net worth less nonallowable assets and haircuts: $250,000 for carrying firms, as little as $5,000 for introducing firms that never receive customer assets. Under the basic method aggregate indebtedness may not exceed 15:1 (1500%) of net capital, with an early-warning level of 12:1 under Rule 17a-11.",
+   "required_terms": [
+    "Net Capital",
+    "Rule 15c3-1",
+    "Haircut",
+    "Aggregate Indebtedness",
+    "Early Warning"
+   ],
+   "term_definitions": {
+    "Net Capital": "Liquid net worth after haircuts",
+    "Aggregate Indebtedness": "Max 1500% of net capital; early warning 1200%"
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T3",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is T+1 settlement in the US, when did it start, and what did it change for firms?",
+  "ground_truth": {
+   "answer": "Since 28 May 2024 most US securities trades settle one business day after trade date (T+1), down from T+2. Firms must complete allocations, confirmations and affirmations by the end of trade date (Rule 15c6-2), compressing post-trade operations and funding.",
+   "required_terms": [
+    "T+1",
+    "Settlement",
+    "Trade Date",
+    "Affirmation",
+    "Rule 15c6-2"
+   ],
+   "term_definitions": {
+    "T+1": "Settlement one business day after trade date, effective 28 May 2024"
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T4",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A carrying broker-dealer has net capital of $280,000 against a $250,000 minimum and an aggregate indebtedness ratio of 13:1. Assess its position.",
+  "ground_truth": {
+   "answer": "Net capital is 112% of the minimum, BELOW the 120% early-warning level, and aggregate indebtedness of 13:1 EXCEEDS the 12:1 early-warning level though it is under the 15:1 maximum. Both trigger a Rule 17a-11 notice to the SEC and FINRA within 24 hours.",
+   "metrics": {
+    "net_capital_cushion": {
+     "value": 1.12,
+     "healthy": ">1.20",
+     "assessment": "BELOW"
+    },
+    "aggregate_indebtedness_ratio": {
+     "value": 13,
+     "healthy": "<12",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T5",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "An S&P 500 index fund reports an expense ratio of 0.45% and annual tracking error of 0.40%. Assess both metrics.",
+  "ground_truth": {
+   "answer": "An expense ratio of 0.45% EXCEEDS the under-0.1% norm for broad index funds, and tracking error of 0.40% EXCEEDS the under-0.1% healthy level, so the fund is costly and tracks its index poorly.",
+   "metrics": {
+    "expense_ratio": {
+     "value": 0.0045,
+     "healthy": "<0.001",
+     "assessment": "EXCEEDS"
+    },
+    "tracking_error": {
+     "value": 0.004,
+     "healthy": "<0.001",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T6",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A company director, who knows the quarter's results are weak and not yet public, wants to set up a 10b5-1 plan and start selling next week. What rules apply?",
+  "ground_truth": {
+   "answer": "Trading on the material nonpublic results would violate Rule 10b-5, and a 10b5-1 plan is only a defense if adopted in good faith while unaware of such information, so the plan should wait until results are public. Directors face a cooling-off period of the later of 90 days or two business days after the next 10-Q/10-K, up to 120 days, so selling next week is not possible. Each sale is reported on Form 4 within two business days, and Section 16(b) short-swing profit recovery applies to matched trades within six months.",
+   "regulations": [
+    "Rule 10b-5",
+    "Rule 10b5-1",
+    "Section 16",
+    "Form 4"
+   ],
+   "requirements": [
+    "no trading on MNPI",
+    "good-faith plan adoption",
+    "90-120 day cooling-off",
+    "Form 4 in 2 business days",
+    "short-swing profits"
+   ]
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T7",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An activist fund buys 6.5% of a listed company and plans to push for board seats. What must it file and when?",
+  "ground_truth": {
+   "answer": "Above 5% beneficial ownership with intent to influence control, it must file Schedule 13D within five business days (shortened from ten calendar days by the 2023 amendments), and file amendments within two business days of material changes. It cannot use the passive Schedule 13G.",
+   "regulations": [
+    "Exchange Act Section 13(d)",
+    "Schedule 13D",
+    "Schedule 13G"
+   ],
+   "requirements": [
+    "5% threshold",
+    "13D within 5 business days",
+    "amendments within 2 business days",
+    "13G unavailable with control intent"
+   ]
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T8",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Compliance Officer, you find a representative put a 74-year-old retiree's savings into a 3x leveraged ETF held for months. What do you do?",
+  "ground_truth": {
+   "role": "Chief Compliance Officer",
+   "decision_pattern": "recommendation_review",
+   "expected_factors": [
+    "Reg BI care obligation and customer profile",
+    "leveraged ETF holding-period risk",
+    "costs and reasonably available alternatives",
+    "supervisory review under FINRA Rule 3110",
+    "remediation and rep discipline"
+   ],
+   "kpi_references": [
+    "Reg BI exceptions reviewed within 10 business days",
+    "no repeat exam findings"
+   ],
+   "vocabulary": [
+    "Reg BI",
+    "Care Obligation",
+    "Supervision",
+    "FINRA Rule 3110",
+    "Form CRS"
+   ],
+   "communication_style": "Rule-citing, supervisory, documentation-first"
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T9",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As FINOP, a large trading loss leaves net capital at 115% of the minimum. What are your next steps?",
+  "ground_truth": {
+   "role": "Financial and Operations Principal (FINOP)",
+   "decision_pattern": "capital_deterioration",
+   "expected_factors": [
+    "recompute net capital and haircuts",
+    "Rule 17a-11 notice within 24 hours",
+    "restrict capital-intensive business",
+    "capital infusion or subordinated loan",
+    "daily monitoring and FOCUS reporting"
+   ],
+   "kpi_references": [
+    "net capital cushion > 120% of minimum",
+    "aggregate indebtedness < 12:1"
+   ],
+   "vocabulary": [
+    "Net Capital",
+    "Rule 15c3-1",
+    "Rule 17a-11",
+    "Haircut",
+    "FOCUS Report"
+   ],
+   "communication_style": "Exact, deadline-driven, conservative"
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T10",
+  "industry": "securities",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "Trade surveillance flags a proprietary trader who repeatedly bought shares minutes before large customer buy orders. Trace the handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Trade Surveillance",
+     "to": "Chief Compliance Officer",
+     "context": [
+      "alert_details",
+      "order_and_execution_data",
+      "trader_communications"
+     ],
+     "sla": {
+      "triage": "5 business days"
+     }
+    },
+    {
+     "step": 2,
+     "condition": "If substantiated (trading ahead / front-running, FINRA 5320)",
+     "from": "Chief Compliance Officer",
+     "to": "Legal",
+     "context": [
+      "investigation_file",
+      "customer_harm_estimate"
+     ]
+    },
+    {
+     "step": 3,
+     "from": "Chief Compliance Officer",
+     "to": "FINRA",
+     "action": "Rule 4530 report",
+     "sla": {
+      "report": "30 calendar days"
+     },
+     "also": "AML Officer decides on a SAR within 30 days"
+    }
+   ],
+   "terms": [
+    "Trade Surveillance",
+    "Front-Running",
+    "FINRA Rule 5320",
+    "Rule 4530",
+    "SAR"
+   ],
+   "escalation_level": "L4_executive (substantiated front-running)"
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_vn_T1",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What makes a Vietnamese joint stock company a public company, and who counts as a major shareholder?",
+  "ground_truth": {
+   "answer": "Under the Law on Securities 54/2019/QH14, a public company has made an IPO, or has charter capital of VND 30 billion or more with at least 10% of voting shares held by at least 100 non-major investors. A major shareholder holds 5% or more of the voting shares.",
+   "required_terms": [
+    "Public Company",
+    "Law on Securities 54/2019/QH14",
+    "Charter Capital",
+    "VND 30 billion",
+    "Major Shareholder"
+   ],
+   "term_definitions": {
+    "Public Company": "IPO, or VND 30bn capital and 10% held by 100+ non-major investors",
+    "Major Shareholder": ">= 5% of voting shares"
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T2",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the daily price limits on Vietnam's stock markets and how they differ by exchange.",
+  "ground_truth": {
+   "answer": "Prices may move within a band around the reference price: +/-7% on HOSE, +/-10% on HNX and +/-15% on UPCoM. On a first trading day the bands widen to 20%, 30% and 40% respectively.",
+   "required_terms": [
+    "Price Band",
+    "Reference Price",
+    "HOSE",
+    "HNX",
+    "UPCoM"
+   ],
+   "term_definitions": {
+    "Price Band": "Daily limit from the reference price",
+    "UPCoM": "Unlisted public company market run by HNX"
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T3",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is a Vietnamese securities company's available capital ratio, and what happens at each threshold?",
+  "ground_truth": {
+   "answer": "Under Circular 91/2020/TT-BTC the available capital ratio is available capital divided by total risk value, with a 180% minimum. Between 150% and under 180% the firm is under warning status; 120% to under 150% under control; below 120% under special control with possible restrictions.",
+   "required_terms": [
+    "Available Capital Ratio",
+    "Circular 91/2020/TT-BTC",
+    "Total Risk Value",
+    "Warning Status",
+    "Special Control"
+   ],
+   "term_definitions": {
+    "Available Capital Ratio": "Available capital / total risk value; minimum 180%"
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T4",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A securities company reports an available capital ratio of 160% and total margin loans equal to 230% of its equity. Assess both.",
+  "ground_truth": {
+   "answer": "An available capital ratio of 160% is BELOW the 180% minimum and puts the firm under SSC warning status (150% to under 180%). Margin loans of 230% of equity EXCEED the 200% limit and must be reduced.",
+   "metrics": {
+    "available_capital_ratio": {
+     "value": 1.6,
+     "healthy": ">=1.80",
+     "assessment": "BELOW"
+    },
+    "margin_loans_to_equity": {
+     "value": 2.3,
+     "healthy": "<=2.00",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T5",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A client's margin account ratio has fallen to 28% after a sell-off; the firm's maintenance ratio is 30% and its initial ratio 50%. Assess the account and the firm's next step.",
+  "ground_truth": {
+   "answer": "At 28% the account is BELOW the 30% maintenance ratio, so the firm issues a margin call to restore at least the maintenance level and may force-sell if the client does not add cash or collateral; new margin purchases need the 50% initial ratio.",
+   "metrics": {
+    "account_margin_ratio": {
+     "value": 0.28,
+     "healthy": ">=0.30",
+     "assessment": "BELOW"
+    },
+    "initial_margin": {
+     "value": 0.5,
+     "healthy": ">=0.50"
+    }
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T6",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An investor holding 18% of a HOSE-listed company plans to buy enough shares to reach 26%. What does Vietnamese law require?",
+  "ground_truth": {
+   "answer": "Crossing 25% of voting shares requires a public tender offer under Article 35 of the Law on Securities 54/2019/QH14, unless an exemption applies such as approval by the general meeting. As a major shareholder (over 5%) the investor must also report each change crossing 1% within five working days under Circular 96/2020/TT-BTC, and foreign ownership limits must be checked if the investor is foreign.",
+   "regulations": [
+    "Law on Securities 54/2019/QH14 Article 35",
+    "Circular 96/2020/TT-BTC"
+   ],
+   "requirements": [
+    "tender offer at 25%",
+    "major shareholder reporting within 5 working days",
+    "1% change reporting",
+    "foreign ownership limit check"
+   ]
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T7",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "The CFO of a listed Vietnamese company wants to sell 200,000 of her shares. What must she do?",
+  "ground_truth": {
+   "answer": "As an insider she must report to the SSC, the exchange and the company at least three working days before trading, execute within 30 days, and report the result within five working days of completion (Circular 96/2020/TT-BTC). She must not trade on inside information, which is prohibited and a crime under Article 210 of the Penal Code.",
+   "regulations": [
+    "Circular 96/2020/TT-BTC",
+    "Law on Securities 54/2019/QH14",
+    "Penal Code Article 210"
+   ],
+   "requirements": [
+    "report 3 working days before",
+    "trade within 30 days",
+    "report result within 5 working days",
+    "no trading on inside information"
+   ]
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T8",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Head of Risk Management, the VN-Index has fallen 15% in a week and many margin accounts are near the maintenance ratio. What do you do?",
+  "ground_truth": {
+   "role": "Head of Risk Management",
+   "decision_pattern": "market_stress",
+   "expected_factors": [
+    "recompute account ratios",
+    "issue margin calls",
+    "forced sales below maintenance",
+    "tighten eligible stock list and concentration",
+    "check the firm's available capital ratio against 180%"
+   ],
+   "kpi_references": [
+    "available capital ratio >= 180%",
+    "margin loans <= 200% of equity"
+   ],
+   "vocabulary": [
+    "Margin Call",
+    "Maintenance Margin",
+    "Forced Sale",
+    "Available Capital Ratio",
+    "Concentration Limit"
+   ],
+   "communication_style": "Quantitative, threshold-driven, cites SSC rules"
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T9",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Head of Compliance, you see a group of linked accounts trading one small-cap stock back and forth to push its price up the daily limit. How do you respond?",
+  "ground_truth": {
+   "role": "Head of Compliance",
+   "decision_pattern": "suspected_manipulation",
+   "expected_factors": [
+    "review linked accounts and funding",
+    "restrict accounts where permitted",
+    "report to the SSC",
+    "suspicious transaction report to the State Bank within 3 working days",
+    "preserve records 5 years"
+   ],
+   "kpi_references": [
+    "STRs within 3 working days",
+    "no repeat SSC findings"
+   ],
+   "vocabulary": [
+    "Market Manipulation",
+    "Penal Code Article 211",
+    "Suspicious Transaction Report",
+    "Law on AML 14/2022/QH15",
+    "SSC"
+   ],
+   "communication_style": "Formal, legalistic, cites Law, Decree and Circular"
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T10",
+  "industry": "securities",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "The board of a HOSE-listed company resolves to acquire a competitor for an amount above 35% of total assets. Trace the disclosure handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Board of Directors / Company Secretary",
+     "to": "Head of Investor Relations",
+     "context": [
+      "resolution_text",
+      "event_details"
+     ],
+     "sla": {
+      "handover": "Same day"
+     }
+    },
+    {
+     "step": 2,
+     "from": "Head of Investor Relations",
+     "to": "State Securities Commission and Stock Exchange",
+     "context": [
+      "disclosure_document",
+      "company_website_posting"
+     ],
+     "sla": {
+      "disclosure": "Within 24 hours"
+     }
+    },
+    {
+     "step": 3,
+     "condition": "Transaction at or above 35% of total assets",
+     "action": "Approval by the general meeting of shareholders under the Law on Enterprises before completion"
+    }
+   ],
+   "terms": [
+    "Extraordinary Disclosure",
+    "Circular 96/2020/TT-BTC",
+    "State Securities Commission",
+    "General Meeting of Shareholders"
+   ],
+   "escalation_level": "L5_board"
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "fintech_T1",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the concept of 'take rate' in the payments industry and how it relates to TPV.",
+  "ground_truth": {
+   "answer": "Take Rate is Revenue divided by Total Payment Volume (TPV). It measures the percentage of transaction volume converted to revenue. It is a primary KPI for payments fintechs.",
+   "required_terms": [
+    "Take Rate",
+    "TPV",
+    "Total Payment Volume",
+    "Revenue"
+   ],
+   "term_definitions": {
+    "Take Rate": "Revenue / TPV; percentage of transaction volume converted to revenue",
+    "TPV": "Total Payment Volume; aggregate value of all transactions processed"
+   }
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T2",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is the difference between interchange, authorization rate, and chargeback rate in card payment processing?",
+  "ground_truth": {
+   "answer": "Interchange is the fee paid by the acquiring bank to the issuing bank per transaction. Authorization rate is the percentage of payment requests approved by the card network/issuer (benchmark >95%). Chargeback rate is the ratio of merchant disputes to total transaction volume (threshold <0.5%).",
+   "required_terms": [
+    "Interchange",
+    "Authorization Rate",
+    "Chargeback",
+    "Acquiring",
+    "Issuing"
+   ],
+   "term_definitions": {
+    "Interchange": "Fee paid by acquiring bank to issuing bank for each card transaction",
+    "Authorization Rate": "Percentage of payment requests approved; benchmark >95%",
+    "Chargeback": "Disputed transaction reversed by the card network; threshold <0.5% of volume"
+   }
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T3",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Define 3-D Secure (3DS) and tokenization in the context of payment compliance.",
+  "ground_truth": {
+   "answer": "3-D Secure (3DS) is an authentication protocol required by card networks for online transactions, adding a layer of cardholder verification. Tokenization is the process of replacing sensitive cardholder data (e.g., PANs) with non-sensitive equivalents (tokens), reducing PCI-DSS scope.",
+   "required_terms": [
+    "3DS",
+    "3-D Secure",
+    "Tokenization",
+    "PCI-DSS",
+    "PAN"
+   ],
+   "term_definitions": {
+    "3DS": "Authentication protocol required by card networks for e-commerce transactions",
+    "Tokenization": "Process of replacing sensitive data with non-sensitive equivalents; reduces PCI scope"
+   }
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T4",
+  "industry": "fintech",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A payment processor has an authorization rate of 92% and a dispute rate of 0.8%. Assess whether these metrics are within healthy ranges.",
+  "ground_truth": {
+   "answer": "Authorization rate of 92% is BELOW the healthy benchmark of >95%, indicating approval problems. Dispute rate of 0.8% EXCEEDS the healthy threshold of <0.5%, indicating elevated disputes. Both metrics signal operational issues requiring investigation.",
+   "metrics": {
+    "authorization_rate": {
+     "value": 0.92,
+     "healthy": ">0.95",
+     "assessment": "BELOW"
+    },
+    "dispute_rate": {
+     "value": 0.008,
+     "healthy": "<0.005",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T5",
+  "industry": "fintech",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "What settlement accuracy should a Tier-1 payment processor target, and what uptime availability is required for critical payment infrastructure?",
+  "ground_truth": {
+   "answer": "Settlement accuracy target is 99.99%. Uptime availability for critical payment infrastructure is 99.99%.",
+   "metrics": {
+    "settlement_accuracy": {
+     "target": "99.99%",
+     "source": "Head of Payments KPIs"
+    },
+    "uptime_availability": {
+     "target": "99.99%",
+     "source": "Head of Payments KPIs"
+    }
+   }
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T6",
+  "industry": "fintech",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A customer makes three separate cash deposits of $3,500 each within the same business day. What BSA/AML obligations apply?",
+  "ground_truth": {
+   "answer": "Total of $10,500 exceeds the $10,000 CTR (Currency Transaction Report) filing threshold. A CTR must be filed. The pattern of three sub-$4,000 deposits also suggests structuring (breaking transactions to avoid reporting thresholds), which is a red flag requiring potential SAR (Suspicious Activity Report) filing. Red flags include: structuring, rapid_movement per BSA Officer domain knowledge.",
+   "regulations": [
+    "BSA",
+    "FinCEN",
+    "CTR threshold ($10,000)",
+    "SAR filing"
+   ],
+   "red_flags": [
+    "structuring",
+    "rapid_movement"
+   ]
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T7",
+  "industry": "fintech",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A fintech company processing 2 million e-commerce transactions per year wants to know its PCI-DSS compliance level. What level applies and what are the key requirements?",
+  "ground_truth": {
+   "answer": "PCI-DSS Level 2 applies (1-6 million transactions per year). Key requirements include: cardholder data protection, encryption of data in transit and at rest, access controls and authentication, network security and monitoring, regular vulnerability assessments.",
+   "regulations": [
+    "PCI-DSS v4.0",
+    "Level 2 (1-6M transactions)"
+   ],
+   "requirements": [
+    "cardholder data protection",
+    "encryption",
+    "access controls",
+    "network security"
+   ]
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T8",
+  "industry": "fintech",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As a BSA Officer, evaluate a high-risk customer application that shows unusual transaction patterns and hits on adverse media screening.",
+  "ground_truth": {
+   "role": "BSA/AML Officer",
+   "decision_pattern": "suspicious_activity",
+   "expected_factors": [
+    "transaction_patterns",
+    "customer_profile",
+    "red_flags_identified",
+    "documentation_available"
+   ],
+   "expected_outputs": [
+    "investigation_result",
+    "sar_recommendation",
+    "account_action"
+   ],
+   "kpi_references": [
+    "sar_filing_timeliness",
+    "investigation_quality"
+   ],
+   "vocabulary": [
+    "KYC",
+    "CDD",
+    "EDD",
+    "SAR",
+    "Red Flags",
+    "Transaction Monitoring"
+   ],
+   "escalation_to": "CCO"
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T9",
+  "industry": "fintech",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Head of Payments, propose a payment routing strategy that balances cost, success rate, and risk profile.",
+  "ground_truth": {
+   "role": "Head of Payments",
+   "decision_pattern": "payment_routing",
+   "expected_factors": [
+    "cost",
+    "success_rate",
+    "speed",
+    "customer_experience",
+    "risk_profile"
+   ],
+   "expected_outputs": [
+    "routing_rules",
+    "fallback_logic",
+    "optimization_recommendations"
+   ],
+   "kpi_references": [
+    "authorization_rate >95%",
+    "cost_efficiency",
+    "dispute_rate <0.5%",
+    "uptime 99.99%"
+   ],
+   "vocabulary": [
+    "Interchange",
+    "Scheme Fees",
+    "Authorization Rate",
+    "Settlement",
+    "Payment Rail"
+   ],
+   "escalation_to": "CTO"
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_T10",
+  "industry": "fintech",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A fintech CPO proposes a new BNPL (Buy Now Pay Later) product targeting underbanked consumers. Walk through the compliance handoff process and identify key regulatory considerations.",
+  "ground_truth": {
+   "handoff": {
+    "trigger": "New product requiring compliance review",
+    "from": "CPO",
+    "to": "CCO",
+    "required_context": [
+     "PRD",
+     "data handling plan",
+     "customer segments",
+     "state licensing plan"
+    ],
+    "sla": {
+     "response": "2 business days",
+     "completion": "5 business days"
+    }
+   },
+   "regulations": [
+    "BSA/AML (CIP/CDD)",
+    "state lending laws",
+    "ECOA fair lending",
+    "money transmitter licensing",
+    "CFPB oversight"
+   ],
+   "terms": [
+    "BNPL",
+    "Underbanked",
+    "Fair Lending",
+    "Money Transmitter License"
+   ],
+   "roles_involved": [
+    "CPO",
+    "CCO",
+    "BSA Officer",
+    "CLO"
+   ]
+  },
+  "cell": "fintech_us"
+ },
+ {
+  "id": "fintech_vn_T1",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is an e-wallet under Vietnamese law, and how must it be linked to the banking system?",
+  "ground_truth": {
+   "answer": "An e-wallet is an electronic account opened by a non-bank payment intermediary licensed by the State Bank of Vietnam under Decree 52/2024/ND-CP, holding stored value for payments. Under Circular 40/2024/TT-NHNN it must be linked to the holder's own bank account, topped up from and withdrawn to that account, and individual payments are capped at VND 100 million a month.",
+   "required_terms": [
+    "E-wallet",
+    "Payment Intermediary",
+    "Decree 52/2024/ND-CP",
+    "Linked Bank Account",
+    "State Bank of Vietnam"
+   ],
+   "term_definitions": {
+    "E-wallet": "Stored-value account at a licensed intermediary, linked to the holder's bank account"
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T2",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain Napas, Napas 247 and VietQR in Vietnam's payment system.",
+  "ground_truth": {
+   "answer": "Napas, the National Payment Corporation of Vietnam, runs the domestic card switch. Napas 247 is its round-the-clock interbank fast-transfer service. VietQR is the national QR standard letting any banking or wallet app pay or transfer by scanning a code.",
+   "required_terms": [
+    "Napas",
+    "Napas 247",
+    "VietQR",
+    "Interbank Transfer",
+    "Card Switch"
+   ],
+   "term_definitions": {
+    "Napas 247": "24/7 interbank fast transfer",
+    "VietQR": "National QR payment standard"
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T3",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What biometric authentication rules apply to online transfers in Vietnam?",
+  "ground_truth": {
+   "answer": "Under Decision 2345/QD-NHNN, from 1 July 2024 an online transfer above VND 10 million, or once the day's total exceeds VND 20 million, needs biometric authentication matched to the chip-based citizen ID. Circular 17/2024/TT-NHNN bars online transactions from 1 January 2025 on accounts not verified against biometric data.",
+   "required_terms": [
+    "Biometric Authentication",
+    "Decision 2345/QD-NHNN",
+    "Chip-based Citizen ID",
+    "VND 10 million",
+    "Circular 17/2024/TT-NHNN"
+   ],
+   "term_definitions": {
+    "Biometric Authentication": "Face match against the chip ID record"
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T4",
+  "industry": "fintech",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A Vietnamese e-wallet reports a transaction success rate of 98.2%, a fraud loss rate of 0.12% of TPV and uptime of 99.7%. Assess each.",
+  "ground_truth": {
+   "answer": "Success rate of 98.2% is BELOW the 99% target. Fraud losses of 0.12% EXCEED the under-0.05% healthy level. Uptime of 99.7% is BELOW the 99.95% target.",
+   "metrics": {
+    "transaction_success_rate": {
+     "value": 0.982,
+     "healthy": ">=0.99",
+     "assessment": "BELOW"
+    },
+    "fraud_loss_rate": {
+     "value": 0.0012,
+     "healthy": "<0.0005",
+     "assessment": "EXCEEDS"
+    },
+    "system_uptime": {
+     "value": 0.997,
+     "healthy": ">=0.9995",
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T5",
+  "industry": "fintech",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "An individual user's e-wallet payments reached VND 140 million this month at one provider. Assess this against the rules.",
+  "ground_truth": {
+   "answer": "VND 140 million EXCEEDS the VND 100 million monthly cap on payments through an individual's e-wallet under Circular 40/2024/TT-NHNN; the provider's limits should have blocked the excess, and the pattern may also merit AML review.",
+   "metrics": {
+    "monthly_e_wallet_payments": {
+     "value": 140,
+     "limit": 100,
+     "unit": "VND million",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T6",
+  "industry": "fintech",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A startup 60% owned by a Singapore fund wants a licence to run an e-wallet in Vietnam. What regulatory issues arise?",
+  "ground_truth": {
+   "answer": "E-wallets are intermediary payment services licensed by the State Bank of Vietnam under Decree 52/2024/ND-CP, which caps total foreign ownership of payment intermediaries at 49%, so the 60% stake must be reduced before licensing. The firm must also meet capital, technical and security conditions (Circular 09/2020/TT-NHNN), AML duties under Law 14/2022/QH15, and personal data rules under Decree 13/2023/ND-CP.",
+   "regulations": [
+    "Decree 52/2024/ND-CP",
+    "Circular 40/2024/TT-NHNN",
+    "Circular 09/2020/TT-NHNN",
+    "Law on AML 14/2022/QH15",
+    "Decree 13/2023/ND-CP"
+   ],
+   "requirements": [
+    "SBV licence",
+    "49% foreign ownership cap",
+    "security requirements",
+    "AML programme",
+    "data protection"
+   ]
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T7",
+  "industry": "fintech",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A fintech wants to launch a peer-to-peer lending platform in Vietnam. Is it allowed, and under what framework?",
+  "ground_truth": {
+   "answer": "P2P lending had no specific legal framework; Decree 94/2025/ND-CP (from 1 July 2025) lets it be tested in the State Bank's controlled sandbox, alongside credit scoring and open-API data sharing, subject to conditions and supervision. Outside the sandbox, lending must be done by licensed credit institutions. Customer data use requires consent under Decree 13/2023/ND-CP and, from 2026, the Law on Personal Data Protection.",
+   "regulations": [
+    "Decree 94/2025/ND-CP",
+    "Law on Credit Institutions 32/2024/QH15",
+    "Decree 13/2023/ND-CP",
+    "Law on Personal Data Protection 91/2025/QH15"
+   ],
+   "requirements": [
+    "sandbox participation",
+    "SBV supervision",
+    "licensed lender otherwise",
+    "data consent"
+   ]
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T8",
+  "industry": "fintech",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Head of Payments, failed Napas 247 transfers from your wallet jump tenfold on the eve of Tet. How do you respond?",
+  "ground_truth": {
+   "role": "Head of Payments",
+   "decision_pattern": "payment_incident",
+   "expected_factors": [
+    "triage the cause (own system, bank or Napas)",
+    "reroute or queue transfers",
+    "communicate with customers",
+    "reconcile and refund failed transactions",
+    "report the incident to the SBV",
+    "post-incident review and capacity planning"
+   ],
+   "kpi_references": [
+    "transaction success rate >= 99%",
+    "uptime >= 99.95%"
+   ],
+   "vocabulary": [
+    "Napas 247",
+    "Reconciliation",
+    "TPV",
+    "E-wallet",
+    "Linked Bank Account"
+   ],
+   "communication_style": "Operational, metrics-led, customer-aware"
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T9",
+  "industry": "fintech",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Compliance Officer, you find 300 new e-wallets opened from 12 devices, each receiving transfers and cashing out within minutes. What do you do?",
+  "ground_truth": {
+   "role": "Compliance Officer",
+   "decision_pattern": "mule_accounts",
+   "expected_factors": [
+    "link accounts by device and identity",
+    "suspend outgoing transactions",
+    "re-verify biometrics against chip ID",
+    "file an STR with the SBV within 3 working days",
+    "report fraud to the police",
+    "retain records 5 years"
+   ],
+   "kpi_references": [
+    "STRs within 3 working days",
+    "100% biometric verification"
+   ],
+   "vocabulary": [
+    "Mule Account",
+    "eKYC",
+    "Biometric Authentication",
+    "Suspicious Transaction Report",
+    "Law on AML 14/2022/QH15"
+   ],
+   "communication_style": "Formal, regulation-citing, risk-based"
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T10",
+  "industry": "fintech",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A customer reports that VND 25 million left their e-wallet to an unknown bank account without their consent. Trace the handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Customer Service",
+     "to": "Fraud Operations",
+     "context": [
+      "transaction_id",
+      "device_and_login_history",
+      "customer_statement"
+     ],
+     "sla": {
+      "lock_wallet": "Immediately",
+      "triage": "4 hours"
+     }
+    },
+    {
+     "step": 2,
+     "from": "Fraud Operations",
+     "to": "Napas / beneficiary bank",
+     "action": "Recall request",
+     "sla": {
+      "recall_request": "Same day"
+     }
+    },
+    {
+     "step": 3,
+     "condition": "Fraud or mule pattern confirmed",
+     "from": "Fraud Operations",
+     "to": "Compliance Officer",
+     "sla": {
+      "str": "3 working days"
+     },
+     "also": "Report to police; check why a VND 25 million transfer passed biometric authentication"
+    }
+   ],
+   "terms": [
+    "Napas 247",
+    "Recall",
+    "Biometric Authentication",
+    "Suspicious Transaction Report",
+    "Mule Account"
+   ],
+   "escalation_level": "L3_management (customer loss)"
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "accounting_us_T1",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the five steps of revenue recognition under ASC 606.",
+  "ground_truth": {
+   "answer": "Identify the contract with a customer; identify the performance obligations; determine the transaction price; allocate the transaction price to the performance obligations on a relative standalone selling price basis; recognize revenue when or as each performance obligation is satisfied by transferring control.",
+   "required_terms": [
+    "ASC 606",
+    "Performance Obligation",
+    "Transaction Price",
+    "Standalone Selling Price",
+    "Transfer of Control"
+   ],
+   "term_definitions": {
+    "Performance Obligation": "A promise to transfer a distinct good or service",
+    "Transaction Price": "Consideration the entity expects to be entitled to, including constrained variable consideration",
+    "Standalone Selling Price": "Basis for allocating the transaction price"
+   }
+  }
+ },
+ {
+  "id": "accounting_us_T2",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Distinguish a control deficiency, a significant deficiency and a material weakness in internal control over financial reporting.",
+  "ground_truth": {
+   "answer": "A control deficiency exists when a control does not allow timely prevention or detection of misstatements. A significant deficiency is less severe than a material weakness yet merits the attention of those overseeing financial reporting. A material weakness is a deficiency or combination such that there is a reasonable possibility that a material misstatement of annual or interim statements will not be prevented or detected on a timely basis.",
+   "required_terms": [
+    "Control Deficiency",
+    "Significant Deficiency",
+    "Material Weakness",
+    "Reasonable Possibility",
+    "ICFR"
+   ],
+   "term_definitions": {
+    "Material Weakness": "Reasonable possibility a material misstatement is not prevented or detected timely",
+    "Significant Deficiency": "Less severe than a material weakness, merits oversight attention"
+   }
+  }
+ },
+ {
+  "id": "accounting_us_T3",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is the difference between a Big R restatement and a little r revision, and what filing does a Big R restatement trigger?",
+  "ground_truth": {
+   "answer": "A Big R restatement corrects an error material to previously issued financial statements, which are reissued; the company files Form 8-K Item 4.02 (non-reliance) within four business days. A little r revision corrects an error immaterial to prior periods but material if corrected in the current period, by revising the prior periods when next presented, with no Item 4.02 filing.",
+   "required_terms": [
+    "Big R Restatement",
+    "Little r Revision",
+    "Form 8-K Item 4.02",
+    "Non-Reliance",
+    "Materiality"
+   ],
+   "term_definitions": {
+    "Big R Restatement": "Reissuance of materially misstated prior statements",
+    "Little r Revision": "Prior periods revised when next presented; error immaterial to them"
+   }
+  }
+ },
+ {
+  "id": "accounting_us_T4",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A mid-size manufacturer reports DSO of 58 days, a current ratio of 1.1 and a monthly close of 9 business days. Assess each metric.",
+  "ground_truth": {
+   "answer": "DSO of 58 days EXCEEDS the healthy 30-45 day range, so collections are slow. A current ratio of 1.1 is BELOW the healthy 1.5-2.0 range, a liquidity concern though still above 1.0. A 9-day close EXCEEDS the 5-6 day benchmark and is far from the world-class 3 days or fewer.",
+   "metrics": {
+    "dso": {
+     "value": 58,
+     "healthy": "30-45 days",
+     "assessment": "EXCEEDS"
+    },
+    "current_ratio": {
+     "value": 1.1,
+     "healthy": "1.5-2.0",
+     "assessment": "BELOW"
+    },
+    "days_to_close": {
+     "value": 9,
+     "healthy": "5-6 business days",
+     "assessment": "EXCEEDS"
+    }
+   }
+  }
+ },
+ {
+  "id": "accounting_us_T5",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A company has DSO of 40 days, DIO of 55 days and DPO of 25 days. Compute its cash conversion cycle and assess it.",
+  "ground_truth": {
+   "answer": "CCC = DSO + DIO - DPO = 40 + 55 - 25 = 70 days, which EXCEEDS the healthy level of under 60 days; extending DPO toward the 30-60 day range would shorten it.",
+   "metrics": {
+    "cash_conversion_cycle": {
+     "value": 70,
+     "healthy": "< 60 days",
+     "assessment": "EXCEEDS"
+    },
+    "dpo": {
+     "value": 25,
+     "healthy": "30-60 days",
+     "assessment": "BELOW"
+    }
+   }
+  }
+ },
+ {
+  "id": "accounting_us_T6",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A company with a public float of $900 million finds a material weakness in revenue controls three weeks before its fiscal year-end. What SOX and SEC requirements apply to its annual report?",
+  "ground_truth": {
+   "answer": "It is a large accelerated filer (public float of $700 million or more), so Form 10-K is due within 60 days. Under SOX 404(a) management must conclude ICFR is not effective if the material weakness is not remediated and tested by year-end; under SOX 404(b) the auditor's attestation (PCAOB AS 2201) will be adverse. The CEO and CFO SOX 302 certifications must state the material weakness was disclosed to the auditors and audit committee.",
+   "regulations": [
+    "SOX 404(a)",
+    "SOX 404(b)",
+    "SOX 302",
+    "PCAOB AS 2201",
+    "SEC 10-K deadlines"
+   ],
+   "requirements": [
+    "large accelerated filer, 60-day 10-K",
+    "ICFR not effective if unremediated",
+    "adverse auditor ICFR opinion",
+    "302 certification disclosure"
+   ]
+  }
+ },
+ {
+  "id": "accounting_us_T7",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A listed company restates two prior years' revenue. What does SEC Rule 10D-1 require regarding executive compensation?",
+  "ground_truth": {
+   "answer": "Under SEC Rule 10D-1 and the exchange listing standards (effective 2 October 2023), the company must recover incentive-based compensation erroneously received by current or former executive officers in the three completed fiscal years before the restatement date, regardless of fault, and for both Big R and little r restatements.",
+   "regulations": [
+    "SEC Rule 10D-1",
+    "Exchange listing standards"
+   ],
+   "requirements": [
+    "three-year lookback",
+    "no-fault recovery",
+    "covers Big R and little r",
+    "incentive-based compensation only"
+   ]
+  }
+ },
+ {
+  "id": "accounting_us_T8",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Controller, you find that a prior-year revenue cutoff error overstated last year's revenue by 3%. How do you decide how to correct it?",
+  "ground_truth": {
+   "role": "Controller",
+   "decision_pattern": "error_correction",
+   "expected_factors": [
+    "quantitative materiality",
+    "SAB 99 qualitative factors",
+    "impact on prior and current periods",
+    "Big R vs little r vs out-of-period"
+   ],
+   "kpi_references": [
+    "no material audit adjustments",
+    "post-close adjustments under 1%"
+   ],
+   "vocabulary": [
+    "Materiality",
+    "Restatement",
+    "Accrual",
+    "ASC 606",
+    "Journal Entry"
+   ],
+   "communication_style": "Precise, standards-citing, control-minded"
+  }
+ },
+ {
+  "id": "accounting_us_T9",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Audit Executive, testing finds that journal-entry review controls failed in two quarters with no compensating control. How do you evaluate and escalate this?",
+  "ground_truth": {
+   "role": "Chief Audit Executive",
+   "decision_pattern": "deficiency_evaluation",
+   "expected_factors": [
+    "likelihood of misstatement",
+    "magnitude of potential misstatement",
+    "compensating controls",
+    "classification as deficiency, significant deficiency or material weakness"
+   ],
+   "kpi_references": [
+    "high-risk findings remediated within 90 days",
+    "all key controls tested before year-end"
+   ],
+   "vocabulary": [
+    "ICFR",
+    "Key Control",
+    "Material Weakness",
+    "COSO 2013",
+    "Remediation"
+   ],
+   "communication_style": "Objective, risk-based, evidence-driven"
+  }
+ },
+ {
+  "id": "accounting_us_T10",
+  "cell": "accounting_us",
+  "industry": "accounting",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "During the month-end close, the GL accountant finds an unreconciled $4M variance that turns out to be a prior-period error. Trace the handoff chain to disclosure.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "General Ledger Accountant",
+     "to": "Controller",
+     "context": [
+      "trial_balance",
+      "account_reconciliations",
+      "flux_analysis"
+     ],
+     "sla": {
+      "review": "Business day 4"
+     }
+    },
+    {
+     "step": 2,
+     "from": "Controller",
+     "to": "Disclosure Committee",
+     "trigger": "Prior-period error identified",
+     "context": [
+      "error_quantification",
+      "SAB_99_qualitative_analysis",
+      "restatement_type"
+     ]
+    },
+    {
+     "step": 3,
+     "condition": "If Big R",
+     "action": "Form 8-K Item 4.02 within 4 business days",
+     "also": "Chief Audit Executive evaluates control deficiency and reports to Audit Committee"
+    }
+   ],
+   "terms": [
+    "Account Reconciliation",
+    "Materiality",
+    "Restatement",
+    "Form 8-K Item 4.02",
+    "Material Weakness"
+   ],
+   "escalation_level": "L4_executive (material post-close adjustment)"
+  }
+ },
+ {
+  "id": "accounting_vn_T1",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is the role of the chief accountant (ke toan truong) in a Vietnamese enterprise, and what qualifications are required?",
+  "ground_truth": {
+   "answer": "Under the Law on Accounting 88/2015/QH13 every enterprise appoints a chief accountant who organises the accounting work and is accountable for the books and financial statements. Decree 174/2016/ND-CP requires a chief accountant training certificate and at least two years' experience with a university degree (three with an intermediate or college qualification); the chief accountant cannot be a relative of the legal representative or treasurer.",
+   "required_terms": [
+    "Chief Accountant",
+    "Law on Accounting 88/2015/QH13",
+    "Decree 174/2016/ND-CP",
+    "Training Certificate",
+    "Legal Representative"
+   ],
+   "term_definitions": {
+    "Chief Accountant": "Ke toan truong, legally accountable head of accounting",
+    "Decree 174/2016/ND-CP": "Guides the Law on Accounting, including qualifications and retention"
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T2",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "How do Vietnamese Accounting Standards relate to IFRS, and what is Vietnam's IFRS roadmap?",
+  "ground_truth": {
+   "answer": "VAS are 26 standards issued by the Ministry of Finance in 2001-2005, applied through the accounting regime in Circular 200/2014/TT-BTC; they are based on older international standards and differ from current IFRS (for example on fair value). Decision 345/QD-BTC (2020) set a voluntary IFRS phase in 2022-2025 and a later mandatory phase for selected entities, with new VFRS based on IFRS.",
+   "required_terms": [
+    "VAS",
+    "IFRS",
+    "Circular 200/2014/TT-BTC",
+    "Decision 345/QD-BTC",
+    "VFRS"
+   ],
+   "term_definitions": {
+    "VAS": "26 Vietnamese Accounting Standards (2001-2005)",
+    "Decision 345/QD-BTC": "2020 IFRS adoption scheme"
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T3",
+  "industry": "accounting",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "When is an asset recognized as a tangible fixed asset in Vietnam, and which depreciation methods are allowed?",
+  "ground_truth": {
+   "answer": "Under Circular 45/2013/TT-BTC an asset is a tangible fixed asset if it brings future economic benefits, has a useful life of more than one year and a historical cost of VND 30 million or more. Allowed methods are straight-line, declining balance with adjustment, and units of production.",
+   "required_terms": [
+    "Tangible Fixed Asset",
+    "Circular 45/2013/TT-BTC",
+    "VND 30 million",
+    "Straight-Line",
+    "Declining Balance with Adjustment",
+    "Units of Production"
+   ],
+   "term_definitions": {
+    "Tangible Fixed Asset": "Useful life > 1 year and cost >= VND 30 million"
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T4",
+  "industry": "accounting",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A company has a VND 2 billion receivable overdue 18 months and a VND 1 billion receivable overdue 8 months. What provisions are required, and is a provision of VND 500 million in total adequate?",
+  "ground_truth": {
+   "answer": "Under Circular 48/2019/TT-BTC the 18-month debt needs 50% (VND 1 billion) and the 8-month debt 30% (VND 300 million), VND 1.3 billion in total. A VND 500 million provision is BELOW the required amount.",
+   "metrics": {
+    "provision_18_months": {
+     "value": 0.5,
+     "required": "50%",
+     "amount": "VND 1,000 million"
+    },
+    "provision_8_months": {
+     "value": 0.3,
+     "required": "30%",
+     "amount": "VND 300 million"
+    },
+    "total_provision": {
+     "value": 500,
+     "required": 1300,
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T5",
+  "industry": "accounting",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A company's four quarterly provisional CIT payments total VND 7 billion, and its final CIT for the year is VND 10 billion. Assess its position.",
+  "ground_truth": {
+   "answer": "Provisional payments cover 70% of the final CIT, BELOW the 80% minimum. Late-payment interest of 0.03% per day applies to the VND 1 billion shortfall (80% of 10 billion less 7 billion) from the fourth-quarter deadline; the remaining VND 3 billion is paid with the finalization by the last day of the third month after year-end.",
+   "metrics": {
+    "provisional_coverage": {
+     "value": 0.7,
+     "healthy": ">=0.80",
+     "assessment": "BELOW"
+    },
+    "shortfall_subject_to_interest": {
+     "value": "VND 1 billion"
+    },
+    "late_interest": {
+     "value": "0.03% per day"
+    }
+   }
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T6",
+  "industry": "accounting",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A wholly foreign-owned manufacturing company closes its books on 31 December. What are its audit and financial statement filing obligations?",
+  "ground_truth": {
+   "answer": "As a foreign-invested enterprise it must have its annual financial statements audited by an independent audit firm (Law on Independent Audit 67/2011/QH12, Decree 17/2012/ND-CP). As a non-private enterprise it files audited statements, prepared under VAS and Circular 200/2014/TT-BTC, within 90 days after year-end (by 31 March) with the tax authority, statistics office and licensing authority, alongside the CIT finalization due by the last day of the third month.",
+   "regulations": [
+    "Law on Independent Audit 67/2011/QH12",
+    "Decree 17/2012/ND-CP",
+    "Circular 200/2014/TT-BTC",
+    "Law on Tax Administration 38/2019/QH14"
+   ],
+   "requirements": [
+    "mandatory audit for FDI enterprises",
+    "90-day filing deadline",
+    "file with tax, statistics and licensing authorities",
+    "CIT finalization by 31 March"
+   ]
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T7",
+  "industry": "accounting",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "What are the financial statement disclosure deadlines for a company listed on the Ho Chi Minh City Stock Exchange?",
+  "ground_truth": {
+   "answer": "Under Circular 96/2020/TT-BTC: audited annual statements within 10 days of the audit report and no later than 90 days after year-end; reviewed semi-annual statements within 5 days of the review report and no later than 45 days after the half-year; quarterly statements within 20 days after quarter-end.",
+   "regulations": [
+    "Circular 96/2020/TT-BTC",
+    "Law on Securities 54/2019/QH14"
+   ],
+   "requirements": [
+    "annual: 10 days after audit report, max 90 days",
+    "semi-annual: max 45 days",
+    "quarterly: 20 days"
+   ]
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T8",
+  "industry": "accounting",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Accountant, you discover that last year's revenue was overstated by a material amount because of an invoicing error. How do you handle it?",
+  "ground_truth": {
+   "role": "Chief Accountant",
+   "decision_pattern": "prior_period_error",
+   "expected_factors": [
+    "quantify and assess materiality",
+    "retrospective restatement under VAS 29",
+    "adjust opening retained earnings",
+    "supplementary tax declaration and late interest",
+    "disclosure in notes B09-DN"
+   ],
+   "kpi_references": [
+    "no material audit adjustments",
+    "statements submitted within the legal deadline"
+   ],
+   "vocabulary": [
+    "VAS 29",
+    "Retrospective Restatement",
+    "B09-DN",
+    "Circular 200/2014/TT-BTC",
+    "Accounting Voucher"
+   ],
+   "communication_style": "Formal, regulation-citing (Law, Decree, Circular), documentation-heavy"
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T9",
+  "industry": "accounting",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Tax Manager, a loan from the foreign parent produces net interest equal to 45% of the subsidiary's EBITDA. How do you treat it for CIT?",
+  "ground_truth": {
+   "role": "Tax Manager",
+   "decision_pattern": "related_party_interest",
+   "expected_factors": [
+    "related party under Decree 132/2020/ND-CP (25% ownership)",
+    "30% of EBITDA cap",
+    "disallow the excess 15 points of EBITDA",
+    "carry forward up to 5 years",
+    "transfer pricing documentation and disclosure appendix"
+   ],
+   "kpi_references": [
+    "TP documentation ready before CIT finalization",
+    "all declarations on time"
+   ],
+   "vocabulary": [
+    "Transfer Pricing",
+    "Decree 132/2020/ND-CP",
+    "EBITDA Cap",
+    "CIT Finalization"
+   ],
+   "communication_style": "Precise, deadline-focused, conservative"
+  },
+  "cell": "accounting_vn"
+ },
+ {
+  "id": "accounting_vn_T10",
+  "industry": "accounting",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "Trace the year-end handoff chain for a listed Vietnamese company, from closing the books to public disclosure of its audited financial statements.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "General Accountants",
+     "to": "Chief Accountant",
+     "context": [
+      "trial_balance",
+      "reconciliations",
+      "provision_schedules"
+     ]
+    },
+    {
+     "step": 2,
+     "from": "Chief Accountant",
+     "to": "Legal Representative (General Director)",
+     "context": [
+      "draft_financial_statements_B01_B02_B03_B09",
+      "significant_judgments"
+     ]
+    },
+    {
+     "step": 3,
+     "from": "Chief Accountant",
+     "to": "Independent Auditor",
+     "context": [
+      "signed_draft_FS",
+      "supporting_vouchers",
+      "related_party_list"
+     ]
+    },
+    {
+     "step": 4,
+     "from": "Investor Relations",
+     "to": "State Securities Commission and Stock Exchange",
+     "sla": {
+      "disclosure": "10 days after audit report, max 90 days after year-end"
+     },
+     "also": "Audited FS and CIT finalization filed with the tax authority"
+    }
+   ],
+   "terms": [
+    "Chief Accountant",
+    "Legal Representative",
+    "Independent Audit",
+    "Circular 96/2020/TT-BTC",
+    "State Securities Commission"
+   ],
+   "escalation_level": "L4_executive (missed deadline)"
+  },
+  "cell": "accounting_vn"
+ }
+]

@@ -1,0 +1,992 @@
+[
+ {
+  "id": "securities_vn_P001",
+  "question": "Which law currently governs Vietnam's securities market?",
+  "options": {
+   "A": "Law on Investment No. 61/2020/QH14",
+   "B": "Law on Securities No. 54/2019/QH14",
+   "C": "Law on Securities No. 70/2006/QH11",
+   "D": "Law on Enterprises No. 59/2020/QH14"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P002",
+  "question": "When did the Law on Securities 54/2019/QH14 take effect?",
+  "options": {
+   "A": "1 January 2021",
+   "B": "1 January 2019",
+   "C": "1 January 2020",
+   "D": "1 July 2020"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P003",
+  "question": "Which law amended the Law on Securities from 1 January 2025?",
+  "options": {
+   "A": "Law No. 56/2024/QH15",
+   "B": "Law No. 62/2010/QH12",
+   "C": "Law No. 32/2024/QH15",
+   "D": "Law No. 03/2022/QH15"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P004",
+  "question": "Which body licenses and supervises securities companies in Vietnam?",
+  "options": {
+   "A": "The Vietnam Exchange",
+   "B": "The State Bank of Vietnam",
+   "C": "The Ministry of Industry and Trade",
+   "D": "The State Securities Commission"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P005",
+  "question": "The State Securities Commission sits under:",
+  "options": {
+   "A": "The Ministry of Finance",
+   "B": "The Ministry of Justice",
+   "C": "The Prime Minister's Office directly",
+   "D": "The State Bank of Vietnam"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P006",
+  "question": "Which entity is the parent of HOSE and HNX?",
+  "options": {
+   "A": "The Vietnam Exchange",
+   "B": "VSDC",
+   "C": "The State Capital Investment Corporation",
+   "D": "The SSC"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P007",
+  "question": "Which organisation clears and settles securities trades in Vietnam?",
+  "options": {
+   "A": "VSDC",
+   "B": "HOSE",
+   "C": "Napas",
+   "D": "The SSC"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P008",
+  "question": "Which market for unlisted public companies is run by HNX?",
+  "options": {
+   "A": "VNX-2",
+   "B": "UPCoM",
+   "C": "SME Board",
+   "D": "OTCBB"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P009",
+  "question": "What is the daily price limit on HOSE?",
+  "options": {
+   "A": "+/-5%",
+   "B": "+/-7%",
+   "C": "+/-15%",
+   "D": "+/-10%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P010",
+  "question": "What is the daily price limit on HNX?",
+  "options": {
+   "A": "+/-7%",
+   "B": "+/-10%",
+   "C": "+/-15%",
+   "D": "+/-20%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P011",
+  "question": "What is the daily price limit on UPCoM?",
+  "options": {
+   "A": "+/-20%",
+   "B": "+/-7%",
+   "C": "+/-15%",
+   "D": "+/-10%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P012",
+  "question": "What is the first-trading-day price limit on HOSE?",
+  "options": {
+   "A": "+/-30%",
+   "B": "+/-7%",
+   "C": "+/-20%",
+   "D": "+/-40%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P013",
+  "question": "What is the first-trading-day price limit on HNX?",
+  "options": {
+   "A": "+/-10%",
+   "B": "+/-20%",
+   "C": "+/-40%",
+   "D": "+/-30%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P014",
+  "question": "What is the first-trading-day price limit on UPCoM?",
+  "options": {
+   "A": "+/-15%",
+   "B": "+/-50%",
+   "C": "+/-30%",
+   "D": "+/-40%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P015",
+  "question": "What is the standard trading lot on HOSE?",
+  "options": {
+   "A": "1,000 shares",
+   "B": "100 shares",
+   "C": "10 shares",
+   "D": "50 shares"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P016",
+  "question": "When does HOSE's opening auction (ATO) run?",
+  "options": {
+   "A": "9:00 to 9:15",
+   "B": "9:15 to 9:30",
+   "C": "8:45 to 9:00",
+   "D": "8:30 to 9:00"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P017",
+  "question": "When does HOSE's closing auction (ATC) run?",
+  "options": {
+   "A": "14:30 to 14:45",
+   "B": "11:15 to 11:30",
+   "C": "14:45 to 15:00",
+   "D": "15:00 to 15:15"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P018",
+  "question": "HOSE's midday break runs from:",
+  "options": {
+   "A": "11:30 to 13:00",
+   "B": "There is no break",
+   "C": "11:00 to 13:00",
+   "D": "12:00 to 13:30"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P019",
+  "question": "What is the settlement cycle for Vietnamese equities?",
+  "options": {
+   "A": "T+1",
+   "B": "T+2",
+   "C": "T+0",
+   "D": "T+3"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P020",
+  "question": "Which circular removed pre-funding for foreign institutional investors?",
+  "options": {
+   "A": "Circular 120/2020/TT-BTC",
+   "B": "Circular 91/2020/TT-BTC",
+   "C": "Circular 68/2024/TT-BTC",
+   "D": "Circular 96/2020/TT-BTC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P021",
+  "question": "From when could foreign institutional investors buy without full pre-funding?",
+  "options": {
+   "A": "1 January 2023",
+   "B": "5 May 2025",
+   "C": "1 July 2022",
+   "D": "2 November 2024"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P022",
+  "question": "Which exchange partner helped build HOSE's new trading system launched in 2025?",
+  "options": {
+   "A": "The Korea Exchange",
+   "B": "Nasdaq",
+   "C": "The Tokyo Stock Exchange",
+   "D": "SGX"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P023",
+  "question": "In October 2025, which index provider announced Vietnam's upgrade to secondary emerging market status?",
+  "options": {
+   "A": "STOXX",
+   "B": "FTSE Russell",
+   "C": "S&P Dow Jones",
+   "D": "MSCI"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P024",
+  "question": "A public company may qualify by charter capital of at least:",
+  "options": {
+   "A": "VND 30 billion",
+   "B": "VND 10 billion",
+   "C": "VND 100 billion",
+   "D": "VND 50 billion"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P025",
+  "question": "To qualify as public by shareholding, at least 10% of voting shares must be held by at least how many non-major investors?",
+  "options": {
+   "A": "100",
+   "B": "500",
+   "C": "50",
+   "D": "300"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P026",
+  "question": "A major shareholder holds at least what share of voting shares?",
+  "options": {
+   "A": "3%",
+   "B": "5%",
+   "C": "10%",
+   "D": "25%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P027",
+  "question": "Within how many working days must a person report becoming or ceasing to be a major shareholder?",
+  "options": {
+   "A": "10 working days",
+   "B": "3 working days",
+   "C": "5 working days",
+   "D": "24 hours"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P028",
+  "question": "A major shareholder must also report when its holding changes across each:",
+  "options": {
+   "A": "5% step",
+   "B": "0.5% step",
+   "C": "10% step",
+   "D": "1% step"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P029",
+  "question": "A public tender offer is first required when a holding would reach:",
+  "options": {
+   "A": "25% of voting shares",
+   "B": "50%",
+   "C": "35%",
+   "D": "20%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P030",
+  "question": "Which is NOT a further tender-offer threshold under Article 35?",
+  "options": {
+   "A": "50%",
+   "B": "65%",
+   "C": "45%",
+   "D": "35%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P031",
+  "question": "Which article of the Law on Securities sets tender-offer rules?",
+  "options": {
+   "A": "Article 210",
+   "B": "Article 12",
+   "C": "Article 118",
+   "D": "Article 35"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P032",
+  "question": "Insiders must report a planned trade at least how many working days in advance?",
+  "options": {
+   "A": "10 working days",
+   "B": "1 working day",
+   "C": "3 working days",
+   "D": "5 working days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P033",
+  "question": "After reporting, insiders must complete the trade within:",
+  "options": {
+   "A": "30 days",
+   "B": "90 days",
+   "C": "60 days",
+   "D": "10 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P034",
+  "question": "Insiders must report the trade result within how many working days of completion?",
+  "options": {
+   "A": "3 working days",
+   "B": "15 working days",
+   "C": "5 working days",
+   "D": "10 working days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P035",
+  "question": "Which Penal Code article criminalises using inside information to trade securities?",
+  "options": {
+   "A": "Article 211",
+   "B": "Article 174",
+   "C": "Article 210",
+   "D": "Article 222"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P036",
+  "question": "Which Penal Code article criminalises securities market manipulation?",
+  "options": {
+   "A": "Article 210",
+   "B": "Article 200",
+   "C": "Article 211",
+   "D": "Article 212"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P037",
+  "question": "Which circular governs disclosure on the Vietnamese securities market?",
+  "options": {
+   "A": "Circular 91/2020/TT-BTC",
+   "B": "Circular 200/2014/TT-BTC",
+   "C": "Circular 155/2015/TT-BTC",
+   "D": "Circular 96/2020/TT-BTC"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P038",
+  "question": "Extraordinary information must be disclosed within:",
+  "options": {
+   "A": "10 days",
+   "B": "24 hours",
+   "C": "5 working days",
+   "D": "72 hours"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P039",
+  "question": "Which decree sets administrative penalties in securities?",
+  "options": {
+   "A": "Decree 88/2019/ND-CP",
+   "B": "Decree 156/2020/ND-CP",
+   "C": "Decree 41/2018/ND-CP",
+   "D": "Decree 155/2020/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P040",
+  "question": "Which decree amended the securities penalty decree in 2021?",
+  "options": {
+   "A": "Decree 128/2021/ND-CP",
+   "B": "Decree 01/2021/ND-CP",
+   "C": "Decree 126/2020/ND-CP",
+   "D": "Decree 132/2020/ND-CP"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P041",
+  "question": "Fines for organisations under the securities penalty decree are generally:",
+  "options": {
+   "A": "Equal to those for individuals",
+   "B": "Half those for individuals",
+   "C": "Twice those for individuals",
+   "D": "Ten times those for individuals"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P042",
+  "question": "Which decree guides the Law on Securities, including licensing capital?",
+  "options": {
+   "A": "Decree 156/2020/ND-CP",
+   "B": "Decree 174/2016/ND-CP",
+   "C": "Decree 58/2012/ND-CP",
+   "D": "Decree 155/2020/ND-CP"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P043",
+  "question": "Minimum charter capital for securities brokerage is:",
+  "options": {
+   "A": "VND 165 billion",
+   "B": "VND 25 billion",
+   "C": "VND 50 billion",
+   "D": "VND 10 billion"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P044",
+  "question": "Minimum charter capital for proprietary trading is:",
+  "options": {
+   "A": "VND 25 billion",
+   "B": "VND 165 billion",
+   "C": "VND 100 billion",
+   "D": "VND 50 billion"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P045",
+  "question": "Minimum charter capital for securities underwriting is:",
+  "options": {
+   "A": "VND 165 billion",
+   "B": "VND 50 billion",
+   "C": "VND 100 billion",
+   "D": "VND 250 billion"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P046",
+  "question": "Minimum charter capital for securities investment advisory is:",
+  "options": {
+   "A": "VND 50 billion",
+   "B": "VND 5 billion",
+   "C": "VND 25 billion",
+   "D": "VND 10 billion"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P047",
+  "question": "Minimum charter capital for a fund management company is:",
+  "options": {
+   "A": "VND 25 billion",
+   "B": "VND 100 billion",
+   "C": "VND 10 billion",
+   "D": "VND 50 billion"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P048",
+  "question": "Which circular sets the financial safety ratio for securities companies?",
+  "options": {
+   "A": "Circular 121/2020/TT-BTC",
+   "B": "Circular 68/2024/TT-BTC",
+   "C": "Circular 91/2020/TT-BTC",
+   "D": "Circular 96/2020/TT-BTC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P049",
+  "question": "The available capital ratio equals available capital divided by:",
+  "options": {
+   "A": "Total assets",
+   "B": "Total risk value",
+   "C": "Charter capital",
+   "D": "Margin loans"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P050",
+  "question": "What is the minimum available capital ratio?",
+  "options": {
+   "A": "150%",
+   "B": "180%",
+   "C": "120%",
+   "D": "200%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P051",
+  "question": "A securities company with an available capital ratio from 150% to under 180% is placed under:",
+  "options": {
+   "A": "Control",
+   "B": "Warning status",
+   "C": "Special control",
+   "D": "No action"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P052",
+  "question": "A ratio from 120% to under 150% places the firm under:",
+  "options": {
+   "A": "Special control",
+   "B": "Liquidation",
+   "C": "Control",
+   "D": "Warning status"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P053",
+  "question": "A ratio below 120% places the firm under:",
+  "options": {
+   "A": "Warning status",
+   "B": "Special control",
+   "C": "Normal supervision",
+   "D": "Control"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P054",
+  "question": "How often do securities companies report their available capital ratio to the SSC?",
+  "options": {
+   "A": "Monthly",
+   "B": "Daily",
+   "C": "Quarterly only",
+   "D": "Annually"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P055",
+  "question": "The minimum initial margin ratio for margin lending is:",
+  "options": {
+   "A": "70%",
+   "B": "30%",
+   "C": "40%",
+   "D": "50%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P056",
+  "question": "Total margin lending by a securities company may not exceed what share of its equity?",
+  "options": {
+   "A": "150%",
+   "B": "300%",
+   "C": "200%",
+   "D": "100%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P057",
+  "question": "Margin lending is permitted only against:",
+  "options": {
+   "A": "Government bonds only",
+   "B": "Real estate",
+   "C": "Eligible listed shares",
+   "D": "Any UPCoM share"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P058",
+  "question": "When an account falls below the maintenance ratio, the firm:",
+  "options": {
+   "A": "Suspends the stock",
+   "B": "Issues a margin call and may force-sell",
+   "C": "Must lend more",
+   "D": "Reports the client to the police"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P059",
+  "question": "What personal income tax rate applies to the sale value of each securities transfer by individuals?",
+  "options": {
+   "A": "0.1%",
+   "B": "20% of gains",
+   "C": "0.5%",
+   "D": "1%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P060",
+  "question": "What personal income tax rate applies to cash dividends received by individuals?",
+  "options": {
+   "A": "10%",
+   "B": "20%",
+   "C": "5%",
+   "D": "0.1%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P061",
+  "question": "What is the aggregate foreign ownership limit for Vietnamese banks?",
+  "options": {
+   "A": "49%",
+   "B": "20%",
+   "C": "50%",
+   "D": "30%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P062",
+  "question": "A single strategic foreign investor in a Vietnamese bank may hold at most:",
+  "options": {
+   "A": "20%",
+   "B": "10%",
+   "C": "15%",
+   "D": "30%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P063",
+  "question": "Which exchange hosts Vietnam's government bond trading market?",
+  "options": {
+   "A": "VSDC",
+   "B": "HNX",
+   "C": "UPCoM only",
+   "D": "HOSE"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P064",
+  "question": "Where no foreign ownership limit applies, a company may open foreign ownership up to:",
+  "options": {
+   "A": "75%",
+   "B": "65%",
+   "C": "49%",
+   "D": "100%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P065",
+  "question": "Since when have VN30 index futures traded on HNX?",
+  "options": {
+   "A": "June 2019",
+   "B": "August 2017",
+   "C": "May 2025",
+   "D": "January 2015"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P066",
+  "question": "Covered warrants have traded on HOSE since:",
+  "options": {
+   "A": "2015",
+   "B": "2022",
+   "C": "2019",
+   "D": "2012"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P067",
+  "question": "On which exchange do VN30 index futures trade?",
+  "options": {
+   "A": "HOSE",
+   "B": "UPCoM",
+   "C": "VSDC",
+   "D": "HNX"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P068",
+  "question": "Which index tracks HOSE's 30 largest liquid stocks?",
+  "options": {
+   "A": "VNMID",
+   "B": "VN100",
+   "C": "VN30",
+   "D": "HNX30"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P069",
+  "question": "Which law governs anti-money laundering in Vietnam?",
+  "options": {
+   "A": "Law No. 07/2012/QH13",
+   "B": "Law on Securities 54/2019/QH14",
+   "C": "Law on Credit Institutions No. 32/2024/QH15",
+   "D": "Law on Anti-Money Laundering No. 14/2022/QH15"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P070",
+  "question": "When did the current AML law take effect?",
+  "options": {
+   "A": "1 July 2024",
+   "B": "1 March 2023",
+   "C": "1 January 2013",
+   "D": "1 January 2021"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P071",
+  "question": "Suspicious transaction reports go to:",
+  "options": {
+   "A": "VSDC",
+   "B": "The Ministry of Public Security only",
+   "C": "The SSC only",
+   "D": "The State Bank of Vietnam's AML department"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P072",
+  "question": "Suspicious transactions must be reported within:",
+  "options": {
+   "A": "10 working days",
+   "B": "30 days",
+   "C": "3 working days of detection",
+   "D": "24 hours"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P073",
+  "question": "AML records must be retained for:",
+  "options": {
+   "A": "5 years",
+   "B": "10 years",
+   "C": "3 years",
+   "D": "2 years"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P074",
+  "question": "What is the large-value cash transaction reporting threshold under Decision 11/2023/QD-TTg?",
+  "options": {
+   "A": "VND 1 billion",
+   "B": "VND 100 million",
+   "C": "VND 300 million",
+   "D": "VND 400 million"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P075",
+  "question": "Who must public companies register their shares with?",
+  "options": {
+   "A": "The State Bank",
+   "B": "The tax authority",
+   "C": "VSDC",
+   "D": "The Ministry of Planning and Investment"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P076",
+  "question": "A single non-strategic foreign organisation may hold at most what share of a Vietnamese bank?",
+  "options": {
+   "A": "30%",
+   "B": "20%",
+   "C": "15%",
+   "D": "5%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P077",
+  "question": "Who approves a transaction worth 35% or more of a joint stock company's total assets?",
+  "options": {
+   "A": "The CEO alone",
+   "B": "The chief accountant",
+   "C": "The SSC",
+   "D": "The general meeting of shareholders"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P078",
+  "question": "Which law sets the 35%-of-assets threshold for shareholder approval of transactions?",
+  "options": {
+   "A": "Law on Enterprises No. 59/2020/QH14",
+   "B": "Civil Code 2015",
+   "C": "Law on Investment 61/2020/QH14",
+   "D": "Law on Securities 54/2019/QH14"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P079",
+  "question": "Which body handles listing of shares on HOSE?",
+  "options": {
+   "A": "VSDC",
+   "B": "The Ministry of Finance directly",
+   "C": "The State Bank",
+   "D": "HOSE under the Vietnam Exchange"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P080",
+  "question": "Who are 'insiders' required to report trades?",
+  "options": {
+   "A": "Only foreign investors",
+   "B": "All shareholders",
+   "C": "All employees",
+   "D": "Board members, executives, the chief accountant and other key managers"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P081",
+  "question": "Which statement is NOT a periodic disclosure item for listed companies?",
+  "options": {
+   "A": "Audited annual financial statements",
+   "B": "Annual report",
+   "C": "Corporate governance report",
+   "D": "Daily cash balances"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P082",
+  "question": "A single foreign individual may hold at most what share of a Vietnamese bank's charter capital?",
+  "options": {
+   "A": "15%",
+   "B": "5%",
+   "C": "10%",
+   "D": "20%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P083",
+  "question": "Which regulator approves a securities company's establishment and operation licence?",
+  "options": {
+   "A": "HOSE",
+   "B": "The State Bank",
+   "C": "The SSC",
+   "D": "VSDC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P084",
+  "question": "Which settlement institution acts as central counterparty for derivatives in Vietnam?",
+  "options": {
+   "A": "The SSC",
+   "B": "VSDC",
+   "C": "The State Bank",
+   "D": "HNX"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P085",
+  "question": "Can investors normally short-sell shares on Vietnamese exchanges?",
+  "options": {
+   "A": "Yes, freely",
+   "B": "No, covered short selling is not generally available",
+   "C": "Only on UPCoM",
+   "D": "Yes, after a locate"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "securities_vn_P086",
+  "question": "Which unit trades separately from standard lots on HOSE?",
+  "options": {
+   "A": "Odd lots of 1 to 99 shares",
+   "B": "Bonds only",
+   "C": "Block trades below 100 shares only",
+   "D": "Warrants only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "securities_vn_P087",
+  "question": "When the market sees a put-through (negotiated) trade on HOSE, it is executed:",
+  "options": {
+   "A": "Only after 15:30",
+   "B": "Only on UPCoM",
+   "C": "Outside the order book, within the price band",
+   "D": "Only at the reference price"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P088",
+  "question": "Which market status did FTSE Russell's 2025 announcement assign to Vietnam?",
+  "options": {
+   "A": "Advanced emerging",
+   "B": "Developed",
+   "C": "Secondary emerging",
+   "D": "Frontier (unchanged)"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "securities_vn_P089",
+  "question": "Which ministry issues circulars on securities market operations?",
+  "options": {
+   "A": "The Ministry of Planning and Investment",
+   "B": "The Ministry of Justice",
+   "C": "The Ministry of Industry and Trade",
+   "D": "The Ministry of Finance"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "securities_vn_P090",
+  "question": "What is the role of the reference price for a stock?",
+  "options": {
+   "A": "The average analyst target",
+   "B": "The base from which daily price limits are calculated",
+   "C": "The IPO price",
+   "D": "The book value per share"
+  },
+  "answer": "B"
+ }
+]

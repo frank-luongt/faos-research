@@ -1,0 +1,275 @@
+[
+ {
+  "id": "securities_us_T1",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain Regulation Best Interest's four component obligations and how Form CRS relates to them.",
+  "ground_truth": {
+   "answer": "Reg BI requires a broker-dealer recommending to a retail customer to act in the customer's best interest. Its four obligations are disclosure, care, conflict of interest and compliance. Form CRS is a short relationship summary delivered to retail investors describing services, fees and conflicts.",
+   "required_terms": [
+    "Reg BI",
+    "Disclosure Obligation",
+    "Care Obligation",
+    "Conflict of Interest Obligation",
+    "Compliance Obligation",
+    "Form CRS"
+   ],
+   "term_definitions": {
+    "Reg BI": "Best-interest standard for broker-dealer recommendations to retail customers (from 30 June 2020)",
+    "Form CRS": "Customer relationship summary"
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T2",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the broker-dealer net capital rule and the aggregate indebtedness ratio.",
+  "ground_truth": {
+   "answer": "SEC Rule 15c3-1 requires minimum net capital, net worth less nonallowable assets and haircuts: $250,000 for carrying firms, as little as $5,000 for introducing firms that never receive customer assets. Under the basic method aggregate indebtedness may not exceed 15:1 (1500%) of net capital, with an early-warning level of 12:1 under Rule 17a-11.",
+   "required_terms": [
+    "Net Capital",
+    "Rule 15c3-1",
+    "Haircut",
+    "Aggregate Indebtedness",
+    "Early Warning"
+   ],
+   "term_definitions": {
+    "Net Capital": "Liquid net worth after haircuts",
+    "Aggregate Indebtedness": "Max 1500% of net capital; early warning 1200%"
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T3",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is T+1 settlement in the US, when did it start, and what did it change for firms?",
+  "ground_truth": {
+   "answer": "Since 28 May 2024 most US securities trades settle one business day after trade date (T+1), down from T+2. Firms must complete allocations, confirmations and affirmations by the end of trade date (Rule 15c6-2), compressing post-trade operations and funding.",
+   "required_terms": [
+    "T+1",
+    "Settlement",
+    "Trade Date",
+    "Affirmation",
+    "Rule 15c6-2"
+   ],
+   "term_definitions": {
+    "T+1": "Settlement one business day after trade date, effective 28 May 2024"
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T4",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A carrying broker-dealer has net capital of $280,000 against a $250,000 minimum and an aggregate indebtedness ratio of 13:1. Assess its position.",
+  "ground_truth": {
+   "answer": "Net capital is 112% of the minimum, BELOW the 120% early-warning level, and aggregate indebtedness of 13:1 EXCEEDS the 12:1 early-warning level though it is under the 15:1 maximum. Both trigger a Rule 17a-11 notice to the SEC and FINRA within 24 hours.",
+   "metrics": {
+    "net_capital_cushion": {
+     "value": 1.12,
+     "healthy": ">1.20",
+     "assessment": "BELOW"
+    },
+    "aggregate_indebtedness_ratio": {
+     "value": 13,
+     "healthy": "<12",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T5",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "An S&P 500 index fund reports an expense ratio of 0.45% and annual tracking error of 0.40%. Assess both metrics.",
+  "ground_truth": {
+   "answer": "An expense ratio of 0.45% EXCEEDS the under-0.1% norm for broad index funds, and tracking error of 0.40% EXCEEDS the under-0.1% healthy level, so the fund is costly and tracks its index poorly.",
+   "metrics": {
+    "expense_ratio": {
+     "value": 0.0045,
+     "healthy": "<0.001",
+     "assessment": "EXCEEDS"
+    },
+    "tracking_error": {
+     "value": 0.004,
+     "healthy": "<0.001",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T6",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A company director, who knows the quarter's results are weak and not yet public, wants to set up a 10b5-1 plan and start selling next week. What rules apply?",
+  "ground_truth": {
+   "answer": "Trading on the material nonpublic results would violate Rule 10b-5, and a 10b5-1 plan is only a defense if adopted in good faith while unaware of such information, so the plan should wait until results are public. Directors face a cooling-off period of the later of 90 days or two business days after the next 10-Q/10-K, up to 120 days, so selling next week is not possible. Each sale is reported on Form 4 within two business days, and Section 16(b) short-swing profit recovery applies to matched trades within six months.",
+   "regulations": [
+    "Rule 10b-5",
+    "Rule 10b5-1",
+    "Section 16",
+    "Form 4"
+   ],
+   "requirements": [
+    "no trading on MNPI",
+    "good-faith plan adoption",
+    "90-120 day cooling-off",
+    "Form 4 in 2 business days",
+    "short-swing profits"
+   ]
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T7",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An activist fund buys 6.5% of a listed company and plans to push for board seats. What must it file and when?",
+  "ground_truth": {
+   "answer": "Above 5% beneficial ownership with intent to influence control, it must file Schedule 13D within five business days (shortened from ten calendar days by the 2023 amendments), and file amendments within two business days of material changes. It cannot use the passive Schedule 13G.",
+   "regulations": [
+    "Exchange Act Section 13(d)",
+    "Schedule 13D",
+    "Schedule 13G"
+   ],
+   "requirements": [
+    "5% threshold",
+    "13D within 5 business days",
+    "amendments within 2 business days",
+    "13G unavailable with control intent"
+   ]
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T8",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Compliance Officer, you find a representative put a 74-year-old retiree's savings into a 3x leveraged ETF held for months. What do you do?",
+  "ground_truth": {
+   "role": "Chief Compliance Officer",
+   "decision_pattern": "recommendation_review",
+   "expected_factors": [
+    "Reg BI care obligation and customer profile",
+    "leveraged ETF holding-period risk",
+    "costs and reasonably available alternatives",
+    "supervisory review under FINRA Rule 3110",
+    "remediation and rep discipline"
+   ],
+   "kpi_references": [
+    "Reg BI exceptions reviewed within 10 business days",
+    "no repeat exam findings"
+   ],
+   "vocabulary": [
+    "Reg BI",
+    "Care Obligation",
+    "Supervision",
+    "FINRA Rule 3110",
+    "Form CRS"
+   ],
+   "communication_style": "Rule-citing, supervisory, documentation-first"
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T9",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As FINOP, a large trading loss leaves net capital at 115% of the minimum. What are your next steps?",
+  "ground_truth": {
+   "role": "Financial and Operations Principal (FINOP)",
+   "decision_pattern": "capital_deterioration",
+   "expected_factors": [
+    "recompute net capital and haircuts",
+    "Rule 17a-11 notice within 24 hours",
+    "restrict capital-intensive business",
+    "capital infusion or subordinated loan",
+    "daily monitoring and FOCUS reporting"
+   ],
+   "kpi_references": [
+    "net capital cushion > 120% of minimum",
+    "aggregate indebtedness < 12:1"
+   ],
+   "vocabulary": [
+    "Net Capital",
+    "Rule 15c3-1",
+    "Rule 17a-11",
+    "Haircut",
+    "FOCUS Report"
+   ],
+   "communication_style": "Exact, deadline-driven, conservative"
+  },
+  "cell": "securities_us"
+ },
+ {
+  "id": "securities_us_T10",
+  "industry": "securities",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "Trade surveillance flags a proprietary trader who repeatedly bought shares minutes before large customer buy orders. Trace the handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Trade Surveillance",
+     "to": "Chief Compliance Officer",
+     "context": [
+      "alert_details",
+      "order_and_execution_data",
+      "trader_communications"
+     ],
+     "sla": {
+      "triage": "5 business days"
+     }
+    },
+    {
+     "step": 2,
+     "condition": "If substantiated (trading ahead / front-running, FINRA 5320)",
+     "from": "Chief Compliance Officer",
+     "to": "Legal",
+     "context": [
+      "investigation_file",
+      "customer_harm_estimate"
+     ]
+    },
+    {
+     "step": 3,
+     "from": "Chief Compliance Officer",
+     "to": "FINRA",
+     "action": "Rule 4530 report",
+     "sla": {
+      "report": "30 calendar days"
+     },
+     "also": "AML Officer decides on a SAR within 30 days"
+    }
+   ],
+   "terms": [
+    "Trade Surveillance",
+    "Front-Running",
+    "FINRA Rule 5320",
+    "Rule 4530",
+    "SAR"
+   ],
+   "escalation_level": "L4_executive (substantiated front-running)"
+  },
+  "cell": "securities_us"
+ }
+]

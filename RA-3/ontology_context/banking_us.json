@@ -1,0 +1,288 @@
+{
+  "industry": "banking_us",
+  "jurisdiction": "US",
+  "status": "draft RA-3 v6 cell, pending expert review",
+  "role_layer": {
+    "chief_credit_officer": {
+      "title": "Chief Credit Officer",
+      "persona": "Guardian of loan-book quality",
+      "communication_style": "Conservative, evidence-based, policy-anchored",
+      "kpis": {
+        "noncurrent_loan_ratio": "< 1% of total loans",
+        "net_charge_off_rate": "< 0.5% annualized",
+        "criticized_assets": "< 25% of Tier 1 capital plus ACL"
+      },
+      "vocabulary": [
+        "Risk Rating",
+        "Special Mention",
+        "Substandard",
+        "Doubtful",
+        "DSCR",
+        "LTV",
+        "ACL",
+        "Workout",
+        "Concentration Limit"
+      ],
+      "decision_patterns": {
+        "deteriorating_credit": {
+          "steps": [
+            "re_underwrite_cash_flow",
+            "downgrade_risk_rating",
+            "update_CECL_allowance",
+            "assign_to_special_assets",
+            "workout_or_restructure"
+          ],
+          "classification": [
+            "pass",
+            "special_mention",
+            "substandard",
+            "doubtful",
+            "loss"
+          ]
+        }
+      },
+      "domain_knowledge": {
+        "cre_guidance": "Interagency CRE concentration guidance: CRE above 300% of total risk-based capital, with 50% growth in 36 months, draws heightened scrutiny",
+        "metrics": [
+          "DSCR",
+          "LTV",
+          "debt_yield"
+        ]
+      }
+    },
+    "bsa_officer": {
+      "title": "BSA Officer",
+      "persona": "Accountable owner of the AML/CFT program",
+      "communication_style": "Precise, regulation-citing, confidential",
+      "kpis": {
+        "sar_timeliness": "100% filed within 30 days of detection",
+        "alert_backlog": "< 30 days",
+        "independent_testing": "No repeat findings"
+      },
+      "vocabulary": [
+        "SAR",
+        "CTR",
+        "Structuring",
+        "CDD",
+        "EDD",
+        "Beneficial Owner",
+        "OFAC",
+        "SDN List",
+        "FinCEN"
+      ],
+      "decision_patterns": {
+        "suspicious_activity": {
+          "steps": [
+            "alert_review",
+            "case_investigation",
+            "EDD",
+            "SAR_decision",
+            "continuing_activity_review"
+          ],
+          "confidentiality": "Never disclose a SAR or its existence to the subject"
+        }
+      },
+      "domain_knowledge": {
+        "program_pillars": [
+          "internal_controls",
+          "independent_testing",
+          "designated_BSA_officer",
+          "training",
+          "CDD"
+        ]
+      }
+    },
+    "treasurer": {
+      "title": "Treasurer / Head of ALM",
+      "persona": "Steward of liquidity and interest-rate risk",
+      "communication_style": "Quantitative, scenario-driven",
+      "kpis": {
+        "lcr": ">= 100%",
+        "nsfr": ">= 100%",
+        "eve_sensitivity": "Within board limits for +/-200bp"
+      },
+      "vocabulary": [
+        "LCR",
+        "NSFR",
+        "HQLA",
+        "NIM",
+        "EVE",
+        "Duration Gap",
+        "Contingency Funding Plan"
+      ]
+    }
+  },
+  "domain_layer": {
+    "concepts": {
+      "cet1_ratio": {
+        "definition": "Common Equity Tier 1 capital divided by risk-weighted assets",
+        "regulatory_minimum": "4.5%",
+        "with_conservation_buffer": "7.0% (4.5% + 2.5% buffer)",
+        "well_capitalized_pca": "6.5%"
+      },
+      "tier1_capital_ratio": {
+        "definition": "Tier 1 capital divided by risk-weighted assets",
+        "regulatory_minimum": "6%",
+        "well_capitalized_pca": "8%"
+      },
+      "total_capital_ratio": {
+        "definition": "Total capital divided by risk-weighted assets",
+        "regulatory_minimum": "8%",
+        "well_capitalized_pca": "10%"
+      },
+      "tier1_leverage_ratio": {
+        "definition": "Tier 1 capital divided by average total consolidated assets",
+        "regulatory_minimum": "4%",
+        "well_capitalized_pca": "5%"
+      },
+      "lcr": {
+        "definition": "High-quality liquid assets divided by total net cash outflows over a 30-day stress period",
+        "healthy_range": ">= 100%"
+      },
+      "nsfr": {
+        "definition": "Available stable funding divided by required stable funding over one year",
+        "healthy_range": ">= 100%"
+      },
+      "net_interest_margin": {
+        "definition": "Net interest income divided by average earning assets",
+        "healthy_range": "3.0-3.5%"
+      },
+      "efficiency_ratio": {
+        "definition": "Noninterest expense divided by net interest income plus noninterest income",
+        "healthy_range": "< 60%",
+        "world_class": "< 50%"
+      },
+      "return_on_assets": {
+        "definition": "Net income divided by average total assets",
+        "healthy_range": "~1.0% or higher"
+      },
+      "loan_to_deposit_ratio": {
+        "definition": "Total loans divided by total deposits",
+        "healthy_range": "70-90%"
+      },
+      "camels": {
+        "definition": "Supervisory rating of Capital, Asset quality, Management, Earnings, Liquidity and Sensitivity to market risk, each scored 1 (best) to 5 (worst), plus a composite"
+      },
+      "dscr": {
+        "definition": "Net operating income divided by annual debt service",
+        "healthy_range": ">= 1.25x for CRE"
+      }
+    },
+    "regulations": {
+      "bsa_ctr": {
+        "name": "Currency Transaction Report",
+        "rule": "Cash transactions over $10,000 in one business day, aggregated, filed with FinCEN within 15 calendar days"
+      },
+      "bsa_sar": {
+        "name": "Suspicious Activity Report",
+        "rule": "File within 30 calendar days of initial detection (up to 60 if no suspect is identified); thresholds $5,000 with a suspect, $25,000 without; retain 5 years; disclosure to the subject is prohibited"
+      },
+      "structuring": {
+        "name": "31 U.S.C. 5324",
+        "rule": "Breaking up cash transactions to evade CTR filing is a federal crime regardless of the funds' source"
+      },
+      "cdd_rule": {
+        "name": "FinCEN CDD Rule (2018)",
+        "rule": "Identify beneficial owners of legal-entity customers: each person owning 25% or more, plus one control person"
+      },
+      "ofac": {
+        "name": "OFAC sanctions",
+        "rule": "Block property of SDNs; report blocked property to OFAC within 10 business days; annual blocked-property report by 30 September"
+      },
+      "reg_o": {
+        "name": "Regulation O",
+        "rule": "Insider loans on substantially the same terms as comparable transactions; prior board approval, with the interested insider abstaining, for loans above the greater of $25,000 or 5% of capital and surplus, and always above $500,000"
+      },
+      "reg_w": {
+        "name": "Regulation W",
+        "rule": "Covered transactions with one affiliate capped at 10% of capital and surplus, and with all affiliates at 20%"
+      },
+      "pca": {
+        "name": "Prompt Corrective Action (12 CFR Part 6/324)",
+        "categories": [
+          "well capitalized",
+          "adequately capitalized",
+          "undercapitalized",
+          "significantly undercapitalized",
+          "critically undercapitalized"
+        ]
+      }
+    }
+  },
+  "interaction_layer": {
+    "handoffs": {
+      "payments_to_sanctions": {
+        "trigger": "OFAC screening hit on a wire",
+        "from": "Payments Operations",
+        "to": "Sanctions Compliance",
+        "context": [
+          "wire_details",
+          "hit_details",
+          "originator_and_beneficiary_data"
+        ],
+        "sla": {
+          "hold_and_review": "Same business day"
+        }
+      },
+      "sanctions_to_ofac": {
+        "trigger": "Confirmed SDN match",
+        "from": "Sanctions Compliance",
+        "to": "OFAC",
+        "context": [
+          "blocked_property_report"
+        ],
+        "sla": {
+          "report": "10 business days from blocking"
+        }
+      },
+      "sanctions_to_bsa": {
+        "trigger": "Confirmed or suspicious match",
+        "from": "Sanctions Compliance",
+        "to": "BSA Officer",
+        "context": [
+          "case_file",
+          "related_accounts"
+        ],
+        "sla": {
+          "sar_decision": "30 days from detection"
+        }
+      },
+      "credit_to_special_assets": {
+        "trigger": "Loan downgraded to substandard",
+        "from": "Chief Credit Officer",
+        "to": "Special Assets",
+        "context": [
+          "risk_rating_rationale",
+          "collateral_valuation",
+          "workout_options"
+        ]
+      }
+    },
+    "escalation_matrix": {
+      "aml": {
+        "sar_filed": "L3_management (board notified of SAR filings)",
+        "confirmed_sanctions_match": "L4_executive"
+      },
+      "credit": {
+        "capital_below_well_capitalized": "L5_board"
+      }
+    }
+  },
+  "rag_chunks": [
+    "US banks must hold Common Equity Tier 1 capital of at least 4.5% of risk-weighted assets, Tier 1 capital of 6% and total capital of 8%, plus a capital conservation buffer of 2.5% of CET1, so the effective CET1 floor before payout restrictions is 7%. The Tier 1 leverage ratio minimum is 4%. Under prompt corrective action a bank is well capitalized at CET1 of 6.5%, Tier 1 of 8%, total capital of 10% and leverage of 5%.",
+    "The liquidity coverage ratio compares a bank's stock of high-quality liquid assets with its total net cash outflows over a 30-day stress period and must be at least 100% for covered banks. The net stable funding ratio compares available stable funding with required stable funding over a one-year horizon and must also be at least 100%. Level 1 HQLA include reserves and Treasury securities with no haircut; Level 2A assets take a 15% haircut.",
+    "Net interest margin is net interest income divided by average earning assets; US community banks have typically run margins around 3 to 3.5 percent. The efficiency ratio divides noninterest expense by revenue, the sum of net interest income and noninterest income; below 60 percent is generally considered efficient and below 50 percent strong. Return on assets of about 1 percent is a common benchmark of a profitable bank.",
+    "Examiners rate banks under the Uniform Financial Institutions Rating System, known as CAMELS: Capital adequacy, Asset quality, Management, Earnings, Liquidity and Sensitivity to market risk. Each component and the composite are scored from 1, the strongest, to 5, the weakest. Composite ratings of 3 or worse usually bring supervisory action. Ratings are confidential supervisory information.",
+    "The Bank Secrecy Act requires a Currency Transaction Report for each cash transaction, or several in one business day by or for the same person, totalling more than 10,000 dollars, filed with FinCEN within 15 calendar days. Structuring, breaking up transactions to avoid the reporting threshold, is a federal crime under 31 U.S.C. 5324 even when the money is legitimate, and banks report it on a SAR.",
+    "Banks file a Suspicious Activity Report within 30 calendar days of initial detection of facts that may support a filing; if no suspect is identified the bank may take an additional 30 days, but no more than 60 days in total. The thresholds are 5,000 dollars where a suspect can be identified and 25,000 dollars regardless of a suspect, with insider abuse reportable at any amount. SARs and their supporting documentation are kept for five years, and disclosing a SAR or its existence to the subject is prohibited.",
+    "FinCEN's customer due diligence rule, in force since May 2018, requires banks to identify and verify the beneficial owners of legal-entity customers: every individual who owns 25 percent or more of the equity, and one individual with significant responsibility to control the entity. It also requires risk-based ongoing monitoring and customer risk profiles. Enhanced due diligence applies to higher-risk customers such as foreign correspondent accounts.",
+    "OFAC administers US sanctions. When a bank receives funds or property in which a Specially Designated National has an interest, it must block them, place them in an interest-bearing blocked account and report to OFAC within 10 business days. Rejected transactions are also reported within 10 business days. Each year, by 30 September, holders file a report of all blocked property held as of 30 June. OFAC liability is strict, so screening covers both parties to a wire and intermediaries.",
+    "Regulation O limits extensions of credit to a bank's executive officers, directors and principal shareholders. Loans must be on substantially the same terms, including interest rates and collateral, as comparable transactions with unrelated persons and must not involve more than the normal risk of repayment. Loans above the greater of 25,000 dollars or 5 percent of capital and surplus, and in any case above 500,000 dollars, need prior approval by the board with the interested party abstaining.",
+    "Regulation W implements Sections 23A and 23B of the Federal Reserve Act. Covered transactions between a bank and any single affiliate are limited to 10 percent of the bank's capital and surplus, and with all affiliates together to 20 percent, and credit extensions must be collateralized at 100 to 130 percent depending on the collateral. Section 23B requires transactions with affiliates to be on market terms.",
+    "National banks' lending to one borrower is limited to 15 percent of capital and surplus on an unsecured basis, plus an additional 10 percent if fully secured by readily marketable collateral. Deposit insurance from the FDIC covers 250,000 dollars per depositor, per insured bank, for each ownership category. The Federal Reserve set reserve requirement ratios to zero percent in March 2020.",
+    "Loans are graded pass, special mention, substandard, doubtful or loss. Special mention assets have potential weaknesses that deserve management's close attention; substandard assets are inadequately protected by the obligor's paying capacity or collateral; doubtful assets have weaknesses that make full collection highly questionable. For commercial real estate, lenders typically require a debt service coverage ratio of at least 1.25 times, and interagency guidance flags CRE concentrations above 300 percent of total risk-based capital.",
+    "National banks are chartered and supervised by the OCC; state member banks by the Federal Reserve and their state; state nonmember banks by the FDIC and their state. Bank holding companies are supervised by the Federal Reserve. The CFPB examines banks with more than 10 billion dollars in assets for federal consumer financial law. Call Reports are filed quarterly with the FFIEC within 30 days of quarter-end, or 35 days for banks with multiple foreign offices.",
+    "Under Regulation E a consumer must report an unauthorized electronic fund transfer within 60 days of the statement on which it first appears. The bank must investigate within 10 business days, or up to 45 days if it provisionally credits the account within the 10 days. Under Regulation CC, as adjusted for inflation from 1 July 2025, the first 275 dollars of most check deposits must generally be available the next business day.",
+    "Large bank holding companies are subject to the Federal Reserve's annual stress test. The results set each firm's stress capital buffer, which replaces the static 2.5 percent capital conservation buffer for these firms and is floored at 2.5 percent. Prompt corrective action ranks banks as well capitalized, adequately capitalized, undercapitalized, significantly undercapitalized or critically undercapitalized; critically undercapitalized means tangible equity of 2 percent or less of total assets."
+  ]
+}

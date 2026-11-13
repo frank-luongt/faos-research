@@ -1,0 +1,992 @@
+[
+ {
+  "id": "banking_us_P001",
+  "question": "What is the US regulatory minimum CET1 ratio before buffers?",
+  "options": {
+   "A": "6%",
+   "B": "4.5%",
+   "C": "7%",
+   "D": "8%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P002",
+  "question": "What is the size of the capital conservation buffer?",
+  "options": {
+   "A": "1% of CET1",
+   "B": "5% of Tier 1",
+   "C": "4.5% of total capital",
+   "D": "2.5% of CET1"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P003",
+  "question": "What is the minimum Tier 1 risk-based capital ratio?",
+  "options": {
+   "A": "10%",
+   "B": "4%",
+   "C": "8%",
+   "D": "6%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P004",
+  "question": "What is the minimum total risk-based capital ratio?",
+  "options": {
+   "A": "8%",
+   "B": "6%",
+   "C": "12%",
+   "D": "10%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P005",
+  "question": "What is the minimum Tier 1 leverage ratio for US banks?",
+  "options": {
+   "A": "3%",
+   "B": "6%",
+   "C": "5%",
+   "D": "4%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P006",
+  "question": "Under prompt corrective action, what CET1 ratio is needed to be well capitalized?",
+  "options": {
+   "A": "6.5%",
+   "B": "8%",
+   "C": "7%",
+   "D": "4.5%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P007",
+  "question": "Under prompt corrective action, what total capital ratio is needed to be well capitalized?",
+  "options": {
+   "A": "12%",
+   "B": "8%",
+   "C": "9%",
+   "D": "10%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P008",
+  "question": "Under prompt corrective action, what leverage ratio is needed to be well capitalized?",
+  "options": {
+   "A": "6%",
+   "B": "3%",
+   "C": "4%",
+   "D": "5%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P009",
+  "question": "A bank is critically undercapitalized when tangible equity is at or below what share of total assets?",
+  "options": {
+   "A": "2%",
+   "B": "3%",
+   "C": "4%",
+   "D": "1%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P010",
+  "question": "How many prompt corrective action capital categories are there?",
+  "options": {
+   "A": "Six",
+   "B": "Three",
+   "C": "Four",
+   "D": "Five"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P011",
+  "question": "The leverage ratio uses which denominator?",
+  "options": {
+   "A": "Risk-weighted assets",
+   "B": "Total loans",
+   "C": "Average total consolidated assets",
+   "D": "Total deposits"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P012",
+  "question": "For large bank holding companies, what replaces the static capital conservation buffer?",
+  "options": {
+   "A": "The leverage buffer",
+   "B": "The stress capital buffer from the Fed's stress test",
+   "C": "The liquidity buffer",
+   "D": "The countercyclical buffer only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P013",
+  "question": "What is the floor of the stress capital buffer?",
+  "options": {
+   "A": "2.5%",
+   "B": "5%",
+   "C": "3.5%",
+   "D": "1%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P014",
+  "question": "The LCR stress horizon is:",
+  "options": {
+   "A": "30 days",
+   "B": "One year",
+   "C": "90 days",
+   "D": "7 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P015",
+  "question": "The NSFR horizon is:",
+  "options": {
+   "A": "90 days",
+   "B": "30 days",
+   "C": "Five years",
+   "D": "One year"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P016",
+  "question": "The minimum LCR for covered banks is:",
+  "options": {
+   "A": "120%",
+   "B": "90%",
+   "C": "100%",
+   "D": "80%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P017",
+  "question": "What haircut applies to Level 2A HQLA?",
+  "options": {
+   "A": "25%",
+   "B": "15%",
+   "C": "0%",
+   "D": "50%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P018",
+  "question": "Which assets are Level 1 HQLA with no haircut?",
+  "options": {
+   "A": "Central bank reserves and Treasury securities",
+   "B": "Investment-grade corporate bonds",
+   "C": "Residential mortgage-backed securities",
+   "D": "Listed equities"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P019",
+  "question": "Net interest margin is net interest income divided by:",
+  "options": {
+   "A": "Total equity",
+   "B": "Total deposits",
+   "C": "Average earning assets",
+   "D": "Noninterest income"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P020",
+  "question": "The efficiency ratio is noninterest expense divided by:",
+  "options": {
+   "A": "Net income",
+   "B": "Net interest income plus noninterest income",
+   "C": "Total assets",
+   "D": "Total loans"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P021",
+  "question": "An efficiency ratio below which level is generally considered efficient?",
+  "options": {
+   "A": "80%",
+   "B": "60%",
+   "C": "90%",
+   "D": "40%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P022",
+  "question": "A common benchmark for a profitable bank's return on assets is about:",
+  "options": {
+   "A": "0.1%",
+   "B": "5%",
+   "C": "10%",
+   "D": "1%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P023",
+  "question": "Loan-to-deposit ratio is:",
+  "options": {
+   "A": "Total deposits divided by total loans",
+   "B": "Loans divided by assets",
+   "C": "Total loans divided by total deposits",
+   "D": "Loans divided by equity"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P024",
+  "question": "What does the S in CAMELS stand for?",
+  "options": {
+   "A": "Stability",
+   "B": "Solvency",
+   "C": "Supervision",
+   "D": "Sensitivity to market risk"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P025",
+  "question": "What does the M in CAMELS stand for?",
+  "options": {
+   "A": "Market risk",
+   "B": "Management",
+   "C": "Margin",
+   "D": "Monitoring"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P026",
+  "question": "CAMELS ratings run on which scale?",
+  "options": {
+   "A": "1 (weakest) to 5 (strongest)",
+   "B": "0 to 100",
+   "C": "A to F",
+   "D": "1 (strongest) to 5 (weakest)"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P027",
+  "question": "CAMELS ratings are formally part of which system?",
+  "options": {
+   "A": "The Uniform Financial Institutions Rating System",
+   "B": "The Community Reinvestment Act",
+   "C": "The Basel Core Principles",
+   "D": "The CCAR program"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P028",
+  "question": "Are a bank's CAMELS ratings public?",
+  "options": {
+   "A": "Only the composite is public",
+   "B": "Yes, in the Call Report",
+   "C": "Yes, published quarterly",
+   "D": "No, they are confidential supervisory information"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P029",
+  "question": "A CTR is required for cash transactions totalling more than:",
+  "options": {
+   "A": "$10,000 in one week",
+   "B": "$10,000 in one business day",
+   "C": "$5,000 in one day",
+   "D": "$3,000 in one day"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P030",
+  "question": "Within how many days must a CTR be filed?",
+  "options": {
+   "A": "5 business days",
+   "B": "30 calendar days",
+   "C": "15 calendar days",
+   "D": "60 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P031",
+  "question": "Are multiple cash transactions by the same person in one business day aggregated for CTR purposes?",
+  "options": {
+   "A": "Only above $50,000",
+   "B": "No",
+   "C": "Only for businesses",
+   "D": "Yes"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P032",
+  "question": "Structuring to evade CTR filing is a crime under:",
+  "options": {
+   "A": "12 U.S.C. 1829b",
+   "B": "18 U.S.C. 1344",
+   "C": "31 U.S.C. 5324",
+   "D": "15 U.S.C. 78j"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P033",
+  "question": "Is structuring illegal if the money came from a legitimate source?",
+  "options": {
+   "A": "No",
+   "B": "Only for non-citizens",
+   "C": "Only above $50,000",
+   "D": "Yes"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P034",
+  "question": "A bank must file a SAR within how many days of initial detection?",
+  "options": {
+   "A": "60 calendar days",
+   "B": "90 calendar days",
+   "C": "30 calendar days",
+   "D": "15 calendar days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P035",
+  "question": "If no suspect is identified, the SAR deadline can extend to at most:",
+  "options": {
+   "A": "90 days total",
+   "B": "45 days total",
+   "C": "60 days total",
+   "D": "120 days total"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P036",
+  "question": "The SAR threshold where a suspect can be identified is:",
+  "options": {
+   "A": "$5,000",
+   "B": "$10,000",
+   "C": "$25,000",
+   "D": "$2,000"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P037",
+  "question": "The SAR threshold regardless of whether a suspect is identified is:",
+  "options": {
+   "A": "$10,000",
+   "B": "$25,000",
+   "C": "$100,000",
+   "D": "$50,000"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P038",
+  "question": "Insider abuse must be reported on a SAR at what amount?",
+  "options": {
+   "A": "$10,000 or more",
+   "B": "Any amount",
+   "C": "$25,000 or more",
+   "D": "$5,000 or more"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P039",
+  "question": "How long must SARs and supporting documents be retained?",
+  "options": {
+   "A": "10 years",
+   "B": "7 years",
+   "C": "5 years",
+   "D": "3 years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P040",
+  "question": "May a bank tell a customer that a SAR has been filed about them?",
+  "options": {
+   "A": "No, disclosure is prohibited",
+   "B": "Yes, after 30 days",
+   "C": "Yes, if asked in writing",
+   "D": "Only with the BSA officer's approval"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P041",
+  "question": "Which agency receives SARs and CTRs?",
+  "options": {
+   "A": "The SEC",
+   "B": "FinCEN",
+   "C": "The OCC",
+   "D": "OFAC"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P042",
+  "question": "Under the CDD rule, a beneficial owner by ownership holds at least:",
+  "options": {
+   "A": "10% of equity",
+   "B": "5% of equity",
+   "C": "50% of equity",
+   "D": "25% of equity"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P043",
+  "question": "Besides 25% owners, the CDD rule requires identifying:",
+  "options": {
+   "A": "All directors",
+   "B": "Every employee",
+   "C": "The auditor",
+   "D": "One individual with significant control"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P044",
+  "question": "The FinCEN CDD rule took effect in:",
+  "options": {
+   "A": "May 2018",
+   "B": "March 2020",
+   "C": "July 2011",
+   "D": "January 2014"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P045",
+  "question": "Which is NOT one of the BSA/AML program pillars?",
+  "options": {
+   "A": "Annual external audit of financial statements",
+   "B": "Internal controls",
+   "C": "Training",
+   "D": "Independent testing"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P046",
+  "question": "Foreign correspondent accounts generally require:",
+  "options": {
+   "A": "Annual OFAC licenses",
+   "B": "Only a W-8BEN form",
+   "C": "Enhanced due diligence",
+   "D": "No due diligence"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P047",
+  "question": "Which agency administers US economic sanctions?",
+  "options": {
+   "A": "FinCEN",
+   "B": "OFAC",
+   "C": "The CFPB",
+   "D": "The FDIC"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P048",
+  "question": "Funds in which an SDN has an interest must be:",
+  "options": {
+   "A": "Processed with a note",
+   "B": "Returned to the sender",
+   "C": "Blocked in an interest-bearing account",
+   "D": "Forfeited to the Treasury immediately"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P049",
+  "question": "Blocked property must be reported to OFAC within:",
+  "options": {
+   "A": "5 business days",
+   "B": "10 business days",
+   "C": "24 hours",
+   "D": "30 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P050",
+  "question": "The annual report of blocked property is due by:",
+  "options": {
+   "A": "30 September",
+   "B": "30 June",
+   "C": "15 April",
+   "D": "31 December"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P051",
+  "question": "The annual blocked-property report covers property held as of:",
+  "options": {
+   "A": "30 September",
+   "B": "30 June",
+   "C": "31 March",
+   "D": "31 December"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P052",
+  "question": "Rejected (not blocked) transactions must be reported to OFAC within:",
+  "options": {
+   "A": "30 days",
+   "B": "90 days",
+   "C": "10 business days",
+   "D": "They need not be reported"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P053",
+  "question": "OFAC civil liability is:",
+  "options": {
+   "A": "Only above $1 million",
+   "B": "Only for US citizens",
+   "C": "Only for willful violations",
+   "D": "Strict liability"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P054",
+  "question": "Regulation O governs credit to:",
+  "options": {
+   "A": "Executive officers, directors and principal shareholders",
+   "B": "Foreign banks",
+   "C": "Small businesses",
+   "D": "Affiliates"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P055",
+  "question": "Under Regulation O, an insider loan must be approved by the board in advance whenever it exceeds:",
+  "options": {
+   "A": "$500,000",
+   "B": "$250,000",
+   "C": "$100,000",
+   "D": "$1,000,000"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P056",
+  "question": "When board approval is required under Regulation O, the interested insider must:",
+  "options": {
+   "A": "Chair the meeting",
+   "B": "Abstain",
+   "C": "Provide a guarantee",
+   "D": "Vote first"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P057",
+  "question": "Regulation W implements which sections of the Federal Reserve Act?",
+  "options": {
+   "A": "23A and 23B",
+   "B": "24 and 25",
+   "C": "9 and 11",
+   "D": "13(3) and 19"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P058",
+  "question": "Under Regulation W, covered transactions with a single affiliate are capped at:",
+  "options": {
+   "A": "25% of capital and surplus",
+   "B": "10% of capital and surplus",
+   "C": "15% of capital and surplus",
+   "D": "20% of capital and surplus"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P059",
+  "question": "Under Regulation W, covered transactions with all affiliates are capped at:",
+  "options": {
+   "A": "20% of capital and surplus",
+   "B": "50% of capital and surplus",
+   "C": "10% of capital and surplus",
+   "D": "30% of capital and surplus"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P060",
+  "question": "Section 23B requires affiliate transactions to be:",
+  "options": {
+   "A": "On market terms",
+   "B": "Below $1 million",
+   "C": "Approved by the FDIC",
+   "D": "Fully cash collateralized"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P061",
+  "question": "Regulation W collateral for credit to an affiliate ranges between:",
+  "options": {
+   "A": "No collateral is needed",
+   "B": "150% and 200%",
+   "C": "50% and 75%",
+   "D": "100% and 130% of the credit"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P062",
+  "question": "A national bank's unsecured lending limit to one borrower is:",
+  "options": {
+   "A": "15% of capital and surplus",
+   "B": "25% of capital and surplus",
+   "C": "10% of capital and surplus",
+   "D": "5% of capital and surplus"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P063",
+  "question": "A national bank may lend an additional amount to one borrower if fully secured by readily marketable collateral, equal to:",
+  "options": {
+   "A": "15%",
+   "B": "25%",
+   "C": "10% of capital and surplus",
+   "D": "5%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P064",
+  "question": "FDIC deposit insurance covers up to:",
+  "options": {
+   "A": "$100,000 per account",
+   "B": "$250,000 per bank in total",
+   "C": "$250,000 per depositor, per bank, per ownership category",
+   "D": "$500,000 per depositor"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P065",
+  "question": "The Federal Reserve cut reserve requirement ratios to zero in:",
+  "options": {
+   "A": "December 2008",
+   "B": "January 2015",
+   "C": "March 2020",
+   "D": "June 2022"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P066",
+  "question": "Who charters and supervises national banks?",
+  "options": {
+   "A": "The Federal Reserve",
+   "B": "The CFPB",
+   "C": "The FDIC",
+   "D": "The OCC"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P067",
+  "question": "Which agency is the primary federal supervisor of state nonmember banks?",
+  "options": {
+   "A": "The OCC",
+   "B": "The NCUA",
+   "C": "The Federal Reserve",
+   "D": "The FDIC"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P068",
+  "question": "Which agency supervises bank holding companies?",
+  "options": {
+   "A": "The OCC",
+   "B": "The FDIC",
+   "C": "The Federal Reserve",
+   "D": "The SEC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P069",
+  "question": "The CFPB examines banks above what asset size for consumer law?",
+  "options": {
+   "A": "$1 billion",
+   "B": "$10 billion",
+   "C": "$100 billion",
+   "D": "$50 billion"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P070",
+  "question": "Call Reports are filed:",
+  "options": {
+   "A": "Quarterly with the FFIEC",
+   "B": "Annually with the SEC",
+   "C": "Semiannually with the OCC",
+   "D": "Monthly with the Fed"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P071",
+  "question": "Call Reports are generally due how many days after quarter-end?",
+  "options": {
+   "A": "60 days",
+   "B": "45 days",
+   "C": "15 days",
+   "D": "30 days"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P072",
+  "question": "Under Regulation E, a consumer must report an unauthorized transfer within how many days of the statement?",
+  "options": {
+   "A": "30 days",
+   "B": "60 days",
+   "C": "120 days",
+   "D": "90 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P073",
+  "question": "Under Regulation E, the initial investigation period is:",
+  "options": {
+   "A": "10 business days",
+   "B": "30 days",
+   "C": "5 business days",
+   "D": "45 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P074",
+  "question": "With provisional credit, a Regulation E investigation may take up to:",
+  "options": {
+   "A": "45 days",
+   "B": "90 days",
+   "C": "60 days",
+   "D": "30 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P075",
+  "question": "Under Regulation CC, what amount of most check deposits is generally available the next business day?",
+  "options": {
+   "A": "$500",
+   "B": "$6,725",
+   "C": "$225",
+   "D": "$275"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P076",
+  "question": "Which loan grade describes potential weaknesses that deserve management's close attention?",
+  "options": {
+   "A": "Doubtful",
+   "B": "Substandard",
+   "C": "Special mention",
+   "D": "Loss"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P077",
+  "question": "Which grade describes an asset inadequately protected by the obligor's paying capacity or collateral?",
+  "options": {
+   "A": "Watch",
+   "B": "Special mention",
+   "C": "Substandard",
+   "D": "Pass"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P078",
+  "question": "Which grade means full collection is highly questionable?",
+  "options": {
+   "A": "Substandard",
+   "B": "Special mention",
+   "C": "Doubtful",
+   "D": "Pass"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P079",
+  "question": "Which list orders loan grades from best to worst?",
+  "options": {
+   "A": "Pass, substandard, special mention, loss, doubtful",
+   "B": "Pass, special mention, substandard, doubtful, loss",
+   "C": "Pass, doubtful, substandard, special mention, loss",
+   "D": "Special mention, pass, doubtful, substandard, loss"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P080",
+  "question": "DSCR is calculated as:",
+  "options": {
+   "A": "Equity divided by debt",
+   "B": "Net operating income divided by annual debt service",
+   "C": "Debt service divided by revenue",
+   "D": "Loan amount divided by property value"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P081",
+  "question": "A common minimum DSCR for commercial real estate loans is:",
+  "options": {
+   "A": "2.50x",
+   "B": "1.25x",
+   "C": "1.00x",
+   "D": "0.80x"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P082",
+  "question": "Interagency guidance flags CRE concentration when CRE loans exceed what share of total risk-based capital?",
+  "options": {
+   "A": "150%",
+   "B": "300%",
+   "C": "500%",
+   "D": "100%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P083",
+  "question": "Under the CRE guidance, heightened scrutiny also applies when the CRE portfolio has grown by what amount in 36 months?",
+  "options": {
+   "A": "50% or more",
+   "B": "100% or more",
+   "C": "25% or more",
+   "D": "10% or more"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P084",
+  "question": "Loan-to-value (LTV) is:",
+  "options": {
+   "A": "Collateral value divided by loan amount",
+   "B": "Loan amount divided by collateral value",
+   "C": "Debt service divided by income",
+   "D": "Income divided by loan"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_us_P085",
+  "question": "Which standard sets the allowance for credit losses on loans at US banks?",
+  "options": {
+   "A": "ASC 842",
+   "B": "ASC 606",
+   "C": "CECL (ASC 326)",
+   "D": "IFRS 9"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P086",
+  "question": "The Community Reinvestment Act requires banks to:",
+  "options": {
+   "A": "Help meet the credit needs of their communities, including low- and moderate-income areas",
+   "B": "Hold 10% of assets in community bonds",
+   "C": "Lend only within their state",
+   "D": "Report all cash over $10,000"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_us_P087",
+  "question": "TRID refers to disclosure rules that combine requirements of:",
+  "options": {
+   "A": "BSA and OFAC",
+   "B": "Reg O and Reg W",
+   "C": "CRA and HMDA",
+   "D": "TILA and RESPA"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_us_P088",
+  "question": "Which law requires the Federal Reserve's annual supervisory stress tests?",
+  "options": {
+   "A": "The Glass-Steagall Act",
+   "B": "The Bank Holding Company Act of 1956",
+   "C": "The Dodd-Frank Act",
+   "D": "The Gramm-Leach-Bliley Act"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P089",
+  "question": "The Volcker Rule restricts banking entities from:",
+  "options": {
+   "A": "Issuing credit cards",
+   "B": "Paying dividends",
+   "C": "Proprietary trading and certain fund investments",
+   "D": "Opening branches across state lines"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_us_P090",
+  "question": "Which law protects consumers' nonpublic personal financial information at banks?",
+  "options": {
+   "A": "The Equal Credit Opportunity Act",
+   "B": "The Gramm-Leach-Bliley Act",
+   "C": "The Fair Credit Billing Act",
+   "D": "The Truth in Savings Act"
+  },
+  "answer": "B"
+ }
+]
