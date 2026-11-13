@@ -1,0 +1,283 @@
+[
+ {
+  "id": "banking_us_T1",
+  "industry": "banking",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the CET1 ratio and how the capital conservation buffer changes the effective minimum for a US bank.",
+  "ground_truth": {
+   "answer": "CET1 ratio is Common Equity Tier 1 capital divided by risk-weighted assets. The minimum is 4.5%; the 2.5% capital conservation buffer raises the effective floor to 7%, below which capital distributions and discretionary bonuses are restricted. Well capitalized under prompt corrective action is 6.5%.",
+   "required_terms": [
+    "CET1",
+    "Risk-Weighted Assets",
+    "Capital Conservation Buffer",
+    "Well Capitalized"
+   ],
+   "term_definitions": {
+    "CET1": "Common Equity Tier 1 capital / RWA; minimum 4.5%",
+    "Capital Conservation Buffer": "2.5% of CET1 above the minimum; breach restricts payouts"
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T2",
+  "industry": "banking",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Define the liquidity coverage ratio and the net stable funding ratio and the horizon each covers.",
+  "ground_truth": {
+   "answer": "LCR is high-quality liquid assets divided by total net cash outflows over a 30-day stress period, at least 100%. NSFR is available stable funding divided by required stable funding over one year, at least 100%.",
+   "required_terms": [
+    "LCR",
+    "HQLA",
+    "Net Cash Outflows",
+    "NSFR",
+    "Stable Funding"
+   ],
+   "term_definitions": {
+    "LCR": "HQLA / 30-day net cash outflows >= 100%",
+    "NSFR": "Available / required stable funding over 1 year >= 100%"
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T3",
+  "industry": "banking",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is a CAMELS rating and what do its components measure?",
+  "ground_truth": {
+   "answer": "CAMELS is the supervisory rating under the Uniform Financial Institutions Rating System: Capital adequacy, Asset quality, Management, Earnings, Liquidity and Sensitivity to market risk, each rated 1 (strongest) to 5 (weakest), with a composite rating.",
+   "required_terms": [
+    "CAMELS",
+    "Capital Adequacy",
+    "Asset Quality",
+    "Sensitivity to Market Risk",
+    "Composite Rating"
+   ],
+   "term_definitions": {
+    "CAMELS": "Six-component supervisory rating, 1 best to 5 worst"
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T4",
+  "industry": "banking",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A regional bank reports CET1 of 6.2%, an LCR of 92% and an efficiency ratio of 68%. Assess each metric.",
+  "ground_truth": {
+   "answer": "CET1 of 6.2% is BELOW the 7% effective minimum (4.5% plus the 2.5% buffer) and below the 6.5% well-capitalized level, so payouts are restricted. LCR of 92% is BELOW the 100% requirement. An efficiency ratio of 68% EXCEEDS the healthy level of under 60%.",
+   "metrics": {
+    "cet1_ratio": {
+     "value": 0.062,
+     "healthy": ">=0.07",
+     "assessment": "BELOW"
+    },
+    "lcr": {
+     "value": 0.92,
+     "healthy": ">=1.00",
+     "assessment": "BELOW"
+    },
+    "efficiency_ratio": {
+     "value": 0.68,
+     "healthy": "<0.60",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T5",
+  "industry": "banking",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A community bank has a net interest margin of 2.4%, return on assets of 0.6% and a loan-to-deposit ratio of 105%. Assess each metric.",
+  "ground_truth": {
+   "answer": "NIM of 2.4% is BELOW the healthy 3.0-3.5% range. ROA of 0.6% is BELOW the ~1% benchmark. A loan-to-deposit ratio of 105% EXCEEDS the healthy 70-90% range, signalling reliance on non-deposit funding.",
+   "metrics": {
+    "net_interest_margin": {
+     "value": 0.024,
+     "healthy": "0.030-0.035",
+     "assessment": "BELOW"
+    },
+    "return_on_assets": {
+     "value": 0.006,
+     "healthy": "~0.01",
+     "assessment": "BELOW"
+    },
+    "loan_to_deposit_ratio": {
+     "value": 1.05,
+     "healthy": "0.70-0.90",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T6",
+  "industry": "banking",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A customer deposits $9,500 in cash on each of three consecutive days and asks the teller how to avoid 'the government form'. What are the bank's obligations?",
+  "ground_truth": {
+   "answer": "No CTR is triggered because no single business day exceeds $10,000, but the pattern and the question indicate structuring, a federal crime under 31 U.S.C. 5324. The bank should investigate and file a SAR within 30 calendar days of detection (total $28,500 exceeds the $5,000 threshold with a known suspect). Staff must not tell the customer about the SAR, and must not advise on avoiding the CTR.",
+   "regulations": [
+    "Bank Secrecy Act",
+    "31 U.S.C. 5324",
+    "FinCEN SAR rule",
+    "CTR rule"
+   ],
+   "requirements": [
+    "no CTR (no day over $10,000)",
+    "structuring indicators",
+    "SAR within 30 days",
+    "SAR confidentiality, no tipping off"
+   ]
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T7",
+  "industry": "banking",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A bank director asks for a $750,000 loan from the bank. What does Regulation O require?",
+  "ground_truth": {
+   "answer": "The loan must be on substantially the same terms, including rate and collateral, as comparable loans to unrelated borrowers and carry no more than normal risk. Because it exceeds $500,000, it needs prior approval by the full board with the director abstaining. It also counts toward the insider and aggregate lending limits.",
+   "regulations": [
+    "Regulation O"
+   ],
+   "requirements": [
+    "substantially same terms",
+    "prior board approval above $500,000",
+    "interested director abstains",
+    "lending limits"
+   ]
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T8",
+  "industry": "banking",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Chief Credit Officer, a commercial real estate borrower's DSCR has fallen from 1.40x to 1.05x. How do you respond?",
+  "ground_truth": {
+   "role": "Chief Credit Officer",
+   "decision_pattern": "deteriorating_credit",
+   "expected_factors": [
+    "re-underwrite cash flow and collateral",
+    "risk rating downgrade (special mention or substandard)",
+    "CECL allowance update",
+    "special assets or workout plan",
+    "CRE concentration"
+   ],
+   "kpi_references": [
+    "noncurrent loan ratio < 1%",
+    "criticized assets vs capital"
+   ],
+   "vocabulary": [
+    "DSCR",
+    "Risk Rating",
+    "Special Mention",
+    "Substandard",
+    "ACL",
+    "Workout"
+   ],
+   "communication_style": "Conservative, evidence-based, policy-anchored"
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T9",
+  "industry": "banking",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As BSA Officer, monitoring shows a foreign correspondent account moving funds rapidly through to high-risk jurisdictions with no clear purpose. What do you do?",
+  "ground_truth": {
+   "role": "BSA Officer",
+   "decision_pattern": "suspicious_activity",
+   "expected_factors": [
+    "case investigation",
+    "enhanced due diligence on the correspondent",
+    "SAR decision within 30 days",
+    "account restriction or exit",
+    "board reporting"
+   ],
+   "kpi_references": [
+    "SARs filed within 30 days of detection",
+    "alert backlog under 30 days"
+   ],
+   "vocabulary": [
+    "EDD",
+    "SAR",
+    "FinCEN",
+    "CDD",
+    "OFAC"
+   ],
+   "communication_style": "Precise, regulation-citing, confidential"
+  },
+  "cell": "banking_us"
+ },
+ {
+  "id": "banking_us_T10",
+  "industry": "banking",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "An outgoing wire hits a possible match against OFAC's SDN list during screening. Trace the handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Payments Operations",
+     "to": "Sanctions Compliance",
+     "context": [
+      "wire_details",
+      "hit_details",
+      "originator_and_beneficiary_data"
+     ],
+     "sla": {
+      "hold_and_review": "Same business day"
+     }
+    },
+    {
+     "step": 2,
+     "condition": "If confirmed SDN match",
+     "from": "Sanctions Compliance",
+     "to": "OFAC",
+     "action": "Block funds in an interest-bearing blocked account",
+     "sla": {
+      "report": "10 business days"
+     }
+    },
+    {
+     "step": 3,
+     "from": "Sanctions Compliance",
+     "to": "BSA Officer",
+     "context": [
+      "case_file",
+      "related_accounts"
+     ],
+     "sla": {
+      "sar_decision": "30 days from detection"
+     }
+    }
+   ],
+   "terms": [
+    "OFAC",
+    "SDN List",
+    "Blocked Property",
+    "SAR",
+    "BSA Officer"
+   ],
+   "escalation_level": "L4_executive (confirmed sanctions match)"
+  },
+  "cell": "banking_us"
+ }
+]
