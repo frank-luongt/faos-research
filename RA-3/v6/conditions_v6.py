@@ -9,11 +9,15 @@ The five cells carried over from v5 keep their v5 ``rag_chunks`` unchanged, so
 v5's own C2 prompts still rebuild byte for byte. Their extra v6 text sits in
 ``rag_chunks_v6``, which restates facts already in the cell's ontology as prose
 and adds no new facts; C2b reads ``rag_chunks`` first, then ``rag_chunks_v6``.
+
+Where current law superseded v5 content, v6 applies the edits in
+``corrections.json`` on load (see ``corrections.py`` and ``V5-TO-V6-DIFF.md``).
 """
 
 import importlib.util
 from pathlib import Path
 
+import corrections
 import design
 
 _spec = importlib.util.spec_from_file_location(
@@ -22,6 +26,16 @@ _spec = importlib.util.spec_from_file_location(
 v5 = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(v5)
 v5.ONTOLOGY_DIR = Path(design.ONTOLOGY_DIR)  # shipped ontologies live one level up
+
+_v5_load_ontology = v5._load_ontology
+
+
+def _load_corrected_ontology(industry: str) -> dict:
+    """v5's loader plus the v6 corrections for that file (corrections.json)."""
+    return corrections.apply(_v5_load_ontology(industry), corrections.for_ontology(industry))
+
+
+v5._load_ontology = _load_corrected_ontology  # every v5 builder now reads corrected content
 
 RAG_HEADER = (
     "You are an AI assistant. Use the following reference documents to "

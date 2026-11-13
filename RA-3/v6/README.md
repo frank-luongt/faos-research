@@ -43,10 +43,12 @@ All 12 cells now have their materials:
 - `probe/<cell>.json`: 90 multiple-choice items per cell (1,080 in all), each with a seeded, balanced answer key. No probe item repeats a task question, though some test facts the tasks also use.
 - **RAG corpora.** C2b fills each task's C3 budget from the cell's retrieval text. The largest shortfall over all 120 tasks is 195 characters. v5's five cells keep their v5 `rag_chunks` byte for byte, so v5's C2 prompts still rebuild. Their extra v6 text is in `rag_chunks_v6`, which restates the cell's own ontology as prose and adds no new facts.
 
+Where current law superseded v5 content, v6 applies `corrections.json` on load, leaving v5's files untouched. `V5-TO-V6-DIFF.md` lists every edit.
+
 `EXPERT-CHECK.md` lists the facts most likely to need correction, as well as v5 ground truth that looks out of date. Those facts should be verified by the domain experts before lock.
 
 ## Still to build before lock
 
-- **v5 ground truth.** Decide whether to keep or correct the out-of-date v5 ground truth listed in `EXPERT-CHECK.md` section 3.
+- **v5 corrections.** Experts confirm the draft corrections in `corrections.json` (listed in `V5-TO-V6-DIFF.md`); rerun `python corrections.py` and `python build_tasks.py` after any edit.
 - **Jev adapter.** Jev answers typed questions with probabilities rather than writing text. Its request format is confirmed by the smoke test before its adapter is written.
 - **Settings to decide at lock** (see `settle_at_lock` in `models.lock.json`): reasoning effort, the provider order for each model, and the provider fallback policy.

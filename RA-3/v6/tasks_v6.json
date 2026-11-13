@@ -285,11 +285,11 @@
   "industry": "banking_vn",
   "category": "terminology",
   "metric_tested": "TF",
-  "question": "Explain the NPL classification system in Vietnamese banking under SBV Circular 11/2021, including the five debt groups and their provisioning rates.",
+  "question": "Explain the loan classification system in Vietnamese banking under SBV Circular 31/2024 (which replaced Circular 11/2021), including the five debt groups and their provisioning rates.",
   "ground_truth": {
-   "answer": "SBV Circular 11/2021 (Thông tư 11/2021/TT-NHNN) classifies loans into 5 groups: Group 1 (Current) — overdue ≤10 days, provision 0%; Group 2 (Special Mention) — overdue 11-90 days, provision 5%; Group 3 (Substandard) — overdue 91-180 days, provision 20%; Group 4 (Doubtful) — overdue 181-360 days, provision 50%; Group 5 (Loss) — overdue >360 days, provision 100%. NPL ratio (Groups 3-5) target is <3%.",
+   "answer": "SBV Circular 31/2024 (Thông tư 31/2024/TT-NHNN), which replaced Circular 11/2021 from 1 July 2024, classifies loans into 5 groups: Group 1 (Current) — overdue under 10 days, provision 0%; Group 2 (Special Mention) — overdue 10 to under 90 days, provision 5%; Group 3 (Substandard) — overdue 90 to under 180 days, provision 20%; Group 4 (Doubtful) — overdue 180 to under 360 days, provision 50%; Group 5 (Loss) — overdue 360 days or more, provision 100%. NPL ratio (Groups 3-5) target is <3%.",
    "required_terms": [
-    "Thông tư 11",
+    "Thông tư 31",
     "NPL",
     "Group 1",
     "Group 2",
@@ -301,7 +301,7 @@
    ],
    "term_definitions": {
     "NPL": "Non-Performing Loans; Groups 3-5 in SBV classification; target ratio <3%",
-    "Thông tư 11/2021": "SBV circular governing loan classification and provisioning requirements",
+    "Thông tư 31/2024": "SBV circular governing loan classification and provisioning requirements; replaced Thông tư 11/2021",
     "Provisioning": "Reserve set aside against potential loan losses; rates 0-100% by group"
    }
   },
@@ -312,22 +312,23 @@
   "industry": "banking_vn",
   "category": "terminology",
   "metric_tested": "TF",
-  "question": "Define CAR, LCR, and NSFR as required by SBV Circular 22/2019 for Vietnamese banks.",
+  "question": "Define CAR, LCR and NSFR, and explain which of them SBV rules require Vietnamese banks to meet.",
   "ground_truth": {
-   "answer": "CAR (Capital Adequacy Ratio / Tỷ lệ an toàn vốn) = (Tier 1 + Tier 2 Capital) / Risk-Weighted Assets, minimum 8% per SBV. LCR (Liquidity Coverage Ratio / Tỷ lệ bao phủ thanh khoản) = High-Quality Liquid Assets / Total Net Cash Outflows over 30 days, minimum 100%. NSFR (Net Stable Funding Ratio / Tỷ lệ nguồn vốn ổn định ròng) = Available Stable Funding / Required Stable Funding, minimum 100%. All ratios are mandated by SBV Circular 22/2019/TT-NHNN as part of Vietnam's Basel III adoption.",
+   "answer": "CAR (Capital Adequacy Ratio / Tỷ lệ an toàn vốn) = (Tier 1 + Tier 2 Capital) / Risk-Weighted Assets; the SBV requires at least 8% under Circular 41/2016 (Basel II). LCR (Liquidity Coverage Ratio / Tỷ lệ bao phủ thanh khoản) = High-Quality Liquid Assets / Total Net Cash Outflows over 30 days, and NSFR (Net Stable Funding Ratio / Tỷ lệ nguồn vốn ổn định ròng) = Available Stable Funding / Required Stable Funding; both are Basel III measures with a 100% benchmark that banks may track internally, but the SBV has not made them legal minimums. Instead SBV Circular 22/2019 requires a liquidity reserve ratio of at least 10%, a 30-day solvency ratio and a loan-to-deposit ratio of at most 85%.",
    "required_terms": [
     "CAR",
     "LCR",
     "NSFR",
+    "Thông tư 41",
     "Thông tư 22",
     "Basel III",
     "Tier 1",
     "Risk-Weighted Assets"
    ],
    "term_definitions": {
-    "CAR": "Capital Adequacy Ratio; (Tier 1 + Tier 2) / RWA; minimum 8%",
-    "LCR": "Liquidity Coverage Ratio; HQLA / 30-day net outflows; minimum 100%",
-    "NSFR": "Net Stable Funding Ratio; available stable funding / required; minimum 100%"
+    "CAR": "Capital Adequacy Ratio; (Tier 1 + Tier 2) / RWA; SBV minimum 8% (Circular 41/2016)",
+    "LCR": "Liquidity Coverage Ratio; HQLA / 30-day net outflows; Basel III benchmark 100%, not an SBV legal minimum",
+    "NSFR": "Net Stable Funding Ratio; available stable funding / required; Basel III benchmark 100%, not an SBV legal minimum"
    }
   },
   "cell": "banking_vn"
@@ -361,7 +362,7 @@
   "metric_tested": "MA",
   "question": "A Vietnamese bank reports: CAR of 7.5%, NPL ratio of 4.2%, and NIM of 3.8%. Assess whether these metrics are within acceptable ranges.",
   "ground_truth": {
-   "answer": "CAR of 7.5% is BELOW the minimum 8% required by SBV Circular 22/2019 — this is a regulatory violation requiring immediate capital injection. NPL ratio of 4.2% EXCEEDS the healthy threshold of <3% per SBV guidance, indicating deteriorating asset quality. NIM of 3.8% is WITHIN the healthy range of 3-5%, indicating adequate interest income generation. Two of three metrics signal serious financial distress.",
+   "answer": "CAR of 7.5% is BELOW the minimum 8% required by SBV Circular 41/2016 — this is a regulatory violation requiring immediate capital injection. NPL ratio of 4.2% EXCEEDS the healthy threshold of <3% per SBV guidance, indicating deteriorating asset quality. NIM of 3.8% is WITHIN the healthy range of 3-5%, indicating adequate interest income generation. Two of three metrics signal serious financial distress.",
    "metrics": {
     "car": {
      "value": 0.075,
@@ -413,12 +414,12 @@
   "metric_tested": "RC",
   "question": "A customer deposits VND 450 million in cash at a Vietnamese bank branch. What AML/CFT obligations apply under Vietnamese law?",
   "ground_truth": {
-   "answer": "The deposit of VND 450 million exceeds the cash transaction reporting threshold of VND 400 million per Nghị định 116/2013/NĐ-CP. The bank must: (1) File a Cash Transaction Report (CTR) with AMLD (Cục Phòng chống rửa tiền), (2) Verify customer identity through CDD, (3) Document the source of funds, (4) Screen against sanctions lists (UN, OFAC, SBV domestic list). If the pattern suggests structuring or is inconsistent with the customer profile, an STR must also be filed within 48 hours.",
+   "answer": "The deposit of VND 450 million exceeds the large-value cash transaction reporting threshold of VND 400 million set under the 2022 AML Law (Luật PCRT 2022) by Decision 11/2023/QĐ-TTg, with Decree 19/2023/NĐ-CP. The bank must: (1) File a large-value transaction report (CTR) with AMLD (Cục Phòng chống rửa tiền), (2) Verify customer identity through CDD, (3) Document the source of funds, (4) Screen against sanctions lists (UN, OFAC, SBV domestic list). If the pattern suggests structuring or is inconsistent with the customer profile, an STR must also be filed within 3 working days.",
    "regulations": [
-    "Nghị định 116/2013",
     "Luật PCRT 2022",
-    "CTR threshold VND 400M",
-    "STR filing 48 hours"
+    "Nghị định 19/2023",
+    "CTR threshold VND 400M (Quyết định 11/2023)",
+    "STR filing within 3 working days"
    ],
    "red_flags": [
     "structuring",
@@ -433,19 +434,20 @@
   "industry": "banking_vn",
   "category": "regulatory",
   "metric_tested": "RC",
-  "question": "What are the key prudential ratios and lending limits under SBV Circular 22/2019 that a Vietnamese bank must comply with?",
+  "question": "What are the key prudential ratios and lending limits under SBV rules (Circular 22/2019, Circular 41/2016 and the 2024 Law on Credit Institutions) that a Vietnamese bank must comply with?",
   "ground_truth": {
-   "answer": "SBV Circular 22/2019/TT-NHNN mandates: (1) CAR ≥ 8%, (2) Short-term capital used for medium/long-term lending ≤ 30%, (3) Single customer exposure ≤ 15% of equity, (4) Related party exposure ≤ 5% of equity, (5) LCR ≥ 100%, (6) NSFR ≥ 100%. Violation triggers SBV corrective action. These ratios are reported quarterly and are key CFO/CRO responsibilities.",
+   "answer": "Vietnamese banks must meet: (1) CAR ≥ 8% (Circular 41/2016/TT-NHNN); under Circular 22/2019/TT-NHNN, (2) short-term capital used for medium/long-term lending ≤ 30%, (3) loan-to-deposit ratio ≤ 85%, (4) liquidity reserve ratio ≥ 10% and the 30-day solvency ratio; under Law 32/2024 on Credit Institutions, (5) single-customer exposure ≤ 13% of equity in 2026 (falling to 10% from 2029; 21% with related persons, falling to 15%), and (6) related party exposure ≤ 5% of equity. LCR and NSFR are Basel III benchmarks, not SBV legal minimums. Violation triggers SBV corrective action. These ratios are reported regularly and are key CFO/CRO responsibilities.",
    "regulations": [
     "SBV Circular 22/2019",
-    "Basel III Vietnam adoption"
+    "SBV Circular 41/2016",
+    "Law on Credit Institutions 32/2024"
    ],
    "requirements": [
     "CAR ≥ 8%",
     "Short-term for MLT ≤ 30%",
-    "Single exposure ≤ 15% equity",
-    "Related party ≤ 5% equity",
-    "LCR ≥ 100%"
+    "LDR ≤ 85%",
+    "Single exposure ≤ 13% equity (2026)",
+    "Related party ≤ 5% equity"
    ]
   },
   "cell": "banking_vn"
@@ -473,7 +475,7 @@
     "enhanced_monitoring_level"
    ],
    "kpi_references": [
-    "str_filing_timeliness (48 hours)",
+    "str_filing_timeliness (3 working days)",
     "incident_response_time (<24 hours)"
    ],
    "vocabulary": [
@@ -484,7 +486,7 @@
     "PEP",
     "Sanctions screening",
     "AMLD",
-    "Nghị định 116"
+    "Nghị định 19/2023"
    ],
    "escalation_to": "CEO"
   },
@@ -515,13 +517,13 @@
     "provision_coverage >100%"
    ],
    "vocabulary": [
-    "Thông tư 11",
+    "Thông tư 31",
     "Group 3 Substandard",
     "Provision 20%",
     "CIC reporting",
     "Recovery plan"
    ],
-   "classification": "Group 3 (Substandard) — 91-180 days overdue; provision rate 20%; must report to CIC; initiate recovery action plan within 15 days",
+   "classification": "Group 3 (Substandard) — 90 to under 180 days overdue; provision rate 20%; must report to CIC; initiate recovery action plan within 15 days",
    "escalation_to": "Board Risk Committee"
   },
   "cell": "banking_vn"
@@ -564,7 +566,7 @@
      "step": 3,
      "escalation": "VND 15B falls in L4 Division Head authority (VND 10B-50B)",
      "approval_authority": "Division Head",
-     "note": "If single customer total exposure approaches 15% equity → escalate to Credit Committee"
+     "note": "If single customer total exposure approaches the single-customer limit (13% of equity in 2026 under Law 32/2024) → escalate to Credit Committee"
     },
     {
      "step": 4,
@@ -584,7 +586,7 @@
    ],
    "regulations": [
     "TT39/2016 lending requirements",
-    "TT22/2019 exposure limits",
+    "Law 32/2024 exposure limits",
     "CIC reporting requirements"
    ],
    "roles_involved": [

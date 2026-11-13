@@ -3,6 +3,7 @@
     python tests/test_design.py   (from RA-3/v6)
 """
 
+import json
 import sys
 import unittest
 from collections import Counter
@@ -78,6 +79,32 @@ class Prompts(unittest.TestCase):
             c2b, meta = build_prompt(t, "C2b_rag_matched")
             self.assertLessEqual(len(c2b[0]["content"]), len(c3[0]["content"]))
             self.assertEqual(meta["budget_chars"] - meta["context_chars"], meta["shortfall_chars"])
+
+
+class Corrections(unittest.TestCase):
+    def test_every_correction_applies_to_unchanged_v5_files(self):
+        import corrections
+        data = corrections.load()
+        with open(design.RA3_DIR / "code" / "tasks.json") as f:
+            v5_tasks = {t["id"]: t for t in json.load(f)}
+        for tid in data["tasks"]:
+            corrections.apply(v5_tasks[tid], corrections.for_task(tid))
+        for stem in data["ontologies"]:
+            with open(design.ONTOLOGY_DIR / f"{stem}.json") as f:
+                corrections.apply(json.load(f), corrections.for_ontology(stem))
+
+    def test_v6_prompts_use_corrected_ontology(self):
+        task = next(t for t in design.load_v5_tasks_as_v6() if t["id"] == "banking_vn_T7")
+        system = build_prompt(task, "C3_ontology")[0][0]["content"]
+        self.assertIn("Law 32/2024", system)
+        self.assertNotIn("nd116_aml", system)
+        self.assertIn("3 working days", system)
+
+    def test_diff_is_current(self):
+        import corrections
+        before = corrections.DIFF_FILE.read_text()
+        corrections.write_diff()
+        self.assertEqual(before, corrections.DIFF_FILE.read_text())
 
 
 if __name__ == "__main__":

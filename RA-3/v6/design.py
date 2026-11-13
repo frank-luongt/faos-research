@@ -10,6 +10,8 @@ import json
 import random
 from pathlib import Path
 
+import corrections
+
 V6_DIR = Path(__file__).resolve().parent
 RA3_DIR = V6_DIR.parent
 LOCK_FILE = V6_DIR / "models.lock.json"
@@ -130,11 +132,11 @@ def load_tasks(path: Path = TASKS_FILE) -> list[dict]:
 
 
 def load_v5_tasks_as_v6() -> list[dict]:
-    """v5's 50 tasks mapped onto their v6 cells, for dry runs before tasks_v6.json exists."""
+    """v5's 50 tasks on their v6 cells, with the v6 corrections in corrections.json applied."""
     inverse = {v: k for k, v in _V5_ONTOLOGY_NAMES.items()}
     with open(RA3_DIR / "code" / "tasks.json") as f:
         tasks = json.load(f)
-    return [{**t, "cell": inverse[t["industry"]]} for t in tasks]
+    return [{**corrections.apply(t, corrections.for_task(t["id"])), "cell": inverse[t["industry"]]} for t in tasks]
 
 
 def validate_tasks(tasks: list[dict]) -> list[str]:
