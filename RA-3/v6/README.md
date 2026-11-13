@@ -59,6 +59,8 @@ Where current law superseded v5 content, v6 applies `corrections.json` on load, 
 
 ## Still to build before lock
 
+- **Stale-knowledge set.** 60 draft items in `stale/items.json` (30 per country) and 28 draft US rule additions in `corrections.json`; experts confirm both (see `EXPERT-CHECK.md`), then mark items `confirmed`.
+- **Probe tags for stage 2.** Tag each probe item to the ontology entry it tests in `probe/tags/<cell>.json`; `python gating.py` reports progress. If tagging is incomplete at lock, stage 2 is dropped.
 - **v5 corrections.** Experts confirm the draft corrections in `corrections.json` (listed in `V5-TO-V6-DIFF.md`); rerun `python corrections.py` and `python build_tasks.py` after any edit.
 - **Jev adapter.** Jev answers typed questions with probabilities rather than writing text. Its request format is confirmed by the smoke test before its adapter is written.
 - **Settings to decide at lock** (see `settle_at_lock` in `models.lock.json`): reasoning effort, the provider order for each model, and the provider fallback policy.

@@ -1,5 +1,10 @@
 """v6 corrections to v5 content: ground truth and ontology facts that current law superseded.
 
+Edits are ``set`` (replace a v5 value), ``rename`` (a key), ``add`` (a new key,
+v5 null) or ``append`` (to a list, v5 null). ``add`` and ``append`` carry the
+current US rules the stale-knowledge set grounds against (ids US-..., written
+by ``stale/build_items.py`` from ``stale/us_rules.py``).
+
 v5's files stay byte-identical so v5 still reproduces. v6 applies the edits in
 ``corrections.json`` when it loads a v5 task or ontology. Each edit records the
 v5 value it replaces, and applying an edit fails loudly if the v5 file no longer
@@ -32,7 +37,15 @@ def apply(obj: dict, edits: list[dict]) -> dict:
     out = copy.deepcopy(obj)
     for e in edits:
         parent, key = _parent(out, e["path"]), e["path"][-1]
-        if e.get("op", "set") == "rename":
+        if e.get("op") == "add":
+            if not isinstance(parent, dict) or key in parent or e["v5"] is not None:
+                raise ValueError(f"correction {e['id']}: cannot add {e['path']}, it already exists")
+            parent[key] = copy.deepcopy(e["v6"])
+        elif e.get("op") == "append":
+            if not isinstance(parent.get(key) if isinstance(parent, dict) else None, list) or e["v5"] is not None:
+                raise ValueError(f"correction {e['id']}: {e['path']} is not a list to append to")
+            parent[key].append(copy.deepcopy(e["v6"]))
+        elif e.get("op", "set") == "rename":
             if not isinstance(parent, dict) or key not in parent or e["v5"] != key or e["v6"] in parent:
                 raise ValueError(f"correction {e['id']}: cannot rename to {e['v6']}")
             items = [(e["v6"] if k == key else k, v) for k, v in parent.items()]
@@ -79,6 +92,8 @@ def write_diff() -> None:
                 field = ".".join(str(p) for p in e["path"])
                 if e.get("op") == "rename":
                     field += " (key renamed)"
+                elif e.get("op") in ("add", "append"):
+                    field += f" ({e['op']}ed)" if e["op"] == "append" else " (added)"
                 lines.append(f"| {e['id']} | `{field}` | {_fmt(e['v5'])} | {_fmt(e['v6'])} | {_fmt(e['why'])} |")
             lines.append("")
     lines += ["## Checked and left unchanged", ""] + [f"- {x}" for x in data.get("unchanged", [])] + [""]

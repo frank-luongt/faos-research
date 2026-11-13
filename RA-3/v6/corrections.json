@@ -1,5 +1,5 @@
 {
- "status": "draft corrections, to be confirmed by the Vietnam banking and insurance experts before lock",
+ "status": "draft corrections and US rule additions, to be confirmed by the Vietnam banking and insurance experts and the US experts before lock",
  "preamble": "Frank chose on 2026-11-13 to correct v5 content that current law superseded, rather than keep v5 unchanged. v5's files are untouched; v6 applies these edits when it loads a v5 task or ontology (see `corrections.py`). A v6 result on a corrected task is therefore not directly comparable with the v5 result on the same task, and the paper reports that.",
  "ontologies": {
   "banking_vn": [
@@ -607,6 +607,504 @@
     "v5": "Insurance AML per Luật PCRT 2022 and NĐ 19/2023: KYC/CDD for all policyholders, EDD for PEPs and large single premiums, STR to Cục PCRT within 48 hours, 5-year record retention. Life insurance higher AML risk due to cash surrender values. Data protection per NĐ 13/2023 requires consent, DPIA, data residency.",
     "v6": "Insurance AML per Luật PCRT 2022 and NĐ 19/2023: KYC/CDD for all policyholders, EDD for PEPs and large single premiums, STR to Cục PCRT within 3 working days, 5-year record retention. Life insurance higher AML risk due to cash surrender values. Data protection per NĐ 13/2023 requires consent, DPIA, data residency.",
     "why": "Under the 2022 AML Law an STR is due within 3 working days of the transaction or of detecting it, not 48 hours."
+   }
+  ],
+  "banking_us": [
+   {
+    "id": "US-01",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "cta_boi"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Corporate Transparency Act beneficial ownership reporting",
+     "rule": "Since FinCEN's March 2025 interim final rule only foreign reporting companies file BOI reports; domestic companies are exempt"
+    },
+    "why": "Current US rule (effective 2025-03-26) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-02",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "fedwire_iso20022"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Fedwire Funds Service message format",
+     "rule": "Fedwire Funds messages use the ISO 20022 format since 14 July 2025, replacing the legacy FAIM format"
+    },
+    "why": "Current US rule (effective 2025-07-14) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-03",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "cecl"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Current expected credit losses (ASC 326)",
+     "rule": "CECL applies to all US banks since 1 January 2023, when smaller reporting companies adopted it; lifetime expected losses replace the incurred-loss model"
+    },
+    "why": "Current US rule (effective 2023-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-04",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "tprm_guidance"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Interagency third-party risk management guidance",
+     "rule": "Since June 2023 one interagency guidance from the Fed, FDIC and OCC covers third-party relationships, replacing each agency's separate guidance"
+    },
+    "why": "Current US rule (effective 2023-06-06) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-05",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "fednow"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "FedNow instant payments",
+     "rule": "The Federal Reserve's FedNow Service has offered 24x7 instant interbank settlement since July 2023"
+    },
+    "why": "Current US rule (effective 2023-07-20) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-29",
+    "op": "add",
+    "path": [
+     "rag_chunks_v6"
+    ],
+    "v5": null,
+    "v6": [
+     "Recent US rule changes. Corporate Transparency Act beneficial ownership reporting: Since FinCEN's March 2025 interim final rule only foreign reporting companies file BOI reports; domestic companies are exempt. Fedwire Funds Service message format: Fedwire Funds messages use the ISO 20022 format since 14 July 2025, replacing the legacy FAIM format. Current expected credit losses (ASC 326): CECL applies to all US banks since 1 January 2023, when smaller reporting companies adopted it; lifetime expected losses replace the incurred-loss model. Interagency third-party risk management guidance: Since June 2023 one interagency guidance from the Fed, FDIC and OCC covers third-party relationships, replacing each agency's separate guidance. FedNow instant payments: The Federal Reserve's FedNow Service has offered 24x7 instant interbank settlement since July 2023."
+    ],
+    "why": "Retrieval text restating the added US rules, so C2b carries the same facts as C3."
+   }
+  ],
+  "fintech": [
+   {
+    "id": "US-06",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "visa_vamp"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Visa Acquirer Monitoring Program (VAMP)",
+     "rule": "Since April 2025 VAMP combines fraud and disputes in one monitoring ratio, replacing the separate VDMP and VFMP programs"
+    },
+    "why": "Current US rule (effective 2025-04-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-07",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "nacha_fraud_monitoring"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Nacha risk-based fraud monitoring rules",
+     "rule": "From 20 March 2026 large ACH originators and receiving banks must run risk-based fraud monitoring on all entries, including credit-push fraud"
+    },
+    "why": "Current US rule (effective 2026-03-20) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-08",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "pci_dss_v4"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "PCI DSS v4.0",
+     "rule": "PCI DSS v4.0, including its future-dated requirements, is mandatory since 31 March 2025; v3.2.1 was retired in March 2024"
+    },
+    "why": "Current US rule (effective 2025-03-31) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-09",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "form_1099k"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Form 1099-K reporting threshold",
+     "rule": "Third-party settlement organisations file Form 1099-K above USD 20,000 and 200 transactions, after the 2025 budget law restored that threshold"
+    },
+    "why": "Current US rule (effective 2025-07-04) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-10",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "genius_act"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "GENIUS Act payment stablecoins",
+     "rule": "Since the GENIUS Act of July 2025 payment stablecoins have a federal framework: permitted issuers, one-to-one reserves and monthly reserve disclosure"
+    },
+    "why": "Current US rule (effective 2025-07-18) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-11",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "same_day_ach_limit"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Same Day ACH per-payment limit",
+     "rule": "The Same Day ACH limit is USD 1 million per payment since March 2022"
+    },
+    "why": "Current US rule (effective 2022-03-18) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-30",
+    "op": "append",
+    "path": [
+     "rag_chunks_v6"
+    ],
+    "v5": null,
+    "v6": "Recent US rule changes. Visa Acquirer Monitoring Program (VAMP): Since April 2025 VAMP combines fraud and disputes in one monitoring ratio, replacing the separate VDMP and VFMP programs. Nacha risk-based fraud monitoring rules: From 20 March 2026 large ACH originators and receiving banks must run risk-based fraud monitoring on all entries, including credit-push fraud. PCI DSS v4.0: PCI DSS v4.0, including its future-dated requirements, is mandatory since 31 March 2025; v3.2.1 was retired in March 2024. Form 1099-K reporting threshold: Third-party settlement organisations file Form 1099-K above USD 20,000 and 200 transactions, after the 2025 budget law restored that threshold. GENIUS Act payment stablecoins: Since the GENIUS Act of July 2025 payment stablecoins have a federal framework: permitted issuers, one-to-one reserves and monthly reserve disclosure. Same Day ACH per-payment limit: The Same Day ACH limit is USD 1 million per payment since March 2022.",
+    "why": "Retrieval text restating the added US rules, so C2b carries the same facts as C3."
+   }
+  ],
+  "insurance": [
+   {
+    "id": "US-12",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "naic_ai_bulletin"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "NAIC Model Bulletin on insurers' use of AI",
+     "rule": "The NAIC's December 2023 model bulletin, adopted by many states, requires insurers using AI to keep a written AI governance program"
+    },
+    "why": "Current US rule (effective 2023-12-04) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-13",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "ldti"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Long-duration targeted improvements (ASU 2018-12)",
+     "rule": "Since 2023 public US insurers update cash-flow assumptions for long-duration contracts at least yearly under LDTI, ending locked-in assumptions"
+    },
+    "why": "Current US rule (effective 2023-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-14",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "nydfs_cl7"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "NYDFS Circular Letter No. 7 (2024)",
+     "rule": "NYDFS Circular Letter No. 7 of July 2024 requires insurers using external data or AI in underwriting and pricing to test them for unfair discrimination"
+    },
+    "why": "Current US rule (effective 2024-07-11) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-15",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "naic_climate_survey"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "NAIC climate risk disclosure survey",
+     "rule": "Since 2022 the NAIC climate risk disclosure survey follows the TCFD framework: governance, strategy, risk management, metrics and targets"
+    },
+    "why": "Current US rule (effective 2022-04-08) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-31",
+    "op": "append",
+    "path": [
+     "rag_chunks_v6"
+    ],
+    "v5": null,
+    "v6": "Recent US rule changes. NAIC Model Bulletin on insurers' use of AI: The NAIC's December 2023 model bulletin, adopted by many states, requires insurers using AI to keep a written AI governance program. Long-duration targeted improvements (ASU 2018-12): Since 2023 public US insurers update cash-flow assumptions for long-duration contracts at least yearly under LDTI, ending locked-in assumptions. NYDFS Circular Letter No. 7 (2024): NYDFS Circular Letter No. 7 of July 2024 requires insurers using external data or AI in underwriting and pricing to test them for unfair discrimination. NAIC climate risk disclosure survey: Since 2022 the NAIC climate risk disclosure survey follows the TCFD framework: governance, strategy, risk management, metrics and targets.",
+    "why": "Retrieval text restating the added US rules, so C2b carries the same facts as C3."
+   }
+  ],
+  "healthcare": [
+   {
+    "id": "US-16",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "cms_prior_auth"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "CMS Interoperability and Prior Authorization final rule",
+     "rule": "From 1 January 2026 impacted payers decide urgent prior authorization requests within 72 hours and standard ones within 7 calendar days"
+    },
+    "why": "Current US rule (effective 2026-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-17",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "info_blocking_ehi"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Information blocking (21st Century Cures Act)",
+     "rule": "Since 6 October 2022 information blocking covers all electronic health information in the designated record set, not only USCDI data"
+    },
+    "why": "Current US rule (effective 2022-10-06) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-18",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "no_surprises"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "No Surprises Act",
+     "rule": "Since 1 January 2022 patients are protected from surprise balance bills for emergency care and for out-of-network clinicians at in-network facilities"
+    },
+    "why": "Current US rule (effective 2022-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-19",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "part2_alignment"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "42 CFR Part 2 final rule (2024)",
+     "rule": "From 16 February 2026 one patient consent can cover all future uses of substance use disorder records for treatment, payment and operations"
+    },
+    "why": "Current US rule (effective 2026-02-16) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-20",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "price_transparency"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Hospital price transparency",
+     "rule": "Since 1 July 2024 hospitals must post their machine-readable standard charge files in the CMS template"
+    },
+    "why": "Current US rule (effective 2024-07-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-21",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "hti1_dsi"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "ONC HTI-1 decision support interventions",
+     "rule": "From 1 January 2025 certified health IT must show source attributes for predictive decision support interventions, replacing the clinical decision support criterion"
+    },
+    "why": "Current US rule (effective 2025-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-32",
+    "op": "append",
+    "path": [
+     "rag_chunks_v6"
+    ],
+    "v5": null,
+    "v6": "Recent US rule changes. CMS Interoperability and Prior Authorization final rule: From 1 January 2026 impacted payers decide urgent prior authorization requests within 72 hours and standard ones within 7 calendar days. Information blocking (21st Century Cures Act): Since 6 October 2022 information blocking covers all electronic health information in the designated record set, not only USCDI data. No Surprises Act: Since 1 January 2022 patients are protected from surprise balance bills for emergency care and for out-of-network clinicians at in-network facilities. 42 CFR Part 2 final rule (2024): From 16 February 2026 one patient consent can cover all future uses of substance use disorder records for treatment, payment and operations. Hospital price transparency: Since 1 July 2024 hospitals must post their machine-readable standard charge files in the CMS template. ONC HTI-1 decision support interventions: From 1 January 2025 certified health IT must show source attributes for predictive decision support interventions, replacing the clinical decision support criterion.",
+    "why": "Retrieval text restating the added US rules, so C2b carries the same facts as C3."
+   }
+  ],
+  "securities_us": [
+   {
+    "id": "US-22",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "cyber_8k"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "SEC cybersecurity incident disclosure (Form 8-K Item 1.05)",
+     "rule": "Since 18 December 2023 a listed company discloses a material cybersecurity incident on Form 8-K within 4 business days of finding it material"
+    },
+    "why": "Current US rule (effective 2023-12-18) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-23",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "reg_sp_2024"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "Regulation S-P amendments (2024)",
+     "rule": "Larger broker-dealers and advisers must notify affected customers within 30 days of a breach of sensitive information, from 3 December 2025"
+    },
+    "why": "Current US rule (effective 2025-12-03) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-24",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "marketing_rule"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "SEC Marketing Rule (Rule 206(4)-1)",
+     "rule": "Since 4 November 2022 one SEC Marketing Rule governs investment adviser advertising, testimonials and paid solicitation"
+    },
+    "why": "Current US rule (effective 2022-11-04) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-33",
+    "op": "add",
+    "path": [
+     "rag_chunks_v6"
+    ],
+    "v5": null,
+    "v6": [
+     "Recent US rule changes. SEC cybersecurity incident disclosure (Form 8-K Item 1.05): Since 18 December 2023 a listed company discloses a material cybersecurity incident on Form 8-K within 4 business days of finding it material. Regulation S-P amendments (2024): Larger broker-dealers and advisers must notify affected customers within 30 days of a breach of sensitive information, from 3 December 2025. SEC Marketing Rule (Rule 206(4)-1): Since 4 November 2022 one SEC Marketing Rule governs investment adviser advertising, testimonials and paid solicitation."
+    ],
+    "why": "Retrieval text restating the added US rules, so C2b carries the same facts as C3."
+   }
+  ],
+  "accounting_us": [
+   {
+    "id": "US-25",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "asu_2023_09"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "ASU 2023-09 income tax disclosures",
+     "rule": "From 2025 public companies give a tabular rate reconciliation in set categories"
+    },
+    "why": "Current US rule (effective 2025-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-26",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "asu_2023_07"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "ASU 2023-07 segment reporting",
+     "rule": "From 2024 public companies disclose significant segment expenses"
+    },
+    "why": "Current US rule (effective 2024-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-27",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "asu_2023_08"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "ASU 2023-08 crypto assets",
+     "rule": "From 2025 crypto assets are at fair value with changes in net income"
+    },
+    "why": "Current US rule (effective 2025-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-28",
+    "op": "add",
+    "path": [
+     "domain_layer",
+     "regulations",
+     "asc_842_private"
+    ],
+    "v5": null,
+    "v6": {
+     "name": "ASC 842 leases for private companies",
+     "rule": "Since 2022 private companies book operating leases as right-of-use assets and lease liabilities"
+    },
+    "why": "Current US rule (effective 2022-01-01) for the stale-knowledge set; draft, to be confirmed by the US expert."
+   },
+   {
+    "id": "US-34",
+    "op": "add",
+    "path": [
+     "rag_chunks_v6"
+    ],
+    "v5": null,
+    "v6": [
+     "Recent US rule changes. ASU 2023-09 income tax disclosures: From 2025 public companies give a tabular rate reconciliation in set categories. ASU 2023-07 segment reporting: From 2024 public companies disclose significant segment expenses. ASU 2023-08 crypto assets: From 2025 crypto assets are at fair value with changes in net income. ASC 842 leases for private companies: Since 2022 private companies book operating leases as right-of-use assets and lease liabilities."
+    ],
+    "why": "Retrieval text restating the added US rules, so C2b carries the same facts as C3."
    }
   ]
  },
