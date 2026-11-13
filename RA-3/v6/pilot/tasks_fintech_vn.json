@@ -1,0 +1,278 @@
+[
+ {
+  "id": "fintech_vn_T1",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is an e-wallet under Vietnamese law, and how must it be linked to the banking system?",
+  "ground_truth": {
+   "answer": "An e-wallet is an electronic account opened by a non-bank payment intermediary licensed by the State Bank of Vietnam under Decree 52/2024/ND-CP, holding stored value for payments. Under Circular 40/2024/TT-NHNN it must be linked to the holder's own bank account, topped up from and withdrawn to that account, and individual payments are capped at VND 100 million a month.",
+   "required_terms": [
+    "E-wallet",
+    "Payment Intermediary",
+    "Decree 52/2024/ND-CP",
+    "Linked Bank Account",
+    "State Bank of Vietnam"
+   ],
+   "term_definitions": {
+    "E-wallet": "Stored-value account at a licensed intermediary, linked to the holder's bank account"
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T2",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain Napas, Napas 247 and VietQR in Vietnam's payment system.",
+  "ground_truth": {
+   "answer": "Napas, the National Payment Corporation of Vietnam, runs the domestic card switch. Napas 247 is its round-the-clock interbank fast-transfer service. VietQR is the national QR standard letting any banking or wallet app pay or transfer by scanning a code.",
+   "required_terms": [
+    "Napas",
+    "Napas 247",
+    "VietQR",
+    "Interbank Transfer",
+    "Card Switch"
+   ],
+   "term_definitions": {
+    "Napas 247": "24/7 interbank fast transfer",
+    "VietQR": "National QR payment standard"
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T3",
+  "industry": "fintech",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What biometric authentication rules apply to online transfers in Vietnam?",
+  "ground_truth": {
+   "answer": "Under Decision 2345/QD-NHNN, from 1 July 2024 an online transfer above VND 10 million, or once the day's total exceeds VND 20 million, needs biometric authentication matched to the chip-based citizen ID. Circular 17/2024/TT-NHNN bars online transactions from 1 January 2025 on accounts not verified against biometric data.",
+   "required_terms": [
+    "Biometric Authentication",
+    "Decision 2345/QD-NHNN",
+    "Chip-based Citizen ID",
+    "VND 10 million",
+    "Circular 17/2024/TT-NHNN"
+   ],
+   "term_definitions": {
+    "Biometric Authentication": "Face match against the chip ID record"
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T4",
+  "industry": "fintech",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A Vietnamese e-wallet reports a transaction success rate of 98.2%, a fraud loss rate of 0.12% of TPV and uptime of 99.7%. Assess each.",
+  "ground_truth": {
+   "answer": "Success rate of 98.2% is BELOW the 99% target. Fraud losses of 0.12% EXCEED the under-0.05% healthy level. Uptime of 99.7% is BELOW the 99.95% target.",
+   "metrics": {
+    "transaction_success_rate": {
+     "value": 0.982,
+     "healthy": ">=0.99",
+     "assessment": "BELOW"
+    },
+    "fraud_loss_rate": {
+     "value": 0.0012,
+     "healthy": "<0.0005",
+     "assessment": "EXCEEDS"
+    },
+    "system_uptime": {
+     "value": 0.997,
+     "healthy": ">=0.9995",
+     "assessment": "BELOW"
+    }
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T5",
+  "industry": "fintech",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "An individual user's e-wallet payments reached VND 140 million this month at one provider. Assess this against the rules.",
+  "ground_truth": {
+   "answer": "VND 140 million EXCEEDS the VND 100 million monthly cap on payments through an individual's e-wallet under Circular 40/2024/TT-NHNN; the provider's limits should have blocked the excess, and the pattern may also merit AML review.",
+   "metrics": {
+    "monthly_e_wallet_payments": {
+     "value": 140,
+     "limit": 100,
+     "unit": "VND million",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T6",
+  "industry": "fintech",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A startup 60% owned by a Singapore fund wants a licence to run an e-wallet in Vietnam. What regulatory issues arise?",
+  "ground_truth": {
+   "answer": "E-wallets are intermediary payment services licensed by the State Bank of Vietnam under Decree 52/2024/ND-CP, which caps total foreign ownership of payment intermediaries at 49%, so the 60% stake must be reduced before licensing. The firm must also meet capital, technical and security conditions (Circular 09/2020/TT-NHNN), AML duties under Law 14/2022/QH15, and personal data rules under Decree 13/2023/ND-CP.",
+   "regulations": [
+    "Decree 52/2024/ND-CP",
+    "Circular 40/2024/TT-NHNN",
+    "Circular 09/2020/TT-NHNN",
+    "Law on AML 14/2022/QH15",
+    "Decree 13/2023/ND-CP"
+   ],
+   "requirements": [
+    "SBV licence",
+    "49% foreign ownership cap",
+    "security requirements",
+    "AML programme",
+    "data protection"
+   ]
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T7",
+  "industry": "fintech",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "A fintech wants to launch a peer-to-peer lending platform in Vietnam. Is it allowed, and under what framework?",
+  "ground_truth": {
+   "answer": "P2P lending had no specific legal framework; Decree 94/2025/ND-CP (from 1 July 2025) lets it be tested in the State Bank's controlled sandbox, alongside credit scoring and open-API data sharing, subject to conditions and supervision. Outside the sandbox, lending must be done by licensed credit institutions. Customer data use requires consent under Decree 13/2023/ND-CP and, from 2026, the Law on Personal Data Protection.",
+   "regulations": [
+    "Decree 94/2025/ND-CP",
+    "Law on Credit Institutions 32/2024/QH15",
+    "Decree 13/2023/ND-CP",
+    "Law on Personal Data Protection 91/2025/QH15"
+   ],
+   "requirements": [
+    "sandbox participation",
+    "SBV supervision",
+    "licensed lender otherwise",
+    "data consent"
+   ]
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T8",
+  "industry": "fintech",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Head of Payments, failed Napas 247 transfers from your wallet jump tenfold on the eve of Tet. How do you respond?",
+  "ground_truth": {
+   "role": "Head of Payments",
+   "decision_pattern": "payment_incident",
+   "expected_factors": [
+    "triage the cause (own system, bank or Napas)",
+    "reroute or queue transfers",
+    "communicate with customers",
+    "reconcile and refund failed transactions",
+    "report the incident to the SBV",
+    "post-incident review and capacity planning"
+   ],
+   "kpi_references": [
+    "transaction success rate >= 99%",
+    "uptime >= 99.95%"
+   ],
+   "vocabulary": [
+    "Napas 247",
+    "Reconciliation",
+    "TPV",
+    "E-wallet",
+    "Linked Bank Account"
+   ],
+   "communication_style": "Operational, metrics-led, customer-aware"
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T9",
+  "industry": "fintech",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Compliance Officer, you find 300 new e-wallets opened from 12 devices, each receiving transfers and cashing out within minutes. What do you do?",
+  "ground_truth": {
+   "role": "Compliance Officer",
+   "decision_pattern": "mule_accounts",
+   "expected_factors": [
+    "link accounts by device and identity",
+    "suspend outgoing transactions",
+    "re-verify biometrics against chip ID",
+    "file an STR with the SBV within 3 working days",
+    "report fraud to the police",
+    "retain records 5 years"
+   ],
+   "kpi_references": [
+    "STRs within 3 working days",
+    "100% biometric verification"
+   ],
+   "vocabulary": [
+    "Mule Account",
+    "eKYC",
+    "Biometric Authentication",
+    "Suspicious Transaction Report",
+    "Law on AML 14/2022/QH15"
+   ],
+   "communication_style": "Formal, regulation-citing, risk-based"
+  },
+  "cell": "fintech_vn"
+ },
+ {
+  "id": "fintech_vn_T10",
+  "industry": "fintech",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "A customer reports that VND 25 million left their e-wallet to an unknown bank account without their consent. Trace the handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Customer Service",
+     "to": "Fraud Operations",
+     "context": [
+      "transaction_id",
+      "device_and_login_history",
+      "customer_statement"
+     ],
+     "sla": {
+      "lock_wallet": "Immediately",
+      "triage": "4 hours"
+     }
+    },
+    {
+     "step": 2,
+     "from": "Fraud Operations",
+     "to": "Napas / beneficiary bank",
+     "action": "Recall request",
+     "sla": {
+      "recall_request": "Same day"
+     }
+    },
+    {
+     "step": 3,
+     "condition": "Fraud or mule pattern confirmed",
+     "from": "Fraud Operations",
+     "to": "Compliance Officer",
+     "sla": {
+      "str": "3 working days"
+     },
+     "also": "Report to police; check why a VND 25 million transfer passed biometric authentication"
+    }
+   ],
+   "terms": [
+    "Napas 247",
+    "Recall",
+    "Biometric Authentication",
+    "Suspicious Transaction Report",
+    "Mule Account"
+   ],
+   "escalation_level": "L3_management (customer loss)"
+  },
+  "cell": "fintech_vn"
+ }
+]

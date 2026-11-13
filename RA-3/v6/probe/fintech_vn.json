@@ -1,0 +1,992 @@
+[
+ {
+  "id": "fintech_vn_P001",
+  "question": "Which decree on non-cash payments took effect on 1 July 2024?",
+  "options": {
+   "A": "Decree 94/2025/ND-CP",
+   "B": "Decree 101/2012/ND-CP",
+   "C": "Decree 52/2024/ND-CP",
+   "D": "Decree 80/2016/ND-CP"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P002",
+  "question": "Which decree did Decree 52/2024/ND-CP replace?",
+  "options": {
+   "A": "Decree 13/2023/ND-CP",
+   "B": "Decree 123/2020/ND-CP",
+   "C": "Decree 101/2012/ND-CP",
+   "D": "Decree 16/2019/ND-CP"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P003",
+  "question": "Which authority licenses intermediary payment services in Vietnam?",
+  "options": {
+   "A": "The State Bank of Vietnam",
+   "B": "Napas",
+   "C": "The Ministry of Finance",
+   "D": "The Ministry of Information and Communications"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P004",
+  "question": "Under Decree 52/2024/ND-CP, foreign ownership of a payment intermediary is capped at:",
+  "options": {
+   "A": "30%",
+   "B": "49%",
+   "C": "100% (no cap)",
+   "D": "65%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P005",
+  "question": "Which is an intermediary payment service under Vietnamese law?",
+  "options": {
+   "A": "E-wallet",
+   "B": "Securities brokerage",
+   "C": "Insurance underwriting",
+   "D": "Deposit taking"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P006",
+  "question": "Which circular guides intermediary payment services, including e-wallets?",
+  "options": {
+   "A": "Circular 11/2021/TT-NHNN",
+   "B": "Circular 96/2020/TT-BTC",
+   "C": "Circular 40/2024/TT-NHNN",
+   "D": "Circular 22/2019/TT-NHNN"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P007",
+  "question": "An individual's e-wallet must be linked to:",
+  "options": {
+   "A": "Any third party's bank account",
+   "B": "The holder's own bank account",
+   "C": "A credit card only",
+   "D": "Nothing; linking is optional"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P008",
+  "question": "E-wallet top-ups for individuals must come from:",
+  "options": {
+   "A": "Cash at any agent without limit",
+   "B": "The linked bank account",
+   "C": "Any person's account",
+   "D": "Foreign currency deposits"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P009",
+  "question": "What is the monthly cap on payments through an individual's e-wallets at one provider?",
+  "options": {
+   "A": "VND 20 million",
+   "B": "VND 50 million",
+   "C": "VND 100 million",
+   "D": "VND 200 million"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P010",
+  "question": "What does Napas stand for in English?",
+  "options": {
+   "A": "Network of Asian Payment Systems",
+   "B": "National Payment Corporation of Vietnam",
+   "C": "National Assets Securities",
+   "D": "National Postal Service"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P011",
+  "question": "Napas 247 is:",
+  "options": {
+   "A": "A round-the-clock interbank fast-transfer service",
+   "B": "A tax e-filing portal",
+   "C": "A stock trading system",
+   "D": "A credit bureau"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P012",
+  "question": "VietQR is:",
+  "options": {
+   "A": "A bank card brand",
+   "B": "The national QR code standard for payments and transfers",
+   "C": "A crypto exchange",
+   "D": "A credit score"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P013",
+  "question": "Which organisation operates the domestic card switch?",
+  "options": {
+   "A": "CIC",
+   "B": "VNPT",
+   "C": "Napas",
+   "D": "VSDC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P014",
+  "question": "Which chip standard do Vietnamese domestic cards follow?",
+  "options": {
+   "A": "PCI PIN 3.1",
+   "B": "ISO 27001",
+   "C": "TCCS 01:2019",
+   "D": "EMV 2000 only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P015",
+  "question": "Which State Bank decision introduced biometric checks for online transfers from 1 July 2024?",
+  "options": {
+   "A": "Decision 1813/QD-TTg",
+   "B": "Decision 11/2023/QD-TTg",
+   "C": "Decision 345/QD-BTC",
+   "D": "Decision 2345/QD-NHNN"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P016",
+  "question": "Above what single online transfer amount is biometric authentication required?",
+  "options": {
+   "A": "VND 10 million",
+   "B": "VND 5 million",
+   "C": "VND 20 million",
+   "D": "VND 50 million"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P017",
+  "question": "Biometric authentication is also required once a day's online transfers total more than:",
+  "options": {
+   "A": "VND 50 million",
+   "B": "VND 10 million",
+   "C": "VND 100 million",
+   "D": "VND 20 million"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P018",
+  "question": "Biometric data used for authentication is matched against:",
+  "options": {
+   "A": "A passport photo on social media",
+   "B": "The chip-based citizen identity card",
+   "C": "The bank's branch CCTV",
+   "D": "The SIM card registration"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P019",
+  "question": "Which circular on payment accounts requires biometric verification of accounts?",
+  "options": {
+   "A": "Circular 39/2016/TT-NHNN",
+   "B": "Circular 18/2024/TT-NHNN",
+   "C": "Circular 17/2024/TT-NHNN",
+   "D": "Circular 09/2020/TT-NHNN"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P020",
+  "question": "From what date may accounts not verified against biometric data no longer make online transactions?",
+  "options": {
+   "A": "1 March 2023",
+   "B": "1 January 2025",
+   "C": "1 July 2024",
+   "D": "1 January 2026"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P021",
+  "question": "Which circular governs bank cards?",
+  "options": {
+   "A": "Circular 40/2024/TT-NHNN",
+   "B": "Circular 18/2024/TT-NHNN",
+   "C": "Circular 17/2024/TT-NHNN",
+   "D": "Circular 64/2024/TT-NHNN"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P022",
+  "question": "Which decree created a regulatory sandbox for banking fintech?",
+  "options": {
+   "A": "Decree 52/2024/ND-CP",
+   "B": "Decree 94/2025/ND-CP",
+   "C": "Decree 13/2023/ND-CP",
+   "D": "Decree 87/2019/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P023",
+  "question": "When did the banking fintech sandbox decree take effect?",
+  "options": {
+   "A": "1 July 2024",
+   "B": "1 January 2026",
+   "C": "1 January 2024",
+   "D": "1 July 2025"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P024",
+  "question": "Which activity is NOT covered by the banking fintech sandbox?",
+  "options": {
+   "A": "Credit scoring",
+   "B": "Open-API data sharing",
+   "C": "Securities underwriting",
+   "D": "Peer-to-peer lending"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P025",
+  "question": "Before the sandbox, peer-to-peer lending in Vietnam had:",
+  "options": {
+   "A": "Regulation by the SSC",
+   "B": "No specific legal framework",
+   "C": "A full licensing regime since 2015",
+   "D": "A ban written into the Constitution"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P026",
+  "question": "Which circular sets open API standards in banking?",
+  "options": {
+   "A": "Circular 64/2024/TT-NHNN",
+   "B": "Circular 35/2016/TT-NHNN",
+   "C": "Circular 40/2024/TT-NHNN",
+   "D": "Circular 16/2020/TT-NHNN"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P027",
+  "question": "Which decree on personal data protection took effect on 1 July 2023?",
+  "options": {
+   "A": "Decree 85/2016/ND-CP",
+   "B": "Decree 13/2023/ND-CP",
+   "C": "Decree 15/2020/ND-CP",
+   "D": "Decree 53/2022/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P028",
+  "question": "Which law on personal data protection takes effect on 1 January 2026?",
+  "options": {
+   "A": "Law No. 20/2023/QH15",
+   "B": "Law No. 91/2025/QH15",
+   "C": "Law No. 86/2015/QH13",
+   "D": "Law No. 24/2018/QH14"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P029",
+  "question": "The basic legal ground for processing personal data under Decree 13/2023 is:",
+  "options": {
+   "A": "Any business purpose",
+   "B": "The data subject's consent",
+   "C": "The company's legitimate interest only",
+   "D": "Payment of a fee"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P030",
+  "question": "Which circular governs information system security in banking?",
+  "options": {
+   "A": "Circular 09/2020/TT-NHNN",
+   "B": "Circular 22/2019/TT-NHNN",
+   "C": "Circular 17/2024/TT-NHNN",
+   "D": "Circular 40/2024/TT-NHNN"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P031",
+  "question": "Payment intermediaries must report suspicious transactions within:",
+  "options": {
+   "A": "30 days",
+   "B": "3 working days of detection",
+   "C": "10 working days",
+   "D": "24 hours"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P032",
+  "question": "Suspicious transactions are reported to:",
+  "options": {
+   "A": "The State Bank of Vietnam's AML department",
+   "B": "The Ministry of Finance",
+   "C": "The provincial People's Committee",
+   "D": "Napas"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P033",
+  "question": "Which law on anti-money laundering applies to payment intermediaries?",
+  "options": {
+   "A": "Law No. 14/2022/QH15",
+   "B": "Law No. 54/2019/QH14",
+   "C": "Law No. 59/2020/QH14",
+   "D": "Law No. 07/2012/QH13"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P034",
+  "question": "Which decision sets the VND 400 million large-value cash transaction threshold?",
+  "options": {
+   "A": "Decision 1813/QD-TTg",
+   "B": "Decision 20/2013/QD-TTg",
+   "C": "Decision 11/2023/QD-TTg",
+   "D": "Decision 2345/QD-NHNN"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P035",
+  "question": "How long must AML records be kept?",
+  "options": {
+   "A": "1 year",
+   "B": "3 years",
+   "C": "5 years",
+   "D": "10 years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P036",
+  "question": "A mule account is:",
+  "options": {
+   "A": "An account held at Napas",
+   "B": "An account used to receive and move illicit funds, often opened with borrowed or bought identities",
+   "C": "A dormant savings account",
+   "D": "A business account for logistics firms"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P037",
+  "question": "Which law, effective 1 January 2026, recognises digital assets including crypto-assets?",
+  "options": {
+   "A": "Law on E-Transactions No. 20/2023/QH15",
+   "B": "Law on Credit Institutions No. 32/2024/QH15",
+   "C": "Law on Digital Technology Industry No. 71/2025/QH15",
+   "D": "Law on Cybersecurity No. 24/2018/QH14"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P038",
+  "question": "Which resolution launched a pilot domestic crypto-asset market in 2025?",
+  "options": {
+   "A": "Resolution 01/NQ-CP",
+   "B": "Resolution 05/2025/NQ-CP",
+   "C": "Resolution 42/2017/QH14",
+   "D": "Resolution 68/NQ-TW"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P039",
+  "question": "Which law took effect in 2024 to govern credit institutions?",
+  "options": {
+   "A": "Law on Credit Institutions No. 32/2024/QH15",
+   "B": "Law No. 59/2020/QH14",
+   "C": "Law No. 47/2010/QH12 (unchanged)",
+   "D": "Law No. 14/2022/QH15"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P040",
+  "question": "Who may lend to consumers through mobile apps in Vietnam?",
+  "options": {
+   "A": "Licensed credit institutions such as banks and consumer finance companies",
+   "B": "E-wallets in their own name",
+   "C": "Foreign platforms without a licence",
+   "D": "Any registered tech company"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P041",
+  "question": "Which body runs Vietnam's national credit information database?",
+  "options": {
+   "A": "CIC, the National Credit Information Centre",
+   "B": "The General Statistics Office",
+   "C": "VSDC",
+   "D": "Napas"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P042",
+  "question": "When an e-wallet offers buy-now-pay-later, who is normally the lender?",
+  "options": {
+   "A": "A partner bank or finance company",
+   "B": "Napas",
+   "C": "The merchant's bank only",
+   "D": "The e-wallet itself"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P043",
+  "question": "Transaction success rate equals:",
+  "options": {
+   "A": "Refunds divided by sales",
+   "B": "Fraud losses divided by TPV",
+   "C": "Successful transactions divided by attempted transactions",
+   "D": "Active users divided by sign-ups"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P044",
+  "question": "Fraud loss rate equals:",
+  "options": {
+   "A": "Fraud losses divided by total payment value",
+   "B": "Refunds divided by TPV",
+   "C": "Disputes divided by transactions",
+   "D": "Chargebacks divided by merchants"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P045",
+  "question": "A healthy fraud loss rate for a payment firm is below about:",
+  "options": {
+   "A": "2%",
+   "B": "1%",
+   "C": "0.5%",
+   "D": "5 basis points (0.05%)"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P046",
+  "question": "A common availability target for core payment services is:",
+  "options": {
+   "A": "99%",
+   "B": "95%",
+   "C": "90%",
+   "D": "99.95%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P047",
+  "question": "A common transaction success-rate target is:",
+  "options": {
+   "A": "95%",
+   "B": "90%",
+   "C": "99% or higher",
+   "D": "80%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P048",
+  "question": "TPV stands for:",
+  "options": {
+   "A": "Total profit value",
+   "B": "Total payment volume",
+   "C": "Transaction processing velocity",
+   "D": "Third-party verification"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P049",
+  "question": "Which national scheme promoted non-cash payments in 2021-2025?",
+  "options": {
+   "A": "Decision 2345/QD-NHNN",
+   "B": "Decision 345/QD-BTC",
+   "C": "Decision 986/QD-TTg",
+   "D": "Decision 1813/QD-TTg"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P050",
+  "question": "What payment method remains common in Vietnamese e-commerce that non-cash schemes aim to reduce?",
+  "options": {
+   "A": "Cheques",
+   "B": "Wire transfers",
+   "C": "Money orders",
+   "D": "Cash on delivery"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P051",
+  "question": "An e-wallet withdrawal for an individual must go to:",
+  "options": {
+   "A": "Any account named by the holder",
+   "B": "A merchant only",
+   "C": "A cash agent abroad",
+   "D": "The holder's linked bank account"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P052",
+  "question": "Which service type is an intermediary service under Decree 52/2024?",
+  "options": {
+   "A": "Payment gateway",
+   "B": "Bond issuance",
+   "C": "Life insurance",
+   "D": "Credit card issuing by a non-bank"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P053",
+  "question": "Can a non-bank e-wallet provider issue credit cards?",
+  "options": {
+   "A": "No, card issuing is for credit institutions",
+   "B": "Yes, up to VND 100 million",
+   "C": "Yes, if foreign-owned",
+   "D": "Yes, with an SBV e-wallet licence"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P054",
+  "question": "Under Circular 17/2024, which document verifies an individual opening a payment account online?",
+  "options": {
+   "A": "Driver's licence only",
+   "B": "Household registration book",
+   "C": "Chip-based citizen ID with biometric check",
+   "D": "Utility bill"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P055",
+  "question": "Which identity document underpins Vietnamese eKYC?",
+  "options": {
+   "A": "A student card",
+   "B": "The chip-based citizen identity card (CCCD)",
+   "C": "The old 9-digit ID card",
+   "D": "A tax code card"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P056",
+  "question": "Who supervises fintech participants in the banking sandbox?",
+  "options": {
+   "A": "The State Bank of Vietnam",
+   "B": "The SSC",
+   "C": "The Ministry of Science and Technology",
+   "D": "The National Assembly"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P057",
+  "question": "Which body issues circulars on payments?",
+  "options": {
+   "A": "The Ministry of Industry and Trade",
+   "B": "The Ministry of Finance",
+   "C": "Napas",
+   "D": "The State Bank of Vietnam"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P058",
+  "question": "The VietQR standard is operated with which organisation?",
+  "options": {
+   "A": "Vietcombank alone",
+   "B": "Napas",
+   "C": "The SSC",
+   "D": "VNPost"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P059",
+  "question": "Napas 247 transfers settle:",
+  "options": {
+   "A": "Only on business days",
+   "B": "Once a day at 17:00",
+   "C": "Only during banking hours",
+   "D": "Around the clock, including weekends and holidays"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P060",
+  "question": "When a fraudulent transfer goes to another bank through Napas 247, the provider should first:",
+  "options": {
+   "A": "Close the customer's account permanently",
+   "B": "Wait 30 days",
+   "C": "Refund from the merchant",
+   "D": "Request a recall through Napas or the beneficiary bank"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P061",
+  "question": "Which authority receives criminal complaints about payment fraud?",
+  "options": {
+   "A": "Napas",
+   "B": "The tax authority",
+   "C": "The SSC",
+   "D": "The police (Ministry of Public Security)"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P062",
+  "question": "Which law governs electronic transactions in Vietnam from 2024?",
+  "options": {
+   "A": "Law on Electronic Transactions No. 20/2023/QH15",
+   "B": "Law No. 91/2025/QH15",
+   "C": "Law No. 86/2015/QH13",
+   "D": "Law No. 51/2005/QH11 only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P063",
+  "question": "Which law governs cybersecurity in Vietnam?",
+  "options": {
+   "A": "Law on Cybersecurity No. 24/2018/QH14",
+   "B": "Law No. 71/2025/QH15",
+   "C": "Law No. 20/2023/QH15",
+   "D": "Law on Network Information Security No. 86/2015/QH13 only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P064",
+  "question": "Which ministry oversees cybersecurity enforcement under the Cybersecurity Law?",
+  "options": {
+   "A": "The Ministry of Health",
+   "B": "The Ministry of Finance",
+   "C": "The Ministry of Public Security",
+   "D": "The State Bank"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P065",
+  "question": "Peer-to-peer lending platforms connect:",
+  "options": {
+   "A": "Insurers and reinsurers",
+   "B": "Exporters and customs",
+   "C": "Banks and the central bank",
+   "D": "Lenders and borrowers directly through a platform"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P066",
+  "question": "Credit scoring in the sandbox may use:",
+  "options": {
+   "A": "Alternative data with customer consent",
+   "B": "Only CIC data",
+   "C": "Only tax data",
+   "D": "Any personal data without consent"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P067",
+  "question": "Device binding in payments means:",
+  "options": {
+   "A": "Printing a QR code on a device",
+   "B": "Sharing a device between users",
+   "C": "Locking a card to one merchant",
+   "D": "Tying a customer's account access to a registered device"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P068",
+  "question": "Which body publishes the State Bank's circulars?",
+  "options": {
+   "A": "The Prime Minister",
+   "B": "Napas",
+   "C": "The National Assembly Standing Committee",
+   "D": "The State Bank of Vietnam, through the Governor"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P069",
+  "question": "A payment intermediary's total foreign ownership above 49% would be:",
+  "options": {
+   "A": "Permitted if listed",
+   "B": "Permitted with SSC approval",
+   "C": "Permitted for ASEAN investors",
+   "D": "Not permitted under Decree 52/2024"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P070",
+  "question": "Which payment rail lets a merchant accept payment from any bank app by scanning one code?",
+  "options": {
+   "A": "VietQR",
+   "B": "SEPA",
+   "C": "ACH",
+   "D": "SWIFT"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P071",
+  "question": "Which institution must an e-wallet provider partner with to hold customer funds?",
+  "options": {
+   "A": "A securities company",
+   "B": "The State Treasury",
+   "C": "A commercial bank (guarantee or settlement account)",
+   "D": "Napas only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P072",
+  "question": "What is the role of the e-wallet provider's settlement bank account?",
+  "options": {
+   "A": "To hold the total balance backing customers' e-wallets",
+   "B": "To hold tax deposits",
+   "C": "To pay staff salaries",
+   "D": "To invest in securities"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P073",
+  "question": "Which online transaction would require biometric authentication?",
+  "options": {
+   "A": "Viewing a statement",
+   "B": "A VND 2 million transfer when the day's total is VND 5 million",
+   "C": "A single VND 15 million transfer",
+   "D": "Checking an account balance"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P074",
+  "question": "Unlicensed lending apps in Vietnam have mainly been targeted for:",
+  "options": {
+   "A": "Issuing too many cards",
+   "B": "Usurious interest and abusive debt collection",
+   "C": "Excess capital",
+   "D": "Paying too little tax on deposits"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P075",
+  "question": "Why must e-wallets be linked to the holder's bank account?",
+  "options": {
+   "A": "To enable foreign currency trading",
+   "B": "To avoid all AML duties",
+   "C": "To earn interest for the wallet provider",
+   "D": "To tie wallet funds to a KYC-verified bank customer and limit anonymous flows"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P076",
+  "question": "Which agency is the primary AML supervisor for payment intermediaries?",
+  "options": {
+   "A": "The State Bank of Vietnam",
+   "B": "The SSC",
+   "C": "The Ministry of Industry and Trade",
+   "D": "The Ministry of Justice"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P077",
+  "question": "A data protection impact assessment under Decree 13/2023 is required from:",
+  "options": {
+   "A": "Only foreign companies",
+   "B": "Only government agencies",
+   "C": "No one",
+   "D": "Organisations processing personal data"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P078",
+  "question": "Which customers can use VietQR to pay?",
+  "options": {
+   "A": "Only corporate customers",
+   "B": "Only Napas employees",
+   "C": "Customers of participating banks and e-wallets",
+   "D": "Only foreign tourists"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P079",
+  "question": "Which type of firm was licensed to provide e-wallet services before Decree 52/2024, under Decree 101/2012?",
+  "options": {
+   "A": "Insurance agents",
+   "B": "Securities companies",
+   "C": "Payment intermediaries licensed by the SBV",
+   "D": "Telecom carriers automatically"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P080",
+  "question": "What should a provider do on a confirmed mule network?",
+  "options": {
+   "A": "Raise wallet limits",
+   "B": "Suspend accounts, report an STR and report to police",
+   "C": "Publish customer names",
+   "D": "Ignore it if amounts are small"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P081",
+  "question": "Mobile Money in Vietnam was piloted by:",
+  "options": {
+   "A": "Telecom carriers under a government pilot",
+   "B": "Commercial banks only",
+   "C": "Napas alone",
+   "D": "The SSC"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "fintech_vn_P082",
+  "question": "Which decision authorised the Mobile Money pilot in 2021?",
+  "options": {
+   "A": "Decision 2345/QD-NHNN",
+   "B": "Decision 1813/QD-TTg",
+   "C": "Decision 11/2023/QD-TTg",
+   "D": "Decision 316/QD-TTg"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P083",
+  "question": "The Mobile Money pilot cap on monthly transactions per account was:",
+  "options": {
+   "A": "VND 50 million",
+   "B": "VND 1 million",
+   "C": "VND 10 million",
+   "D": "VND 100 million"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P084",
+  "question": "Which group was the Mobile Money pilot mainly meant to serve?",
+  "options": {
+   "A": "Foreign investors",
+   "B": "Government agencies",
+   "C": "Rural and unbanked people",
+   "D": "Large corporations"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "fintech_vn_P085",
+  "question": "Open banking APIs let third parties access bank data:",
+  "options": {
+   "A": "Only for the police",
+   "B": "With the customer's consent under SBV standards",
+   "C": "Without any consent",
+   "D": "Only for tax purposes"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P086",
+  "question": "Which is a payment firm's main tool against account takeover?",
+  "options": {
+   "A": "Higher wallet limits",
+   "B": "Paper statements",
+   "C": "Fewer KYC checks",
+   "D": "Strong customer authentication with biometrics and device binding"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P087",
+  "question": "A customer's e-wallet balance is:",
+  "options": {
+   "A": "Owned by Napas",
+   "B": "Insured by the deposit insurer like a deposit",
+   "C": "Invested in shares",
+   "D": "Backed by funds the provider holds at its bank"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P088",
+  "question": "Is an e-wallet balance a bank deposit protected by Vietnam's deposit insurance?",
+  "options": {
+   "A": "Yes, up to VND 125 million",
+   "B": "No",
+   "C": "Yes, without limit",
+   "D": "Only for foreign users"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "fintech_vn_P089",
+  "question": "What is the deposit insurance limit for bank deposits in Vietnam?",
+  "options": {
+   "A": "VND 500 million",
+   "B": "VND 50 million",
+   "C": "VND 1 billion",
+   "D": "VND 125 million per depositor per bank"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "fintech_vn_P090",
+  "question": "Which body pays deposit insurance in Vietnam?",
+  "options": {
+   "A": "The SSC",
+   "B": "The Ministry of Finance directly",
+   "C": "Deposit Insurance of Vietnam (DIV)",
+   "D": "Napas"
+  },
+  "answer": "C"
+ }
+]
