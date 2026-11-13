@@ -1,0 +1,265 @@
+[
+ {
+  "id": "securities_vn_T1",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What makes a Vietnamese joint stock company a public company, and who counts as a major shareholder?",
+  "ground_truth": {
+   "answer": "Under the Law on Securities 54/2019/QH14, a public company has made an IPO, or has charter capital of VND 30 billion or more with at least 10% of voting shares held by at least 100 non-major investors. A major shareholder holds 5% or more of the voting shares.",
+   "required_terms": [
+    "Public Company",
+    "Law on Securities 54/2019/QH14",
+    "Charter Capital",
+    "VND 30 billion",
+    "Major Shareholder"
+   ],
+   "term_definitions": {
+    "Public Company": "IPO, or VND 30bn capital and 10% held by 100+ non-major investors",
+    "Major Shareholder": ">= 5% of voting shares"
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T2",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "Explain the daily price limits on Vietnam's stock markets and how they differ by exchange.",
+  "ground_truth": {
+   "answer": "Prices may move within a band around the reference price: +/-7% on HOSE, +/-10% on HNX and +/-15% on UPCoM. On a first trading day the bands widen to 20%, 30% and 40% respectively.",
+   "required_terms": [
+    "Price Band",
+    "Reference Price",
+    "HOSE",
+    "HNX",
+    "UPCoM"
+   ],
+   "term_definitions": {
+    "Price Band": "Daily limit from the reference price",
+    "UPCoM": "Unlisted public company market run by HNX"
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T3",
+  "industry": "securities",
+  "category": "terminology",
+  "metric_tested": "TF",
+  "question": "What is a Vietnamese securities company's available capital ratio, and what happens at each threshold?",
+  "ground_truth": {
+   "answer": "Under Circular 91/2020/TT-BTC the available capital ratio is available capital divided by total risk value, with a 180% minimum. Between 150% and under 180% the firm is under warning status; 120% to under 150% under control; below 120% under special control with possible restrictions.",
+   "required_terms": [
+    "Available Capital Ratio",
+    "Circular 91/2020/TT-BTC",
+    "Total Risk Value",
+    "Warning Status",
+    "Special Control"
+   ],
+   "term_definitions": {
+    "Available Capital Ratio": "Available capital / total risk value; minimum 180%"
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T4",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A securities company reports an available capital ratio of 160% and total margin loans equal to 230% of its equity. Assess both.",
+  "ground_truth": {
+   "answer": "An available capital ratio of 160% is BELOW the 180% minimum and puts the firm under SSC warning status (150% to under 180%). Margin loans of 230% of equity EXCEED the 200% limit and must be reduced.",
+   "metrics": {
+    "available_capital_ratio": {
+     "value": 1.6,
+     "healthy": ">=1.80",
+     "assessment": "BELOW"
+    },
+    "margin_loans_to_equity": {
+     "value": 2.3,
+     "healthy": "<=2.00",
+     "assessment": "EXCEEDS"
+    }
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T5",
+  "industry": "securities",
+  "category": "metric_interpretation",
+  "metric_tested": "MA",
+  "question": "A client's margin account ratio has fallen to 28% after a sell-off; the firm's maintenance ratio is 30% and its initial ratio 50%. Assess the account and the firm's next step.",
+  "ground_truth": {
+   "answer": "At 28% the account is BELOW the 30% maintenance ratio, so the firm issues a margin call to restore at least the maintenance level and may force-sell if the client does not add cash or collateral; new margin purchases need the 50% initial ratio.",
+   "metrics": {
+    "account_margin_ratio": {
+     "value": 0.28,
+     "healthy": ">=0.30",
+     "assessment": "BELOW"
+    },
+    "initial_margin": {
+     "value": 0.5,
+     "healthy": ">=0.50"
+    }
+   }
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T6",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "An investor holding 18% of a HOSE-listed company plans to buy enough shares to reach 26%. What does Vietnamese law require?",
+  "ground_truth": {
+   "answer": "Crossing 25% of voting shares requires a public tender offer under Article 35 of the Law on Securities 54/2019/QH14, unless an exemption applies such as approval by the general meeting. As a major shareholder (over 5%) the investor must also report each change crossing 1% within five working days under Circular 96/2020/TT-BTC, and foreign ownership limits must be checked if the investor is foreign.",
+   "regulations": [
+    "Law on Securities 54/2019/QH14 Article 35",
+    "Circular 96/2020/TT-BTC"
+   ],
+   "requirements": [
+    "tender offer at 25%",
+    "major shareholder reporting within 5 working days",
+    "1% change reporting",
+    "foreign ownership limit check"
+   ]
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T7",
+  "industry": "securities",
+  "category": "regulatory",
+  "metric_tested": "RC",
+  "question": "The CFO of a listed Vietnamese company wants to sell 200,000 of her shares. What must she do?",
+  "ground_truth": {
+   "answer": "As an insider she must report to the SSC, the exchange and the company at least three working days before trading, execute within 30 days, and report the result within five working days of completion (Circular 96/2020/TT-BTC). She must not trade on inside information, which is prohibited and a crime under Article 210 of the Penal Code.",
+   "regulations": [
+    "Circular 96/2020/TT-BTC",
+    "Law on Securities 54/2019/QH14",
+    "Penal Code Article 210"
+   ],
+   "requirements": [
+    "report 3 working days before",
+    "trade within 30 days",
+    "report result within 5 working days",
+    "no trading on inside information"
+   ]
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T8",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Head of Risk Management, the VN-Index has fallen 15% in a week and many margin accounts are near the maintenance ratio. What do you do?",
+  "ground_truth": {
+   "role": "Head of Risk Management",
+   "decision_pattern": "market_stress",
+   "expected_factors": [
+    "recompute account ratios",
+    "issue margin calls",
+    "forced sales below maintenance",
+    "tighten eligible stock list and concentration",
+    "check the firm's available capital ratio against 180%"
+   ],
+   "kpi_references": [
+    "available capital ratio >= 180%",
+    "margin loans <= 200% of equity"
+   ],
+   "vocabulary": [
+    "Margin Call",
+    "Maintenance Margin",
+    "Forced Sale",
+    "Available Capital Ratio",
+    "Concentration Limit"
+   ],
+   "communication_style": "Quantitative, threshold-driven, cites SSC rules"
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T9",
+  "industry": "securities",
+  "category": "role_analysis",
+  "metric_tested": "RS",
+  "question": "As Head of Compliance, you see a group of linked accounts trading one small-cap stock back and forth to push its price up the daily limit. How do you respond?",
+  "ground_truth": {
+   "role": "Head of Compliance",
+   "decision_pattern": "suspected_manipulation",
+   "expected_factors": [
+    "review linked accounts and funding",
+    "restrict accounts where permitted",
+    "report to the SSC",
+    "suspicious transaction report to the State Bank within 3 working days",
+    "preserve records 5 years"
+   ],
+   "kpi_references": [
+    "STRs within 3 working days",
+    "no repeat SSC findings"
+   ],
+   "vocabulary": [
+    "Market Manipulation",
+    "Penal Code Article 211",
+    "Suspicious Transaction Report",
+    "Law on AML 14/2022/QH15",
+    "SSC"
+   ],
+   "communication_style": "Formal, legalistic, cites Law, Decree and Circular"
+  },
+  "cell": "securities_vn"
+ },
+ {
+  "id": "securities_vn_T10",
+  "industry": "securities",
+  "category": "cross_cutting",
+  "metric_tested": "ALL",
+  "question": "The board of a HOSE-listed company resolves to acquire a competitor for an amount above 35% of total assets. Trace the disclosure handoff chain.",
+  "ground_truth": {
+   "handoff_chain": [
+    {
+     "step": 1,
+     "from": "Board of Directors / Company Secretary",
+     "to": "Head of Investor Relations",
+     "context": [
+      "resolution_text",
+      "event_details"
+     ],
+     "sla": {
+      "handover": "Same day"
+     }
+    },
+    {
+     "step": 2,
+     "from": "Head of Investor Relations",
+     "to": "State Securities Commission and Stock Exchange",
+     "context": [
+      "disclosure_document",
+      "company_website_posting"
+     ],
+     "sla": {
+      "disclosure": "Within 24 hours"
+     }
+    },
+    {
+     "step": 3,
+     "condition": "Transaction at or above 35% of total assets",
+     "action": "Approval by the general meeting of shareholders under the Law on Enterprises before completion"
+    }
+   ],
+   "terms": [
+    "Extraordinary Disclosure",
+    "Circular 96/2020/TT-BTC",
+    "State Securities Commission",
+    "General Meeting of Shareholders"
+   ],
+   "escalation_level": "L5_board"
+  },
+  "cell": "securities_vn"
+ }
+]
