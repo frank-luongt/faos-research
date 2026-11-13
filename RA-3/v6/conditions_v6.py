@@ -4,6 +4,11 @@ v5's C2 carried ~2,000 tokens against C3's larger context, so the C2-C3
 comparison was not budget-matched. C2b fills the same character budget as the
 task's C3 context from the cell's ``rag_chunks``, in file order, and records any
 shortfall so an under-filled cell is visible rather than silent.
+
+The five cells carried over from v5 keep their v5 ``rag_chunks`` unchanged, so
+v5's own C2 prompts still rebuild byte for byte. Their extra v6 text sits in
+``rag_chunks_v6``, which restates facts already in the cell's ontology as prose
+and adds no new facts; C2b reads ``rag_chunks`` first, then ``rag_chunks_v6``.
 """
 
 import importlib.util
@@ -32,7 +37,8 @@ def _v5_task(task: dict) -> dict:
 def c2b_system_prompt(task: dict) -> tuple[str, dict]:
     t = _v5_task(task)
     budget = len(v5.c3_system_prompt(t)) - len(RAG_HEADER)
-    chunks = v5._load_ontology(t["industry"]).get("rag_chunks", [])
+    onto = v5._load_ontology(t["industry"])
+    chunks = onto.get("rag_chunks", []) + onto.get("rag_chunks_v6", [])
     picked, used = [], 0
     for chunk in chunks:
         sep = 2 if picked else 0

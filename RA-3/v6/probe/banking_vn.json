@@ -1,0 +1,992 @@
+[
+ {
+  "id": "banking_vn_P001",
+  "question": "Which body is Vietnam's central bank and banking regulator?",
+  "options": {
+   "A": "The State Bank of Vietnam",
+   "B": "The State Securities Commission",
+   "C": "The Ministry of Finance",
+   "D": "The National Financial Supervisory Commission"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P002",
+  "question": "Which law currently governs credit institutions in Vietnam?",
+  "options": {
+   "A": "Law on the State Bank No. 46/2010/QH12",
+   "B": "Law on Credit Institutions No. 47/2010/QH12",
+   "C": "Law on Credit Institutions No. 32/2024/QH15",
+   "D": "Law on Enterprises No. 59/2020/QH14"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P003",
+  "question": "When did Law No. 32/2024/QH15 on Credit Institutions take effect?",
+  "options": {
+   "A": "1 July 2024",
+   "B": "1 January 2024",
+   "C": "1 January 2025",
+   "D": "1 March 2023"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P004",
+  "question": "Which law is Vietnam's current anti-money-laundering law?",
+  "options": {
+   "A": "Law No. 14/2022/QH15",
+   "B": "Law No. 32/2024/QH15",
+   "C": "Law No. 07/2012/QH13",
+   "D": "Law No. 91/2025/QH15"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P005",
+  "question": "When did Vietnam's 2022 Law on Anti-Money Laundering take effect?",
+  "options": {
+   "A": "1 January 2023",
+   "B": "1 July 2024",
+   "C": "1 March 2023",
+   "D": "1 January 2022"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P006",
+  "question": "Which decree guides the 2022 Law on Anti-Money Laundering?",
+  "options": {
+   "A": "Decree 116/2013/ND-CP",
+   "B": "Decree 13/2023/ND-CP",
+   "C": "Decree 52/2024/ND-CP",
+   "D": "Decree 19/2023/ND-CP"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P007",
+  "question": "What is the large-value transaction reporting threshold for cash at Vietnamese banks?",
+  "options": {
+   "A": "VND 300 million",
+   "B": "VND 500 million",
+   "C": "VND 400 million",
+   "D": "VND 1 billion"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P008",
+  "question": "Which Prime Minister's decision sets the VND 400 million large-value reporting threshold?",
+  "options": {
+   "A": "Decision 11/2023/QD-TTg",
+   "B": "Decision 2345/QD-NHNN",
+   "C": "Decision 316/QD-TTg",
+   "D": "Decision 32/2021/QD-TTg"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P009",
+  "question": "How long must Vietnamese reporting entities keep AML records?",
+  "options": {
+   "A": "At least 2 years",
+   "B": "At least 5 years",
+   "C": "At least 10 years",
+   "D": "At least 1 year"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P010",
+  "question": "Under the 2022 AML Law, how quickly must a suspicious transaction report normally be filed?",
+  "options": {
+   "A": "Within 3 working days of detection",
+   "B": "By the end of the quarter",
+   "C": "Within 30 days of detection",
+   "D": "Within 7 working days of detection"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P011",
+  "question": "Which circular replaced Circular 11/2021 on loan classification and provisioning?",
+  "options": {
+   "A": "Circular 41/2016/TT-NHNN",
+   "B": "Circular 22/2019/TT-NHNN",
+   "C": "Circular 02/2023/TT-NHNN",
+   "D": "Circular 31/2024/TT-NHNN"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P012",
+  "question": "Which circular sets Vietnam's Basel II capital adequacy ratio for banks?",
+  "options": {
+   "A": "Circular 22/2019/TT-NHNN",
+   "B": "Circular 39/2016/TT-NHNN",
+   "C": "Circular 13/2018/TT-NHNN",
+   "D": "Circular 41/2016/TT-NHNN"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P013",
+  "question": "Which circular governs lending by credit institutions to customers?",
+  "options": {
+   "A": "Circular 16/2020/TT-NHNN",
+   "B": "Circular 39/2016/TT-NHNN",
+   "C": "Circular 41/2016/TT-NHNN",
+   "D": "Circular 13/2018/TT-NHNN"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P014",
+  "question": "Which circular sets Vietnamese banks' internal control system and three lines of defence?",
+  "options": {
+   "A": "Circular 31/2024/TT-NHNN",
+   "B": "Circular 22/2019/TT-NHNN",
+   "C": "Circular 13/2018/TT-NHNN",
+   "D": "Circular 39/2016/TT-NHNN"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P015",
+  "question": "What is the maximum loan-to-deposit ratio for a Vietnamese commercial bank under Circular 22/2019?",
+  "options": {
+   "A": "100%",
+   "B": "85%",
+   "C": "90%",
+   "D": "75%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P016",
+  "question": "What minimum liquidity reserve ratio does Circular 22/2019 require?",
+  "options": {
+   "A": "20%",
+   "B": "10%",
+   "C": "30%",
+   "D": "5%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P017",
+  "question": "What is the minimum legal capital for a Vietnamese commercial bank?",
+  "options": {
+   "A": "VND 1,000 billion",
+   "B": "VND 5,000 billion",
+   "C": "VND 10,000 billion",
+   "D": "VND 3,000 billion"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P018",
+  "question": "What is the minimum capital for a foreign bank branch in Vietnam?",
+  "options": {
+   "A": "USD 50 million",
+   "B": "USD 5 million",
+   "C": "USD 100 million",
+   "D": "USD 15 million"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P019",
+  "question": "Under Law 32/2024, what is the maximum shareholding of an individual in a Vietnamese bank?",
+  "options": {
+   "A": "20% of charter capital",
+   "B": "15% of charter capital",
+   "C": "10% of charter capital",
+   "D": "5% of charter capital"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P020",
+  "question": "Under Law 32/2024, what is the maximum shareholding of an institutional shareholder in a Vietnamese bank?",
+  "options": {
+   "A": "10% of charter capital",
+   "B": "20% of charter capital",
+   "C": "5% of charter capital",
+   "D": "15% of charter capital"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P021",
+  "question": "Under Law 32/2024, what is the cap on a shareholder together with related persons?",
+  "options": {
+   "A": "25% of charter capital",
+   "B": "10% of charter capital",
+   "C": "15% of charter capital",
+   "D": "20% of charter capital"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P022",
+  "question": "What is the total foreign ownership cap in a Vietnamese commercial bank?",
+  "options": {
+   "A": "51%",
+   "B": "49%",
+   "C": "20%",
+   "D": "30%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P023",
+  "question": "Under Law 32/2024, what is the end-state credit limit to a single customer of a commercial bank?",
+  "options": {
+   "A": "25% of equity",
+   "B": "10% of equity",
+   "C": "5% of equity",
+   "D": "15% of equity"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P024",
+  "question": "Law 32/2024 phases the single-customer credit limit down from which starting level in July 2024?",
+  "options": {
+   "A": "12% of equity",
+   "B": "15% of equity",
+   "C": "14% of equity",
+   "D": "20% of equity"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P025",
+  "question": "Which new supervisory tool did Law 32/2024 introduce before special control?",
+  "options": {
+   "A": "Early intervention",
+   "B": "Deposit freeze",
+   "C": "Temporary nationalisation",
+   "D": "Mandatory liquidation"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P026",
+  "question": "What is the regime called when the SBV takes over supervision of a weak bank?",
+  "options": {
+   "A": "Administrative management",
+   "B": "Conservatorship by VAMC",
+   "C": "Special control (kiểm soát đặc biệt)",
+   "D": "Receivership (quản lý tài sản)"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P027",
+  "question": "Which resolution piloted bad-debt resolution and collateral seizure for credit institutions from 2017?",
+  "options": {
+   "A": "Resolution 11/NQ-CP",
+   "B": "Resolution 05/2025/NQ-CP",
+   "C": "Resolution 42/2017/QH14",
+   "D": "Resolution 68/NQ-TW"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P028",
+  "question": "Which state company buys bad debts from banks in exchange for special bonds?",
+  "options": {
+   "A": "DATC",
+   "B": "SCIC",
+   "C": "VSDC",
+   "D": "VAMC"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P029",
+  "question": "Which bank took over DongA Bank under the 2025 compulsory transfers?",
+  "options": {
+   "A": "VPBank",
+   "B": "Vietcombank",
+   "C": "MB",
+   "D": "HDBank"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P030",
+  "question": "Which bank took over CB Bank under compulsory transfer?",
+  "options": {
+   "A": "Vietcombank",
+   "B": "BIDV",
+   "C": "VPBank",
+   "D": "HDBank"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P031",
+  "question": "Which bank took over OceanBank under compulsory transfer?",
+  "options": {
+   "A": "VietinBank",
+   "B": "Agribank",
+   "C": "VPBank",
+   "D": "MB"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P032",
+  "question": "Which bank took over GPBank under compulsory transfer?",
+  "options": {
+   "A": "VPBank",
+   "B": "Techcombank",
+   "C": "HDBank",
+   "D": "MB"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P033",
+  "question": "Which of these is NOT one of Vietnam's 'Big Four' state-owned commercial banks?",
+  "options": {
+   "A": "BIDV",
+   "B": "Agribank",
+   "C": "VietinBank",
+   "D": "Techcombank"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P034",
+  "question": "Which Big Four bank is 100% state-owned?",
+  "options": {
+   "A": "BIDV",
+   "B": "Agribank",
+   "C": "VietinBank",
+   "D": "Vietcombank"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P035",
+  "question": "Which organisation pays depositors if a Vietnamese bank fails?",
+  "options": {
+   "A": "Deposit Insurance of Vietnam (DIV)",
+   "B": "VAMC",
+   "C": "The State Capital Investment Corporation",
+   "D": "The Ministry of Finance"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P036",
+  "question": "What is the maximum deposit insurance payout per depositor per institution in Vietnam?",
+  "options": {
+   "A": "VND 500 million",
+   "B": "VND 75 million",
+   "C": "VND 250 million",
+   "D": "VND 125 million"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P037",
+  "question": "Which body runs Vietnam's national credit information registry?",
+  "options": {
+   "A": "A private credit bureau licensed by the MoF",
+   "B": "Napas",
+   "C": "CIC, a unit of the State Bank of Vietnam",
+   "D": "The Ministry of Public Security"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P038",
+  "question": "Which company operates Vietnam's interbank card switching and 24/7 fast transfers?",
+  "options": {
+   "A": "Napas",
+   "B": "VNPT",
+   "C": "VSDC",
+   "D": "Viettel Money"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P039",
+  "question": "VietQR is a QR payment standard operated by:",
+  "options": {
+   "A": "Napas",
+   "B": "Visa",
+   "C": "MoMo",
+   "D": "The Ministry of Information and Communications"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P040",
+  "question": "Under Decision 2345/QD-NHNN, which online transfers need biometric authentication?",
+  "options": {
+   "A": "Above VND 1 million per transaction",
+   "B": "Above VND 50 million per transaction only",
+   "C": "Above VND 10 million per transaction or VND 20 million per day",
+   "D": "All international transfers only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P041",
+  "question": "From when did Decision 2345/QD-NHNN's biometric checks for online transfers apply?",
+  "options": {
+   "A": "1 January 2025",
+   "B": "1 January 2024",
+   "C": "1 July 2024",
+   "D": "1 March 2023"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P042",
+  "question": "Under Circular 17/2024, from 1 January 2025 an account without biometrics matched to the chip ID cannot:",
+  "options": {
+   "A": "Be closed",
+   "B": "Receive salary deposits",
+   "C": "Make online transactions",
+   "D": "Earn deposit interest"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P043",
+  "question": "Vietnam's national electronic identity app is:",
+  "options": {
+   "A": "VssID",
+   "B": "VNeID",
+   "C": "VietQR",
+   "D": "Napas ID"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P044",
+  "question": "What is the 'Căn cước' card that bank eKYC reads?",
+  "options": {
+   "A": "The national identity card, renamed from CCCD by the 2023 Law on Identification",
+   "B": "A bank account certificate",
+   "C": "A tax registration card",
+   "D": "A land-use certificate"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P045",
+  "question": "Which decree regulates non-cash payments and e-wallet intermediaries in Vietnam?",
+  "options": {
+   "A": "Decree 86/2019/ND-CP",
+   "B": "Decree 101/2012/ND-CP",
+   "C": "Decree 19/2023/ND-CP",
+   "D": "Decree 52/2024/ND-CP"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P046",
+  "question": "What reserve requirement applies to VND demand and under-12-month deposits at most commercial banks?",
+  "options": {
+   "A": "3%",
+   "B": "10%",
+   "C": "8%",
+   "D": "1%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P047",
+  "question": "What is the SBV's cap on USD deposit interest rates for individuals?",
+  "options": {
+   "A": "There is no cap",
+   "B": "0% per year",
+   "C": "1% per year",
+   "D": "2% per year"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P048",
+  "question": "What trading band does the SBV currently allow around its central VND/USD rate?",
+  "options": {
+   "A": "+/-5%",
+   "B": "+/-10%",
+   "C": "+/-3%",
+   "D": "+/-1%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P049",
+  "question": "How does the SBV ration credit growth across banks each year?",
+  "options": {
+   "A": "Through reserve auctions only",
+   "B": "By assigning each bank a credit growth quota",
+   "C": "It does not limit credit growth",
+   "D": "By a single interbank rate only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P050",
+  "question": "Under Circular 31/2024, which debt groups count as bad debt (nợ xấu)?",
+  "options": {
+   "A": "Group 5 only",
+   "B": "Groups 2 to 5",
+   "C": "Groups 3, 4 and 5",
+   "D": "Groups 4 and 5 only"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P051",
+  "question": "What general provision must Vietnamese banks hold on Group 1-4 loans?",
+  "options": {
+   "A": "None; only specific provisions apply",
+   "B": "1.5% of outstanding balances",
+   "C": "0.75% of outstanding balances",
+   "D": "0.25% of outstanding balances"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P052",
+  "question": "What is the specific provision rate for a Group 4 (doubtful) loan?",
+  "options": {
+   "A": "100%",
+   "B": "20%",
+   "C": "5%",
+   "D": "50%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P053",
+  "question": "What is the specific provision rate for a Group 2 (special mention) loan?",
+  "options": {
+   "A": "20%",
+   "B": "10%",
+   "C": "5%",
+   "D": "0%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P054",
+  "question": "Which circular let banks restructure repayments while keeping the debt group, until end-2024?",
+  "options": {
+   "A": "Circular 39/2016/TT-NHNN",
+   "B": "Circular 16/2020/TT-NHNN",
+   "C": "Circular 02/2023/TT-NHNN",
+   "D": "Circular 22/2019/TT-NHNN"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P055",
+  "question": "Which circular requires ICAAP and the three-lines-of-defence model?",
+  "options": {
+   "A": "Circular 13/2018/TT-NHNN",
+   "B": "Circular 41/2016/TT-NHNN",
+   "C": "Circular 52/2024/TT-NHNN",
+   "D": "Circular 11/2021/TT-NHNN"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P056",
+  "question": "Credit institutions in Vietnam may NOT grant credit to which of these?",
+  "options": {
+   "A": "State-owned enterprises",
+   "B": "Members of their own board of directors",
+   "C": "Small and medium enterprises",
+   "D": "Foreign-invested enterprises"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P057",
+  "question": "What does 'tổ chức tín dụng' mean?",
+  "options": {
+   "A": "Credit institution",
+   "B": "Credit card",
+   "C": "Loan contract",
+   "D": "Credit score"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P058",
+  "question": "What does 'tài sản bảo đảm' mean?",
+  "options": {
+   "A": "Deposit insurance",
+   "B": "Collateral",
+   "C": "Guarantee fee",
+   "D": "Asset management"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P059",
+  "question": "What does 'nợ xấu' mean?",
+  "options": {
+   "A": "Written-off debt only",
+   "B": "Restructured loan",
+   "C": "Bad debt (non-performing loans)",
+   "D": "Overdue interest"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P060",
+  "question": "What does 'huy động vốn' mean in Vietnamese banking?",
+  "options": {
+   "A": "Equity issuance",
+   "B": "Capital adequacy",
+   "C": "Deposit and funding mobilisation",
+   "D": "Loan disbursement"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P061",
+  "question": "What does 'giải ngân' mean?",
+  "options": {
+   "A": "Loan repayment",
+   "B": "Loan disbursement",
+   "C": "Loan restructuring",
+   "D": "Loan approval"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P062",
+  "question": "What does 'thẩm định' mean in credit?",
+  "options": {
+   "A": "Appraisal or due-diligence assessment",
+   "B": "Final approval",
+   "C": "Debt collection",
+   "D": "Collateral seizure"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P063",
+  "question": "What is the 'sổ đỏ' that borrowers pledge?",
+  "options": {
+   "A": "A savings book",
+   "B": "A land-use right certificate",
+   "C": "A business licence",
+   "D": "A vehicle registration"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P064",
+  "question": "What does 'vốn tự có' refer to in prudential rules?",
+  "options": {
+   "A": "Customer deposits",
+   "B": "The bank's own capital used for prudential limits",
+   "C": "Charter capital only",
+   "D": "Retained earnings only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P065",
+  "question": "What does 'Vốn cấp 1' denote?",
+  "options": {
+   "A": "Tier 1 capital",
+   "B": "Tier 2 capital",
+   "C": "Paid-in capital only",
+   "D": "Subordinated debt"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P066",
+  "question": "What does 'KHDN' stand for in a Vietnamese bank?",
+  "options": {
+   "A": "Credit committee",
+   "B": "Corporate customers",
+   "C": "Retail customers",
+   "D": "Debt collection unit"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P067",
+  "question": "What does 'KHCN' stand for in a Vietnamese bank?",
+  "options": {
+   "A": "Compliance department",
+   "B": "Corporate customers",
+   "C": "Individual (retail) customers",
+   "D": "Correspondent banks"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P068",
+  "question": "'Khẩu vị rủi ro' translates as:",
+  "options": {
+   "A": "Risk appetite",
+   "B": "Risk-weighted asset",
+   "C": "Risk report",
+   "D": "Risk rating"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P069",
+  "question": "'Rủi ro hoạt động' translates as:",
+  "options": {
+   "A": "Operational risk",
+   "B": "Credit risk",
+   "C": "Market risk",
+   "D": "Liquidity risk"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P070",
+  "question": "'Tỷ lệ bao phủ nợ xấu' measures:",
+  "options": {
+   "A": "Collateral as a share of loans",
+   "B": "Write-offs as a share of income",
+   "C": "Loan-loss provisions as a share of bad debt",
+   "D": "Bad debt as a share of loans"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P071",
+  "question": "Expected loss on a loan is calculated as:",
+  "options": {
+   "A": "EAD / (PD x LGD)",
+   "B": "PD x LGD x EAD",
+   "C": "PD + LGD + EAD",
+   "D": "LGD x EAD only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P072",
+  "question": "In credit risk, LGD stands for:",
+  "options": {
+   "A": "Loan guarantee deposit",
+   "B": "Loss given default",
+   "C": "Loss growth delta",
+   "D": "Limit of gross debt"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P073",
+  "question": "What does the Gini coefficient of an internal rating model measure?",
+  "options": {
+   "A": "Interest rate sensitivity",
+   "B": "How well it ranks good and bad borrowers",
+   "C": "Portfolio concentration",
+   "D": "Income inequality among borrowers"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P074",
+  "question": "ICAAP stands for:",
+  "options": {
+   "A": "Integrated Credit and Asset Pricing",
+   "B": "Internal Capital Adequacy Assessment Process",
+   "C": "Internal Control and Audit Plan",
+   "D": "Interbank Capital Allocation Programme"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P075",
+  "question": "Which committee usually manages a bank's balance sheet and liquidity?",
+  "options": {
+   "A": "The audit committee",
+   "B": "ALCO",
+   "C": "The credit committee",
+   "D": "The remuneration committee"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P076",
+  "question": "Risk-weighted assets (RWA) are the denominator of which ratio?",
+  "options": {
+   "A": "Loan-to-deposit ratio",
+   "B": "Cost-to-income ratio",
+   "C": "Net interest margin",
+   "D": "Capital adequacy ratio"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P077",
+  "question": "Net interest income divided by average earning assets gives:",
+  "options": {
+   "A": "Cost of funds",
+   "B": "Loan yield",
+   "C": "Return on assets",
+   "D": "Net interest margin"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P078",
+  "question": "A bank's NSFR compares:",
+  "options": {
+   "A": "Loans with deposits",
+   "B": "Liquid assets with 30-day outflows",
+   "C": "Equity with total assets",
+   "D": "Available stable funding with required stable funding"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P079",
+  "question": "Which rules govern documentary credits in Vietnamese trade finance?",
+  "options": {
+   "A": "URC 522",
+   "B": "ISP98 only",
+   "C": "Incoterms 2020 only",
+   "D": "UCP 600"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P080",
+  "question": "Which network carries Vietnamese banks' cross-border payment messages?",
+  "options": {
+   "A": "Fedwire",
+   "B": "SWIFT",
+   "C": "CHAPS",
+   "D": "Napas"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P081",
+  "question": "Under IFRS 9, loan provisions are based on:",
+  "options": {
+   "A": "Expected credit losses",
+   "B": "Days past due only",
+   "C": "Incurred losses only",
+   "D": "Collateral value only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P082",
+  "question": "Basel II's three pillars are minimum capital, supervisory review and:",
+  "options": {
+   "A": "Deposit insurance",
+   "B": "Liquidity coverage",
+   "C": "Leverage limits",
+   "D": "Market discipline"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P083",
+  "question": "Splitting cash deposits to stay under a reporting threshold is called:",
+  "options": {
+   "A": "Front-running",
+   "B": "Layering",
+   "C": "Integration",
+   "D": "Structuring"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P084",
+  "question": "Which customers always require enhanced due diligence?",
+  "options": {
+   "A": "State-owned enterprises",
+   "B": "Politically exposed persons",
+   "C": "All salaried employees",
+   "D": "Customers with term deposits"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P085",
+  "question": "An NPS score in branch KPIs measures:",
+  "options": {
+   "A": "New product sales",
+   "B": "Non-performing loan share",
+   "C": "Net profit spread",
+   "D": "Customer willingness to recommend the bank"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "banking_vn_P086",
+  "question": "Cross-selling ratio measures:",
+  "options": {
+   "A": "Loans per deposit",
+   "B": "Staff per customer",
+   "C": "Products held per customer",
+   "D": "Branches per region"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P087",
+  "question": "Vietnamese banks report under which accounting standards by default?",
+  "options": {
+   "A": "Vietnamese Accounting Standards (VAS)",
+   "B": "Japanese GAAP",
+   "C": "US GAAP",
+   "D": "IFRS only"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "banking_vn_P088",
+  "question": "Which agency issues the chip-based identity cards that bank eKYC reads by NFC?",
+  "options": {
+   "A": "The Ministry of Home Affairs",
+   "B": "The Ministry of Public Security",
+   "C": "The Ministry of Justice",
+   "D": "The State Bank of Vietnam"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "banking_vn_P089",
+  "question": "Lending in foreign currency by Vietnamese banks is:",
+  "options": {
+   "A": "Freely allowed for any purpose",
+   "B": "Allowed only to individuals",
+   "C": "Restricted to purposes the SBV permits, such as import payments",
+   "D": "Fully banned"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "banking_vn_P090",
+  "question": "What is the Vietnamese currency's ISO code?",
+  "options": {
+   "A": "VNM",
+   "B": "DNG",
+   "C": "VDN",
+   "D": "VND"
+  },
+  "answer": "D"
+ }
+]
