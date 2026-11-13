@@ -34,22 +34,19 @@ OPENROUTER_API_KEY=... python run_judges.py       # ~4,752 calls
 python coverage.py
 ```
 
-## Pilot cell: accounting_us (draft, awaiting review)
+## Study materials (draft, awaiting expert review)
 
-US Accounting is the first cell written in full, as a pattern for the other new cells. It has three parts:
+All 12 cells now have their materials:
 
-- `../ontology_context/accounting_us.json`: Controller, Chief Audit Executive and Tax Director roles; concepts from ASC 606, 842, 326, 350, 330, 450, 820 and 740; and SOX, PCAOB and SEC rules. Its RAG corpus is about 8,800 characters, so C2b matches C3 to within 41 characters.
-- `pilot/tasks_accounting_us.json`: 10 tasks in v5's mix and schema. They merge into `tasks_v6.json` once reviewed.
-- `probe/accounting_us.json`: 90 multiple-choice items with a seeded, balanced answer key.
+- `../ontology_context/<cell>.json`: one ontology per cell (v5's five files keep their v5 names: `fintech`, `insurance`, `healthcare`, `banking_vn`, `insurance_vn`).
+- `tasks_v6.json`: 120 tasks, 10 per cell in v5's mix. v5's 50 tasks are reused unchanged for their five cells; the 70 new tasks live in `pilot/tasks_<cell>.json`. Rebuild with `python build_tasks.py`.
+- `probe/<cell>.json`: 90 multiple-choice items per cell (1,080 in all), each with a seeded, balanced answer key. No probe item repeats a task question, though some test facts the tasks also use.
+- **RAG corpora.** C2b fills each task's C3 budget from the cell's retrieval text. The largest shortfall over all 120 tasks is 195 characters. v5's five cells keep their v5 `rag_chunks` byte for byte, so v5's C2 prompts still rebuild. Their extra v6 text is in `rag_chunks_v6`, which restates the cell's own ontology as prose and adds no new facts.
 
-The facts were written from the standards and SEC rules as of November 2026. A US accounting expert should check them before lock.
+`EXPERT-CHECK.md` lists the facts most likely to need correction, as well as v5 ground truth that looks out of date. Those facts should be verified by the domain experts before lock.
 
 ## Still to build before lock
 
-- **Materials.** These are still to write:
-  - `tasks_v6.json`: 120 tasks with 10 per cell in v5's mix. v5's 50 tasks are reused for their five cells.
-  - `probe/<cell>.json`: 90 items per cell, 1,080 in all.
-  - The missing ontology files: `banking_us`, `healthcare_vn`, `securities_us`, `securities_vn`, `fintech_vn`, `accounting_us` and `accounting_vn`.
-- **RAG corpora.** v5's `rag_chunks` hold only about 2,200–2,700 characters, so the dry run shows every C2b prompt falling short of its C3 budget (by up to about 4,400 characters). Each cell needs a retrieval corpus of at least the C3 context size (about 7,500 characters) for C2b to be budget-matched.
+- **v5 ground truth.** Decide whether to keep or correct the out-of-date v5 ground truth listed in `EXPERT-CHECK.md` section 3.
 - **Jev adapter.** Jev answers typed questions with probabilities rather than writing text. Its request format is confirmed by the smoke test before its adapter is written.
 - **Settings to decide at lock** (see `settle_at_lock` in `models.lock.json`): reasoning effort, the provider order for each model, and the provider fallback policy.
