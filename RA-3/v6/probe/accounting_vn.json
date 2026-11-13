@@ -1,0 +1,992 @@
+[
+ {
+  "id": "accounting_vn_P001",
+  "question": "Which law currently governs accounting in Vietnam?",
+  "options": {
+   "A": "Law on Independent Audit No. 67/2011/QH12",
+   "B": "Law on Enterprises No. 59/2020/QH14",
+   "C": "Law on Accounting No. 03/2003/QH11",
+   "D": "Law on Accounting No. 88/2015/QH13"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P002",
+  "question": "When did the Law on Accounting 88/2015/QH13 take effect?",
+  "options": {
+   "A": "1 January 2017",
+   "B": "1 July 2016",
+   "C": "1 January 2015",
+   "D": "1 January 2020"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P003",
+  "question": "Which decree guides the Law on Accounting, including chief accountant qualifications?",
+  "options": {
+   "A": "Decree 123/2020/ND-CP",
+   "B": "Decree 174/2016/ND-CP",
+   "C": "Decree 41/2018/ND-CP",
+   "D": "Decree 132/2020/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P004",
+  "question": "In what currency must Vietnamese accounting units generally keep their books?",
+  "options": {
+   "A": "Vietnamese dong",
+   "B": "The parent company's currency",
+   "C": "US dollars",
+   "D": "Any currency chosen by the board"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P005",
+  "question": "If an enterprise uses a foreign accounting currency, its statutory financial statements must:",
+  "options": {
+   "A": "Be filed only in that currency",
+   "B": "Be exempt from filing",
+   "C": "Also be translated into Vietnamese dong",
+   "D": "Be filed in US dollars"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P006",
+  "question": "With a university degree, how many years of accounting experience must a chief accountant have?",
+  "options": {
+   "A": "At least 2 years",
+   "B": "At least 1 year",
+   "C": "No experience is required",
+   "D": "At least 5 years"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P007",
+  "question": "With an intermediate or college qualification, how many years' experience must a chief accountant have?",
+  "options": {
+   "A": "At least 5 years",
+   "B": "At least 3 years",
+   "C": "At least 2 years",
+   "D": "At least 1 year"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P008",
+  "question": "Which certificate must a chief accountant hold?",
+  "options": {
+   "A": "A securities practising certificate",
+   "B": "A chief accountant training certificate",
+   "C": "A CPA Australia membership",
+   "D": "A tax agent card only"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P009",
+  "question": "May the chief accountant be a relative of the enterprise's legal representative?",
+  "options": {
+   "A": "Yes",
+   "B": "Only with board approval",
+   "C": "Only in private enterprises",
+   "D": "No"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P010",
+  "question": "How long must vouchers used directly for bookkeeping and financial statements be kept?",
+  "options": {
+   "A": "At least 20 years",
+   "B": "At least 5 years",
+   "C": "At least 3 years",
+   "D": "At least 10 years"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P011",
+  "question": "How long must accounting documents used only for management be kept?",
+  "options": {
+   "A": "At least 5 years",
+   "B": "Permanently",
+   "C": "At least 10 years",
+   "D": "At least 1 year"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P012",
+  "question": "Documents of special historical or economic significance must be kept:",
+  "options": {
+   "A": "For 5 years",
+   "B": "For 10 years",
+   "C": "Permanently",
+   "D": "For 20 years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P013",
+  "question": "How many Vietnamese Accounting Standards (VAS) have been issued?",
+  "options": {
+   "A": "41",
+   "B": "16",
+   "C": "38",
+   "D": "26"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P014",
+  "question": "In which period were the VAS issued?",
+  "options": {
+   "A": "2010 to 2014",
+   "B": "2016 to 2020",
+   "C": "2001 to 2005",
+   "D": "1995 to 1999"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P015",
+  "question": "Which body issues the VAS?",
+  "options": {
+   "A": "The Ministry of Finance",
+   "B": "The State Securities Commission",
+   "C": "VACPA",
+   "D": "The State Bank of Vietnam"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P016",
+  "question": "Which circular sets the main enterprise accounting regime (before 2026)?",
+  "options": {
+   "A": "Circular 96/2020/TT-BTC",
+   "B": "Circular 200/2014/TT-BTC",
+   "C": "Circular 45/2013/TT-BTC",
+   "D": "Circular 133/2016/TT-BTC"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P017",
+  "question": "Which circular provides the simplified accounting regime for small and medium enterprises?",
+  "options": {
+   "A": "Circular 133/2016/TT-BTC",
+   "B": "Circular 78/2021/TT-BTC",
+   "C": "Circular 200/2014/TT-BTC",
+   "D": "Circular 202/2014/TT-BTC"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P018",
+  "question": "Under Circular 200, form B01-DN is the:",
+  "options": {
+   "A": "Income statement",
+   "B": "Balance sheet",
+   "C": "Cash flow statement",
+   "D": "Notes to the financial statements"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P019",
+  "question": "Under Circular 200, form B02-DN is the:",
+  "options": {
+   "A": "Notes",
+   "B": "Income statement",
+   "C": "Balance sheet",
+   "D": "Statement of changes in equity"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P020",
+  "question": "Under Circular 200, form B03-DN is the:",
+  "options": {
+   "A": "Balance sheet",
+   "B": "Notes",
+   "C": "Cash flow statement",
+   "D": "Income statement"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P021",
+  "question": "Under Circular 200, form B09-DN is the:",
+  "options": {
+   "A": "Balance sheet",
+   "B": "Notes to the financial statements",
+   "C": "Tax return",
+   "D": "Cash flow statement"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P022",
+  "question": "Which decision approved the scheme for applying IFRS in Vietnam?",
+  "options": {
+   "A": "Decision 15/2006/QD-BTC",
+   "B": "Decision 1141/TC/QD/CDKT",
+   "C": "Decision 48/2006/QD-BTC",
+   "D": "Decision 345/QD-BTC (2020)"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P023",
+  "question": "The voluntary phase of IFRS application in Vietnam covers:",
+  "options": {
+   "A": "2026 to 2030",
+   "B": "2018 to 2020",
+   "C": "2015 to 2017",
+   "D": "2022 to 2025"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P024",
+  "question": "The planned Vietnamese standards based on IFRS are called:",
+  "options": {
+   "A": "VGAAP",
+   "B": "VFRS",
+   "C": "VIFRS-SME",
+   "D": "VAS 2.0"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P025",
+  "question": "How long is a normal fiscal year in Vietnam?",
+  "options": {
+   "A": "Any length chosen by the company",
+   "B": "Up to 18 months",
+   "C": "12 months",
+   "D": "6 months"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P026",
+  "question": "A newly established enterprise's first fiscal year may last up to:",
+  "options": {
+   "A": "18 months",
+   "B": "15 months",
+   "C": "12 months",
+   "D": "24 months"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P027",
+  "question": "A Vietnamese fiscal year may begin on:",
+  "options": {
+   "A": "The first day of any quarter",
+   "B": "1 April only",
+   "C": "1 January only",
+   "D": "Any day of the year"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P028",
+  "question": "Private enterprises and partnerships must submit annual financial statements within:",
+  "options": {
+   "A": "30 days after year-end",
+   "B": "90 days",
+   "C": "120 days",
+   "D": "60 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P029",
+  "question": "Enterprises other than private enterprises and partnerships submit annual financial statements within:",
+  "options": {
+   "A": "90 days after year-end",
+   "B": "180 days",
+   "C": "45 days",
+   "D": "30 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P030",
+  "question": "Annual financial statements are submitted to the tax authority, the statistics office and:",
+  "options": {
+   "A": "The Ministry of Industry and Trade",
+   "B": "The People's Court",
+   "C": "The business registration authority",
+   "D": "The State Bank of Vietnam"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P031",
+  "question": "Which law governs independent audit in Vietnam?",
+  "options": {
+   "A": "Law on Enterprises No. 59/2020/QH14",
+   "B": "Law on Independent Audit No. 67/2011/QH12",
+   "C": "Law on State Audit No. 81/2015/QH13",
+   "D": "Law on Accounting No. 88/2015/QH13"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P032",
+  "question": "Which decree lists the entities requiring an annual independent audit?",
+  "options": {
+   "A": "Decree 17/2012/ND-CP",
+   "B": "Decree 174/2016/ND-CP",
+   "C": "Decree 05/2019/ND-CP",
+   "D": "Decree 126/2020/ND-CP"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P033",
+  "question": "Which enterprises must have their annual financial statements audited?",
+  "options": {
+   "A": "Only state agencies",
+   "B": "Only companies with over 1,000 staff",
+   "C": "Foreign-invested enterprises",
+   "D": "All household businesses"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P034",
+  "question": "Which decree sets administrative penalties for accounting and independent audit violations?",
+  "options": {
+   "A": "Decree 132/2020/ND-CP",
+   "B": "Decree 41/2018/ND-CP",
+   "C": "Decree 125/2020/ND-CP",
+   "D": "Decree 123/2020/ND-CP"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P035",
+  "question": "Which decree governs internal audit for listed companies and SOEs?",
+  "options": {
+   "A": "Decree 174/2016/ND-CP",
+   "B": "Decree 41/2018/ND-CP",
+   "C": "Decree 17/2012/ND-CP",
+   "D": "Decree 05/2019/ND-CP"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P036",
+  "question": "Which circular governs information disclosure on the securities market?",
+  "options": {
+   "A": "Circular 96/2020/TT-BTC",
+   "B": "Circular 155/2015/TT-BTC",
+   "C": "Circular 48/2019/TT-BTC",
+   "D": "Circular 200/2014/TT-BTC"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P037",
+  "question": "A listed company must disclose its audited annual statements no later than how many days after year-end?",
+  "options": {
+   "A": "60 days",
+   "B": "120 days",
+   "C": "90 days",
+   "D": "45 days"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P038",
+  "question": "After the audit report is signed, a listed company must disclose the annual statements within:",
+  "options": {
+   "A": "30 days",
+   "B": "10 days",
+   "C": "20 days",
+   "D": "5 days"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P039",
+  "question": "Reviewed semi-annual statements of a listed company are due no later than:",
+  "options": {
+   "A": "45 days after the half-year",
+   "B": "30 days",
+   "C": "60 days",
+   "D": "90 days"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P040",
+  "question": "After the review report is signed, semi-annual statements must be disclosed within:",
+  "options": {
+   "A": "20 days",
+   "B": "1 day",
+   "C": "10 days",
+   "D": "5 days"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P041",
+  "question": "Quarterly financial statements of a listed company are due within:",
+  "options": {
+   "A": "45 days",
+   "B": "10 days",
+   "C": "30 days",
+   "D": "20 days after quarter-end"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P042",
+  "question": "Which circular sets recognition criteria and depreciation for fixed assets?",
+  "options": {
+   "A": "Circular 133/2016/TT-BTC",
+   "B": "Circular 48/2019/TT-BTC",
+   "C": "Circular 45/2013/TT-BTC",
+   "D": "Circular 202/2014/TT-BTC"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P043",
+  "question": "A tangible fixed asset must have a useful life of more than:",
+  "options": {
+   "A": "Six months",
+   "B": "Three years",
+   "C": "Five years",
+   "D": "One year"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P044",
+  "question": "A tangible fixed asset must have a historical cost of at least:",
+  "options": {
+   "A": "VND 10 million",
+   "B": "VND 100 million",
+   "C": "VND 50 million",
+   "D": "VND 30 million"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P045",
+  "question": "How are assets below the fixed-asset cost threshold treated?",
+  "options": {
+   "A": "Treated as inventory",
+   "B": "Recorded off balance sheet",
+   "C": "Capitalized anyway",
+   "D": "Allocated to expenses"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P046",
+  "question": "Which is an allowed depreciation method in Vietnam?",
+  "options": {
+   "A": "Sinking fund method",
+   "B": "Declining balance with adjustment",
+   "C": "Sum-of-the-years'-digits",
+   "D": "Annuity method"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P047",
+  "question": "Which circular sets provisions for doubtful receivables?",
+  "options": {
+   "A": "Circular 48/2019/TT-BTC",
+   "B": "Circular 78/2021/TT-BTC",
+   "C": "Circular 96/2020/TT-BTC",
+   "D": "Circular 45/2013/TT-BTC"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P048",
+  "question": "A receivable overdue from six months to under one year requires a provision of:",
+  "options": {
+   "A": "10%",
+   "B": "70%",
+   "C": "50%",
+   "D": "30%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P049",
+  "question": "A receivable overdue from one to under two years requires a provision of:",
+  "options": {
+   "A": "100%",
+   "B": "70%",
+   "C": "50%",
+   "D": "30%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P050",
+  "question": "A receivable overdue from two to under three years requires a provision of:",
+  "options": {
+   "A": "100%",
+   "B": "50%",
+   "C": "70%",
+   "D": "30%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P051",
+  "question": "A receivable overdue three years or more requires a provision of:",
+  "options": {
+   "A": "100%",
+   "B": "90%",
+   "C": "70%",
+   "D": "50%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P052",
+  "question": "Which inventory cost method did Circular 200 remove?",
+  "options": {
+   "A": "Specific identification",
+   "B": "FIFO",
+   "C": "Weighted average",
+   "D": "LIFO"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P053",
+  "question": "Which VAS covers inventories?",
+  "options": {
+   "A": "VAS 14",
+   "B": "VAS 02",
+   "C": "VAS 21",
+   "D": "VAS 03"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P054",
+  "question": "Which VAS covers revenue and other income?",
+  "options": {
+   "A": "VAS 02",
+   "B": "VAS 14",
+   "C": "VAS 24",
+   "D": "VAS 15"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P055",
+  "question": "Which VAS covers the cash flow statement?",
+  "options": {
+   "A": "VAS 11",
+   "B": "VAS 21",
+   "C": "VAS 24",
+   "D": "VAS 25"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P056",
+  "question": "Which VAS covers changes in accounting policies, estimates and errors?",
+  "options": {
+   "A": "VAS 21",
+   "B": "VAS 17",
+   "C": "VAS 26",
+   "D": "VAS 29"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P057",
+  "question": "Which VAS covers income taxes?",
+  "options": {
+   "A": "VAS 14",
+   "B": "VAS 29",
+   "C": "VAS 17",
+   "D": "VAS 10"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P058",
+  "question": "Which VAS covers consolidated financial statements?",
+  "options": {
+   "A": "VAS 07",
+   "B": "VAS 11",
+   "C": "VAS 25",
+   "D": "VAS 08"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P059",
+  "question": "Under VAS 29, a material prior-period error is corrected:",
+  "options": {
+   "A": "Retrospectively, restating comparatives and opening retained earnings",
+   "B": "Prospectively in the current year",
+   "C": "By a note without restatement",
+   "D": "Only in the tax return"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P060",
+  "question": "Under Circular 202/2014/TT-BTC, goodwill is amortized over no more than:",
+  "options": {
+   "A": "10 years",
+   "B": "It is not amortized",
+   "C": "20 years",
+   "D": "5 years"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P061",
+  "question": "What is Vietnam's standard corporate income tax rate?",
+  "options": {
+   "A": "25%",
+   "B": "17%",
+   "C": "20%",
+   "D": "22%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P062",
+  "question": "Quarterly provisional CIT is due no later than:",
+  "options": {
+   "A": "The 20th day of the month after the quarter",
+   "B": "The 15th day of the next quarter",
+   "C": "The last day of the quarter",
+   "D": "The 30th day of the month after the quarter"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P063",
+  "question": "The four quarterly provisional CIT payments must total at least what share of the final annual CIT?",
+  "options": {
+   "A": "75%",
+   "B": "100%",
+   "C": "90%",
+   "D": "80%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P064",
+  "question": "What daily rate of late-payment interest applies to underpaid tax?",
+  "options": {
+   "A": "0.05%",
+   "B": "0.03%",
+   "C": "0.02%",
+   "D": "0.1%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P065",
+  "question": "Which law governs tax administration?",
+  "options": {
+   "A": "Law on Tax Administration No. 78/2006/QH11",
+   "B": "Law on CIT No. 14/2008/QH12",
+   "C": "Law on Enterprises No. 59/2020/QH14",
+   "D": "Law on Tax Administration No. 38/2019/QH14"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P066",
+  "question": "For a calendar-year company, the annual CIT finalization is due by:",
+  "options": {
+   "A": "30 June",
+   "B": "31 March",
+   "C": "31 January",
+   "D": "30 April"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P067",
+  "question": "What is Vietnam's standard VAT rate?",
+  "options": {
+   "A": "8%",
+   "B": "12%",
+   "C": "10%",
+   "D": "5%"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P068",
+  "question": "What VAT rate applies to exported goods?",
+  "options": {
+   "A": "10%",
+   "B": "5%",
+   "C": "0%",
+   "D": "Exempt with no rate"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P069",
+  "question": "What is the reduced VAT rate for essential goods and services?",
+  "options": {
+   "A": "5%",
+   "B": "3%",
+   "C": "7%",
+   "D": "2%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P070",
+  "question": "From what date were e-invoices mandatory nationwide?",
+  "options": {
+   "A": "1 November 2020",
+   "B": "1 January 2020",
+   "C": "1 July 2022",
+   "D": "1 July 2024"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P071",
+  "question": "Which decree governs invoices, including e-invoices?",
+  "options": {
+   "A": "Decree 51/2010/ND-CP",
+   "B": "Decree 132/2020/ND-CP",
+   "C": "Decree 123/2020/ND-CP",
+   "D": "Decree 126/2020/ND-CP"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P072",
+  "question": "Which circular guides e-invoices alongside the invoice decree?",
+  "options": {
+   "A": "Circular 78/2021/TT-BTC",
+   "B": "Circular 39/2014/TT-BTC",
+   "C": "Circular 96/2020/TT-BTC",
+   "D": "Circular 32/2011/TT-BTC"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P073",
+  "question": "Which decree governs transfer pricing?",
+  "options": {
+   "A": "Decree 218/2013/ND-CP",
+   "B": "Decree 20/2017/ND-CP",
+   "C": "Decree 123/2020/ND-CP",
+   "D": "Decree 132/2020/ND-CP"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P074",
+  "question": "Under the transfer pricing decree, parties are related if one holds directly or indirectly at least:",
+  "options": {
+   "A": "50%",
+   "B": "25% of the other's equity",
+   "C": "20%",
+   "D": "10%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P075",
+  "question": "Deductible net interest expense is capped at what share of EBITDA?",
+  "options": {
+   "A": "50%",
+   "B": "30%",
+   "C": "40%",
+   "D": "20%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P076",
+  "question": "Interest disallowed under the EBITDA cap may be carried forward for up to:",
+  "options": {
+   "A": "It cannot be carried forward",
+   "B": "3 years",
+   "C": "5 years",
+   "D": "10 years"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P077",
+  "question": "Related-party transactions are disclosed in:",
+  "options": {
+   "A": "An appendix to the annual CIT return",
+   "B": "The labour report",
+   "C": "The social insurance report",
+   "D": "The VAT return"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P078",
+  "question": "Which transfer pricing documents must taxpayers prepare where required?",
+  "options": {
+   "A": "A local file and a master file",
+   "B": "An APA in every case",
+   "C": "Only a bank statement",
+   "D": "Only a board resolution"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P079",
+  "question": "What employer social insurance contribution rate applies to salary?",
+  "options": {
+   "A": "10.5%",
+   "B": "8%",
+   "C": "20%",
+   "D": "17.5%"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P080",
+  "question": "What employer health insurance contribution rate applies?",
+  "options": {
+   "A": "3%",
+   "B": "1.5%",
+   "C": "1%",
+   "D": "4.5%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P081",
+  "question": "What employee social insurance contribution rate applies?",
+  "options": {
+   "A": "10.5%",
+   "B": "8%",
+   "C": "17.5%",
+   "D": "5%"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P082",
+  "question": "What is the combined employee contribution for social, health and unemployment insurance?",
+  "options": {
+   "A": "10.5%",
+   "B": "12%",
+   "C": "8%",
+   "D": "21.5%"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P083",
+  "question": "Which professional body represents Vietnamese auditors?",
+  "options": {
+   "A": "SSC",
+   "B": "VACPA",
+   "C": "VICA only",
+   "D": "VCCI"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P084",
+  "question": "Which agency licenses securities-market disclosure rules?",
+  "options": {
+   "A": "The State Securities Commission under the Ministry of Finance",
+   "B": "The State Bank of Vietnam",
+   "C": "The Ministry of Justice",
+   "D": "The Ministry of Planning and Investment"
+  },
+  "answer": "A"
+ },
+ {
+  "id": "accounting_vn_P085",
+  "question": "Which law currently governs Vietnam's securities market?",
+  "options": {
+   "A": "Law on Investment No. 61/2020/QH14",
+   "B": "Law on Securities No. 54/2019/QH14",
+   "C": "Law on Credit Institutions No. 32/2024/QH15",
+   "D": "Law on Securities No. 70/2006/QH11"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P086",
+  "question": "Under Circular 200, which party signs the financial statements together with the preparer and chief accountant?",
+  "options": {
+   "A": "The external auditor",
+   "B": "The largest shareholder",
+   "C": "The tax officer",
+   "D": "The legal representative"
+  },
+  "answer": "D"
+ },
+ {
+  "id": "accounting_vn_P087",
+  "question": "Which statement does a Vietnamese enterprise NOT include in its Circular 200 annual set?",
+  "options": {
+   "A": "Cash flow statement",
+   "B": "Income statement",
+   "C": "A separate statement of other comprehensive income",
+   "D": "Balance sheet"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P088",
+  "question": "Which regulator receives a listed company's financial statement disclosure along with the exchange?",
+  "options": {
+   "A": "The Ministry of Industry and Trade",
+   "B": "The State Securities Commission",
+   "C": "The General Statistics Office only",
+   "D": "The Vietnam Chamber of Commerce"
+  },
+  "answer": "B"
+ },
+ {
+  "id": "accounting_vn_P089",
+  "question": "Can a Vietnamese company record revenue without issuing an invoice when goods are sold?",
+  "options": {
+   "A": "Yes, invoices are optional",
+   "B": "Only for exports",
+   "C": "No, an invoice must be issued when goods or services are supplied",
+   "D": "Only for services"
+  },
+  "answer": "C"
+ },
+ {
+  "id": "accounting_vn_P090",
+  "question": "Which body examines and certifies auditors and accountants in Vietnam?",
+  "options": {
+   "A": "Each province's People's Committee",
+   "B": "The Ministry of Education",
+   "C": "The State Bank of Vietnam",
+   "D": "The Ministry of Finance"
+  },
+  "answer": "D"
+ }
+]
