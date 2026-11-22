@@ -79,7 +79,9 @@
     "openrouter_id": "typesafe/jev-1.14",
     "price_in_per_m": 0.042,
     "price_out_per_m": 0.0,
-    "pick_note": "Pinned version, not the ~typesafe/jev-latest alias"
+    "pick_note": "Pinned version, not the ~typesafe/jev-latest alias",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "provider_order": []
   },
   "settle_at_lock": [
     "Reasoning effort for reasoning models (provider default vs a fixed effort); temperature 0 may be ignored by some reasoning endpoints, so the routed parameters are logged per call",
