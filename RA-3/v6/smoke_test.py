@@ -11,13 +11,18 @@ import json
 import sys
 
 import design
-from openrouter_client import OpenRouterError, chat
+from openrouter_client import OpenRouterError, chat, decide
+
+# Jev answers typed questions on the Decisions API, not chat. This one-question
+# call confirms the request format run_jev.py relies on.
+JEV_STATE = "A bank reports a CET1 ratio of 3.9% against a 4.5% regulatory minimum."
+JEV_QUESTIONS = {"q": {"type": "score", "instructions": "Is the bank's CET1 ratio adequate?",
+                       "criteria": ["Clearly below the minimum", "At the minimum", "Clearly above the minimum"]}}
 
 
 def main() -> int:
     lock = design.load_lock()
     targets = [(m["key"], m["openrouter_id"]) for m in lock["agents"]]
-    targets.append(("jev", lock["secondary_judge"]["openrouter_id"]))
     report, failed = [], 0
     for key, model in targets:
         try:
@@ -32,6 +37,19 @@ def main() -> int:
             failed += 1
         report.append(entry)
         print(f"{status:5s} {model:36s} served={entry.get('served_model')} provider={entry.get('provider')}")
+    jev = lock["secondary_judge"]["openrouter_id"]
+    try:
+        res = decide(jev, JEV_STATE, JEV_QUESTIONS, retries=1)
+        ans = res["answers"].get("q") or {}
+        entry = {"key": "jev", "requested": jev, "answers": res["answers"],
+                 **{k: res[k] for k in ("served_model", "provider", "usage", "latency_s")}}
+        status = "ok" if ans.get("type") == "score" and "score" in ans else "SHAPE"
+        failed += status != "ok"
+    except OpenRouterError as exc:
+        entry, status = {"key": "jev", "requested": jev, "error": str(exc)}, "FAIL"
+        failed += 1
+    report.append(entry)
+    print(f"{status:5s} {jev:36s} served={entry.get('served_model')} answer={entry.get('answers')}")
     out = design.RESULTS_DIR / "smoke.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2))

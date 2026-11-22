@@ -15,14 +15,17 @@ This harness runs the pre-registered RA-3 v6 study: 6 industries × 2 jurisdicti
 | `run_probe.py` / `coverage.py` | The 90-item closed-book probe for each cell and model, and coverage computed as probe accuracy. Coverage is never computed from C1 scores. |
 | `forecast.py` | Registered forecasts (protocol H7). Writes one predicted lift per cell × model from the probe before any grounded run and prints the file's SHA-256; after the runs it scores calibration and runs the leave-one-industry-out test. |
 | `stale.py` / `run_stale.py` | Stale-knowledge arm (protocol H8). Validates the item set in `stale/items.json` (30 per country, at least four industries each, the current value stated in the cell's ontology context), runs each item closed-book and grounded, and runs the H8 test with `--analyse`. Items must be expert-confirmed before they run. |
-| `gating.py` | Stage 2, coverage-gated grounding (protocol H9). Checks the probe-item tags in `probe/tags/<cell>.json`, applies the gating rule (an entry is known if at least two tagged items are all correct; decision patterns and hand-offs never gated), and with `--addendum` registers each gated context's hash before any C3g run. `run_agents.py --stage2` then runs the 792 C3g runs. |
+| `gating.py` | Stage 2, coverage-gated grounding (protocol H9). H9 is tested only in cells with at least five gateable entries (`h9_cells()`; 9 cells on the current tags). Checks the probe-item tags in `probe/tags/<cell>.json`, applies the gating rule (an entry is known if at least two tagged items are all correct; decision patterns and hand-offs never gated), and with `--addendum` registers each gated context's hash before any C3g run. `run_agents.py --stage2` then runs the 792 C3g runs. |
 | `run_agents.py` | The agent runs. Output is append-only JSONL, and a rerun resumes where it stopped. |
 | `run_judges.py` | Two cross-family judges per response, using v5's rubrics. No judge scores its own family. |
+| `run_jev.py` | The secondary judge. Jev answers typed `score` questions on OpenRouter's Decisions API (`/api/alpha/decisions`), one per v5 rubric dimension on a five-level scale keyed by position, never by yes/no names (arXiv 2609.26758 shows typed decision models follow option names over their definitions). A refusal or missing answer is an error, never a 0. `--show <task_id>` prints one request. |
 | `freeze_assignments.py` | Writes `assignments/judge_pairs.json` and `assignments/repeats.json` at lock, to be hashed. |
 | `smoke_test.py` | Makes one call to every pinned model to confirm IDs, routing and prices before lock. |
 | `tests/test_forecast.py` | Offline checks of the forecast line, the stable hash and the H7 test on synthetic lifts. |
 | `tests/test_stale.py` | Offline checks of the stale-set validator and the H8 test on synthetic answers. |
 | `tests/test_gating.py` | Offline checks of the gating rule, the gate and the C3g prompt. |
+| `tests/test_jev.py` | Offline checks of the Jev request shape and answer parsing. |
+| `tests/test_tags.py` | Checks the stage-2 probe tags are complete and resolve in each ontology. |
 | `tests/test_design.py` | Offline checks: protocol call counts, no self-judging, balanced rotation, and the C2b budget. |
 | `power/` | The four power simulations (1–10 Nov 2026) and their outputs. `power_sim_v4.py` is the adopted US+VN design. |
 
@@ -37,6 +40,7 @@ OPENROUTER_API_KEY=... python smoke_test.py       # ~7 tiny calls
 OPENROUTER_API_KEY=... python run_probe.py        # 6,480 calls
 OPENROUTER_API_KEY=... python run_agents.py       # ~2,376 calls
 OPENROUTER_API_KEY=... python run_judges.py       # ~4,752 calls
+OPENROUTER_API_KEY=... python run_jev.py          # ~2,376 Jev calls
 python coverage.py
 python forecast.py                                # after the probe, before any grounded run
 OPENROUTER_API_KEY=... python run_stale.py       # 720 calls, once the items are confirmed
@@ -60,7 +64,7 @@ Where current law superseded v5 content, v6 applies `corrections.json` on load, 
 ## Still to build before lock
 
 - **Stale-knowledge set.** 60 draft items in `stale/items.json` (30 per country) and 28 draft US rule additions in `corrections.json`; experts confirm both (see `EXPERT-CHECK.md`), then mark items `confirmed`.
-- **Probe tags for stage 2.** Tag each probe item to the ontology entry it tests in `probe/tags/<cell>.json`; `python gating.py` reports progress. If tagging is incomplete at lock, stage 2 is dropped.
+- **Probe tags for stage 2.** Done 2026-11-22: all 1,080 items are tagged in `probe/tags/<cell>.json` (rule in `probe/tags/README.md`); `python gating.py` reports `tags complete`. A second coder should spot-check them before lock.
 - **v5 corrections.** Experts confirm the draft corrections in `corrections.json` (listed in `V5-TO-V6-DIFF.md`); rerun `python corrections.py` and `python build_tasks.py` after any edit.
-- **Jev adapter.** Jev answers typed questions with probabilities rather than writing text. Its request format is confirmed by the smoke test before its adapter is written.
+- **Jev adapter.** Written 2026-11-22 (`run_jev.py`) against OpenRouter's Decisions API docs. The smoke test now calls Jev on that endpoint, which confirms the format before lock.
 - **Settings to decide at lock** (see `settle_at_lock` in `models.lock.json`): reasoning effort, the provider order for each model, and the provider fallback policy.

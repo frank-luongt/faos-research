@@ -98,3 +98,67 @@ def chat(
         "usage": data.get("usage", {}),
         "latency_s": round(time.monotonic() - started, 2),
     }
+
+
+DECISIONS_URL = "https://openrouter.ai/api/alpha/decisions"
+
+
+def decide(
+    model: str,
+    state,
+    questions: dict,
+    *,
+    provider_order: list[str] | None = None,
+    session_id: str | None = None,
+    timeout: float = 300.0,
+    retries: int = 4,
+) -> dict:
+    """One call to OpenRouter's Decisions API (used by Jev, which writes no text).
+
+    Returns the raw ``answers`` map plus the served model, provider and usage. The
+    API takes no seed or temperature, so repeat calls can differ slightly.
+    """
+    payload = {"model": model, "state": state, "questions": questions}
+    if provider_order:
+        payload["provider"] = {"order": provider_order}
+    if session_id:
+        payload["session_id"] = session_id
+    headers = {
+        "Authorization": f"Bearer {api_key()}",
+        "Content-Type": "application/json",
+        "X-Title": "FAOS RA-3 v6",
+    }
+    body = json.dumps(payload).encode()
+    delay = 2.0
+    for attempt in range(retries + 1):
+        started = time.monotonic()
+        try:
+            req = request.Request(DECISIONS_URL, data=body, headers=headers, method="POST")
+            with request.urlopen(req, timeout=timeout, context=_SSL_CTX) as resp:
+                data = json.loads(resp.read().decode())
+            break
+        except error.HTTPError as exc:
+            detail = exc.read().decode(errors="replace")[:400]
+            if exc.code in (429, 500, 502, 503, 504) and attempt < retries:
+                time.sleep(delay)
+                delay *= 2
+                continue
+            raise OpenRouterError(f"HTTP {exc.code} for {model}: {detail}") from exc
+        except error.URLError as exc:
+            if attempt < retries:
+                time.sleep(delay)
+                delay *= 2
+                continue
+            raise OpenRouterError(f"Could not reach OpenRouter: {exc}") from exc
+
+    if "error" in data:
+        raise OpenRouterError(f"{model}: {json.dumps(data['error'])[:400]}")
+    return {
+        "answers": data.get("answers") or {},
+        "served_model": data.get("model"),
+        "provider": data.get("provider"),
+        "generation_id": data.get("id"),
+        "usage": data.get("usage", {}),
+        "latency_s": round(time.monotonic() - started, 2),
+        "request_bytes": len(body),
+    }
