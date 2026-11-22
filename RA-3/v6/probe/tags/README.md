@@ -23,4 +23,4 @@ The tags were written by one coder (Claude, from a lexical first pass reviewed i
 | accounting_us | 60 | 17 | 36% |
 | accounting_vn | 51 | 17 | 41% |
 
-"Largest possible C3 cut" is the mean context reduction if a model knew every gateable entry. Over all 12 cells it is 23%, against H9's requirement that gated contexts be at least 10% shorter on average. In the three v5 US cells (insurance, healthcare, fintech), the v5 ontologies are thin and the probe mostly tests facts they do not state, so C3g is almost the same as C3 there.
+"Largest possible C3 cut" is the mean context reduction if a model knew every gateable entry. Over all 12 cells it is 23%, against H9's requirement that gated contexts be at least 10% shorter on average. In the three v5 US cells (insurance, healthcare, fintech), the v5 ontologies are thin and the probe mostly tests facts they do not state, so C3g is almost the same as C3 there. The PI decided on 2026-11-22 to test H9 only in cells with at least five gateable entries (the other 9 cells, whose ceiling averages 30%) and to report these three descriptively.

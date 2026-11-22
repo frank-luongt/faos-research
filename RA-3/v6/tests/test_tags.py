@@ -17,6 +17,12 @@ class Tags(unittest.TestCase):
         report = gating.tag_report()
         self.assertEqual(report[-1], "tags complete", "\n".join(report))
 
+    def test_h9_scope_is_the_nine_cells(self):
+        thin = {"insurance_us", "healthcare_us", "fintech_us"}
+        cells = gating.h9_cells()
+        self.assertEqual(len(cells), 9)
+        self.assertFalse(thin & set(cells))
+
 
 if __name__ == "__main__":
     unittest.main()

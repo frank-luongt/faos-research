@@ -35,6 +35,7 @@ TAGS_DIR = design.PROBE_DIR / "tags"
 ADDENDUM = design.V6_DIR / "assignments" / "c3g_addendum.json"
 PROBE_LOG = design.RESULTS_DIR / "probe_raw.jsonl"
 MIN_ITEMS = 2
+MIN_GATEABLE = 5  # H9 is tested only in cells with this many gateable entries (PI decision 2026-11-22)
 NEVER_GATED = ("decision_patterns", "interaction_layer")
 CONDITION = "C3g_gated"
 
@@ -109,6 +110,19 @@ def probe_correct(model: str, cell: str, rows: list[dict] | None = None) -> dict
             if not r.get("error") and r["model"] == model and r["cell"] == cell}
 
 
+def gateable_entries(tags: dict[str, str | None]) -> set[str]:
+    per_entry = defaultdict(int)
+    for p in tags.values():
+        if p:
+            per_entry[p] += 1
+    return {p for p, n in per_entry.items() if n >= MIN_ITEMS}
+
+
+def h9_cells() -> list[str]:
+    """Cells in the H9 test: at least MIN_GATEABLE gateable entries, from the tags fixed at lock."""
+    return [c for c in design.CELLS if len(gateable_entries(load_tags(c))) >= MIN_GATEABLE]
+
+
 def tag_report() -> list[str]:
     from conditions_v6 import v5
     lines, all_ok = [], True
@@ -119,12 +133,9 @@ def tag_report() -> list[str]:
         onto = v5._load_ontology(design.ontology_stem(cell))
         problems = validate_tags(cell, tags, ids, onto)
         all_ok &= not problems
-        per_entry = defaultdict(int)
-        for p in tags.values():
-            if p:
-                per_entry[p] += 1
-        gateable = sum(1 for n in per_entry.values() if n >= MIN_ITEMS)
-        lines.append(f"{cell}: {len(tags)}/{len(ids)} tagged, {gateable} entries gateable"
+        gateable = len(gateable_entries(tags))
+        scope = "H9" if gateable >= MIN_GATEABLE else "descriptive only"
+        lines.append(f"{cell}: {len(tags)}/{len(ids)} tagged, {gateable} entries gateable ({scope})"
                      + (f"  [{'; '.join(problems)}]" if problems else ""))
     lines.append("tags complete" if all_ok else "tags incomplete: stage 2 cannot be registered")
     return lines
@@ -151,7 +162,13 @@ def write_addendum() -> int:
                 "c3_chars": len(c3), "c3g_chars": meta["system_chars"],
                 "c3g_sha256": hashlib.sha256(c3g[0]["content"].encode()).hexdigest(),
             })
+    in_h9 = set(h9_cells())
+    for e in entries:
+        e["in_h9"] = e["task_id"].rsplit("_T", 1)[0] in in_h9
+    h9 = [e for e in entries if e["in_h9"]]
     doc = {
+        "h9_cells": sorted(in_h9),
+        "h9_mean_length_ratio": round(sum(e["c3g_chars"] / e["c3_chars"] for e in h9) / len(h9), 4),
         "rule": f"entry known if >= {MIN_ITEMS} tagged probe items, all correct; {', '.join(NEVER_GATED)} never gated",
         "probe_log_sha256": hashlib.sha256(PROBE_LOG.read_bytes()).hexdigest(),
         "mean_length_ratio": round(sum(e["c3g_chars"] / e["c3_chars"] for e in entries) / len(entries), 4),
@@ -159,7 +176,8 @@ def write_addendum() -> int:
     }
     ADDENDUM.parent.mkdir(parents=True, exist_ok=True)
     ADDENDUM.write_text(json.dumps(doc, indent=1, sort_keys=True, ensure_ascii=False) + "\n")
-    print(f"{len(entries)} gated contexts, mean length {doc['mean_length_ratio']:.0%} of C3 -> {ADDENDUM}")
+    print(f"{len(entries)} gated contexts, mean length {doc['mean_length_ratio']:.0%} of C3; "
+          f"{len(in_h9)} H9 cells at {doc['h9_mean_length_ratio']:.0%} -> {ADDENDUM}")
     print(f"sha256 {hashlib.sha256(ADDENDUM.read_bytes()).hexdigest()}")
     return 0
 
